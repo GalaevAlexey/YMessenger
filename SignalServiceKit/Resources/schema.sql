@@ -41,6 +41,8 @@ CREATE
             ,"addresses" BLOB
             ,"storyViewMode" INTEGER DEFAULT 0
             ,"editTargetTimestamp" INTEGER
+            ,"lastDraftInteractionRowId" INTEGER DEFAULT 0
+            ,"lastDraftUpdateTimestamp" INTEGER DEFAULT 0
         )
 ;
 
@@ -2374,5 +2376,19 @@ CREATE
 CREATE
     INDEX "index_ListedBackupMediaObject_on_mediaId"
         ON "ListedBackupMediaObject"("mediaId"
+)
+;
+
+CREATE
+    TABLE
+        IF NOT EXISTS "BackupOversizeTextCache" (
+            "id" INTEGER PRIMARY KEY AUTOINCREMENT
+            ,"attachmentRowId" INTEGER NOT NULL UNIQUE REFERENCES "Attachment"("id"
+        )
+            ON DELETE
+                CASCADE
+                ,"text" TEXT NOT NULL CHECK (
+                    LENGTH( "text" ) <= 131072
+                )
 )
 ;

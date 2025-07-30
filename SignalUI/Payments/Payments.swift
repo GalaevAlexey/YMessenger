@@ -51,7 +51,7 @@ public protocol PaymentsSwift: Payments {
         canDefragment: Bool
     ) async throws -> PreparedPayment
 
-    func initiateOutgoingPayment(preparedPayment: PreparedPayment) -> Promise<TSPaymentModel>
+    func initiateOutgoingPayment(preparedPayment: PreparedPayment) async throws -> TSPaymentModel
 
     func maximumPaymentAmount() async throws -> TSPaymentAmount
 
@@ -63,7 +63,7 @@ public protocol PaymentsSwift: Payments {
 
     func isValidPassphraseWord(_ word: String?) -> Bool
 
-    func blockOnOutgoingVerification(paymentModel: TSPaymentModel) -> Promise<Bool>
+    func blockOnOutgoingVerification(paymentModel: TSPaymentModel) async throws -> Bool
 }
 
 // MARK: -
@@ -173,7 +173,7 @@ extension MockPayments: PaymentsSwift {
         owsFail("Not implemented.")
     }
 
-    public func initiateOutgoingPayment(preparedPayment: PreparedPayment) -> Promise<TSPaymentModel> {
+    public func initiateOutgoingPayment(preparedPayment: PreparedPayment) async throws -> TSPaymentModel {
         owsFail("Not implemented.")
     }
 
@@ -218,7 +218,7 @@ extension MockPayments: PaymentsSwift {
         owsFail("Not implemented.")
     }
 
-    public func blockOnOutgoingVerification(paymentModel: TSPaymentModel) -> Promise<Bool> {
+    public func blockOnOutgoingVerification(paymentModel: TSPaymentModel) async throws -> Bool {
         owsFail("Not implemented.")
     }
 }

@@ -119,10 +119,6 @@ public class TSRequestOWSURLSessionMock: BaseOWSURLSessionMock {
         responses.append((response, .value(response)))
     }
 
-    public func addResponse(_ response: Response, atTime t: Int, on scheduler: TestScheduler) {
-        responses.append((response, scheduler.guarantee(resolvingWith: response, atTime: t)))
-    }
-
     public func addResponse(
         matcher: @escaping (TSRequest) -> Bool,
         statusCode: Int = 200,
@@ -150,24 +146,6 @@ public class TSRequestOWSURLSessionMock: BaseOWSURLSessionMock {
                 statusCode: statusCode,
                 headers: headers,
                 bodyJson: bodyJson
-            ))
-        }
-    }
-
-    public override func promiseForTSRequest(_ rawRequest: TSRequest) -> Promise<HTTPResponse> {
-        guard let responseIndex = responses.firstIndex(where: { $0.0.matcher(rawRequest) }) else {
-            fatalError("Got a request with no response set up!")
-        }
-        let response = responses.remove(at: responseIndex)
-        return response.1.then(on: SyncScheduler()) { response throws -> Promise<HTTPResponse> in
-            if let error = response.error {
-                throw error
-            }
-            return .value(HTTPResponseImpl(
-                requestUrl: rawRequest.url,
-                status: response.statusCode,
-                headers: response.headers,
-                bodyData: response.bodyData
             ))
         }
     }

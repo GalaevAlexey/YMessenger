@@ -25,7 +25,7 @@ open class BackupArchiveManagerMock: BackupArchiveManager {
 
     public func uploadEncryptedBackup(
         metadata: Upload.EncryptedBackupUploadMetadata,
-        registeredBackupIDToken: BackupIdManager.RegisteredBackupIDToken,
+        registeredBackupIDToken: RegisteredBackupIDToken,
         auth: ChatServiceAuth,
         progress: OWSProgressSink?,
     ) async throws -> Upload.Result<Upload.EncryptedBackupUploadMetadata> {
@@ -70,8 +70,8 @@ open class BackupArchiveManagerMock: BackupArchiveManager {
         return URL(string: "file://")!
     }
 
-    public func hasRestoredFromBackup(tx: DBReadTransaction) -> Bool {
-        false
+    public func backupRestoreState(tx: DBReadTransaction) -> BackupRestoreState {
+        return .none
     }
 
     public func importEncryptedBackup(
@@ -85,6 +85,7 @@ open class BackupArchiveManagerMock: BackupArchiveManager {
         let source = await progress?.addSource(withLabel: "", unitCount: 1)
         source?.incrementCompletedUnitCount(by: 1)
     }
+
     public func importPlaintextBackup(
         fileUrl: URL,
         localIdentifiers: LocalIdentifiers,
@@ -95,6 +96,12 @@ open class BackupArchiveManagerMock: BackupArchiveManager {
         let source = await progress?.addSource(withLabel: "", unitCount: 1)
         source?.incrementCompletedUnitCount(by: 1)
     }
+
+    public func finalizeBackupImport(progress: OWSProgressSink?) async throws {
+        let source = await progress?.addSource(withLabel: "", unitCount: 1)
+        source?.incrementCompletedUnitCount(by: 1)
+    }
+
     public func validateEncryptedBackup(
         fileUrl: URL,
         localIdentifiers: LocalIdentifiers,

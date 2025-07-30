@@ -68,6 +68,9 @@ class ExperienceUpgradeManager {
                     case .inactiveLinkedDeviceReminder:
                         return ExperienceUpgradeManifest
                             .checkPreconditionsForInactiveLinkedDeviceReminder(tx: transaction)
+                    case .inactivePrimaryDeviceReminder:
+                        return ExperienceUpgradeManifest
+                            .checkPreconditionsForInactivePrimaryDeviceReminder(tx: transaction)
                     case .pinReminder:
                         return ExperienceUpgradeManifest
                             .checkPreconditionsForPinReminder(transaction: transaction)
@@ -76,10 +79,16 @@ class ExperienceUpgradeManager {
                             .checkPreconditionsForContactsPermissionReminder()
                     case .backupKeyReminder:
                         return ExperienceUpgradeManifest
-                            .checkPreconditionsForBackupKeyReminder(transaction: transaction)
+                            .checkPreconditionsForBackupKeyReminder(
+                                remoteConfig: RemoteConfig.current,
+                                transaction: transaction,
+                            )
                     case .enableBackupsReminder:
                         return ExperienceUpgradeManifest
-                            .checkPreconditionsForBackupEnablementReminder(transaction: transaction)
+                            .checkPreconditionsForBackupEnablementReminder(
+                                remoteConfig: RemoteConfig.current,
+                                transaction: transaction
+                            )
                     case .unrecognized:
                         break
                     }
@@ -210,6 +219,7 @@ class ExperienceUpgradeManager {
                 .newLinkedDeviceNotification,
                 .createUsernameReminder,
                 .inactiveLinkedDeviceReminder,
+                .inactivePrimaryDeviceReminder,
                 .contactPermissionReminder,
                 .backupKeyReminder,
                 .enableBackupsReminder:
@@ -269,7 +279,6 @@ class ExperienceUpgradeManager {
                     context: .init(
                         databaseStorage: SSKEnvironment.shared.databaseStorageRef,
                         networkManager: SSKEnvironment.shared.networkManagerRef,
-                        schedulers: DependenciesBridge.shared.schedulers,
                         storageServiceManager: SSKEnvironment.shared.storageServiceManagerRef,
                         usernameEducationManager: DependenciesBridge.shared.usernameEducationManager,
                         localUsernameManager: DependenciesBridge.shared.localUsernameManager
@@ -293,6 +302,18 @@ class ExperienceUpgradeManager {
                 fromViewController: fromViewController,
                 experienceUpgrade: experienceUpgrade
             )
+        case .inactivePrimaryDeviceReminder:
+            let isPrimaryDevice = db.read { tx in
+                // If isPrimaryDevice is nil, it means we aren't registered yet, and shouldn't show the megaphone.
+                return DependenciesBridge.shared.tsAccountManager.registrationState(tx: tx).isPrimaryDevice ?? true
+            }
+
+            guard !isPrimaryDevice else {
+                owsFailDebug("Trying to show inactive primary device megaphone, but this is the primary device or an unregistered device")
+                return nil
+            }
+
+            return InactivePrimaryDeviceReminderMegaphone(fromViewController: fromViewController, experienceUpgrade: experienceUpgrade)
         case .contactPermissionReminder:
             return ContactPermissionReminderMegaphone(experienceUpgrade: experienceUpgrade, fromViewController: fromViewController)
         case .remoteMegaphone(let megaphone):

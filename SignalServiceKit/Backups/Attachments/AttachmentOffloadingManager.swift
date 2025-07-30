@@ -126,7 +126,7 @@ public class AttachmentOffloadingManagerImpl: AttachmentOffloadingManager {
     }
 
     public func offloadAttachmentsIfNeeded() async throws {
-        guard FeatureFlags.Backups.remoteExportAlpha else {
+        guard FeatureFlags.Backups.supported else {
             return
         }
 
@@ -336,13 +336,13 @@ public class AttachmentOffloadingManagerImpl: AttachmentOffloadingManager {
 
     private func backupPlanAllowsOffloading(tx: DBReadTransaction) -> Bool {
         switch backupSettingsStore.backupPlan(tx: tx) {
-        case .disabled, .free:
+        case .disabled, .disabling, .free:
             return false
         case .paidExpiringSoon(_):
             // Don't offload if our subscription expires soon, regardless of the
             // optimizeLocalStorage setting.
             return false
-        case .paid(let optimizeLocalStorage):
+        case .paid(let optimizeLocalStorage), .paidAsTester(let optimizeLocalStorage):
             return optimizeLocalStorage
         }
     }

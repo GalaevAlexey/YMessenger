@@ -91,6 +91,12 @@ extension ChatListViewController {
             name: .backupPlanChanged,
             object: nil
         )
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(reloadExperienceUpgrades),
+            name: .inactivePrimaryDeviceChanged,
+            object: nil
+        )
 
         viewState.backupDownloadProgressViewState.downloadQueueStatus =
             DependenciesBridge.shared.backupAttachmentDownloadQueueStatusReporter.currentStatus()
@@ -108,13 +114,13 @@ extension ChatListViewController {
 
         NotificationCenter.default.addObserver(
             self,
-            selector: #selector(showBadgeSheetIfNecessary),
+            selector: #selector(showFYISheetIfNecessary),
             name: DonationReceiptCredentialRedemptionJob.didSucceedNotification,
             object: nil
         )
         NotificationCenter.default.addObserver(
             self,
-            selector: #selector(showBadgeSheetIfNecessary),
+            selector: #selector(showFYISheetIfNecessary),
             name: DonationReceiptCredentialRedemptionJob.didFailNotification,
             object: nil
         )
@@ -161,7 +167,7 @@ extension ChatListViewController {
     private func localProfileDidChange(_ notification: NSNotification) {
         AssertIsOnMainThread()
 
-        showBadgeSheetIfNecessary()
+        showFYISheetIfNecessary()
     }
 
     @objc
@@ -284,6 +290,13 @@ extension ChatListViewController {
         let db = DependenciesBridge.shared.db
         db.read { viewState.backupDownloadProgressViewState.refetchDBState(tx: $0) }
         viewState.backupDownloadProgressView.update(viewState: viewState.backupDownloadProgressViewState)
+    }
+
+    @objc
+    private func reloadExperienceUpgrades() {
+        AssertIsOnMainThread()
+
+        _ = ExperienceUpgradeManager.presentNext(fromViewController: self)
     }
 }
 

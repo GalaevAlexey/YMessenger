@@ -58,9 +58,7 @@ public class BackupListMediaManagerTests {
         let remoteConfigCdnNumber: UInt32 = 100
         remoteConfigManager.cachedConfig = RemoteConfig(
             clockSkew: 0,
-            isEnabledFlags: [:],
             valueFlags: ["global.backups.mediaTierFallbackCdnNumber": "\(remoteConfigCdnNumber)"],
-            timeGatedFlags: [:]
         )
 
         backupKeyMaterial.mediaBackupKey = try BackupKey(
@@ -391,6 +389,7 @@ private class BackupRequestManagerMock: BackupRequestManager {
     }
 
     func fetchBackupUploadForm(
+        backupByteLength: UInt32,
         auth: SignalServiceKit.BackupServiceAuth
     ) async throws -> SignalServiceKit.Upload.Form {
         fatalError("Unimplemented")

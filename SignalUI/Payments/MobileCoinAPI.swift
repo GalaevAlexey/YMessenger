@@ -87,6 +87,28 @@ public class MobileCoinAPI {
 
     // MARK: -
 
+    private func withTimeoutAndErrorConversion<T>(makeRequest: @escaping () async throws -> T) async throws -> T {
+        if DebugFlags.paymentsNoRequestsComplete.get() {
+            // Never resolve.
+            try! await Task.sleep(nanoseconds: TimeInterval.infinity.clampedNanoseconds)
+        }
+        do {
+            return try await withUncooperativeTimeout(seconds: Self.timeoutDuration) {
+                do {
+                    return try await makeRequest()
+                } catch {
+                    let convertedError = Self.convertMCError(error: error)
+                    owsFailDebugUnlessMCNetworkFailure(convertedError)
+                    throw convertedError
+                }
+            }
+        } catch is UncooperativeTimeoutError {
+            throw PaymentsError.timeout
+        }
+    }
+
+    // MARK: -
+
     static func buildLocalAccount(paymentsEntropy: Data) throws -> MobileCoinAccount {
         try Self.buildAccount(forPaymentsEntropy: paymentsEntropy)
     }
@@ -164,7 +186,7 @@ public class MobileCoinAPI {
             throw OWSAssertionError("Invalid amount.")
         }
 
-        return try await _getPaymentAmount(canBeEmpty: false, getPicoMob: { client in
+        return try await _getPaymentAmount(canBeEmpty: false, getPicoMob: { [client] in
             return try await withCheckedThrowingContinuation { continuation in
                 // We don't need to support amountPicoMobHigh.
                 let amount = Amount(paymentAmount.picoMob, in: .MOB)
@@ -176,7 +198,7 @@ public class MobileCoinAPI {
     }
 
     func maxTransactionAmount() async throws -> TSPaymentAmount {
-        return try await _getPaymentAmount(canBeEmpty: true, getPicoMob: { client in
+        return try await _getPaymentAmount(canBeEmpty: true, getPicoMob: { [client] in
             return try await withCheckedThrowingContinuation { continuation in
                 client.amountTransferable(tokenId: .MOB, feeLevel: Self.feeLevel) {
                     continuation.resume(with: $0)
@@ -185,38 +207,18 @@ public class MobileCoinAPI {
         })
     }
 
-    private func _getPaymentAmount(canBeEmpty: Bool, getPicoMob: @escaping (MobileCoinClient) async throws -> UInt64) async throws -> TSPaymentAmount {
+    private func _getPaymentAmount(canBeEmpty: Bool, getPicoMob: @escaping () async throws -> UInt64) async throws -> TSPaymentAmount {
         if DebugFlags.paymentsNoRequestsComplete.get() {
             // Never resolve.
             try! await Task.sleep(nanoseconds: TimeInterval.infinity.clampedNanoseconds)
         }
 
-        do {
-            return try await withUncooperativeTimeout(seconds: Self.timeoutDuration) { [client] in
-                do {
-                    let picoMob: UInt64
-                    do {
-                        picoMob = try await getPicoMob(client)
-                    } catch {
-                        throw Self.convertMCError(error: error)
-                    }
-                    let result = TSPaymentAmount(currency: .mobileCoin, picoMob: picoMob)
-                    guard result.isValidAmount(canBeEmpty: canBeEmpty) else {
-                        throw OWSAssertionError("Invalid amount.")
-                    }
-                    return result
-                } catch {
-                    if case PaymentsError.insufficientFunds = error {
-                        Logger.warn("Error: \(error)")
-                    } else {
-                        owsFailDebugUnlessMCNetworkFailure(error)
-                    }
-                    throw error
-                }
-            }
-        } catch is UncooperativeTimeoutError {
-            throw PaymentsError.timeout
+        let picoMob = try await withTimeoutAndErrorConversion(makeRequest: getPicoMob)
+        let result = TSPaymentAmount(currency: .mobileCoin, picoMob: picoMob)
+        guard result.isValidAmount(canBeEmpty: canBeEmpty) else {
+            throw OWSAssertionError("Invalid amount.")
         }
+        return result
     }
 
     struct PreparedTransaction: PreparedPayment {
@@ -354,75 +356,46 @@ public class MobileCoinAPI {
         }
     }
 
-    func submitTransaction(transaction: MobileCoin.Transaction) -> Promise<Void> {
+    func submitTransaction(transaction: MobileCoin.Transaction) async throws -> Void {
         Logger.verbose("")
 
         guard !DebugFlags.paymentsFailOutgoingSubmission.get() else {
-            return Promise(error: OWSGenericError("Failed."))
+            throw OWSGenericError("Failed.")
         }
 
-        return firstly(on: DispatchQueue.global()) { () throws -> Promise<Void> in
-            let (promise, future) = Promise<Void>.pending()
-            if DebugFlags.paymentsNoRequestsComplete.get() {
-                // Never resolve.
-                return promise
-            }
-            let client = self.client
-            client.submitTransaction(transaction: transaction) { (result: Result<UInt64, SubmitTransactionError>) in
-                switch result {
-                case .success:
-                    future.resolve()
-                case .failure(let error):
-                    future.reject(Self.convertMCError(error: error.submissionError))
+        return try await withTimeoutAndErrorConversion { [client] in
+            return try await withCheckedThrowingContinuation { continuation in
+                client.submitTransaction(transaction: transaction) { (result: Result<UInt64, SubmitTransactionError>) in
+                    switch result {
+                    case .success:
+                        Logger.verbose("Success.")
+                        continuation.resume(returning: ())
+                    case .failure(let error):
+                        continuation.resume(throwing: error.submissionError)
+                    }
                 }
             }
-            return promise
-        }.map(on: DispatchQueue.global()) { () -> Void in
-            Logger.verbose("Success.")
-        }.recover(on: DispatchQueue.global()) { (error: Error) -> Promise<Void> in
-            owsFailDebugUnlessMCNetworkFailure(error)
-            throw error
-        }.timeout(seconds: Self.timeoutDuration, description: "submitTransaction") { () -> Error in
-            PaymentsError.timeout
         }
     }
 
-    func getOutgoingTransactionStatus(transaction: MobileCoin.Transaction) -> Promise<MCOutgoingTransactionStatus> {
+    func getOutgoingTransactionStatus(transaction: MobileCoin.Transaction) async throws -> MCOutgoingTransactionStatus {
         Logger.verbose("")
 
         guard !DebugFlags.paymentsFailOutgoingVerification.get() else {
-            return Promise(error: OWSGenericError("Failed."))
+            throw OWSGenericError("Failed.")
         }
 
-        let client = self.client
-        return firstly(on: DispatchQueue.global()) { () -> Promise<MCOutgoingTransactionStatus> in
-            let (promise, future) = Promise<MCOutgoingTransactionStatus>.pending()
-            if DebugFlags.paymentsNoRequestsComplete.get() {
-                // Never resolve.
-                return promise
-            }
-            client.txOutStatus(
-                of: transaction
-            ) { (result: Swift.Result<MobileCoin.TransactionStatus, ConnectionError>) in
-                switch result {
-                case .success(let transactionStatus):
-                    future.resolve(MCOutgoingTransactionStatus(transactionStatus: transactionStatus))
-                    SUIEnvironment.shared.paymentsSwiftRef.clearCurrentPaymentBalance()
-                case .failure(let error):
-                    let error = Self.convertMCError(error: error)
-                    future.reject(error)
+        let transactionStatus = try await withTimeoutAndErrorConversion { [client] in
+            return try await withCheckedThrowingContinuation { continuation in
+                client.txOutStatus(of: transaction) { (result: Swift.Result<MobileCoin.TransactionStatus, ConnectionError>) in
+                    continuation.resume(with: result)
                 }
             }
-            return promise
-        }.map(on: DispatchQueue.global()) { (value: MCOutgoingTransactionStatus) -> MCOutgoingTransactionStatus in
-            Logger.verbose("Success: \(value)")
-            return value
-        }.recover(on: DispatchQueue.global()) { (error: Error) -> Promise<MCOutgoingTransactionStatus> in
-            owsFailDebugUnlessMCNetworkFailure(error)
-            throw error
-        }.timeout(seconds: Self.timeoutDuration, description: "getOutgoingTransactionStatus") { () -> Error in
-            PaymentsError.timeout
         }
+        let outgoingTransactionStatus = MCOutgoingTransactionStatus(transactionStatus: transactionStatus)
+        Logger.verbose("Success: \(outgoingTransactionStatus)")
+        SUIEnvironment.shared.paymentsSwiftRef.clearCurrentPaymentBalance()
+        return outgoingTransactionStatus
     }
 
     func paymentAmount(forReceipt receipt: MobileCoin.Receipt) throws -> TSPaymentAmount {
@@ -492,36 +465,21 @@ public class MobileCoinAPI {
         }
     }
 
-    func getAccountActivity() -> Promise<MobileCoin.AccountActivity> {
+    func getAccountActivity() async throws -> MobileCoin.AccountActivity {
         Logger.verbose("")
 
         let client = self.client
 
-        return firstly(on: DispatchQueue.global()) { () throws -> Promise<MobileCoin.AccountActivity> in
-            let (promise, future) = Promise<MobileCoin.AccountActivity>.pending()
-            if DebugFlags.paymentsNoRequestsComplete.get() {
-                // Never resolve.
-                return promise
-            }
-            client.updateBalances { (result: Swift.Result<Balances, BalanceUpdateError>) in
-                switch result {
-                case .success:
-                    future.resolve(client.accountActivity(for: .MOB))
-                case .failure(let error):
-                    let error = Self.convertMCError(error: error)
-                    future.reject(error)
+        _ = try await withTimeoutAndErrorConversion {
+            return try await withCheckedThrowingContinuation { continuation in
+                client.updateBalances { (result: Swift.Result<Balances, BalanceUpdateError>) in
+                    continuation.resume(with: result)
                 }
             }
-            return promise
-        }.map(on: DispatchQueue.global()) { (accountActivity: MobileCoin.AccountActivity) -> MobileCoin.AccountActivity in
-            Logger.verbose("Success: \(accountActivity.blockCount)")
-            return accountActivity
-        }.recover(on: DispatchQueue.global()) { (error: Error) -> Promise<MobileCoin.AccountActivity> in
-            owsFailDebugUnlessMCNetworkFailure(error)
-            throw error
-        }.timeout(seconds: Self.timeoutDuration, description: "getAccountActivity") { () -> Error in
-            PaymentsError.timeout
         }
+        let accountActivity = client.accountActivity(for: .MOB)
+        Logger.verbose("Success: \(accountActivity.blockCount)")
+        return accountActivity
     }
 }
 

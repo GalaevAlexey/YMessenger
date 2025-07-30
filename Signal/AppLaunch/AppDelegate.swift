@@ -623,7 +623,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         appReadiness.runNowOrWhenAppDidBecomeReadyAsync {
             // This runs every 24 hours or so.
             let messageSendLog = SSKEnvironment.shared.messageSendLogRef
-            messageSendLog.cleanUpAndScheduleNextOccurrence(on: DependenciesBridge.shared.schedulers)
+            messageSendLog.cleanUpAndScheduleNextOccurrence()
         }
 
         appReadiness.runNowOrWhenAppDidBecomeReadyAsync {
@@ -1466,11 +1466,23 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             let backgroundMessageFetcher = DependenciesBridge.shared.backgroundMessageFetcherFactory.buildFetcher(useWebSocket: true)
             await backgroundMessageFetcher.start()
-            let result = await Result(catching: {
+
+            // If we get canceled, we want to ignore the contact sync in this method
+            // and return control to the caller.
+            let syncContacts = CancellableContinuation<Void>()
+            Task {
                 // If the main app gets woken to process messages in the background, check
                 // for any pending NSE requests to fulfill.
-                async let _ = SSKEnvironment.shared.syncManagerRef.syncAllContactsIfFullSyncRequested().awaitable()
+                let result = await Result(catching: {
+                    try await SSKEnvironment.shared.syncManagerRef.syncAllContactsIfFullSyncRequested().awaitable()
+                })
+                syncContacts.resume(with: result)
+            }
 
+            let result = await Result(catching: {
+                // If the contact sync fails, ignore it. In this method, we care about the
+                // result of fetching messages, not sending opportunistic contact syncs.
+                try? await syncContacts.wait()
                 try await backgroundMessageFetcher.waitForFetchingProcessingAndSideEffects()
             })
             await backgroundMessageFetcher.stopAndWaitBeforeSuspending()
@@ -1780,15 +1792,23 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         didReceive response: UNNotificationResponse,
         withCompletionHandler completionHandler: @escaping () -> Void
     ) {
-        let appReadiness: AppReadinessSetter = self.appReadiness
-        appReadiness.runNowOrWhenAppDidBecomeReadySync {
-            Task { @MainActor in
-                await NotificationActionHandler.handleNotificationResponse(
-                    response,
-                    appReadiness: appReadiness
-                )
-                completionHandler()
-            }
+        Task { @MainActor [appReadiness] () -> Void in
+            defer { completionHandler() }
+
+            try await self.appReadiness.waitForAppReady()
+
+            let backgroundMessageFetcherFactory = DependenciesBridge.shared.backgroundMessageFetcherFactory
+            let backgroundMessageFetcher = backgroundMessageFetcherFactory.buildFetcher(useWebSocket: true)
+            // So that we open up a connection for replies.
+            await backgroundMessageFetcher.start()
+            await NotificationActionHandler.handleNotificationResponse(response, appReadiness: appReadiness)
+            let result = await Result(catching: {
+                // So that we wait for any enqueued messages to be sent.
+                try await backgroundMessageFetcher.waitForFetchingProcessingAndSideEffects()
+            })
+            // So that we tear down gracefully.
+            await backgroundMessageFetcher.stopAndWaitBeforeSuspending()
+            try result.get()
         }
     }
 }

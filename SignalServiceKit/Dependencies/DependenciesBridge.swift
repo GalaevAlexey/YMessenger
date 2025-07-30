@@ -71,12 +71,15 @@ public class DependenciesBridge {
     public let backupAttachmentUploadProgress: BackupAttachmentUploadProgress
     public let backupAttachmentUploadQueueRunner: BackupAttachmentUploadQueueRunner
     public let backupAttachmentUploadQueueStatusReporter: BackupAttachmentUploadQueueStatusReporter
+    public let backupDisablingManager: BackupDisablingManager
     public let backupExportJob: BackupExportJob
+    public let backupExportJobRunner: BackupExportJobRunner
     public let backupIdManager: BackupIdManager
     public let backupKeyMaterial: BackupKeyMaterial
     public let backupRequestManager: BackupRequestManager
     public let backupPlanManager: BackupPlanManager
     public let backupSubscriptionManager: BackupSubscriptionManager
+    public let backupTestFlightEntitlementManager: BackupTestFlightEntitlementManager
     public let badgeCountFetcher: BadgeCountFetcher
     public let callLinkStore: any CallLinkRecordStore
     public let callRecordDeleteManager: any CallRecordDeleteManager
@@ -111,6 +114,7 @@ public class DependenciesBridge {
     public let identityKeyMismatchManager: IdentityKeyMismatchManager
     public let identityManager: OWSIdentityManager
     public let inactiveLinkedDeviceFinder: InactiveLinkedDeviceFinder
+    public let inactivePrimaryDeviceStore: InactivePrimaryDeviceStore
     let incomingCallEventSyncMessageManager: IncomingCallEventSyncMessageManager
     let incomingCallLogEventSyncMessageManager: IncomingCallLogEventSyncMessageManager
     public let incomingPniChangeNumberProcessor: IncomingPniChangeNumberProcessor
@@ -119,7 +123,6 @@ public class DependenciesBridge {
     public let interactionDeleteManager: InteractionDeleteManager
     public let interactionStore: InteractionStore
     public let lastVisibleInteractionStore: LastVisibleInteractionStore
-    public let learnMyOwnPniManager: LearnMyOwnPniManager
     public let linkAndSyncManager: LinkAndSyncManager
     public let linkPreviewManager: LinkPreviewManager
     public let linkPreviewSettingStore: LinkPreviewSettingStore
@@ -138,7 +141,6 @@ public class DependenciesBridge {
     public let phoneNumberVisibilityFetcher: any PhoneNumberVisibilityFetcher
     public let pinnedThreadManager: PinnedThreadManager
     public let pinnedThreadStore: PinnedThreadStore
-    public let pniHelloWorldManager: PniHelloWorldManager
     public let preKeyManager: PreKeyManager
     public let privateStoryThreadDeletionManager: any PrivateStoryThreadDeletionManager
     public let quotedReplyManager: QuotedReplyManager
@@ -151,7 +153,6 @@ public class DependenciesBridge {
     public let recipientMerger: RecipientMerger
     public let registrationSessionManager: RegistrationSessionManager
     public let registrationStateChangeManager: RegistrationStateChangeManager
-    public let schedulers: Schedulers
     public let searchableNameIndexer: SearchableNameIndexer
     public let sentMessageTranscriptReceiver: SentMessageTranscriptReceiver
     public let signalProtocolStoreManager: SignalProtocolStoreManager
@@ -202,12 +203,15 @@ public class DependenciesBridge {
         backupAttachmentUploadProgress: BackupAttachmentUploadProgress,
         backupAttachmentUploadQueueRunner: BackupAttachmentUploadQueueRunner,
         backupAttachmentUploadQueueStatusReporter: BackupAttachmentUploadQueueStatusReporter,
+        backupDisablingManager: BackupDisablingManager,
         backupExportJob: BackupExportJob,
+        backupExportJobRunner: BackupExportJobRunner,
         backupIdManager: BackupIdManager,
         backupKeyMaterial: BackupKeyMaterial,
         backupRequestManager: BackupRequestManager,
         backupPlanManager: BackupPlanManager,
         backupSubscriptionManager: BackupSubscriptionManager,
+        backupTestFlightEntitlementManager: BackupTestFlightEntitlementManager,
         badgeCountFetcher: BadgeCountFetcher,
         callLinkStore: any CallLinkRecordStore,
         callRecordDeleteManager: CallRecordDeleteManager,
@@ -242,6 +246,7 @@ public class DependenciesBridge {
         identityKeyMismatchManager: IdentityKeyMismatchManager,
         identityManager: OWSIdentityManager,
         inactiveLinkedDeviceFinder: InactiveLinkedDeviceFinder,
+        inactivePrimaryDeviceStore: InactivePrimaryDeviceStore,
         incomingCallEventSyncMessageManager: IncomingCallEventSyncMessageManager,
         incomingCallLogEventSyncMessageManager: IncomingCallLogEventSyncMessageManager,
         incomingPniChangeNumberProcessor: IncomingPniChangeNumberProcessor,
@@ -250,7 +255,6 @@ public class DependenciesBridge {
         interactionDeleteManager: InteractionDeleteManager,
         interactionStore: InteractionStore,
         lastVisibleInteractionStore: LastVisibleInteractionStore,
-        learnMyOwnPniManager: LearnMyOwnPniManager,
         linkAndSyncManager: LinkAndSyncManager,
         linkPreviewManager: LinkPreviewManager,
         linkPreviewSettingStore: LinkPreviewSettingStore,
@@ -269,7 +273,6 @@ public class DependenciesBridge {
         phoneNumberVisibilityFetcher: any PhoneNumberVisibilityFetcher,
         pinnedThreadManager: PinnedThreadManager,
         pinnedThreadStore: PinnedThreadStore,
-        pniHelloWorldManager: PniHelloWorldManager,
         preKeyManager: PreKeyManager,
         privateStoryThreadDeletionManager: any PrivateStoryThreadDeletionManager,
         quotedReplyManager: QuotedReplyManager,
@@ -282,7 +285,6 @@ public class DependenciesBridge {
         recipientMerger: RecipientMerger,
         registrationSessionManager: RegistrationSessionManager,
         registrationStateChangeManager: RegistrationStateChangeManager,
-        schedulers: Schedulers,
         searchableNameIndexer: SearchableNameIndexer,
         sentMessageTranscriptReceiver: SentMessageTranscriptReceiver,
         signalProtocolStoreManager: SignalProtocolStoreManager,
@@ -332,12 +334,15 @@ public class DependenciesBridge {
         self.backupAttachmentUploadProgress = backupAttachmentUploadProgress
         self.backupAttachmentUploadQueueRunner = backupAttachmentUploadQueueRunner
         self.backupAttachmentUploadQueueStatusReporter = backupAttachmentUploadQueueStatusReporter
+        self.backupDisablingManager = backupDisablingManager
         self.backupExportJob = backupExportJob
+        self.backupExportJobRunner = backupExportJobRunner
         self.backupIdManager = backupIdManager
         self.backupKeyMaterial = backupKeyMaterial
         self.backupRequestManager = backupRequestManager
         self.backupPlanManager = backupPlanManager
         self.backupSubscriptionManager = backupSubscriptionManager
+        self.backupTestFlightEntitlementManager = backupTestFlightEntitlementManager
         self.badgeCountFetcher = badgeCountFetcher
         self.callLinkStore = callLinkStore
         self.callRecordDeleteManager = callRecordDeleteManager
@@ -372,6 +377,7 @@ public class DependenciesBridge {
         self.identityKeyMismatchManager = identityKeyMismatchManager
         self.identityManager = identityManager
         self.inactiveLinkedDeviceFinder = inactiveLinkedDeviceFinder
+        self.inactivePrimaryDeviceStore = inactivePrimaryDeviceStore
         self.incomingCallEventSyncMessageManager = incomingCallEventSyncMessageManager
         self.incomingCallLogEventSyncMessageManager = incomingCallLogEventSyncMessageManager
         self.incomingPniChangeNumberProcessor = incomingPniChangeNumberProcessor
@@ -380,7 +386,6 @@ public class DependenciesBridge {
         self.interactionDeleteManager = interactionDeleteManager
         self.interactionStore = interactionStore
         self.lastVisibleInteractionStore = lastVisibleInteractionStore
-        self.learnMyOwnPniManager = learnMyOwnPniManager
         self.linkAndSyncManager = linkAndSyncManager
         self.linkPreviewManager = linkPreviewManager
         self.linkPreviewSettingStore = linkPreviewSettingStore
@@ -399,7 +404,6 @@ public class DependenciesBridge {
         self.phoneNumberVisibilityFetcher = phoneNumberVisibilityFetcher
         self.pinnedThreadManager = pinnedThreadManager
         self.pinnedThreadStore = pinnedThreadStore
-        self.pniHelloWorldManager = pniHelloWorldManager
         self.preKeyManager = preKeyManager
         self.privateStoryThreadDeletionManager = privateStoryThreadDeletionManager
         self.quotedReplyManager = quotedReplyManager
@@ -412,7 +416,6 @@ public class DependenciesBridge {
         self.recipientMerger = recipientMerger
         self.registrationSessionManager = registrationSessionManager
         self.registrationStateChangeManager = registrationStateChangeManager
-        self.schedulers = schedulers
         self.searchableNameIndexer = searchableNameIndexer
         self.sentMessageTranscriptReceiver = sentMessageTranscriptReceiver
         self.signalProtocolStoreManager = signalProtocolStoreManager

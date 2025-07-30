@@ -632,7 +632,7 @@ private class PaymentProcessingOperation {
 
         do {
             let mobileCoinAPI = try await SUIEnvironment.shared.paymentsImplRef.getMobileCoinAPI()
-            _ = try await mobileCoinAPI.submitTransaction(transaction: transaction).awaitable()
+            _ = try await mobileCoinAPI.submitTransaction(transaction: transaction)
             try await Self.updatePaymentStatePromise(paymentModel: paymentModel, fromState: .outgoingUnsubmitted, toState: .outgoingUnverified)
         } catch PaymentsError.inputsAlreadySpent {
             // e.g. if we double-submit a transaction, it should become unverified,
@@ -666,7 +666,7 @@ private class PaymentProcessingOperation {
             throw PaymentsError.indeterminateState
         }
 
-        let transactionStatus = try await mobileCoinAPI.getOutgoingTransactionStatus(transaction: transaction).awaitable()
+        let transactionStatus = try await mobileCoinAPI.getOutgoingTransactionStatus(transaction: transaction)
 
         try await SSKEnvironment.shared.databaseStorageRef.awaitableWrite { transaction in
             switch transactionStatus.transactionStatus {

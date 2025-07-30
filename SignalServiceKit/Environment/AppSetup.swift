@@ -165,8 +165,6 @@ public class AppSetup {
 
         let avatarDefaultColorManager = AvatarDefaultColorManager()
 
-        let schedulers = DispatchQueueSchedulers()
-
         let appExpiry = AppExpiry(
             appVersion: appVersion,
         )
@@ -179,7 +177,6 @@ public class AppSetup {
             dateProvider: dateProvider,
             databaseChangeObserver: databaseStorage.databaseChangeObserver,
             db: db,
-            schedulers: schedulers
         )
 
         let networkManager = testDependencies.networkManager ?? NetworkManager(
@@ -259,7 +256,6 @@ public class AppSetup {
             nicknameRecordStore: nicknameRecordStore,
             searchableNameIndexer: searchableNameIndexer,
             storageServiceManager: storageServiceManager,
-            schedulers: schedulers
         )
         let contactManager = testDependencies.contactManager ?? OWSContactsManager(
             appReadiness: appReadiness,
@@ -290,7 +286,6 @@ public class AppSetup {
 
         let mediaBandwidthPreferenceStore = MediaBandwidthPreferenceStoreImpl(
             reachabilityManager: reachabilityManager,
-            schedulers: schedulers
         )
 
         let interactionStore = InteractionStoreImpl()
@@ -327,7 +322,6 @@ public class AppSetup {
             db: db,
             networkManager: networkManager,
             profileManager: profileManager,
-            schedulers: schedulers,
             svrLocalStorage: svrLocalStorage,
             syncManager: syncManager,
             tsAccountManager: tsAccountManager
@@ -335,7 +329,6 @@ public class AppSetup {
 
         let phoneNumberDiscoverabilityManager = PhoneNumberDiscoverabilityManagerImpl(
             accountAttributesUpdater: accountAttributesUpdater,
-            schedulers: schedulers,
             storageServiceManager: storageServiceManager,
             tsAccountManager: tsAccountManager
         )
@@ -349,7 +342,7 @@ public class AppSetup {
             credentialStorage: svrCredentialStorage,
             db: db,
             accountKeyStore: accountKeyStore,
-            schedulers: schedulers,
+            scheduler: DispatchQueue(label: "org.signal.svr2", qos: .userInitiated),
             storageServiceManager: storageServiceManager,
             svrLocalStorage: svrLocalStorage,
             syncManager: syncManager,
@@ -357,6 +350,9 @@ public class AppSetup {
             tsConstants: tsConstants,
             twoFAManager: SVR2.Wrappers.OWS2FAManager(ows2FAManager)
         )
+
+        let backupSettingsStore = BackupSettingsStore()
+        let backupCDNCredentialStore = BackupCDNCredentialStore()
 
         let backupKeyMaterial = BackupKeyMaterialImpl(
             accountKeyStore: accountKeyStore
@@ -369,7 +365,9 @@ public class AppSetup {
                 db: db,
                 networkManager: networkManager
             ),
+            backupCDNCredentialStore: backupCDNCredentialStore,
             backupKeyMaterial: backupKeyMaterial,
+            backupSettingsStore: backupSettingsStore,
             dateProvider: dateProvider,
             db: db,
             networkManager: networkManager
@@ -410,7 +408,6 @@ public class AppSetup {
             storyStore: storyStore
         )
 
-        let backupSettingsStore = BackupSettingsStore()
         let backupAttachmentUploadEraStore = BackupAttachmentUploadEraStore()
         let backupAttachmentUploadStore = BackupAttachmentUploadStoreImpl()
         let backupAttachmentDownloadStore = BackupAttachmentDownloadStoreImpl()
@@ -565,6 +562,13 @@ public class AppSetup {
             tsAccountManager: tsAccountManager
         )
 
+        let backupTestFlightEntitlementManager = BackupTestFlightEntitlementManager(
+            backupPlanManager: backupPlanManager,
+            dateProvider: dateProvider,
+            db: db,
+            networkManager: networkManager
+        )
+
         let attachmentManager = AttachmentManagerImpl(
             attachmentDownloadManager: attachmentDownloadManager,
             attachmentStore: attachmentStore,
@@ -627,7 +631,6 @@ public class AppSetup {
             recipientDatabaseTable: recipientDatabaseTable,
             recipientFetcher: recipientFetcher,
             recipientIdFinder: recipientIdFinder,
-            schedulers: schedulers,
             storageServiceManager: storageServiceManager,
             tsAccountManager: tsAccountManager
         )
@@ -726,7 +729,6 @@ public class AppSetup {
         )
         let callRecordStore = CallRecordStoreImpl(
             deletedCallRecordStore: deletedCallRecordStore,
-            schedulers: schedulers
         )
         let callRecordSyncMessageConversationIdAdapater = CallRecordSyncMessageConversationIdAdapterImpl(
             callLinkStore: callLinkStore,
@@ -909,11 +911,23 @@ public class AppSetup {
             storyRecipientStore: storyRecipientStore
         )
 
-        let backupIdManager = BackupIdManager(
+        let backupIdManager = BackupIdManagerImpl(
             accountKeyStore: accountKeyStore,
-            api: BackupIdManager.NetworkAPI(networkManager: networkManager),
             backupRequestManager: backupRequestManager,
-            db: db
+            db: db,
+            networkManager: networkManager,
+        )
+
+        let backupDisablingManager = BackupDisablingManager(
+            authCredentialStore: authCredentialStore,
+            backupAttachmentDownloadQueueStatusManager: backupAttachmentDownloadQueueStatusManager,
+            backupCDNCredentialStore: backupCDNCredentialStore,
+            backupIdManager: backupIdManager,
+            backupListMediaManager: backupListMediaManager,
+            backupPlanManager: backupPlanManager,
+            backupSettingsStore: backupSettingsStore,
+            db: db,
+            tsAccountManager: tsAccountManager,
         )
 
         let registrationStateChangeManager = RegistrationStateChangeManagerImpl(
@@ -927,14 +941,13 @@ public class AppSetup {
             dmConfigurationStore: disappearingMessagesConfigurationStore,
             groupsV2: groupsV2,
             identityManager: identityManager,
+            networkManager: networkManager,
             notificationPresenter: notificationPresenter,
             paymentsEvents: RegistrationStateChangeManagerImpl.Wrappers.PaymentsEvents(paymentsEvents),
             recipientManager: recipientManager,
             recipientMerger: recipientMerger,
-            schedulers: schedulers,
             senderKeyStore: RegistrationStateChangeManagerImpl.Wrappers.SenderKeyStore(senderKeyStore),
             signalProtocolStoreManager: signalProtocolStoreManager,
-            signalService: signalService,
             storageServiceManager: storageServiceManager,
             tsAccountManager: tsAccountManager,
             udManager: udManager,
@@ -954,24 +967,18 @@ public class AppSetup {
             tsAccountManager: tsAccountManager,
             whoAmIManager: whoAmIManager,
         )
-        let pniHelloWorldManager = PniHelloWorldManagerImpl(
-            db: db,
-            identityManager: identityManager,
-            networkManager: PniHelloWorldManagerImpl.Wrappers.NetworkManager(networkManager),
-            pniDistributionParameterBuilder: pniDistributionParameterBuilder,
-            pniSignedPreKeyStore: pniProtocolStore.signedPreKeyStore,
-            pniKyberPreKeyStore: pniProtocolStore.kyberPreKeyStore,
-            recipientDatabaseTable: recipientDatabaseTable,
-            tsAccountManager: tsAccountManager
-        )
+
+        let inactivePrimaryDeviceStore = InactivePrimaryDeviceStore()
 
         let chatConnectionManager = ChatConnectionManagerImpl(
             accountManager: tsAccountManager,
+            appContext: appContext,
             appExpiry: appExpiry,
             appReadiness: appReadiness,
             db: db,
             libsignalNet: libsignalNet,
             registrationStateChangeManager: registrationStateChangeManager,
+            inactivePrimaryDeviceStore: inactivePrimaryDeviceStore,
             userDefaults: appContext.appUserDefaults()
         )
 
@@ -989,17 +996,9 @@ public class AppSetup {
             tsAccountManager: tsAccountManager
         )
 
-        let learnMyOwnPniManager = LearnMyOwnPniManagerImpl(
-            db: db,
-            registrationStateChangeManager: registrationStateChangeManager,
-            tsAccountManager: tsAccountManager,
-            whoAmIManager: whoAmIManager
-        )
-
         let registrationSessionManager = RegistrationSessionManagerImpl(
             dateProvider: dateProvider,
             db: db,
-            schedulers: schedulers,
             signalService: signalService
         )
 
@@ -1014,7 +1013,6 @@ public class AppSetup {
 
         let usernameApiClient = UsernameApiClientImpl(
             networkManager: UsernameApiClientImpl.Wrappers.NetworkManager(networkManager: networkManager),
-            schedulers: schedulers
         )
         let usernameEducationManager = UsernameEducationManagerImpl()
         let usernameLinkManager = UsernameLinkManagerImpl(
@@ -1406,10 +1404,15 @@ public class AppSetup {
             backupIdManager: backupIdManager,
             backupKeyMaterial: backupKeyMaterial,
             backupListMediaManager: backupListMediaManager,
+            backupSettingsStore: backupSettingsStore,
             db: db,
             messageProcessor: messageProcessor,
             orphanedBackupAttachmentManager: orphanedBackupAttachmentManager,
+            reachabilityManager: reachabilityManager,
             tsAccountManager: tsAccountManager
+        )
+        let backupExportJobRunner = BackupExportJobRunnerImpl(
+            backupExportJob: backupExportJob
         )
 
         let dependenciesBridge = DependenciesBridge(
@@ -1439,12 +1442,15 @@ public class AppSetup {
             backupAttachmentUploadProgress: backupAttachmentUploadProgress,
             backupAttachmentUploadQueueRunner: backupAttachmentUploadQueueRunner,
             backupAttachmentUploadQueueStatusReporter: backupAttachmentUploadQueueStatusManager,
+            backupDisablingManager: backupDisablingManager,
             backupExportJob: backupExportJob,
+            backupExportJobRunner: backupExportJobRunner,
             backupIdManager: backupIdManager,
             backupKeyMaterial: backupKeyMaterial,
             backupRequestManager: backupRequestManager,
             backupPlanManager: backupPlanManager,
             backupSubscriptionManager: backupSubscriptionManager,
+            backupTestFlightEntitlementManager: backupTestFlightEntitlementManager,
             badgeCountFetcher: badgeCountFetcher,
             callLinkStore: callLinkStore,
             callRecordDeleteManager: callRecordDeleteManager,
@@ -1479,6 +1485,7 @@ public class AppSetup {
             identityKeyMismatchManager: identityKeyMismatchManager,
             identityManager: identityManager,
             inactiveLinkedDeviceFinder: inactiveLinkedDeviceFinder,
+            inactivePrimaryDeviceStore: inactivePrimaryDeviceStore,
             incomingCallEventSyncMessageManager: incomingCallEventSyncMessageManager,
             incomingCallLogEventSyncMessageManager: incomingCallLogEventSyncMessageManager,
             incomingPniChangeNumberProcessor: incomingPniChangeNumberProcessor,
@@ -1487,7 +1494,6 @@ public class AppSetup {
             interactionDeleteManager: interactionDeleteManager,
             interactionStore: interactionStore,
             lastVisibleInteractionStore: lastVisibleInteractionStore,
-            learnMyOwnPniManager: learnMyOwnPniManager,
             linkAndSyncManager: linkAndSyncManager,
             linkPreviewManager: linkPreviewManager,
             linkPreviewSettingStore: linkPreviewSettingStore,
@@ -1506,7 +1512,6 @@ public class AppSetup {
             phoneNumberVisibilityFetcher: phoneNumberVisibilityFetcher,
             pinnedThreadManager: pinnedThreadManager,
             pinnedThreadStore: pinnedThreadStore,
-            pniHelloWorldManager: pniHelloWorldManager,
             preKeyManager: preKeyManager,
             privateStoryThreadDeletionManager: privateStoryThreadDeletionManager,
             quotedReplyManager: quotedReplyManager,
@@ -1519,7 +1524,6 @@ public class AppSetup {
             recipientMerger: recipientMerger,
             registrationSessionManager: registrationSessionManager,
             registrationStateChangeManager: registrationStateChangeManager,
-            schedulers: schedulers,
             searchableNameIndexer: searchableNameIndexer,
             sentMessageTranscriptReceiver: sentMessageTranscriptReceiver,
             signalProtocolStoreManager: signalProtocolStoreManager,

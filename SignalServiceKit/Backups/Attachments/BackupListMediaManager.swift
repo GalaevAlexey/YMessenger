@@ -80,7 +80,7 @@ public class BackupListMediaManagerImpl: BackupListMediaManager {
     }
 
     private func _queryListMediaIfNeeded() async throws {
-        guard FeatureFlags.Backups.fileAlpha else {
+        guard FeatureFlags.Backups.supported else {
             return
         }
         let (
@@ -900,7 +900,7 @@ public class BackupListMediaManagerImpl: BackupListMediaManager {
         switch currentBackupPlan {
         case .disabled:
             return false
-        case .free, .paid, .paidExpiringSoon:
+        case .disabling, .free, .paid, .paidExpiringSoon, .paidAsTester:
             break
         }
 
@@ -922,11 +922,11 @@ public class BackupListMediaManagerImpl: BackupListMediaManager {
             return true
         }
         switch currentBackupPlan {
-        case .disabled:
+        case .disabled, .disabling:
             return false
         case .free:
             return false
-        case .paid, .paidExpiringSoon:
+        case .paid, .paidExpiringSoon, .paidAsTester:
             // If paid tier, query periodically as a catch-all to ensure local state
             // stays in sync with the server.
             let nowMs = dateProvider().ows_millisecondsSince1970
@@ -1015,3 +1015,19 @@ public class BackupListMediaManagerImpl: BackupListMediaManager {
         static let hasCompletedEnumeratingAttachmentsKey = "hasCompletedEnumeratingAttachmentsKey"
     }
 }
+
+// MARK: -
+
+#if TESTABLE_BUILD
+
+class MockBackupListMediaManager: BackupListMediaManager {
+    func queryListMediaIfNeeded() async throws {
+        // Nothing
+    }
+
+    func setNeedsQueryListMedia(tx: DBWriteTransaction) {
+        // Nothing
+    }
+}
+
+#endif

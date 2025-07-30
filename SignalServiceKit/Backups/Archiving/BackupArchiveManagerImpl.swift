@@ -22,7 +22,7 @@ public class BackupArchiveManagerImpl: BackupArchiveManager {
         fileprivate static let keyValueStoreCollectionName = "MessageBackupManager"
         fileprivate static let keyValueStoreHasReservedBackupKey = "HasReservedBackupKey"
         fileprivate static let keyValueStoreHasReservedMediaBackupKey = "HasReservedMediaBackupKey"
-        fileprivate static let keyValueStoreHasRestoredBackupKey = "HasRestoredBackup"
+        fileprivate static let keyValueStoreRestoreStateKey = "keyValueStoreRestoreStateKey"
 
         public static let supportedBackupVersion: UInt64 = 1
 
@@ -181,7 +181,7 @@ public class BackupArchiveManagerImpl: BackupArchiveManager {
 
     public func uploadEncryptedBackup(
         metadata: Upload.EncryptedBackupUploadMetadata,
-        registeredBackupIDToken: BackupIdManager.RegisteredBackupIDToken,
+        registeredBackupIDToken: RegisteredBackupIDToken,
         auth: ChatServiceAuth,
         progress: OWSProgressSink?
     ) async throws -> Upload.Result<Upload.EncryptedBackupUploadMetadata> {
@@ -200,7 +200,21 @@ public class BackupArchiveManagerImpl: BackupArchiveManager {
             localAci: localIdentifiers.aci,
             auth: auth
         )
-        let form = try await backupRequestManager.fetchBackupUploadForm(auth: backupAuth)
+        let form: Upload.Form
+        do {
+            form = try await backupRequestManager.fetchBackupUploadForm(
+                backupByteLength: metadata.encryptedDataLength,
+                auth: backupAuth
+            )
+        } catch let error {
+            switch (error as? BackupArchive.Response.BackupUploadFormError) {
+            case .tooLarge:
+                Logger.warn("Backup too large! \(metadata.encryptedDataLength)")
+            default:
+                break
+            }
+            throw error
+        }
         let result = try await attachmentUploadManager.uploadBackup(
             localUploadMetadata: metadata,
             form: form,
@@ -215,9 +229,9 @@ public class BackupArchiveManagerImpl: BackupArchiveManager {
         switch backupPlan {
         case .free:
             break
-        case .paid, .paidExpiringSoon:
+        case .paid, .paidExpiringSoon, .paidAsTester:
             backupSize += metadata.attachmentByteSize
-        case .disabled:
+        case .disabled, .disabling:
             owsFailDebug("Shouldn't generate backup when backups is disabled")
             backupSize = 0
         }
@@ -268,7 +282,7 @@ public class BackupArchiveManagerImpl: BackupArchiveManager {
         localIdentifiers: LocalIdentifiers,
         progress progressSink: OWSProgressSink?
     ) async throws -> URL {
-        guard FeatureFlags.Backups.fileAlpha else {
+        guard FeatureFlags.Backups.supported else {
             owsFailDebug("Should not be able to use backups!")
             throw NotImplementedError()
         }
@@ -657,12 +671,17 @@ public class BackupArchiveManagerImpl: BackupArchiveManager {
 
     // MARK: - Import
 
-    public func hasRestoredFromBackup(tx: DBReadTransaction) -> Bool {
-        return kvStore.getBool(
-            Constants.keyValueStoreHasRestoredBackupKey,
-            defaultValue: false,
+    public func backupRestoreState(tx: DBReadTransaction) -> BackupRestoreState {
+        let raw = kvStore.getInt(
+            Constants.keyValueStoreRestoreStateKey,
+            defaultValue: 0,
             transaction: tx
         )
+        guard let value = BackupRestoreState(rawValue: raw) else {
+            owsFailDebug("Unrecognized state!")
+            return .none
+        }
+        return value
     }
 
     public func importEncryptedBackup(
@@ -699,7 +718,7 @@ public class BackupArchiveManagerImpl: BackupArchiveManager {
         backupPurpose: MessageBackupPurpose,
         progress progressSink: OWSProgressSink?
     ) async throws {
-        guard FeatureFlags.Backups.fileAlpha else {
+        guard FeatureFlags.Backups.supported else {
             owsFailDebug("Should not be able to use backups!")
             throw NotImplementedError()
         }
@@ -720,6 +739,21 @@ public class BackupArchiveManagerImpl: BackupArchiveManager {
         )
     }
 
+    /// Everything in this method MUST be idempotent, as partial progress can be made
+    /// before app termination, which will result in this getting called again.
+    public func finalizeBackupImport(progress: OWSProgressSink?) async throws {
+        // TODO: add more steps here, like restoring oversize text
+        let source = await progress?.addSource(withLabel: "", unitCount: 1)
+        source?.incrementCompletedUnitCount(by: 1)
+        await db.awaitableWrite { tx in
+            kvStore.setInt(
+                BackupRestoreState.finalized.rawValue,
+                key: Constants.keyValueStoreRestoreStateKey,
+                transaction: tx
+            )
+        }
+    }
+
     private func _importBackup(
         fileUrl: URL,
         localIdentifiers: LocalIdentifiers,
@@ -736,6 +770,7 @@ public class BackupArchiveManagerImpl: BackupArchiveManager {
         let migrateAttachmentsProgressSink: OWSProgressSink?
         let frameRestoreProgress: BackupArchiveImportFramesProgress?
         let recreateIndexesProgress: BackupArchiveImportRecreateIndexesProgress?
+        let finalizeProgress: OWSProgressSink?
         if let progressSink {
             migrateAttachmentsProgressSink = await progressSink.addChild(
                 withLabel: "Import Backup: Migrate Attachments",
@@ -744,20 +779,25 @@ public class BackupArchiveManagerImpl: BackupArchiveManager {
             frameRestoreProgress = try await .prepare(
                 sink: await progressSink.addChild(
                     withLabel: "Import Backup: Import Frames",
-                    unitCount: 80
+                    unitCount: 78
                 ),
                 fileUrl: fileUrl
             )
             recreateIndexesProgress = await .prepare(
                 sink: await progressSink.addChild(
                     withLabel: "Import Backup: Recreate Indexes",
-                    unitCount: 15
+                    unitCount: 12
                 )
+            )
+            finalizeProgress  = await progressSink.addChild(
+                withLabel: "Import Backup: Finalize",
+                unitCount: 5
             )
         } else {
             migrateAttachmentsProgressSink = nil
             frameRestoreProgress = nil
             recreateIndexesProgress = nil
+            finalizeProgress = nil
         }
 
         let messageProcessingSuspensionHandle = messagePipelineSupervisor.suspendMessageProcessing(for: .backup)
@@ -811,6 +851,8 @@ public class BackupArchiveManagerImpl: BackupArchiveManager {
             backupCurrentAppVersion: backupInfo.currentAppVersion.nilIfEmpty,
             backupFirstAppVersion: backupInfo.firstAppVersion.nilIfEmpty
         )
+
+        try await self.finalizeBackupImport(progress: finalizeProgress)
     }
 
     private func _importBackup(
@@ -828,7 +870,10 @@ public class BackupArchiveManagerImpl: BackupArchiveManager {
             memorySampler: memorySampler
         )
 
-        guard !hasRestoredFromBackup(tx: tx) else {
+        switch backupRestoreState(tx: tx) {
+        case .none:
+            break
+        case .unfinalized, .finalized:
             throw OWSAssertionError("Restoring from backup twice!")
         }
 
@@ -1210,7 +1255,11 @@ public class BackupArchiveManagerImpl: BackupArchiveManager {
             try fullTextSearchIndexer.scheduleMessagesJob(tx: tx)
 
             // Record that we've restored a Backup!
-            kvStore.setBool(true, key: Constants.keyValueStoreHasRestoredBackupKey, transaction: tx)
+            kvStore.setInt(
+                BackupRestoreState.unfinalized.rawValue,
+                key: Constants.keyValueStoreRestoreStateKey,
+                transaction: tx
+            )
 
             tx.addSyncCompletion { [
                 avatarFetcher,

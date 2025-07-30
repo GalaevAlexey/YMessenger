@@ -241,7 +241,10 @@ class AppSettingsViewController: OWSTableViewController2 {
                 self?.navigationController?.pushViewController(vc, animated: true)
             }
         ))
-        if isPrimaryDevice, FeatureFlags.Backups.settings {
+        if
+            isPrimaryDevice,
+            RemoteConfig.current.allowBackupSettings
+        {
             section2.add(.disclosureItem(
                 icon: .backup,
                 withText: OWSLocalizedString(
@@ -530,7 +533,6 @@ class AppSettingsViewController: OWSTableViewController2 {
             let usernameLinkController = UsernameLinkQRCodeContentController(
                 db: DependenciesBridge.shared.db,
                 localUsernameManager: DependenciesBridge.shared.localUsernameManager,
-                schedulers: DependenciesBridge.shared.schedulers,
                 username: localUsername,
                 usernameLink: localUsernameLink,
                 changeDelegate: self,

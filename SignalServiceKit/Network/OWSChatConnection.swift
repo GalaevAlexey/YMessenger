@@ -41,10 +41,15 @@ public enum OWSChatConnectionState: Int, CustomDebugStringConvertible {
 
 // MARK: -
 public class OWSChatConnection {
+    enum AlertType: String {
+        case idlePrimaryDevice = "idle-primary-device"
+    }
+
     // TODO: Should we use a higher-priority queue?
     fileprivate static let messageProcessingQueue = DispatchQueue(label: "org.signal.chat-connection.message-processing")
 
     public static let chatConnectionStateDidChange = Notification.Name("chatConnectionStateDidChange")
+    public static let chatConnectionStateKey: String = "chatConnectionState"
 
     fileprivate let serialQueue: DispatchQueue
 
@@ -56,6 +61,7 @@ public class OWSChatConnection {
     fileprivate let db: any DB
     fileprivate let accountManager: TSAccountManager
     fileprivate let registrationStateChangeManager: RegistrationStateChangeManager
+    fileprivate let inactivePrimaryDeviceStore: InactivePrimaryDeviceStore
 
     // This var must be thread-safe.
     public var currentState: OWSChatConnectionState {
@@ -81,7 +87,8 @@ public class OWSChatConnection {
         appExpiry: AppExpiry,
         appReadiness: AppReadiness,
         db: any DB,
-        registrationStateChangeManager: RegistrationStateChangeManager
+        registrationStateChangeManager: RegistrationStateChangeManager,
+        inactivePrimaryDeviceStore: InactivePrimaryDeviceStore
     ) {
         AssertIsOnMainThread()
 
@@ -92,6 +99,7 @@ public class OWSChatConnection {
         self.db = db
         self.accountManager = accountManager
         self.registrationStateChangeManager = registrationStateChangeManager
+        self.inactivePrimaryDeviceStore = inactivePrimaryDeviceStore
 
         appReadiness.runNowOrWhenAppDidBecomeReadySync { [weak self] in
             self?.appDidBecomeReady()
@@ -165,7 +173,11 @@ public class OWSChatConnection {
         if newState != oldState {
             Logger.info("\(logPrefix): \(oldState) -> \(newState)")
         }
-        NotificationCenter.default.postOnMainThread(name: Self.chatConnectionStateDidChange, object: nil)
+        NotificationCenter.default.postOnMainThread(
+            name: Self.chatConnectionStateDidChange,
+            object: nil,
+            userInfo: [Self.chatConnectionStateKey: newState],
+        )
     }
 
     fileprivate var cachedCurrentState: OWSChatConnectionState {
@@ -208,7 +220,7 @@ public class OWSChatConnection {
         case .nse:
             return false // because there is a kill switch
         case .share:
-            return false
+            return false // because there is a kill switch
         }
     }
 
@@ -217,9 +229,9 @@ public class OWSChatConnection {
         case .main:
             return true
         case .nse:
-            return FeatureFlags.notificationServiceWebSocket && RemoteConfig.current.isNotificationServiceWebSocketEnabled
+            return RemoteConfig.current.isNotificationServiceWebSocketEnabled
         case .share:
-            return false
+            return RemoteConfig.current.isShareExtensionWebSocketEnabled
         }
     }
 
@@ -325,7 +337,7 @@ public class OWSChatConnection {
     public func requestConnection(shouldReconnectIfConnectedElsewhere: Bool) -> ConnectionToken {
         let (connectionToken, shouldConnect) = connectionTokenState.update {
             $0.tokenId += 1
-            let shouldConnect = $0.activeTokenIds.isEmpty
+            let shouldConnect = !$0.shouldSocketBeOpen()
             // If we want to reconnect, set the number of retries to "Int.max" (aka
             // "infinity"). If we shouldn't reconnect, set the number of retries to 1.
             $0.activeTokenIds[$0.tokenId] = shouldReconnectIfConnectedElsewhere ? Int.max : 1
@@ -341,7 +353,7 @@ public class OWSChatConnection {
     private func releaseConnection(_ tokenId: Int) -> Bool {
         let (didRelease, shouldDisconnect) = connectionTokenState.update {
             let didRelease = $0.activeTokenIds.removeValue(forKey: tokenId) != nil
-            return (didRelease, $0.activeTokenIds.isEmpty)
+            return (didRelease, !$0.shouldSocketBeOpen())
         }
         if shouldDisconnect {
             applyDesiredSocketState()
@@ -402,10 +414,14 @@ public class OWSChatConnection {
 
     // This method must be thread-safe.
     fileprivate func cycleSocket() {
-        serialQueue.async {
-            self.disconnectIfNeeded()
-            self._applyDesiredSocketState()
-        }
+        serialQueue.async(self._cycleSocket)
+    }
+
+    fileprivate func _cycleSocket() {
+        assertOnQueue(serialQueue)
+
+        disconnectIfNeeded()
+        _applyDesiredSocketState()
     }
 
     fileprivate func ensureWebsocketExists() {
@@ -595,9 +611,9 @@ internal class OWSChatConnectionUsingLibSignal<Connection: ChatConnection & Send
         }
     }
 
-    internal init(libsignalNet: Net, type: OWSChatConnectionType, accountManager: TSAccountManager, appExpiry: AppExpiry, appReadiness: AppReadiness, db: any DB, registrationStateChangeManager: RegistrationStateChangeManager) {
+    internal init(libsignalNet: Net, type: OWSChatConnectionType, accountManager: TSAccountManager, appExpiry: AppExpiry, appReadiness: AppReadiness, db: any DB, registrationStateChangeManager: RegistrationStateChangeManager, inactivePrimaryDeviceStore: InactivePrimaryDeviceStore) {
         self.libsignalNet = libsignalNet
-        super.init(type: type, accountManager: accountManager, appExpiry: appExpiry, appReadiness: appReadiness, db: db, registrationStateChangeManager: registrationStateChangeManager)
+        super.init(type: type, accountManager: accountManager, appExpiry: appExpiry, appReadiness: appReadiness, db: db, registrationStateChangeManager: registrationStateChangeManager, inactivePrimaryDeviceStore: inactivePrimaryDeviceStore)
     }
 
     fileprivate func connectChatService() async throws -> Connection {
@@ -614,6 +630,7 @@ internal class OWSChatConnectionUsingLibSignal<Connection: ChatConnection & Send
     fileprivate override func ensureWebsocketExists() {
         assertOnQueue(serialQueue)
 
+        let disconnectTask: Task<Void, Never>?
         switch connection {
         case .open(_):
             return
@@ -621,13 +638,17 @@ internal class OWSChatConnectionUsingLibSignal<Connection: ChatConnection & Send
             // The most recent transition was attempting to connect, and we have not yet observed a failure.
             // That's as good as we're going to get.
             return
-        case .closed(_):
-            break
+        case .closed(let task):
+            disconnectTask = task
         }
 
         // Unique while live.
         let token = NSObject()
         connection = .connecting(token: token, task: Task { [token] () -> Connection? in
+            // We need to wait until the prior connection releases the connection lock
+            // before we try to acquire it again. This happens as part of this Task.
+            await disconnectTask?.value
+
             func connectionAttemptCompleted(_ state: ConnectionState) async -> Connection? {
                 // We're not done until self.connection has been updated.
                 // (Otherwise, we might try to send requests before calling start(listener:).)
@@ -805,6 +826,8 @@ internal class OWSChatConnectionUsingLibSignal<Connection: ChatConnection & Send
                 throw OWSHTTPError.networkFailure(.genericTimeout)
             case SignalError.webSocketError(_), SignalError.connectionFailed(_):
                 throw OWSHTTPError.networkFailure(.genericFailure)
+            case SignalError.connectionInvalidated(_):
+                throw OWSHTTPError.networkFailure(.wrappedFailure(error))
             case is CancellationError:
                 throw error
             default:
@@ -897,8 +920,8 @@ internal class OWSChatConnectionUsingLibSignal<Connection: ChatConnection & Send
 }
 
 internal class OWSUnauthConnectionUsingLibSignal: OWSChatConnectionUsingLibSignal<UnauthenticatedChatConnection> {
-    init(libsignalNet: Net, accountManager: TSAccountManager, appExpiry: AppExpiry, appReadiness: AppReadiness, db: any DB, registrationStateChangeManager: RegistrationStateChangeManager) {
-        super.init(libsignalNet: libsignalNet, type: .unidentified, accountManager: accountManager, appExpiry: appExpiry, appReadiness: appReadiness, db: db, registrationStateChangeManager: registrationStateChangeManager)
+    init(libsignalNet: Net, accountManager: TSAccountManager, appExpiry: AppExpiry, appReadiness: AppReadiness, db: any DB, registrationStateChangeManager: RegistrationStateChangeManager, inactivePrimaryDeviceStore: InactivePrimaryDeviceStore) {
+        super.init(libsignalNet: libsignalNet, type: .unidentified, accountManager: accountManager, appExpiry: appExpiry, appReadiness: appReadiness, db: db, registrationStateChangeManager: registrationStateChangeManager, inactivePrimaryDeviceStore: inactivePrimaryDeviceStore)
     }
 
     fileprivate override var connection: ConnectionState {
@@ -939,11 +962,33 @@ internal class OWSAuthConnectionUsingLibSignal: OWSChatConnectionUsingLibSignal<
         }
     }
 
-    init(libsignalNet: Net, accountManager: TSAccountManager, appExpiry: AppExpiry, appReadiness: AppReadiness, db: any DB, registrationStateChangeManager: RegistrationStateChangeManager) {
-        super.init(libsignalNet: libsignalNet, type: .identified, accountManager: accountManager, appExpiry: appExpiry, appReadiness: appReadiness, db: db, registrationStateChangeManager: registrationStateChangeManager)
+    init(
+        libsignalNet: Net,
+        accountManager: TSAccountManager,
+        appContext: any AppContext,
+        appExpiry: AppExpiry,
+        appReadiness: AppReadiness,
+        db: any DB,
+        registrationStateChangeManager: RegistrationStateChangeManager,
+        inactivePrimaryDeviceStore: InactivePrimaryDeviceStore,
+    ) {
+        let priority: Int
+        switch appContext.type {
+        case .share: priority = 1
+        case .main: priority = 2
+        case .nse: priority = 3
+        }
+        let priorityCount = 3
+        self.connectionLock = ConnectionLock(filePath: appContext.appSharedDataDirectoryPath().appendingPathComponent("chat-connection.lock"), priority: priority, of: priorityCount)
+        super.init(libsignalNet: libsignalNet, type: .identified, accountManager: accountManager, appExpiry: appExpiry, appReadiness: appReadiness, db: db, registrationStateChangeManager: registrationStateChangeManager, inactivePrimaryDeviceStore: inactivePrimaryDeviceStore)
+    }
+
+    deinit {
+        self.connectionLock.close()
     }
 
     fileprivate override func connectChatService() async throws -> AuthenticatedChatConnection {
+        try await self.acquireConnectionLock()
         let (username, password) = db.read { tx in
             (accountManager.storedServerUsername(tx: tx), accountManager.storedServerAuthToken(tx: tx))
         }
@@ -952,10 +997,22 @@ internal class OWSAuthConnectionUsingLibSignal: OWSChatConnectionUsingLibSignal<
     }
 
     fileprivate override var connection: ConnectionState {
-        didSet {
+        get {
+            return super.connection
+        }
+        set {
             assertOnQueue(serialQueue)
-
-            switch connection {
+            let updatedValue: ConnectionState
+            if case .closed(let task) = newValue {
+                updatedValue = .closed(task: Task {
+                    await task?.value
+                    self.releaseConnectionLock()
+                })
+            } else {
+                updatedValue = newValue
+            }
+            super.connection = updatedValue
+            switch updatedValue {
             case .connecting(token: _, task: _):
                 break
             case .open(let service):
@@ -967,10 +1024,35 @@ internal class OWSAuthConnectionUsingLibSignal: OWSChatConnectionUsingLibSignal<
                     }
                 }
                 keepaliveSenderTask = makeKeepaliveTask(service)
-            case .closed:
+            case .closed(task: _):
                 keepaliveSenderTask = nil
                 _hasEmptiedInitialQueue = false
             }
+        }
+    }
+
+    private let connectionLock: ConnectionLock
+    private let heldConnectionLock = AtomicValue<ConnectionLock.HeldLock?>(nil, lock: .init())
+
+    private func acquireConnectionLock() async throws {
+        guard RemoteConfig.current.isConnectionLockEnabled else {
+            return
+        }
+        owsPrecondition(self.heldConnectionLock.get() == nil)
+        let newValue = try await self.connectionLock.lock(onInterrupt: (self.serialQueue, {
+            Logger.warn("Cycling the socket because the connection lock was interrupted")
+            self._cycleSocket()
+        }))
+        let oldValue = self.heldConnectionLock.swap(newValue)
+        owsPrecondition(oldValue == nil)
+    }
+
+    private func releaseConnectionLock() {
+        let oldValue = self.heldConnectionLock.swap(nil)
+        // We might be canceled while trying to acquire the lock, and we won't have
+        // a lock that needs to be released in that case.
+        if let oldValue {
+            self.connectionLock.unlock(oldValue)
         }
     }
 
@@ -1019,15 +1101,39 @@ internal class OWSAuthConnectionUsingLibSignal: OWSChatConnectionUsingLibSignal<
         }
     }
 
+    private func handleInactivePrimaryDeviceAlert(newInactivePrimaryDevice: Bool) {
+        let storedInactivePrimaryDevice = db.read { tx in
+            return inactivePrimaryDeviceStore.valueForInactivePrimaryDeviceAlert(transaction: tx)
+        }
+
+        guard storedInactivePrimaryDevice != newInactivePrimaryDevice else {
+            return
+        }
+
+        Logger.info("Received new value for inactive primary device alert: \(newInactivePrimaryDevice)")
+
+        db.write { transaction in
+            inactivePrimaryDeviceStore.setValueForInactivePrimaryDeviceAlert(value: newInactivePrimaryDevice, transaction: transaction)
+        }
+
+        // Megaphones might load before we setup the OWSChatConnection
+        // so we should notify the UI that the value has changed.
+        NotificationCenter.default.postOnMainThread(name: .inactivePrimaryDeviceChanged, object: nil)
+    }
+
     func chatConnection(_ chat: AuthenticatedChatConnection, didReceiveAlerts alerts: [String]) {
         self.serialQueue.async { [self] in
             guard self.connection.isActive(chat) else {
                 // We have since disconnected from the chat service instance that reported the alerts.
                 return
             }
+            var alertSet = Set(alerts)
 
-            if !alerts.isEmpty {
-                Logger.warn("ignoring \(alerts.count) alerts from the server")
+            handleInactivePrimaryDeviceAlert(newInactivePrimaryDevice: alertSet.contains(AlertType.idlePrimaryDevice.rawValue))
+
+            alertSet.remove(AlertType.idlePrimaryDevice.rawValue)
+            if !alertSet.isEmpty {
+                Logger.warn("ignoring \(alertSet.count) alerts from the server")
             }
         }
     }

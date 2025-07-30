@@ -150,7 +150,7 @@ public struct BackupAttachmentDownloadEligibility {
         currentTimestamp: UInt64,
         backupPlan: BackupPlan
     ) rethrows -> QueuedBackupAttachmentDownload.State? {
-        guard FeatureFlags.Backups.remoteExportAlpha else {
+        guard FeatureFlags.Backups.supported else {
             return nil
         }
         guard attachment.asStream() == nil else {
@@ -169,18 +169,26 @@ public struct BackupAttachmentDownloadEligibility {
         case .disabled:
             // Never do media tier downloads when disabled.
             return .ineligible
+        case .disabling:
+            // Everything is eligible for download if we're currently trying to
+            // disable.
+            return .ready
         case .free:
             // While free, we consider all attachments for which we have some media tier info
             // as eligible for downloading. Elsewhere we may choose not to _enqueue_ the download,
             // but for eligibility purposes "free" is the same as paid with optimize off.
             return .ready
         case
-                .paid(let optimizeLocalStorage) where optimizeLocalStorage == false,
-                .paidExpiringSoon(let optimizeLocalStorage) where optimizeLocalStorage == false:
+                .paid(optimizeLocalStorage: false),
+                .paidExpiringSoon(optimizeLocalStorage: false),
+                .paidAsTester(optimizeLocalStorage: false):
             // Everything is eligible for download when optimize is off.
             return .ready
 
-        case .paid, .paidExpiringSoon:
+        case
+                .paid(optimizeLocalStorage: true),
+                .paidExpiringSoon(optimizeLocalStorage: true),
+                .paidAsTester(optimizeLocalStorage: true):
             guard let attachmentTimestamp = try getAttachmentTimestamp() else {
                 // Nil timestamps are used for thread wallpapers, which we never offload.
                 return .ready
@@ -205,13 +213,13 @@ public struct BackupAttachmentDownloadEligibility {
         attachment: Attachment,
         backupPlan: BackupPlan,
     ) -> QueuedBackupAttachmentDownload.State? {
-        guard FeatureFlags.Backups.remoteExportAlpha else {
+        guard FeatureFlags.Backups.supported else {
             return nil
         }
         switch backupPlan {
         case .disabled:
             return .ineligible
-        case .free, .paid, .paidExpiringSoon:
+        case .disabling, .free, .paid, .paidExpiringSoon, .paidAsTester:
             if attachment.mediaName == nil {
                 return nil
             }
@@ -260,7 +268,7 @@ public struct BackupAttachmentDownloadEligibility {
             } else {
                 fallthrough
             }
-        case .free, .paid, .paidExpiringSoon:
+        case .disabling, .free, .paid, .paidExpiringSoon, .paidAsTester:
             if Self.disableTransitTierDownloadsOverride {
                 return nil
             }

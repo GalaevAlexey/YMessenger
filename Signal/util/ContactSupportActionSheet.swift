@@ -6,6 +6,21 @@
 import SignalServiceKit
 import SignalUI
 
+extension ActionSheetAction {
+    static func contactSupport(
+        emailFilter: ContactSupportActionSheet.EmailFilter,
+        fromViewController: UIViewController,
+    ) -> ActionSheetAction {
+        ActionSheetAction(title: CommonStrings.contactSupport) { _ in
+            ContactSupportActionSheet.present(
+                emailFilter: emailFilter,
+                logDumper: .fromGlobals(),
+                fromViewController: fromViewController,
+            )
+        }
+    }
+}
+
 enum ContactSupportActionSheet {
     enum EmailFilter: Equatable {
         enum RegistrationPINMode: String {
@@ -19,6 +34,7 @@ enum ContactSupportActionSheet {
         case deviceTransfer
         case backupExportFailed
         case backupImportFailed
+        case backupDisableFailed
         case custom(String)
 
         fileprivate var asString: String {
@@ -30,12 +46,18 @@ enum ContactSupportActionSheet {
             case .deviceTransfer: "Signal iOS Transfer"
             case .backupExportFailed: "iOS Backup Export Failed"
             case .backupImportFailed: "iOS Backup Import Failed"
+            case .backupDisableFailed: "iOS Backup Disable Failed"
             case .custom(let string): string
             }
         }
     }
 
-    static func present(emailFilter: EmailFilter, logDumper: DebugLogDumper, fromViewController: UIViewController) {
+    static func present(
+        emailFilter: EmailFilter,
+        logDumper: DebugLogDumper,
+        fromViewController: UIViewController,
+        completion: (() -> Void)? = nil
+    ) {
         Logger.warn("Presenting contact-support action sheet!")
 
         let submitWithLogTitle = OWSLocalizedString("CONTACT_SUPPORT_SUBMIT_WITH_LOG", comment: "Button text")
@@ -51,13 +73,20 @@ enum ContactSupportActionSheet {
                 canCancel: true,
                 asyncBlock: { modal in
                     let result = await Result {
-                        return try await ComposeSupportEmailOperation(model: emailRequest).perform()
+                        try await ComposeSupportEmailOperation(model: emailRequest).perform()
                     }
                     modal.dismissIfNotCanceled(completionIfNotCanceled: {
                         do {
                             try result.get()
+                            completion?()
                         } catch {
-                            showError(error, emailFilter: emailFilter, logDumper: logDumper, fromViewController: fromViewController)
+                            showError(
+                                error,
+                                emailFilter: emailFilter,
+                                logDumper: logDumper,
+                                fromViewController: fromViewController,
+                                completion: completion
+                            )
                         }
                     })
                 }
@@ -67,9 +96,12 @@ enum ContactSupportActionSheet {
         let submitWithoutLogTitle = OWSLocalizedString("CONTACT_SUPPORT_SUBMIT_WITHOUT_LOG", comment: "Button text")
         let submitWithoutLogAction = ActionSheetAction(title: submitWithoutLogTitle, style: .default) { [weak fromViewController] _ in
             guard let fromViewController = fromViewController else { return }
-
-            ComposeSupportEmailOperation.sendEmail(supportFilter: emailFilter.asString).catch { error in
-                showError(error, emailFilter: emailFilter, logDumper: logDumper, fromViewController: fromViewController)
+            Task {
+                do {
+                    try await ComposeSupportEmailOperation.sendEmail(supportFilter: emailFilter.asString)
+                } catch {
+                    showError(error, emailFilter: emailFilter, logDumper: logDumper, fromViewController: fromViewController)
+                }
             }
         }
 
@@ -78,23 +110,46 @@ enum ContactSupportActionSheet {
         let actionSheet = ActionSheetController(title: title, message: message)
         actionSheet.addAction(submitWithLogAction)
         actionSheet.addAction(submitWithoutLogAction)
-        actionSheet.addAction(OWSActionSheets.cancelAction)
+        actionSheet.addAction(ActionSheetAction(
+            title: CommonStrings.cancelButton,
+            style: .cancel,
+            handler: { _ in
+                completion?()
+            }
+        ))
 
         fromViewController.present(actionSheet, animated: true)
     }
 
-    private static func showError(_ error: Error, emailFilter: EmailFilter, logDumper: DebugLogDumper, fromViewController: UIViewController) {
+    private static func showError(
+        _ error: Error,
+        emailFilter: EmailFilter,
+        logDumper: DebugLogDumper,
+        fromViewController: UIViewController,
+        completion: (() -> Void)? = nil
+    ) {
         let retryTitle = OWSLocalizedString("CONTACT_SUPPORT_PROMPT_ERROR_TRY_AGAIN", comment: "button text")
         let retryAction = ActionSheetAction(title: retryTitle, style: .default) { [weak fromViewController] _ in
             guard let fromViewController = fromViewController else { return }
 
-            present(emailFilter: emailFilter, logDumper: logDumper, fromViewController: fromViewController)
+            present(
+                emailFilter: emailFilter,
+                logDumper: logDumper,
+                fromViewController: fromViewController,
+                completion: completion
+            )
         }
 
         let message = OWSLocalizedString("CONTACT_SUPPORT_PROMPT_ERROR_ALERT_BODY", comment: "Alert body")
         let actionSheet = ActionSheetController(title: error.userErrorDescription, message: message)
         actionSheet.addAction(retryAction)
-        actionSheet.addAction(OWSActionSheets.cancelAction)
+        actionSheet.addAction(ActionSheetAction(
+            title: CommonStrings.cancelButton,
+            style: .cancel,
+            handler: { _ in
+                completion?()
+            }
+        ))
 
         fromViewController.present(actionSheet, animated: true)
     }

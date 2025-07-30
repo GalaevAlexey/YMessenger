@@ -36,6 +36,10 @@ public enum ExperienceUpgradeManifest {
     /// soon.
     case inactiveLinkedDeviceReminder
 
+    /// Prompts the user on linked devices about any "inactive" primary devices
+    /// that will expire soon
+    case inactivePrimaryDeviceReminder
+
     /// Prompts the user to enter their PIN, to help ensure they remember it.
     ///
     /// Note that this upgrade stores state in external components, rather than
@@ -115,6 +119,8 @@ extension ExperienceUpgradeManifest {
                 return .createUsernameReminder
             case Self.inactiveLinkedDeviceReminder.uniqueId:
                 return .inactiveLinkedDeviceReminder
+            case Self.inactivePrimaryDeviceReminder.uniqueId:
+                return .inactivePrimaryDeviceReminder
             case Self.pinReminder.uniqueId:
                 return .pinReminder
             case Self.contactPermissionReminder.uniqueId:
@@ -149,6 +155,7 @@ extension ExperienceUpgradeManifest {
         .notificationPermissionReminder,
         .createUsernameReminder,
         .inactiveLinkedDeviceReminder,
+        .inactivePrimaryDeviceReminder,
         .pinReminder,
         .contactPermissionReminder,
         .backupKeyReminder,
@@ -176,6 +183,8 @@ extension ExperienceUpgradeManifest {
             return megaphone.id
         case .inactiveLinkedDeviceReminder:
             return "inactiveLinkedDeviceReminder"
+        case .inactivePrimaryDeviceReminder:
+            return "inactivePrimaryDeviceReminder"
         case .pinReminder:
             return "pinReminder"
         case .contactPermissionReminder:
@@ -248,14 +257,16 @@ extension ExperienceUpgradeManifest: ExperienceUpgradeSortable {
             return (4, -1 * megaphone.manifest.priority)
         case .inactiveLinkedDeviceReminder:
             return (5, 0)
-        case .pinReminder:
+        case .inactivePrimaryDeviceReminder:
             return (6, 0)
-        case .backupKeyReminder:
+        case .pinReminder:
             return (7, 0)
-        case .enableBackupsReminder:
+        case .backupKeyReminder:
             return (8, 0)
-        case .contactPermissionReminder:
+        case .enableBackupsReminder:
             return (9, 0)
+        case .contactPermissionReminder:
+            return (10, 0)
         case .unrecognized:
             return (Int.max, Int.max)
         }
@@ -279,7 +290,8 @@ extension ExperienceUpgradeManifest {
                 .introducingPins,
                 .createUsernameReminder,
                 .remoteMegaphone,
-                .inactiveLinkedDeviceReminder:
+                .inactiveLinkedDeviceReminder,
+                .inactivePrimaryDeviceReminder:
             return false
         case
                 .notificationPermissionReminder,
@@ -301,15 +313,16 @@ extension ExperienceUpgradeManifest {
                 .newLinkedDeviceNotification,
                 .introducingPins,
                 .pinReminder,
-                .backupKeyReminder,
                 .unrecognized:
             return false
         case
                 .notificationPermissionReminder,
                 .createUsernameReminder,
                 .inactiveLinkedDeviceReminder,
+                .inactivePrimaryDeviceReminder,
                 .remoteMegaphone,
                 .enableBackupsReminder,
+                .backupKeyReminder,
                 .contactPermissionReminder:
             return true
         }
@@ -327,6 +340,7 @@ extension ExperienceUpgradeManifest {
                 .notificationPermissionReminder,
                 .createUsernameReminder,
                 .inactiveLinkedDeviceReminder,
+                .inactivePrimaryDeviceReminder,
                 .pinReminder,
                 .contactPermissionReminder,
                 .backupKeyReminder,
@@ -355,6 +369,8 @@ extension ExperienceUpgradeManifest {
                 .notificationPermissionReminder,
                 .inactiveLinkedDeviceReminder:
             return 3 * .day
+        case .inactivePrimaryDeviceReminder:
+            return 7 * .day
         case
                 .newLinkedDeviceNotification,
                 .createUsernameReminder:
@@ -414,6 +430,7 @@ extension ExperienceUpgradeManifest {
                 .notificationPermissionReminder,
                 .createUsernameReminder,
                 .inactiveLinkedDeviceReminder,
+                .inactivePrimaryDeviceReminder,
                 .pinReminder,
                 .contactPermissionReminder,
                 .backupKeyReminder,
@@ -436,6 +453,7 @@ extension ExperienceUpgradeManifest {
                 .notificationPermissionReminder,
                 .createUsernameReminder,
                 .inactiveLinkedDeviceReminder,
+                .inactivePrimaryDeviceReminder,
                 .contactPermissionReminder:
             return .day
         case .introducingPins:
@@ -473,6 +491,7 @@ extension ExperienceUpgradeManifest {
                 .notificationPermissionReminder,
                 .createUsernameReminder,
                 .inactiveLinkedDeviceReminder,
+                .inactivePrimaryDeviceReminder,
                 .pinReminder,
                 .contactPermissionReminder,
                 .backupKeyReminder,
@@ -500,7 +519,8 @@ extension ExperienceUpgradeManifest {
             return false
         case
                 .notificationPermissionReminder,
-                .createUsernameReminder:
+                .createUsernameReminder,
+                .inactivePrimaryDeviceReminder:
             return true
         case
                 .remoteMegaphone:
@@ -628,6 +648,10 @@ extension ExperienceUpgradeManifest {
         return DependenciesBridge.shared.inactiveLinkedDeviceFinder.hasInactiveLinkedDevice(tx: tx)
     }
 
+    public static func checkPreconditionsForInactivePrimaryDeviceReminder(tx: DBReadTransaction) -> Bool {
+        return DependenciesBridge.shared.inactivePrimaryDeviceStore.valueForInactivePrimaryDeviceAlert(transaction: tx)
+    }
+
     public static func checkPreconditionsForPinReminder(transaction: DBReadTransaction) -> Bool {
         return SSKEnvironment.shared.ows2FAManagerRef.isDueForV2Reminder(transaction: transaction)
     }
@@ -646,16 +670,21 @@ extension ExperienceUpgradeManifest {
         }
     }
 
-    public static func checkPreconditionsForBackupKeyReminder(transaction: DBReadTransaction) -> Bool {
-        guard FeatureFlags.Backups.settings else {
+    public static func checkPreconditionsForBackupKeyReminder(
+        remoteConfig: RemoteConfig,
+        transaction: DBReadTransaction
+    ) -> Bool {
+        guard remoteConfig.allowBackupSettings else {
             return false
         }
 
         let backupSettingsStore = BackupSettingsStore()
-        let backupPlan = backupSettingsStore.backupPlan(tx: transaction)
 
-        guard backupPlan != BackupPlan.disabled else {
+        switch backupSettingsStore.backupPlan(tx: transaction) {
+        case .disabled, .disabling:
             return false
+        case .free, .paid, .paidExpiringSoon, .paidAsTester:
+            break
         }
 
         guard let firstBackupDate = backupSettingsStore.firstBackupDate(tx: transaction) else {
@@ -675,17 +704,16 @@ extension ExperienceUpgradeManifest {
         return lastReminderDate < Date().addingTimeInterval(-180 * 24 * 60 * 60)
     }
 
-    public static func checkPreconditionsForBackupEnablementReminder(transaction: DBReadTransaction) -> Bool {
-        guard FeatureFlags.Backups.settings else {
+    public static func checkPreconditionsForBackupEnablementReminder(
+        remoteConfig: RemoteConfig,
+        transaction: DBReadTransaction,
+    ) -> Bool {
+        guard remoteConfig.allowBackupSettings else {
             return false
         }
 
-        let backupPlan = BackupSettingsStore().backupPlan(tx: transaction)
-        switch backupPlan {
-        case .free, .paid, .paidExpiringSoon:
+        guard !BackupSettingsStore().haveBackupsEverBeenEnabled(tx: transaction) else {
             return false
-        case .disabled:
-            break
         }
 
         return InteractionFinder.outgoingAndIncomingMessageCount(transaction: transaction, limit: 1) >= 1

@@ -332,6 +332,9 @@ public class GRDBSchemaMigrator {
         case removeAttachmentMediaTierDigestColumn
         case addListMediaTable
         case recomputeAttachmentMediaNames
+        case lastDraftInteractionRowID
+        case addBackupOversizeText
+        case addBackupOversizeTextRedux
 
         // NOTE: Every time we add a migration id, consider
         // incrementing grdbSchemaVersionLatest.
@@ -395,7 +398,7 @@ public class GRDBSchemaMigrator {
     }
 
     public static let grdbSchemaVersionDefault: UInt = 0
-    public static let grdbSchemaVersionLatest: UInt = 117
+    public static let grdbSchemaVersionLatest: UInt = 120
 
     // An optimization for new users, we have the first migration import the latest schema
     // and mark any other migrations as "already run".
@@ -4121,6 +4124,63 @@ public class GRDBSchemaMigrator {
                 END;
                 """
             )
+
+            return .success(())
+        }
+
+        migrator.registerMigration(.lastDraftInteractionRowID) { tx in
+            try tx.database.alter(table: "model_TSThread") { table in
+                table.add(column: "lastDraftInteractionRowId", .integer).defaults(to: 0)
+            }
+
+            try tx.database.alter(table: "model_TSThread") { table in
+                table.add(column: "lastDraftUpdateTimestamp", .integer).defaults(to: 0)
+            }
+
+            return .success(())
+        }
+
+        migrator.registerMigration(.addBackupOversizeText) { tx in
+            try tx.database.create(table: "BackupOversizeTextCache") { table in
+                table.autoIncrementedPrimaryKey("id")
+                // Row id of the associated Attachment.
+                table.column("attachmentRowId", .integer)
+                    .unique()
+                    .references("Attachment", column: "id", onDelete: .cascade)
+                    .notNull()
+                table.column("text", .text)
+                    .notNull()
+                    // Text length is limited to 128 kibibytes.
+                    // enforce at SQL level to prevent ambiguity.
+                    .check({ length($0) < (128 * 1024) })
+            }
+
+            // NOTE: recreated below because of < vs <=
+
+            return .success(())
+        }
+
+        /// Ensure the migration value and the live app value are identical; if we change the live app
+        /// value we need a new migration to update the CHECK clause below.
+        owsAssertDebug(BackupOversizeTextCache.maxTextLengthBytes  == 128 * 1024)
+
+        migrator.registerMigration(.addBackupOversizeTextRedux) { tx in
+            // NOTE: recreated because of < vs <=; okay to drop existing table
+            try tx.database.drop(table: "BackupOversizeTextCache")
+
+            try tx.database.create(table: "BackupOversizeTextCache") { table in
+                table.autoIncrementedPrimaryKey("id")
+                // Row id of the associated Attachment.
+                table.column("attachmentRowId", .integer)
+                    .unique()
+                    .references("Attachment", column: "id", onDelete: .cascade)
+                    .notNull()
+                table.column("text", .text)
+                    .notNull()
+                    // Text length is limited to 128 kibibytes.
+                    // enforce at SQL level to prevent ambiguity.
+                    .check({ length($0) <= (128 * 1024) })
+            }
 
             return .success(())
         }

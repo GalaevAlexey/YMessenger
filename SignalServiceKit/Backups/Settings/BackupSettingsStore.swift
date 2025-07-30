@@ -5,20 +5,25 @@
 
 public enum BackupPlan: RawRepresentable {
     case disabled
+    case disabling
     case free
     case paid(optimizeLocalStorage: Bool)
     case paidExpiringSoon(optimizeLocalStorage: Bool)
+    case paidAsTester(optimizeLocalStorage: Bool)
 
     // MARK: RawRepresentable
 
     public init?(rawValue: Int) {
         switch rawValue {
         case 6: self = .disabled
+        case 7: self = .disabling
         case 1: self = .free
         case 2: self = .paid(optimizeLocalStorage: false)
         case 3: self = .paid(optimizeLocalStorage: true)
         case 4: self = .paidExpiringSoon(optimizeLocalStorage: false)
         case 5: self = .paidExpiringSoon(optimizeLocalStorage: true)
+        case 8: self = .paidAsTester(optimizeLocalStorage: false)
+        case 9: self = .paidAsTester(optimizeLocalStorage: true)
         default: return nil
         }
     }
@@ -26,9 +31,11 @@ public enum BackupPlan: RawRepresentable {
     public var rawValue: Int {
         switch self {
         case .disabled: return 6
+        case .disabling: return 7
         case .free: return 1
         case .paid(let optimizeLocalStorage): return optimizeLocalStorage ? 3 : 2
         case .paidExpiringSoon(let optimizeLocalStorage): return optimizeLocalStorage ? 5 : 4
+        case .paidAsTester(let optimizeLocalStorage): return optimizeLocalStorage ? 9 : 8
         }
     }
 }
@@ -104,8 +111,12 @@ public struct BackupSettingsStore {
         return kvStore.getDate(Keys.firstBackupDate, transaction: tx)
     }
 
-    private func setFirstBackupDate(_ firstBackupDate: Date, tx: DBWriteTransaction) {
-        kvStore.setDate(firstBackupDate, key: Keys.firstBackupDate, transaction: tx)
+    private func setFirstBackupDate(_ firstBackupDate: Date?, tx: DBWriteTransaction) {
+        if let firstBackupDate {
+            kvStore.setDate(firstBackupDate, key: Keys.firstBackupDate, transaction: tx)
+        } else {
+            kvStore.removeValue(forKey: Keys.firstBackupDate, transaction: tx)
+        }
     }
 
     // MARK: -
@@ -117,10 +128,14 @@ public struct BackupSettingsStore {
     public func setLastBackupDate(_ lastBackupDate: Date, tx: DBWriteTransaction) {
         kvStore.setDate(lastBackupDate, key: Keys.lastBackupDate, transaction: tx)
 
-        guard let _ = firstBackupDate(tx: tx) else {
+        if firstBackupDate(tx: tx) == nil {
             setFirstBackupDate(lastBackupDate, tx: tx)
-            return
         }
+    }
+
+    public func resetLastBackupDate(tx: DBWriteTransaction) {
+        kvStore.removeValue(forKey: Keys.lastBackupDate, transaction: tx)
+        setFirstBackupDate(nil, tx: tx)
     }
 
     // MARK: -
@@ -131,6 +146,10 @@ public struct BackupSettingsStore {
 
     public func setLastBackupSizeBytes(_ lastBackupSizeBytes: UInt64, tx: DBWriteTransaction) {
         kvStore.setUInt64(lastBackupSizeBytes, key: Keys.lastBackupSizeBytes, transaction: tx)
+    }
+
+    public func resetLastBackupSizeBytes(tx: DBWriteTransaction) {
+        kvStore.removeValue(forKey: Keys.lastBackupSizeBytes, transaction: tx)
     }
 
     // MARK: -
@@ -193,6 +212,10 @@ public struct BackupSettingsStore {
         tx.addSyncCompletion {
             NotificationCenter.default.post(name: .shouldAllowBackupUploadsOnCellularChanged, object: nil)
         }
+    }
+
+    public func resetShouldAllowBackupUploadsOnCellular(tx: DBWriteTransaction) {
+        kvStore.removeValue(forKey: Keys.shouldAllowBackupUploadsOnCellular, transaction: tx)
     }
 
     // MARK: -

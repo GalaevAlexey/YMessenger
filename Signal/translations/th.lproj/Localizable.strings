@@ -4,9 +4,6 @@
 /* Title for the 'about' help section */
 "ABOUT_SECTION_TITLE" = "เกี่ยวกับ Signal";
 
-/* Action sheet item */
-"ACCEPT_NEW_IDENTITY_ACTION" = "ยอมรับหมายเลขความปลอดภัยใหม่";
-
 /* Accessibility label for attachment. */
 "ACCESSIBILITY_LABEL_ATTACHMENT" = "แฟ้มแนบ";
 
@@ -592,6 +589,33 @@
 /* Title for a view allowing users to record their 'Backup Key'. */
 "BACKUP_RECORD_KEY_TITLE" = "บันทึกกุญแจสำรองของคุณ";
 
+/* Message for an action sheet explaining that performing a backup failed with a generic error. */
+"BACKUP_SETTINGS_BACKUP_EXPORT_ERROR_SHEET_GENERIC_ERROR" = "Something went wrong creating your backup. Please try again, or contact support.";
+
+/* Title for a button in an action sheet allowing users to perform a backup, ignoring that WiFi is required. */
+"BACKUP_SETTINGS_BACKUP_EXPORT_ERROR_SHEET_NEED_WIFI_ACTION" = "Allow Backups Using Cellular";
+
+/* Message for an action sheet explaining that performing a backup failed because WiFi is required. */
+"BACKUP_SETTINGS_BACKUP_EXPORT_ERROR_SHEET_NEED_WIFI_MESSAGE" = "Backing up using cellular may result in data charges. You can connect to a WiFi network or allow backups using cellular.";
+
+/* Title for an action sheet explaining that performing a backup failed because WiFi is required. */
+"BACKUP_SETTINGS_BACKUP_EXPORT_ERROR_SHEET_NEED_WIFI_TITLE" = "Allow Backups Using Cellular Data?";
+
+/* Message for an action sheet explaining that performing a backup failed with a network error. */
+"BACKUP_SETTINGS_BACKUP_EXPORT_ERROR_SHEET_NETWORK_ERROR" = "Something went wrong creating your backup. Check your internet connection and try again.";
+
+/* Description for a progress bar tracking a multi-step backup operation. Embeds {{ the percentage complete of the overall operation, e.g. 20% }}. */
+"BACKUP_SETTINGS_BACKUP_EXPORT_PROGRESS_DESCRIPTION" = "Creating backup: %1$@";
+
+/* Description for a progress bar tracking a multi-step backup operation, where we are currently creating the backup. */
+"BACKUP_SETTINGS_BACKUP_EXPORT_PROGRESS_DESCRIPTION_CREATING_BACKUP" = "Exporting backup...";
+
+/* Description for a progress bar tracking a multi-step backup operation, where we are currently uploading the backup. */
+"BACKUP_SETTINGS_BACKUP_EXPORT_PROGRESS_DESCRIPTION_UPLOADING_BACKUP" = "Uploading backup...";
+
+/* Description for a progress bar tracking a multi-step backup operation, where we are currently uploading backup media. */
+"BACKUP_SETTINGS_BACKUP_EXPORT_PROGRESS_DESCRIPTION_UPLOADING_MEDIA" = "Uploading backup media...";
+
 /* Title for a button allowing users to upgrade from a free to paid backup plan. */
 "BACKUP_SETTINGS_BACKUP_PLAN_FREE_ACTION_BUTTON_TITLE" = "อัปเกรด";
 
@@ -628,6 +652,12 @@
 /* Text explaining that a user's paid plan, which has been canceled, expired on a past date. Embeds {{ the formatted expiration date }}. */
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_CANCELED_PAST_EXPIRATION_FORMAT" = "หมดอายุแล้วเมื่อ %1$@";
 
+/* Title for a button allowing users to manage their backup plan as a tester. */
+"BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_FREE_FOR_TESTERS_ACTION_BUTTON_TITLE" = "จัดการแพ็กเกจ";
+
+/* Text describing that the user's backup plan is paid, but free for them as a tester. */
+"BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_FREE_FOR_TESTERS_DESCRIPTION" = "มีค่าบริการ แต่ฟรีหากยังอยู่ในสถานะผู้ร่วมทดสอบ";
+
 /* Header describing what the paid backup plan includes. */
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_HEADER" = "สำรองข้อความ + สื่อทั้งหมด";
 
@@ -639,6 +669,9 @@
 
 /* Footer for a menu section related to settings for when Backups are disabled. */
 "BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "การสำรองข้อมูลถูกปิดใช้งานและข้อมูลของคุณถูกลบออกจากบริการจัดเก็บที่ปลอดภัยของ Signal แล้ว";
+
+/* Description for a progress view tracking media being downloaded in service of disabling Backups. */
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "ปิดใช้งานการสำรองข้อมูลแล้ว และกำลังดาวน์โหลดไฟล์สื่อที่ยังไม่ได้ถูกบันทึกไว้ในเครื่อง โดยข้อมูลของคุณจะถูกลบออกจากบริการจัดเก็บที่ปลอดภัยของ Signal เมื่อการดาวน์โหลดเสร็จสิ้น";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "เกิดข้อผิดพลาดบางประการ โปรดติดต่อฝ่ายสนับสนุน";
@@ -664,6 +697,21 @@
 /* Title for a button allowing users to turn off Backups. */
 "BACKUP_SETTINGS_DISABLE_BACKUPS_BUTTON_TITLE" = "ปิดใช้งานและลบข้อมูลสำรอง";
 
+/* Title for a button in an action sheet confirming the user wants to disable Backups. */
+"BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_CONFIRM" = "ปิดใช้งานและลบ";
+
+/* Message for an action sheet confirming the user wants to disable Backups. */
+"BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_MESSAGE" = "ข้อมูลสำรองของคุณจะถูกลบและระบบจะไม่สำรองข้อมูลใหม่ขึ้นอีก";
+
+/* Title for an action sheet confirming the user wants to disable Backups. */
+"BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_TITLE" = "ปิดใช้งานและลบข้อมูลสำรองใช่หรือไม่";
+
+/* Message shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
+"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "คุณมีไฟล์สื่อในข้อมูลสำรองที่ยังไม่ได้กู้คืนมายังอุปกรณ์เครื่องนี้ การดาวน์โหลดข้อมูลสำรองของคุณอาจใช้เวลาค่อนข้างนาน โปรดเปิด Signal ไว้เพื่อป้องกันไม่ให้การดาวน์โหลดหยุดชะงัก";
+
+/* Title shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
+"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_TITLE" = "กำลังดาวน์โหลดข้อมูลสำรองของคุณ";
+
 /* Message shown in an action sheet indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_DISABLING_ERROR_GENERIC_ERROR_ACTION_SHEET_MESSAGE" = "เกิดข้อผิดพลาดขณะลบข้อมูลของคุณออกจากบริการจัดเก็บที่ปลอดภัยของ Signal";
 
@@ -674,34 +722,34 @@
 "BACKUP_SETTINGS_DISABLING_ERROR_NOT_REGISTERED" = "คุณจะต้องลงทะเบียนเพื่อปิดใช้งานการสำรองข้อมูล";
 
 /* Title for a button shown in Backup Settings that lets a user cancel an in-progress download. */
-"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_ACTION_BUTTON_CANCEL_DOWNLOAD" = "Cancel Download";
+"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_ACTION_BUTTON_CANCEL_DOWNLOAD" = "ยกเลิกการดาวน์โหลด";
 
 /* Title for a button shown in Backup Settings that lets a user initiate an available download. */
-"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_ACTION_BUTTON_INITIATE_DOWNLOAD" = "Download";
+"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_ACTION_BUTTON_INITIATE_DOWNLOAD" = "ดาวน์โหลด";
 
 /* Title for a button shown in Backup Settings that lets a user resume a download paused due to needing Wi-Fi. */
-"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_ACTION_BUTTON_RESUME_DOWNLOAD_WITHOUT_WIFI" = "Resume Download";
+"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_ACTION_BUTTON_RESUME_DOWNLOAD_WITHOUT_WIFI" = "ดาวน์โหลดต่อ";
 
 /* Subtitle for a progress bar tracking downloads that are paused because of low battery. */
-"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_SUBTITLE_PAUSED_LOW_BATTERY" = "Download paused: device has low battery";
+"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_SUBTITLE_PAUSED_LOW_BATTERY" = "การดาวน์โหลดหยุดชั่วคราว: อุปกรณ์มีแบตเตอรี่ต่ำ";
 
 /* Subtitle for a progress bar tracking downloads that are paused because they need more disk space available. Embeds {{ the amount of space needed as a file size, e.g. 100 MB }}. */
-"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_DISK_SPACE" = "Not enough space to download your media. To continue free up %1$@ of space.";
+"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_DISK_SPACE" = "พื้นที่จัดเก็บของคุณไม่เพียงพอสำหรับการดาวน์โหลดไฟล์สื่อ โปรดเพิ่มพื้นที่จัดเก็บ %1$@ เพื่อดำเนินการต่อ";
 
 /* Subtitle for a progress bar tracking downloads that are paused because they need internet. */
-"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_INTERNET" = "Download paused: no internet…";
+"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_INTERNET" = "การดาวน์โหลดหยุดชั่วคราว: ไม่มีการเชื่อมต่ออินเทอร์เน็ต…";
 
 /* Subtitle for a progress bar tracking downloads that are paused because they need WiFi. */
-"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_WIFI" = "Download paused: waiting for Wi-Fi";
+"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_WIFI" = "การดาวน์โหลดหยุดชั่วคราว: กำลังรอสัญญาณ Wi-Fi";
 
 /* Subtitle for a progress bar tracking active downloading. Embeds 1:{{ the amount downloaded as a file size, e.g. 100 MB }}; 2:{{ the total amount to download as a file size, e.g. 1 GB }}; 3:{{ the amount downloaded as a percentage, e.g. 10% }}. */
-"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_SUBTITLE_RUNNING" = "Downloading %1$@ of %2$@ (%3$@)";
+"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_SUBTITLE_RUNNING" = "กำลังดาวน์โหลด %1$@ จาก %2$@ (%3$@)";
 
 /* Subtitle for a view explaining that downloads are available but not running. Embeds {{ the amount available to download as a file size, e.g. 100 MB }}. */
-"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_SUBTITLE_SUSPENDED" = "You have %1$@ of media that's not on this device.";
+"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_SUBTITLE_SUSPENDED" = "คุณมีไฟล์สื่อ %1$@ ที่ยังไม่ได้กู้คืนมายังอุปกรณ์เครื่องนี้";
 
 /* Subtitle for a view explaining that downloads are available but not running, and the user's paid subscription is expiring. Embeds {{ the amount available to download as a file size, e.g. 100 MB }}. */
-"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_SUBTITLE_SUSPENDED_PAID_SUBSCRIPTION_EXPIRING" = "You have %1$@ of media that's not on this device. Without a paid subscription media can't be offloaded.";
+"BACKUP_SETTINGS_DOWNLOAD_PROGRESS_SUBTITLE_SUSPENDED_PAID_SUBSCRIPTION_EXPIRING" = "คุณมีไฟล์สื่อ %1$@ ที่ยังไม่ได้กู้คืนมายังอุปกรณ์เครื่องนี้ หากไม่มีการสมัครและชำระค่าแพ็กเกจ คุณจะไม่สามารถออฟโหลดไฟล์สื่อได้";
 
 /* Label for a toggleable menu item describing whether to make backups on cellular data. */
 "BACKUP_SETTINGS_ENABLED_BACKUP_ON_CELLULAR_LABEL" = "สำรองข้อมูลขณะใช้อินเทอร์เน็ตมือถือ";
@@ -727,38 +775,50 @@
 /* Title for a button allowing users to trigger a manual backup. */
 "BACKUP_SETTINGS_MANUAL_BACKUP_BUTTON_TITLE" = "สำรองข้อมูลเดี๋ยวนี้";
 
+/* Title for a button shown under a progress bar tracking a manual backup, which lets the user cancel the backup. */
+"BACKUP_SETTINGS_MANUAL_BACKUP_CANCEL_BUTTON" = "Cancel Backup";
+
 /* Action in an action sheet allowing users to download their offloaded media later. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_LATER_ACTION" = "Download Later";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_LATER_ACTION" = "ดาวน์โหลดภายหลัง";
 
 /* Message for an action sheet allowing users to download their offloaded media. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "You have media in your backup that’s not on this device. This may take a long time to download, keep Signal open to avoid interruptions to your download.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "คุณมีไฟล์สื่อในข้อมูลสำรองที่ยังไม่ได้กู้คืนมายังอุปกรณ์เครื่องนี้ การดาวน์โหลดอาจใช้เวลาค่อนข้างนาน โปรดเปิด Signal ไว้เพื่อป้องกันไม่ให้การดาวน์โหลดหยุดชะงัก";
 
 /* Action in an action sheet allowing users to download their offloaded media now. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_NOW_ACTION" = "Download Now";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_NOW_ACTION" = "ดาวน์โหลดเดี๋ยวนี้";
 
 /* Title for an action sheet allowing users to download their offloaded media. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_TITLE" = "Download Offloaded Media?";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_TITLE" = "ดาวน์โหลดไฟล์สื่อที่ออฟโหลดไว้ใช่หรือไม่";
+
+/* Message for an action sheet warning users who are testers about the Optimize Local Storage feature. */
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TESTER_WARNING_SHEET_MESSAGE" = "หากยังอยู่ในสถานะผู้ร่วมทดสอบ คุณจะสามารถดาวน์โหลดไฟล์สื่อที่ถูกออฟโหลดกลับมาได้ทุกเมื่อ โปรดตรวจสอบว่าคุณดาวน์โหลดไฟล์สื่อทั้งหมดเรียบร้อยแล้วก่อนที่จะยุติสถานะผู้ร่วมทดสอบ";
+
+/* Title for an action sheet warning users who are testers about the Optimize Local Storage feature. */
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TESTER_WARNING_SHEET_TITLE" = "การทดสอบไฟล์สื่อที่ออฟโหลด";
 
 /* Footer for a toggle allowing users to change the Optimize Local Storage setting, if the toggle is available. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_AVAILABLE" = "Unused media will be offloaded, but can be downloaded from your backup anytime.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_AVAILABLE" = "ไฟล์สื่อที่ไม่ได้ใช้งานจะถูกออฟโหลด แต่คุณสามารถดาวน์โหลดไฟล์กลับมาจากข้อมูลสำรองได้ทุกเมื่อ";
+
+/* Footer for a toggle allowing users to change the Optimize Local Storage setting, if the toggle is available and they are a tester. */
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_AVAILABLE_FOR_TESTERS" = "ไฟล์สื่อที่ไม่ได้ใช้งานจะถูกออฟโหลด แต่คุณสามารถดาวน์โหลดไฟล์กลับมาจากข้อมูลสำรองได้ทุกเมื่อในขณะที่ยังอยู่ในสถานะผู้ร่วมทดสอบ";
 
 /* Footer for a toggle allowing users to change the Optimize Local Storage setting, if the toggle is unavailable. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_UNAVAILABLE" = "Storage optimization can only be used with the paid tier of Signal Backups. Upgrade your backup plan to start using this feature.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_UNAVAILABLE" = "เริ่มใช้งานฟีเจอร์การเพิ่มประสิทธิภาพพื้นที่จัดเก็บ โดยอัปเกรดแพ็กเกจสำรองข้อมูลของคุณด้วยการชำระค่าสำรองข้อมูลของ Signal";
 
 /* Title for a toggle allowing users to change the Optimize Local Storage setting. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_TITLE" = "Optimize On-Device Storage";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_TITLE" = "เพิ่มประสิทธิภาพพื้นที่จัดเก็บบนอุปกรณ์";
 
 /* Title for a button allowing users to re-enable Backups, after it had been previously disabled. */
 "BACKUP_SETTINGS_REENABLE_BACKUPS_BUTTON_TITLE" = "เปิดใช้งานการสำรองข้อมูลอีกครั้ง";
 
 /* Title for an action in a sheet warning the user about skipping downloads. */
-"BACKUP_SETTINGS_SKIP_DOWNLOADS_WARNING_SHEET_ACTION_SKIP" = "Skip Download";
+"BACKUP_SETTINGS_SKIP_DOWNLOADS_WARNING_SHEET_ACTION_SKIP" = "ข้ามการดาวน์โหลด";
 
 /* Message for a sheet warning the user about skipping downloads. */
-"BACKUP_SETTINGS_SKIP_DOWNLOADS_WARNING_SHEET_MESSAGE" = "You have backup data that’s not on this device. Your media and attachments will be permanently deleted without a paid subscription.";
+"BACKUP_SETTINGS_SKIP_DOWNLOADS_WARNING_SHEET_MESSAGE" = "คุณมีข้อมูลสำรองที่ยังไม่ได้กู้คืนมายังอุปกรณ์เครื่องนี้ หากไม่มีการสมัครและชำระค่าแพ็กเกจ ไฟล์สื่อและไฟล์แนบของคุณจะถูกลบอย่างถาวร";
 
 /* Title for a sheet warning the user about skipping downloads. */
-"BACKUP_SETTINGS_SKIP_DOWNLOADS_WARNING_SHEET_TITLE" = "Skip Download?";
+"BACKUP_SETTINGS_SKIP_DOWNLOADS_WARNING_SHEET_TITLE" = "ข้ามการดาวน์โหลดใช่หรือไม่";
 
 /* Subtitle for a progress bar tracking uploads that are paused because of low battery. */
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_LOW_BATTERY" = "การอัปโหลดหยุดชั่วคราว: อุปกรณ์มีแบตเตอรี่ต่ำ";
@@ -1494,6 +1554,9 @@
 
 /* Title for the free plan option, when choosing a Backup plan. */
 "CHOOSE_BACKUP_PLAN_FREE_PLAN_TITLE" = "ฟรี";
+
+/* Title for the paid plan option, when choosing a Backup plan as a tester. */
+"CHOOSE_BACKUP_PLAN_PAID_PLAN_NO_PURCHASES_TITLE" = "มีค่าบริการ (แต่ฟรีสำหรับผู้ร่วมทดสอบ)";
 
 /* Subtitle for the paid plan option, when choosing a Backup plan. */
 "CHOOSE_BACKUP_PLAN_PAID_PLAN_SUBTITLE" = "ข้อความ + สื่อทั้งหมด";
@@ -3257,7 +3320,7 @@
 "GIF_VIEW_SEARCH_ERROR" = "ผิดพลาด แตะเพื่อลองใหม่";
 
 /* Indicates that the user's search had no results. */
-"GIF_VIEW_SEARCH_NO_RESULTS" = "No Results";
+"GIF_VIEW_SEARCH_NO_RESULTS" = "ไม่พบข้อมูล";
 
 /* Placeholder text for the search field in GIF view */
 "GIF_VIEW_SEARCH_PLACEHOLDER_TEXT" = "ป้อนการค้นหาของคุณ";
@@ -4173,6 +4236,18 @@
 
 /* Title for an in-app megaphone about a user's inactive linked device. */
 "INACTIVE_LINKED_DEVICE_REMINDER_MEGAPHONE_TITLE" = "อุปกรณ์ที่เชื่อมโยงอยู่ที่ไม่ได้ใช้งาน";
+
+/* Body for an in-app megaphone about a user's inactive primary device. */
+"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_BODY" = "To keep your account active, open Signal on your primary device.";
+
+/* Title for a button in an in-app megaphone about a user's inactive primary device, temporarily dismissing the megaphone. */
+"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_GOT_IT_BUTTON" = "เข้าใจแล้ว";
+
+/* Title for a button in an in-app megaphone about a user's inactive linked device, indicating the user wants to learn more. */
+"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_LEARN_MORE_BUTTON" = "เรียนรู้เพิ่มเติม";
+
+/* Title for an in-app megaphone about a user's inactive primary device. */
+"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_TITLE" = "Open Signal on your phone";
 
 /* Label reminding the user that they are in archive mode, and that muted chats remain archived when they receive a new message. */
 "INBOX_VIEW_ARCHIVE_MODE_MUTED_CHATS_REMINDER" = "แชทที่ปิดเสียงไว้ในที่เก็บถาวรจะยังคงเก็บถาวรอยู่เมื่อมีข้อความใหม่มาถึง";
@@ -5398,6 +5473,12 @@
 /* Description for form confirming restore from backup. */
 "ONBOARDING_CONFIRM_BACKUP_RESTORE_DESCRIPTION" = "คุณสำรองข้อมูลครั้งล่าสุดเมื่อวันที่ %1$@ เวลา %2$@ และข้อมูลสำรองมีขนาด %3$@";
 
+/* Description for form confirming restore from backup without size detail. */
+"ONBOARDING_CONFIRM_BACKUP_RESTORE_DESCRIPTION_NO_SIZE" = "Your last backup was made on %1$@ at %2$@.";
+
+/* Details confirming manual restore from backup. */
+"ONBOARDING_CONFIRM_BACKUP_RESTORE_DESCRIPTION_NO_SIZE_DETAIL" = "If you choose not to restore now, you won’t be able to restore later. Your media will restore in the background.";
+
 /* Text for action button to skip the restore. */
 "ONBOARDING_CONFIRM_BACKUP_RESTORE_SKIP_ACTION" = "ข้ามการกู้คืน";
 
@@ -5566,6 +5647,24 @@
 /* Label warning the user that they should update Signal to continue using payments. */
 "OUTDATED_PAYMENT_CLIENT_REMINDER_TEXT" = "อัปเดต Signal เพื่อใช้งานการชำระเงินต่อ ยอดเงินของคุณอาจยังไม่ได้รับการอัปเดต";
 
+/* Body of prompt notifying registration without restore completed on the new device. */
+"OUTGOING_DEVICE_REGISTRATION_COMPLETE_BODY" = "เปิดใช้งานบัญชี Signal ของคุณบนอุปกรณ์อีกเครื่องเรียบร้อยแล้ว ขณะนี้ Signal บนอุปกรณ์เครื่องนี้จะหยุดทำงาน";
+
+/* Title of prompt notifying registration without restore completed on the new device. */
+"OUTGOING_DEVICE_REGISTRATION_COMPLETE_TITLE" = "การลงทะเบียนเสร็จสมบูรณ์";
+
+/* Body of prompt notifying device restore started on the new device. */
+"OUTGOING_DEVICE_RESTORE_COMPLETE_BODY" = "เริ่มการถ่ายโอนบัญชี Signal และข้อความของคุณไปยังอุปกรณ์อีกเครื่องแล้ว ขณะนี้ Signal บนอุปกรณ์เครื่องนี้จะหยุดทำงาน";
+
+/* Title of prompt notifying device restore started on the new device. */
+"OUTGOING_DEVICE_RESTORE_COMPLETE_TITLE" = "กู้คืนเสร็จสิ้น";
+
+/* Body of prompt notifying that action is necessary on the other device. */
+"OUTGOING_DEVICE_RESTORE_CONTINUE_ON_OTHER_DEVICE_BODY" = "ดำเนินการถ่ายโอนบัญชีต่อบนอุปกรณ์อีกเครื่องของคุณ";
+
+/* Title of prompt notifying that action is necessary on the other device. */
+"OUTGOING_DEVICE_RESTORE_CONTINUE_ON_OTHER_DEVICE_TITLE" = "ดำเนินการต่อบนอุปกรณ์อีกเครื่อง";
+
 /* Body text describing the outgoing transfer. */
 "OUTGOING_DEVICE_RESTORE_INITIAL_VIEW_BODY" = "บัญชีของคุณจะถูกถ่ายโอนไปยังอุปกรณ์เครื่องใหม่ ซึ่งอุปกรณ์เครื่องนี้จะสามารถเห็นกลุ่ม รายชื่อผู้ติดต่อ เข้าถึงแชทของคุณ และส่งข้อความด้วยชื่อของคุณ";
 
@@ -5577,6 +5676,12 @@
 
 /* Title text describing the outgoing transfer. */
 "OUTGOING_DEVICE_RESTORE_INITIAL_VIEW_TITLE" = "ถ่ายโอนบัญชี";
+
+/* Body of prompt notifying device transfer completed. */
+"OUTGOING_DEVICE_TRANSFER_COMPLETE_BODY" = "ถ่ายโอนบัญชี Signal และข้อความของคุณไปยังอุปกรณ์อีกเครื่องเรียบร้อยแล้ว ขณะนี้ Signal บนอุปกรณ์เครื่องนี้จะหยุดทำงาน";
+
+/* Title of prompt notifying device transfer completed. */
+"OUTGOING_DEVICE_TRANSFER_COMPLETE_TITLE" = "การถ่ายโอนเสร็จสมบูรณ์";
 
 /* info message text in conversation view */
 "OUTGOING_MISSED_VIDEO_CALL" = "วิดีโอคอลที่ปลายสายไม่ได้รับ";
@@ -6586,6 +6691,63 @@
 /* No comment provided by engineer. */
 "REGISTER_RATE_LIMITING_ERROR" = "คุณลองบ่อยครั้งเกินไป กรุณารอสักนาทีก่อนจะลองใหม่";
 
+/* Body for a sheet warning users about a missing backup. */
+"REGISTRATION_BACKUP_RESTORE_ERROR_BACKUP_NOT_FOUND_BODY" = "กุญแจสำรองที่คุณใส่ถูกต้อง แต่ระบบไม่พบข้อมูลสำรองที่เชื่อมโยงกับกุญแจดังกล่าว หากคุณยังมีโทรศัพท์เครื่องเก่า โปรดตรวจสอบว่าการสำรองข้อมูลเปิดใช้งานอยู่และมีการดำเนินการสำรองข้อมูลเสร็จสมบูรณ์แล้ว จากนั้นโปรดลองใหม่อีกครั้ง";
+
+/* Title for a sheet warning users about a missing backup. */
+"REGISTRATION_BACKUP_RESTORE_ERROR_BACKUP_NOT_FOUND_TITLE" = "ไม่พบข้อมูลสำรอง";
+
+/* Check for update action label for backup restore error recovery. */
+"REGISTRATION_BACKUP_RESTORE_ERROR_CHECK_UPDATE_ACTION" = "ตรวจหารุ่นอัปเดต";
+
+/* Body for a sheet informing users about contacting support due to an error during backup restore. */
+"REGISTRATION_BACKUP_RESTORE_ERROR_CONTACT_SUPPORT_BODY" = "บันทึกดีบักของคุณจะช่วยให้เราแก้ไขปัญหาของคุณได้เร็วขึ้น คุณจะส่งบันทึกหรือไม่ก็ได้";
+
+/* Title for a sheet informing users about contacting support due to an error during backup restore. */
+"REGISTRATION_BACKUP_RESTORE_ERROR_CONTACT_SUPPORT_TITLE" = "ส่งบันทึกดีบักหรือไม่";
+
+/* Label for action to contact support with logs. */
+"REGISTRATION_BACKUP_RESTORE_ERROR_CONTACT_SUPPORT_WITH_LOGS_ACTION" = "ส่งพร้อมกับบันทึกดีบัก";
+
+/* Label for action to contact support without logs. */
+"REGISTRATION_BACKUP_RESTORE_ERROR_CONTACT_SUPPORT_WITHOUT_LOGS_ACTION" = "ส่งโดยไม่มีบันทึกดีบัก";
+
+/* Body for a sheet warning users about a generic backup manual restore failure. */
+"REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_BODY" = "เกิดข้อผิดพลาดที่ทำให้ไม่สามารถถ่ายโอนบัญชีของคุณได้";
+
+/* Body for a sheet warning users about a generic backup restore failure. */
+"REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_RETRY_BODY" = "เกิดข้อผิดพลาดที่ทำให้ไม่สามารถถ่ายโอนบัญชีของคุณได้ โปรดลองใหม่ด้วยการสแกนคิวอาร์โค้ดและเลือกวิธีการถ่ายโอน";
+
+/* Title for a sheet warning users about a generic backup restore failure. */
+"REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_RETRY_TITLE" = "ไม่สามารถดำเนินการถ่ายโอนให้เสร็จสิ้นได้";
+
+/* Title for a sheet warning users about a generic backup manual restore failure. */
+"REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "ไม่สามารถดำเนินการถ่ายโอนให้เสร็จสิ้นได้";
+
+/* Body for a sheet warning users about an incorrect backup key. */
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Make sure you’ve entered the same 64-digit backup key you saved when enabling Signal backups. Backups can not be recovered without this key.";
+
+/* Title for a sheet warning users about an incorrect backup key. */
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_TITLE" = "กุญแจสำรองไม่ถูกต้อง";
+
+/* Body for a sheet warning users about a network error during backup restore. */
+"REGISTRATION_BACKUP_RESTORE_ERROR_NETWORK_BODY" = "ไม่สามารถกู้คืนข้อมูลสำรองของคุณได้ในขณะนี้ โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ตแล้วลองอีกครั้ง";
+
+/* Title for a sheet warning users about a network error during backup restore. */
+"REGISTRATION_BACKUP_RESTORE_ERROR_NETWORK_TITLE" = "ไม่สามารถกู้คืนข้อมูลสำรอง";
+
+/* Skip restore action label for backup restore error recovery. */
+"REGISTRATION_BACKUP_RESTORE_ERROR_SKIP_RESTORE_ACTION" = "ข้ามการกู้คืน";
+
+/* Try again action label for backup restore error recovery. */
+"REGISTRATION_BACKUP_RESTORE_ERROR_TRY_AGAIN_ACTION" = "ลองอีกครั้ง";
+
+/* Body for a sheet warning users about an incompatible backup version. */
+"REGISTRATION_BACKUP_RESTORE_ERROR_UNSUPPORTED_BACKUP_VERSION_BODY" = "สำหรับการกู้คืนข้อมูลสำรอง โปรดตรวจสอบให้แน่ใจว่าคุณกำลังใช้งาน Signal เวอร์ชันล่าสุดแล้วลองอีกครั้ง โปรดติดต่อฝ่ายสนับสนุนหากคุณยังพบปัญหาอยู่";
+
+/* Title for a sheet warning users about an incompatible backup version. */
+"REGISTRATION_BACKUP_RESTORE_ERROR_UNSUPPORTED_BACKUP_VERSION_TITLE" = "จำเป็นต้องอัปเดต";
+
 /* Title of alert shown when push tokens sync job fails. */
 "REGISTRATION_BODY" = "การลงทะเบียนอีกครั้งสำหรับการแจ้งเตือนแบบพุชไม่สำเร็จ";
 
@@ -6794,10 +6956,10 @@
 "RESTORING_MEDIA_BANNER_DISK_SPACE_BUTTON" = "รายละเอียด";
 
 /* Title shown on chat list banner for restoring media from a backup when paused because the device has insufficient disk space. Embeds {{ %@ formatted number of bytes downloaded, e.g. '100 MB' }} */
-"RESTORING_MEDIA_BANNER_DISK_SPACE_TITLE_FORMAT" = "Free up %1$@ of space on this device to download your media.";
+"RESTORING_MEDIA_BANNER_DISK_SPACE_TITLE_FORMAT" = "โปรดเพิ่มพื้นที่จัดเก็บ %1$@ บนอุปกรณ์เครื่องนี้เพื่อดาวน์โหลดไฟล์สื่อของคุณ";
 
 /* Title shown on chat list banner for restoring media from a backup is finished */
-"RESTORING_MEDIA_BANNER_FINISHED_TITLE" = "Download Complete";
+"RESTORING_MEDIA_BANNER_FINISHED_TITLE" = "ดาวน์โหลดเสร็จสิ้น";
 
 /* Subtitle shown on chat list banner for restoring media from a backup when paused because the device has low battery */
 "RESTORING_MEDIA_BANNER_PAUSED_BATTERY_SUBTITLE" = "อุปกรณ์มีแบตเตอรี่ต่ำ";
@@ -6806,7 +6968,7 @@
 "RESTORING_MEDIA_BANNER_PAUSED_NOT_REACHABLE_SUBTITLE" = "ไม่มีการเชื่อมต่ออินเทอร์เน็ต…";
 
 /* Title shown on chat list banner for restoring media from a backup when paused for some reason */
-"RESTORING_MEDIA_BANNER_PAUSED_TITLE" = "Download Paused";
+"RESTORING_MEDIA_BANNER_PAUSED_TITLE" = "การดาวน์โหลดหยุดชั่วคราว";
 
 /* Download progress for media from a backup. Embeds {{ %1$@ formatted number of bytes downloaded, e.g. '100 MB', %2$@ formatted total number of bytes to download, e.g. '3 GB' }} */
 "RESTORING_MEDIA_BANNER_PROGRESS_FORMAT" = "%1$@ จาก %2$@";
@@ -6815,31 +6977,31 @@
 "RESTORING_MEDIA_BANNER_RESUME_WITHOUT_WIFI_BUTTON" = "ดำเนินการต่อ";
 
 /* Title shown on chat list banner for restoring media from a backup */
-"RESTORING_MEDIA_BANNER_TITLE" = "Downloading Media";
+"RESTORING_MEDIA_BANNER_TITLE" = "กำลังดาวน์โหลดไฟล์สื่อ";
 
 /* Title shown on chat list banner for restoring media from a backup when waiting for wifi */
 "RESTORING_MEDIA_BANNER_WAITING_FOR_WIFI_TITLE" = "กำลังรอสัญญาณ Wi-Fi";
 
 /* Button to skip restoring media, shown on a bottom sheet for restoring media from a backup when paused because the device has insufficient disk space. */
-"RESTORING_MEDIA_DISK_SPACE_SHEET_SKIP_BUTTON" = "Skip Download";
+"RESTORING_MEDIA_DISK_SPACE_SHEET_SKIP_BUTTON" = "ข้ามการดาวน์โหลด";
 
 /* Subtitle shown on a bottom sheet for restoring media from a backup when paused because the device has insufficient disk space. Embeds {{ %@ formatted number of bytes downloaded, e.g. '100 MB' }} */
-"RESTORING_MEDIA_DISK_SPACE_SHEET_SUBTITLE_FORMAT" = "To finish downloading your media your device needs %1$@ of storage space.\n\nTo free up space go to Settings > General > iPhone Storage. You can choose to offload or delete unused apps or content.";
+"RESTORING_MEDIA_DISK_SPACE_SHEET_SUBTITLE_FORMAT" = "อุปกรณ์ของคุณต้องมีพื้นที่จัดเก็บ %1$@ จึงจะสามารถดาวน์โหลดไฟล์สื่อให้เสร็จสมบูรณ์ได้\n\nคุณสามารถเพิ่มพื้นที่จัดเก็บโดยไปที่การตั้งค่า > ทั่วไป > พื้นที่จัดเก็บข้อมูลของ iPhone แล้วเลือกออฟโหลดหรือลบไฟล์หรือแอปที่ไม่ได้ใช้งาน";
 
 /* Title shown on a bottom sheet for restoring media from a backup when paused because the device has insufficient disk space. Embeds {{ %@ formatted number of bytes downloaded, e.g. '100 MB' }} */
 "RESTORING_MEDIA_DISK_SPACE_SHEET_TITLE_FORMAT" = "เพิ่มพื้นที่ %1$@ บนอุปกรณ์เครื่องนี้";
 
 /* Message shown on a bottom sheet to skip restoring media from a backup when paused because the device has insufficient disk space, and the user's paid subscription is expiring. */
-"RESTORING_MEDIA_DISK_SPACE_SKIP_PAID_EXPIRING_SOON_SHEET_MESSAGE" = "You have backup data that’s not on this device. Your media and attachments will be permanently deleted without a paid subscription.";
+"RESTORING_MEDIA_DISK_SPACE_SKIP_PAID_EXPIRING_SOON_SHEET_MESSAGE" = "คุณมีข้อมูลสำรองที่ยังไม่ได้กู้คืนมายังอุปกรณ์เครื่องนี้ หากไม่มีการสมัครและชำระค่าแพ็กเกจ ไฟล์สื่อและไฟล์แนบของคุณจะถูกลบอย่างถาวร";
 
 /* Message shown on a bottom sheet to skip restoring media from a backup when paused because the device has insufficient disk space. */
-"RESTORING_MEDIA_DISK_SPACE_SKIP_SHEET_MESSAGE" = "If you skip downloading the remaining media and attachments in your backup can be downloaded at a later time when storage space becomes available.";
+"RESTORING_MEDIA_DISK_SPACE_SKIP_SHEET_MESSAGE" = "หากข้ามการดาวน์โหลด คุณจะสามารถดาวน์โหลดไฟล์สื่อและไฟล์แนบที่หลงเหลืออยู่ในข้อมูลสำรองได้ในภายหลังเมื่ออุปกรณ์มีพื้นที่จัดเก็บเพียงพอ";
 
 /* Button shown on a bottom sheet to skip restoring media from a backup when paused because the device has insufficient disk space. */
-"RESTORING_MEDIA_DISK_SPACE_SKIP_SHEET_SKIP_BUTTON" = "Skip Download";
+"RESTORING_MEDIA_DISK_SPACE_SKIP_SHEET_SKIP_BUTTON" = "ข้ามการดาวน์โหลด";
 
 /* Title shown on a bottom sheet to skip restoring media from a backup when paused because the device has insufficient disk space. */
-"RESTORING_MEDIA_DISK_SPACE_SKIP_SHEET_TITLE" = "Skip Download?";
+"RESTORING_MEDIA_DISK_SPACE_SKIP_SHEET_TITLE" = "ข้ามการดาวน์โหลดใช่หรือไม่";
 
 /* Generic text for button that retries whatever the last action was. */
 "RETRY_BUTTON_TEXT" = "ลองใหม่";
@@ -6879,9 +7041,6 @@
 
 /* Snippet to share {{safety number}} with a friend. sent e.g. via SMS */
 "SAFETY_NUMBER_SHARE_FORMAT" = "หมายเลขความปลอดภัย Signal ของเรา:\n%1$@";
-
-/* Action sheet heading */
-"SAFETY_NUMBERS_ACTIONSHEET_TITLE" = "หมายเลขความปลอดภัยของคุณกับ %1$@ ได้เปลี่ยนไป คุณอาจต้องการตรวจยืนยันอีกครั้ง";
 
 /* Title for Safety Tips button in thread details. */
 "SAFETY_TIPS_BUTTON_ACTION_TITLE" = "คำแนะนำเพื่อความปลอดภัย";
@@ -8127,9 +8286,6 @@
 
 /* Title of alert indicating sharing suggestions failed to deactivate */
 "SHARING_SUGGESTIONS_DISABLE_ERROR" = "การปิดคำแนะนำการแบ่งปันไม่สำเร็จ";
-
-/* Action sheet item */
-"SHOW_SAFETY_NUMBER_ACTION" = "แสดงหมายเลขความปลอดภัย";
 
 /* notification action */
 "SHOW_THREAD_BUTTON_TITLE" = "แสดงแชท";

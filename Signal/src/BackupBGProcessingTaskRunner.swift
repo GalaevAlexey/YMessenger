@@ -28,19 +28,19 @@ class BackupBGProcessingTaskRunner: BGProcessingTaskRunner {
     public static let requiresNetworkConnectivity = true
 
     func run() async throws {
-        try await exportJob().exportAndUploadBackup(progress: nil)
+        try await exportJob().exportAndUploadBackup(onProgressUpdate: nil)
     }
 
     public func startCondition() -> BGProcessingTaskStartCondition {
-        guard FeatureFlags.Backups.remoteExportAlpha else {
+        guard FeatureFlags.Backups.supported else {
             return .never
         }
 
         return db.read { (tx) -> BGProcessingTaskStartCondition in
             switch backupSettingsStore.backupPlan(tx: tx) {
-            case .disabled:
+            case .disabled, .disabling:
                 return .never
-            case .free, .paid, .paidExpiringSoon:
+            case .free, .paid, .paidExpiringSoon, .paidAsTester:
                 break
             }
             let lastBackupDate = (backupSettingsStore.lastBackupDate(tx: tx) ?? Date(millisecondsSince1970: 0))

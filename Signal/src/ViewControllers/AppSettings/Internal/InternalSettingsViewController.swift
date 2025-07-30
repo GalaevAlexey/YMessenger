@@ -63,7 +63,7 @@ class InternalSettingsViewController: OWSTableViewController2 {
         }
 
         debugSection.add(.disclosureItem(
-            withText: "Flags",
+            withText: "Remote Configs",
             actionBlock: { [weak self] in
                 let vc = FlagsViewController()
                 self?.navigationController?.pushViewController(vc, animated: true)
@@ -117,46 +117,6 @@ class InternalSettingsViewController: OWSTableViewController2 {
                 }
             }
         ))
-        debugSection.add(.actionItem(
-            withText: "Check for orphaned attachments",
-            actionBlock: { [weak self] in
-                guard let self else { return }
-                ModalActivityIndicatorViewController.present(
-                    fromViewController: self
-                ) { modalActivityIndicator -> Void in
-                    var attachmentDirFiles = Set(try! OWSFileSystem.recursiveFilesInDirectory(AttachmentStream.attachmentsDirectory().path))
-                    DependenciesBridge.shared.db.read { tx in
-                        let cursor = try! Attachment.Record
-                            .filter(
-                                Column(Attachment.Record.CodingKeys.localRelativeFilePath) != nil
-                                || Column(Attachment.Record.CodingKeys.localRelativeFilePathThumbnail) != nil
-                                || Column(Attachment.Record.CodingKeys.audioWaveformRelativeFilePath) != nil
-                                || Column(Attachment.Record.CodingKeys.videoStillFrameRelativeFilePath) != nil
-                            )
-                            .fetchCursor(tx.database)
-                        while let attachmentRecord = try! cursor.next() {
-                            for relFilePath in attachmentRecord.allFilesRelativePaths {
-                                let absolutePath = AttachmentStream.absoluteAttachmentFileURL(relativeFilePath: relFilePath).path
-                                attachmentDirFiles.remove(absolutePath)
-                            }
-                        }
-                    }
-                    if attachmentDirFiles.isEmpty {
-                        modalActivityIndicator.dismiss(animated: true, completion: {
-                            self.presentToast(text: "No orphans!")
-                        })
-                        return
-                    }
-                    var byteCount: UInt = 0
-                    for file in attachmentDirFiles {
-                        byteCount += OWSFileSystem.fileSize(ofPath: file)?.uintValue ?? 0
-                    }
-                    modalActivityIndicator.dismiss(animated: true, completion: {
-                        self.presentToast(text: "\(attachmentDirFiles.count) orphans totalling \(OWSFormat.formatFileSize(UInt(byteCount), maximumFractionalDigits: 0))")
-                    })
-                }
-            }
-        ))
 
         if mode == .registration {
             debugSection.add(.actionItem(withText: "Submit debug logs") {
@@ -195,6 +155,18 @@ class InternalSettingsViewController: OWSTableViewController2 {
                     !BackupAttachmentDownloadEligibility.disableTransitTierDownloadsOverride
             }
         ))
+        backupsSection.add(.actionItem(withText: "Acquire Backup entitlement sans StoreKit") { [weak self] in
+            Task {
+                let backupTestFlightEntitlementManager = DependenciesBridge.shared.backupTestFlightEntitlementManager
+
+                do {
+                    try await backupTestFlightEntitlementManager.acquireEntitlement()
+                    self?.presentToast(text: "Successfully acquired Backup entitlement!")
+                } catch {
+                    self?.presentToast(text: "Failed to acquired Backup entitlement! \(error)")
+                }
+            }
+        })
 
         if backupsSection.items.isEmpty.negated {
             contents.add(backupsSection)
@@ -204,7 +176,7 @@ class InternalSettingsViewController: OWSTableViewController2 {
             contactThreadCount,
             groupThreadCount,
             messageCount,
-            v2AttachmentCount,
+            attachmentCount,
             donationSubscriberID,
             storageServiceManifestVersion
         ) = SSKEnvironment.shared.databaseStorageRef.read { tx in
@@ -248,16 +220,23 @@ class InternalSettingsViewController: OWSTableViewController2 {
         numberFormatter.formatterBehavior = .behavior10_4
         numberFormatter.numberStyle = .decimal
 
-        let byteCountFormatter = ByteCountFormatter()
-
         let dbSection = OWSTableSection(title: "Database")
-        dbSection.add(.copyableItem(label: "DB Size", value: byteCountFormatter.string(for: SSKEnvironment.shared.databaseStorageRef.databaseFileSize)))
-        dbSection.add(.copyableItem(label: "DB WAL Size", value: byteCountFormatter.string(for: SSKEnvironment.shared.databaseStorageRef.databaseWALFileSize)))
-        dbSection.add(.copyableItem(label: "DB SHM Size", value: byteCountFormatter.string(for: SSKEnvironment.shared.databaseStorageRef.databaseSHMFileSize)))
         dbSection.add(.copyableItem(label: "Contact Threads", value: numberFormatter.string(for: contactThreadCount)))
         dbSection.add(.copyableItem(label: "Group Threads", value: numberFormatter.string(for: groupThreadCount)))
         dbSection.add(.copyableItem(label: "Messages", value: numberFormatter.string(for: messageCount)))
-        dbSection.add(.copyableItem(label: "v2 Attachments", value: numberFormatter.string(for: v2AttachmentCount)))
+        dbSection.add(.copyableItem(label: "Attachments", value: numberFormatter.string(for: attachmentCount)))
+        dbSection.add(.actionItem(
+            withText: "Disk Usage",
+            actionBlock: { [weak self] in
+                ModalActivityIndicatorViewController.present(
+                    fromViewController: self!,
+                    asyncBlock: { [weak self] modal in
+                        let vc = await InternalDiskUsageViewController.build()
+                        self?.navigationController?.pushViewController(vc, animated: true)
+                        modal.dismiss(animated: true)
+                    })
+            }
+        ))
         contents.add(dbSection)
 
         let deviceSection = OWSTableSection(title: "Device")
@@ -397,11 +376,6 @@ private extension InternalSettingsViewController {
                         }
                     }
                 }
-            }
-
-            guard FeatureFlags.Backups.remoteExportAlpha else {
-                exportMessageBackupProtoFile()
-                return
             }
 
             DispatchQueue.main.async {

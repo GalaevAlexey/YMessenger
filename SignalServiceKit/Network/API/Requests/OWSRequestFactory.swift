@@ -31,8 +31,12 @@ public enum OWSRequestFactory {
         return TSRequest(url: URL(string: "v1/payments/conversions")!, method: "GET", parameters: [:])
     }
 
-    static func getRemoteConfigRequest() -> TSRequest {
-        return TSRequest(url: URL(string: "v1/config/")!, method: "GET", parameters: [:])
+    static func getRemoteConfigRequest(eTag: String?) -> TSRequest {
+        var request = TSRequest(url: URL(string: "v2/config/")!, method: "GET", parameters: [:])
+        if let eTag {
+            request.headers["If-None-Match"] = eTag
+        }
+        return request
     }
 
     public static func callingRelaysRequest() -> TSRequest {
@@ -58,7 +62,7 @@ public enum OWSRequestFactory {
     }
 
     static func remoteAttestationAuthRequestForSVR2() -> TSRequest {
-        return TSRequest(url: URL(string: "v2/backup/auth")!, method: "GET", parameters: [:])
+        return TSRequest(url: URL(string: "v2/svr/auth")!, method: "GET", parameters: [:])
     }
 
     static func storageAuthRequest(auth: ChatServiceAuth) -> TSRequest {
@@ -131,6 +135,10 @@ public enum OWSRequestFactory {
         ]
 
         var request = TSRequest(url: URL(string: path)!, method: "PUT", parameters: parameters)
+        // Use 45 seconds (the maximum time allowed by the pinging logic) to
+        // support larger messages. Message sends have automatic retries, so short
+        // timeouts aren't useful because errors are invisible for ~24 hours.
+        request.timeoutInterval = 45
         if let auth {
             request.auth = .sealedSender(auth)
         }
@@ -157,6 +165,10 @@ public enum OWSRequestFactory {
         ]
 
         var request = TSRequest(url: components.url!, method: "PUT", parameters: nil)
+        // Use 45 seconds (the maximum time allowed by the pinging logic) to
+        // support larger messages. Message sends have automatic retries, so short
+        // timeouts aren't useful because errors are invisible for ~24 hours.
+        request.timeoutInterval = 45
         request.headers["Content-Type"] = "application/vnd.signal-messenger.mrm"
         request.auth = .sealedSender(auth)
         request.body = .data(ciphertext)
@@ -203,7 +215,13 @@ public enum OWSRequestFactory {
     static let batchIdentityCheckElementsLimit = 1000
     static func batchIdentityCheckRequest(elements: [[String: String]]) -> TSRequest {
         precondition(elements.count <= batchIdentityCheckElementsLimit)
-        return .init(url: .init(string: "v1/profile/identity_check/batch")!, method: HTTPMethod.post.methodName, parameters: ["elements": elements])
+        var request = TSRequest(
+            url: .init(string: "v1/profile/identity_check/batch")!,
+            method: HTTPMethod.post.methodName,
+            parameters: ["elements": elements],
+        )
+        request.auth = .anonymous
+        return request
     }
 
     // MARK: - Devices

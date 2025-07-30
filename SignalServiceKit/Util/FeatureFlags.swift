@@ -43,17 +43,14 @@ public enum FeatureFlags {
     public static let periodicallyCheckDatabaseIntegrity: Bool = false
 
     public enum Backups {
-        public static let fileAlpha = build.includes(.internal)
-        public static let remoteExportAlpha = build.includes(.dev)
-
-        public static let fileAlphaRegistrationFlow = build.includes(.dev)
-        public static let quickRestoreFlow = build.includes(.dev)
+        public static let supported = build.includes(.internal)
+        public static let showSettings = build.includes(.dev)
 
         public static let restoreFailOnAnyError = build.includes(.beta)
         public static let detailedBenchLogging = build.includes(.internal)
         public static let errorDisplay = build.includes(.internal)
 
-        public static let settings = build.includes(.dev)
+        public static let avoidStoreKitForTesters = build.includes(.beta)
     }
 
     public static let runTSAttachmentMigrationInMainAppBackground = true
@@ -63,7 +60,7 @@ public enum FeatureFlags {
 
     public static let libsignalEnforceMinTlsVersion = false
 
-    public static let notificationServiceWebSocket = build.includes(.internal)
+    public static let moveDraftsUpChatList = build.includes(.internal)
 }
 
 // MARK: -
