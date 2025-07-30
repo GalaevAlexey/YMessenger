@@ -523,7 +523,6 @@
 		4CB5F26720F6E1E2004D1B42 /* MessageActionsToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF4C0920F55BBA005DA313 /* MessageActionsToolbar.swift */; };
 		4CB5F26920F7D060004D1B42 /* MessageActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB5F26820F7D060004D1B42 /* MessageActions.swift */; };
 		4CBBFE4A2306F5D300B37450 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBBFE492306F5D300B37450 /* LogViewController.swift */; };
-		4CC1ECF9211A47CE00CC13BE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC1ECF8211A47CD00CC13BE /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		4CC1ECFB211A553000CC13BE /* AppUpdateNag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC1ECFA211A553000CC13BE /* AppUpdateNag.swift */; };
 		4CD675BE22E7BE35008010D2 /* MediaDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD675BD22E7BE35008010D2 /* MediaDismissAnimationController.swift */; };
 		4CD675C522E7CF22008010D2 /* ConversationViewController+OWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD675C422E7CF22008010D2 /* ConversationViewController+OWS.swift */; };
@@ -3895,6 +3894,7 @@
 		1700E34028BD41140073D949 /* SetAlgebra+SSK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SetAlgebra+SSK.swift"; sourceTree = "<group>"; };
 		1704690925D4C2E6000793D8 /* SignalAttachmentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalAttachmentTest.swift; sourceTree = "<group>"; };
 		1704690B25D4C92B000793D8 /* test-jpg-rotated.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "test-jpg-rotated.jpg"; sourceTree = "<group>"; };
+		17C2E00D2E3A5EB100F7219C /* SignalDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignalDebug.entitlements; sourceTree = "<group>"; };
 		17E6048F28A17BD200127680 /* ZkGroupIntegrationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZkGroupIntegrationTest.swift; sourceTree = "<group>"; };
 		17EC850B29133CDB00319C82 /* CancelledGroupRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelledGroupRing.swift; sourceTree = "<group>"; };
 		299F6904BB7E4C0E2463A169 /* Pods-SignalNSE.app store release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalNSE.app store release.xcconfig"; path = "Target Support Files/Pods-SignalNSE/Pods-SignalNSE.app store release.xcconfig"; sourceTree = "<group>"; };
@@ -4431,7 +4431,6 @@
 		4CB5F26820F7D060004D1B42 /* MessageActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageActions.swift; sourceTree = "<group>"; };
 		4CB93DC12180FF07004B9764 /* ProximityMonitoringManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximityMonitoringManager.swift; sourceTree = "<group>"; };
 		4CBBFE492306F5D300B37450 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
-		4CC1ECF8211A47CD00CC13BE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		4CC1ECFA211A553000CC13BE /* AppUpdateNag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdateNag.swift; sourceTree = "<group>"; };
 		4CD675BD22E7BE35008010D2 /* MediaDismissAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDismissAnimationController.swift; sourceTree = "<group>"; };
 		4CD675C422E7CF22008010D2 /* ConversationViewController+OWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConversationViewController+OWS.swift"; sourceTree = "<group>"; };
@@ -5615,7 +5614,6 @@
 		B95A765D2B76E93500AA7E97 /* FindByUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindByUsernameViewController.swift; sourceTree = "<group>"; };
 		B95BBAC12BB36025009EFB4A /* ProfileName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileName.swift; sourceTree = "<group>"; };
 		B96D6D782B9F83270039EB99 /* SignalSymbols-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignalSymbols-Regular.otf"; sourceTree = "<group>"; };
-		B96FEE2E2CDC297500836191 /* User.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = User.xcconfig; sourceTree = "<group>"; };
 		B9754F532C73AD49000000E4 /* ConversationAvatarView+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConversationAvatarView+SwiftUI.swift"; sourceTree = "<group>"; };
 		B97803002DD65B0A00E9FC82 /* LinearProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearProgressView.swift; sourceTree = "<group>"; };
 		B982ACFE2BA8FD2A00AD7E81 /* SignalSymbols-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignalSymbols-Bold.otf"; sourceTree = "<group>"; };
@@ -7761,7 +7759,6 @@
 				A163E8AB16F3F6AA0094D68B /* Security.framework in Frameworks */,
 				F9C5C8AA289451B900548EEE /* SignalServiceKit.framework in Frameworks */,
 				34A954BD271A471300B05242 /* SignalUI.framework in Frameworks */,
-				4CC1ECF9211A47CE00CC13BE /* StoreKit.framework in Frameworks */,
 				D2179CFE16BB0B480006F3AB /* SystemConfiguration.framework in Frameworks */,
 				D221A08E169C9E5E00537ABF /* UIKit.framework in Frameworks */,
 			);
@@ -7814,7 +7811,6 @@
 				05EA61422CC9437F00B16D4E /* Project-Debug.xcconfig */,
 				05EA61432CC943D200B16D4E /* Project-Release.xcconfig */,
 				05EA61442CC943DD00B16D4E /* Project.xcconfig */,
-				B96FEE2E2CDC297500836191 /* User.xcconfig */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -11380,7 +11376,6 @@
 				A11CD70C17FA230600A2D1B1 /* QuartzCore.framework */,
 				A163E8AA16F3F6A90094D68B /* Security.framework */,
 				FC3BD9871A30A790005B96BB /* Social.framework */,
-				4CC1ECF8211A47CD00CC13BE /* StoreKit.framework */,
 				D2179CFD16BB0B480006F3AB /* SystemConfiguration.framework */,
 				D221A08D169C9E5E00537ABF /* UIKit.framework */,
 				B69CD25019773E79005CE69A /* XCTest.framework */,
@@ -11391,6 +11386,7 @@
 		D221A093169C9E5E00537ABF /* Signal */ = {
 			isa = PBXGroup;
 			children = (
+				17C2E00D2E3A5EB100F7219C /* SignalDebug.entitlements */,
 				F94D12FD28BD0DD900B2C478 /* Accessibility */,
 				5045F44129E0DAA400058E5F /* AppLaunch */,
 				661AEE462C2088DF0046B1D8 /* Attachments */,
@@ -20010,6 +20006,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = "SignalShareExtension/SignalShareExtension-AppStore.entitlements";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = DR9YEJ8YRD;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -20769,7 +20766,7 @@
 				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_UNDEFINED_BEHAVIOR_SANITIZER_INTEGER = YES;
-				CODE_SIGN_ENTITLEMENTS = Signal/Signal.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Signal/SignalDebug.entitlements;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -21143,12 +21140,12 @@
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = DR9YEJ8YRD;
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = DR9YEJ8YRD;
+				DEVELOPMENT_TEAM = DR9YEJ8YRD;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -21163,6 +21160,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalServiceKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -21199,11 +21197,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = DR9YEJ8YRD;
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = DR9YEJ8YRD;
+				DEVELOPMENT_TEAM = DR9YEJ8YRD;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -21222,6 +21220,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalServiceKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -21261,11 +21260,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = DR9YEJ8YRD;
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = DR9YEJ8YRD;
+				DEVELOPMENT_TEAM = DR9YEJ8YRD;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -21284,6 +21283,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalServiceKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -21323,11 +21323,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = DR9YEJ8YRD;
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = DR9YEJ8YRD;
+				DEVELOPMENT_TEAM = DR9YEJ8YRD;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -21346,6 +21346,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.signal.SignalServiceKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = NO;
