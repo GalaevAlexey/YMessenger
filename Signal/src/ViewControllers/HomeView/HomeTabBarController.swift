@@ -135,17 +135,15 @@ class HomeTabBarController: UITabBarController {
     var owsTabBar: OWSTabBar? {
         return tabBar as? OWSTabBar
     }
-
-    private lazy var storyBadgeCountManager = StoryBadgeCountManager()
+    // private lazy var storyBadgeCountManager = StoryBadgeCountManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         delegate = self
-
-        NotificationCenter.default.addObserver(self, selector: #selector(storiesEnabledStateDidChange), name: .storiesEnabledStateDidChange, object: nil)
+        // NotificationCenter.default.addObserver(self, selector: #selector(storiesEnabledStateDidChange), name: .storiesEnabledStateDidChange, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(applyTheme), name: .themeDidChange, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(didEnterForeground), name: .OWSApplicationWillEnterForeground, object: nil)
+        // NotificationCenter.default.addObserver(self, selector: #selector(didEnterForeground), name: .OWSApplicationWillEnterForeground, object: nil)
         applyTheme()
 
         // We read directly from the database here, as the cache may not have been warmed by the time
@@ -156,17 +154,17 @@ class HomeTabBarController: UITabBarController {
         updateTabBars(areStoriesEnabled: areStoriesEnabled)
 
         AppEnvironment.shared.badgeManager.addObserver(self)
-        storyBadgeCountManager.beginObserving(observer: self)
+        // storyBadgeCountManager.beginObserving(observer: self)
 
         setTabBarHidden(false, animated: false)
     }
 
-    @objc
-    private func didEnterForeground() {
-        if selectedHomeTab == .stories {
-            storyBadgeCountManager.markAllStoriesRead()
-        }
-    }
+    // @objc
+    // private func didEnterForeground() {
+    //     if selectedHomeTab == .stories {
+    //         storyBadgeCountManager.markAllStoriesRead()
+    //     }
+    // }
 
     @objc
     private func applyTheme() {
@@ -213,23 +211,24 @@ class HomeTabBarController: UITabBarController {
     }
 
     private func tabsToShow(areStoriesEnabled: Bool) -> [Tabs] {
-        var tabs = [Tabs.chatList, Tabs.calls]
-        if areStoriesEnabled {
-            tabs.append(Tabs.stories)
-        }
-        return tabs
+        // var tabs = [Tabs.chatList, Tabs.calls]
+        // if areStoriesEnabled {
+        //     tabs.append(Tabs.stories)
+        // }
+        // return tabs
+        // Stories are disabled, so only show chats and calls.
+        return [Tabs.chatList, Tabs.calls]
     }
 
-    @objc
-    private func storiesEnabledStateDidChange() {
-        updateTabBars(areStoriesEnabled: StoryManager.areStoriesEnabled)
-        if selectedHomeTab == .stories {
-            storiesNavController.popToRootViewController(animated: false)
-        }
-
-        selectedHomeTab = .chatList
-        setTabBarHidden(false, animated: false)
-    }
+    // @objc
+    // private func storiesEnabledStateDidChange() {
+    //     updateTabBars(areStoriesEnabled: StoryManager.areStoriesEnabled)
+    //     if selectedHomeTab == .stories {
+    //         storiesNavController.popToRootViewController(animated: false)
+    //     }
+    //     selectedHomeTab = .chatList
+    //     setTabBarHidden(false, animated: false)
+    // }
 
     // MARK: - Hiding the tab bar
 
@@ -311,41 +310,40 @@ extension HomeTabBarController: BadgeObserver {
     }
 }
 
-extension HomeTabBarController: StoryBadgeCountObserver {
-
-    public var isStoriesTabActive: Bool {
-        return selectedHomeTab == .stories && CurrentAppContext().isAppForegroundAndActive()
-    }
-
-    public func didUpdateStoryBadge(_ badge: String?) {
-        if #available(iOS 18, *), UIDevice.current.isIPad {
-            uiTab(for: .stories).badgeValue = badge
-        } else {
-            storiesTabBarItem.badgeValue = badge
-        }
-        var views: [UIView] = [tabBar]
-        var badgeViews = [UIView]()
-        while let view = views.popLast() {
-            if NSStringFromClass(view.classForCoder) == "_UIBadgeView" {
-                badgeViews.append(view)
-            }
-            views = view.subviews + views
-        }
-        let sortedBadgeViews = badgeViews.sorted { lhs, rhs in
-            let lhsX = view.convert(CGPoint.zero, from: lhs).x
-            let rhsX = view.convert(CGPoint.zero, from: rhs).x
-            if CurrentAppContext().isRTL {
-                return lhsX > rhsX
-            } else {
-                return lhsX < rhsX
-            }
-        }
-        let badgeView = sortedBadgeViews[safe: Tabs.stories.rawValue]
-        badgeView?.layer.transform = CATransform3DIdentity
-        let xOffset: CGFloat = CurrentAppContext().isRTL ? 0 : -5
-        badgeView?.layer.transform = CATransform3DMakeTranslation(xOffset, 1, 1)
-    }
-}
+// extension HomeTabBarController: StoryBadgeCountObserver {
+//     public var isStoriesTabActive: Bool {
+//         return selectedHomeTab == .stories && CurrentAppContext().isAppForegroundAndActive()
+//     }
+//
+//     public func didUpdateStoryBadge(_ badge: String?) {
+//         if #available(iOS 18, *), UIDevice.current.isIPad {
+//             uiTab(for: .stories).badgeValue = badge
+//         } else {
+//             storiesTabBarItem.badgeValue = badge
+//         }
+//         var views: [UIView] = [tabBar]
+//         var badgeViews = [UIView]()
+//         while let view = views.popLast() {
+//             if NSStringFromClass(view.classForCoder) == "_UIBadgeView" {
+//                 badgeViews.append(view)
+//             }
+//             views = view.subviews + views
+//         }
+//         let sortedBadgeViews = badgeViews.sorted { lhs, rhs in
+//             let lhsX = view.convert(CGPoint.zero, from: lhs).x
+//             let rhsX = view.convert(CGPoint.zero, from: rhs).x
+//             if CurrentAppContext().isRTL {
+//                 return lhsX > rhsX
+//             } else {
+//                 return lhsX < rhsX
+//             }
+//         }
+//         let badgeView = sortedBadgeViews[safe: Tabs.stories.rawValue]
+//         badgeView?.layer.transform = CATransform3DIdentity
+//         let xOffset: CGFloat = CurrentAppContext().isRTL ? 0 : -5
+//         badgeView?.layer.transform = CATransform3DMakeTranslation(xOffset, 1, 1)
+//     }
+// }
 
 extension HomeTabBarController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
@@ -368,9 +366,9 @@ extension HomeTabBarController: UITabBarControllerDelegate {
     }
 
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        if isStoriesTabActive {
-            storyBadgeCountManager.markAllStoriesRead()
-        }
+        // if isStoriesTabActive {
+        //     storyBadgeCountManager.markAllStoriesRead()
+        // }
     }
 }
 

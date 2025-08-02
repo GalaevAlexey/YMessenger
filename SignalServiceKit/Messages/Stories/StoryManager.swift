@@ -13,6 +13,10 @@ public class StoryManager {
         cacheAreStoriesEnabled()
         cacheAreViewReceiptsEnabled()
 
+        // Stories are disabled by default. Only create story related threads
+        // if the feature has been explicitly enabled.
+        guard areStoriesEnabled else { return }
+
         appReadiness.runNowOrWhenAppDidBecomeReadyAsync {
             SSKEnvironment.shared.databaseStorageRef.asyncWrite { transaction in
                 // Create My Story thread if necessary
@@ -306,7 +310,9 @@ extension StoryManager {
     private static let keyValueStore = KeyValueStore(collection: "StoryManager")
     private static let areStoriesEnabledKey = "areStoriesEnabled"
 
-    private static var areStoriesEnabledCache = AtomicBool(true, lock: .sharedGlobal)
+    // Disable stories by default for this application build.
+    // private static var areStoriesEnabledCache = AtomicBool(true, lock: .sharedGlobal)
+    private static var areStoriesEnabledCache = AtomicBool(false, lock: .sharedGlobal)
 
     /// A cache of if stories are enabled for the local user. For convenience, this also factors in whether the overall feature is available to the user.
     public static var areStoriesEnabled: Bool { areStoriesEnabledCache.get() }
@@ -326,7 +332,8 @@ extension StoryManager {
 
     /// Have stories been enabled by the local user. This never factors in any remote information, like is the feature available to the user.
     public static func areStoriesEnabled(transaction: DBReadTransaction) -> Bool {
-        keyValueStore.getBool(areStoriesEnabledKey, defaultValue: true, transaction: transaction)
+        // keyValueStore.getBool(areStoriesEnabledKey, defaultValue: true, transaction: transaction)
+        keyValueStore.getBool(areStoriesEnabledKey, defaultValue: false, transaction: transaction)
     }
 
     private static func cacheAreStoriesEnabled() {
