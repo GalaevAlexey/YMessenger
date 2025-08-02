@@ -47,20 +47,7 @@ enum AppIcon: String {
     }
 
     var previewImageResource: ImageResource {
-        switch self {
-        case .default: ImageResource.AppIconPreview.default
-        case .white: ImageResource.AppIconPreview.white
-        case .color: ImageResource.AppIconPreview.color
-        case .night: ImageResource.AppIconPreview.dark
-        case .nightVariant: ImageResource.AppIconPreview.darkVariant
-        case .chat: ImageResource.AppIconPreview.chat
-        case .bubbles: ImageResource.AppIconPreview.bubbles
-        case .yellow: ImageResource.AppIconPreview.yellow
-        case .news: ImageResource.AppIconPreview.news
-        case .notes: ImageResource.AppIconPreview.notes
-        case .weather: ImageResource.AppIconPreview.weather
-        case .waves: ImageResource.AppIconPreview.wave
-        }
+        return ImageResource.AppIconPreview.default
     }
 
     /// Indicates if the icon should be rendered with a shadow in the picker.
