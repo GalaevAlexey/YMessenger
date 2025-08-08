@@ -459,6 +459,7 @@ public class OWSURLSession: OWSURLSessionProtocol {
 
         do {
             Logger.info("Sending… -> \(rawRequest)")
+            Logger.info("BODY… -> \(rawRequest.body)")
             let response = try await performUpload(request: request, requestData: requestBody, progress: nil)
             Logger.info("HTTP \(response.responseStatusCode) <- \(rawRequest)")
             return response

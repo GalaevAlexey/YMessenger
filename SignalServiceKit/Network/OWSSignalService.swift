@@ -139,7 +139,7 @@ public class OWSSignalService: OWSSignalServiceProtocol {
             let baseUrl = signalServiceInfo.baseUrl
             let securityPolicy: HttpSecurityPolicy
             if signalServiceInfo.shouldUseSignalCertificate {
-                securityPolicy = OWSURLSession.signalServiceSecurityPolicy
+                securityPolicy = OWSURLSession.defaultSecurityPolicy//OWSURLSession.signalServiceSecurityPolicy
             } else {
                 securityPolicy = OWSURLSession.defaultSecurityPolicy
             }
