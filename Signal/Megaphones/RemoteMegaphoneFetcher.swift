@@ -7,6 +7,31 @@ import Foundation
 public import SignalServiceKit
 
 /// Handles fetching and parsing remote megaphones.
+///
+/// This implementation has been disabled and left as a stub.
+public class RemoteMegaphoneFetcher {
+    public init(
+        databaseStorage: SDSDatabaseStorage,
+        signalService: any OWSSignalServiceProtocol
+    ) {}
+
+    /// Remote megaphones have been disabled; this method performs no work.
+    public func syncRemoteMegaphonesIfNecessary() async throws {
+        Logger.info("Remote megaphone fetch disabled")
+    }
+}
+
+// Disabled: remote megaphone feature. Original implementation retained below.
+#if false
+//
+// Copyright 2022 Signal Messenger, LLC
+// SPDX-License-Identifier: AGPL-3.0-only
+//
+
+import Foundation
+public import SignalServiceKit
+
+/// Handles fetching and parsing remote megaphones.
 public class RemoteMegaphoneFetcher {
     private let databaseStorage: SDSDatabaseStorage
     private let signalService: any OWSSignalServiceProtocol
@@ -468,3 +493,4 @@ private extension RemoteMegaphoneModel.Translation {
         )
     }
 }
+#endif

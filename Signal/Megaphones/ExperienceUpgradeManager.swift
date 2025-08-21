@@ -63,8 +63,10 @@ class ExperienceUpgradeManager {
                         return ExperienceUpgradeManifest
                             .checkPreconditionsForCreateUsernameReminder(transaction: transaction)
                     case .remoteMegaphone(let megaphone):
-                        return ExperienceUpgradeManifest
-                            .checkPreconditionsForRemoteMegaphone(megaphone, tx: transaction)
+                        // Disabled: remote megaphones.
+                        // return ExperienceUpgradeManifest
+                        //     .checkPreconditionsForRemoteMegaphone(megaphone, tx: transaction)
+                        return false
                     case .inactiveLinkedDeviceReminder:
                         return ExperienceUpgradeManifest
                             .checkPreconditionsForInactiveLinkedDeviceReminder(tx: transaction)
@@ -225,10 +227,12 @@ class ExperienceUpgradeManager {
                 .enableBackupsReminder:
             return true
         case .remoteMegaphone:
+            // Disabled: remote megaphones.
             // Remote megaphones are always presentable. We filter out any with
             // unpresentable fields (e.g., unrecognized actions) before we get
             // out of the `ExperienceUpgradeFinder`.
-            return true
+            // return true
+            return false
         case .unrecognized:
             return false
         }
@@ -317,11 +321,13 @@ class ExperienceUpgradeManager {
         case .contactPermissionReminder:
             return ContactPermissionReminderMegaphone(experienceUpgrade: experienceUpgrade, fromViewController: fromViewController)
         case .remoteMegaphone(let megaphone):
-            return RemoteMegaphone(
-                experienceUpgrade: experienceUpgrade,
-                remoteMegaphoneModel: megaphone,
-                fromViewController: fromViewController
-            )
+            // Disabled: remote megaphones.
+            // return RemoteMegaphone(
+            //     experienceUpgrade: experienceUpgrade,
+            //     remoteMegaphoneModel: megaphone,
+            //     fromViewController: fromViewController
+            // )
+            return nil
         case .backupKeyReminder:
             return BackupKeyReminderMegaphone(experienceUpgrade: experienceUpgrade, fromViewController: fromViewController)
         case .enableBackupsReminder:

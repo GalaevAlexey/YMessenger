@@ -63,6 +63,12 @@ public class ExperienceUpgradeFinder {
                 return
             }
 
+            // Disabled: remote megaphones.
+            // if case .remoteMegaphone = experienceUpgrade.manifest {
+            //     // Remote megaphones have been disabled; skip any persisted records.
+            //     return
+            // }
+
             guard experienceUpgrade.manifest.shouldSave else {
                 // Ignore saved records that we no longer persist.
                 return
