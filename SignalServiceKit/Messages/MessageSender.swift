@@ -1559,17 +1559,6 @@ public class MessageSender {
                 handleStaleDevices(serviceId: messageSend.serviceId, staleDevices: response.staleDevices, tx: tx)
             }
             throw DeviceMessagesError.staleDevices
-        case 428:
-            // SPAM TODO: Only retry messages with -hasRenderableContent
-            Logger.warn("Server requested user complete spam challenge.")
-            try await SSKEnvironment.shared.spamChallengeResolverRef.tryToHandleSilently(
-                bodyData: responseError.httpResponseData,
-                retryAfter: responseError.httpRetryAfterDate
-            )
-            // The resolver has 10s to asynchronously resolve a challenge If it
-            // resolves, great! We'll let MessageSender auto-retry. Otherwise, it'll be
-            // marked as "pending"
-            throw responseError
         default:
             throw responseError
         }

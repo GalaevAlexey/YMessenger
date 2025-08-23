@@ -1576,7 +1576,6 @@ public class AppSetup {
         let sskPreferences = SSKPreferences()
         let groupV2Updates = testDependencies.groupV2Updates ?? GroupV2UpdatesImpl(appReadiness: appReadiness)
         let paymentsCurrencies = testDependencies.paymentsCurrencies ?? PaymentsCurrenciesImpl(appReadiness: appReadiness)
-        let spamChallengeResolver = SpamChallengeResolver(appReadiness: appReadiness)
         let phoneNumberUtil = PhoneNumberUtil()
         let contactDiscoveryManager = ContactDiscoveryManagerImpl(
             db: db,
@@ -1650,7 +1649,6 @@ public class AppSetup {
             paymentsEvents: paymentsEvents,
             paymentsLock: paymentsLock,
             mobileCoinHelper: mobileCoinHelper,
-            spamChallengeResolver: spamChallengeResolver,
             senderKeyStore: senderKeyStore,
             phoneNumberUtil: phoneNumberUtil,
             webSocketFactory: webSocketFactory,

@@ -911,12 +911,6 @@ extension ConversationViewController: CVComponentDelegate {
 
     public func didTapPendingOutgoingMessage(_ message: TSOutgoingMessage) {
         AssertIsOnMainThread()
-        if SSKEnvironment.shared.spamChallengeResolverRef.isPausingMessages {
-            SpamCaptchaViewController.presentActionSheet(from: self)
-        } else {
-            SSKEnvironment.shared.spamChallengeResolverRef.retryPausedMessagesIfReady()
-        }
-
     }
 
     public func didTapFailedOutgoingMessage(_ message: TSOutgoingMessage) {

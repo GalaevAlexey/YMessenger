@@ -333,13 +333,6 @@ final class GroupCallViewController: UIViewController {
             object: nil
         )
 
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(didCompleteAnySpamChallenge),
-            name: SpamChallengeResolver.didCompleteAnyChallenge,
-            object: nil
-        )
-
         self.callLinkLobbyToastLabel.text = switch phoneNumberSharingMode {
         case .everybody:
             OWSLocalizedString(
@@ -684,12 +677,6 @@ final class GroupCallViewController: UIViewController {
         if hasUnresolvedSafetyNumberMismatch {
             resolveSafetyNumberMismatch()
         }
-    }
-
-    @objc
-    private func didCompleteAnySpamChallenge() {
-        AppEnvironment.shared.callLinkProfileKeySharingManager.sendProfileKeyToParticipants(ofCall: self.groupCall)
-        self.ringRtcCall.resendMediaKeys()
     }
 
     // MARK: Call members

@@ -143,14 +143,7 @@ extension SpamCaptchaViewController {
 
     static func presentCaptchaVC(from fromVC: UIViewController) {
         let vc = SpamCaptchaViewController()
-        vc.completionHandler = { token in
-            if let token = token {
-                fromVC.presentToast(
-                    text: OWSLocalizedString(
-                        "SPAM_CAPTCHA_COMPLETED_TOAST",
-                        comment: "Text for toast presented after spam verification has been completed"))
-                SSKEnvironment.shared.spamChallengeResolverRef.handleIncomingCaptchaChallengeToken(token)
-            }
+        vc.completionHandler = { _ in
             vc.dismiss(animated: true)
         }
         let navVC = OWSNavigationController(rootViewController: vc)
