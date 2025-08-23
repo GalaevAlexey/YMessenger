@@ -794,7 +794,7 @@ public class RegistrationCoordinatorImpl: RegistrationCoordinator {
         // For the manual restore path, we will ask for AEP which means we
         // don't need the users PIN to restore the master key. Instead, after
         // registration prompt the user to create a new PIN.
-        var askForPinDuringReregistration = true
+        var askForPinDuringReregistration = false
 
         // When we try to register, if we get a response from the server
         // telling us device transfer is possible, we set this to true
@@ -811,8 +811,8 @@ public class RegistrationCoordinatorImpl: RegistrationCoordinator {
         // Every time we go through registration, we should back up our SVR master
         // secret's random bytes to SVR. Its safer to do this more than it is to do
         // it less, so keeping this state in memory.
-        var hasBackedUpToSVR = false
-        var didSkipSVRBackup = false
+        var hasBackedUpToSVR = true
+        var didSkipSVRBackup = true
         var shouldBackUpToSVR: Bool {
             return hasBackedUpToSVR.negated && didSkipSVRBackup.negated
         }

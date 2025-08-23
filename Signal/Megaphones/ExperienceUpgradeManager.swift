@@ -62,7 +62,7 @@ class ExperienceUpgradeManager {
                     case .createUsernameReminder:
                         return ExperienceUpgradeManifest
                             .checkPreconditionsForCreateUsernameReminder(transaction: transaction)
-                    case .remoteMegaphone(let megaphone):
+                    case .remoteMegaphone(_):
                         // Disabled: remote megaphones.
                         // return ExperienceUpgradeManifest
                         //     .checkPreconditionsForRemoteMegaphone(megaphone, tx: transaction)
@@ -320,7 +320,7 @@ class ExperienceUpgradeManager {
             return InactivePrimaryDeviceReminderMegaphone(fromViewController: fromViewController, experienceUpgrade: experienceUpgrade)
         case .contactPermissionReminder:
             return ContactPermissionReminderMegaphone(experienceUpgrade: experienceUpgrade, fromViewController: fromViewController)
-        case .remoteMegaphone(let megaphone):
+        case .remoteMegaphone(_):
             // Disabled: remote megaphones.
             // return RemoteMegaphone(
             //     experienceUpgrade: experienceUpgrade,
