@@ -2943,10 +2943,10 @@ public class RegistrationCoordinatorImpl: RegistrationCoordinator {
         }
 
         func tryNonImmediatePushChallenge() -> Guarantee<RegistrationStep> {
-            // Our third choice: a captcha challenge
+            // Our third choice: a captcha challenge. For now, skip and continue.
             if requestsCaptchaChallenge {
-                Logger.info("Showing the CAPTCHA challenge to the user")
-                return .value(.captchaChallenge)
+                Logger.info("Skipping the CAPTCHA challenge and proceeding to the next step")
+                return nextStep()
             }
 
             // Our fourth choice: a push challenge where we're still waiting for the challenge token.
