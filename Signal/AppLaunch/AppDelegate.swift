@@ -1491,13 +1491,6 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     private nonisolated func handleSilentPushContent(_ remoteNotification: [AnyHashable: Any]) async throws -> HandleSilentPushContentResult {
-        if let spamChallengeToken = remoteNotification["rateLimitChallenge"] as? String {
-            SSKEnvironment.shared.spamChallengeResolverRef.handleIncomingPushChallengeToken(spamChallengeToken)
-            // TODO: Wait only until the token has been submitted.
-            try await Task.sleep(nanoseconds: 20.clampedNanoseconds)
-            return .handled
-        }
-
         if let preAuthChallengeToken = remoteNotification["challenge"] as? String {
             AppEnvironment.shared.pushRegistrationManagerRef.didReceiveVanillaPreAuthChallengeToken(preAuthChallengeToken)
             // TODO: Wait only until the token has been submitted.

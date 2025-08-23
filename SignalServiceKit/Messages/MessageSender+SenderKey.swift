@@ -529,19 +529,6 @@ extension MessageSender {
                         }
                     }
                     throw SenderKeyError.staleDevices
-                case 428:
-                    guard let body = responseData, let expiry = error.httpRetryAfterDate else {
-                        throw OWSAssertionError("Invalid spam response body")
-                    }
-                    try await withCheckedThrowingContinuation { continuation in
-                        SSKEnvironment.shared.spamChallengeResolverRef.handleServerChallengeBody(body, retryAfter: expiry) { didSucceed in
-                            if didSucceed {
-                                continuation.resume()
-                            } else {
-                                continuation.resume(throwing: SpamChallengeRequiredError())
-                            }
-                        }
-                    }
                 default:
                     break
                 }

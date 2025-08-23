@@ -74,13 +74,6 @@ extension SignalApp {
         let formattedStartupDuration = String(format: "%.3f", startupDuration)
         Logger.info("Presenting app \(formattedStartupDuration) seconds after launch started.")
 
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(spamChallenge),
-            name: SpamChallengeResolver.NeedsCaptchaNotification,
-            object: nil
-        )
-
         switch launchInterface {
         case .registration(let registrationLoader, let desiredMode):
             showRegistration(loader: registrationLoader, desiredMode: desiredMode, appReadiness: appReadiness)
@@ -126,11 +119,6 @@ extension SignalApp {
         UIApplication.shared.delegate?.window??.rootViewController = navController
 
         conversationSplitViewController = nil
-    }
-
-    @objc
-    private func spamChallenge() {
-        SpamCaptchaViewController.presentActionSheet(from: AppEnvironment.shared.windowManagerRef.captchaWindow.findFrontmostViewController(ignoringAlerts: true)!)
     }
 
     @objc
