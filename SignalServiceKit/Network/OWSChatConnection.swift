@@ -225,14 +225,15 @@ public class OWSChatConnection {
     }
 
     public static var canAppUseSocketsToMakeRequests: Bool {
-        switch CurrentAppContext().type {
-        case .main:
-            return true
-        case .nse:
-            return RemoteConfig.current.isNotificationServiceWebSocketEnabled
-        case .share:
-            return RemoteConfig.current.isShareExtensionWebSocketEnabled
-        }
+        return false
+//        switch CurrentAppContext().type {
+//        case .main:
+//            return true
+//        case .nse:
+//            return RemoteConfig.current.isNotificationServiceWebSocketEnabled
+//        case .share:
+//            return RemoteConfig.current.isShareExtensionWebSocketEnabled
+//        }
     }
 
     public var canOpenWebSocket: Bool {

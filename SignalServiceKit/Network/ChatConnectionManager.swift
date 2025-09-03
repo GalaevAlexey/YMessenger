@@ -100,12 +100,12 @@ public class ChatConnectionManagerImpl: ChatConnectionManager {
     }
 
     public func waitForIdentifiedConnectionToOpen() async throws {
-        owsAssertBeta(OWSChatConnection.canAppUseSocketsToMakeRequests)
+        //owsAssertBeta(OWSChatConnection.canAppUseSocketsToMakeRequests)
         try await self.connectionIdentified.waitForOpen()
     }
 
     public func waitUntilIdentifiedConnectionShouldBeClosed() async throws(CancellationError) {
-        owsAssertBeta(OWSChatConnection.canAppUseSocketsToMakeRequests)
+        //owsAssertBeta(OWSChatConnection.canAppUseSocketsToMakeRequests)
         try await self.connectionIdentified.waitUntilSocketShouldBeClosed()
     }
 

@@ -163,7 +163,7 @@ public class TSConstantsProduction: TSConstantsProtocol {
     public let storageServiceURL = "https://36c1be2ab9a6.ngrok-free.app"
     public let sfuURL = "https://5c4270a09dec.ngrok-free.app"
     public let sfuTestURL = "https://5c4270a09dec.ngrok-free.app"
-    public let svr2URL = "ws://5c4270a09dec.ngrok-free.app" //should be wss after sertificates achieved
+    public let svr2URL = "wss://5c4270a09dec.ngrok-free.app"
     public let registrationCaptchaURL = "https://5c4270a09dec.ngrok-free.app/registration/generate.html"
     public let challengeCaptchaURL = "https://5c4270a09dec.ngrok-free.app/challenge/generate.html"
     public let kUDTrustRoot = "BXu6QIKVz5MA8gstzfOgRQGqyLqOwNKHL6INkv3IHWMF"
@@ -196,7 +196,7 @@ public class TSConstantsProduction: TSConstantsProtocol {
     /// We *might* need to clear credentials (or perform some other migration)
     /// when this value changes, depending on how it's changing. If you do need
     /// to perform a migration, check out `ZkParamsMigrator`.
-    public let serverPublicParams = Data(base64Encoded: "AMhf5ywVwITZMsff/eCyudZx9JDmkkkbV6PInzG4p8x3VqVJSFiMvnvlEKWuRob/1eaIetR31IYeAbm0NdOuHH8Qi+Rexi1wLlpzIo1gstHWBfZzy1+qHRV5A4TqPp15YzBPm0WSggW6PbSn+F4lf57VCnHF7p8SvzAA2ZZJPYJURt8X7bbg+H3i+PEjH9DXItNEqs2sNcug37xZQDLm7X36nOoGPs54XsEGzPdEV+itQNGUFEjY6X9Uv+Acuks7NpyGvCoKxGwgKgE5XyJ+nNKlyHHOLb6N1NuHyBrZrgtY/JYJHRooo5CEqYKBqdFnmbTVGEkCvJKxLnjwKWf+fEPoWeQFj5ObDjcKMZf2Jm2Ae69x+ikU5gBXsRmoF94GXTLfN0/vLt98KDPnxwAQL9j5V1jGOY8jQl6MLxEs56cwXN0dqCnImzVH3TZT1cJ8SW1BRX6qIVxEzjsSGx3yxF3suAilPMqGRp4ffyopjMD1JXiKR2RwLKzizUe5e8XyGOy9fplzhw3jVzTRyUZTRSZKkMLWcQ/gv0E4aONNqs4P+NameAZYOD12qRkxosQQP5uux6B2nRyZ7sAV54DgFyLiRcq1FvwKw2EPQdk4HDoePrO/RNUbyNddnM/mMgj4FW65xCoT1LmjrIjsv/Ggdlx46ueczhMgtBunx1/w8k8V+l8LVZ8gAT6wkU5J+DPQalQguMg12Jzug3q4TbdHiGCmD9EunCwOmsLuLJkz6EcSYXtrlDEnAM+hicw7iergYLLlMXpfTdGxJCWJmP4zqUFeTTmsmhsjGBt7NiEB/9pFFEB3pSbf4iiUukw63Eo8Aqnf4iwob6X1QviCWuc8t0LUlT9vALgh/f2DPVOOmR0RW6bgRvc7DSF20V/omg+YBw==")!
+    public let serverPublicParams = Data(base64Encoded: "AJJhhdbKk40rAMNnZeA3v35QX6+c8wzNHXVSGKWdLcp2Qmm4XJcdloHpEhFnm5B3ZJpNBPp8NPeHKQ7tT3MbWm7EaK1mND65PYVj7S7YbfEVSOdhBhTQX12OplJfTpXBB8LA74r+1DKUWFaw0TwQjZw9H+xWSp8/5rEC09U1Tq8oEpZmo0A6glWZrsioys/pFtTHp4YlKEWueeMTNuPj5hKQZJddmsLY9oeFOPhde39Hz49njQeSbK8WPtunmAzEH+qdL0uLC6oDMMZbLdOpcU8GNtAYbszxEG6Ypju3hsVhbJAx2EXhUVuR8u18lnMYcgF4t0ktV9FWJFmARc67A3w8Y9nexVMp6SdfYYkIN1O5ouJyJXX2Q7j7FHFil8zyOlinkrNoD6+1HKE/g17QYXM54zqhLVRNyLo7phw9TnY3OgUdhGCBOGvLA/SKuCKTS08TMi2Q3kPYW8isY/nLXTTw85X/WyKzJriRaazVJzw0fY7/pg6PpL1po7KO9izrd8RdqM+ZwVwIndZ6/I7KmIs0ere1tiZQJwcNP37R3dciuD6/P5gXb9f6VWNZOF7TWPRdarZPoJIwJ5zcEf5jyRGwyPXICVzzAld+aUj2kfIggNiwbXJ3Jh3FjTqlRVmHbVhjFDaR/6dlhDew/5MAcq8qMZHFbUJ6xuBkbZIyifsjdrnveeB+Wp4eKoU7XCOMK/qVaZ1Lhx1jRfJd5pis3l+8qTT7jZ1wokebIyJk2TWBYkDq+JtOueDwmzFDyNz8KriIxEsKZ6fTOl4soC2VdQKsyD3D9fISxBHispTUr6Emajk5DL7o/bg/eYokClnwnLS3PdKbSVJbkjjcMXmt8RKMPaBD8TrQSveffoHbqu1MRXuYgnzkwTZ2MLFr+o5hAw==")!
 
     public let callLinkPublicParams = Data(base64Encoded: "AByD873dTilmOSG0TjKrvpeaKEsUmIO8Vx9BeMmftwUs9v7ikPwM8P3OHyT0+X3EUMZrSe9VUp26Wai51Q9I8mdk0hX/yo7CeFGJyzoOqn8e/i4Ygbn5HoAyXJx5eXfIbqpc0bIxzju4H/HOQeOpt6h742qii5u/cbwOhFZCsMIbElZTaeU+BWMBQiZHIGHT5IE0qCordQKZ5iPZom0HeFa8Yq0ShuEyAl0WINBiY6xE3H/9WnvzXBbMuuk//eRxXgzO8ieCeK8FwQNxbfXqZm6Ro1cMhCOF3u7xoX83QhpN")!
 
