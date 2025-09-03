@@ -76,12 +76,12 @@ public class TSConstants {
     public static var backupServerPublicParams: Data { shared.backupServerPublicParams }
 
     public static let shared: TSConstantsProtocol = {
-        switch environment {
-        case .production:
+//        switch environment {
+//        case .production:
             return TSConstantsProduction()
-        case .staging:
-            return TSConstantsStaging()
-        }
+//        case .staging:
+//            return TSConstantsStaging()
+//        }
     }()
 
     public static let libSignalEnv: Net.Environment = {
@@ -155,20 +155,20 @@ public class TSConstantsProduction: TSConstantsProtocol {
 
     public init() {}
 
-    public let mainServiceIdentifiedURL = "https://3d4d0ff52be0.ngrok-free.app"
-    public let mainServiceUnidentifiedURL = "https://3d4d0ff52be0.ngrok-free.app"
-    public let textSecureCDN0ServerURL = "https://3d4d0ff52be0.ngrok-free.app"
-    public let textSecureCDN2ServerURL = "https://3d4d0ff52be0.ngrok-free.app"
-    public let textSecureCDN3ServerURL = "https://3d4d0ff52be0.ngrok-free.app"
-    public let storageServiceURL = "https://3d4d0ff52be0.ngrok-free.app"
-    public let sfuURL = "https://3d4d0ff52be0.ngrok-free.app"
-    public let sfuTestURL = "https://3d4d0ff52be0.ngrok-free.app"
-    public let svr2URL = "wss://3d4d0ff52be0.ngrok-free.app"
-    public let registrationCaptchaURL = "https://3d4d0ff52be0.ngrok-free.app/registration/generate.html"
-    public let challengeCaptchaURL = "https://3d4d0ff52be0.ngrok-free.app/challenge/generate.html"
+    public let mainServiceIdentifiedURL = "https://5c4270a09dec.ngrok-free.app"
+    public let mainServiceUnidentifiedURL = "https://5c4270a09dec.ngrok-free.app"
+    public let textSecureCDN0ServerURL = "https://5c4270a09dec.ngrok-free.app"
+    public let textSecureCDN2ServerURL = "https://5c4270a09dec.ngrok-free.app"
+    public let textSecureCDN3ServerURL = "https://5c4270a09dec.ngrok-free.app"
+    public let storageServiceURL = "https://36c1be2ab9a6.ngrok-free.app"
+    public let sfuURL = "https://5c4270a09dec.ngrok-free.app"
+    public let sfuTestURL = "https://5c4270a09dec.ngrok-free.app"
+    public let svr2URL = "ws://5c4270a09dec.ngrok-free.app" //should be wss after sertificates achieved
+    public let registrationCaptchaURL = "https://5c4270a09dec.ngrok-free.app/registration/generate.html"
+    public let challengeCaptchaURL = "https://5c4270a09dec.ngrok-free.app/challenge/generate.html"
     public let kUDTrustRoot = "BXu6QIKVz5MA8gstzfOgRQGqyLqOwNKHL6INkv3IHWMF"
-    public let updatesURL = "https://3d4d0ff52be0.ngrok-free.app"
-    public let updates2URL = "https://3d4d0ff52be0.ngrok-free.app"
+    public let updatesURL = "https://5c4270a09dec.ngrok-free.app"
+    public let updates2URL = "https://5c4270a09dec.ngrok-free.app"
 
     public let censorshipFReflectorHost = "reflector-signal.global.ssl.fastly.net"
     public let censorshipGReflectorHost = "reflector-nrgwuv7kwq-uc.a.run.app"
@@ -209,22 +209,22 @@ public class TSConstantsStaging: TSConstantsProtocol {
 
     public init() {}
 
-    public let mainServiceIdentifiedURL = "https://3d4d0ff52be0.ngrok-free.app"
-    public let mainServiceUnidentifiedURL = "https://3d4d0ff52be0.ngrok-free.app"
-    public let textSecureCDN0ServerURL = "https://3d4d0ff52be0.ngrok-free.app"
-    public let textSecureCDN2ServerURL = "https://3d4d0ff52be0.ngrok-free.app"
-    public let textSecureCDN3ServerURL = "https://3d4d0ff52be0.ngrok-free.app"
-    public let storageServiceURL = "https://3d4d0ff52be0.ngrok-free.app"
-    public let sfuURL = "https://3d4d0ff52be0.ngrok-free.app"
-    public let svr2URL = "wss://3d4d0ff52be0.ngrok-free.app"
-    public let registrationCaptchaURL = "https://3d4d0ff52be0.ngrok-free.app/registration/generate.html"
-    public let challengeCaptchaURL = "https://3d4d0ff52be0.ngrok-free.app/challenge/generate.html"
+    public let mainServiceIdentifiedURL = "https://5c4270a09dec.ngrok-free.app"
+    public let mainServiceUnidentifiedURL = "https://5c4270a09dec.ngrok-free.app"
+    public let textSecureCDN0ServerURL = "https://5c4270a09dec.ngrok-free.app"
+    public let textSecureCDN2ServerURL = "https://5c4270a09dec.ngrok-free.app"
+    public let textSecureCDN3ServerURL = "https://5c4270a09dec.ngrok-free.app"
+    public let storageServiceURL = "https://36c1be2ab9a6.ngrok-free.app"
+    public let sfuURL = "https://5c4270a09dec.ngrok-free.app"
+    public let svr2URL = "wss://5c4270a09dec.ngrok-free.app"
+    public let registrationCaptchaURL = "https://5c4270a09dec.ngrok-free.app/registration/generate.html"
+    public let challengeCaptchaURL = "https://5c4270a09dec.ngrok-free.app/challenge/generate.html"
     // There's no separate test SFU for staging.
-    public let sfuTestURL = "https://3d4d0ff52be0.ngrok-free.app"
+    public let sfuTestURL = "https://5c4270a09dec.ngrok-free.app"
     public let kUDTrustRoot = "BbqY1DzohE4NUZoVF+L18oUPrK3kILllLEJh2UnPSsEx"
     // There's no separate updates endpoint for staging.
-    public let updatesURL = "https://3d4d0ff52be0.ngrok-free.app"
-    public let updates2URL = "https://3d4d0ff52be0.ngrok-free.app"
+    public let updatesURL = "https://5c4270a09dec.ngrok-free.app"
+    public let updates2URL = "https://5c4270a09dec.ngrok-free.app"
 
     public let censorshipFReflectorHost = "reflector-staging-signal.global.ssl.fastly.net"
     public let censorshipGReflectorHost = "reflector-nrgwuv7kwq-uc.a.run.app"
