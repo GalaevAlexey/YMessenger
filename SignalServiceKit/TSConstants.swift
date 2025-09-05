@@ -76,12 +76,12 @@ public class TSConstants {
     public static var backupServerPublicParams: Data { shared.backupServerPublicParams }
 
     public static let shared: TSConstantsProtocol = {
-//        switch environment {
-//        case .production:
+        switch environment {
+        case .production:
             return TSConstantsProduction()
-//        case .staging:
-//            return TSConstantsStaging()
-//        }
+        case .staging:
+            return TSConstantsStaging()
+        }
     }()
 
     public static let libSignalEnv: Net.Environment = {

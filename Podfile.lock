@@ -9,8 +9,8 @@ PODS:
   - LibMobileCoin/CoreHTTP (6.0.2):
     - SwiftProtobuf (~> 1.5)
   - libPhoneNumber-iOS (1.2.0)
-  - LibSignalClient (0.76.7)
-  - LibSignalClient/Tests (0.76.7)
+  - LibSignalClient (0.79.1)
+  - LibSignalClient/Tests (0.79.1)
   - libwebp (1.3.2):
     - libwebp/demux (= 1.3.2)
     - libwebp/mux (= 1.3.2)
@@ -53,8 +53,8 @@ DEPENDENCIES:
   - GRDB.swift/SQLCipher
   - LibMobileCoin/CoreHTTP (from `https://github.com/signalapp/libmobilecoin-ios-artifacts`, tag `signal/6.0.2`)
   - libPhoneNumber-iOS (from `https://github.com/signalapp/libPhoneNumber-iOS`, branch `signal-master`)
-  - LibSignalClient (from `https://github.com/signalapp/libsignal.git`, tag `v0.76.7`)
-  - LibSignalClient/Tests (from `https://github.com/signalapp/libsignal.git`, tag `v0.76.7`)
+  - LibSignalClient (from `/Users/jazzblood/Documents/libsignal`)
+  - LibSignalClient/Tests (from `/Users/jazzblood/Documents/libsignal`)
   - libwebp (from `./ThirdParty/libwebp.podspec.json`)
   - lottie-ios
   - Mantle (from `https://github.com/signalapp/Mantle`, branch `signal-master`)
@@ -89,8 +89,7 @@ EXTERNAL SOURCES:
     :branch: signal-master
     :git: https://github.com/signalapp/libPhoneNumber-iOS
   LibSignalClient:
-    :git: https://github.com/signalapp/libsignal.git
-    :tag: v0.76.7
+    :path: "/Users/jazzblood/Documents/libsignal"
   libwebp:
     :podspec: "./ThirdParty/libwebp.podspec.json"
   Mantle:
@@ -119,9 +118,6 @@ CHECKOUT OPTIONS:
   libPhoneNumber-iOS:
     :commit: 60482f7c0341e7c13e037ae1edbe8b359de7e6f3
     :git: https://github.com/signalapp/libPhoneNumber-iOS
-  LibSignalClient:
-    :git: https://github.com/signalapp/libsignal.git
-    :tag: v0.76.7
   Mantle:
     :commit: e7e46253bb01ce39525d90aa69ed9e85e758bfc4
     :git: https://github.com/signalapp/Mantle
@@ -139,14 +135,14 @@ CHECKOUT OPTIONS:
     :git: https://github.com/signalapp/YYImage
 
 SPEC CHECKSUMS:
-  blurhash: f588a9d659f4c742a325bbbbd438d1ef3c34af19
+  blurhash: 4b3b2b8909cf41ab59fa349788654b8387284ff4
   BonMot: fb2b6a2209cb3149aca37b7131d49c051c04ae86
   CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
   GRDB.swift: 1395cb3556df6b16ed69dfc74c3886abc75d2825
-  LibMobileCoin: 8503f567fa32184a5be7bc038fbd727747dd9991
+  LibMobileCoin: 4c76066a0aa8c614099da08e38562fd7b4b2d246
   libPhoneNumber-iOS: 1a34106b49dc6e12a7f37eb9aee7c64011509547
-  LibSignalClient: 8c5248325ca55fc7421670283b4220bb949aad25
-  libwebp: 1b5562124e3ca3336fb7506e76501bed7758963a
+  LibSignalClient: 138777ef644c34237b0b94fe4ba0a4095e529876
+  libwebp: ef31cb50301c37eecb4440d126c2d53cc17991e8
   Logging: beeb016c9c80cf77042d62e83495816847ef108b
   lottie-ios: fcb5e73e17ba4c983140b7d21095c834b3087418
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
@@ -156,8 +152,8 @@ SPEC CHECKSUMS:
   SignalRingRTC: 9caefe46be2413a09ea839bce80ef1bfa3ac69f4
   SQLCipher: ff2f045b20d675a73a70f7329395ddd4a2580063
   SwiftProtobuf: 3697407f0d5b23bedeba9c2eaaf3ec6fdff69349
-  YYImage: f1ddd15ac032a58b78bbed1e012b50302d318331
+  YYImage: 3887e29d0418f57e031ae6b795d9d0a77592afbd
 
-PODFILE CHECKSUM: 95d9a57cf4ad317afba5abd752fc4f02f58f653c
+PODFILE CHECKSUM: 44477a21173424bbcf002450d968b84255a1bbab
 
 COCOAPODS: 1.16.2
