@@ -13,18 +13,18 @@
 	<key>BuildDetails</key>
 	<dict>
 		<key>DateTime</key>
-		<string>Sat Sep  6 05:09:27 UTC 2025</string>
+		<string>Sat Sep  6 05:15:59 UTC 2025</string>
 		<key>SignalCommit</key>
-		<string>652ef299cddfab3d13d433ec12d97b65a5139a4e update testable build</string>
+		<string>8cd505dc850b357965018d1e629a11e1c0e71f80 can archive but need to revert</string>
 		<key>Timestamp</key>
-		<integer>1757135367</integer>
+		<integer>1757135759</integer>
 		<key>XCodeVersion</key>
 		<string>1600.1640</string>
 	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>${PRODUCT_NAME}</string>
+	<string>Y0x</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleGetInfoString</key>
