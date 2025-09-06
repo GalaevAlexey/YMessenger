@@ -13,11 +13,11 @@
 	<key>BuildDetails</key>
 	<dict>
 		<key>DateTime</key>
-		<string>Sat Sep  6 06:43:49 UTC 2025</string>
+		<string>Sat Sep  6 07:28:59 UTC 2025</string>
 		<key>SignalCommit</key>
-		<string>51617c071dda4798167266e6d2e140c6d4988692 changge app name Y0x</string>
+		<string>0fa8580cd697f72f085e2770293fd366c2bec487 revert back optimisations</string>
 		<key>Timestamp</key>
-		<integer>1757141029</integer>
+		<integer>1757143739</integer>
 		<key>XCodeVersion</key>
 		<string>1600.1640</string>
 	</dict>
