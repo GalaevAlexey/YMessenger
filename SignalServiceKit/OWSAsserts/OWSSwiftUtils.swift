@@ -44,15 +44,19 @@ public func owsFailDebug(
     function: String = #function,
     line: Int = #line
 ) {
-    logger.error(logMessage, file: file, function: function, line: line)
     if IsDebuggerAttached() {
+        logger.error(logMessage, file: file, function: function, line: line)
         TrapDebugger()
     } else if Preferences.isFailDebugEnabled {
+        logger.error(logMessage, file: file, function: function, line: line)
         Preferences.setIsFailDebugEnabled(false)
         logger.flush()
         fatalError(logMessage)
     } else {
-        assertionFailure(logMessage)
+        logger.error(logMessage, file: file, function: function, line: line)
+        if _isDebugAssertConfiguration() {
+            assertionFailure(logMessage)
+        }
     }
 }
 
