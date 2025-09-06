@@ -11,7 +11,16 @@
 		<string>LazyDatabaseMigratorTask</string>
 	</array>
 	<key>BuildDetails</key>
-	<dict/>
+	<dict>
+		<key>DateTime</key>
+		<string>Sat Sep  6 05:09:27 UTC 2025</string>
+		<key>SignalCommit</key>
+		<string>652ef299cddfab3d13d433ec12d97b65a5139a4e update testable build</string>
+		<key>Timestamp</key>
+		<integer>1757135367</integer>
+		<key>XCodeVersion</key>
+		<string>1600.1640</string>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -31,7 +40,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>7.70</string>
+	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -87,7 +96,7 @@
 	<key>NSContactsUsageDescription</key>
 	<string>Signal uses your contacts to find users you know. We do not store your contacts on the server.</string>
 	<key>NSFaceIDUsageDescription</key>
-	<string>Signal's Screen Lock uses Face ID.</string>
+	<string>Signal&apos;s Screen Lock uses Face ID.</string>
 	<key>NSLocalNetworkUsageDescription</key>
 	<string>Signal uses the local network to allow you to directly transfer your account to a new phone. It will not be used unless you explicitly choose to initiate a transfer to a new device.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
@@ -113,8 +122,8 @@
 	<array>
 		<string>fetch</string>
 		<string>processing</string>
-		<string>remote-notification</string>
 		<string>voip</string>
+		<string>remote-notification</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>Launch Screen</string>

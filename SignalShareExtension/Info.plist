@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>XPC!</string>
 	<key>CFBundleShortVersionString</key>
-	<string>7.70</string>
+	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>0</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
@@ -51,9 +51,9 @@
                     SUBQUERY (
                         $extensionItem.attachments,
                         $attachment,
-                        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data"
-                        OR ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url"
-                        OR ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.apple.pkpass"
+                        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.data&quot;
+                        OR ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.url&quot;
+                        OR ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;com.apple.pkpass&quot;
                     ).@count &gt;= 1
                 ).@count == 1
                 OR (
@@ -63,9 +63,9 @@
                         SUBQUERY (
                             $extensionItem.attachments,
                             $attachment,
-                            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data"
-                            OR ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url"
-                            OR ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.apple.pkpass"
+                            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.data&quot;
+                            OR ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.url&quot;
+                            OR ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;com.apple.pkpass&quot;
                         ).@count &gt;= 1
                     ).@count == 2
                     AND SUBQUERY (
@@ -74,7 +74,7 @@
                         SUBQUERY (
                             $extensionItem.attachments,
                             $attachment,
-                            ANY $attachment.registeredTypeIdentifiers UTI-EQUALS "public.url"
+                            ANY $attachment.registeredTypeIdentifiers UTI-EQUALS &quot;public.url&quot;
                         ).@count &gt;= 1
                     ).@count == 1
                 )

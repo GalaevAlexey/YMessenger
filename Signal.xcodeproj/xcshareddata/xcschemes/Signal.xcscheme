@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D221A088169C9E5E00537ABF"
-               BuildableName = "Y0x.app"
+               BuildableName = "Signal.app"
                BlueprintName = "Signal"
                ReferencedContainer = "container:Signal.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D221A088169C9E5E00537ABF"
-            BuildableName = "Y0x.app"
+            BuildableName = "Signal.app"
             BlueprintName = "Signal"
             ReferencedContainer = "container:Signal.xcodeproj">
          </BuildableReference>
@@ -49,7 +49,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D221A088169C9E5E00537ABF"
-            BuildableName = "Y0x.app"
+            BuildableName = "Signal.app"
             BlueprintName = "Signal"
             ReferencedContainer = "container:Signal.xcodeproj">
          </BuildableReference>
@@ -100,7 +100,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Testable Release"
+      buildConfiguration = "App Store Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       disableMainThreadChecker = "YES"
@@ -117,7 +117,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D221A088169C9E5E00537ABF"
-            BuildableName = "Y0x.app"
+            BuildableName = "Signal.app"
             BlueprintName = "Signal"
             ReferencedContainer = "container:Signal.xcodeproj">
          </BuildableReference>
@@ -180,7 +180,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D221A088169C9E5E00537ABF"
-            BuildableName = "Y0x.app"
+            BuildableName = "Signal.app"
             BlueprintName = "Signal"
             ReferencedContainer = "container:Signal.xcodeproj">
          </BuildableReference>

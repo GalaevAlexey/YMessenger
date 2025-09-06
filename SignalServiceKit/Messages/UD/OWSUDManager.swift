@@ -429,11 +429,8 @@ public class OWSUDManagerImpl: OWSUDManager {
         let nowMs = NSDate.ows_millisecondTimeStamp()
         let anHourFromNowMs = nowMs + UInt64.hourInMs
 
-        guard case .some(true) = try? certificate.validate(trustRoot: trustRoot, time: anHourFromNowMs) else {
-            return false
-        }
-
-        return true
+        return certificate.validate(trustRoot: trustRoot, time: anHourFromNowMs)
+       
     }
 
     public class func trustRoot() -> PublicKey {

@@ -99,8 +99,8 @@ public class BadgeAssets {
             try extractSpritesFromSpritesheetIfNecessary()
             lockedState.withLock { $0 = .fetched }
         } catch {
-            owsFailDebug("Failed to fetch badge assets with error: \(error)")
-            lockedState.withLock { $0 = .failed }
+            //owsFailDebug("Failed to fetch badge assets with error: \(error)")
+            //lockedState.withLock { $0 = .failed }
         }
     }
 

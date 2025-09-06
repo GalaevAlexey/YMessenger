@@ -1411,11 +1411,11 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         Logger.warn("")
-        #if DEBUG
+//        #if DEBUG
         AppEnvironment.shared.pushRegistrationManagerRef.didReceiveVanillaPushToken(Data(count: 32))
-        #else
-        AppEnvironment.shared.pushRegistrationManagerRef.didFailToReceiveVanillaPushToken(error: error)
-        #endif
+//        #else
+//        AppEnvironment.shared.pushRegistrationManagerRef.didFailToReceiveVanillaPushToken(error: error)
+//        #endif
     }
 
     func application(

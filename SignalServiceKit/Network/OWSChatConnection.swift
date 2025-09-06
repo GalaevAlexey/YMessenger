@@ -225,7 +225,6 @@ public class OWSChatConnection {
     }
 
     public static var canAppUseSocketsToMakeRequests: Bool {
-       // return false
         switch CurrentAppContext().type {
         case .main:
             return true
