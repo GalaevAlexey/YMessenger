@@ -13,11 +13,11 @@
 	<key>BuildDetails</key>
 	<dict>
 		<key>DateTime</key>
-		<string>Sat Sep  6 07:28:59 UTC 2025</string>
+		<string>Sat Sep  6 08:00:05 UTC 2025</string>
 		<key>SignalCommit</key>
-		<string>0fa8580cd697f72f085e2770293fd366c2bec487 revert back optimisations</string>
+		<string>b206355624305eb2d1d5c57ab9875234d8d36a95 Merge remote-tracking branch refs/remotes/origin/monkeyCodex</string>
 		<key>Timestamp</key>
-		<integer>1757143739</integer>
+		<integer>1757145605</integer>
 		<key>XCodeVersion</key>
 		<string>1600.1640</string>
 	</dict>
@@ -57,7 +57,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>0</string>
+	<string>1</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LOGS_EMAIL</key>
@@ -96,7 +96,7 @@
 	<key>NSContactsUsageDescription</key>
 	<string>Signal uses your contacts to find users you know. We do not store your contacts on the server.</string>
 	<key>NSFaceIDUsageDescription</key>
-	<string>Signal's Screen Lock uses Face ID.</string>
+	<string>Signal&apos;s Screen Lock uses Face ID.</string>
 	<key>NSLocalNetworkUsageDescription</key>
 	<string>Signal uses the local network to allow you to directly transfer your account to a new phone. It will not be used unless you explicitly choose to initiate a transfer to a new device.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>

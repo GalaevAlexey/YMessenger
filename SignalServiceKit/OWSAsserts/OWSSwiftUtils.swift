@@ -54,9 +54,6 @@ public func owsFailDebug(
         fatalError(logMessage)
     } else {
         logger.error(logMessage, file: file, function: function, line: line)
-        if _isDebugAssertConfiguration() {
-            assertionFailure(logMessage)
-        }
     }
 }
 
