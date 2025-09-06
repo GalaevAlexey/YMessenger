@@ -98,12 +98,13 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         // AppDelegate.didReceiveLocalNotification will always
         // be called _before_ we become active.
         clearAppropriateNotificationsAndRestoreBadgeCount()
-
+        print(_isDebugAssertConfiguration())
         // On every activation, clear old temp directories.
         ClearOldTemporaryDirectories()
 
         // Ensure that all windows have the correct frame.
         AppEnvironment.shared.windowManagerRef.updateWindowFrames()
+        
     }
 
     private let flushQueue = DispatchQueue(label: "org.signal.flush", qos: .utility)

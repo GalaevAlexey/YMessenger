@@ -10,7 +10,7 @@ NS_ASSUME_NONNULL_BEGIN
 #ifdef DEBUG
 static const DDLogLevel ddLogLevel = DDLogLevelAll;
 #else
-static const DDLogLevel ddLogLevel = DDLogLevelAll;
+static const DDLogLevel ddLogLevel = DDLogLevelInfo;
 #endif
 
 static inline BOOL ShouldLogFlag(DDLogFlag flag)

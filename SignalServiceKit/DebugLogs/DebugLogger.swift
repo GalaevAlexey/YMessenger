@@ -166,11 +166,11 @@ public final class DebugLogger {
     }
 
     public func enableTTYLoggingIfNeeded() {
-      //  #if DEBUG
+        #if DEBUG
         guard let ttyLogger = DDTTYLogger.sharedInstance else { return }
         ttyLogger.logFormatter = LogFormatter()
         DDLog.add(ttyLogger)
-       // #endif
+        #endif
     }
 
     // MARK: - Handlers

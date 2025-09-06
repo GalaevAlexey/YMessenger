@@ -51,7 +51,7 @@ extension Error {
             Logger.warn("Error without retry behavior specified: \(self)")
         } else {
             Logger.warn("Error without retry behavior specified: \(self)")
-            //owsFailDebug("Error without retry behavior specified: \(self)")
+            owsFailDebug("Error without retry behavior specified: \(self)")
         }
         return true
     }

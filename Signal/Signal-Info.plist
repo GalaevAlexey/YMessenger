@@ -13,11 +13,11 @@
 	<key>BuildDetails</key>
 	<dict>
 		<key>DateTime</key>
-		<string>Sat Sep  6 05:15:59 UTC 2025</string>
+		<string>Sat Sep  6 06:43:49 UTC 2025</string>
 		<key>SignalCommit</key>
-		<string>8cd505dc850b357965018d1e629a11e1c0e71f80 can archive but need to revert</string>
+		<string>51617c071dda4798167266e6d2e140c6d4988692 changge app name Y0x</string>
 		<key>Timestamp</key>
-		<integer>1757135759</integer>
+		<integer>1757141029</integer>
 		<key>XCodeVersion</key>
 		<string>1600.1640</string>
 	</dict>
@@ -96,7 +96,7 @@
 	<key>NSContactsUsageDescription</key>
 	<string>Signal uses your contacts to find users you know. We do not store your contacts on the server.</string>
 	<key>NSFaceIDUsageDescription</key>
-	<string>Signal&apos;s Screen Lock uses Face ID.</string>
+	<string>Signal's Screen Lock uses Face ID.</string>
 	<key>NSLocalNetworkUsageDescription</key>
 	<string>Signal uses the local network to allow you to directly transfer your account to a new phone. It will not be used unless you explicitly choose to initiate a transfer to a new device.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
