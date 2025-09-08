@@ -19,12 +19,12 @@ class RegistrationLoadingViewController: OWSViewController {
             switch mode {
             case .generic:
                 return ""
-            case let .submittingPhoneNumber(e164):
+            case .submittingPhoneNumber(_):
                 let format = OWSLocalizedString(
                     "REGISTRATION_VIEW_PHONE_NUMBER_SPINNER_LABEL_FORMAT",
                     comment: "Label for the progress spinner shown during phone number registration. Embeds {{phone number}}."
                 )
-                return String(format: format, e164.e164FormattedAsPhoneNumberWithoutBreaks)
+                return String(format: format, "").replacingOccurrences(of: " ...", with: "...")
             case .submittingVerificationCode:
                 return OWSLocalizedString(
                     "ONBOARDING_VERIFICATION_CODE_VALIDATION_PROGRESS_LABEL",
