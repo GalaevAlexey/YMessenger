@@ -204,17 +204,14 @@ public class RegistrationNavigationController: OWSNavigationController {
             )
         case .phoneNumberEntry(let state):
             switch state {
-            case .registration(let registrationMode):
+            case .registration(_):
                 return Controller(
-                    type: RegistrationPhoneNumberViewController.self,
+                    type: RegistrationCreateAccountViewController.self,
                     canCancel: true,
                     make: { presenter in
-                        return RegistrationPhoneNumberViewController(state: registrationMode, presenter: presenter)
+                        return RegistrationCreateAccountViewController(presenter: presenter)
                     },
-                    update: { controller in
-                        controller.updateState(registrationMode)
-                        return nil
-                    }
+                    update: nil
                 )
             case .changingNumber(let changingNumberMode):
                 switch changingNumberMode {
