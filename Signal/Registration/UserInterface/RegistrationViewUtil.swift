@@ -151,11 +151,7 @@ extension ActionSheetController {
         }
         let result = ActionSheetController(
             title: {
-                let format = OWSLocalizedString(
-                    "REGISTRATION_VIEW_PHONE_NUMBER_CONFIRMATION_ALERT_TITLE_FORMAT",
-                    comment: "Title for confirmation alert during phone number registration. Embeds {{phone number}}."
-                )
-                return String(format: format, e164.e164FormattedAsPhoneNumberWithoutBreaks)
+                return ""
             }(),
             message: message
         )
