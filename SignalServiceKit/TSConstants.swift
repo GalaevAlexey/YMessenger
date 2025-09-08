@@ -211,9 +211,9 @@ public class TSConstantsStaging: TSConstantsProtocol {
 
     public let mainServiceIdentifiedURL = "https://x-server.ngrok.app"
     public let mainServiceUnidentifiedURL = "https://x-server.ngrok.app"
-    public let textSecureCDN0ServerURL = "https://x-attachments.ngrok.app"
-    public let textSecureCDN2ServerURL = "https://x-attachments.ngrok.app"
-    public let textSecureCDN3ServerURL = "https://x-attachments.ngrok.app"
+    public let textSecureCDN0ServerURL = "https://storage.googleapis.com"
+    public let textSecureCDN2ServerURL = "https://storage.googleapis.com"
+    public let textSecureCDN3ServerURL = "https://storage.googleapis.com"
     public let storageServiceURL = "https://x-storage.ngrok.app"
     public let sfuURL = "https://x-server.ngrok.app"
     public let svr2URL = "wss://459c6bf513bb.ngrok-free.app"
