@@ -126,8 +126,6 @@ class InternalSettingsViewController: OWSTableViewController2 {
 
         contents.add(debugSection)
 
-        // The Backups section has been intentionally hidden from the internal menu.
-        /*
         let backupsSection = OWSTableSection(title: "Backups")
 
         if mode != .registration {
@@ -173,7 +171,6 @@ class InternalSettingsViewController: OWSTableViewController2 {
         if backupsSection.items.isEmpty.negated {
             contents.add(backupsSection)
         }
-        */
 
         let (
             contactThreadCount,
@@ -195,8 +192,7 @@ class InternalSettingsViewController: OWSTableViewController2 {
 
         let regSection = OWSTableSection(title: "Account")
         let localIdentifiers = DependenciesBridge.shared.tsAccountManager.localIdentifiersWithMaybeSneakyTransaction
-        // Phone number intentionally hidden from the internal settings menu.
-        // regSection.add(.copyableItem(label: "Phone Number", value: localIdentifiers?.phoneNumber))
+        regSection.add(.copyableItem(label: "Phone Number", value: localIdentifiers?.phoneNumber))
         regSection.add(.copyableItem(label: "ACI", value: localIdentifiers?.aci.serviceIdString))
         regSection.add(.copyableItem(label: "PNI", value: localIdentifiers?.pni?.serviceIdString))
         regSection.add(.copyableItem(label: "Device ID", value: "\(DependenciesBridge.shared.tsAccountManager.storedDeviceIdWithMaybeTransaction)"))
