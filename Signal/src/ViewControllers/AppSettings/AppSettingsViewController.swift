@@ -241,6 +241,8 @@ class AppSettingsViewController: OWSTableViewController2 {
                 self?.navigationController?.pushViewController(vc, animated: true)
             }
         ))
+        // The Backups entry has been intentionally hidden from the settings menu.
+        /*
         if
             isPrimaryDevice,
             RemoteConfig.current.allowBackupSettings
@@ -270,6 +272,7 @@ class AppSettingsViewController: OWSTableViewController2 {
                 }
             ))
         }
+        */
         section2.add(.disclosureItem(
             icon: .settingsDataUsage,
             withText: OWSLocalizedString("SETTINGS_DATA", comment: "Label for the 'data' section of the app settings."),
@@ -476,6 +479,8 @@ class AppSettingsViewController: OWSTableViewController2 {
             return containerView
         }
 
+        // The profile cell should no longer display the account phone number.
+        /*
         if let phoneNumber = DependenciesBridge.shared.tsAccountManager.localIdentifiersWithMaybeSneakyTransaction?.phoneNumber {
             addSubtitleLabel(
                 text: PhoneNumber.bestEffortFormatPartialUserSpecifiedTextToLookLikeAPhoneNumber(phoneNumber),
@@ -484,6 +489,7 @@ class AppSettingsViewController: OWSTableViewController2 {
         } else {
             owsFailDebug("Missing local number")
         }
+        */
 
         if let localUsernameState {
             switch localUsernameState {

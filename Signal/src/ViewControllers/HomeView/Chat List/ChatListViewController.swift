@@ -1292,6 +1292,8 @@ extension ChatListViewController: ThreadSwipeHandler {
 
 extension ChatListViewController: GetStartedBannerViewControllerDelegate {
     func presentGetStartedBannerIfNecessary() {
+        // The "Get Started" banner has been intentionally disabled.
+        /*
         guard getStartedBanner == nil && viewState.chatListMode == .inbox else { return }
 
         let getStartedVC = GetStartedBannerViewController(delegate: self)
@@ -1308,6 +1310,7 @@ extension ChatListViewController: GetStartedBannerViewControllerDelegate {
                 getStartedVC.view.alpha = 0
             }
         }
+        */
     }
 
     func getStartedBannerDidTapInviteFriends(_ banner: GetStartedBannerViewController) {
