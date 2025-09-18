@@ -146,8 +146,6 @@ class AccountSettingsViewController: OWSTableViewController2 {
             case .disallowed:
                 break
             case .allowed:
-                break
-                /*
                 accountSection.add(.actionItem(
                     withText: OWSLocalizedString("SETTINGS_CHANGE_PHONE_NUMBER_BUTTON", comment: "Label for button in settings views to change phone number"),
                     accessibilityIdentifier: UIView.accessibilityIdentifier(in: self, name: "change_phone_number"),
@@ -165,7 +163,6 @@ class AccountSettingsViewController: OWSTableViewController2 {
                         }
                     }
                 ))
-                */
             }
             accountSection.add(.actionItem(
                 withText: OWSLocalizedString(
