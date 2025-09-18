@@ -241,35 +241,6 @@ class AppSettingsViewController: OWSTableViewController2 {
                 self?.navigationController?.pushViewController(vc, animated: true)
             }
         ))
-        if
-            isPrimaryDevice,
-            RemoteConfig.current.allowBackupSettings
-        {
-            section2.add(.disclosureItem(
-                icon: .backup,
-                withText: OWSLocalizedString(
-                    "SETTINGS_BACKUPS",
-                    comment: "Label for the 'backups' section of app settings."
-                ),
-                actionBlock: { [weak self] in
-                    guard let self else { return }
-
-                    let backupSettingsStore = BackupSettingsStore()
-                    let db = DependenciesBridge.shared.db
-
-                    let haveBackupsEverBeenEnabled = db.read { tx in
-                        backupSettingsStore.haveBackupsEverBeenEnabled(tx: tx)
-                    }
-
-                    if haveBackupsEverBeenEnabled {
-                        let vc = BackupSettingsViewController(onLoadAction: .none)
-                        navigationController?.pushViewController(vc, animated: true)
-                    } else {
-                        BackupOnboardingCoordinator().present(fromViewController: self)
-                    }
-                }
-            ))
-        }
         section2.add(.disclosureItem(
             icon: .settingsDataUsage,
             withText: OWSLocalizedString("SETTINGS_DATA", comment: "Label for the 'data' section of the app settings."),
