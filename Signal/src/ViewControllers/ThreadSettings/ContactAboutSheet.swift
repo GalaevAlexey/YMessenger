@@ -157,27 +157,18 @@ class ContactAboutSheet: StackSheetViewController {
         stackView.setCustomSpacing(12, after: titleLabel)
 
         let nameLabel = ProfileDetailLabel.profile(
-            displayName: self.displayName,
-            secondaryName: self.secondaryName
-        ) { [weak self] in
-            guard
-                let self,
-                let secondaryName = self.secondaryName,
-                let nameLabel = self.nameLabel
-            else { return }
-            Tooltip(
-                message: String(
-                    format: OWSLocalizedString(
-                        "CONTACT_ABOUT_SHEET_SECONDARY_NAME_TOOLTIP_MESSAGE",
-                        comment: "Message for a tooltip that appears above a parenthesized name for another user, indicating that that name is the name the other user set for themself. Embeds {{name}}"
-                    ),
-                    secondaryName
-                ),
-                shouldShowCloseButton: false
-            ).present(from: self, sourceView: nameLabel, arrowDirections: .down)
-        }
+            displayName: self.displayName
+        )
         self.nameLabel = nameLabel
         stackView.addArrangedSubview(nameLabel)
+
+        if let nickname {
+            let nicknameLabel = ProfileDetailLabel(
+                title: nickname,
+                icon: .profileName
+            )
+            stackView.addArrangedSubview(nicknameLabel)
+        }
 
         if !isInSystemContacts, !isVerified {
             let label = ProfileDetailLabel.profileNameEducation { [weak fromViewController, weak dismissalDelegate] in
@@ -219,11 +210,6 @@ class ContactAboutSheet: StackSheetViewController {
             stackView.addArrangedSubview(ProfileDetailLabel.inSystemContacts(name: self.shortDisplayName))
         }
 
-        let recipientAddress = thread.contactAddress
-        if let phoneNumber = recipientAddress.phoneNumber {
-            stackView.addArrangedSubview(ProfileDetailLabel.phoneNumber(phoneNumber, presentSuccessToastFrom: self))
-        }
-
         if let mutualGroupThreads {
             stackView.addArrangedSubview(ProfileDetailLabel.mutualGroups(for: thread, mutualGroups: mutualGroupThreads))
         }
@@ -246,29 +232,31 @@ class ContactAboutSheet: StackSheetViewController {
 
     private var displayName: String = ""
     private var shortDisplayName: String = ""
-    /// A secondary name to show after the primary name. Used to show a
-    /// contact's profile name when it is overridden by a nickname.
-    private var secondaryName: String?
+    private var nickname: String?
     private func updateContactNames(tx: DBReadTransaction) {
         if isLocalUser {
             let profileManager = SSKEnvironment.shared.profileManagerRef
             let localUserProfile = profileManager.localUserProfile(tx: tx)
             self.displayName = localUserProfile?.filteredFullName ?? ""
+            self.shortDisplayName = self.displayName
+            self.nickname = nil
             // contactShortName not needed for local user
             return
         }
 
         let displayName = self.context.contactManager.displayName(for: thread.contactAddress, tx: tx)
-        self.displayName = displayName.resolvedValue()
         self.shortDisplayName = displayName.resolvedValue(useShortNameIfAvailable: true)
+        self.nickname = nil
+
+        var resolvedDisplayName = displayName.resolvedValue()
 
         if case .phoneNumber(let phoneNumber) = displayName {
-            self.displayName = PhoneNumber.bestEffortFormatPartialUserSpecifiedTextToLookLikeAPhoneNumber(phoneNumber.stringValue)
+            resolvedDisplayName = PhoneNumber.bestEffortFormatPartialUserSpecifiedTextToLookLikeAPhoneNumber(phoneNumber.stringValue)
         }
 
-        switch displayName {
-        case .nickname:
-            guard
+        if case .nickname = displayName {
+            let nicknameString = displayName.resolvedValue()
+            if
                 let profile = SSKEnvironment.shared.profileManagerRef.fetchUserProfiles(
                     for: [thread.contactAddress],
                     tx: tx
@@ -276,14 +264,15 @@ class ContactAboutSheet: StackSheetViewController {
                 let profileName = profile?.nameComponents
                     .map(DisplayName.profileName(_:))?
                     .resolvedValue(),
-                profileName != displayName.resolvedValue()
-            else {
-                fallthrough
+                profileName != nicknameString
+            {
+                resolvedDisplayName = profileName
             }
-            self.secondaryName = profileName
-        case .systemContactName, .profileName, .phoneNumber, .username, .deletedAccount, .unknown:
-            self.secondaryName = nil
+
+            self.nickname = nicknameString.nilIfEmpty
         }
+
+        self.displayName = resolvedDisplayName
     }
 
     private func didTapNote() {
