@@ -135,7 +135,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/signalapp/YYImage
 
 SPEC CHECKSUMS:
-  blurhash: 4b3b2b8909cf41ab59fa349788654b8387284ff4
+  blurhash: f588a9d659f4c742a325bbbbd438d1ef3c34af19
   BonMot: fb2b6a2209cb3149aca37b7131d49c051c04ae86
   CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
   GRDB.swift: 1395cb3556df6b16ed69dfc74c3886abc75d2825
