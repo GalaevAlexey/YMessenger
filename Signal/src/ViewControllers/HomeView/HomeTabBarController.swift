@@ -103,7 +103,12 @@ class HomeTabBarController: UITabBarController {
 
     lazy var callsListViewController = CallsListViewController(appReadiness: appReadiness)
     lazy var callsListNavController = OWSNavigationController(rootViewController: callsListViewController)
-    lazy var callsListTabBarItem = Tabs.calls.tabBarItem
+    // Temporarily disable the Calls tab while the calls UI is hidden.
+    lazy var callsListTabBarItem: UITabBarItem = {
+        let item = Tabs.calls.tabBarItem
+        item.isEnabled = false
+        return item
+    }()
 
     // There are two things going on here that require this code. The first is a stored property can't
     // conditionally include itself with an @available property, so some type erasing hoops need to be
@@ -348,18 +353,24 @@ extension HomeTabBarController: BadgeObserver {
 extension HomeTabBarController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         // If we re-select the active tab, scroll to the top.
+        if viewController === callsListNavController {
+            return false
+        }
+
         if selectedViewController == viewController {
-            let tableView: UITableView
+            let tableView: UITableView?
             switch selectedHomeTab {
             case .chatList:
                 tableView = chatListViewController.tableView
             case .stories:
                 tableView = storiesViewController.tableView
             case .calls:
-                tableView = callsListViewController.tableView
+                tableView = nil
             }
 
-            tableView.setContentOffset(CGPoint(x: 0, y: -tableView.safeAreaInsets.top), animated: true)
+            if let tableView {
+                tableView.setContentOffset(CGPoint(x: 0, y: -tableView.safeAreaInsets.top), animated: true)
+            }
         }
 
         return true
