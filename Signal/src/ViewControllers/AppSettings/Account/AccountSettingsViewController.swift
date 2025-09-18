@@ -142,28 +142,6 @@ class AccountSettingsViewController: OWSTableViewController2 {
                 }
             ))
         } else if tsRegistrationState.isRegisteredPrimaryDevice {
-            switch self.changeNumberState() {
-            case .disallowed:
-                break
-            case .allowed:
-                accountSection.add(.actionItem(
-                    withText: OWSLocalizedString("SETTINGS_CHANGE_PHONE_NUMBER_BUTTON", comment: "Label for button in settings views to change phone number"),
-                    accessibilityIdentifier: UIView.accessibilityIdentifier(in: self, name: "change_phone_number"),
-                    actionBlock: { [weak self] in
-                        guard let self else {
-                            return
-                        }
-                        // Fetch the state again in case it changed from under us
-                        // between when the button was rendered and when it was tapped.
-                        switch self.changeNumberState() {
-                        case .disallowed:
-                            return
-                        case .allowed(let changeNumberParams):
-                            self.changePhoneNumber(changeNumberParams)
-                        }
-                    }
-                ))
-            }
             accountSection.add(.actionItem(
                 withText: OWSLocalizedString(
                     "SETTINGS_ACCOUNT_DATA_REPORT_BUTTON",
@@ -239,69 +217,6 @@ class AccountSettingsViewController: OWSTableViewController2 {
     private func requestAccountDataReport() {
         let vc = RequestAccountDataReportViewController()
         navigationController?.pushViewController(vc, animated: true)
-    }
-
-    enum ChangeNumberState {
-        case disallowed
-        case allowed(RegistrationMode.ChangeNumberParams)
-    }
-
-    private func changeNumberState() -> ChangeNumberState {
-        return SSKEnvironment.shared.databaseStorageRef.read { transaction -> ChangeNumberState in
-            let tsAccountManager = DependenciesBridge.shared.tsAccountManager
-            let tsRegistrationState = tsAccountManager.registrationState(tx: transaction)
-            guard tsRegistrationState.isRegistered else {
-                return .disallowed
-            }
-            let loader = RegistrationCoordinatorLoaderImpl(dependencies: .from(self))
-            switch loader.restoreLastMode(transaction: transaction) {
-            case .none, .changingNumber:
-                break
-            case .registering, .reRegistering:
-                // Don't allow changing number if we are in the middle of registering.
-                return .disallowed
-            }
-            let recipientDatabaseTable = DependenciesBridge.shared.recipientDatabaseTable
-            guard
-                let localIdentifiers = tsAccountManager.localIdentifiers(tx: transaction),
-                let localE164 = E164(localIdentifiers.phoneNumber),
-                let authToken = tsAccountManager.storedServerAuthToken(tx: transaction),
-                let localRecipient = recipientDatabaseTable.fetchRecipient(
-                    serviceId: localIdentifiers.aci,
-                    transaction: transaction
-                ),
-                let localDeviceId = tsAccountManager.storedDeviceId(tx: transaction).ifValid
-            else {
-                return .disallowed
-            }
-            let localRecipientUniqueId = localRecipient.uniqueId
-            let localUserAllDeviceIds = localRecipient.deviceIds
-
-            return .allowed(RegistrationMode.ChangeNumberParams(
-                oldE164: localE164,
-                oldAuthToken: authToken,
-                localAci: localIdentifiers.aci,
-                localAccountId: localRecipientUniqueId,
-                localDeviceId: localDeviceId,
-                localUserAllDeviceIds: localUserAllDeviceIds
-            ))
-        }
-    }
-
-    private func changePhoneNumber(_ params: RegistrationMode.ChangeNumberParams) {
-        Logger.info("Attempting to start change number from settings")
-        let dependencies = RegistrationCoordinatorDependencies.from(NSObject())
-        let desiredMode = RegistrationMode.changingNumber(params)
-        let loader = RegistrationCoordinatorLoaderImpl(dependencies: dependencies)
-        let coordinator = SSKEnvironment.shared.databaseStorageRef.write {
-            return loader.coordinator(
-                forDesiredMode: desiredMode,
-                transaction: $0
-            )
-        }
-        let navController = RegistrationNavigationController.withCoordinator(coordinator, appReadiness: appReadiness)
-        let window: UIWindow = CurrentAppContext().mainWindow!
-        window.rootViewController = navController
     }
 
     // MARK: - PINs
