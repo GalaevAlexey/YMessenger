@@ -380,24 +380,6 @@ public class RecipientPickerViewController: OWSViewController, OWSNavigationChil
                     self.navigationController?.pushViewController(viewController, animated: true)
                 }
             ))
-
-            // Find by phone number
-            staticSection.add(OWSTableItem.disclosureItem(
-                icon: .phoneNumber,
-                withText: OWSLocalizedString(
-                    "NEW_CONVERSATION_FIND_BY_PHONE_NUMBER",
-                    comment: "A label the cell that lets you add a new member to a group."
-                ),
-                actionBlock: { [weak self] in
-                    guard let self else { return }
-                    let viewController = FindByPhoneNumberViewController(
-                        delegate: self,
-                        buttonText: self.findByPhoneNumberButtonTitle,
-                        requiresRegisteredNumber: self.selectionMode != .blocklist
-                    )
-                    self.navigationController?.pushViewController(viewController, animated: true)
-                }
-            ))
         }
 
         if staticSection.itemCount > 0 {
@@ -815,7 +797,7 @@ extension RecipientPickerViewController {
         let tableItem: OWSTableItem
         switch SSKEnvironment.shared.contactManagerImplRef.syncingAuthorization {
         case .denied:
-            tableItem = contactAccessDeniedReminderItem()
+            return nil
         case .limited:
             if #available(iOS 18, *) {
                 tableItem = contactAccessLimitedReminderItem()
