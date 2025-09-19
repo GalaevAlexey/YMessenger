@@ -13,10 +13,9 @@ protocol RegistrationPermissionsPresenter: AnyObject {
 }
 
 struct RegistrationPermissionsView: View {
-    var requestingContactsAuthorization: Bool
     var permissionTask: (() async -> Void)
 
-    @State private var hasAppeared = (notifications: false, contacts: false)
+    @State private var hasAppeared = false
     @State private var requestPermissions: RequestPermissionsTask?
 
     @Environment(\.appearanceTransitionState) private var appearanceTransitionState
@@ -42,10 +41,6 @@ struct RegistrationPermissionsView: View {
     var body: some View {
         VStack {
             VStack(spacing: headerSpacing) {
-                if requestingContactsAuthorization {
-                    Color.clear.frame(height: 32)
-                }
-
                 Text(OWSLocalizedString("ONBOARDING_PERMISSIONS_TITLE", comment: "Title of the 'onboarding permissions' view."))
                     .font(.title.weight(.semibold))
                     .lineLimit(1)
@@ -64,27 +59,13 @@ struct RegistrationPermissionsView: View {
                     ZStack(alignment: .topLeading) {
                         // Make sure the full width is laid out whether
                         // or not the individual views have appeared.
-                        VStack(alignment: .leading, spacing: 32) {
-                            notificationsPermissionView
-
-                            if requestingContactsAuthorization {
-                                contactsPermissionView
-                            }
-                        }
-                        .hidden()
+                        notificationsPermissionView
+                            .hidden()
 
                         // Animate them in one-by-one.
-                        VStack(alignment: .leading, spacing: 32) {
-                            Group {
-                                if hasAppeared.notifications {
-                                    notificationsPermissionView
-                                }
-
-                                if requestingContactsAuthorization && hasAppeared.contacts {
-                                    contactsPermissionView
-                                }
-                            }
-                            .transition(.offset(x: 0, y: -20).combined(with: .opacity))
+                        if hasAppeared {
+                            notificationsPermissionView
+                                .transition(.offset(x: 0, y: -20).combined(with: .opacity))
                         }
                     }
                     // Expand to available width when compact, otherwise horizontally center.
@@ -110,12 +91,7 @@ struct RegistrationPermissionsView: View {
                 let duration = 0.75
                 let spring = Animation.spring(duration: duration)
                 withAnimation(spring) {
-                    hasAppeared.notifications = true
-                }
-                if requestingContactsAuthorization {
-                    withAnimation(spring.delay(duration)) {
-                        hasAppeared.contacts = true
-                    }
+                    hasAppeared = true
                 }
             }
         }
@@ -139,16 +115,6 @@ struct RegistrationPermissionsView: View {
             Text(OWSLocalizedString("ONBOARDING_PERMISSIONS_NOTIFICATIONS_DESCRIPTION", comment: "Description of the 'Notifications' permission in the 'onboarding permissions' view."))
         } icon: {
             PermissionIcon(.bellRing)
-        }
-    }
-
-    private var contactsPermissionView: some View {
-        PermissionDescription {
-            Text(OWSLocalizedString("ONBOARDING_PERMISSIONS_CONTACTS_TITLE", comment: "Title introducing the 'Contacts' permission in the 'onboarding permissions' view."))
-        } description: {
-            Text(OWSLocalizedString("ONBOARDING_PERMISSIONS_CONTACTS_DESCRIPTION", comment: "Description of the 'Contacts' permission in the 'onboarding permissions' view."))
-        } icon: {
-            PermissionIcon(.personCircleLarge)
         }
     }
 }
@@ -225,13 +191,11 @@ private extension RegistrationPermissionsView {
 }
 
 final class RegistrationPermissionsViewController: OWSViewController, OWSNavigationChildController {
-    let requestingContactsAuthorization: Bool
     weak var presenter: (any RegistrationPermissionsPresenter)?
 
     var prefersNavigationBarHidden: Bool { true }
 
-    init(requestingContactsAuthorization: Bool, presenter: any RegistrationPermissionsPresenter) {
-        self.requestingContactsAuthorization = requestingContactsAuthorization
+    init(presenter: any RegistrationPermissionsPresenter) {
         self.presenter = presenter
         super.init()
     }
@@ -242,7 +206,6 @@ final class RegistrationPermissionsViewController: OWSViewController, OWSNavigat
 
         let hostingController = HostingController(
             wrappedView: RegistrationPermissionsView(
-                requestingContactsAuthorization: requestingContactsAuthorization,
                 permissionTask: { [weak self] in
                     await self?.presenter?.requestPermissions()
                 }
@@ -273,7 +236,6 @@ private let presenter = PreviewPermissionsPresenter()
     NavigationPreviewController(
         animateFirstAppearance: true,
         viewController: RegistrationPermissionsViewController(
-            requestingContactsAuthorization: true,
             presenter: presenter
         )
     )

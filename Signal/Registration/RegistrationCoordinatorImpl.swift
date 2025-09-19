@@ -105,15 +105,7 @@ public class RegistrationCoordinatorImpl: RegistrationCoordinator {
     public func requestPermissions() -> Guarantee<RegistrationStep> {
         Logger.info("")
 
-        // Notifications first, then contacts if needed.
         return deps.pushRegistrationManager.registerUserNotificationSettings()
-            .then(on: DispatchQueue.main) { [weak self] in
-                guard let self else {
-                    owsFailBeta("Unretained self lost")
-                    return .value(())
-                }
-                return self.deps.contactsStore.requestContactsAuthorization()
-            }
             .then(on: DispatchQueue.main) { [weak self] in
                 guard let self else {
                     owsFailBeta("Unretained self lost")
@@ -748,7 +740,7 @@ public class RegistrationCoordinatorImpl: RegistrationCoordinator {
 
         var tsRegistrationState: TSRegistrationState?
 
-        // Whether some system permissions (contacts, APNS) are needed.
+        // Whether some system permissions (notifications) are needed.
         var needsSomePermissions = false
 
         // We persist the entered e164. But in addition we need to
@@ -1661,7 +1653,7 @@ public class RegistrationCoordinatorImpl: RegistrationCoordinator {
         }
         if inMemoryState.needsSomePermissions {
             // This class is only used for primary device registration
-            // which always needs contacts permissions.
+            // which always needs notification permissions.
             return .value(.permissions)
         }
         if inMemoryState.hasEnteredE164, let e164 = persistedState.e164 {
@@ -3987,12 +3979,7 @@ public class RegistrationCoordinatorImpl: RegistrationCoordinator {
     // MARK: - Permissions
 
     private func requiresSystemPermissions() -> Guarantee<Bool> {
-        let contacts = deps.contactsStore.needsContactsAuthorization()
-        let notifications = deps.pushRegistrationManager.needsNotificationAuthorization()
-        return Guarantee.when(fulfilled: [contacts, notifications])
-            .map { results in
-                return results.allSatisfy({ $0 })
-            }
+        return deps.pushRegistrationManager.needsNotificationAuthorization()
             .recover { _ in return .value(true) }
     }
 
