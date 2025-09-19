@@ -249,10 +249,10 @@ class ContactAboutSheet: StackSheetViewController {
         self.nickname = nil
 
         var resolvedDisplayName = displayName.resolvedValue()
-
-        if case .phoneNumber(let phoneNumber) = displayName {
-            resolvedDisplayName = PhoneNumber.bestEffortFormatPartialUserSpecifiedTextToLookLikeAPhoneNumber(phoneNumber.stringValue)
-        }
+//
+//        if case .phoneNumber(let phoneNumber) = displayName {
+//            resolvedDisplayName = PhoneNumber.bestEffortFormatPartialUserSpecifiedTextToLookLikeAPhoneNumber(phoneNumber.stringValue)
+//        }
 
         if case .nickname = displayName {
             let nicknameString = displayName.resolvedValue()

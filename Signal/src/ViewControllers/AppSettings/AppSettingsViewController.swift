@@ -447,14 +447,14 @@ class AppSettingsViewController: OWSTableViewController2 {
             return containerView
         }
 
-        if let phoneNumber = DependenciesBridge.shared.tsAccountManager.localIdentifiersWithMaybeSneakyTransaction?.phoneNumber {
-            addSubtitleLabel(
-                text: PhoneNumber.bestEffortFormatPartialUserSpecifiedTextToLookLikeAPhoneNumber(phoneNumber),
-                textColor: Theme.primaryTextColor
-            )
-        } else {
-            owsFailDebug("Missing local number")
-        }
+//        if let phoneNumber = DependenciesBridge.shared.tsAccountManager.localIdentifiersWithMaybeSneakyTransaction?.phoneNumber {
+//            addSubtitleLabel(
+//                text: PhoneNumber.bestEffortFormatPartialUserSpecifiedTextToLookLikeAPhoneNumber(phoneNumber),
+//                textColor: Theme.primaryTextColor
+//            )
+//        } else {
+//            owsFailDebug("Missing local number")
+//        }
 
         if let localUsernameState {
             switch localUsernameState {

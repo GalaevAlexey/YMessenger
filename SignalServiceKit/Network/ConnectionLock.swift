@@ -119,7 +119,7 @@ private struct FileLock {
     }
 
     func close() {
-        //_ = unistd.close(self.fd)
+        _DarwinFoundation3.close(self.fd)
     }
 
     /// See `man fcntl`.

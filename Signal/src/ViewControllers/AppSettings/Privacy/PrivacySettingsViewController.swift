@@ -157,33 +157,33 @@ class PrivacySettingsViewController: OWSTableViewController2 {
         }
         contents.add(appSecuritySection)
 
-        // Payments
-        let paymentsSection = OWSTableSection()
-        paymentsSection.headerTitle = OWSLocalizedString("SETTINGS_PAYMENTS_SECURITY_TITLE", comment: "Title for the payments section in the app’s privacy settings tableview")
-
-        switch DeviceOwnerAuthenticationType.current {
-        case .unknown:
-            paymentsSection.footerTitle = OWSLocalizedString("SETTINGS_PAYMENTS_SECURITY_DETAIL", comment: "Caption for footer label beneath the payments lock privacy toggle for a biometry type that is unknown.")
-        case .passcode:
-            paymentsSection.footerTitle = OWSLocalizedString("SETTINGS_PAYMENTS_SECURITY_DETAIL_PASSCODE", comment: "Caption for footer label beneath the payments lock privacy toggle for a biometry type that is a passcode.")
-        case .faceId:
-            paymentsSection.footerTitle = OWSLocalizedString("SETTINGS_PAYMENTS_SECURITY_DETAIL_FACEID", comment: "Caption for footer label beneath the payments lock privacy toggle for faceid biometry.")
-        case .touchId:
-            paymentsSection.footerTitle = OWSLocalizedString("SETTINGS_PAYMENTS_SECURITY_DETAIL_TOUCHID", comment: "Caption for footer label beneath the payments lock privacy toggle for touchid biometry")
-        case .opticId:
-            paymentsSection.footerTitle = OWSLocalizedString("SETTINGS_PAYMENTS_SECURITY_DETAIL_OPTICID", comment: "Caption for footer label beneath the payments lock privacy toggle for opticid biometry")
-        }
-
-        paymentsSection.add(.switch(
-            withText: OWSLocalizedString(
-                "SETTINGS_PAYMENTS_LOCK_SWITCH_LABEL",
-                comment: "Label for UISwitch based payments-lock setting that when enabled requires biometric-authentication (or passcode) to transfer funds or view the recovery phrase."
-            ),
-            isOn: { SSKEnvironment.shared.owsPaymentsLockRef.isPaymentsLockEnabled() },
-            target: self,
-            selector: #selector(didTogglePaymentsLockSwitch)
-        ))
-        contents.add(paymentsSection)
+//        // Payments
+//        let paymentsSection = OWSTableSection()
+//        paymentsSection.headerTitle = OWSLocalizedString("SETTINGS_PAYMENTS_SECURITY_TITLE", comment: "Title for the payments section in the app’s privacy settings tableview")
+//
+//        switch DeviceOwnerAuthenticationType.current {
+//        case .unknown:
+//            paymentsSection.footerTitle = OWSLocalizedString("SETTINGS_PAYMENTS_SECURITY_DETAIL", comment: "Caption for footer label beneath the payments lock privacy toggle for a biometry type that is unknown.")
+//        case .passcode:
+//            paymentsSection.footerTitle = OWSLocalizedString("SETTINGS_PAYMENTS_SECURITY_DETAIL_PASSCODE", comment: "Caption for footer label beneath the payments lock privacy toggle for a biometry type that is a passcode.")
+//        case .faceId:
+//            paymentsSection.footerTitle = OWSLocalizedString("SETTINGS_PAYMENTS_SECURITY_DETAIL_FACEID", comment: "Caption for footer label beneath the payments lock privacy toggle for faceid biometry.")
+//        case .touchId:
+//            paymentsSection.footerTitle = OWSLocalizedString("SETTINGS_PAYMENTS_SECURITY_DETAIL_TOUCHID", comment: "Caption for footer label beneath the payments lock privacy toggle for touchid biometry")
+//        case .opticId:
+//            paymentsSection.footerTitle = OWSLocalizedString("SETTINGS_PAYMENTS_SECURITY_DETAIL_OPTICID", comment: "Caption for footer label beneath the payments lock privacy toggle for opticid biometry")
+//        }
+//
+//        paymentsSection.add(.switch(
+//            withText: OWSLocalizedString(
+//                "SETTINGS_PAYMENTS_LOCK_SWITCH_LABEL",
+//                comment: "Label for UISwitch based payments-lock setting that when enabled requires biometric-authentication (or passcode) to transfer funds or view the recovery phrase."
+//            ),
+//            isOn: { SSKEnvironment.shared.owsPaymentsLockRef.isPaymentsLockEnabled() },
+//            target: self,
+//            selector: #selector(didTogglePaymentsLockSwitch)
+//        ))
+//        contents.add(paymentsSection)
 
         let callsSection = OWSTableSection()
         callsSection.headerTitle = OWSLocalizedString(
