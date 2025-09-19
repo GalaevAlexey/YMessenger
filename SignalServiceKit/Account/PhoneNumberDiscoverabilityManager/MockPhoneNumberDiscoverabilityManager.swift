@@ -9,7 +9,7 @@ import Foundation
 
 open class MockPhoneNumberDiscoverabilityManager: PhoneNumberDiscoverabilityManager {
 
-    public var phoneNumberDiscoverabilityMock: () -> PhoneNumberDiscoverability? = { .everybody }
+    public var phoneNumberDiscoverabilityMock: () -> PhoneNumberDiscoverability? = { .nobody }
 
     open func phoneNumberDiscoverability(tx: DBReadTransaction) -> PhoneNumberDiscoverability? {
         return phoneNumberDiscoverabilityMock()

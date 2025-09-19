@@ -40,7 +40,7 @@ extension Optional where Wrapped == PhoneNumberDiscoverability {
 }
 
 public enum PhoneNumberDiscoverabilityManagerConstants {
-    public static let discoverabilityDefault: PhoneNumberDiscoverability = .everybody
+    public static let discoverabilityDefault: PhoneNumberDiscoverability = .nobody
 
     // If PNP is enabled, users aren't discoverable during registration. If PNP
     // is disabled, users are always discoverable.
