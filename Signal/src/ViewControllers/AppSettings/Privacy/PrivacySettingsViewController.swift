@@ -32,26 +32,6 @@ class PrivacySettingsViewController: OWSTableViewController2 {
     private func updateTableContents() {
         let contents = OWSTableContents()
 
-        let whoCanSection = OWSTableSection()
-
-        whoCanSection.add(.disclosureItem(
-            withText: OWSLocalizedString(
-                "SETTINGS_PHONE_NUMBER_PRIVACY_TITLE",
-                comment: "The title for phone number privacy settings."),
-            actionBlock: { [weak self] in
-                let vc = PhoneNumberPrivacySettingsViewController()
-                self?.navigationController?.pushViewController(vc, animated: true)
-            }
-        ))
-        whoCanSection.footerTitle = OWSLocalizedString(
-            "SETTINGS_PHONE_NUMBER_PRIVACY_DESCRIPTION_LABEL",
-            comment: "Description label for Phone Number Privacy"
-        )
-
-        if !whoCanSection.items.isEmpty {
-            contents.add(whoCanSection)
-        }
-
         let blockedSection = OWSTableSection()
         blockedSection.add(.disclosureItem(
             withText: OWSLocalizedString(
@@ -226,23 +206,6 @@ class PrivacySettingsViewController: OWSTableViewController2 {
             selector: #selector(didToggleEnableSystemCallLogSwitch)
         ))
         contents.add(callsSection)
-
-        let advancedSection = OWSTableSection()
-        advancedSection.footerTitle = OWSLocalizedString(
-            "SETTINGS_PRIVACY_ADVANCED_FOOTER",
-            comment: "Footer for table section"
-        )
-        advancedSection.add(.disclosureItem(
-            withText: OWSLocalizedString(
-                "SETTINGS_PRIVACY_ADVANCED_TITLE",
-                comment: "Title for the advanced privacy settings"
-            ),
-            actionBlock: { [weak self] in
-                let vc = AdvancedPrivacySettingsViewController()
-                self?.navigationController?.pushViewController(vc, animated: true)
-            }
-        ))
-        contents.add(advancedSection)
 
         self.contents = contents
     }
