@@ -200,7 +200,7 @@ extension ChatListViewController {
         updateShouldBeUpdatingView()
 
         if !ExperienceUpgradeManager.presentNext(fromViewController: self) {
-            presentGetStartedBannerIfNecessary()
+            //presentGetStartedBannerIfNecessary()
         }
     }
 
