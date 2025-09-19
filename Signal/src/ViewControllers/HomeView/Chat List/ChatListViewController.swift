@@ -205,12 +205,12 @@ public class ChatListViewController: OWSViewController, HomeTabViewController {
         }
 
         appReadiness.setUIIsReady()
-
-        if getStartedBanner == nil && !hasEverPresentedExperienceUpgrade && ExperienceUpgradeManager.presentNext(fromViewController: self) {
-            hasEverPresentedExperienceUpgrade = true
-        } else if !hasEverAppeared {
-            presentGetStartedBannerIfNecessary()
-        }
+// GET STARTED BANNER 
+//        if getStartedBanner == nil && !hasEverPresentedExperienceUpgrade && ExperienceUpgradeManager.presentNext(fromViewController: self) {
+//            hasEverPresentedExperienceUpgrade = true
+//        } else if !hasEverAppeared {
+//            presentGetStartedBannerIfNecessary()
+//        }
 
         if !hasPresentedBackupErrors {
             hasPresentedBackupErrors = true

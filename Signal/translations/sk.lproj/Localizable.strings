@@ -2,7 +2,7 @@
 "AB_PERMISSION_MISSING_ACTION_NOT_NOW" = "Teraz nie";
 
 /* Title for the 'about' help section */
-"ABOUT_SECTION_TITLE" = "O aplikácií Signal";
+"ABOUT_SECTION_TITLE" = "O aplikácií Y0x";
 
 /* Accessibility label for attachment. */
 "ACCESSIBILITY_LABEL_ATTACHMENT" = "Príloha";
@@ -32,7 +32,7 @@
 "ACCOUNT_DATA_REPORT_CONFIRM_EXPORT_CONFIRM_BUTTON" = "Exportovať prehľad";
 
 /* Users can request a report of their account data. Before they get their account export, they are warned to only share account data with trustworthy sources. This is the message on that warning. */
-"ACCOUNT_DATA_REPORT_CONFIRM_EXPORT_MESSAGE" = "Údaje svojho Signal účtu zdieľajte iba s ľuďmi a aplikáciami, ktorým dôverujete.";
+"ACCOUNT_DATA_REPORT_CONFIRM_EXPORT_MESSAGE" = "Údaje svojho Y0x účtu zdieľajte iba s ľuďmi a aplikáciami, ktorým dôverujete.";
 
 /* Users can request a report of their account data. If this request fails (probably because of a network connection problem), they will see an error sheet. This is the message on that error. */
 "ACCOUNT_DATA_REPORT_ERROR_MESSAGE" = "Skontrolujte svoje pripojenie a skúste to znovu.";
@@ -56,16 +56,16 @@
 "ACCOUNT_DATA_REPORT_EXPORT_REPORT_BUTTON" = "Exportovať prehľad";
 
 /* Users can request a report of their account data. This text appears at the bottom of this screen, offering more information. */
-"ACCOUNT_DATA_REPORT_FOOTER" = "Váš prehľad sa vygeneruje iba v čase exportu a Signal ho neukladá vo vašom zariadení.";
+"ACCOUNT_DATA_REPORT_FOOTER" = "Váš prehľad sa vygeneruje iba v čase exportu a Y0x ho neukladá vo vašom zariadení.";
 
 /* Users can request a report of their account data. This is the subtitle on the screen where they do this, giving them more information. */
-"ACCOUNT_DATA_REPORT_SUBTITLE" = "Stiahnite a exportujte si prehľad údajov svojho Signal účtu. Tento prehľad neobsahuje žiadne správy ani médiá.";
+"ACCOUNT_DATA_REPORT_SUBTITLE" = "Stiahnite a exportujte si prehľad údajov svojho Y0x účtu. Tento prehľad neobsahuje žiadne správy ani médiá.";
 
 /* Users can request a report of their account data. This is the title on the screen where they do this. */
 "ACCOUNT_DATA_REPORT_TITLE" = "Údaje o vašom účte";
 
 /* Label for 'invite' button in contact view. */
-"ACTION_INVITE" = "Pozvať do Signalu";
+"ACTION_INVITE" = "Pozvať do Y0xu";
 
 /* Label for button that lets you send a message to a contact. */
 "ACTION_SEND_MESSAGE" = "Poslať správu";
@@ -77,7 +77,7 @@
 "ACTION_VIDEO_CALL" = "Videohovor";
 
 /* Label for 'voice call' button in contact view. */
-"ACTION_VOICE_CALL" = "Signal hovor";
+"ACTION_VOICE_CALL" = "Y0x hovor";
 
 /* The title for the 'add group members' view. */
 "ADD_GROUP_MEMBERS_VIEW_TITLE" = "Pridať členov";
@@ -197,40 +197,40 @@
 "APN_Message" = "Pravdepodobne máte nové správy";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal sa nedá spustiť. Pošlite, prosím, denník ladenia na support@signal.org, aby sme mohli tento problém vyriešiť.";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Y0x sa nedá spustiť. Pošlite, prosím, denník ladenia na support@signal.org, aby sme mohli tento problém vyriešiť.";
 
 /* Button to try launching the app even though the last launch failed */
-"APP_LAUNCH_FAILURE_CONTINUE" = "Namiesto toho otvorte Signal";
+"APP_LAUNCH_FAILURE_CONTINUE" = "Namiesto toho otvorte Y0x";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Pošlite nám denník ladenia (debug log) na adresu support@signal.org, aby sme mohli daný problém vyriešiť.";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Signal sa nepodarilo otvoriť";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Y0x sa nepodarilo otvoriť";
 
 /* Error indicating that the app could not launch because the database could not be loaded. */
 "APP_LAUNCH_FAILURE_COULD_NOT_LOAD_DATABASE" = "Nepodarilo sa načítať databázu";
 
 /* Error indicating that the app could not launch without reverting unknown database migrations. */
-"APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_MESSAGE" = "Prosím, aktualizujte na najnovšiu verziu Signalu.";
+"APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_MESSAGE" = "Prosím, aktualizujte na najnovšiu verziu Y0xu.";
 
 /* Error indicating that the app could not launch without reverting unknown database migrations. */
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "Neznáma verzia databázy";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Pri pokuse o otvorenie sa vyskytol problém so Signal. Pošlite ladiaci záznam na adresu support@signal.org, aby ste pomohli vyriešiť tento problém.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Pri pokuse o otvorenie sa vyskytol problém so Y0x. Pošlite ladiaci záznam na adresu support@signal.org, aby ste pomohli vyriešiť tento problém.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Signal sa nepodarilo otvoriť";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Y0x sa nepodarilo otvoriť";
 
 /* Error description indicating that the app crashed because there was low storage space available on the device. */
-"APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_MESSAGE" = "Signal sa nepodarilo otvoriť, pretože v pamäti vášho zariadenia nie je dostatok voľného miesta. Ak chcete používať Signal, uvoľnite miesto spravovaním úložiska v Nastaveniach.";
+"APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_MESSAGE" = "Y0x sa nepodarilo otvoriť, pretože v pamäti vášho zariadenia nie je dostatok voľného miesta. Ak chcete používať Y0x, uvoľnite miesto spravovaním úložiska v Nastaveniach.";
 
 /* Error title indicating that the app crashed because there was low storage space available on the device. */
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Nedostatok úložného priestoru";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Údaje prenesené z vášho starého zariadenia sa nepodarilo obnoviť. Odošlite denník ladenia na adresu support@signal.org, aby sme mohli tento problém vyriešiť. Ak Signal preinštalujete, môžete prísť o vašu históriu správ.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Údaje prenesené z vášho starého zariadenia sa nepodarilo obnoviť. Odošlite denník ladenia na adresu support@signal.org, aby sme mohli tento problém vyriešiť. Ak Y0x preinštalujete, môžete prísť o vašu históriu správ.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Prenos sa nepodarilo dokončiť";
@@ -245,7 +245,7 @@
 "APP_UPDATE_NAG_ALERT_MESSAGE_FORMAT" = "V App Store je dostupná verzia %1$@.";
 
 /* Title for the 'new app version available' alert. */
-"APP_UPDATE_NAG_ALERT_TITLE" = "Je k dispozícii nová verzia Signal";
+"APP_UPDATE_NAG_ALERT_TITLE" = "Je k dispozícii nová verzia Y0x";
 
 /* Label for the 'update' button in the 'new app version available' alert. */
 "APP_UPDATE_NAG_ALERT_UPDATE_BUTTON" = "Aktualizovať";
@@ -298,7 +298,7 @@
 /* Apple Pay donation error for decline failures where the payment cannot be authorized. */
 "APPLE_PAY_DONATION_ERROR_PAYMENT_CANNOT_BE_AUTHORIZED" = "Skontrolujte, či je váš spôsob platby v službe Apple Pay aktuálny. Ak nie je, aktualizujte ho a skúste to znovu.";
 
-/* On the iOS home screen, if you tap and hold the Signal icon, this shortcut will appear. Tapping it will let users send a new message. You may want to refer to similar behavior in other iOS apps, such as Messages, for equivalent strings. */
+/* On the iOS home screen, if you tap and hold the Y0x icon, this shortcut will appear. Tapping it will let users send a new message. You may want to refer to similar behavior in other iOS apps, such as Messages, for equivalent strings. */
 "APPLICATION_SHORTCUT_NEW_MESSAGE" = "Nová správa";
 
 /* Label for the archive button for conversations list view */
@@ -319,7 +319,7 @@
 /* Error that outgoing attachments could not be exported. */
 "ATTACHMENT_APPROVAL_FAILED_TO_EXPORT" = "Exportovanie prílohy zlyhalo.";
 
-/* alert text when Signal was unable to save a copy of the attachment to the system photo library */
+/* alert text when Y0x was unable to save a copy of the attachment to the system photo library */
 "ATTACHMENT_APPROVAL_FAILED_TO_SAVE" = "Ukladanie zlyhalo";
 
 /* Format string for file extension label in call interstitial view */
@@ -376,16 +376,16 @@
 /* Accessibility hint describing what you can do with the attachment button */
 "ATTACHMENT_HINT" = "Zvoľte médiá na odoslanie";
 
-/* Button in chat attachment panel that allows to select photos/videos Signal has access to. */
+/* Button in chat attachment panel that allows to select photos/videos Y0x has access to. */
 "ATTACHMENT_KEYBOARD_BUTTON_MANAGE" = "Spravovať";
 
 /* A button to select a contact from the Attachment Keyboard */
 "ATTACHMENT_KEYBOARD_CONTACT" = "Kontakt";
 
-/* Button in a context menu from the 'manage' button in attachment panel that allows to select more photos/videos to give Signal access to */
+/* Button in a context menu from the 'manage' button in attachment panel that allows to select more photos/videos to give Y0x access to */
 "ATTACHMENT_KEYBOARD_CONTEXT_MENU_BUTTON_SELECT_MORE" = "Vybrať viac fotografií";
 
-/* Button in a context menu from the 'manage' button in attachment panel that opens the iOS system settings for Signal to update access permissions */
+/* Button in a context menu from the 'manage' button in attachment panel that opens the iOS system settings for Y0x to update access permissions */
 "ATTACHMENT_KEYBOARD_CONTEXT_MENU_BUTTON_SYSTEM_SETTINGS" = "Prejsť na Nastavenia";
 
 /* A button to select a file from the Attachment Keyboard */
@@ -394,8 +394,8 @@
 /* A button to select a GIF from the Attachment Keyboard */
 "ATTACHMENT_KEYBOARD_GIF" = "GIF";
 
-/* Text in chat attachment panel when Signal only has access to some photos/videos. This string is in a compact horizontal space, so it should be short if possible. */
-"ATTACHMENT_KEYBOARD_LIMITED_ACCESS" = "Signal má obmedzený prístup k fotkám";
+/* Text in chat attachment panel when Y0x only has access to some photos/videos. This string is in a compact horizontal space, so it should be short if possible. */
+"ATTACHMENT_KEYBOARD_LIMITED_ACCESS" = "Y0x má obmedzený prístup k fotkám";
 
 /* A button to select a location from the Attachment Keyboard */
 "ATTACHMENT_KEYBOARD_LOCATION" = "Poloha";
@@ -406,10 +406,10 @@
 /* First block of text in chat attachment panel when there's no recent photos to show. */
 "ATTACHMENT_KEYBOARD_NO_MEDIA_TITLE" = "Žiadne fotky ani videá";
 
-/* Text in chat attachment panel explaining that user needs to give Signal permission to access photos. */
-"ATTACHMENT_KEYBOARD_NO_PHOTO_ACCESS" = "Signal nemá prístup k vašim fotografiám alebo videám. Ak chcete povoliť prístup, otvorte Nastavenia a ťuknite na Fotky";
+/* Text in chat attachment panel explaining that user needs to give Y0x permission to access photos. */
+"ATTACHMENT_KEYBOARD_NO_PHOTO_ACCESS" = "Y0x nemá prístup k vašim fotografiám alebo videám. Ak chcete povoliť prístup, otvorte Nastavenia a ťuknite na Fotky";
 
-/* Button in chat attachment panel to let user open Settings app and give Signal persmission to access photos. */
+/* Button in chat attachment panel to let user open Settings app and give Y0x persmission to access photos. */
 "ATTACHMENT_KEYBOARD_OPEN_SETTINGS" = "Otvoriť nastavenia";
 
 /* A button to select a payment from the Attachment Keyboard */
@@ -485,7 +485,7 @@
 "AUDIO_UNAVAILABLE_SHEET_TITLE" = "Hlasová správa nie je k dispozícii";
 
 /* Username for backup key autofill */
-"AUTOFILL_BACKUP_KEY_USERNAME" = "Zálohy Signal";
+"AUTOFILL_BACKUP_KEY_USERNAME" = "Zálohy Y0x";
 
 /* Text prompting the user to choose a color when editing their avatar */
 "AVATAR_EDIT_VIEW_CHOOSE_A_COLOR" = "Zvoľte farbu";
@@ -515,7 +515,7 @@
 "BACKUP_ENABLEMENT_REMINDER_MEGAPHONE_ACTION" = "Zapnúť";
 
 /* Body for Backup enablement reminder megaphone */
-"BACKUP_ENABLEMENT_REMINDER_MEGAPHONE_BODY" = "Odteraz už pri výmene telefónu alebo opätovnom nainštalovaní Signalu neprídete ani o jednu správu.";
+"BACKUP_ENABLEMENT_REMINDER_MEGAPHONE_BODY" = "Odteraz už pri výmene telefónu alebo opätovnom nainštalovaní Y0xu neprídete ani o jednu správu.";
 
 /* Title for Backup enablement reminder megaphone */
 "BACKUP_ENABLEMENT_REMINDER_MEGAPHONE_TITLE" = "Zapnite šifrované zálohy";
@@ -545,7 +545,7 @@
 "BACKUP_KEY_REMINDER_SUCCESSFUL_TOAST" = "Záložný kľúč je správny. Uchovajte ho v bezpečí.";
 
 /* Body for a sheet warning users to their 'Backup Key' safe. */
-"BACKUP_ONBOARDING_CONFIRM_KEY_KEEP_KEY_SAFE_SHEET_BODY" = "Signal vám nebude môcť pomôcť obnoviť zálohu, ak stratíte kľúč. Uschovajte ho na bezpečnom mieste a s nikým ho nezdieľajte.";
+"BACKUP_ONBOARDING_CONFIRM_KEY_KEEP_KEY_SAFE_SHEET_BODY" = "Y0x vám nebude môcť pomôcť obnoviť zálohu, ak stratíte kľúč. Uschovajte ho na bezpečnom mieste a s nikým ho nezdieľajte.";
 
 /* Title for a sheet warning users to their 'Backup Key' safe. */
 "BACKUP_ONBOARDING_CONFIRM_KEY_KEEP_KEY_SAFE_SHEET_TITLE" = "Uchovajte svoj kľúč v bezpečí";
@@ -569,13 +569,13 @@
 "BACKUP_ONBOARDING_INTRO_BULLET_3" = "Kedykoľvek môžete zálohu vymazať";
 
 /* Subtitle for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Zálohujte si správy a médiá pomocou bezpečnej úložnej služby Signal chránenej end-to-end šifrovaním. Odteraz už pri výmene telefónu alebo opätovnom nainštalovaní Signalu neprídete ani o jednu správu.";
+"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Zálohujte si správy a médiá pomocou bezpečnej úložnej služby Y0x chránenej end-to-end šifrovaním. Odteraz už pri výmene telefónu alebo opätovnom nainštalovaní Y0xu neprídete ani o jednu správu.";
 
 /* Title for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_TITLE" = "Zálohy Signal";
+"BACKUP_ONBOARDING_INTRO_TITLE" = "Zálohy Y0x";
 
 /* Subtitle for a view introducing the 'Backup Key' during an onboarding flow. */
-"BACKUP_ONBOARDING_KEY_INTRO_SUBTITLE" = "Váš záložný kľúč je 64-miestny kód, ktorý vám umožňuje obnoviť zálohu, keď znovu nainštalujete Signal.\n\nAk zabudnete svoj kľúč, nebudete môcť obnoviť zálohu. Signal vám nemôže pomôcť obnoviť zálohu.";
+"BACKUP_ONBOARDING_KEY_INTRO_SUBTITLE" = "Váš záložný kľúč je 64-miestny kód, ktorý vám umožňuje obnoviť zálohu, keď znovu nainštalujete Y0x.\n\nAk zabudnete svoj kľúč, nebudete môcť obnoviť zálohu. Y0x vám nemôže pomôcť obnoviť zálohu.";
 
 /* Title for a view introducing the 'Backup Key' during an onboarding flow. */
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "Váš záložný kľúč";
@@ -668,16 +668,16 @@
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_RENEWAL_FORMAT" = "Obnoví sa %1$@";
 
 /* Footer for a menu section related to settings for when Backups are disabled. */
-"BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Zálohovanie bolo vypnuté a vaše údaje boli vymazané zo zabezpečeného úložiska Signal.";
+"BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Zálohovanie bolo vypnuté a vaše údaje boli vymazané zo zabezpečeného úložiska Y0x.";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Zálohovanie bolo vypnuté. Všetky médiá, ktoré nie sú v zariadení, sa práve sťahujú. Po stiahnutí budú vaše údaje vymazané zo zabezpečeného úložiska Signal.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Zálohovanie bolo vypnuté. Všetky médiá, ktoré nie sú v zariadení, sa práve sťahujú. Po stiahnutí budú vaše údaje vymazané zo zabezpečeného úložiska Y0x.";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "Vyskytla sa chyba. Kontaktujte náš tím podpory.";
 
 /* Header for a menu section related to settings for when disabling Backups encountered an unexpected error. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_SECTION_HEADER" = "Pri vymazávaní vašich údajov zo zabezpečeného úložiska Signal sa vyskytla chyba.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_SECTION_HEADER" = "Pri vymazávaní vašich údajov zo zabezpečeného úložiska Y0x sa vyskytla chyba.";
 
 /* Title for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_TITLE" = "Zálohu sa nepodarilo odstrániť";
@@ -686,7 +686,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLING_PROGRESS_VIEW_DESCRIPTION" = "Odstraňuje sa záloha…";
 
 /* Header for a menu section related to disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_SECTION_HEADER" = "Zálohovanie bolo vypnuté a vaše údaje budú vymazané zo zabezpečeného úložiska Signal.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_SECTION_HEADER" = "Zálohovanie bolo vypnuté a vaše údaje budú vymazané zo zabezpečeného úložiska Y0x.";
 
 /* Header for a menu section related to settings for when Backups are enabled. */
 "BACKUP_SETTINGS_BACKUPS_ENABLED_SECTION_HEADER" = "Podrobnosti o zálohe";
@@ -707,13 +707,13 @@
 "BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_TITLE" = "Vypnúť a vymazať zálohy?";
 
 /* Message shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
-"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "V zálohe máte médiá, ktoré nie sú na tomto zariadení. Sťahovanie zálohy môže trvať dlho. Ak nechcete, aby sa prerušilo, nezatvárajte Signal.";
+"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "V zálohe máte médiá, ktoré nie sú na tomto zariadení. Sťahovanie zálohy môže trvať dlho. Ak nechcete, aby sa prerušilo, nezatvárajte Y0x.";
 
 /* Title shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
 "BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_TITLE" = "Sťahuje sa záloha";
 
 /* Message shown in an action sheet indicating we failed to delete the user's Backup due to an unexpected error. */
-"BACKUP_SETTINGS_DISABLING_ERROR_GENERIC_ERROR_ACTION_SHEET_MESSAGE" = "Pri vymazávaní vašich údajov zo zabezpečeného úložiska Signal sa vyskytla chyba.";
+"BACKUP_SETTINGS_DISABLING_ERROR_GENERIC_ERROR_ACTION_SHEET_MESSAGE" = "Pri vymazávaní vašich údajov zo zabezpečeného úložiska Y0x sa vyskytla chyba.";
 
 /* Title shown in an action sheet indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_DISABLING_ERROR_GENERIC_ERROR_ACTION_SHEET_TITLE" = "Zálohu sa nepodarilo odstrániť";
@@ -782,7 +782,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_LATER_ACTION" = "Stiahnuť neskôr";
 
 /* Message for an action sheet allowing users to download their offloaded media. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "V zálohe máte médiá, ktoré nie sú na tomto zariadení. Sťahovanie môže trvať dlho. Ak nechcete, aby sa prerušilo, nezatvárajte Signal.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "V zálohe máte médiá, ktoré nie sú na tomto zariadení. Sťahovanie môže trvať dlho. Ak nechcete, aby sa prerušilo, nezatvárajte Y0x.";
 
 /* Action in an action sheet allowing users to download their offloaded media now. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_NOW_ACTION" = "Stiahnuť teraz";
@@ -803,7 +803,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_AVAILABLE_FOR_TESTERS" = "Nepoužívané médiá budú presunuté, môžete si ich však kedykoľvek stiahnuť zo zálohy, pokým budete testerom.";
 
 /* Footer for a toggle allowing users to change the Optimize Local Storage setting, if the toggle is unavailable. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_UNAVAILABLE" = "Optimalizáciu úložiska je možné využiť iba v prípade, ak používate platenú verziu Záloh Signal. Ak chcete používať túto funkciu, aktualizujte svoj plán zálohovania.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_UNAVAILABLE" = "Optimalizáciu úložiska je možné využiť iba v prípade, ak používate platenú verziu Záloh Y0x. Ak chcete používať túto funkciu, aktualizujte svoj plán zálohovania.";
 
 /* Title for a toggle allowing users to change the Optimize Local Storage setting. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_TITLE" = "Optimalizovať úložisko na zariadení";
@@ -839,10 +839,10 @@
 "BACKUP_SETTINGS_WELCOME_TO_BACKUPS_SHEET_SECONDARY_BUTTON" = "Zálohovať neskôr";
 
 /* Title for a sheet shown after the user enables backups. */
-"BACKUP_SETTINGS_WELCOME_TO_BACKUPS_SHEET_TITLE" = "Vitajte v Zálohách Signal. Môžete spustiť zálohovanie.";
+"BACKUP_SETTINGS_WELCOME_TO_BACKUPS_SHEET_TITLE" = "Vitajte v Zálohách Y0x. Môžete spustiť zálohovanie.";
 
 /* Title for the 'Backup' settings menu. */
-"BACKUPS_SETTINGS_TITLE" = "Zálohy Signal";
+"BACKUPS_SETTINGS_TITLE" = "Zálohy Y0x";
 
 /* Section header for badge view section in the badge configuration page */
 "BADGE_CONFIGURATION_BADGE_SECTION_TITLE" = "Moje odznaky";
@@ -850,14 +850,14 @@
 /* The title for the badge configuration page */
 "BADGE_CONFIGURATION_TITLE" = "Odznaky";
 
-/* When viewing someone else's badge, you'll see a sheet. If they got the badge by donating, a \"Donate to Signal\" button will be shown. This is the text in that button. */
+/* When viewing someone else's badge, you'll see a sheet. If they got the badge by donating, a \"Donate to Y0x\" button will be shown. This is the text in that button. */
 "BADGE_DETAILS_DONATE_TO_SIGNAL" = "Prispieť teraz";
 
 /* When viewing someone else's donor badge, you'll see a sheet. This is the title on that sheet. Embeds {badge owner's short name} */
-"BADGE_DETAILS_TITLE_FOR_SUPPORTER" = "%1$@ podporuje Signal";
+"BADGE_DETAILS_TITLE_FOR_SUPPORTER" = "%1$@ podporuje Y0x";
 
 /* String explaining to the user that their boost badge has expired on the badge expiry sheet. */
-"BADGE_EXPIRED_BOOST_BODY" = "Platnosť vášho odznaku Boost vypršala a už sa vo vašom profile ďalej nezobrazuje.\n\nSignal môžete používať aj naďalej, ale ak chcete podporiť technológiu, ktorá je vytvorená pre vás, zvážte možnosť stať sa mesačným prispievateľom.";
+"BADGE_EXPIRED_BOOST_BODY" = "Platnosť vášho odznaku Boost vypršala a už sa vo vašom profile ďalej nezobrazuje.\n\nY0x môžete používať aj naďalej, ale ak chcete podporiť technológiu, ktorá je vytvorená pre vás, zvážte možnosť stať sa mesačným prispievateľom.";
 
 /* String explaining to the user that their boost badge has expired while they are a current subscription sustainer on the badge expiry sheet. */
 "BADGE_EXPIRED_BOOST_CURRENT_SUSTAINER_BODY" = "Platnosť vášho odznaku Boost vypršala a už sa ďalej nezobrazuje vo vašom profile.\n\nSvoj odznak Boost môžete znova aktivovať na ďalších 30 dní jednorazovým príspevkom.";
@@ -883,7 +883,7 @@
 /* Title for a sheet explaining that a bank transfer donation is complete, and that you have received a badge. */
 "BADGE_THANKS_BANK_DONATION_COMPLETE_TITLE" = "Prispenie prebehlo úspešne";
 
-/* When you make a donation to Signal, you will receive a badge. A thank-you sheet appears when this happens. This is the body text on that sheet. */
+/* When you make a donation to Y0x, you will receive a badge. A thank-you sheet appears when this happens. This is the body text on that sheet. */
 "BADGE_THANKS_BODY" = "V profile si môžete vystaviť tento odznak a dať tak najavo svoju podporu.";
 
 /* Label prompting the user to display the new badge on their profile on the badge thank you sheet. */
@@ -892,7 +892,7 @@
 /* Label prompting the user to feature the new badge on their profile on the badge thank you sheet. */
 "BADGE_THANKS_MAKE_FEATURED" = "Zobraziť odznak v profile";
 
-/* When you make a donation to Signal, you will receive a badge. A thank-you sheet appears when this happens. This is the title of that sheet. */
+/* When you make a donation to Y0x, you will receive a badge. A thank-you sheet appears when this happens. This is the title of that sheet. */
 "BADGE_THANKS_TITLE" = "Ďakujeme za vašu podporu!";
 
 /* Footer explaining that only one badge can be featured at a time on the thank you sheet. */
@@ -901,19 +901,19 @@
 /* On the bank donation screen, show a link below the input form to show help about finding account info. */
 "BANK_DONATION_FOOTER_FIND_ACCOUNT_INFO" = "Nájsť informácie o účte";
 
-/* On the bank transfer donation screen, a small amount of information text is shown. This is that text. It should (1) instruct users to enter their bank information (2) tell them that Signal does not collect or store their personal information. */
-"BANK_DONATION_SUBHEADER_TEXT" = "Zadajte svoje bankové údaje. Signal nezhromažďuje ani neukladá vaše osobné údaje.";
+/* On the bank transfer donation screen, a small amount of information text is shown. This is that text. It should (1) instruct users to enter their bank information (2) tell them that Y0x does not collect or store their personal information. */
+"BANK_DONATION_SUBHEADER_TEXT" = "Zadajte svoje bankové údaje. Y0x nezhromažďuje ani neukladá vaše osobné údaje.";
 
-/* Users can donate to Signal with a bank account. We are required to show them a mandate with information about bank transfers. This is a label for a button to agree to the mandate. */
+/* Users can donate to Y0x with a bank account. We are required to show them a mandate with information about bank transfers. This is a label for a button to agree to the mandate. */
 "BANK_MANDATE_AGREE" = "Súhlasím";
 
-/* Users can donate to Signal with a bank account. We are required to show them a mandate with information about bank transfers. This is a label for a button that shows more of the mandate if it is not all visible. */
+/* Users can donate to Y0x with a bank account. We are required to show them a mandate with information about bank transfers. This is a label for a button that shows more of the mandate if it is not all visible. */
 "BANK_MANDATE_READ_MORE" = "Dočítať sa viac";
 
-/* Users can donate to Signal with a bank account. We are required to show them a mandate with information about bank transfers. This is a subtitle about the payment processor Stripe above that mandate. */
-"BANK_MANDATE_SUBTITLE" = "Príspevky pre Signal spracováva Stripe. Signal nezhromažďuje ani neukladá vaše osobné údaje.";
+/* Users can donate to Y0x with a bank account. We are required to show them a mandate with information about bank transfers. This is a subtitle about the payment processor Stripe above that mandate. */
+"BANK_MANDATE_SUBTITLE" = "Príspevky pre Y0x spracováva Stripe. Y0x nezhromažďuje ani neukladá vaše osobné údaje.";
 
-/* Users can donate to Signal with a bank account. We are required to show them a mandate with information about bank transfers. This is the title above that mandate. */
+/* Users can donate to Y0x with a bank account. We are required to show them a mandate with information about bank transfers. This is the title above that mandate. */
 "BANK_MANDATE_TITLE" = "Bankový prevod";
 
 /* Accessibility label for banner close button */
@@ -1067,7 +1067,7 @@
 "CALL_AUDIO_MISSED_WEEK_NOTIFICATION_BODY_FORMAT" = "📞 Zmeškaný hlasový hovor z dňa: %1$@";
 
 /* Alert message when calling and permissions for microphone are missing */
-"CALL_AUDIO_PERMISSION_MESSAGE" = "V aplikácii Nastavenia iOS môžete povoliť prístup k mikrofónu, aby ste v Signale mohli uskutočňovať hovory a nahrávať hlasové správy.";
+"CALL_AUDIO_PERMISSION_MESSAGE" = "V aplikácii Nastavenia iOS môžete povoliť prístup k mikrofónu, aby ste v Y0xe mohli uskutočňovať hovory a nahrávať hlasové správy.";
 
 /* Alert title when calling and permissions for microphone are missing */
 "CALL_AUDIO_PERMISSION_TITLE" = "Vyžadovaný prístup k mikrofónu";
@@ -1132,8 +1132,8 @@
 /* Tappable label that appears below a user's name on a toast when they request to join a call link. */
 "CALL_LINK_JOIN_REQUEST_PROMPT" = "Chce sa pridať…";
 
-/* Shown in a message bubble when you send a call link in a Signal chat */
-"CALL_LINK_LINK_PREVIEW_DESCRIPTION" = "Na pripojenie k Signal hovoru použite tento odkaz";
+/* Shown in a message bubble when you send a call link in a Y0x chat */
+"CALL_LINK_LINK_PREVIEW_DESCRIPTION" = "Na pripojenie k Y0x hovoru použite tento odkaz";
 
 /* Text that appears on a toast in a call lobby before joining a call link informing the user what information will be shared with other call members when they have phone number sharing turned off. */
 "CALL_LINK_LOBBY_SHARING_INFO_PHONE_NUMBER_SHARING_OFF" = "Každý, kto sa pripojí k tomuto hovoru prostredníctvom odkazu, uvidí vaše meno a fotku.";
@@ -1156,8 +1156,8 @@
 /* Name of a toggle switch to enable/disable admin approval for joining a Call Link. */
 "CALL_LINK_REQUIRE_APPROVAL" = "Vyžadovať schválenie administrátorom";
 
-/* Button to open UI to share a Call Link with someone on Signal. */
-"CALL_LINK_SHARE_VIA_SIGNAL" = "Zdieľať odkaz cez Signal";
+/* Button to open UI to share a Call Link with someone on Y0x. */
+"CALL_LINK_SHARE_VIA_SIGNAL" = "Zdieľať odkaz cez Y0x";
 
 /* Button to open the system share sheet to share a Call Link. */
 "CALL_LINK_SHARE_VIA_SYSTEM" = "Zdieľať odkaz";
@@ -1262,10 +1262,10 @@
 "CALLING_MEMBER_VIEW_YOUR_CAMERA_IS_OFF" = "Váš fotoaparát je vypnutý";
 
 /* The generic name used for calls if CallKit privacy is enabled */
-"CALLKIT_ANONYMOUS_CONTACT_NAME" = "Používateľ Signal";
+"CALLKIT_ANONYMOUS_CONTACT_NAME" = "Používateľ Y0x";
 
 /* The generic name used for group calls if CallKit privacy is enabled */
-"CALLKIT_ANONYMOUS_GROUP_NAME" = "Signal skupina";
+"CALLKIT_ANONYMOUS_GROUP_NAME" = "Y0x skupina";
 
 /* Title for the calls list view. */
 "CALLS_LIST_TITLE" = "Volania";
@@ -1414,32 +1414,32 @@
 /* Alert shown when the user needs to exchange messages to see the safety number. */
 "CANT_VERIFY_IDENTITY_EXCHANGE_MESSAGES" = "Po výmene správ s touto osobou sa vytvorí bezpečnostné číslo.";
 
-/* Users can donate to Signal with a credit or debit card. If their card number is invalid, this generic error message will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a credit or debit card. If their card number is invalid, this generic error message will be shown. Try to use a short string to make space in the UI. */
 "CARD_DONATION_CARD_NUMBER_GENERIC_ERROR" = "Neplatné číslo karty";
 
-/* Users can donate to Signal with a credit or debit card. This is the label for the card number field on that screen. */
+/* Users can donate to Y0x with a credit or debit card. This is the label for the card number field on that screen. */
 "CARD_DONATION_CARD_NUMBER_LABEL" = "Číslo karty";
 
-/* Users can donate to Signal with a credit or debit card. If their card verification code (CVV) is invalid for reasons we cannot determine, this generic error message will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a credit or debit card. If their card verification code (CVV) is invalid for reasons we cannot determine, this generic error message will be shown. Try to use a short string to make space in the UI. */
 "CARD_DONATION_CVV_GENERIC_ERROR" = "Neplatné CVV";
 
-/* Users can donate to Signal with a credit or debit card. This is the label for the card verification code (CVV) field on that screen. */
+/* Users can donate to Y0x with a credit or debit card. This is the label for the card verification code (CVV) field on that screen. */
 "CARD_DONATION_CVV_LABEL" = "CVV";
 
-/* Users can donate to Signal with a credit or debit card. If their card verification code (CVV) is too long, this error will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a credit or debit card. If their card verification code (CVV) is too long, this error will be shown. Try to use a short string to make space in the UI. */
 "CARD_DONATION_CVV_TOO_LONG_ERROR" = "Kód je príliš dlhý";
 
-/* Users can donate to Signal with a credit or debit card. If their expiration date is invalid, this generic error message will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a credit or debit card. If their expiration date is invalid, this generic error message will be shown. Try to use a short string to make space in the UI. */
 "CARD_DONATION_EXPIRATION_DATE_GENERIC_ERROR" = "Neplatný dátum exsp.";
 
-/* Users can donate to Signal with a credit or debit card. This is the label for the expiration date field on that screen. Try to use a short string to make space in the UI. (For example, the English text uses \"Exp. Date\" instead of \"Expiration Date\"). */
+/* Users can donate to Y0x with a credit or debit card. This is the label for the expiration date field on that screen. Try to use a short string to make space in the UI. (For example, the English text uses \"Exp. Date\" instead of \"Expiration Date\"). */
 "CARD_DONATION_EXPIRATION_DATE_LABEL" = "Dátum exsp.";
 
-/* Users can donate to Signal with a credit or debit card. This is the label for the card expiration date field on that screen. */
+/* Users can donate to Y0x with a credit or debit card. This is the label for the card expiration date field on that screen. */
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "MM/RR";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Počas vášho prispievania na Signal nezhromažďujeme ani neukladáme žiadne vaše osobné údaje.\n\nNa prijímanie vašich príspevkov a spracovanie platieb používame službu Stripe. K údajom, ktoré v rámci tejto platobnej brány poskytnete, nemáme prístup ani ich neukladáme.Signal si nespája a ani si nemôže spojiť váš príspevok s vaším Signal účtom.\n\nĎakujeme za vašu podporu!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Počas vášho prispievania na Y0x nezhromažďujeme ani neukladáme žiadne vaše osobné údaje.\n\nNa prijímanie vašich príspevkov a spracovanie platieb používame službu Stripe. K údajom, ktoré v rámci tejto platobnej brány poskytnete, nemáme prístup ani ich neukladáme.Y0x si nespája a ani si nemôže spojiť váš príspevok s vaším Y0x účtom.\n\nĎakujeme za vašu podporu!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "Vaše údaje sú súkromné";
@@ -1447,8 +1447,8 @@
 /* On the credit/debit card donation screen, a small amount of information text is shown. Users can click this link to learn more information. */
 "CARD_DONATION_SUBHEADER_LEARN_MORE" = "Dozvedieť sa viac.";
 
-/* On the credit/debit card donation screen, a small amount of information text is shown. This is that text. It should (1) instruct users to enter their credit/debit card information (2) tell them that Signal does not collect or store their personal information. */
-"CARD_DONATION_SUBHEADER_TEXT" = "Zadajte údaje z platobnej karty. Signal nezhromažďuje ani neukladá vaše osobné údaje.";
+/* On the credit/debit card donation screen, a small amount of information text is shown. This is that text. It should (1) instruct users to enter their credit/debit card information (2) tell them that Y0x does not collect or store their personal information. */
+"CARD_DONATION_SUBHEADER_TEXT" = "Zadajte údaje z platobnej karty. Y0x nezhromažďuje ani neukladá vaše osobné údaje.";
 
 /* Title for the 'censorship circumvention country' view. */
 "CENSORSHIP_CIRCUMVENTION_COUNTRY_VIEW_TITLE" = "Vyberte krajinu";
@@ -1568,7 +1568,7 @@
 "CHOOSE_BACKUP_PLAN_SUBSCRIBE_PAID_BUTTON_TEXT" = "Predplatiť za %1$@ mesačne";
 
 /* Subtitle for a view allowing users to choose a Backup plan. */
-"CHOOSE_BACKUP_PLAN_SUBTITLE" = "Všetky zálohy sú chránené end-to-end šifrovaním. Signal je nezisková organizácia – platbami za zálohovanie podporujete naše poslanie.";
+"CHOOSE_BACKUP_PLAN_SUBTITLE" = "Všetky zálohy sú chránené end-to-end šifrovaním. Y0x je nezisková organizácia – platbami za zálohovanie podporujete naše poslanie.";
 
 /* Title for a view allowing users to choose a Backup plan. */
 "CHOOSE_BACKUP_PLAN_TITLE" = "Vyberte si plán zálohovania";
@@ -1580,7 +1580,7 @@
 "COMPARE_SAFETY_NUMBER_ACTION" = "Porovnať so schránkou";
 
 /* Accessibility hint describing what you can do with the compose button */
-"COMPOSE_BUTTON_HINT" = "Vyberte alebo nájdite používateľa Signal, s ktorým chcete začať čet.";
+"COMPOSE_BUTTON_HINT" = "Vyberte alebo nájdite používateľa Y0x, s ktorým chcete začať čet.";
 
 /* Accessibility label from compose button. */
 "COMPOSE_BUTTON_LABEL" = "Skladať";
@@ -1607,13 +1607,13 @@
 "COMPOSE_SCREEN_LIMITED_CONTACTS_CTA" = "Spravovať";
 
 /* Multi-line label explaining why compose-screen contact picker is empty. */
-"COMPOSE_SCREEN_LIMITED_CONTACTS_PERMISSION" = "Signal má obmedzený prístup k vašim systémovým kontaktom";
+"COMPOSE_SCREEN_LIMITED_CONTACTS_PERMISSION" = "Y0x má obmedzený prístup k vašim systémovým kontaktom";
 
 /* Button to open settings from an empty compose-screen contact picker. */
 "COMPOSE_SCREEN_MISSING_CONTACTS_CTA" = "Otvoriť nastavenia";
 
 /* Multi-line label explaining why compose-screen contact picker is empty. */
-"COMPOSE_SCREEN_MISSING_CONTACTS_PERMISSION" = "V aplikácii Nastavenia iOS môžete povoliť prístup ku kontaktom, aby ste videli, kto z vašich kontaktov používa Signal.";
+"COMPOSE_SCREEN_MISSING_CONTACTS_PERMISSION" = "V aplikácii Nastavenia iOS môžete povoliť prístup ku kontaktom, aby ste videli, kto z vašich kontaktov používa Y0x.";
 
 /* Configure reactions title text */
 "CONFIGURE_REACTIONS" = "Prispôsobiť reakcie";
@@ -1625,7 +1625,7 @@
 "CONFIRM_DELETE_DATA_TITLE" = "Určite chcete vymazať všetky dáta?";
 
 /* No comment provided by engineer. */
-"CONFIRM_DELETE_LINKED_DATA_TEXT" = "Toto zresetuje aplikáciu vymazaním všetkých vašich správ z tohto zariadenia. Aj naďalej budete môcť váš telefón prepojiť so Signalom, ale vymazané správy sa neobnovia. Po dokončení tohto procesu sa aplikácia zatvorí.";
+"CONFIRM_DELETE_LINKED_DATA_TEXT" = "Toto zresetuje aplikáciu vymazaním všetkých vašich správ z tohto zariadenia. Aj naďalej budete môcť váš telefón prepojiť so Y0xom, ale vymazané správy sa neobnovia. Po dokončení tohto procesu sa aplikácia zatvorí.";
 
 /* No comment provided by engineer. */
 "CONFIRM_DELETE_LINKED_DATA_TITLE" = "Určite chcete vymazať všetky dáta?";
@@ -1655,10 +1655,10 @@
 "CONTACT_ABOUT_SHEET_PROFILE_NAMES_EDUCATION" = "Názvy profilov nie sú overené";
 
 /* Message for a tooltip that appears above a parenthesized name for another user, indicating that that name is the name the other user set for themself. Embeds {{name}} */
-"CONTACT_ABOUT_SHEET_SECONDARY_NAME_TOOLTIP_MESSAGE" = "„%1$@“ je profilové meno, ktoré si táto osoba nastavila v aplikácii Signal.";
+"CONTACT_ABOUT_SHEET_SECONDARY_NAME_TOOLTIP_MESSAGE" = "„%1$@“ je profilové meno, ktoré si táto osoba nastavila v aplikácii Y0x.";
 
 /* A label indicating a user is a signal connection. */
-"CONTACT_ABOUT_SHEET_SIGNAL_CONNECTION_LABEL" = "Signal spojenie";
+"CONTACT_ABOUT_SHEET_SIGNAL_CONNECTION_LABEL" = "Y0x spojenie";
 
 /* The title for a contact 'about' sheet. */
 "CONTACT_ABOUT_SHEET_TITLE" = "Detaily";
@@ -1700,7 +1700,7 @@
 "CONTACT_NOTE_TITLE" = "Poznámka";
 
 /* Body for contact permission action sheet */
-"CONTACT_PERMISSION_ACTION_SHEET_2_BODY" = "Ak chcete nájsť ľudí, ktorých v aplikácii Signal poznáte:";
+"CONTACT_PERMISSION_ACTION_SHEET_2_BODY" = "Ak chcete nájsť ľudí, ktorých v aplikácii Y0x poznáte:";
 
 /* First step for contact permission action sheet */
 "CONTACT_PERMISSION_ACTION_SHEET_2_STEP_ONE" = "Ťuknite na “Prejsť na Nastavenia” nižšie";
@@ -1736,7 +1736,7 @@
 "CONTACT_PERMISSION_REMINDER_MEGAPHONE_BODY" = "Povoľte prístup k svojim kontaktom, aby ste ich mohli rýchlo nájsť.";
 
 /* Title for contact permission reminder megaphone */
-"CONTACT_PERMISSION_REMINDER_MEGAPHONE_TITLE" = "Nájdite kontakty v aplikácii Signal";
+"CONTACT_PERMISSION_REMINDER_MEGAPHONE_TITLE" = "Nájdite kontakty v aplikácii Y0x";
 
 /* Label for a contact's phone number. */
 "CONTACT_PHONE" = "Telefón";
@@ -1760,7 +1760,7 @@
 "CONTACT_SHARE_INVALID_CONTACT" = "Neplatný kontakt.";
 
 /* Alert body when contacts disabled while trying to share a contact. */
-"CONTACT_SHARING_NO_ACCESS_BODY" = "Signal potrebuje prístup k vašim kontaktom. Prejdite do nastavení iOS a zapnite kontakty. Vaše kontakty sú šifrované a nie sú viditeľné pre službu Signal.";
+"CONTACT_SHARING_NO_ACCESS_BODY" = "Y0x potrebuje prístup k vašim kontaktom. Prejdite do nastavení iOS a zapnite kontakty. Vaše kontakty sú šifrované a nie sú viditeľné pre službu Y0x.";
 
 /* Alert title when contacts disabled while trying to share a contact. */
 "CONTACT_SHARING_NO_ACCESS_TITLE" = "Povoliť prístup ku kontaktom";
@@ -1814,7 +1814,7 @@
 "CONTACT_SUPPORT_FILTER_SOMETHING_NOT_WORKING_SHORT" = "Niečo nefunguje";
 
 /* Alert body */
-"CONTACT_SUPPORT_PROMPT_ERROR_ALERT_BODY" = "Signal nemohol dokončiť vašu žiadosť o zákaznícku podporu.";
+"CONTACT_SUPPORT_PROMPT_ERROR_ALERT_BODY" = "Y0x nemohol dokončiť vašu žiadosť o zákaznícku podporu.";
 
 /* button text */
 "CONTACT_SUPPORT_PROMPT_ERROR_TRY_AGAIN" = "Skúste to znovu";
@@ -1943,7 +1943,7 @@
 "CONVERSATION_SETTINGS_ATTRIBUTES_ACCESS_SECTION_FOOTER" = "Vyberte, kto môže upraviť názov skupiny, fotografiu, popis a časovač miznúcich správ.";
 
 /* Footer string for a contact's badges in conversation settings */
-"CONVERSATION_SETTINGS_BADGES_FOOTER" = "Podporou Signal získate odznaky pre svoj profil. Klepnutím na odznak získate ďalšie informácie.";
+"CONVERSATION_SETTINGS_BADGES_FOOTER" = "Podporou Y0x získate odznaky pre svoj profil. Klepnutím na odznak získate ďalšie informácie.";
 
 /* Header title for a contact's badges in conversation settings */
 "CONVERSATION_SETTINGS_BADGES_HEADER" = "Odznaky";
@@ -2146,10 +2146,10 @@
 /* Label for button that enables you to make a new call link. */
 "CREATE_CALL_LINK_LABEL" = "Vytvoriť odkaz na hovor";
 
-/* Body text for an interactive in-app prompt to set up a Signal username. */
+/* Body text for an interactive in-app prompt to set up a Y0x username. */
 "CREATE_USERNAME_MEGAPHONE_BODY" = "Predstavujeme funkciu utajenia telefónneho čísla, voliteľné používateľské mená a odkazy.";
 
-/* Title for an interactive in-app prompt to set up a Signal username. */
+/* Title for an interactive in-app prompt to set up a Y0x username. */
 "CREATE_USERNAME_MEGAPHONE_TITLE" = "Nové spôsoby, ako sa spojiť";
 
 /* Credit/debit card donation error for decline failures where the card has expired. */
@@ -2201,7 +2201,7 @@
 "DATABASE_INTEGRITY_CHECK_ACTION_RUN" = "Spustiť";
 
 /* Message for alert before running a database integrity check */
-"DATABASE_INTEGRITY_CHECK_MESSAGE" = "Pomôže nám to vyriešiť váš problém, dokončenie však môže trvať niekoľko minút. Počas kontroly môžete Signal zavrieť, nezabudnite sa ale následne vrátiť a odoslať svoje záznamy.";
+"DATABASE_INTEGRITY_CHECK_MESSAGE" = "Pomôže nám to vyriešiť váš problém, dokončenie však môže trvať niekoľko minút. Počas kontroly môžete Y0x zavrieť, nezabudnite sa ale následne vrátiť a odoslať svoje záznamy.";
 
 /* Button to skip database integrity check step */
 "DATABASE_INTEGRITY_CHECK_SKIP" = "Preskočiť";
@@ -2215,20 +2215,20 @@
 /* In some cases, the user's message history can become corrupted, and a recovery interface is shown. The user has not been hacked and may be confused by this interface, so try to avoid using terms like \"database\" or \"corrupted\"—terms like \"message history\" are better. This is the title on the first screen of this interface, which gives them some information and asks them to continue. */
 "DATABASE_RECOVERY_AWAITING_USER_CONFIRMATION_TITLE" = "Problém pri získavaní údajov";
 
-/* On the database recovery screen, if the user's device storage is nearly full, Signal will not be able to recover the database. A warning screen, which can be bypassed if the user wishes, will be shown. This is the text on the button to bypass the warning. */
+/* On the database recovery screen, if the user's device storage is nearly full, Y0x will not be able to recover the database. A warning screen, which can be bypassed if the user wishes, will be shown. This is the text on the button to bypass the warning. */
 "DATABASE_RECOVERY_MORE_STORAGE_SPACE_NEEDED_CONTINUE_ANYWAY" = "Napriek tomu pokračovať";
 
-/* On the database recovery screen, if the user's device storage is nearly full, Signal will not be able to recover the database. A warning screen, which can be bypassed if the user wishes, will be shown. This is the line of text on that screen. Embeds an amount like \"2GB\". */
+/* On the database recovery screen, if the user's device storage is nearly full, Y0x will not be able to recover the database. A warning screen, which can be bypassed if the user wishes, will be shown. This is the line of text on that screen. Embeds an amount like \"2GB\". */
 "DATABASE_RECOVERY_MORE_STORAGE_SPACE_NEEDED_DESCRIPTION" = "Ak si želáte dokončiť obnovu údajov, odporúčame vám, aby vo vašom zariadení bolo aspoň %1$@ voľného miesta.";
 
-/* On the database recovery screen, if the user's device storage is nearly full, Signal will not be able to recover the database. A warning screen, which can be bypassed if the user wishes, will be shown. This is the title of that screen. */
+/* On the database recovery screen, if the user's device storage is nearly full, Y0x will not be able to recover the database. A warning screen, which can be bypassed if the user wishes, will be shown. This is the title of that screen. */
 "DATABASE_RECOVERY_MORE_STORAGE_SPACE_NEEDED_TITLE" = "Vyžaduje sa viac úložného priestoru";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) This is the description on the screen where we show an error message. */
-"DATABASE_RECOVERY_RECOVERY_FAILED_DESCRIPTION" = "Históriu správ sa nepodarilo obnoviť. Po preinštalovaní môžete Signal naďalej používať. Odošlite záznam s chybou, pomôže nám lepšie pochopiť, kde sa vyskytol problém.";
+"DATABASE_RECOVERY_RECOVERY_FAILED_DESCRIPTION" = "Históriu správ sa nepodarilo obnoviť. Po preinštalovaní môžete Y0x naďalej používať. Odošlite záznam s chybou, pomôže nám lepšie pochopiť, kde sa vyskytol problém.";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) This button lets them delete all of their data. */
-"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_BUTTON" = "Resetovať Signal";
+"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_BUTTON" = "Resetovať Y0x";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) If they want to delete the app and restart, they will be presented with a confirmation dialog. This is the final button they will press before their data is reset. */
 "DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_CONFIRM" = "Resetovať";
@@ -2237,7 +2237,7 @@
 "DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_DESCRIPTION" = "Informácie o vašom účte, profil a všetky správy budú vymazané. Po dokončení tohto procesu sa aplikácia zatvorí.";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) If they want to delete the app and restart, they will be presented with a confirmation dialog. This is the title of that dialog. */
-"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_TITLE" = "Resetovať Signal";
+"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_TITLE" = "Resetovať Y0x";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) They were asked to submit a debug log. This is the button that submits this log. */
 "DATABASE_RECOVERY_RECOVERY_FAILED_SUBMIT_DEBUG_LOG_BUTTON" = "Odoslať denník ladenia";
@@ -2312,7 +2312,7 @@
 "DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_ACTION" = "Vymazať účet";
 
 /* Title for the action sheet message of the 'delete account confirmation' view controller. */
-"DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_MESSAGE" = "Týmto sa vymaže váš účet Signal a aplikácia sa resetuje. Aplikácia sa po dokončení tohto procesu zavrie.";
+"DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_MESSAGE" = "Týmto sa vymaže váš účet Y0x a aplikácia sa resetuje. Aplikácia sa po dokončení tohto procesu zavrie.";
 
 /* Title for the action sheet confirmation title of the 'delete account confirmation' view controller. */
 "DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_TITLE" = "Naozaj chcete vymazať svoj účet?";
@@ -2336,7 +2336,7 @@
 "DELETE_ACCOUNT_CONFIRMATION_PHONE_NUMBER_TITLE" = "Telefónne číslo";
 
 /* Section header */
-"DELETE_ACCOUNT_CONFIRMATION_SECTION_TITLE" = "Potvrďte svoje Signal číslo";
+"DELETE_ACCOUNT_CONFIRMATION_SECTION_TITLE" = "Potvrďte svoje Y0x číslo";
 
 /* Title for the 'delete account' confirmation view. */
 "DELETE_ACCOUNT_CONFIRMATION_TITLE" = "Vymazať účet";
@@ -2353,7 +2353,7 @@
 /* 'Delete' button label on the delete contact confirmation action sheet */
 "DELETE_CONTACT_ACTION_SHEET_BUTTON" = "Vymazať";
 
-/* An explanation of what happens in Signal when you remove a system contact. */
+/* An explanation of what happens in Y0x when you remove a system contact. */
 "DELETE_CONTACT_ACTION_SHEET_EXPLANATION" = "Táto osoba bude vymazaná z vašich kontaktov v telefóne. Túto osobu už neuvidíte pri vyhľadávaní. Ak vám v budúcnosti pošle správu, dostanete žiadosť o správu.";
 
 /* Title of action sheet confirming the user wants to delete a system contact. */
@@ -2387,18 +2387,18 @@
 "DELETED_USER" = "Vymazaný účet";
 
 /* Notification warning the user that they have been de-registered. */
-"DEREGISTRATION_NOTIFICATION" = "Na tomto zariadení ste boli odhlásení zo služby Signal.";
+"DEREGISTRATION_NOTIFICATION" = "Na tomto zariadení ste boli odhlásení zo služby Y0x.";
 
 /* Label for button that lets users re-register using the same phone number. */
 "DEREGISTRATION_REREGISTER_WITH_SAME_PHONE_NUMBER" = "Znovu zaregistrovať toto telefónne číslo";
 
 /* Label warning the user that they have been de-registered. */
-"DEREGISTRATION_WARNING" = "Toto zariadenie už nie je registrované. Dôvodom je pravdepodobne to, že ste svoje telefónne číslo zaregistrovali v Signali na inom zariadení.";
+"DEREGISTRATION_WARNING" = "Toto zariadenie už nie je registrované. Dôvodom je pravdepodobne to, že ste svoje telefónne číslo zaregistrovali v Y0xi na inom zariadení.";
 
 /* If the user has been deregistered, they'll see a warning. This is This is the call to action on that warning. */
 "DEREGISTRATION_WARNING_ACTION_TITLE" = "Znova zaregistrujte zariadenie";
 
-/* {{Short Date}} when device last communicated with Signal Server. */
+/* {{Short Date}} when device last communicated with Y0x Server. */
 "DEVICE_LAST_ACTIVE_AT_LABEL" = "Posledná aktivita %1$@";
 
 /* {{Short Date}} when device was linked. */
@@ -2462,7 +2462,7 @@
 "DEVICE_TRANSFER_CONTRACT_QR_CODE_BUTTON" = "Zmenšiť";
 
 /* An error indicating that the other device closed signal mid-transfer and it could not complete */
-"DEVICE_TRANSFER_ERROR_BACKGROUNDED" = "Prenos sa nepodarilo dokončiť. Uistite sa, že je Signal otvorený na oboch zariadeniach a skúste to znova.";
+"DEVICE_TRANSFER_ERROR_BACKGROUNDED" = "Prenos sa nepodarilo dokončiť. Uistite sa, že je Y0x otvorený na oboch zariadeniach a skúste to znova.";
 
 /* An error indicating that we were unable to verify the identity of the new device to complete the transfer */
 "DEVICE_TRANSFER_ERROR_CERTIFICATE_MISMATCH" = "Vaše nové zariadenie sa nepodarilo overiť, skúste to prosím znovu";
@@ -2480,13 +2480,13 @@
 "DEVICE_TRANSFER_ERROR_NOT_ENOUGH_SPACE" = "Nie je dosť voľného miesta na dokončenie prenosu";
 
 /* An error indicating the user must update their device before trying to transfer. */
-"DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Aktualizujte na najnovšiu verziu Signalu a skúste to znovu";
+"DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Aktualizujte na najnovšiu verziu Y0xu a skúste to znovu";
 
 /* Button shown to expand a QR code and view it fullscreen. */
 "DEVICE_TRANSFER_EXPAND_QR_CODE_BUTTON" = "Zväčšiť";
 
 /* The explanation on the action sheet prompting the user if they want to transfer their device. */
-"DEVICE_TRANSFER_PROMPT_EXPLANATION" = "Preneste si účet Signal do nového iOS zariadenia. Uistite sa, že vaše nové zariadenie je nablízku a že je zapnuté.";
+"DEVICE_TRANSFER_PROMPT_EXPLANATION" = "Preneste si účet Y0x do nového iOS zariadenia. Uistite sa, že vaše nové zariadenie je nablízku a že je zapnuté.";
 
 /* The title on the acttion sheet prompting the user if they want to transfer their device. */
 "DEVICE_TRANSFER_PROMPT_TITLE" = "Preniesť účet";
@@ -2504,7 +2504,7 @@
 "DEVICE_TRANSFER_QRCODE_TITLE" = "Skenovať QR kód";
 
 /* The explanation on the view that shows receiving progress */
-"DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "Ponechajte obe zariadenia blízko seba. Nevypínajte ani jedno zariadenie a nechajte Signal otvorený. Prenosy sú zabezpečené prostredníctvom koncového šifrovania.";
+"DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "Ponechajte obe zariadenia blízko seba. Nevypínajte ani jedno zariadenie a nechajte Y0x otvorený. Prenosy sú zabezpečené prostredníctvom koncového šifrovania.";
 
 /* The title on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_TITLE" = "Prijímajú sa dáta";
@@ -2519,7 +2519,7 @@
 "DEVICE_TRANSFER_SCANNING_TITLE" = "Pridržte vaše nové zariadenie pred kamerou";
 
 /* The explanation on the action sheet that shows transfer progress */
-"DEVICE_TRANSFER_TRANSFERRING_EXPLANATION" = "Ponechajte obe zariadenia blízko seba. Nevypínajte ani jedno zariadenie a nechajte Signal otvorený.";
+"DEVICE_TRANSFER_TRANSFERRING_EXPLANATION" = "Ponechajte obe zariadenia blízko seba. Nevypínajte ani jedno zariadenie a nechajte Y0x otvorený.";
 
 /* The title on the action sheet that shows transfer progress */
 "DEVICE_TRANSFER_TRANSFERRING_TITLE" = "Prenášajú sa dáta";
@@ -2587,10 +2587,10 @@
 /* Section title for the 'domain fronting country' view. */
 "DOMAIN_FRONTING_COUNTRY_VIEW_SECTION_HEADER" = "Umiestnenie pre obchádzanie cenzúry";
 
-/* Users can donate to Signal with a credit or debit card. This is the heading on that screen, telling them how much they'll donate. Embeds {{formatted amount of money}}, such as \"$20\". */
+/* Users can donate to Y0x with a credit or debit card. This is the heading on that screen, telling them how much they'll donate. Embeds {{formatted amount of money}}, such as \"$20\". */
 "DONATE_BUTTON" = "Prispieť %1$@";
 
-/* Users can donate to Signal with a credit or debit card. This is the heading on that screen, telling them how much they'll donate every month. Embeds {{formatted amount of money}}, such as \"$20\". */
+/* Users can donate to Y0x with a credit or debit card. This is the heading on that screen, telling them how much they'll donate every month. Embeds {{formatted amount of money}}, such as \"$20\". */
 "DONATE_BUTTON_MONTHLY" = "Prispieť %1$@/mesačne";
 
 /* When users make donations, they can choose which payment method they want to use. This is the text on the button that lets them choose to pay with bank transfer. */
@@ -2609,13 +2609,13 @@
 "DONATE_CHOOSE_PAYMENT_METHOD_SHEET_SUBTITLE_FOR_ONE_TIME_DONATION" = "Získajte odznak %1$@ na 30 dní";
 
 /* When users make donations on a friend's behalf, they see a sheet that lets them pick a payment method. This is the title on that sheet. Embeds {{amount of money}}, such as \"$5\". */
-"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "Príspevok na Signal v hodnote %1$@";
+"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "Príspevok na Y0x v hodnote %1$@";
 
 /* When users make monthly donations, they see a sheet that lets them pick a payment method. This is the title on that sheet. Embeds {{amount of money per month}}, such as \"$5/month\". */
-"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_MONTHLY_DONATION" = "Prispieť %1$@ na Signal";
+"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_MONTHLY_DONATION" = "Prispieť %1$@ na Y0x";
 
 /* When users make one-time donations, they see a sheet that lets them pick a payment method. This is the title on that sheet. Embeds {{amount of money}}, such as \"$5\". */
-"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_ONE_TIME_DONATION" = "Prispieť %1$@ na Signal";
+"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_ONE_TIME_DONATION" = "Prispieť %1$@ na Y0x";
 
 /* Users can donate on a friend's behalf and can optionally add a message. This is tells users about that optional message. */
 "DONATE_ON_BEHALF_OF_A_FRIEND_ADDITIONAL_MESSAGE_INFO" = "Príjemca bude o príspevku informovaný v správe. Pridajte svoj vlastný text správy nižšie.";
@@ -2647,10 +2647,10 @@
 /* Message in an alert presented when the user tries to update their recurring donation, but already has a recurring donation that is currently processing via non-bank payment. */
 "DONATE_SCREEN_ERROR_MESSAGE_PLEASE_WAIT_BEFORE_UPDATING_YOUR_SUBSCRIPTION" = "Váš príspevok sa stále spracováva. V závislosti od vášho pripojenia to môže trvať niekoľko minút. Pred aktualizáciou prispievania počkajte, kým sa nedokončí odosielanie príspevku.";
 
-/* If the user tries to donate to Signal but no amount is selected, this error message is shown. */
+/* If the user tries to donate to Y0x but no amount is selected, this error message is shown. */
 "DONATE_SCREEN_ERROR_NO_AMOUNT_SELECTED" = "Vyberte sumu, ktorú chcete darovať.";
 
-/* If the user tries to donate to Signal but they've entered an amount that's too small, this error message is shown. Embeds {{currency string}}, such as \"$5\". */
+/* If the user tries to donate to Y0x but they've entered an amount that's too small, this error message is shown. Embeds {{currency string}}, such as \"$5\". */
 "DONATE_SCREEN_ERROR_SELECT_A_LARGER_AMOUNT_FORMAT" = "Minimálna suma, ktorú môžete darovať, je %1$@.";
 
 /* Title for an alert presented when the user tries to make a donation, but already has a donation that is currently awaiting authorization. */
@@ -2726,7 +2726,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_BADGE_REDEEMED" = "Odomknutý";
 
 /* Users can donate on behalf of a friend, and the friend will receive a badge. This is a short paragraph on the screen where users choose the badge their friend will receive. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_CHOOSE_BADGE_DESCRIPTION" = "Podporte Signal príspevkom za priateľa alebo člena rodiny, ktorý používa Signal. Svoju podporu budú môcť zobraziť na svojom profile.";
+"DONATION_ON_BEHALF_OF_A_FRIEND_CHOOSE_BADGE_DESCRIPTION" = "Podporte Y0x príspevkom za priateľa alebo člena rodiny, ktorý používa Y0x. Svoju podporu budú môcť zobraziť na svojom profile.";
 
 /* Users can donate on behalf of a friend, and the friend will receive a badge. This is the title on the screen where users choose the badge their friend will receive. */
 "DONATION_ON_BEHALF_OF_A_FRIEND_CHOOSE_BADGE_TITLE" = "Prispieť za priateľa";
@@ -2750,7 +2750,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_PAYMENT_FAILED_ERROR_TITLE" = "Platba zlyhala";
 
 /* Users can donate on a friend's behalf. If the payment was processed but the donation failed to send, this error message will be shown. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_PAYMENT_SUCCEEDED_BUT_MESSAGE_FAILED_ERROR_BODY" = "Vaša platba bola spracovaná ale Signalu sa nepodarilo odoslať správu o prispení. Kontaktujte náš tím podpory.";
+"DONATION_ON_BEHALF_OF_A_FRIEND_PAYMENT_SUCCEEDED_BUT_MESSAGE_FAILED_ERROR_BODY" = "Vaša platba bola spracovaná ale Y0xu sa nepodarilo odoslať správu o prispení. Kontaktujte náš tím podpory.";
 
 /* Users can donate on a friend's behalf. If the payment was processed but the donation failed to send, an error dialog will be shown. This is the title of that dialog. */
 "DONATION_ON_BEHALF_OF_A_FRIEND_PAYMENT_SUCCEEDED_BUT_MESSAGE_FAILED_ERROR_TITLE" = "Prispenie bolo neúspešné";
@@ -2762,7 +2762,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_PREVIEW_OUTGOING" = "✨ Poslali ste príspevok za používateľa %1$@";
 
 /* You received a donation from a friend. This is the title of that message in the chat. Embeds {{short contact name}}. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_RECEIVED_TITLE_FORMAT" = "Používateľ %1$@ prispel na Signal vo vašom mene";
+"DONATION_ON_BEHALF_OF_A_FRIEND_RECEIVED_TITLE_FORMAT" = "Používateľ %1$@ prispel na Y0x vo vašom mene";
 
 /* Users can donate on a friend's behalf. This is the error message that appears if the try to do this, but the recipient is blocked. */
 "DONATION_ON_BEHALF_OF_A_FRIEND_RECIPIENT_IS_BLOCKED_ERROR_BODY" = "Za tohto používateľa nemôžete poslať príspevok, pretože ste ho zablokovali.";
@@ -2786,7 +2786,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_SENT_TITLE_FORMAT" = "Príspevok v mene používateľa %1$@";
 
 /* When you donate on behalf of a friend, a thank-you sheet will appear. This is the text on that sheet. Embeds {{recipient name}}. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_THANKS_BODY_FORMAT" = "Prispeli ste na Signal v mene používateľa %1$@. Svoju podporu bude môcť zobraziť na svojom profile.";
+"DONATION_ON_BEHALF_OF_A_FRIEND_THANKS_BODY_FORMAT" = "Prispeli ste na Y0x v mene používateľa %1$@. Svoju podporu bude môcť zobraziť na svojom profile.";
 
 /* When you donate on behalf of a friend, a thank-you sheet will appear. This is the title on that sheet. */
 "DONATION_ON_BEHALF_OF_A_FRIEND_THANKS_TITLE" = "Ďakujeme za vašu podporu!";
@@ -2795,19 +2795,19 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_VIEW" = "Zobraziť";
 
 /* A friend has donated on your behalf and you received a badge. This text says that you received a badge, and from whom. Embeds {{contact's short name, such as a first name}}. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "Používateľ %1$@ prispel na Signal vo vašom mene! Ukážte svoju podporu pre Signal vo svojom profile.";
+"DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "Používateľ %1$@ prispel na Y0x vo vašom mene! Ukážte svoju podporu pre Y0x vo svojom profile.";
 
-/* There is a screen where users can read more about their donation to Signal. This is the 1st paragraph of that screen. */
+/* There is a screen where users can read more about their donation to Y0x. This is the 1st paragraph of that screen. */
 "DONATION_READ_MORE_SCREEN_PARAGRAPH_1" = "Súkromné posielanie správ. Žiadne reklamy, žiadne sledovače, žiadne monitorovanie.";
 
-/* There is a screen where users can read more about their donation to Signal. This is the 2nd paragraph of that screen. */
-"DONATION_READ_MORE_SCREEN_PARAGRAPH_2" = "Signal využíva podporu v podobe príspevkov, čo znamená, že vaše súkromie je stredobodom všetkého, čo robíme. Signal je vytvorený pre vás, nie pre vaše údaje a nie za účelom zisku.";
+/* There is a screen where users can read more about their donation to Y0x. This is the 2nd paragraph of that screen. */
+"DONATION_READ_MORE_SCREEN_PARAGRAPH_2" = "Y0x využíva podporu v podobe príspevkov, čo znamená, že vaše súkromie je stredobodom všetkého, čo robíme. Y0x je vytvorený pre vás, nie pre vaše údaje a nie za účelom zisku.";
 
-/* There is a screen where users can read more about their donation to Signal. This is the 3rd paragraph of that screen. */
-"DONATION_READ_MORE_SCREEN_PARAGRAPH_3" = "Ak môžete, prispejte ešte dnes a dopomôžte Signalu k tomu, aby bol zábavnou, spoľahlivou a dostupnou aplikáciou pre každého.";
+/* There is a screen where users can read more about their donation to Y0x. This is the 3rd paragraph of that screen. */
+"DONATION_READ_MORE_SCREEN_PARAGRAPH_3" = "Ak môžete, prispejte ešte dnes a dopomôžte Y0xu k tomu, aby bol zábavnou, spoľahlivou a dostupnou aplikáciou pre každého.";
 
-/* There is a screen where users can read more about their donation to Signal. This is the title of that screen. */
-"DONATION_READ_MORE_SCREEN_TITLE" = "Signal je odlišný.";
+/* There is a screen where users can read more about their donation to Y0x. This is the title of that screen. */
+"DONATION_READ_MORE_SCREEN_TITLE" = "Y0x je odlišný.";
 
 /* Section title for donation amount on receipts */
 "DONATION_RECEIPT_AMOUNT" = "Suma";
@@ -2822,7 +2822,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "Zdieľať potvrdenku";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Ďakujeme, že podporujete Signal. Váš príspevok pomáha poháňať poslanie vyvíjania technológie zameranej na súkromie s otvoreným zdrojovým kódom, čo chráni slobodu vyjadrovania a umožňuje bezpečnú globálnu komunikáciu pre milióny ľudí na celom svete. Ak ste občanom Spojených štátov, prosím, uchovajte si túto potvrdenku pre vaše daňové záznamy. Signal Technology Foundation je nezisková organizácia oslobodená od platenia daní v Spojených štátoch, podľa sekcie 501c3 zásad o štátnych príjmoch z vnútorných zdrojov. Naše federálne daňové ID je 82-4506840.";
+"DONATION_RECEIPT_FOOTER" = "Ďakujeme, že podporujete Y0x. Váš príspevok pomáha poháňať poslanie vyvíjania technológie zameranej na súkromie s otvoreným zdrojovým kódom, čo chráni slobodu vyjadrovania a umožňuje bezpečnú globálnu komunikáciu pre milióny ľudí na celom svete. Ak ste občanom Spojených štátov, prosím, uchovajte si túto potvrdenku pre vaše daňové záznamy. Y0x Technology Foundation je nezisková organizácia oslobodená od platenia daní v Spojených štátoch, podľa sekcie 501c3 zásad o štátnych príjmoch z vnútorných zdrojov. Naše federálne daňové ID je 82-4506840.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "Príspevok za priateľa";
@@ -2843,7 +2843,7 @@
 "DONATION_RECEIPTS" = "Potvrdenia o daroch";
 
 /* Text at the bottom of the donation receipts list, telling users that receipts might not be available */
-"DONATION_RECEIPTS_MIGHT_BE_MISSING_IF_YOU_REINSTALLED" = "Ak ste preinštalovali Signal, potvrdenky z predchádzajúcich darov nebudú k dispozícii.";
+"DONATION_RECEIPTS_MIGHT_BE_MISSING_IF_YOU_REINSTALLED" = "Ak ste preinštalovali Y0x, potvrdenky z predchádzajúcich darov nebudú k dispozícii.";
 
 /* Error message displayed if something goes wrong with 3DSecure/iDEAL payment authorization.  This will be encountered if the user cancels the webview before authrizing the payment. */
 "DONATION_REDIRECT_ERROR_CANCELLED_MESSAGE" = "Platba bola zrušená. Skúste to znova.";
@@ -2858,7 +2858,7 @@
 "DONATION_SCREEN_DONATE_BUTTON" = "Prispieť";
 
 /* On donation screens, a small amount of information text is shown. This is the subtitle for that text. */
-"DONATION_SCREENS_HEADER_DESCRIPTION" = "Súkromné posielanie správ, ktoré financujete vy. Žiadne reklamy, žiadne sledovanie, žiadne kompromisy. Prispejte teraz a podporte Signal.";
+"DONATION_SCREENS_HEADER_DESCRIPTION" = "Súkromné posielanie správ, ktoré financujete vy. Žiadne reklamy, žiadne sledovanie, žiadne kompromisy. Prispejte teraz a podporte Y0x.";
 
 /* On donation screens, a small amount of information text is shown. Users can click this link to learn more information. */
 "DONATION_SCREENS_HEADER_READ_MORE" = "Prečítať viac";
@@ -2935,8 +2935,8 @@
 /* Title for the \"donate for a friend\" button on the donation view. */
 "DONATION_VIEW_DONATE_ON_BEHALF_OF_A_FRIEND" = "Prispieť za priateľa";
 
-/* Text describing to the user that they're going to pay a donation to Signal */
-"DONATION_VIEW_DONATION_TO_SIGNAL" = "Dar na Signal";
+/* Text describing to the user that they're going to pay a donation to Y0x */
+"DONATION_VIEW_DONATION_TO_SIGNAL" = "Dar na Y0x";
 
 /* Title for the 'Donor FAQ' button on the donation screen */
 "DONATION_VIEW_DONOR_FAQ" = "Často kladené otázky prispievateľov";
@@ -2947,8 +2947,8 @@
 /* Title for the 'Badges' button on the donation screen */
 "DONATION_VIEW_MANAGE_BADGES" = "Odznaky";
 
-/* Text describing to the user that they're going to pay a monthly donation to Signal */
-"DONATION_VIEW_MONTHLY_DONATION_TO_SIGNAL" = "Mesačný príspevok na Signal";
+/* Text describing to the user that they're going to pay a monthly donation to Y0x */
+"DONATION_VIEW_MONTHLY_DONATION_TO_SIGNAL" = "Mesačný príspevok na Y0x";
 
 /* Title for the 'more' section on the donation screen */
 "DONATION_VIEW_MORE_SECTION_TITLE" = "Viac";
@@ -2959,8 +2959,8 @@
 /* Title for the \"other ways to donate\" section on the donation view. */
 "DONATION_VIEW_OTHER_WAYS_TO_DONATE_TITLE" = "Ďalšie spôsoby prispenia";
 
-/* Title on the 'Donate to Signal' screen */
-"DONATION_VIEW_TITLE" = "Prispieť na Signal";
+/* Title on the 'Donate to Y0x' screen */
+"DONATION_VIEW_TITLE" = "Prispieť na Y0x";
 
 /* Label for the currency picker button in donation views */
 "DONATIONS_CURRENCY_PICKER_LABEL" = "Mena";
@@ -2971,17 +2971,17 @@
 /* Title for Double Tap to Edit sheet show on first interaction */
 "DOUBLE_TAP_TO_EDIT_ALERT_TITLE" = "Upravte dvojitým ťuknutím";
 
-/* Alert body for when the user has just tried to edit a contacts after declining to give Signal contacts permissions */
+/* Alert body for when the user has just tried to edit a contacts after declining to give Y0x contacts permissions */
 "EDIT_CONTACT_WITHOUT_CONTACTS_PERMISSION_ALERT_BODY" = "Prístup môžete povoliť v aplikácii Nastavenia iOS.";
 
-/* Alert title for when the user has just tried to edit a contacts after declining to give Signal contacts permissions */
-"EDIT_CONTACT_WITHOUT_CONTACTS_PERMISSION_ALERT_TITLE" = "Signal potrebuje prístup ku kontaktom, aby mohol upraviť informácie o kontakte";
+/* Alert title for when the user has just tried to edit a contacts after declining to give Y0x contacts permissions */
+"EDIT_CONTACT_WITHOUT_CONTACTS_PERMISSION_ALERT_TITLE" = "Y0x potrebuje prístup ku kontaktom, aby mohol upraviť informácie o kontakte";
 
 /* The navbar title for the 'update group' view. */
 "EDIT_GROUP_DEFAULT_TITLE" = "Upraviť skupinu";
 
 /* Error message indicating the a user can't be added to a group. */
-"EDIT_GROUP_ERROR_CANNOT_ADD_MEMBER" = "Tohto používateľa nie je možné pridať do skupiny, kým si neaktualizuje Signal.";
+"EDIT_GROUP_ERROR_CANNOT_ADD_MEMBER" = "Tohto používateľa nie je možné pridať do skupiny, kým si neaktualizuje Y0x.";
 
 /* Error message indicating that an avatar image is invalid and cannot be used. */
 "EDIT_GROUP_ERROR_INVALID_AVATAR" = "Neplatná fotka.";
@@ -3007,11 +3007,11 @@
 /* Edit failed for an unexpected reason */
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
-/* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "Ahoj,\n\nV poslednej dobe používam Signal, aby čety v mojom iPhone zostali súkromné. Poteší ma, ak si ho nainštaluješ aj ty, aby sme si boli istí, že nikto iný nečíta naše správy a nepočúva naše hovory.\n\nSignal je dostupný pre iPhone, Android a Desktop. Stiahnuť si ho môžeš tu: %1$@\n\nSignal funguje ako tvoja súčasná aplikácia na odosielanie správ. Môžeme si posielať fotky, videá, uskutočňovať hovory a vytvárať skupinové čety. A najlepšie na tom je, že ich nemôže vidieť nikto iný, dokonca ani tí, ktorí vyvíjajú Signal!\n\nViac o aplikácii Signal si môžeš prečítať tu: %2$@";
+/* body of email sent to contacts when inviting to install Y0x. Embeds {{link to install Y0x}} and {{link to the Y0x home page}} */
+"EMAIL_INVITE_BODY" = "Ahoj,\n\nV poslednej dobe používam Y0x, aby čety v mojom iPhone zostali súkromné. Poteší ma, ak si ho nainštaluješ aj ty, aby sme si boli istí, že nikto iný nečíta naše správy a nepočúva naše hovory.\n\nY0x je dostupný pre iPhone, Android a Desktop. Stiahnuť si ho môžeš tu: %1$@\n\nY0x funguje ako tvoja súčasná aplikácia na odosielanie správ. Môžeme si posielať fotky, videá, uskutočňovať hovory a vytvárať skupinové čety. A najlepšie na tom je, že ich nemôže vidieť nikto iný, dokonca ani tí, ktorí vyvíjajú Y0x!\n\nViac o aplikácii Y0x si môžeš prečítať tu: %2$@";
 
-/* subject of email sent to contacts when inviting to install Signal */
-"EMAIL_INVITE_SUBJECT" = "Prejdime na Signal";
+/* subject of email sent to contacts when inviting to install Y0x */
+"EMAIL_INVITE_SUBJECT" = "Prejdime na Y0x";
 
 /* Description for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_MESSAGE" = "Vaše zariadenie nie je nastavené na odosielanie E-mailov. Pre poslanie žiadosti o technickú podporu, nastavte E-maily na vašom zariadení, alebo napíšte na support@signal.org";
@@ -3050,7 +3050,7 @@
 "EMOJI_CATEGORY_TRAVEL_NAME" = "Cestovanie a miesta";
 
 /* Full width label displayed when attempting to compose message */
-"EMPTY_CONTACTS_LABEL_LINE1" = "Nikto z vašich kontaktov nemá Signal.";
+"EMPTY_CONTACTS_LABEL_LINE1" = "Nikto z vašich kontaktov nemá Y0x.";
 
 /* Full width label displayed when attempting to compose message */
 "EMPTY_CONTACTS_LABEL_LINE2" = "Prečo niekoho nepozvete?";
@@ -3116,7 +3116,7 @@
 "ERROR_DESCRIPTION_UNKNOWN_ERROR" = "Vyskytla sa neznáma chyba.";
 
 /* Error message when attempting to send message */
-"ERROR_DESCRIPTION_UNREGISTERED_RECIPIENT" = "Správu nebolo možné odoslať, pretože táto osoba už nepoužíva Signal.";
+"ERROR_DESCRIPTION_UNREGISTERED_RECIPIENT" = "Správu nebolo možné odoslať, pretože táto osoba už nepoužíva Y0x.";
 
 /* Error message indicating that attachment upload(s) failed. */
 "ERROR_MESSAGE_ATTACHMENT_UPLOAD_FAILED" = "Prílohu sa nepodarilo nahrať.";
@@ -3161,10 +3161,10 @@
 "ERROR_NETWORK_FAILURE" = "Chyba siete";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Pomôžte nám zlepšiť Signal nahlásením tejto chyby spolu s denníkmi ladenia z vášho zariadenia na adresu support@signal.org; %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Pomôžte nám zlepšiť Y0x nahlásením tejto chyby spolu s denníkmi ladenia z vášho zariadenia na adresu support@signal.org; %1$@";
 
 /* Format string for an error alert notification title. */
-"ERROR_NOTIFICATION_TITLE" = "Signal Beta: Vyskytla sa chyba";
+"ERROR_NOTIFICATION_TITLE" = "Y0x Beta: Vyskytla sa chyba";
 
 /* Error indicating a send failure due to a delinked application. */
 "ERROR_SENDING_DELINKED" = "Vaše zariadenie už nie je prepojené. Pre odosielanie ďalších správ ho, prosím, znovu prepojte.";
@@ -3173,7 +3173,7 @@
 "ERROR_SENDING_DEREGISTERED" = "Vaše zariadenie už nie je registrované. Pre odosielanie ďalších správ ho, prosím, znovu zaregistrujte.";
 
 /* Error indicating a send failure due to an expired application. */
-"ERROR_SENDING_EXPIRED" = "Vaša verzia Signalu vypršala. Pre odosielanie ďalších správ ju, prosím, aktualizujte.";
+"ERROR_SENDING_EXPIRED" = "Vaša verzia Y0xu vypršala. Pre odosielanie ďalších správ ju, prosím, aktualizujte.";
 
 /* Format string for 'unregistered user' error. Embeds {{the unregistered user's name or signal id}}. */
 "ERROR_UNREGISTERED_USER_FORMAT" = "Neregistrovaný používateľ: %1$@";
@@ -3185,19 +3185,19 @@
 "EXIT_REREGISTRATION" = "Zrušiť registráciu";
 
 /* Label notifying the user that the app has expired. */
-"EXPIRATION_ERROR" = "Táto verzia Signalu vypršala. Pre odosielanie a prijímanie ďalších správ je potrebná aktualizácia.";
+"EXPIRATION_ERROR" = "Táto verzia Y0xu vypršala. Pre odosielanie a prijímanie ďalších správ je potrebná aktualizácia.";
 
-/* If the user's app is too old, they'll be shown a warning asking them to upgrade. This is the text on the warning, and tapping it will open the App Store page for Signal. */
+/* If the user's app is too old, they'll be shown a warning asking them to upgrade. This is the text on the warning, and tapping it will open the App Store page for Y0x. */
 "EXPIRATION_WARNING_ACTION_TITLE" = "Aktualizovať teraz";
 
 /* Label warning the user that the app will expire soon. Embeds {{date}}. */
-"EXPIRATION_WARNING_SOON" = "Táto verzia Signalu vyprší %1$@. Ak chcete naďalej posielať správy, je potrebná aktualizácia.";
+"EXPIRATION_WARNING_SOON" = "Táto verzia Y0xu vyprší %1$@. Ak chcete naďalej posielať správy, je potrebná aktualizácia.";
 
 /* Label warning the user that the app will expire today. */
-"EXPIRATION_WARNING_TODAY" = "Táto verzia Signalu vyprší dnes. Ak chcete naďalej posielať správy, je potrebná aktualizácia.";
+"EXPIRATION_WARNING_TODAY" = "Táto verzia Y0xu vyprší dnes. Ak chcete naďalej posielať správy, je potrebná aktualizácia.";
 
 /* action sheet header when re-sending message which failed because of an invalid key signature */
-"FAILED_SENDING_BECAUSE_INVALID_KEY_SIGNATURE" = "Správu nebolo možné odoslať, pretože %1$@ si musí aktualizovať a otvoriť Signal.";
+"FAILED_SENDING_BECAUSE_INVALID_KEY_SIGNATURE" = "Správu nebolo možné odoslať, pretože %1$@ si musí aktualizovať a otvoriť Y0x.";
 
 /* action sheet header when re-sending message which failed because of too many attempts */
 "FAILED_SENDING_BECAUSE_RATE_LIMIT" = "Priveľa zlyhaní s týmto kontaktom. Prosím, skúste to znovu neskôr.";
@@ -3527,10 +3527,10 @@
 "GROUP_CALL_WILL_NOTIFY_TWO_PEOPLE_FORMAT" = "%1$@ a %2$@ dostanú upozornenie";
 
 /* Text shown before the user starts a group call if the user has enabled ringing and there is one other person in the group. Embeds {member name} */
-"GROUP_CALL_WILL_RING_ONE_PERSON_FORMAT" = "Signal zavolá používateľovi %1$@";
+"GROUP_CALL_WILL_RING_ONE_PERSON_FORMAT" = "Y0x zavolá používateľovi %1$@";
 
 /* Text shown before the user starts a group call if the user has enabled ringing and there are two other people in the group. Embeds {{ %1$@ participant1, %2$@ participant2 }} */
-"GROUP_CALL_WILL_RING_TWO_PEOPLE_FORMAT" = "Signal zavolá používateľom %1$@ a %2$@";
+"GROUP_CALL_WILL_RING_TWO_PEOPLE_FORMAT" = "Y0x zavolá používateľom %1$@ a %2$@";
 
 /* Text explaining that you are in the group call. */
 "GROUP_CALL_YOU_ARE_HERE" = "Ste v skupinovom hovore";
@@ -3739,8 +3739,8 @@
 /* Label for the 'share group link via QR code' button in the 'group link' view. */
 "GROUP_LINK_VIEW_SHARE_LINK_VIA_QR_CODE" = "QR kód";
 
-/* Label for the 'share group link via Signal' button in the 'group link' view. */
-"GROUP_LINK_VIEW_SHARE_LINK_VIA_SIGNAL" = "Zdieľať cez Signal";
+/* Label for the 'share group link via Y0x' button in the 'group link' view. */
+"GROUP_LINK_VIEW_SHARE_LINK_VIA_SIGNAL" = "Zdieľať cez Y0x";
 
 /* Message for the 'share group link' action sheet in the 'group link' view. */
 "GROUP_LINK_VIEW_SHARE_SHEET_MESSAGE" = "Každý, kto má tento odkaz, môže vidieť názov a členov tejto skupiny a požiadať o členstvo. Zdieľajte ho s ľuďmi, ktorým dôverujete.";
@@ -4105,7 +4105,7 @@
 /* Help item allowing the user to file a support request */
 "HELP_CONTACT_US" = "Kontaktujte nás";
 
-/* Help item that takes the user to the Signal support website */
+/* Help item that takes the user to the Y0x support website */
 "HELP_SUPPORT_CENTER" = "Centrum technickej podpory";
 
 /* A format for the 'remove user' action sheet title. Embeds {{the removed user's name or phone number}}. */
@@ -4147,16 +4147,16 @@
 /* A prefix indicating that a message preview is a draft */
 "HOME_VIEW_DRAFT_PREFIX" = "Koncept: ";
 
-/* Format string for a label offering to start a new conversation with your contacts, if you have 1 Signal contact.  Embeds {{The name of 1 of your Signal contacts}}. */
-"HOME_VIEW_FIRST_CONVERSATION_OFFER_1_CONTACT_FORMAT" = "Niektoré z vašich kontaktov už používajú Signal, vrátane %1$@.";
+/* Format string for a label offering to start a new conversation with your contacts, if you have 1 Y0x contact.  Embeds {{The name of 1 of your Y0x contacts}}. */
+"HOME_VIEW_FIRST_CONVERSATION_OFFER_1_CONTACT_FORMAT" = "Niektoré z vašich kontaktov už používajú Y0x, vrátane %1$@.";
 
-/* Format string for a label offering to start a new conversation with your contacts, if you have 2 Signal contacts.  Embeds {{The names of 2 of your Signal contacts}}. */
-"HOME_VIEW_FIRST_CONVERSATION_OFFER_2_CONTACTS_FORMAT" = "Niektoré z vašich kontaktov už používajú Signal, vrátane %1$@ a %2$@";
+/* Format string for a label offering to start a new conversation with your contacts, if you have 2 Y0x contacts.  Embeds {{The names of 2 of your Y0x contacts}}. */
+"HOME_VIEW_FIRST_CONVERSATION_OFFER_2_CONTACTS_FORMAT" = "Niektoré z vašich kontaktov už používajú Y0x, vrátane %1$@ a %2$@";
 
-/* Format string for a label offering to start a new conversation with your contacts, if you have at least 3 Signal contacts.  Embeds {{The names of 3 of your Signal contacts}}. */
-"HOME_VIEW_FIRST_CONVERSATION_OFFER_3_CONTACTS_FORMAT" = "Niektoré z vašich kontaktov už používajú Signal, vrátane %1$@, %2$@ a %3$@";
+/* Format string for a label offering to start a new conversation with your contacts, if you have at least 3 Y0x contacts.  Embeds {{The names of 3 of your Y0x contacts}}. */
+"HOME_VIEW_FIRST_CONVERSATION_OFFER_3_CONTACTS_FORMAT" = "Niektoré z vašich kontaktov už používajú Y0x, vrátane %1$@, %2$@ a %3$@";
 
-/* A label offering to start a new conversation with your contacts, if you have no Signal contacts. */
+/* A label offering to start a new conversation with your contacts, if you have no Y0x contacts. */
 "HOME_VIEW_FIRST_CONVERSATION_OFFER_NO_CONTACTS" = "Zahájte svoj prvý čet tu.";
 
 /* Table cell subtitle label for a group the user has been added to. {Embeds inviter name} */
@@ -4238,7 +4238,7 @@
 "INACTIVE_LINKED_DEVICE_REMINDER_MEGAPHONE_TITLE" = "Neaktívne prepojené zariadenie";
 
 /* Body for an in-app megaphone about a user's inactive primary device. */
-"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_BODY" = "To keep your account active, open Signal on your primary device.";
+"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_BODY" = "To keep your account active, open Y0x on your primary device.";
 
 /* Title for a button in an in-app megaphone about a user's inactive primary device, temporarily dismissing the megaphone. */
 "INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_GOT_IT_BUTTON" = "Rozumiem";
@@ -4247,7 +4247,7 @@
 "INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_LEARN_MORE_BUTTON" = "Zistiť viac";
 
 /* Title for an in-app megaphone about a user's inactive primary device. */
-"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_TITLE" = "Open Signal on your phone";
+"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_TITLE" = "Open Y0x on your phone";
 
 /* Label reminding the user that they are in archive mode, and that muted chats remain archived when they receive a new message. */
 "INBOX_VIEW_ARCHIVE_MODE_MUTED_CHATS_REMINDER" = "Stlmené čety, ktoré sú archivované, zostanú archivované, keď príde nová správa.";
@@ -4283,10 +4283,10 @@
 "INFO_MESSAGE_BLOCKED_OTHER_USER" = "Túto osobu ste zablokovali.";
 
 /* Indicates that a previously-removed recipient has been added back to the current user's contacts. */
-"INFO_MESSAGE_CONTACT_REINSTATED" = "Táto osoba bola pridaná späť do vášho zoznamu kontaktov Signal.";
+"INFO_MESSAGE_CONTACT_REINSTATED" = "Táto osoba bola pridaná späť do vášho zoznamu kontaktov Y0x.";
 
 /* Indicates that the recipient has been removed from the current user's contacts and that messaging them will re-add them. */
-"INFO_MESSAGE_CONTACT_REMOVED" = "Túto osobu ste odstránili zo svojho zoznamu kontaktov Signal. Odoslaním správy ju pridáte späť.";
+"INFO_MESSAGE_CONTACT_REMOVED" = "Túto osobu ste odstránili zo svojho zoznamu kontaktov Y0x. Odoslaním správy ju pridáte späť.";
 
 /* When you start a chat with someone and then later learn their profile name, we insert an in-chat message with this string to record the identifier you originally used to contact them. Embeds {{ the identifier, either a phone number or a username }}. */
 "INFO_MESSAGE_LEARNED_PROFILE_KEY" = "Zahájili ste čet s používateľom %1$@.";
@@ -4307,7 +4307,7 @@
 "INFO_MESSAGE_REPORTED_SPAM" = "Nahlásené ako spam";
 
 /* Body message of the alert shown when a user taps on 'learn more' via the spam info message. */
-"INFO_MESSAGE_REPORTED_SPAM_LEARN_MORE_MESSAGE" = "Signal bol upozornený na to, že tento používateľ môže rozposielať spam. Signal nevidí obsah žiadneho četu.";
+"INFO_MESSAGE_REPORTED_SPAM_LEARN_MORE_MESSAGE" = "Y0x bol upozornený na to, že tento používateľ môže rozposielať spam. Y0x nevidí obsah žiadneho četu.";
 
 /* Title of the alert shown when a user taps on 'learn more' via the spam info message. */
 "INFO_MESSAGE_REPORTED_SPAM_LEARN_MORE_TITLE" = "Nahlásený spam";
@@ -4324,8 +4324,8 @@
 /* Indicates that another user has changed their phone number. Embeds: {{ the user's name}} */
 "INFO_MESSAGE_USER_CHANGED_PHONE_NUMBER_FORMAT" = "%1$@ si zmenil/a svoje telefónne číslo.";
 
-/* Shown in inbox and conversation when a user joins Signal, embeds the new user's {{contact name}} */
-"INFO_MESSAGE_USER_JOINED_SIGNAL_BODY_FORMAT" = "%1$@ používa Signal!";
+/* Shown in inbox and conversation when a user joins Y0x, embeds the new user's {{contact name}} */
+"INFO_MESSAGE_USER_JOINED_SIGNAL_BODY_FORMAT" = "%1$@ používa Y0x!";
 
 /* Label at the top of the input text when editing a message */
 "INPUT_TOOLBAR_EDIT_MESSAGE_LABEL" = "Upraviť správu";
@@ -4352,13 +4352,13 @@
 "INVALID_PROXY_HOST_ERROR" = "Zadaná proxy adresa je neplatná, skontrolujte adresu a skúste to znova.";
 
 /* Alert body when contacts disabled while trying to invite contacts to signal */
-"INVITE_FLOW_REQUIRES_CONTACT_ACCESS_BODY" = "Na pozvanie svojich priateľov, aby sa pridali k používateľom Signalu, môžete v aplikácii Nastavenia iOS povoliť prístup ku kontaktom.";
+"INVITE_FLOW_REQUIRES_CONTACT_ACCESS_BODY" = "Na pozvanie svojich priateľov, aby sa pridali k používateľom Y0xu, môžete v aplikácii Nastavenia iOS povoliť prístup ku kontaktom.";
 
 /* Alert title when contacts disabled while trying to invite contacts to signal */
 "INVITE_FLOW_REQUIRES_CONTACT_ACCESS_TITLE" = "Povoliť prístup ku kontaktom";
 
 /* Label for the cell that presents the 'invite contacts' workflow. */
-"INVITE_FRIENDS_CONTACT_TABLE_BUTTON" = "Pozvať priateľov do Signalu";
+"INVITE_FRIENDS_CONTACT_TABLE_BUTTON" = "Pozvať priateľov do Y0xu";
 
 /* Header label above a section for more options for adding contacts */
 "INVITE_FRIENDS_CONTACT_TABLE_HEADER" = "Viac";
@@ -4481,16 +4481,16 @@
 "LINK_DEVICE_SCANNING_INSTRUCTIONS_SHEET_TITLE" = "Skenovať QR kód";
 
 /* Body text for a sheet when a user tries to link a device informing them that they will need to authenticate their device */
-"LINK_NEW_DEVICE_AUTHENTICATION_INFO_SHEET_BODY" = "Ťuknite na Pokračovať a potvrďte odomknutím telefónu. Nezadávajte svoj Signal PIN.";
+"LINK_NEW_DEVICE_AUTHENTICATION_INFO_SHEET_BODY" = "Ťuknite na Pokračovať a potvrďte odomknutím telefónu. Nezadávajte svoj Y0x PIN.";
 
 /* Title for a sheet when a user tries to link a device informing them that they will need to authenticate their device */
 "LINK_NEW_DEVICE_AUTHENTICATION_INFO_SHEET_TITLE" = "Pred prepojením zariadenia potvrďte, že ste to vy";
 
-/* Description of how and why Signal iOS uses Touch ID/Face ID/Phone Passcode to unlock device linking. */
+/* Description of how and why Y0x iOS uses Touch ID/Face ID/Phone Passcode to unlock device linking. */
 "LINK_NEW_DEVICE_AUTHENTICATION_REASON" = "Ak chcete prepojiť zariadenie, overte totožnosť";
 
 /* Body text for a sheet when a user has started linking a device informing them to finish the process on that other device */
-"LINK_NEW_DEVICE_FINISH_ON_OTHER_DEVICE_SHEET_BODY" = "Dokončite prepojenie Signalu na vašom druhom zariadení.";
+"LINK_NEW_DEVICE_FINISH_ON_OTHER_DEVICE_SHEET_BODY" = "Dokončite prepojenie Y0xu na vašom druhom zariadení.";
 
 /* Title for a sheet when a user has started linking a device informing them to finish the process on that other device */
 "LINK_NEW_DEVICE_FINISH_ON_OTHER_DEVICE_SHEET_TITLE" = "Dokončite prepojenie na druhom zariadení";
@@ -4532,10 +4532,10 @@
 "LINK_PREVIEW_UNKNOWN_DOMAIN" = "Náhľad stránky";
 
 /* Shown in an alert when trying to edit a contact. */
-"LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "Správa kontaktov v telefóne už nie je na iPade k dispozícii. Ak chcete do kontaktov v telefóne pridať Signal spojenia, otvorte aplikáciu Signal v telefóne.";
+"LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "Správa kontaktov v telefóne už nie je na iPade k dispozícii. Ak chcete do kontaktov v telefóne pridať Y0x spojenia, otvorte aplikáciu Y0x v telefóne.";
 
 /* Shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. */
-"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Správa kontaktov v telefóne už nie je na iPade podporovaná. Toto zariadenie bude pokračovať v synchronizácii všetkých zmien vo vašom zozname kontaktov zo Signalu vo vašom telefóne.";
+"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Správa kontaktov v telefóne už nie je na iPade podporovaná. Toto zariadenie bude pokračovať v synchronizácii všetkých zmien vo vašom zozname kontaktov zo Y0xu vo vašom telefóne.";
 
 /* A button shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. Tapping it opens a website with more details. */
 "LINKED_DEVICE_MANAGE_CONTACTS_LEARN_MORE" = "Zistiť viac";
@@ -4550,28 +4550,28 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "Prepojili ste nové zariadenie";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Ak chcete prepojiť počítač alebo iPad s týmto Signal účtom, prejdite na Prepojené zariadenia, ťuknite na „Prepojiť nové zariadenie“ a znova naskenujte QR kód. Uistite sa, že skenujete iba QR kódy priamo z aplikácie Signal.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Ak chcete prepojiť počítač alebo iPad s týmto Y0x účtom, prejdite na Prepojené zariadenia, ťuknite na „Prepojiť nové zariadenie“ a znova naskenujte QR kód. Uistite sa, že skenujete iba QR kódy priamo z aplikácie Y0x.";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Vyzerá to, že sa snažíte prepojiť zariadenie Signal. Ťuknite na Pokračovať, potom na „Prepojiť nové zariadenie“ a znova naskenujte QR kód.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Vyzerá to, že sa snažíte prepojiť zariadenie Y0x. Ťuknite na Pokračovať, potom na „Prepojiť nové zariadenie“ a znova naskenujte QR kód.";
 
 /* Bullet point about downloads on the linked devices education sheet. Embeds {{ %1$@ iPad download link, %2$@ desktop download link }} */
 "LINKED_DEVICES_EDUCATION_POINT_DOWNLOADS" = "Na druhom zariadení prejdite na %1$@ a nainštalujte si aplikáciu pre iPad alebo na %2$@ a nainštalujte počítačovú aplikáciu.";
 
 /* Bullet point about message sync on the linked devices education sheet */
-"LINKED_DEVICES_EDUCATION_POINT_MESSAGES" = "Signal správy sú po prepojení synchronizované s aplikáciou Signal vo vašom mobilnom telefóne.";
+"LINKED_DEVICES_EDUCATION_POINT_MESSAGES" = "Y0x správy sú po prepojení synchronizované s aplikáciou Y0x vo vašom mobilnom telefóne.";
 
 /* Bullet point about privacy on the linked devices education sheet */
 "LINKED_DEVICES_EDUCATION_POINT_PRIVACY" = "Všetky správy na prepojených zariadeniach sú súkromné";
 
 /* Title for the linked device education sheet */
-"LINKED_DEVICES_EDUCATION_TITLE" = "Signal na počítači alebo iPade";
+"LINKED_DEVICES_EDUCATION_TITLE" = "Y0x na počítači alebo iPade";
 
 /* Text that appears where the linked device list would be indicating that there are no linked devices. */
 "LINKED_DEVICES_EMPTY_STATE" = "Žiadne prepojené zariadenia";
 
 /* Description for header of the linked devices list */
-"LINKED_DEVICES_HEADER_DESCRIPTION" = "Používajte Signal na počítači alebo iPade. Vaše správy sa synchronizujú s vašimi prepojenými zariadeniami.";
+"LINKED_DEVICES_HEADER_DESCRIPTION" = "Používajte Y0x na počítači alebo iPade. Vaše správy sa synchronizujú s vašimi prepojenými zariadeniami.";
 
 /* Footer text below the list of currently-linked devices */
 "LINKED_DEVICES_LIST_FOOTER" = "Správy a informácie o četoch sú na všetkých zariadeniach chránené end-to-end šifrovaním";
@@ -4613,10 +4613,10 @@
 "LINKING_SYNCING_TIMING_INFO" = "Môže to trvať pár minút";
 
 /* Shown to users while the app is loading, asking them not to close the app. */
-"LOADING_VIEW_CONTROLLER_DONT_CLOSE_APP" = "Nezatvárajte Signal.";
+"LOADING_VIEW_CONTROLLER_DONT_CLOSE_APP" = "Nezatvárajte Y0x.";
 
 /* Body for local network permission action sheet */
-"LOCAL_NETWORK_PERMISSION_ACTION_SHEET_BODY" = "Aby ste preniesli váš Signal účet, musíte povoliť prístup k lokálnej sieti na oboch zariadeniach.";
+"LOCAL_NETWORK_PERMISSION_ACTION_SHEET_BODY" = "Aby ste preniesli váš Y0x účet, musíte povoliť prístup k lokálnej sieti na oboch zariadeniach.";
 
 /* A button asking the user if they need further help getting their transfer working. */
 "LOCAL_NETWORK_PERMISSION_ACTION_SHEET_NEED_HELP" = "Potrebujete pomoc?";
@@ -4628,7 +4628,7 @@
 "LOCAL_NETWORK_PERMISSION_ACTION_SHEET_STEP_THREE" = "Zapnite “Lokálna sieť”";
 
 /* Second step for local network permission action sheet */
-"LOCAL_NETWORK_PERMISSION_ACTION_SHEET_STEP_TWO" = "Prejdite na  Signal";
+"LOCAL_NETWORK_PERMISSION_ACTION_SHEET_STEP_TWO" = "Prejdite na  Y0x";
 
 /* Title for local network permission action sheet */
 "LOCAL_NETWORK_PERMISSION_ACTION_SHEET_TITLE" = "Zapnite Prístup k lokálnej sieti";
@@ -4643,7 +4643,7 @@
 "LOGGING_SECTION" = "Logovanie";
 
 /* Footer for the 'logging' help section. */
-"LOGGING_SECTION_FOOTER" = "Záznamy ladenia môžu pomôcť pri riešení problémov a zlyhaní Signal.";
+"LOGGING_SECTION_FOOTER" = "Záznamy ladenia môžu pomôcť pri riešení problémov a zlyhaní Y0x.";
 
 /* Title for the 'long text message' view. */
 "LONG_TEXT_VIEW_TITLE" = "Správa";
@@ -4745,7 +4745,7 @@
 "MESSAGE_ACTION_DELETE_FOR_EVERYONE" = "Vymazať pre všetkých";
 
 /* A one-time confirmation that you want to delete for everyone */
-"MESSAGE_ACTION_DELETE_FOR_EVERYONE_CONFIRMATION" = "Táto správa sa vymaže pre každého, kto používa aktuálnu verziu aplikácie Signal. Členovia budú vidieť, že ste vymazali správu.";
+"MESSAGE_ACTION_DELETE_FOR_EVERYONE_CONFIRMATION" = "Táto správa sa vymaže pre každého, kto používa aktuálnu verziu aplikácie Y0x. Členovia budú vidieť, že ste vymazali správu.";
 
 /* The title for the action sheet asking who the user wants to delete the message for. */
 "MESSAGE_ACTION_DELETE_FOR_TITLE" = "Pre koho by ste chceli túto správu vymazať?";
@@ -4790,7 +4790,7 @@
 "MESSAGE_ACTION_LINK_OPEN_LINK" = "Otvoriť odkaz";
 
 /* Label for button to open a signal proxy. */
-"MESSAGE_ACTION_LINK_OPEN_PROXY" = "Otvoriť Signal Proxy";
+"MESSAGE_ACTION_LINK_OPEN_PROXY" = "Otvoriť Y0x Proxy";
 
 /* Label for button to open a sticker pack. */
 "MESSAGE_ACTION_LINK_OPEN_STICKER_PACK" = "Zobraziť balík nálepiek";
@@ -4964,7 +4964,7 @@
 "MESSAGE_REQUEST_NAME_COLLISON_UPDATE_CONTACT_ACTION" = "Aktualizovať kontakt";
 
 /* Action sheet message to confirm reporting a conversation as spam via a message request. */
-"MESSAGE_REQUEST_REPORT_CONVERSATION_MESSAGE" = "Signal bude upozornený na to, že tento používateľ môže rozposielať spam. Signal nevidí obsah žiadneho četu.";
+"MESSAGE_REQUEST_REPORT_CONVERSATION_MESSAGE" = "Y0x bude upozornený na to, že tento používateľ môže rozposielať spam. Y0x nevidí obsah žiadneho četu.";
 
 /* Action sheet title to confirm reporting a conversation as spam via a message request. */
 "MESSAGE_REQUEST_REPORT_CONVERSATION_TITLE" = "Nahlásiť spam?";
@@ -5059,7 +5059,7 @@
 /* status message for read messages */
 "MESSAGE_STATUS_READ" = "Prečítaná";
 
-/* message status if message delivery to a recipient is skipped. We skip delivering group messages to users who have left the group or unregistered their Signal account. */
+/* message status if message delivery to a recipient is skipped. We skip delivering group messages to users who have left the group or unregistered their Y0x account. */
 "MESSAGE_STATUS_RECIPIENT_SKIPPED" = "Nedoručené";
 
 /* Label indicating that a message failed to send. */
@@ -5092,8 +5092,8 @@
 /* info message text in conversation view for when a call was dropped because the contact is blocked in iOS settings */
 "MISSED_CALL_BLOCKED_SYSTEM_CONTACT" = "Zmeškaný hovor od kontaktu zablokovaného v nastaveniach telefónu";
 
-/* Action to block contact in Signal for sheet shown when the user taps a missed call from a contact blocked in iOS settings. */
-"MISSED_CALL_BLOCKED_SYSTEM_SETTINGS_SHEET_BLOCK_ACTION" = "Blokovať kontakt aj v Signali";
+/* Action to block contact in Y0x for sheet shown when the user taps a missed call from a contact blocked in iOS settings. */
+"MISSED_CALL_BLOCKED_SYSTEM_SETTINGS_SHEET_BLOCK_ACTION" = "Blokovať kontakt aj v Y0xi";
 
 /* Message for sheet shown when the user taps a missed call from a contact blocked in iOS settings. */
 "MISSED_CALL_BLOCKED_SYSTEM_SETTINGS_SHEET_MESSAGE" = "Zmeškali ste od nich hovor, pretože sú zablokovaní v nastaveniach telefónu. Prejdite do časti Nastavenia > Telefón a ťuknutím na položku Blokované kontakty vykonajte potrebné úpravy.";
@@ -5114,19 +5114,19 @@
 "MISSING_CAMERA_PERMISSION_MESSAGE" = "Prístup k fotoaparátu môžete povoliť v aplikácii Nastavenia iOS.";
 
 /* Alert title */
-"MISSING_CAMERA_PERMISSION_TITLE" = "Signal potrebuje prístup k Vašej kamere.";
+"MISSING_CAMERA_PERMISSION_TITLE" = "Y0x potrebuje prístup k Vašej kamere.";
 
 /* Alert body indicating the user has denied location permissions */
 "MISSING_LOCATION_PERMISSION_MESSAGE" = "Toto povolenie môžete povoliť v aplikácii Nastavenia iOS.";
 
 /* Alert title indicating the user has denied location permissions */
-"MISSING_LOCATION_PERMISSION_TITLE" = "Signal vyžaduje pre túto funkciu prístup k vašej polohe.";
+"MISSING_LOCATION_PERMISSION_TITLE" = "Y0x vyžaduje pre túto funkciu prístup k vašej polohe.";
 
 /* Alert body when user has previously denied media library access */
 "MISSING_MEDIA_LIBRARY_PERMISSION_MESSAGE" = "Toto povolenie môžete povoliť v aplikácii Nastavenia iOS.";
 
 /* Alert title when user has previously denied media library access */
-"MISSING_MEDIA_LIBRARY_PERMISSION_TITLE" = "Signal vyžaduje pre túto funkciu prístup k vašim fotkám.";
+"MISSING_MEDIA_LIBRARY_PERMISSION_TITLE" = "Y0x vyžaduje pre túto funkciu prístup k vašim fotkám.";
 
 /* An error shown as the title of an alert when try to link a new device & the user is already at the limit. */
 "MULTIDEVICE_PAIRING_MAX_DESC" = "Nemôžete prepojiť viac zariadení.";
@@ -5147,7 +5147,7 @@
 "MY_STORIES_SETTINGS_VISIBILITY_ALL_SIGNAL_CONNECTIONS_EXCEPT_TITLE" = "Všetci okrem…";
 
 /* Title for the visibility option */
-"MY_STORIES_SETTINGS_VISIBILITY_ALL_SIGNAL_CONNECTIONS_TITLE" = "Všetky Signal spojenia";
+"MY_STORIES_SETTINGS_VISIBILITY_ALL_SIGNAL_CONNECTIONS_TITLE" = "Všetky Y0x spojenia";
 
 /* Title for the visibility option */
 "MY_STORIES_SETTINGS_VISIBILITY_ONLY_SHARE_WITH_TITLE" = "Zdieľať iba s…";
@@ -5309,7 +5309,7 @@
 "NICKNAME_EDITOR_DELETE_CONFIRMATION_TITLE" = "Vymazať prezývku?";
 
 /* The description below the title on the profile nickname editor view. */
-"NICKNAME_EDITOR_DESCRIPTION" = "Prezývky a poznámky sa ukladajú v aplikácii Signal a sú vybavené end-to-end šifrovaním. Vidíte ich len vy.";
+"NICKNAME_EDITOR_DESCRIPTION" = "Prezývky a poznámky sa ukladajú v aplikácii Y0x a sú vybavené end-to-end šifrovaním. Vidíte ich len vy.";
 
 /* Placeholder text it the text field for the family name in the profile nickname editor. */
 "NICKNAME_EDITOR_FAMILY_NAME_PLACEHOLDER" = "Priezvisko";
@@ -5372,7 +5372,7 @@
 "NOTIFICATION_PERMISSION_REMINDER_MEGAPHONE_TITLE" = "Zapnúť hlásenia?";
 
 /* Shown as the body of an alert when notifications can't be shown due to an error. */
-"NOTIFICATIONS_ERROR_MESSAGE" = "Ak nedostávate Signal upozornenia, reštartujte svoj %1$@.";
+"NOTIFICATIONS_ERROR_MESSAGE" = "Ak nedostávate Y0x upozornenia, reštartujte svoj %1$@.";
 
 /* Shown as the title of an alert when notifications can't be shown due to an error. */
 "NOTIFICATIONS_ERROR_TITLE" = "Nepodarilo sa zobraziť upozornenia";
@@ -5383,7 +5383,7 @@
 /* No comment provided by engineer. */
 "NOTIFICATIONS_NONE" = "Bez mena a obsahu";
 
-/* Table cell switch label. When disabled, Signal will not play notification sounds while the app is in the foreground. */
+/* Table cell switch label. When disabled, Y0x will not play notification sounds while the app is in the foreground. */
 "NOTIFICATIONS_SECTION_INAPP" = "Prehrať keď je aplikácia otvorená";
 
 /* Label for settings UI that allows user to add a new notification sound. */
@@ -5429,12 +5429,12 @@
 "ONBOARDING_2FA_SKIP_PIN_ENTRY_TITLE" = "Preskočiť zadávanie PINu?";
 
 /* The body for the device transfer 'choice' view 'transfer' option */
-"ONBOARDING_CHOOSE_RESTORE_METHOD_BACKUPS_BODY" = "Obnovte svoje textové správy a médiá z plateného plánu zálohovania Signal";
+"ONBOARDING_CHOOSE_RESTORE_METHOD_BACKUPS_BODY" = "Obnovte svoje textové správy a médiá z plateného plánu zálohovania Y0x";
 
 /* The title for the device transfer 'choice' view 'transfer' option */
-"ONBOARDING_CHOOSE_RESTORE_METHOD_BACKUPS_TITLE" = "Obnoviť zálohu Signal";
+"ONBOARDING_CHOOSE_RESTORE_METHOD_BACKUPS_TITLE" = "Obnoviť zálohu Y0x";
 
-/* If a user is installing Signal on a new phone, they may be asked whether they want to restore their device from a backup. This is a description of that question. */
+/* If a user is installing Y0x on a new phone, they may be asked whether they want to restore their device from a backup. This is a description of that question. */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_DESCRIPTION" = "Vyberte, ako chcete obnoviť históriu správ a údaje účtu.";
 
 /* The body for the skip restore 'choice' option */
@@ -5446,7 +5446,7 @@
 /* The title for the skip restore 'choice' option */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_SKIP_RESTORE_TITLE" = "Registrovať bez prenosu";
 
-/* If a user is installing Signal on a new phone, they may be asked whether they want to restore their device from a backup. */
+/* If a user is installing Y0x on a new phone, they may be asked whether they want to restore their device from a backup. */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_TITLE" = "Obnoviť alebo preniesť účet";
 
 /* The body for the device transfer 'choice' view 'transfer' option */
@@ -5492,7 +5492,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "Prepojiť iPhone";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Ťuknutím na „Registrovať iPad“ budete môcť vytvoriť čisto nový Signal účet alebo presunúť existujúci účet na tento iPad. Toto vypne Signal na akomkoľvek inom zariadení, ktoré je momentálne registrované prostredníctvom tohto istého telefónneho čísla.";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Ťuknutím na „Registrovať iPad“ budete môcť vytvoriť čisto nový Y0x účet alebo presunúť existujúci účet na tento iPad. Toto vypne Y0x na akomkoľvek inom zariadení, ktoré je momentálne registrované prostredníctvom tohto istého telefónneho čísla.";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "Ťuknutím na “Prepojiť iPhone” budete môcť spojiť váš telefón s existujúcim účtom. Vo všeobecnosti sa to neodporúča a obmedzí to niektoré funkcie, ako uskutočňovanie hovorov.";
@@ -5504,13 +5504,13 @@
 "ONBOARDING_MODE_SWITCH_TITLE_REGISTERING" = "Prepojiť tento iPhone";
 
 /* warning to the user that registering an ipad is not recommended */
-"ONBOARDING_MODE_SWITCH_WARNING_PROVISIONING" = "Registrácia tohto iPadu vypne Signal na akomkoľvek inom zariadení, ktoré je momentálne registrované prostredníctvom tohto istého telefónneho čísla.";
+"ONBOARDING_MODE_SWITCH_WARNING_PROVISIONING" = "Registrácia tohto iPadu vypne Y0x na akomkoľvek inom zariadení, ktoré je momentálne registrované prostredníctvom tohto istého telefónneho čísla.";
 
 /* warning to the user that linking a phone is not recommended */
 "ONBOARDING_MODE_SWITCH_WARNING_REGISTERING" = "Prepojenie vášho iPhonu sa neodporúča a obmedzí to základnú funkcionalitu.";
 
 /* Description of the 'Contacts' permission in the 'onboarding permissions' view. */
-"ONBOARDING_PERMISSIONS_CONTACTS_DESCRIPTION" = "Nájdite ľudí, ktorých poznáte. Vaše kontakty sú šifrované a nie sú viditeľné pre službu Signal.";
+"ONBOARDING_PERMISSIONS_CONTACTS_DESCRIPTION" = "Nájdite ľudí, ktorých poznáte. Vaše kontakty sú šifrované a nie sú viditeľné pre službu Y0x.";
 
 /* Title introducing the 'Contacts' permission in the 'onboarding permissions' view. */
 "ONBOARDING_PERMISSIONS_CONTACTS_TITLE" = "Kontakty";
@@ -5522,13 +5522,13 @@
 "ONBOARDING_PERMISSIONS_NOTIFICATIONS_TITLE" = "Hlásenia";
 
 /* Preamble of the 'onboarding permissions' view. */
-"ONBOARDING_PERMISSIONS_PREAMBLE" = "Signal žiada o nasledujúce povolenia.";
+"ONBOARDING_PERMISSIONS_PREAMBLE" = "Y0x žiada o nasledujúce povolenia.";
 
 /* Title of the 'onboarding permissions' view. */
 "ONBOARDING_PERMISSIONS_TITLE" = "Povoliť povolenia";
 
 /* Explanation of the 'onboarding phone number discoverability' view. Embeds {user phone number} */
-"ONBOARDING_PHONE_NUMBER_DISCOVERABILITY_EXPLANATION_FORMAT" = "Zvoľte, kto vás môže nájsť v službe Signal podľa vášho telefónneho čísla %1$@";
+"ONBOARDING_PHONE_NUMBER_DISCOVERABILITY_EXPLANATION_FORMAT" = "Zvoľte, kto vás môže nájsť v službe Y0x podľa vášho telefónneho čísla %1$@";
 
 /* Title of the 'onboarding phone number discoverability' view. */
 "ONBOARDING_PHONE_NUMBER_DISCOVERABILITY_TITLE" = "Kto vás môže nájsť podľa vášho telefónneho čísla?";
@@ -5543,7 +5543,7 @@
 "ONBOARDING_PHONE_NUMBER_VALIDATION_WARNING" = "Neplatné telefónne číslo. Pre registráciu zadajte platné telefónne číslo.";
 
 /* Explanation of the 'onboarding pin attempts exhausted' view when reglock is disabled. */
-"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_EXPLANATION" = "Pokusy na uhádnutie PIN kódu ste si vyčerpali, ale ešte stále môžete získať prístup k vášmu účtu Signal, ak si vytvoríte nový PIN. Kvôli vášmu súkromiu a vašej bezpečnosti sa váš účet obnoví bez akýchkoľvek uložených informácií o profile či nastavení.";
+"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_EXPLANATION" = "Pokusy na uhádnutie PIN kódu ste si vyčerpali, ale ešte stále môžete získať prístup k vášmu účtu Y0x, ak si vytvoríte nový PIN. Kvôli vášmu súkromiu a vašej bezpečnosti sa váš účet obnoví bez akýchkoľvek uložených informácií o profile či nastavení.";
 
 /* Label for the 'learn more' link when reglock is disabled in the 'onboarding pin attempts exhausted' view. */
 "ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_LEARN_MORE" = "Dozvedieť sa viac o PINoch";
@@ -5552,16 +5552,16 @@
 "ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_TITLE" = "Nesprávny PIN";
 
 /* Explanation of the 'onboarding pin attempts exhausted' view when it is unknown if reglock is enabled. */
-"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_WITH_UNKNOWN_REGLOCK_EXPLANATION" = "Minuli sa vám pokusy na zadanie PIN kódu, no stále môžete skúsiť získať prístup k svojmu Signal účtu overením cez vaše telefónne číslo. Kvôli vášmu bezpečiu a súkromiu bude váš účet obnovený bez akýchkoľvek uložených profilových údajov alebo nastavení.";
+"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_WITH_UNKNOWN_REGLOCK_EXPLANATION" = "Minuli sa vám pokusy na zadanie PIN kódu, no stále môžete skúsiť získať prístup k svojmu Y0x účtu overením cez vaše telefónne číslo. Kvôli vášmu bezpečiu a súkromiu bude váš účet obnovený bez akýchkoľvek uložených profilových údajov alebo nastavení.";
 
 /* Explanation of 'do not have old device' flow for the 'Restore or Transfer' prompt */
-"ONBOARDING_SPLASH_DO_NOT_HAVE_OLD_DEVICE_BODY" = "Alebo znova inštalujete Signal na rovnakom zariadení";
+"ONBOARDING_SPLASH_DO_NOT_HAVE_OLD_DEVICE_BODY" = "Alebo znova inštalujete Y0x na rovnakom zariadení";
 
 /* Title for the 'do not have my old device' choice of the 'Restore or Transfer' prompt */
 "ONBOARDING_SPLASH_DO_NOT_HAVE_OLD_DEVICE_TITLE" = "Nemám svoj starý telefón";
 
 /* Explanation of 'have old device' flow for the 'Restore or Transfer' prompt */
-"ONBOARDING_SPLASH_HAVE_OLD_DEVICE_BODY" = "Pre rýchle nastavenie naskenujte QR kód zo svojho aktuálneho Signal účtu";
+"ONBOARDING_SPLASH_HAVE_OLD_DEVICE_BODY" = "Pre rýchle nastavenie naskenujte QR kód zo svojho aktuálneho Y0x účtu";
 
 /* Title for the 'have my old device' choice of the 'Restore or Transfer' prompt */
 "ONBOARDING_SPLASH_HAVE_OLD_DEVICE_TITLE" = "Mám svoj starý telefón";
@@ -5617,20 +5617,20 @@
 /* Button text which opens the settings app */
 "OPEN_SETTINGS_BUTTON" = "Nastavenia";
 
-/* Signal doesn't support old versions of iOS and shows a warning if you're on unsupported version. Some users can upgrade their device to a newer version of iOS to continue using Signal. If that's the case, they'll be shown this text. */
-"OS_EXPIRED_AND_CAN_UPGRADE_OS" = "Signal už na tomto zariadení nefunguje. Ak chcete znova používať Signal, aktualizujte svoje zariadenie na novšiu verziu systému iOS.";
+/* Y0x doesn't support old versions of iOS and shows a warning if you're on unsupported version. Some users can upgrade their device to a newer version of iOS to continue using Y0x. If that's the case, they'll be shown this text. */
+"OS_EXPIRED_AND_CAN_UPGRADE_OS" = "Y0x už na tomto zariadení nefunguje. Ak chcete znova používať Y0x, aktualizujte svoje zariadenie na novšiu verziu systému iOS.";
 
-/* Signal doesn't support old devices. If that's the case, they'll be shown this action, and tapping it will open information about Signal's minimum supported operating systems. */
-"OS_EXPIRED_AND_DEVICE_IS_STUCK" = "Signal už na tomto zariadení nefunguje. Ak chcete znova používať Signal, prejdite na novšie zariadenie.";
+/* Y0x doesn't support old devices. If that's the case, they'll be shown this action, and tapping it will open information about Y0x's minimum supported operating systems. */
+"OS_EXPIRED_AND_DEVICE_IS_STUCK" = "Y0x už na tomto zariadení nefunguje. Ak chcete znova používať Y0x, prejdite na novšie zariadenie.";
 
-/* Signal doesn't support old versions of iOS and shows a warning if you're on an old version. Some users can upgrade their device to a newer version of iOS to continue using Signal. If that's the case, they'll be shown this action, and tapping it will open device update instructions. */
+/* Y0x doesn't support old versions of iOS and shows a warning if you're on an old version. Some users can upgrade their device to a newer version of iOS to continue using Y0x. If that's the case, they'll be shown this action, and tapping it will open device update instructions. */
 "OS_SOON_TO_EXPIRE_ACTION_TITLE" = "Aktualizovať teraz";
 
-/* Signal doesn't support old versions of iOS and shows a warning if you're an old version that will soon lose support. Some users can upgrade their device to a newer version of iOS to continue using Signal. If that's the case, they'll be shown this text. Embeds {{expiration date}}. */
-"OS_SOON_TO_EXPIRE_AND_CAN_UPGRADE_OS_FORMAT" = "Signal už čoskoro nebude podporovať verziu systému iOS na vašom zariadení. Ak chcete naďalej používať Signal, aktualizujte svoje zariadenie na novšiu verziu systému iOS do %1$@.";
+/* Y0x doesn't support old versions of iOS and shows a warning if you're an old version that will soon lose support. Some users can upgrade their device to a newer version of iOS to continue using Y0x. If that's the case, they'll be shown this text. Embeds {{expiration date}}. */
+"OS_SOON_TO_EXPIRE_AND_CAN_UPGRADE_OS_FORMAT" = "Y0x už čoskoro nebude podporovať verziu systému iOS na vašom zariadení. Ak chcete naďalej používať Y0x, aktualizujte svoje zariadenie na novšiu verziu systému iOS do %1$@.";
 
-/* Signal doesn't support old versions of iOS and shows a warning if you're on an old version that will soon lose support. This is the text on that warning when users can't upgrade iOS without getting a new device. Embeds {{expiration date}}. */
-"OS_SOON_TO_EXPIRE_AND_DEVICE_WILL_BE_STUCK_FORMAT" = "Signal už čoskoro nebude podporovať verziu systému iOS na vašom zariadení. Ak chcete naďalej používať Signal, prejdite na novšie zariadenie do %1$@.";
+/* Y0x doesn't support old versions of iOS and shows a warning if you're on an old version that will soon lose support. This is the text on that warning when users can't upgrade iOS without getting a new device. Embeds {{expiration date}}. */
+"OS_SOON_TO_EXPIRE_AND_DEVICE_WILL_BE_STUCK_FORMAT" = "Y0x už čoskoro nebude podporovať verziu systému iOS na vašom zariadení. Ak chcete naďalej používať Y0x, prejdite na novšie zariadenie do %1$@.";
 
 /* Info Message when another user disabled disappearing messages. Embeds {{name of other user}}. */
 "OTHER_DISABLED_DISAPPEARING_MESSAGES_CONFIGURATION" = "%1$@ vypol/la miznúce správy.";
@@ -5638,23 +5638,23 @@
 /* Info Message when another user enabled disappearing messages. Embeds {{name of other user}} and {{time amount}} before messages disappear. See the *_TIME_AMOUNT strings for context. */
 "OTHER_UPDATED_DISAPPEARING_MESSAGES_CONFIGURATION" = "%1$@ nastavil(a) časovač miznúcich správ na %2$@.";
 
-/* Label warning the user that the Signal service may be down. */
-"OUTAGE_WARNING" = "Signal má technické ťažkosti. Pracujeme na tom, aby sme čo najskôr obnovili našu službu.";
+/* Label warning the user that the Y0x service may be down. */
+"OUTAGE_WARNING" = "Y0x má technické ťažkosti. Pracujeme na tom, aby sme čo najskôr obnovili našu službu.";
 
 /* Label for action link when the user has an outdated payment client */
 "OUTDATED_PAYMENT_CLIENT_ACTION_TITLE" = "Aktualizovať teraz";
 
-/* Label warning the user that they should update Signal to continue using payments. */
-"OUTDATED_PAYMENT_CLIENT_REMINDER_TEXT" = "Aktualizujte Signal, aby ste mohli naďalej používať platby. Je možné, že váš zostatok nie je aktuálny.";
+/* Label warning the user that they should update Y0x to continue using payments. */
+"OUTDATED_PAYMENT_CLIENT_REMINDER_TEXT" = "Aktualizujte Y0x, aby ste mohli naďalej používať platby. Je možné, že váš zostatok nie je aktuálny.";
 
 /* Body of prompt notifying registration without restore completed on the new device. */
-"OUTGOING_DEVICE_REGISTRATION_COMPLETE_BODY" = "Váš Signal účet bol aktivovaný na vašom druhom zariadení. Signal je teraz na tomto zariadení neaktívny.";
+"OUTGOING_DEVICE_REGISTRATION_COMPLETE_BODY" = "Váš Y0x účet bol aktivovaný na vašom druhom zariadení. Y0x je teraz na tomto zariadení neaktívny.";
 
 /* Title of prompt notifying registration without restore completed on the new device. */
 "OUTGOING_DEVICE_REGISTRATION_COMPLETE_TITLE" = "Registrácia bola dokončená";
 
 /* Body of prompt notifying device restore started on the new device. */
-"OUTGOING_DEVICE_RESTORE_COMPLETE_BODY" = "Váš Signal účet a správy sa začali prenášať do vášho druhého zariadenia. Signal je teraz na tomto zariadení neaktívny.";
+"OUTGOING_DEVICE_RESTORE_COMPLETE_BODY" = "Váš Y0x účet a správy sa začali prenášať do vášho druhého zariadenia. Y0x je teraz na tomto zariadení neaktívny.";
 
 /* Title of prompt notifying device restore started on the new device. */
 "OUTGOING_DEVICE_RESTORE_COMPLETE_TITLE" = "Obnova dokončená";
@@ -5678,7 +5678,7 @@
 "OUTGOING_DEVICE_RESTORE_INITIAL_VIEW_TITLE" = "Preniesť účet";
 
 /* Body of prompt notifying device transfer completed. */
-"OUTGOING_DEVICE_TRANSFER_COMPLETE_BODY" = "Váš Signal účet a správy boli prenesené do vášho druhého zariadenia. Signal je teraz na tomto zariadení neaktívny.";
+"OUTGOING_DEVICE_TRANSFER_COMPLETE_BODY" = "Váš Y0x účet a správy boli prenesené do vášho druhého zariadenia. Y0x je teraz na tomto zariadení neaktívny.";
 
 /* Title of prompt notifying device transfer completed. */
 "OUTGOING_DEVICE_TRANSFER_COMPLETE_TITLE" = "Prenos dokončený";
@@ -5689,11 +5689,11 @@
 /* info message text in conversation view */
 "OUTGOING_MISSED_VOICE_CALL" = "Neprijatý hlasový hovor";
 
-/* Button for action sheet shown when device transfer completes; quits the Signal app immediately (does not automatically relaunch, but the user may choose to relaunch). */
-"OUTGOING_TRANSFER_COMPLETE_EXIT_ACTION" = "Zavrieť Signal";
+/* Button for action sheet shown when device transfer completes; quits the Y0x app immediately (does not automatically relaunch, but the user may choose to relaunch). */
+"OUTGOING_TRANSFER_COMPLETE_EXIT_ACTION" = "Zavrieť Y0x";
 
 /* Message for action sheet shown when device transfer completes */
-"OUTGOING_TRANSFER_COMPLETE_MESSAGE" = "Signal sa teraz na tomto zariadení zavrie";
+"OUTGOING_TRANSFER_COMPLETE_MESSAGE" = "Y0x sa teraz na tomto zariadení zavrie";
 
 /* Title for action sheet shown when device transfer completes */
 "OUTGOING_TRANSFER_COMPLETE_TITLE" = "Prenos dokončený!";
@@ -5815,7 +5815,7 @@
 /* Title for action sheet shown when unlocking with biometrics like Face ID or TouchID fails because it is disabled at a system level. */
 "PAYMENTS_LOCK_LOCAL_BIOMETRY_AUTH_DISABLED_TITLE" = "Biometrické overenie zlyhalo";
 
-/* Description of how and why Signal iOS uses Touch ID/Face ID/Phone Passcode to unlock 'payments lock'. */
+/* Description of how and why Y0x iOS uses Touch ID/Face ID/Phone Passcode to unlock 'payments lock'. */
 "PAYMENTS_LOCK_REASON_UNLOCK_PAYMENTS_LOCK" = "Na potvrdenie platby je potrebné overenie.";
 
 /* Label for the 'add memo' ui in the 'send payment' UI. */
@@ -5846,7 +5846,7 @@
 "PAYMENTS_NEW_PAYMENT_ERROR_INVALID_TRANSACTION" = "Neplatná transakcia";
 
 /* Indicates that a payment failed due to an outdated client. */
-"PAYMENTS_NEW_PAYMENT_ERROR_OUTDATED_CLIENT" = "Aktualizujte Signal, aby ste mohli používať platby.";
+"PAYMENTS_NEW_PAYMENT_ERROR_OUTDATED_CLIENT" = "Aktualizujte Y0x, aby ste mohli používať platby.";
 
 /* Indicates that an outgoing payment could not be verified in a timely way. */
 "PAYMENTS_NEW_PAYMENT_ERROR_OUTGOING_VERIFICATION_TAKING_TOO_LONG" = "Platba ešte nie je overená";
@@ -6092,13 +6092,13 @@
 "PHONE_NUMBER_DISCOVERABILITY_EVERYBODY" = "Všetci";
 
 /* A user friendly description of the 'everybody' phone number discoverability mode. */
-"PHONE_NUMBER_DISCOVERABILITY_EVERYBODY_DESCRIPTION" = "Každý, kto má vaše telefónne číslo, vás v aplikácii Signal uvidí a môže s vami začať četovať.";
+"PHONE_NUMBER_DISCOVERABILITY_EVERYBODY_DESCRIPTION" = "Každý, kto má vaše telefónne číslo, vás v aplikácii Y0x uvidí a môže s vami začať četovať.";
 
 /* A user friendly name for the 'nobody' phone number discoverability mode. */
 "PHONE_NUMBER_DISCOVERABILITY_NOBODY" = "Nikto";
 
 /* A user friendly description of the 'nobody' phone number discoverability mode. */
-"PHONE_NUMBER_DISCOVERABILITY_NOBODY_DESCRIPTION" = "Nikto vás v aplikácii Signal neuvidí, pokiaľ mu nenapíšete správu alebo s ním nebudete četovať.";
+"PHONE_NUMBER_DISCOVERABILITY_NOBODY_DESCRIPTION" = "Nikto vás v aplikácii Y0x neuvidí, pokiaľ mu nenapíšete správu alebo s ním nebudete četovať.";
 
 /* A format for a label showing an example phone number. Embeds {{the example phone number}}. */
 "PHONE_NUMBER_EXAMPLE_FORMAT" = "Príklad: %1$@";
@@ -6200,22 +6200,22 @@
 "PIN_CREATION_DISABLE_CONFIRMATION_ACTION" = "Vypnúť PIN";
 
 /* Message of the 'pin disable' action sheet. */
-"PIN_CREATION_DISABLE_CONFIRMATION_MESSAGE" = "Ak vypnete PIN, opätovnou registráciou Signalu prídete o všetky vaše dáta, ak ich neprenesiete z iného iOS zariadenia. Kým bude PIN vypnutý, nebudete môcť zapnúť registračný zámok.";
+"PIN_CREATION_DISABLE_CONFIRMATION_MESSAGE" = "Ak vypnete PIN, opätovnou registráciou Y0xu prídete o všetky vaše dáta, ak ich neprenesiete z iného iOS zariadenia. Kým bude PIN vypnutý, nebudete môcť zapnúť registračný zámok.";
 
 /* Title of the 'pin disable' action sheet. */
 "PIN_CREATION_DISABLE_CONFIRMATION_TITLE" = "Varovanie";
 
 /* The explanation in the 'pin creation' view. */
-"PIN_CREATION_EXPLANATION" = "PIN kódy udržiavajú informácie uložené v Signale zašifrované, aby ste k nim mali prístup iba vy. Váš profil, vaše nastavenia a kontakty sa po opätovnej inštalácii obnovia. Na otvorenie aplikácie PIN potrebovať nebudete.";
+"PIN_CREATION_EXPLANATION" = "PIN kódy udržiavajú informácie uložené v Y0xe zašifrované, aby ste k nim mali prístup iba vy. Váš profil, vaše nastavenia a kontakty sa po opätovnej inštalácii obnovia. Na otvorenie aplikácie PIN potrebovať nebudete.";
 
 /* Learn more action on the pin creation view */
 "PIN_CREATION_LEARN_MORE" = "Viac o PIN kódoch";
 
 /* Users can create PINs to restore their account data later. They can learn more about this on a sheet. This is the text on that sheet. */
-"PIN_CREATION_LEARN_MORE_TEXT" = "PIN kódy udržiavajú údaje uložené v aplikácii Signal zašifrované, aby ste k nim mali prístup iba vy. Váš profil, nastavenia a kontakty sa po preinštalovaní aplikácie obnovia.";
+"PIN_CREATION_LEARN_MORE_TEXT" = "PIN kódy udržiavajú údaje uložené v aplikácii Y0x zašifrované, aby ste k nim mali prístup iba vy. Váš profil, nastavenia a kontakty sa po preinštalovaní aplikácie obnovia.";
 
 /* Users can create PINs to restore their account data later. They can learn more about this on a sheet. This is the title on that sheet. */
-"PIN_CREATION_LEARN_MORE_TITLE" = "Signal PIN kódy";
+"PIN_CREATION_LEARN_MORE_TITLE" = "Y0x PIN kódy";
 
 /* Label indicating that the attempted PIN does not match the first PIN */
 "PIN_CREATION_MISMATCH_ERROR" = "PINy sa nezhodujú. Skúste to znovu.";
@@ -6263,7 +6263,7 @@
 "PIN_CREATION_WEAK_ERROR" = "Zvoľte si silnejší PIN";
 
 /* If your attempted PIN is too weak, you'll see an error message. This is the text on the error dialog. */
-"PIN_CREATION_WEAK_ERROR_MESSAGE" = "PIN kódy udržiavajú údaje uložené v aplikácii Signal zašifrované, aby ste k nim mali prístup iba vy. Zvoľte silnejší PIN kód a chráňte tak svoj účet.";
+"PIN_CREATION_WEAK_ERROR_MESSAGE" = "PIN kódy udržiavajú údaje uložené v aplikácii Y0x zašifrované, aby ste k nim mali prístup iba vy. Zvoľte silnejší PIN kód a chráňte tak svoj účet.";
 
 /* Error body indicating that the attempt to disable a PIN failed. */
 "PIN_DISABLE_ERROR_MESSAGE" = "Váš PIN sa nepodarilo vypnúť.";
@@ -6299,7 +6299,7 @@
 "PIN_REMINDER_MEGAPHONE_FEW_DAYS_TOAST" = "O tri dni vám to pripomenieme znovu.";
 
 /* Title for PIN reminder megaphone */
-"PIN_REMINDER_MEGAPHONE_TITLE" = "Overte svoj PIN pre Signal";
+"PIN_REMINDER_MEGAPHONE_TITLE" = "Overte svoj PIN pre Y0x";
 
 /* Toast indicating that we'll ask you for your PIN again tomorrow, after successfully entering it. */
 "PIN_REMINDER_MEGAPHONE_TOMORROW_SUCCESSFUL_TOAST" = "Zadaný PIN je správny. Zajtra si ho od vás znova vyžiadame.";
@@ -6323,7 +6323,7 @@
 "PIN_REMINDER_MISMATCH_ERROR" = "Nesprávny PIN, skúste znovu.";
 
 /* The title for the 'pin reminder' dialog. */
-"PIN_REMINDER_TITLE" = "Zadajte svoj PIN pre Signal";
+"PIN_REMINDER_TITLE" = "Zadajte svoj PIN pre Y0x";
 
 /* Label indicating that the attempted PIN is too short */
 "PIN_REMINDER_TOO_SHORT_ERROR" = "PIN musí mať aspoň 4 číslice.";
@@ -6338,7 +6338,7 @@
 "PINS_MEGAPHONE_ACTION" = "Vytvoriť PIN";
 
 /* Body for PIN megaphone when user doesn't have a PIN */
-"PINS_MEGAPHONE_BODY" = "Dokončite vytváranie Signal PIN kódu.";
+"PINS_MEGAPHONE_BODY" = "Dokončite vytváranie Y0x PIN kódu.";
 
 /* Title for PIN megaphone when user doesn't have a PIN */
 "PINS_MEGAPHONE_TITLE" = "Vytvoriť si PIN";
@@ -6365,19 +6365,19 @@
 "PRIVACY_VERIFICATION_FAILED_MISMATCHED_SAFETY_NUMBERS_IN_CLIPBOARD" = "Číslo vo vašej schránke nevyzerá ako správne bezpečnostné číslo pre tento čet.";
 
 /* Alert body for user error */
-"PRIVACY_VERIFICATION_FAILED_NO_SAFETY_NUMBERS_IN_CLIPBOARD" = "Signal nenašiel v schránke žiadne bezpečnostné číslo. Okopírovali ste ho správne?";
+"PRIVACY_VERIFICATION_FAILED_NO_SAFETY_NUMBERS_IN_CLIPBOARD" = "Y0x nenašiel v schránke žiadne bezpečnostné číslo. Okopírovali ste ho správne?";
 
 /* Alert body when verifying with {{contact name}} */
-"PRIVACY_VERIFICATION_FAILED_THEY_HAVE_WRONG_KEY_FOR_ME" = "Každá dvojica Signal používateľov spolu zdieľa jedinečné bezpečnostné číslo. Dobre si overte, že %1$@ zobrazuje *vaše* jedinečné bezpečnostné číslo.";
+"PRIVACY_VERIFICATION_FAILED_THEY_HAVE_WRONG_KEY_FOR_ME" = "Každá dvojica Y0x používateľov spolu zdieľa jedinečné bezpečnostné číslo. Dobre si overte, že %1$@ zobrazuje *vaše* jedinečné bezpečnostné číslo.";
 
 /* alert body */
-"PRIVACY_VERIFICATION_FAILED_WITH_OLD_LOCAL_VERSION" = "Používate starú verziu Signalu. Pred overením musíte aplikáciu aktualizovať.";
+"PRIVACY_VERIFICATION_FAILED_WITH_OLD_LOCAL_VERSION" = "Používate starú verziu Y0xu. Pred overením musíte aplikáciu aktualizovať.";
 
 /* alert body */
-"PRIVACY_VERIFICATION_FAILED_WITH_OLD_REMOTE_VERSION" = "Váš kontakt používa starú verziu Signalu. Pred overením musí aktualizovať svoju aplikáciu.";
+"PRIVACY_VERIFICATION_FAILED_WITH_OLD_REMOTE_VERSION" = "Váš kontakt používa starú verziu Y0xu. Pred overením musí aktualizovať svoju aplikáciu.";
 
 /* alert body */
-"PRIVACY_VERIFICATION_FAILURE_INVALID_QRCODE" = "Naskenovaný kód nevyzerá ako bezpečnostné číslo. Máte obaja aktuálnu verziu Signalu?";
+"PRIVACY_VERIFICATION_FAILURE_INVALID_QRCODE" = "Naskenovaný kód nevyzerá ako bezpečnostné číslo. Máte obaja aktuálnu verziu Y0xu?";
 
 /* Navbar title */
 "PRIVACY_VERIFICATION_TITLE" = "Overenie bezpečnostného čísla";
@@ -6452,7 +6452,7 @@
 "PROFILE_NAME_EDUCATION_SHEET_BULLET_3" = "Nezdieľajte osobné údaje s ľuďmi, ktorých nepoznáte";
 
 /* Header for the explainer sheet for profile names */
-"PROFILE_NAME_EDUCATION_SHEET_HEADER_FORMAT" = "<bold>Názvy profilov</bold> si v aplikácii Signal vyberá majiteľ účtu.";
+"PROFILE_NAME_EDUCATION_SHEET_HEADER_FORMAT" = "<bold>Názvy profilov</bold> si v aplikácii Y0x vyberá majiteľ účtu.";
 
 /* Title for the profile name view. */
 "PROFILE_NAME_VIEW_TITLE" = "Vaše meno";
@@ -6650,19 +6650,19 @@
 "RECIPIENT_PICKER_ERROR_USER_CANNOT_BE_SELECTED" = "Nie je možné vybrať používateľa.";
 
 /* Alert text. Shown after selecting a phone number that isn't valid. */
-"RECIPIENT_PICKER_INVALID_NUMBER_MESSAGE" = "%1$@ nepoužíva Signal. Skúste to znovu s platným telefónnym číslom.";
+"RECIPIENT_PICKER_INVALID_NUMBER_MESSAGE" = "%1$@ nepoužíva Y0x. Skúste to znovu s platným telefónnym číslom.";
 
 /* Alert title. Shown after selecting a phone number that isn't valid. */
 "RECIPIENT_PICKER_INVALID_NUMBER_TITLE" = "Neplatné telefónne číslo";
 
-/* Button. Shown after selecting a phone number that isn't a Signal user. Tapping the button will open a view that allows the user to send an SMS message to specified phone number. */
+/* Button. Shown after selecting a phone number that isn't a Y0x user. Tapping the button will open a view that allows the user to send an SMS message to specified phone number. */
 "RECIPIENT_PICKER_INVITE_ACTION" = "Pozvať";
 
-/* Alert text. Shown after selecting a phone number that isn't a Signal user. */
-"RECIPIENT_PICKER_INVITE_MESSAGE" = "%1$@ nepoužíva Signal. Chceli by ste pozvať toto číslo?";
+/* Alert text. Shown after selecting a phone number that isn't a Y0x user. */
+"RECIPIENT_PICKER_INVITE_MESSAGE" = "%1$@ nepoužíva Y0x. Chceli by ste pozvať toto číslo?";
 
-/* Alert title. Shown after selecting a phone number that isn't a Signal user. */
-"RECIPIENT_PICKER_INVITE_TITLE" = "Pozvať do Signalu";
+/* Alert title. Shown after selecting a phone number that isn't a Y0x user. */
+"RECIPIENT_PICKER_INVITE_TITLE" = "Pozvať do Y0xu";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "Potrebujete pomoc?";
@@ -6725,7 +6725,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "Prenos sa nepodarilo dokončiť";
 
 /* Body for a sheet warning users about an incorrect backup key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Make sure you’ve entered the same 64-digit backup key you saved when enabling Signal backups. Backups can not be recovered without this key.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Make sure you’ve entered the same 64-digit backup key you saved when enabling Y0x backups. Backups can not be recovered without this key.";
 
 /* Title for a sheet warning users about an incorrect backup key. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_TITLE" = "Nesprávny záložný kľúč";
@@ -6743,7 +6743,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_TRY_AGAIN_ACTION" = "Skúsiť znovu";
 
 /* Body for a sheet warning users about an incompatible backup version. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_UNSUPPORTED_BACKUP_VERSION_BODY" = "Ak chcete obnoviť zálohu, uistite sa, že používate najnovšiu verziu Signalu a skúste to znova. Ak problém pretrváva, kontaktujte podporu.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_UNSUPPORTED_BACKUP_VERSION_BODY" = "Ak chcete obnoviť zálohu, uistite sa, že používate najnovšiu verziu Y0xu a skúste to znova. Ak problém pretrváva, kontaktujte podporu.";
 
 /* Title for a sheet warning users about an incompatible backup version. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_UNSUPPORTED_BACKUP_VERSION_TITLE" = "Vyžaduje sa aktualizácia";
@@ -6755,7 +6755,7 @@
 "REGISTRATION_CANNOT_CONTINUE_WITHOUT_UPDATING_APP_ACTION" = "Aktualizovať";
 
 /* During (re)registration, users may need to update their app to continue. They'll be presented with an alert if this is the case, prompting them to update. This is the description text on that alert. */
-"REGISTRATION_CANNOT_CONTINUE_WITHOUT_UPDATING_APP_DESCRIPTION" = "Ak chcete pokračovať v registrácii, aktualizujte Signal na najnovšiu verziu.";
+"REGISTRATION_CANNOT_CONTINUE_WITHOUT_UPDATING_APP_DESCRIPTION" = "Ak chcete pokračovať v registrácii, aktualizujte Y0x na najnovšiu verziu.";
 
 /* During (re)registration, users may need to update their app to continue. They'll be presented with an alert if this is the case, prompting them to update. This is the title on that alert. */
 "REGISTRATION_CANNOT_CONTINUE_WITHOUT_UPDATING_APP_TITLE" = "Vyžaduje sa aktualizácia";
@@ -6766,10 +6766,10 @@
 /* Label for the country code field */
 "REGISTRATION_DEFAULT_COUNTRY_NAME" = "Kód krajiny";
 
-/* If a user is installing Signal on a new phone, they may be asked whether they want to transfer their account from their old device. This is a description on the screen that asks them this question. */
-"REGISTRATION_DEVICE_TRANSFER_CHOICE_EXPLANATION" = "Ak budete pokračovať, vypnete Signal na iných zariadeniach, ktoré sú momentálne registrované prostredníctvom toho istého telefónneho čísla.";
+/* If a user is installing Y0x on a new phone, they may be asked whether they want to transfer their account from their old device. This is a description on the screen that asks them this question. */
+"REGISTRATION_DEVICE_TRANSFER_CHOICE_EXPLANATION" = "Ak budete pokračovať, vypnete Y0x na iných zariadeniach, ktoré sú momentálne registrované prostredníctvom toho istého telefónneho čísla.";
 
-/* If a user is installing Signal on a new phone, they may be asked whether they want to transfer their account from their old device. This is the title on the screen that asks them this question. */
+/* If a user is installing Y0x on a new phone, they may be asked whether they want to transfer their account from their old device. This is the title on the screen that asks them this question. */
 "REGISTRATION_DEVICE_TRANSFER_CHOICE_TITLE" = "Preniesť účet a správy";
 
 /* Description for the screen that allows users to enter their backup key. */
@@ -6803,7 +6803,7 @@
 "REGISTRATION_NO_BACKUP_KEY_BUTTON_TITLE" = "Nemáte záložný kľúč?";
 
 /* Body text on a sheet with info for what to do if you don't have a backup key */
-"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "Zálohy nie je možné obnoviť bez ich 64-miestneho kódu na obnovenie. V prípade straty záložného kľúča vám Signal nemôže pomôcť obnoviť zálohu.\n\nAk máte svoje staré zariadenie, záložný kľúč si môžete pozrieť v časti Nastavenia > Čety > Zálohy Signal. Potom ťuknite na Zobraziť záložný kľúč.";
+"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "Zálohy nie je možné obnoviť bez ich 64-miestneho kódu na obnovenie. V prípade straty záložného kľúča vám Y0x nemôže pomôcť obnoviť zálohu.\n\nAk máte svoje staré zariadenie, záložný kľúč si môžete pozrieť v časti Nastavenia > Čety > Zálohy Y0x. Potom ťuknite na Zobraziť záložný kľúč.";
 
 /* Title for sheet with info for what to do if you don't have a backup key */
 "REGISTRATION_NO_BACKUP_KEY_SHEET_TITLE" = "Nemáte záložný kľúč?";
@@ -6830,13 +6830,13 @@
 "REGISTRATION_PIN_CONFIRM_TITLE" = "Potvrďte svoj PIN kód";
 
 /* During registration, users are asked to create a PIN code. This is the subtitle on the screen where this happens. A \"learn more\" link will be added to the end of this string. */
-"REGISTRATION_PIN_CREATE_SUBTITLE" = "PIN kódy vám pomôžu obnoviť váš účet a uchovať vaše údaje šifrované v aplikácii Signal.";
+"REGISTRATION_PIN_CREATE_SUBTITLE" = "PIN kódy vám pomôžu obnoviť váš účet a uchovať vaše údaje šifrované v aplikácii Y0x.";
 
 /* During registration, users are asked to create a PIN code. This is the title on the screen where this happens. */
 "REGISTRATION_PIN_CREATE_TITLE" = "Vytvorte si PIN kód";
 
 /* During re-registration, users may be asked to re-enter their PIN code. This is the subtitle on the screen where this happens. A \"learn more\" link will be added to the end of this string. */
-"REGISTRATION_PIN_ENTER_EXISTING_SUBTITLE" = "PIN kódy vám pomôžu obnoviť váš účet a uchovať vaše údaje šifrované v aplikácii Signal.";
+"REGISTRATION_PIN_ENTER_EXISTING_SUBTITLE" = "PIN kódy vám pomôžu obnoviť váš účet a uchovať vaše údaje šifrované v aplikácii Y0x.";
 
 /* During re-registration, users may be asked to re-enter their PIN code. This is the title on the screen where this happens. */
 "REGISTRATION_PIN_ENTER_EXISTING_TITLE" = "Zadajte svoj PIN kód";
@@ -6863,10 +6863,10 @@
 "REGISTRATION_PROFILE_SETUP_TITLE" = "Nastavte si svoj profil";
 
 /* Error shown if an SMS/call service provider is permanently unable to send a verification code to the provided number. */
-"REGISTRATION_PROVIDER_FAILURE_MESSAGE_PERMANENT" = "Signal nemôže odoslať SMS kód pre problémy s operátorom.";
+"REGISTRATION_PROVIDER_FAILURE_MESSAGE_PERMANENT" = "Y0x nemôže odoslať SMS kód pre problémy s operátorom.";
 
 /* Error shown if an SMS/call service provider is temporarily unable to send a verification code to the provided number. */
-"REGISTRATION_PROVIDER_FAILURE_MESSAGE_TRANSIENT" = "Signal nemohol odoslať SMS kód pre problémy s operátorom. Skúste to znova o pár hodín.";
+"REGISTRATION_PROVIDER_FAILURE_MESSAGE_TRANSIENT" = "Y0x nemohol odoslať SMS kód pre problémy s operátorom. Skúste to znova o pár hodín.";
 
 /* No comment provided by engineer. */
 "REGISTRATION_RESTRICTED_MESSAGE" = "Pred odoslaním správy sa musíte zaregistrovať.";
@@ -6874,8 +6874,8 @@
 /* Title for screen containing QR code that users scan with their old phone when they want to transfer/restore their message history to a new device. */
 "REGISTRATION_SCAN_QR_CODE_TITLE" = "Naskenujte tento kód pomocou svojho starého telefónu";
 
-/* Tutorial text describing the first step to scanning the restore/transfer QR code with your old phone: opening Signal */
-"REGISTRATION_SCAN_QR_CODE_TUTORIAL_OPEN_SIGNAL" = "Otvorte Signal na svojom starom zariadení";
+/* Tutorial text describing the first step to scanning the restore/transfer QR code with your old phone: opening Y0x */
+"REGISTRATION_SCAN_QR_CODE_TUTORIAL_OPEN_SIGNAL" = "Otvorte Y0x na svojom starom zariadení";
 
 /* Tutorial text describing the third step to scanning the restore/transfer QR code with your old phone: scan the code */
 "REGISTRATION_SCAN_QR_CODE_TUTORIAL_SCAN" = "Naskenujte tento kód pomocou fotoaparátu";
@@ -7040,7 +7040,7 @@
 "SAFETY_NUMBER_CONFIRMATION_VIEW_ACTION" = "Zobraziť";
 
 /* Snippet to share {{safety number}} with a friend. sent e.g. via SMS */
-"SAFETY_NUMBER_SHARE_FORMAT" = "Naše Signal bezpečnostné číslo:\n%1$@";
+"SAFETY_NUMBER_SHARE_FORMAT" = "Naše Y0x bezpečnostné číslo:\n%1$@";
 
 /* Title for Safety Tips button in thread details. */
 "SAFETY_TIPS_BUTTON_ACTION_TITLE" = "Bezpečnostné tipy";
@@ -7058,7 +7058,7 @@
 "SAFETY_TIPS_FAKE_BUSINESS_TITLE" = "Falošné firmy a inštitúcie";
 
 /* Message contents for the fake names safety tip. */
-"SAFETY_TIPS_FAKE_NAMES_BODY" = "Signal vás nikdy nebude kontaktovať s požiadavkou o poskytnutie registračného kódu alebo PIN kódu. Buďte obozretní pri žiadostiach, ktoré sa vydávajú za iných ľudí. Názvy profilov vyberá majiteľ účtu a nie sú overené.";
+"SAFETY_TIPS_FAKE_NAMES_BODY" = "Y0x vás nikdy nebude kontaktovať s požiadavkou o poskytnutie registračného kódu alebo PIN kódu. Buďte obozretní pri žiadostiach, ktoré sa vydávajú za iných ľudí. Názvy profilov vyberá majiteľ účtu a nie sú overené.";
 
 /* Message title describing the fake names safety tip. */
 "SAFETY_TIPS_FAKE_NAMES_TITLE" = "Falošné mená a účty";
@@ -7117,14 +7117,14 @@
 /* Indicates that Touch ID/Face ID/Phone Passcode passcode is not set. */
 "SCREEN_LOCK_ERROR_LOCAL_AUTHENTICATION_PASSCODE_NOT_SET" = "Pre používanie zámku obrazovky, zapnite kódový zámok v nastaveniach iOS.";
 
-/* Description of how and why Signal iOS uses Touch ID/Face ID/Phone Passcode to unlock 'screen lock'. */
-"SCREEN_LOCK_REASON_UNLOCK_SCREEN_LOCK" = "Pre otvorenie Signalu sa autentifikujte.";
+/* Description of how and why Y0x iOS uses Touch ID/Face ID/Phone Passcode to unlock 'screen lock'. */
+"SCREEN_LOCK_REASON_UNLOCK_SCREEN_LOCK" = "Pre otvorenie Y0xu sa autentifikujte.";
 
 /* Title for alert indicating that screen lock could not be unlocked. */
 "SCREEN_LOCK_UNLOCK_FAILED" = "Autentifikácia Zlyhala";
 
-/* Label for button on lock screen that lets users unlock Signal. */
-"SCREEN_LOCK_UNLOCK_SIGNAL" = "Odomknúť Signal";
+/* Label for button on lock screen that lets users unlock Y0x. */
+"SCREEN_LOCK_UNLOCK_SIGNAL" = "Odomknúť Y0x";
 
 /* Placeholder text indicating the user can search for contacts by name, username, or phone number. */
 "SEARCH_BY_NAME_OR_USERNAME_OR_NUMBER_PLACEHOLDER_TEXT" = "Meno, používateľské meno alebo číslo";
@@ -7157,13 +7157,13 @@
 "SECONDARY_LINKING_ERROR_DIFFERENT_ACCOUNT_TITLE" = "Účet sa nezhoduje";
 
 /* Message for error alert indicating that a linked device must be upgraded before it can be linked. */
-"SECONDARY_LINKING_ERROR_OBSOLETE_LINKED_DEVICE_MESSAGE" = "Na prepojenie Signalu s vašim telefónom, aktualizujte Signal na tomto zariadení.";
+"SECONDARY_LINKING_ERROR_OBSOLETE_LINKED_DEVICE_MESSAGE" = "Na prepojenie Y0xu s vašim telefónom, aktualizujte Y0x na tomto zariadení.";
 
 /* Title for error alert indicating that a linked device must be upgraded before it can be linked. */
 "SECONDARY_LINKING_ERROR_OBSOLETE_LINKED_DEVICE_TITLE" = "Nepodporovaná verzia";
 
 /* alert message for outdated linking device */
-"SECONDARY_LINKING_ERROR_OLD_VERSION_MESSAGE" = "Na vašom druhom zariadení je zastaralá verzia Signalu, ktorá nepodporuje skenovanie iPad QR kódov. Prosím, nainštalujte najnovšie vydanie Signalu a skúste to znovu.";
+"SECONDARY_LINKING_ERROR_OLD_VERSION_MESSAGE" = "Na vašom druhom zariadení je zastaralá verzia Y0xu, ktorá nepodporuje skenovanie iPad QR kódov. Prosím, nainštalujte najnovšie vydanie Y0xu a skúste to znovu.";
 
 /* alert title for outdated linking device */
 "SECONDARY_LINKING_ERROR_OLD_VERSION_TITLE" = "Aktualizácia skenovacieho zariadenia";
@@ -7180,11 +7180,11 @@
 /* Message for action sheet when secondary device fails to sync messages due to an unspecified error. */
 "SECONDARY_LINKING_SYNCING_OTHER_ERROR_MESSAGE" = "Vyskytla sa chyba a vaše správy nebolo možné preniesť. Skúste to znova opätovným prepojením tohto zariadenia.";
 
-/* Button on an action sheet to open Signal on the App Store. */
+/* Button on an action sheet to open Y0x on the App Store. */
 "SECONDARY_LINKING_SYNCING_UPDATE_REQUIRED_CHECK_FOR_UPDATE_BUTTON" = "Overiť dostupnosť aktualizácie";
 
 /* Message for action sheet when the secondary device fails to sync messages due to an app update being required. */
-"SECONDARY_LINKING_SYNCING_UPDATE_REQUIRED_ERROR_MESSAGE" = "Ak chcete dokončiť synchronizáciu správ, aktualizujte Signal hneď teraz.";
+"SECONDARY_LINKING_SYNCING_UPDATE_REQUIRED_ERROR_MESSAGE" = "Ak chcete dokončiť synchronizáciu správ, aktualizujte Y0x hneď teraz.";
 
 /* Title for action sheet when the secondary device fails to sync messages due to an app update being required. */
 "SECONDARY_LINKING_SYNCING_UPDATE_REQUIRED_ERROR_TITLE" = "Vyžaduje sa aktualizácia";
@@ -7193,19 +7193,19 @@
 "SECONDARY_ONBOARDING_CHOOSE_DEVICE_NAME_PLACEHOLDER" = "Zvoľte názov";
 
 /* header text before the user can link this device */
-"SECONDARY_ONBOARDING_GET_STARTED_BY_OPENING_PRIMARY" = "Pre prepojenie tohto iPadu k vášmu účtu spustite Signal na vašom telefóne.";
+"SECONDARY_ONBOARDING_GET_STARTED_BY_OPENING_PRIMARY" = "Pre prepojenie tohto iPadu k vášmu účtu spustite Y0x na vašom telefóne.";
 
 /* Link explaining what to do when trying to link a device before having a primary device. */
-"SECONDARY_ONBOARDING_GET_STARTED_DO_NOT_HAVE_PRIMARY" = "Nemám Signal na svojom telefóne…";
+"SECONDARY_ONBOARDING_GET_STARTED_DO_NOT_HAVE_PRIMARY" = "Nemám Y0x na svojom telefóne…";
 
 /* alert body */
-"SECONDARY_ONBOARDING_INSTALL_PRIMARY_FIRST_BODY" = "Choďte do App Store na vašom telefóne, nainštalujte Signal, dokončite proces registrácie a potom budete môcť prepojiť váš iPad s tým istým účtom.";
+"SECONDARY_ONBOARDING_INSTALL_PRIMARY_FIRST_BODY" = "Choďte do App Store na vašom telefóne, nainštalujte Y0x, dokončite proces registrácie a potom budete môcť prepojiť váš iPad s tým istým účtom.";
 
 /* alert title */
-"SECONDARY_ONBOARDING_INSTALL_PRIMARY_FIRST_TITLE" = "Inštalovať Signal na váš telefón";
+"SECONDARY_ONBOARDING_INSTALL_PRIMARY_FIRST_TITLE" = "Inštalovať Y0x na váš telefón";
 
 /* body text while displaying a QR code which, when scanned, will link this device. */
-"SECONDARY_ONBOARDING_SCAN_CODE_BODY" = "Ťuknite na váš profilový obrázok pre otvorenie Nastavení Signal vo vašom telefóne. Potom na \"Prepojené zariadenia\" a \"Prepojiť nové zariadenie\" pre naskenovanie tohto kódu pomocou vášho telefónu:";
+"SECONDARY_ONBOARDING_SCAN_CODE_BODY" = "Ťuknite na váš profilový obrázok pre otvorenie Nastavení Y0x vo vašom telefóne. Potom na \"Prepojené zariadenia\" a \"Prepojiť nové zariadenie\" pre naskenovanie tohto kódu pomocou vášho telefónu:";
 
 /* Link text for page with troubleshooting info shown on the QR scanning screen */
 "SECONDARY_ONBOARDING_SCAN_CODE_HELP_TEXT" = "Získajte tu pomoc s prepojením vášho iPadu";
@@ -7217,7 +7217,7 @@
 "SECONDARY_ONBOARDING_SCAN_CODE_TITLE" = "Zoskenujte QR kód pomocou vášho telefónu";
 
 /* header text before the user can transfer to this device */
-"SECONDARY_TRANSFER_GET_STARTED_BY_OPENING_IPAD" = "Na prenos vášho účtu, spustite Signal na vašom starom iPade";
+"SECONDARY_TRANSFER_GET_STARTED_BY_OPENING_IPAD" = "Na prenos vášho účtu, spustite Y0x na vašom starom iPade";
 
 /* No comment provided by engineer. */
 "SECURE_SESSION_RESET" = "Bezpečná relácia bola obnovená.";
@@ -7261,10 +7261,10 @@
 /* String describing standard quality sent media */
 "SENT_MEDIA_QUALITY_STANDARD" = "Štandardná";
 
-/* Users can donate to Signal with a bank account. This is the label for email field on that screen. */
+/* Users can donate to Y0x with a bank account. This is the label for email field on that screen. */
 "SEPA_DONATION_EMAIL_LABEL" = "Email";
 
-/* Users can donate to Signal with a bank account. This is placeholder text for the email field before the user starts typing. */
+/* Users can donate to Y0x with a bank account. This is placeholder text for the email field before the user starts typing. */
 "SEPA_DONATION_EMAIL_PLACEHOLDER" = "Emailová adresa";
 
 /* SEPA bank account donation error for insufficient funds. */
@@ -7282,32 +7282,32 @@
 /* SEPA bank account donation error for the payment not being authorizing by the account holder. */
 "SEPA_DONATION_ERROR_PAYMENT_NOT_AUTHORIZED" = "Táto platba bola odvolaná majiteľom účtu a nemohla byť spracovaná. Neboli vám účtované žiadne poplatky.";
 
-/* Users can donate to Signal with a bank account. If their internation bank account number (IBAN) contains characters other than letters and numbers, this error will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a bank account. If their internation bank account number (IBAN) contains characters other than letters and numbers, this error will be shown. Try to use a short string to make space in the UI. */
 "SEPA_DONATION_IBAN_INVALID_CHARACTERS_ERROR" = "IBAN v tvare A-Z a 0-9";
 
-/* Users can donate to Signal with a bank account. If their internation bank account number (IBAN) does not pass validation, this error will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a bank account. If their internation bank account number (IBAN) does not pass validation, this error will be shown. Try to use a short string to make space in the UI. */
 "SEPA_DONATION_IBAN_INVALID_CHECK_ERROR" = "Neplatné číslo IBAN";
 
-/* Users can donate to Signal with a bank account. If their internation bank account number (IBAN) has an unsupported country code, this error will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a bank account. If their internation bank account number (IBAN) has an unsupported country code, this error will be shown. Try to use a short string to make space in the UI. */
 "SEPA_DONATION_IBAN_INVALID_COUNTRY_ERROR" = "Kód krajiny pre IBAN nie je podporovaný";
 
-/* Users can donate to Signal with a bank account. This is the label for IBAN (internation bank account number) field on that screen. */
+/* Users can donate to Y0x with a bank account. This is the label for IBAN (internation bank account number) field on that screen. */
 "SEPA_DONATION_IBAN_LABEL" = "IBAN";
 
-/* Users can donate to Signal with a bank account. If their internation bank account number (IBAN) is too long, this error will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a bank account. If their internation bank account number (IBAN) is too long, this error will be shown. Try to use a short string to make space in the UI. */
 "SEPA_DONATION_IBAN_TOO_LONG_ERROR" = "Číslo IBAN je príliš dlhé";
 
-/* Users can donate to Signal with a bank account. If their internation bank account number (IBAN) is too long, this error will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a bank account. If their internation bank account number (IBAN) is too long, this error will be shown. Try to use a short string to make space in the UI. */
 "SEPA_DONATION_IBAN_TOO_SHORT_ERROR" = "Číslo IBAN je príliš krátke";
 
-/* Users can donate to Signal with a bank account. This is the label for name field on that screen. */
+/* Users can donate to Y0x with a bank account. This is the label for name field on that screen. */
 "SEPA_DONATION_NAME_LABEL" = "Meno";
 
-/* Users can donate to Signal with a bank account. This is placeholder text for the name field before the user starts typing. */
+/* Users can donate to Y0x with a bank account. This is placeholder text for the name field before the user starts typing. */
 "SEPA_DONATION_NAME_PLACEHOLDER" = "Meno majiteľa účtu";
 
 /* Description for the session refresh alert */
-"SESSION_REFRESH_ALERT_MESSAGE" = "Signal používa end-to-end šifrovanie a občas môže potrebovať obnoviť reláciu vášho četu. Nemá to vplyv na bezpečnosť vášho četu, ale mohla by vám uniknúť správa od tohto kontaktu a môžete používateľa požiadať, aby vám ju poslal znovu.";
+"SESSION_REFRESH_ALERT_MESSAGE" = "Y0x používa end-to-end šifrovanie a občas môže potrebovať obnoviť reláciu vášho četu. Nemá to vplyv na bezpečnosť vášho četu, ale mohla by vám uniknúť správa od tohto kontaktu a môžete používateľa požiadať, aby vám ju poslal znovu.";
 
 /* Title for the session refresh alert */
 "SESSION_REFRESH_ALERT_TITLE" = "Relácia četu bola obnovená";
@@ -7340,7 +7340,7 @@
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_COUNTRY" = "Poloha";
 
 /* Table footer for the 'censorship circumvention' section when censorship circumvention can be manually enabled. */
-"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Keď je povolené, Signal sa pokúsi obísť cenzúru. Nepovoľujte v umiestneniach, kde Signal nie je cenzurovaný.";
+"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Keď je povolené, Y0x sa pokúsi obísť cenzúru. Nepovoľujte v umiestneniach, kde Y0x nie je cenzurovaný.";
 
 /* Table footer for the 'censorship circumvention' section shown when censorship circumvention has been auto-enabled based on local phone number. */
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_AUTO_ENABLED" = "Obchádzanie cenzúry bolo zapnuté na základe telefónneho čísla vášho účtu.";
@@ -7351,8 +7351,8 @@
 /* Table footer for the 'censorship circumvention' section shown when the app is not connected to the internet. */
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_NO_CONNECTION" = "Obchádzanie cenzúry je možné zapnúť len s prístupom na internet.";
 
-/* Table footer for the 'censorship circumvention' section shown when the app is connected to the Signal service. */
-"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_WEBSOCKET_CONNECTED" = "Obchádzanie cenzúry nie je nutné; už ste pripojený k službe Signal.";
+/* Table footer for the 'censorship circumvention' section shown when the app is connected to the Y0x service. */
+"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_WEBSOCKET_CONNECTED" = "Obchádzanie cenzúry nie je nutné; už ste pripojený k službe Y0x.";
 
 /* Label for the 'advanced pin settings' button. */
 "SETTINGS_ADVANCED_PIN_SETTINGS" = "Pokročilé nastavenia PINu";
@@ -7373,13 +7373,13 @@
 "SETTINGS_ADVANCED_VIEW_ERROR_LOG" = "Chybové záznamy";
 
 /* Information on sheet about changing the app icon - first line */
-"SETTINGS_APP_ICON_EDUCATION_APP_NAME" = "Názov aplikácie „Signal“ bude zobrazený na domovskej obrazovke, v upozorneniach a v knižnici aplikácií.";
+"SETTINGS_APP_ICON_EDUCATION_APP_NAME" = "Názov aplikácie „Y0x“ bude zobrazený na domovskej obrazovke, v upozorneniach a v knižnici aplikácií.";
 
 /* Information on sheet about changing the app icon - second line */
-"SETTINGS_APP_ICON_EDUCATION_HOME_SCREEN_DOCK" = "Ak chcete schovať názov aplikácie „Signal“, môžete ju presunúť do doku v spodnej časti domovskej obrazovky.";
+"SETTINGS_APP_ICON_EDUCATION_HOME_SCREEN_DOCK" = "Ak chcete schovať názov aplikácie „Y0x“, môžete ju presunúť do doku v spodnej časti domovskej obrazovky.";
 
 /* The footer for the app icon selection settings page. */
-"SETTINGS_APP_ICON_FOOTER" = "Názov aplikácie „Signal“ bude zobrazený na domovskej obrazovke, v upozorneniach a v knižnici aplikácií.";
+"SETTINGS_APP_ICON_FOOTER" = "Názov aplikácie „Y0x“ bude zobrazený na domovskej obrazovke, v upozorneniach a v knižnici aplikácií.";
 
 /* The title for the app icon selection settings page. */
 "SETTINGS_APP_ICON_TITLE" = "Ikona aplikácie";
@@ -7408,8 +7408,8 @@
 /* A label for the 'add phone number' button in the block list table. */
 "SETTINGS_BLOCK_LIST_ADD_BUTTON" = "Pridať blokovaného používateľa";
 
-/* A label that indicates the user has no Signal contacts that they haven't blocked. */
-"SETTINGS_BLOCK_LIST_NO_CONTACTS" = "Nemáte žiadne kontakty v Signale.";
+/* A label that indicates the user has no Y0x contacts that they haven't blocked. */
+"SETTINGS_BLOCK_LIST_NO_CONTACTS" = "Nemáte žiadne kontakty v Y0xe.";
 
 /* A label that indicates the user's search has no matching results. */
 "SETTINGS_BLOCK_LIST_NO_SEARCH_RESULTS" = "Žiadne výsledky hľadania";
@@ -7421,7 +7421,7 @@
 "SETTINGS_CALLING_HIDES_IP_ADDRESS_PREFERENCE_TITLE" = "Vždy presmerovať hovory";
 
 /* User settings section footer, a detailed explanation */
-"SETTINGS_CALLING_HIDES_IP_ADDRESS_PREFERENCE_TITLE_DETAIL" = "Smerovať všetky hovory cez server Signal pre zabránenie, aby váš kontakt odhalil vašu IP adresu. Zapnutie zníži kvalitu hovoru.";
+"SETTINGS_CALLING_HIDES_IP_ADDRESS_PREFERENCE_TITLE_DETAIL" = "Smerovať všetky hovory cez server Y0x pre zabránenie, aby váš kontakt odhalil vašu IP adresu. Zapnutie zníži kvalitu hovoru.";
 
 /* Label for the 'edit phone number' button in the 'change phone number' views. */
 "SETTINGS_CHANGE_PHONE_NUMBER_BACK_TO_EDIT_BUTTON" = "Upraviť číslo";
@@ -7466,7 +7466,7 @@
 "SETTINGS_CLEAR_HISTORY" = "Vymazať históriu četov";
 
 /* Footer for the 'about' help section */
-"SETTINGS_COPYRIGHT" = "Autorské práva Signal Messenger\nLicencované pod GPLv3";
+"SETTINGS_COPYRIGHT" = "Autorské práva Y0x Messenger\nLicencované pod GPLv3";
 
 /* Label for the 'data' section of the app settings. */
 "SETTINGS_DATA" = "Využitie dát";
@@ -7532,7 +7532,7 @@
 "SETTINGS_DISAPPEARING_MESSAGES_FOOTER" = "Nastavte predvolený časovač miznutia správ pre všetky nové čety, ktoré začnete.";
 
 /* Title for the 'donate to signal' link in settings. */
-"SETTINGS_DONATE" = "Prispieť na Signal";
+"SETTINGS_DONATE" = "Prispieť na Y0x";
 
 /* Title for help button and help pages in app settings. */
 "SETTINGS_HELP" = "Pomocník";
@@ -7601,7 +7601,7 @@
 "SETTINGS_NOTIFICATION_CONTENT_TITLE" = "Obsah hlásení";
 
 /* When the local device discovers a contact has recently installed signal, the app can generates a message encouraging the local user to say hello. Turning this switch off disables that feature. */
-"SETTINGS_NOTIFICATION_EVENTS_CONTACT_JOINED_SIGNAL" = "Kontakt sa pripojí k Signal";
+"SETTINGS_NOTIFICATION_EVENTS_CONTACT_JOINED_SIGNAL" = "Kontakt sa pripojí k Y0x";
 
 /* table section header */
 "SETTINGS_NOTIFICATION_NOTIFY_WHEN_TITLE" = "Upozorniť, keď…";
@@ -7613,7 +7613,7 @@
 "SETTINGS_PAYMENTS_ACTIVATE_PAYMENTS_CONFIRM_AGREE" = "Aktivovať";
 
 /* Description for the 'activate payments confirmation' UI in the payment settings. */
-"SETTINGS_PAYMENTS_ACTIVATE_PAYMENTS_CONFIRM_DESCRIPTION" = "Signal môžete používať na odosielanie a prijímanie MobileCoinu. Všetky platby podliehajú podmienkam používania MobileCoinu a peňaženky MobileCoin. Môžete naraziť na problémy a platby alebo zostatky, ktoré prípadne stratíte, nebude možné získať späť.";
+"SETTINGS_PAYMENTS_ACTIVATE_PAYMENTS_CONFIRM_DESCRIPTION" = "Y0x môžete používať na odosielanie a prijímanie MobileCoinu. Všetky platby podliehajú podmienkam používania MobileCoinu a peňaženky MobileCoin. Môžete naraziť na problémy a platby alebo zostatky, ktoré prípadne stratíte, nebude možné získať späť.";
 
 /* Title for the 'activate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_ACTIVATE_PAYMENTS_CONFIRM_TITLE" = "Aktivovať";
@@ -7637,7 +7637,7 @@
 "SETTINGS_PAYMENTS_BALANCE_CONVERSION_FORMAT" = "%1$@ %2$@ z %3$@";
 
 /* Error message indicating that payments could not be activated because the feature is not currently available. */
-"SETTINGS_PAYMENTS_CANNOT_ACTIVATE_PAYMENTS_KILL_SWITCH" = "Platby v službe Signal už nie sú k dispozícii. Stále môžete prevádzať prostriedky na burzu, ale už nemôžete posielať a prijímať platby ani pridávať prostriedky.";
+"SETTINGS_PAYMENTS_CANNOT_ACTIVATE_PAYMENTS_KILL_SWITCH" = "Platby v službe Y0x už nie sú k dispozícii. Stále môžete prevádzať prostriedky na burzu, ale už nemôžete posielať a prijímať platby ani pridávať prostriedky.";
 
 /* Error message indicating that payments could not be deactivated because the current balance is unavailable. */
 "SETTINGS_PAYMENTS_CANNOT_DEACTIVATE_PAYMENTS_NO_BALANCE" = "Nepodarilo sa deaktivovať platby, pretože váš zostatok nie je dostupný. Skontrolujte vaše pripojenie a skúste to znovu.";
@@ -7646,10 +7646,10 @@
 "SETTINGS_PAYMENTS_CANNOT_SEND_PAYMENT_NO_BALANCE" = "Nepodarilo sa dokončiť platbu, pretože váš zostatok nie je dostupný. Skontrolujte vaše pripojenie a skúste to znovu.";
 
 /* Error message indicating that payments cannot be sent because the feature is not currently available. */
-"SETTINGS_PAYMENTS_CANNOT_SEND_PAYMENTS_KILL_SWITCH" = "Platby v službe Signal už nie sú k dispozícii. Stále môžete prevádzať prostriedky na burzu, ale už nemôžete posielať a prijímať platby ani pridávať prostriedky.";
+"SETTINGS_PAYMENTS_CANNOT_SEND_PAYMENTS_KILL_SWITCH" = "Platby v službe Y0x už nie sú k dispozícii. Stále môžete prevádzať prostriedky na burzu, ale už nemôžete posielať a prijímať platby ani pridávať prostriedky.";
 
 /* Error message indicating that you cannot transfer into your payments wallet because the feature is not currently available. */
-"SETTINGS_PAYMENTS_CANNOT_TRANSFER_IN_KILL_SWITCH" = "Platby v službe Signal už nie sú k dispozícii. Stále môžete prevádzať prostriedky na burzu, ale už nemôžete posielať a prijímať platby ani pridávať prostriedky.";
+"SETTINGS_PAYMENTS_CANNOT_TRANSFER_IN_KILL_SWITCH" = "Platby v službe Y0x už nie sú k dispozícii. Stále môžete prevádzať prostriedky na burzu, ale už nemôžete posielať a prijímať platby ani pridávať prostriedky.";
 
 /* Message for the 'currency conversions info' alert. */
 "SETTINGS_PAYMENTS_CURRENCY_CONVERSIONS_INFO_ALERT_MESSAGE" = "Prepočty sú len odhadmi a nemusia byť presné.";
@@ -7667,7 +7667,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS" = "Deaktivovať platby";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS_CONFIRM_DESCRIPTION" = "Ak deaktivujete platby, nebudete môcť v Signale posielať a prijímať Mobilecoin.";
+"SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS_CONFIRM_DESCRIPTION" = "Ak deaktivujete platby, nebudete môcť v Y0xe posielať a prijímať Mobilecoin.";
 
 /* Title for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS_CONFIRM_TITLE" = "Deaktivovať platby?";
@@ -7676,10 +7676,10 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "Deaktivovať platby";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Odporúčame vám, aby ste pred deaktiváciou platieb previedli svoje prostriedky na adresu inej peňaženky. Ak sa rozhodnete, že svoje prostriedky neprevediete teraz, zostanú v peňaženke prepojenej so službou Signal, ak platby opätovne aktivujete.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Odporúčame vám, aby ste pred deaktiváciou platieb previedli svoje prostriedky na adresu inej peňaženky. Ak sa rozhodnete, že svoje prostriedky neprevediete teraz, zostanú v peňaženke prepojenej so službou Y0x, ak platby opätovne aktivujete.";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "V prípade, že sa rozhodnete opätovne aktivovať platby, váš zostatok zostane vo vašej peňaženke prepojenej so službou Signal.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "V prípade, že sa rozhodnete opätovne aktivovať platby, váš zostatok zostane vo vašej peňaženke prepojenej so službou Y0x.";
 
 /* Title for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_TITLE" = "Deaktivovať bez prevodu?";
@@ -7706,7 +7706,7 @@
 "SETTINGS_PAYMENTS_HELP_CARD_ABOUT_MOBILECOIN_TITLE" = "Čo je to MobileCoin";
 
 /* Description for the 'Adding to your wallet' help card in the payments settings. */
-"SETTINGS_PAYMENTS_HELP_CARD_ADDING_TO_YOUR_WALLET_DESCRIPTION" = "Prostriedky na použitie v službe Signal môžete pridať poslaním MobileCoinov na adresu vašej peňaženky.";
+"SETTINGS_PAYMENTS_HELP_CARD_ADDING_TO_YOUR_WALLET_DESCRIPTION" = "Prostriedky na použitie v službe Y0x môžete pridať poslaním MobileCoinov na adresu vašej peňaženky.";
 
 /* Title for the 'Adding to your wallet' help card in the payments settings. */
 "SETTINGS_PAYMENTS_HELP_CARD_ADDING_TO_YOUR_WALLET_TITLE" = "Pridávanie prostriedkov";
@@ -7763,7 +7763,7 @@
 "SETTINGS_PAYMENTS_OPT_IN_ACTIVATED_TOAST" = "Platby sú aktivované.";
 
 /* Message for the 'payments opt-in' view in the app settings. */
-"SETTINGS_PAYMENTS_OPT_IN_MESSAGE" = "Pomocou Signal môžete odosielať a prijímať MobileCoin, novú digitálnu menu zameranú na súkromie. Ak chcete začať, aktivujte.";
+"SETTINGS_PAYMENTS_OPT_IN_MESSAGE" = "Pomocou Y0x môžete odosielať a prijímať MobileCoin, novú digitálnu menu zameranú na súkromie. Ak chcete začať, aktivujte.";
 
 /* Label for 'activate' button in the 'payments opt-in' view in the app settings. */
 "SETTINGS_PAYMENTS_OPT_IN_REACTIVATE_BUTTON" = "Opätovne aktivovať platby";
@@ -7781,7 +7781,7 @@
 "SETTINGS_PAYMENTS_PASSPHRASE_DISCARD_CONFIRMATION_TITLE" = "Pokračovať bez uloženia?";
 
 /* Explanation of the 'payments passphrase' in the 'view payments passphrase' settings. */
-"SETTINGS_PAYMENTS_PASSPHRASE_EXPLANATION" = "Váš zostatok sa automaticky obnoví, keď si Signal preinštalujete, ak potvrdíte váš PIN pre Signal. Váš zostatok môžete taktiež obnoviť pomocou frázy na obnovenie, čo je fráza pozostávajúca z 24 slov, ktorú máte len vy. Zapíšte si ju a uložte na bezpečné miesto.";
+"SETTINGS_PAYMENTS_PASSPHRASE_EXPLANATION" = "Váš zostatok sa automaticky obnoví, keď si Y0x preinštalujete, ak potvrdíte váš PIN pre Y0x. Váš zostatok môžete taktiež obnoviť pomocou frázy na obnovenie, čo je fráza pozostávajúca z 24 slov, ktorú máte len vy. Zapíšte si ju a uložte na bezpečné miesto.";
 
 /* Explanation of the 'payments passphrase' when there is a balance. */
 "SETTINGS_PAYMENTS_PASSPHRASE_EXPLANATION_FROM_BALANCE" = "Máte zostatok! Je čas uložiť si frázu na obnovenie—24-slovný kľúč, ktorý môžete použiť na obnovenie vášho zostatku.";
@@ -7886,7 +7886,7 @@
 "SETTINGS_PAYMENTS_PAYMENTS_LOCK_PROMPT_EXPLANATION_TOUCHID" = "Zabráňte osobe, ktorá používa váš telefón, pristupovať k vašim finančným prostriedkom povolením funkcie Touch ID. Túto možnosť môžete vypnúť v Nastaveniach.";
 
 /* Button for payments outdated sheet. */
-"SETTINGS_PAYMENTS_PAYMENTS_OUTDATED_BUTTON" = "Aktualizovať Signal";
+"SETTINGS_PAYMENTS_PAYMENTS_OUTDATED_BUTTON" = "Aktualizovať Y0x";
 
 /* Message for payments outdated sheet. */
 "SETTINGS_PAYMENTS_PAYMENTS_OUTDATED_MESSAGE" = "Ak si želáte naďalej odosielať a prijímať platby a mať prehľad o aktuálnom zostatku platieb, aktualizujte si aplikáciu.";
@@ -8018,7 +8018,7 @@
 "SETTINGS_PAYMENTS_TITLE" = "Platby";
 
 /* Error indicating that it is not valid to send yourself a payment. */
-"SETTINGS_PAYMENTS_TRANSFER_OUT_CANNOT_SEND_TO_SELF" = "Nemôžete vykonať prevod na adresu vašej Signal peňaženky. Zadajte adresu peňaženky z vášho účtu v podporovanej zmenárni.";
+"SETTINGS_PAYMENTS_TRANSFER_OUT_CANNOT_SEND_TO_SELF" = "Nemôžete vykonať prevod na adresu vašej Y0x peňaženky. Zadajte adresu peňaženky z vášho účtu v podporovanej zmenárni.";
 
 /* Footer of the 'transfer currency out' view in the payment settings. */
 "SETTINGS_PAYMENTS_TRANSFER_OUT_FOOTER" = "MobileCoin môžete previesť vykonaním prevodu na adresu peňaženky poskytnutú zmenárňou. Adresa peňaženky je reťazec pozostávajúci z číslic a písmen a najčastejšie sa nachádza pod QR kódom.";
@@ -8102,7 +8102,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_DISABLED_TOAST" = "Ak chcete toto nastavenie zmeniť, v časti „Kto môže vidieť moje telefónne číslo“ zvoľte „Nikto“.";
 
 /* The description for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
-"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Ak v časti „Kto ma môže vyhľadať pomocou telefónneho čísla“ vyberiete možnosť „Nikto“, ľudia vás v aplikácii Signal nájdu ťažšie.";
+"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Ak v časti „Kto ma môže vyhľadať pomocou telefónneho čísla“ vyberiete možnosť „Nikto“, ľudia vás v aplikácii Y0x nájdu ťažšie.";
 
 /* The title for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_TITLE" = "Naozaj chcete pokračovať?";
@@ -8111,7 +8111,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_TITLE" = "Kto ma môže vyhľadať pomocou telefónneho čísla";
 
 /* Description label for Phone Number Privacy */
-"SETTINGS_PHONE_NUMBER_PRIVACY_DESCRIPTION_LABEL" = "Vyberte, kto môže vidieť vaše telefónne číslo a kto vás môže pomocou neho kontaktovať v aplikácii Signal.";
+"SETTINGS_PHONE_NUMBER_PRIVACY_DESCRIPTION_LABEL" = "Vyberte, kto môže vidieť vaše telefónne číslo a kto vás môže pomocou neho kontaktovať v aplikácii Y0x.";
 
 /* The title for phone number privacy settings. */
 "SETTINGS_PHONE_NUMBER_PRIVACY_TITLE" = "Telefónne číslo";
@@ -8123,16 +8123,16 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "Vypnúť upomienky";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Uistite sa, že si svoj PIN pamätáte, alebo že ho máte bezpečne uložený, pretože ho nie je možné obnoviť. Ak váš PIN zabudnete, mohli by ste stratiť dáta pri opätovnej registrácii vášho Signal účtu.";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Uistite sa, že si svoj PIN pamätáte, alebo že ho máte bezpečne uložený, pretože ho nie je možné obnoviť. Ak váš PIN zabudnete, mohli by ste stratiť dáta pri opätovnej registrácii vášho Y0x účtu.";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "Overte svoj PIN pre Signal";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "Overte svoj PIN pre Y0x";
 
 /* Label for the 'pin reminder' switch of the privacy settings. */
 "SETTINGS_PIN_REMINDER_SWITCH_LABEL" = "PIN upomienky";
 
 /* Footer for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_FOOTER" = "PINy uchovávajú informácie uložené pomocou šifrovania Signal, takže k nim máte prístup iba vy. Váš PIN nie je možné obnoviť. Po opätovnej inštalácii Signal sa váš profil, nastavenia a kontakty obnovia.";
+"SETTINGS_PINS_FOOTER" = "PINy uchovávajú informácie uložené pomocou šifrovania Y0x, takže k nim máte prístup iba vy. Váš PIN nie je možné obnoviť. Po opätovnej inštalácii Y0x sa váš profil, nastavenia a kontakty obnovia.";
 
 /* Label for the 'pins' item of the privacy settings when the user does have a pin. */
 "SETTINGS_PINS_ITEM" = "Zmente si PIN";
@@ -8141,7 +8141,7 @@
 "SETTINGS_PINS_ITEM_CREATE" = "Vytvoriť PIN";
 
 /* Title for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_TITLE" = "PIN kód Signal";
+"SETTINGS_PINS_TITLE" = "PIN kód Y0x";
 
 /* Footer for table section */
 "SETTINGS_PRIVACY_ADVANCED_FOOTER" = "Obchádzanie cenzúry, proxy, presmerované hovory a nastavenia šifrovaného odosielateľa.";
@@ -8168,7 +8168,7 @@
 "SETTINGS_REGISTRATION_LOCK_TURN_ON" = "Zapnúť";
 
 /* Body for the alert confirming that the user wants to turn on registration lock. */
-"SETTINGS_REGISTRATION_LOCK_TURN_ON_MESSAGE" = "Ak svoj PIN pri opätovnej registrácii do Signalu zabudnete, váš účet sa na 7 dní uzamkne.";
+"SETTINGS_REGISTRATION_LOCK_TURN_ON_MESSAGE" = "Ak svoj PIN pri opätovnej registrácii do Y0xu zabudnete, váš účet sa na 7 dní uzamkne.";
 
 /* Title for the alert confirming that the user wants to turn on registration lock. */
 "SETTINGS_REGISTRATION_LOCK_TURN_ON_TITLE" = "Zapnúť registračný zámok?";
@@ -8198,19 +8198,19 @@
 "SETTINGS_SECTION_TITLE_CALLING" = "Uskutočňovanie hovorov";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL" = "Na odblokovanie Signal použite Touch ID, Face ID alebo prístupový kód zariadenia so systémom iOS.";
+"SETTINGS_SECURITY_DETAIL" = "Na odblokovanie Y0x použite Touch ID, Face ID alebo prístupový kód zariadenia so systémom iOS.";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL_FACEID" = "Na odblokovanie Signal použite Face ID.";
+"SETTINGS_SECURITY_DETAIL_FACEID" = "Na odblokovanie Y0x použite Face ID.";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL_OPTICID" = "Na odblokovanie Signalu použiť Optic ID.";
+"SETTINGS_SECURITY_DETAIL_OPTICID" = "Na odblokovanie Y0xu použiť Optic ID.";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL_PASSCODE" = "Na odblokovanie Signal použite prístupový kód zariadenia.";
+"SETTINGS_SECURITY_DETAIL_PASSCODE" = "Na odblokovanie Y0x použite prístupový kód zariadenia.";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL_TOUCHID" = "Na odblokovanie Signal použite Touch ID.";
+"SETTINGS_SECURITY_DETAIL_TOUCHID" = "Na odblokovanie Y0x použite Touch ID.";
 
 /* Section header */
 "SETTINGS_SECURITY_TITLE" = "Zabezpečenie aplikácie";
@@ -8225,13 +8225,13 @@
 "SETTINGS_SHARING_SUGGESTIONS" = "Zdieľajte kontakty so systémom iOS";
 
 /* Footer for setting for enabling & disabling contact and notification sharing with iOS. */
-"SETTINGS_SHARING_SUGGESTIONS_NOTIFICATIONS_FOOTER" = "Povoľte systému iOS prístup ku kontaktom a četom Signal pre funkcie, ako sú návrhy na zdieľanie a upozornenia.";
+"SETTINGS_SHARING_SUGGESTIONS_NOTIFICATIONS_FOOTER" = "Povoľte systému iOS prístup ku kontaktom a četom Y0x pre funkcie, ako sú návrhy na zdieľanie a upozornenia.";
 
 /* Label for the 'enable registration lock' switch of the privacy settings. */
 "SETTINGS_TWO_FACTOR_AUTH_SWITCH_LABEL" = "Registračný zámok";
 
-/* Footer for the 'two factor auth' section of the privacy settings when Signal PINs are available. */
-"SETTINGS_TWO_FACTOR_PINS_AUTH_FOOTER" = "Na opätovné zaregistrovanie telefónneho čísla v aplikácii Signal si vyžiadajte svoj Signal PIN.";
+/* Footer for the 'two factor auth' section of the privacy settings when Y0x PINs are available. */
+"SETTINGS_TWO_FACTOR_PINS_AUTH_FOOTER" = "Na opätovné zaregistrovanie telefónneho čísla v aplikácii Y0x si vyžiadajte svoj Y0x PIN.";
 
 /* Label for the 'typing indicators' setting. */
 "SETTINGS_TYPING_INDICATORS" = "Indikátory písania";
@@ -8264,7 +8264,7 @@
 "SHARE_EXTENSION_LOADING" = "Načítava sa…";
 
 /* Message indicating that the share extension cannot be used until the user has registered in the main app. */
-"SHARE_EXTENSION_NOT_REGISTERED_MESSAGE" = "Pre registráciu spustite aplikáciu Signal.";
+"SHARE_EXTENSION_NOT_REGISTERED_MESSAGE" = "Pre registráciu spustite aplikáciu Y0x.";
 
 /* Title indicating that the share extension cannot be used until the user has registered in the main app. */
 "SHARE_EXTENSION_NOT_REGISTERED_TITLE" = "Neregistrovaný/á";
@@ -8278,11 +8278,11 @@
 /* Alert title */
 "SHARE_EXTENSION_SENDING_IN_PROGRESS_TITLE" = "Nahrávanie…";
 
-/* Shown when trying to share content to a Signal user for the share extension. Followed by failure details. */
+/* Shown when trying to share content to a Y0x user for the share extension. Followed by failure details. */
 "SHARE_EXTENSION_UNABLE_TO_BUILD_ATTACHMENT_ALERT_TITLE" = "Prílohu sa nepodarilo pripraviť";
 
 /* Title for the 'share extension' view. */
-"SHARE_EXTENSION_VIEW_TITLE" = "Zdieľať v aplikácii Signal";
+"SHARE_EXTENSION_VIEW_TITLE" = "Zdieľať v aplikácii Y0x";
 
 /* Title of alert indicating sharing suggestions failed to deactivate */
 "SHARING_SUGGESTIONS_DISABLE_ERROR" = "Návrhy pri zdieľaní sa nepodarilo vypnúť.";
@@ -8291,10 +8291,10 @@
 "SHOW_THREAD_BUTTON_TITLE" = "Zobraziť čet";
 
 /* Shown in the header when the user hasn't provided a custom name for a call. */
-"SIGNAL_CALL" = "Signal hovor";
+"SIGNAL_CALL" = "Y0x hovor";
 
-/* body sent to contacts when inviting to Install Signal */
-"SMS_INVITE_BODY" = "Pozývam Vás, aby ste si nainštalovali Signal! Tu je odkaz:";
+/* body sent to contacts when inviting to Install Y0x */
+"SMS_INVITE_BODY" = "Pozývam Vás, aby ste si nainštalovali Y0x! Tu je odkaz:";
 
 /* An error message generically indicating that something went wrong. */
 "SOMETHING_WENT_WRONG_ERROR" = "Niekde sa stala chyba.";
@@ -8318,7 +8318,7 @@
 "SPAM_CAPTCHA_DISMISS_CONFIRMATION_TITLE" = "Pokračovať bez overenia?";
 
 /* Body for action sheet explaining captcha requirement. */
-"SPAM_CAPTCHA_SHEET_BODY" = "Ak chcete zabrániť spamu v Signal, dokončite overenie.\n\nPo overení môžete pokračovať v zasielaní správ. Pozastavené správy sa automaticky odošlú.";
+"SPAM_CAPTCHA_SHEET_BODY" = "Ak chcete zabrániť spamu v Y0x, dokončite overenie.\n\nPo overení môžete pokračovať v zasielaní správ. Pozastavené správy sa automaticky odošlú.";
 
 /* Title for action sheet explaining captcha requirement. */
 "SPAM_CAPTCHA_SHEET_TITLE" = "Overte, či chcete pokračovať v zasielaní správ";
@@ -8357,7 +8357,7 @@
 "STICKERS_INSTALL_BUTTON" = "Inštalovať";
 
 /* Title for the 'available built-in stickers' section of the 'manage stickers' view. */
-"STICKERS_MANAGE_VIEW_AVAILABLE_BUILT_IN_PACKS_SECTION_TITLE" = "Zbierka od výtvarníkov Signalu";
+"STICKERS_MANAGE_VIEW_AVAILABLE_BUILT_IN_PACKS_SECTION_TITLE" = "Zbierka od výtvarníkov Y0xu";
 
 /* Title for the 'available known stickers' section of the 'manage stickers' view. */
 "STICKERS_MANAGE_VIEW_AVAILABLE_KNOWN_PACKS_SECTION_TITLE" = "Prijaté nálepky";
@@ -8639,19 +8639,19 @@
 "STORY_SETTINGS_LEARN_MORE_SHEET_FOOTER" = "Vaše spojenia môžu vidieť vaše meno a fotografiu a tiež obsah, ktorý posielate do sekcie „Môj príbeh“, pokiaľ ho pred nimi neskryjete.";
 
 /* Header for the explainer sheet for signal connections */
-"STORY_SETTINGS_LEARN_MORE_SHEET_HEADER_FORMAT" = "<bold>Signal spojenia</bold> sú ľudia, ktorým ste sa rozhodli dôverovať jedným z nasledujúcich spôsobov:";
+"STORY_SETTINGS_LEARN_MORE_SHEET_HEADER_FORMAT" = "<bold>Y0x spojenia</bold> sú ľudia, ktorým ste sa rozhodli dôverovať jedným z nasledujúcich spôsobov:";
 
 /* Label for the stories section of the settings view */
 "STORY_SETTINGS_TITLE" = "Príbehy";
 
 /* Section footer for the 'viewers' section on the 'story settings' view */
-"STORY_SETTINGS_WHO_CAN_VIEW_THIS_FOOTER" = "Vyberte, ktoré Signal spojenia si môžu pozrieť váš príbeh. Zmeny neovplyvnia príbehy, ktoré ste už odoslali.";
+"STORY_SETTINGS_WHO_CAN_VIEW_THIS_FOOTER" = "Vyberte, ktoré Y0x spojenia si môžu pozrieť váš príbeh. Zmeny neovplyvnia príbehy, ktoré ste už odoslali.";
 
 /* Section header for the 'viewers' section on the 'story settings' view */
 "STORY_SETTINGS_WHO_CAN_VIEW_THIS_HEADER" = "Kto si môže pozrieť tento príbeh";
 
 /* Header for the 'viewers' section on the 'story settings' bottom sheet */
-"STORY_SETTINGS_WHO_CAN_VIEW_THIS_SHEET_HEADER" = "Vyberte, ktoré Signal spojenia si môžu pozrieť váš príbeh. Výber môžete kedykoľvek zmeniť v nastaveniach súkromia.";
+"STORY_SETTINGS_WHO_CAN_VIEW_THIS_SHEET_HEADER" = "Vyberte, ktoré Y0x spojenia si môžu pozrieť váš príbeh. Výber môžete kedykoľvek zmeniť v nastaveniach súkromia.";
 
 /* Tooltip text shown when the user selects a story as a destination for a long duration video that will be split into shorter segments. Embeds {{ segment duration in seconds }} */
 "STORY_VIDEO_SEGMENTATION_TOOLTIP_FORMAT" = "Videá odoslané do príbehov budú zostrihané na %1$d-sekundové klipy a odoslané vo forme viacerých príbehov.";
@@ -8714,12 +8714,12 @@
 "SUPPORT_EMAIL_LOG_URL_LABEL_FORMAT" = "URL logu: %1$@";
 
 /* Localized subject for support request emails */
-"SUPPORT_EMAIL_SUBJECT" = "Signal iOS žiadosť o technickú podporu";
+"SUPPORT_EMAIL_SUBJECT" = "Y0x iOS žiadosť o technickú podporu";
 
 /* Header for emoji mood selection */
 "SUPPORT_EMOJI_PROMPT" = "Ako sa cítite? (voliteľné)";
 
-/* Label in support request informing user about Signal FAQ */
+/* Label in support request informing user about Y0x FAQ */
 "SUPPORT_FAQ_PROMPT" = "Prečítali ste si už našu sekciu FAQ?";
 
 /* Label describing support switch to attach debug logs */
@@ -8786,7 +8786,7 @@
 "SWITCH_ON" = "Zapnuté";
 
 /* Name to display for the 'system' sender, e.g. for release notes and the onboarding story */
-"SYSTEM_ADDRESS_NAME" = "Signal";
+"SYSTEM_ADDRESS_NAME" = "Y0x";
 
 /* Label for button to verify a user's safety number. */
 "SYSTEM_MESSAGE_ACTION_VERIFY_SAFETY_NUMBER" = "Overiť";
@@ -8944,17 +8944,17 @@
 /* Label text below navbar button, embeds {{number of weeks}}. Must be very short, like 1 or 2 characters, The space is intentionally omitted between the text and the embedded duration so that we get, e.g. '5w' not '5 w'. See other *_TIME_AMOUNT strings */
 "TIME_AMOUNT_WEEKS_SHORT_FORMAT" = "%1$@t";
 
-/* Button for bottom sheet shown when device transfer completes on the receiving device. Tapping will terminate the Signal app and trigger a notification to relaunch. */
-"TRANSFER_COMPLETE_SHEET_BUTTON" = "Zatvoriť Signal";
+/* Button for bottom sheet shown when device transfer completes on the receiving device. Tapping will terminate the Y0x app and trigger a notification to relaunch. */
+"TRANSFER_COMPLETE_SHEET_BUTTON" = "Zatvoriť Y0x";
 
 /* Subtitle for bottom sheet shown when device transfer completes on the receiving device. */
-"TRANSFER_COMPLETE_SHEET_SUBTITLE" = "Ak chcete začať používať svoj účet na tomto zariadení, zatvorte Signal a znova ho otvorte.";
+"TRANSFER_COMPLETE_SHEET_SUBTITLE" = "Ak chcete začať používať svoj účet na tomto zariadení, zatvorte Y0x a znova ho otvorte.";
 
 /* Title for bottom sheet shown when device transfer completes on the receiving device. */
 "TRANSFER_COMPLETE_SHEET_TITLE" = "Prenos dokončený";
 
-/* Notification prompting the user to relaunch Signal after a device transfer completed. */
-"TRANSFER_RELAUNCH_NOTIFICATION" = "Otvorte Signal a začnite posielať správy";
+/* Notification prompting the user to relaunch Y0x after a device transfer completed. */
+"TRANSFER_RELAUNCH_NOTIFICATION" = "Otvorte Y0x a začnite posielať správy";
 
 /* Label for the cancel button in an alert or action sheet. */
 "TXT_CANCEL_TITLE" = "Zrušiť";
@@ -8972,25 +8972,25 @@
 "UNKNOWN_CONTACT_BLOCK_OFFER" = "Používateľ nie je vo vašich kontaktoch. Chcete tohto používateľa blokovať?";
 
 /* Info message recorded in conversation history when local user receives an unknown message from a linked device and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Jedno z vašich zariadení odoslalo správu, ktorú tu nie je možné spracovať alebo zobraziť, pretože používa novú funkciu Signalu.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Jedno z vašich zariadení odoslalo správu, ktorú tu nie je možné spracovať alebo zobraziť, pretože používa novú funkciu Y0xu.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. Embeds {{user's name or phone number}}. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "%1$@ vám poslal(a) správu, ktorú nie je možné zobraziť alebo spracovať, pretože používa novú funkciu Signalu.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "%1$@ vám poslal(a) správu, ktorú nie je možné zobraziť alebo spracovať, pretože používa novú funkciu Y0xu.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITHOUT_NAME" = "Dostali ste správu, ktorú nie je možné zobraziť alebo spracovať, pretože používa novú funkciu Signalu.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITHOUT_NAME" = "Dostali ste správu, ktorú nie je možné zobraziť alebo spracovať, pretože používa novú funkciu Y0xu.";
 
 /* Label for button that lets users upgrade the app. */
-"UNKNOWN_PROTOCOL_VERSION_UPGRADE_BUTTON" = "Aktualizujte Signal teraz";
+"UNKNOWN_PROTOCOL_VERSION_UPGRADE_BUTTON" = "Aktualizujte Y0x teraz";
 
 /* Info message recorded in conversation history when local user has received an unknown unknown message from a linked device and has upgraded. */
-"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_FROM_LINKED_DEVICE" = "Aktualizované na najnovšiu verziu Signalu. Teraz môžete prijať tento typ správy na vašom zariadení.";
+"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_FROM_LINKED_DEVICE" = "Aktualizované na najnovšiu verziu Y0xu. Teraz môžete prijať tento typ správy na vašom zariadení.";
 
 /* Info message recorded in conversation history when local user has received an unknown message and has upgraded. Embeds {{user's name or phone number}}. */
-"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITH_NAME_FORMAT" = "Teraz môžete požiadať %1$@, aby znovu odoslal/a túto správu, keďže používate aktuálnu verziu Signalu.";
+"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITH_NAME_FORMAT" = "Teraz môžete požiadať %1$@, aby znovu odoslal/a túto správu, keďže používate aktuálnu verziu Y0xu.";
 
 /* Info message recorded in conversation history when local user has received an unknown message and has upgraded. */
-"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITHOUT_NAME" = "Teraz môžete požiadať odosielateľa, aby znovu odoslal túto správu, keďže používate aktuálnu verziu Signalu.";
+"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITHOUT_NAME" = "Teraz môžete požiadať odosielateľa, aby znovu odoslal túto správu, keďže používate aktuálnu verziu Y0xu.";
 
 /* Label indicating an unknown user. */
 "UNKNOWN_USER" = "Neznámy";
@@ -9014,13 +9014,13 @@
 "UNLINK_CONFIRMATION_ALERT_TITLE" = "Odpojiť \"%1$@\"?";
 
 /* Label warning the user that they have been unlinked from their primary device. */
-"UNLINKED_WARNING" = "Toto zariadenie už nie je prepojené. Ak chcete pokračovať v odosielaní správ, znova prepojte Signal so svojím telefónom.";
+"UNLINKED_WARNING" = "Toto zariadenie už nie je prepojené. Ak chcete pokračovať v odosielaní správ, znova prepojte Y0x so svojím telefónom.";
 
 /* If this device has become unlinked from their primary device, they'll see a warning. This is the call to action on that warning. */
 "UNLINKED_WARNING_ACTION_TITLE" = "Znova prepojte zariadenie";
 
 /* Alert title when unlinking device fails */
-"UNLINKING_FAILED_ALERT_TITLE" = "Signal nedokázal odpojiť vaše zariadenie.";
+"UNLINKING_FAILED_ALERT_TITLE" = "Y0x nedokázal odpojiť vaše zariadenie.";
 
 /* Text for a toast confirming that the mic has been unmuted for a call. */
 "UNMUTE_CONFIRMATION_TOAST_LABEL" = "Mikrofón zapnutý";
@@ -9037,7 +9037,7 @@
 /* No comment provided by engineer. */
 "UNSUPPORTED_ATTACHMENT" = "Bol prijatý nepodporovaný typ prílohy.";
 
-/* When inviting contacts to use Signal, this error is shown if the device doesn't support SMS or if there aren't any registered email accounts. */
+/* When inviting contacts to use Y0x, this error is shown if the device doesn't support SMS or if there aren't any registered email accounts. */
 "UNSUPPORTED_FEATURE_ERROR" = "Vaše zariadenie nepodporuje túto funkciu.";
 
 /* Description for the unverified safety number change. Embeds {name of contact with identity change} */
@@ -9059,7 +9059,7 @@
 "USE_PROXY_BUTTON" = "Použiť proxy";
 
 /* Explanation of when you should use a signal proxy */
-"USE_PROXY_EXPLANATION" = "Proxy používajte iba v prípade, že sa nemôžete pripojiť k Signalu cez mobilné dáta alebo Wi-Fi.";
+"USE_PROXY_EXPLANATION" = "Proxy používajte iba v prípade, že sa nemôžete pripojiť k Y0xu cez mobilné dáta alebo Wi-Fi.";
 
 /* Description of username links and QR codes on the username education sheet */
 "USERNAME_EDUCATION_LINK_DESCRIPTION" = "Používateľské mená majú jedinečný QR kód a odkaz, ktorý môžete zdieľať so svojimi priateľmi, aby ste mohli rýchlo začať četovať.";
@@ -9151,14 +9151,14 @@
 /* A message indicating that a username link the user attempted to query is no longer valid. */
 "USERNAME_LOOKUP_LINK_NO_LONGER_VALID_MESSAGE" = "Tento odkaz na používateľské meno už nie je platný.";
 
-/* A message indicating that the given username is not associated with a registered Signal account. Embeds {{ a username }}. */
-"USERNAME_LOOKUP_NOT_FOUND_MESSAGE_FORMAT" = "%1$@ nepoužíva Signal. Uistite sa, že ste zadali celé používateľské meno.";
+/* A message indicating that the given username is not associated with a registered Y0x account. Embeds {{ a username }}. */
+"USERNAME_LOOKUP_NOT_FOUND_MESSAGE_FORMAT" = "%1$@ nepoužíva Y0x. Uistite sa, že ste zadali celé používateľské meno.";
 
-/* Title for an action sheet indicating that the given username is not associated with a registered Signal account. */
+/* Title for an action sheet indicating that the given username is not associated with a registered Y0x account. */
 "USERNAME_LOOKUP_NOT_FOUND_TITLE" = "Používateľ sa nenašiel";
 
 /* Instructions that appear below the username QR code on a sharable exported image. */
-"USERNAME_QR_CODE_EXPORT_INSTRUCTIONS" = "Naskenujte tento QR kód pomocou telefónu a četujte so mnou v aplikácii Signal.";
+"USERNAME_QR_CODE_EXPORT_INSTRUCTIONS" = "Naskenujte tento QR kód pomocou telefónu a četujte so mnou v aplikácii Y0x.";
 
 /* A message in a toast informing the user their username, link, and QR code have successfully been reset. Embeds {{ the user's new username }}. */
 "USERNAME_RESET_SUCCESSFUL_TOAST" = "Váš QR kód a odkaz boli resetované a vaše používateľské meno je %1$@";

@@ -3979,7 +3979,11 @@ public class RegistrationCoordinatorImpl: RegistrationCoordinator {
     // MARK: - Permissions
 
     private func requiresSystemPermissions() -> Guarantee<Bool> {
-        return deps.pushRegistrationManager.needsNotificationAuthorization()
+        let notifications = deps.pushRegistrationManager.needsNotificationAuthorization()
+        return Guarantee.when(fulfilled: [notifications])
+            .map { results in
+                return results.allSatisfy({ $0 })
+            }
             .recover { _ in return .value(true) }
     }
 

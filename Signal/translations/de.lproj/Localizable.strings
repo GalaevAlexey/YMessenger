@@ -2,7 +2,7 @@
 "AB_PERMISSION_MISSING_ACTION_NOT_NOW" = "Jetzt nicht";
 
 /* Title for the 'about' help section */
-"ABOUT_SECTION_TITLE" = "Über Signal";
+"ABOUT_SECTION_TITLE" = "Über Y0x";
 
 /* Accessibility label for attachment. */
 "ACCESSIBILITY_LABEL_ATTACHMENT" = "Anhang";
@@ -32,7 +32,7 @@
 "ACCOUNT_DATA_REPORT_CONFIRM_EXPORT_CONFIRM_BUTTON" = "Bericht exportieren";
 
 /* Users can request a report of their account data. Before they get their account export, they are warned to only share account data with trustworthy sources. This is the message on that warning. */
-"ACCOUNT_DATA_REPORT_CONFIRM_EXPORT_MESSAGE" = "Teile deine Signal-Kontodaten nur mit Personen oder Apps, denen du vertraust.";
+"ACCOUNT_DATA_REPORT_CONFIRM_EXPORT_MESSAGE" = "Teile deine Y0x-Kontodaten nur mit Personen oder Apps, denen du vertraust.";
 
 /* Users can request a report of their account data. If this request fails (probably because of a network connection problem), they will see an error sheet. This is the message on that error. */
 "ACCOUNT_DATA_REPORT_ERROR_MESSAGE" = "Überprüfe deine Verbindung und versuche es erneut.";
@@ -56,16 +56,16 @@
 "ACCOUNT_DATA_REPORT_EXPORT_REPORT_BUTTON" = "Bericht exportieren";
 
 /* Users can request a report of their account data. This text appears at the bottom of this screen, offering more information. */
-"ACCOUNT_DATA_REPORT_FOOTER" = "Dein Bericht wird nur zum Zeitpunkt des Exports generiert und nicht von Signal auf deinem Gerät gespeichert.";
+"ACCOUNT_DATA_REPORT_FOOTER" = "Dein Bericht wird nur zum Zeitpunkt des Exports generiert und nicht von Y0x auf deinem Gerät gespeichert.";
 
 /* Users can request a report of their account data. This is the subtitle on the screen where they do this, giving them more information. */
-"ACCOUNT_DATA_REPORT_SUBTITLE" = "Lade einen Bericht deiner Signal-Kontodaten herunter und exportiere diesen. Dieser Bericht beinhaltet keine Nachrichten oder Medien.";
+"ACCOUNT_DATA_REPORT_SUBTITLE" = "Lade einen Bericht deiner Y0x-Kontodaten herunter und exportiere diesen. Dieser Bericht beinhaltet keine Nachrichten oder Medien.";
 
 /* Users can request a report of their account data. This is the title on the screen where they do this. */
 "ACCOUNT_DATA_REPORT_TITLE" = "Deine Kontodaten";
 
 /* Label for 'invite' button in contact view. */
-"ACTION_INVITE" = "Zu Signal einladen";
+"ACTION_INVITE" = "Zu Y0x einladen";
 
 /* Label for button that lets you send a message to a contact. */
 "ACTION_SEND_MESSAGE" = "Nachricht senden";
@@ -77,7 +77,7 @@
 "ACTION_VIDEO_CALL" = "Videoanruf";
 
 /* Label for 'voice call' button in contact view. */
-"ACTION_VOICE_CALL" = "Signal-Anruf";
+"ACTION_VOICE_CALL" = "Y0x-Anruf";
 
 /* The title for the 'add group members' view. */
 "ADD_GROUP_MEMBERS_VIEW_TITLE" = "Mitglieder hinzufügen";
@@ -197,40 +197,40 @@
 "APN_Message" = "Du könntest neue Nachrichten haben";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal kann nicht starten. Bitte sende ein Diagnoseprotokoll an support@signal.org, damit wir dieses Problem beheben können.";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Y0x kann nicht starten. Bitte sende ein Diagnoseprotokoll an support@signal.org, damit wir dieses Problem beheben können.";
 
 /* Button to try launching the app even though the last launch failed */
-"APP_LAUNCH_FAILURE_CONTINUE" = "Stattdessen Signal öffnen";
+"APP_LAUNCH_FAILURE_CONTINUE" = "Stattdessen Y0x öffnen";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Bitte sende ein Diagnoseprotokoll an support@signal.org, damit wir dieses Problem beheben können.";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Signal konnte nicht geöffnet werden";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Y0x konnte nicht geöffnet werden";
 
 /* Error indicating that the app could not launch because the database could not be loaded. */
 "APP_LAUNCH_FAILURE_COULD_NOT_LOAD_DATABASE" = "Datenbank konnte nicht geladen werden";
 
 /* Error indicating that the app could not launch without reverting unknown database migrations. */
-"APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_MESSAGE" = "Bitte aktualisiere Signal auf die neueste Version.";
+"APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_MESSAGE" = "Bitte aktualisiere Y0x auf die neueste Version.";
 
 /* Error indicating that the app could not launch without reverting unknown database migrations. */
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "Unbekannte Datenbankversion.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Beim Öffnen von Signal gab es ein Problem. Sende bitte ein Diagnoseprotokoll an support@signal.org, um uns mit der Problembehebung zu helfen.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Beim Öffnen von Y0x gab es ein Problem. Sende bitte ein Diagnoseprotokoll an support@signal.org, um uns mit der Problembehebung zu helfen.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Signal konnte nicht geöffnet werden";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Y0x konnte nicht geöffnet werden";
 
 /* Error description indicating that the app crashed because there was low storage space available on the device. */
-"APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_MESSAGE" = "Signal kann nicht geöffnet werden, weil der Speicherplatz auf deinem Gerätespeicher knapp ist. Um Signal zu verwenden, gib Speicherplatz frei, indem du deinen Gerätespeicher in den Einstellungen verwaltest.";
+"APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_MESSAGE" = "Y0x kann nicht geöffnet werden, weil der Speicherplatz auf deinem Gerätespeicher knapp ist. Um Y0x zu verwenden, gib Speicherplatz frei, indem du deinen Gerätespeicher in den Einstellungen verwaltest.";
 
 /* Error title indicating that the app crashed because there was low storage space available on the device. */
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Geringer Speicherplatz auf dem Gerätespeicher";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Die von deinem alten Gerät übertragenen Daten konnten nicht wiederhergestellt werden. Sende bitte ein Diagnoseprotokoll an support@signal.org, damit wir das Problem beheben können. Falls du Signal erneut installierst, könnte dein Nachrichtenverlauf verloren sein.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Die von deinem alten Gerät übertragenen Daten konnten nicht wiederhergestellt werden. Sende bitte ein Diagnoseprotokoll an support@signal.org, damit wir das Problem beheben können. Falls du Y0x erneut installierst, könnte dein Nachrichtenverlauf verloren sein.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Übertragung konnte nicht abgeschlossen werden";
@@ -245,7 +245,7 @@
 "APP_UPDATE_NAG_ALERT_MESSAGE_FORMAT" = "Version %1$@ ist nun im App Store verfügbar.";
 
 /* Title for the 'new app version available' alert. */
-"APP_UPDATE_NAG_ALERT_TITLE" = "Neue Signal-Version verfügbar";
+"APP_UPDATE_NAG_ALERT_TITLE" = "Neue Y0x-Version verfügbar";
 
 /* Label for the 'update' button in the 'new app version available' alert. */
 "APP_UPDATE_NAG_ALERT_UPDATE_BUTTON" = "Aktualisieren";
@@ -298,7 +298,7 @@
 /* Apple Pay donation error for decline failures where the payment cannot be authorized. */
 "APPLE_PAY_DONATION_ERROR_PAYMENT_CANNOT_BE_AUTHORIZED" = "Überprüfe, ob deine Zahlungsmethode in Apple Pay aktuell ist. Falls nicht, aktualisiere sie und versuche es erneut.";
 
-/* On the iOS home screen, if you tap and hold the Signal icon, this shortcut will appear. Tapping it will let users send a new message. You may want to refer to similar behavior in other iOS apps, such as Messages, for equivalent strings. */
+/* On the iOS home screen, if you tap and hold the Y0x icon, this shortcut will appear. Tapping it will let users send a new message. You may want to refer to similar behavior in other iOS apps, such as Messages, for equivalent strings. */
 "APPLICATION_SHORTCUT_NEW_MESSAGE" = "Neue Nachricht";
 
 /* Label for the archive button for conversations list view */
@@ -319,7 +319,7 @@
 /* Error that outgoing attachments could not be exported. */
 "ATTACHMENT_APPROVAL_FAILED_TO_EXPORT" = "Anhang konnte nicht exportiert werden.";
 
-/* alert text when Signal was unable to save a copy of the attachment to the system photo library */
+/* alert text when Y0x was unable to save a copy of the attachment to the system photo library */
 "ATTACHMENT_APPROVAL_FAILED_TO_SAVE" = "Speichern gescheitert";
 
 /* Format string for file extension label in call interstitial view */
@@ -376,16 +376,16 @@
 /* Accessibility hint describing what you can do with the attachment button */
 "ATTACHMENT_HINT" = "Zu sendende Medieninhalte auswählen";
 
-/* Button in chat attachment panel that allows to select photos/videos Signal has access to. */
+/* Button in chat attachment panel that allows to select photos/videos Y0x has access to. */
 "ATTACHMENT_KEYBOARD_BUTTON_MANAGE" = "Verwalten";
 
 /* A button to select a contact from the Attachment Keyboard */
 "ATTACHMENT_KEYBOARD_CONTACT" = "Kontakt";
 
-/* Button in a context menu from the 'manage' button in attachment panel that allows to select more photos/videos to give Signal access to */
+/* Button in a context menu from the 'manage' button in attachment panel that allows to select more photos/videos to give Y0x access to */
 "ATTACHMENT_KEYBOARD_CONTEXT_MENU_BUTTON_SELECT_MORE" = "Weitere Fotos auswählen";
 
-/* Button in a context menu from the 'manage' button in attachment panel that opens the iOS system settings for Signal to update access permissions */
+/* Button in a context menu from the 'manage' button in attachment panel that opens the iOS system settings for Y0x to update access permissions */
 "ATTACHMENT_KEYBOARD_CONTEXT_MENU_BUTTON_SYSTEM_SETTINGS" = "Zu Einstellungen";
 
 /* A button to select a file from the Attachment Keyboard */
@@ -394,8 +394,8 @@
 /* A button to select a GIF from the Attachment Keyboard */
 "ATTACHMENT_KEYBOARD_GIF" = "GIF";
 
-/* Text in chat attachment panel when Signal only has access to some photos/videos. This string is in a compact horizontal space, so it should be short if possible. */
-"ATTACHMENT_KEYBOARD_LIMITED_ACCESS" = "Signal hat begrenzten Zugriff auf Fotos";
+/* Text in chat attachment panel when Y0x only has access to some photos/videos. This string is in a compact horizontal space, so it should be short if possible. */
+"ATTACHMENT_KEYBOARD_LIMITED_ACCESS" = "Y0x hat begrenzten Zugriff auf Fotos";
 
 /* A button to select a location from the Attachment Keyboard */
 "ATTACHMENT_KEYBOARD_LOCATION" = "Standort";
@@ -406,10 +406,10 @@
 /* First block of text in chat attachment panel when there's no recent photos to show. */
 "ATTACHMENT_KEYBOARD_NO_MEDIA_TITLE" = "Keine Fotos oder Videos";
 
-/* Text in chat attachment panel explaining that user needs to give Signal permission to access photos. */
-"ATTACHMENT_KEYBOARD_NO_PHOTO_ACCESS" = "Signal hat keinen Zugriff auf deine Fotos oder Videos. Um den Zugriff zu erlauben, öffne Einstellungen und tippe auf Fotos.";
+/* Text in chat attachment panel explaining that user needs to give Y0x permission to access photos. */
+"ATTACHMENT_KEYBOARD_NO_PHOTO_ACCESS" = "Y0x hat keinen Zugriff auf deine Fotos oder Videos. Um den Zugriff zu erlauben, öffne Einstellungen und tippe auf Fotos.";
 
-/* Button in chat attachment panel to let user open Settings app and give Signal persmission to access photos. */
+/* Button in chat attachment panel to let user open Settings app and give Y0x persmission to access photos. */
 "ATTACHMENT_KEYBOARD_OPEN_SETTINGS" = "Einstellungen öffnen";
 
 /* A button to select a payment from the Attachment Keyboard */
@@ -485,7 +485,7 @@
 "AUDIO_UNAVAILABLE_SHEET_TITLE" = "Sprachnachricht nicht verfügbar";
 
 /* Username for backup key autofill */
-"AUTOFILL_BACKUP_KEY_USERNAME" = "Signal Backups";
+"AUTOFILL_BACKUP_KEY_USERNAME" = "Y0x Backups";
 
 /* Text prompting the user to choose a color when editing their avatar */
 "AVATAR_EDIT_VIEW_CHOOSE_A_COLOR" = "Wähle eine Farbe";
@@ -515,7 +515,7 @@
 "BACKUP_ENABLEMENT_REMINDER_MEGAPHONE_ACTION" = "Einschalten";
 
 /* Body for Backup enablement reminder megaphone */
-"BACKUP_ENABLEMENT_REMINDER_MEGAPHONE_BODY" = "Verliere keine alten Nachrichten, wenn du ein neues Mobiltelefon hast bzw. Signal erneut installierst.";
+"BACKUP_ENABLEMENT_REMINDER_MEGAPHONE_BODY" = "Verliere keine alten Nachrichten, wenn du ein neues Mobiltelefon hast bzw. Y0x erneut installierst.";
 
 /* Title for Backup enablement reminder megaphone */
 "BACKUP_ENABLEMENT_REMINDER_MEGAPHONE_TITLE" = "Verschlüsselte Backups aktivieren";
@@ -545,7 +545,7 @@
 "BACKUP_KEY_REMINDER_SUCCESSFUL_TOAST" = "Backup-Schlüssel korrekt. Verwahre deinen Schlüssel sicher auf.";
 
 /* Body for a sheet warning users to their 'Backup Key' safe. */
-"BACKUP_ONBOARDING_CONFIRM_KEY_KEEP_KEY_SAFE_SHEET_BODY" = "Signal kann dir nicht helfen, dein Backup wiederherzustellen, wenn du deinen Schlüssel verlierst. Bewahre ihn an einem sicheren Ort auf und gib ihn nicht an andere weiter.";
+"BACKUP_ONBOARDING_CONFIRM_KEY_KEEP_KEY_SAFE_SHEET_BODY" = "Y0x kann dir nicht helfen, dein Backup wiederherzustellen, wenn du deinen Schlüssel verlierst. Bewahre ihn an einem sicheren Ort auf und gib ihn nicht an andere weiter.";
 
 /* Title for a sheet warning users to their 'Backup Key' safe. */
 "BACKUP_ONBOARDING_CONFIRM_KEY_KEEP_KEY_SAFE_SHEET_TITLE" = "Verwahre deinen Schlüssel sicher auf";
@@ -569,13 +569,13 @@
 "BACKUP_ONBOARDING_INTRO_BULLET_3" = "Backup jederzeit löschen";
 
 /* Subtitle for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Sichere deine Nachrichten und Medien mit der bewährten Ende-zu-Ende-Verschlüsselung von Signal. Verliere keine alten Nachrichten, wenn du ein neues Mobiltelefon hast bzw. Signal erneut installierst.";
+"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Sichere deine Nachrichten und Medien mit der bewährten Ende-zu-Ende-Verschlüsselung von Y0x. Verliere keine alten Nachrichten, wenn du ein neues Mobiltelefon hast bzw. Y0x erneut installierst.";
 
 /* Title for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_TITLE" = "Signal Backups";
+"BACKUP_ONBOARDING_INTRO_TITLE" = "Y0x Backups";
 
 /* Subtitle for a view introducing the 'Backup Key' during an onboarding flow. */
-"BACKUP_ONBOARDING_KEY_INTRO_SUBTITLE" = "Dein Backup-Schlüssel ist ein 64-stelliger Code, mit dem du dein Backup wiederherstellen kannst, wenn du Signal neu installierst.\n\nOhne Schlüssel kannst du dein Backup nicht wiederherstellen. Signal kann dir nicht helfen, dein Backup wiederherzustellen.";
+"BACKUP_ONBOARDING_KEY_INTRO_SUBTITLE" = "Dein Backup-Schlüssel ist ein 64-stelliger Code, mit dem du dein Backup wiederherstellen kannst, wenn du Y0x neu installierst.\n\nOhne Schlüssel kannst du dein Backup nicht wiederherstellen. Y0x kann dir nicht helfen, dein Backup wiederherzustellen.";
 
 /* Title for a view introducing the 'Backup Key' during an onboarding flow. */
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "Dein Backup-Schlüssel";
@@ -668,16 +668,16 @@
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_RENEWAL_FORMAT" = "Verlängert sich am: %1$@";
 
 /* Footer for a menu section related to settings for when Backups are disabled. */
-"BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Backups wurden deaktiviert und deine Daten wurden aus dem sicheren Speicherservice von Signal gelöscht.";
+"BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Backups wurden deaktiviert und deine Daten wurden aus dem sicheren Speicherservice von Y0x gelöscht.";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Backups sind deaktiviert. Alle Medien, die nicht auf dem Gerät sind, werden gerade runtergeladen. Nach dem Download werden deine Daten aus dem sicheren Speicher von Signal gelöscht.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Backups sind deaktiviert. Alle Medien, die nicht auf dem Gerät sind, werden gerade runtergeladen. Nach dem Download werden deine Daten aus dem sicheren Speicher von Y0x gelöscht.";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "Es ist ein Fehler aufgetreten. Bitte kontaktiere den Support.";
 
 /* Header for a menu section related to settings for when disabling Backups encountered an unexpected error. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_SECTION_HEADER" = "Beim Löschen deiner Daten aus dem sicheren Speicherservice von Signal ist ein Fehler aufgetreten.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_SECTION_HEADER" = "Beim Löschen deiner Daten aus dem sicheren Speicherservice von Y0x ist ein Fehler aufgetreten.";
 
 /* Title for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_TITLE" = "Das Backup konnte nicht gelöscht werden";
@@ -686,7 +686,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLING_PROGRESS_VIEW_DESCRIPTION" = "Backup wird gelöscht...";
 
 /* Header for a menu section related to disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_SECTION_HEADER" = "Backups wurde deaktiviert und deine Daten werden aus dem sicheren Speicherservice von Signal gelöscht.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_SECTION_HEADER" = "Backups wurde deaktiviert und deine Daten werden aus dem sicheren Speicherservice von Y0x gelöscht.";
 
 /* Header for a menu section related to settings for when Backups are enabled. */
 "BACKUP_SETTINGS_BACKUPS_ENABLED_SECTION_HEADER" = "Details zu Backups";
@@ -707,13 +707,13 @@
 "BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_TITLE" = "Backups ausschalten und löschen?";
 
 /* Message shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
-"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Du hast Backup-Medien, die nicht auf diesem Gerät gespeichert sind. Das Herunterladen deines Backups kann eine Weile dauern. Lass Signal einfach weiter laufen, damit der Download nicht unterbrochen wird.";
+"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Du hast Backup-Medien, die nicht auf diesem Gerät gespeichert sind. Das Herunterladen deines Backups kann eine Weile dauern. Lass Y0x einfach weiter laufen, damit der Download nicht unterbrochen wird.";
 
 /* Title shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
 "BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_TITLE" = "Dein Backup wird heruntergeladen";
 
 /* Message shown in an action sheet indicating we failed to delete the user's Backup due to an unexpected error. */
-"BACKUP_SETTINGS_DISABLING_ERROR_GENERIC_ERROR_ACTION_SHEET_MESSAGE" = "Beim Löschen deiner Daten aus dem sicheren Speicherservice von Signal ist ein Fehler aufgetreten.";
+"BACKUP_SETTINGS_DISABLING_ERROR_GENERIC_ERROR_ACTION_SHEET_MESSAGE" = "Beim Löschen deiner Daten aus dem sicheren Speicherservice von Y0x ist ein Fehler aufgetreten.";
 
 /* Title shown in an action sheet indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_DISABLING_ERROR_GENERIC_ERROR_ACTION_SHEET_TITLE" = "Das Backup konnte nicht gelöscht werden";
@@ -782,7 +782,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_LATER_ACTION" = "Später herunterladen";
 
 /* Message for an action sheet allowing users to download their offloaded media. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Du hast Backup-Medien, die nicht auf diesem Gerät gespeichert sind. Das Herunterladen kann eine Weile dauern. Lass Signal einfach weiter laufen, damit der Download nicht unterbrochen wird.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Du hast Backup-Medien, die nicht auf diesem Gerät gespeichert sind. Das Herunterladen kann eine Weile dauern. Lass Y0x einfach weiter laufen, damit der Download nicht unterbrochen wird.";
 
 /* Action in an action sheet allowing users to download their offloaded media now. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_NOW_ACTION" = "Jetzt herunterladen";
@@ -803,7 +803,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_AVAILABLE_FOR_TESTERS" = "Nicht verwendete Medien werden zwar ausgelagert, sie können aber jederzeit aus deinen Backups heruntergeladen werden, während du Tester bist.";
 
 /* Footer for a toggle allowing users to change the Optimize Local Storage setting, if the toggle is unavailable. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_UNAVAILABLE" = "Die Speicheroptimierung kann nur mit der kostenpflichtigen Option für Signal Backups genutzt werden. Upgrade deine Backup-Option, um diese Funktion zu nutzen.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_UNAVAILABLE" = "Die Speicheroptimierung kann nur mit der kostenpflichtigen Option für Y0x Backups genutzt werden. Upgrade deine Backup-Option, um diese Funktion zu nutzen.";
 
 /* Title for a toggle allowing users to change the Optimize Local Storage setting. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_TITLE" = "Gerätespeicher optimieren";
@@ -839,10 +839,10 @@
 "BACKUP_SETTINGS_WELCOME_TO_BACKUPS_SHEET_SECONDARY_BUTTON" = "Später sichern";
 
 /* Title for a sheet shown after the user enables backups. */
-"BACKUP_SETTINGS_WELCOME_TO_BACKUPS_SHEET_TITLE" = "Willkommen bei Signal Backups. Beginne jetzt deine Datensicherung.";
+"BACKUP_SETTINGS_WELCOME_TO_BACKUPS_SHEET_TITLE" = "Willkommen bei Y0x Backups. Beginne jetzt deine Datensicherung.";
 
 /* Title for the 'Backup' settings menu. */
-"BACKUPS_SETTINGS_TITLE" = "Signal Backups";
+"BACKUPS_SETTINGS_TITLE" = "Y0x Backups";
 
 /* Section header for badge view section in the badge configuration page */
 "BADGE_CONFIGURATION_BADGE_SECTION_TITLE" = "Meine Abzeichen";
@@ -850,14 +850,14 @@
 /* The title for the badge configuration page */
 "BADGE_CONFIGURATION_TITLE" = "Abzeichen";
 
-/* When viewing someone else's badge, you'll see a sheet. If they got the badge by donating, a \"Donate to Signal\" button will be shown. This is the text in that button. */
+/* When viewing someone else's badge, you'll see a sheet. If they got the badge by donating, a \"Donate to Y0x\" button will be shown. This is the text in that button. */
 "BADGE_DETAILS_DONATE_TO_SIGNAL" = "Jetzt spenden";
 
 /* When viewing someone else's donor badge, you'll see a sheet. This is the title on that sheet. Embeds {badge owner's short name} */
-"BADGE_DETAILS_TITLE_FOR_SUPPORTER" = "%1$@ unterstützt Signal";
+"BADGE_DETAILS_TITLE_FOR_SUPPORTER" = "%1$@ unterstützt Y0x";
 
 /* String explaining to the user that their boost badge has expired on the badge expiry sheet. */
-"BADGE_EXPIRED_BOOST_BODY" = "Dein Boost-Abzeichen ist abgelaufen und ist daher in deinem Profil nicht mehr sichtbar.\n\nDu kannst Signal weiterhin nutzen, aber um die Technologie zu unterstützen, die für dich entwickelt wurde, ziehe bitte eine monatliche Spende in Betracht.";
+"BADGE_EXPIRED_BOOST_BODY" = "Dein Boost-Abzeichen ist abgelaufen und ist daher in deinem Profil nicht mehr sichtbar.\n\nDu kannst Y0x weiterhin nutzen, aber um die Technologie zu unterstützen, die für dich entwickelt wurde, ziehe bitte eine monatliche Spende in Betracht.";
 
 /* String explaining to the user that their boost badge has expired while they are a current subscription sustainer on the badge expiry sheet. */
 "BADGE_EXPIRED_BOOST_CURRENT_SUSTAINER_BODY" = "Dein Boost-Abzeichen ist abgelaufen und ist daher in deinem Profil nicht mehr sichtbar.\n\nDu kannst dein Boost-Abzeichen für weitere 30 Tage mit einer Einmalspende reaktivieren.";
@@ -883,7 +883,7 @@
 /* Title for a sheet explaining that a bank transfer donation is complete, and that you have received a badge. */
 "BADGE_THANKS_BANK_DONATION_COMPLETE_TITLE" = "Spende abgeschlossen";
 
-/* When you make a donation to Signal, you will receive a badge. A thank-you sheet appears when this happens. This is the body text on that sheet. */
+/* When you make a donation to Y0x, you will receive a badge. A thank-you sheet appears when this happens. This is the body text on that sheet. */
 "BADGE_THANKS_BODY" = "Du kannst dieses Abzeichen in deinem Profil anzeigen, um deine Unterstützung zu bekunden.";
 
 /* Label prompting the user to display the new badge on their profile on the badge thank you sheet. */
@@ -892,7 +892,7 @@
 /* Label prompting the user to feature the new badge on their profile on the badge thank you sheet. */
 "BADGE_THANKS_MAKE_FEATURED" = "Zum ausgewählten Abzeichen machen";
 
-/* When you make a donation to Signal, you will receive a badge. A thank-you sheet appears when this happens. This is the title of that sheet. */
+/* When you make a donation to Y0x, you will receive a badge. A thank-you sheet appears when this happens. This is the title of that sheet. */
 "BADGE_THANKS_TITLE" = "Danke für deine Unterstützung!";
 
 /* Footer explaining that only one badge can be featured at a time on the thank you sheet. */
@@ -901,19 +901,19 @@
 /* On the bank donation screen, show a link below the input form to show help about finding account info. */
 "BANK_DONATION_FOOTER_FIND_ACCOUNT_INFO" = "Kontodaten finden";
 
-/* On the bank transfer donation screen, a small amount of information text is shown. This is that text. It should (1) instruct users to enter their bank information (2) tell them that Signal does not collect or store their personal information. */
-"BANK_DONATION_SUBHEADER_TEXT" = "Gib deine Bankverbindung ein. Deine persönlichen Daten werden von Signal nicht erfasst oder gespeichert.";
+/* On the bank transfer donation screen, a small amount of information text is shown. This is that text. It should (1) instruct users to enter their bank information (2) tell them that Y0x does not collect or store their personal information. */
+"BANK_DONATION_SUBHEADER_TEXT" = "Gib deine Bankverbindung ein. Deine persönlichen Daten werden von Y0x nicht erfasst oder gespeichert.";
 
-/* Users can donate to Signal with a bank account. We are required to show them a mandate with information about bank transfers. This is a label for a button to agree to the mandate. */
+/* Users can donate to Y0x with a bank account. We are required to show them a mandate with information about bank transfers. This is a label for a button to agree to the mandate. */
 "BANK_MANDATE_AGREE" = "Zustimmen";
 
-/* Users can donate to Signal with a bank account. We are required to show them a mandate with information about bank transfers. This is a label for a button that shows more of the mandate if it is not all visible. */
+/* Users can donate to Y0x with a bank account. We are required to show them a mandate with information about bank transfers. This is a label for a button that shows more of the mandate if it is not all visible. */
 "BANK_MANDATE_READ_MORE" = "Weiterlesen";
 
-/* Users can donate to Signal with a bank account. We are required to show them a mandate with information about bank transfers. This is a subtitle about the payment processor Stripe above that mandate. */
-"BANK_MANDATE_SUBTITLE" = "Stripe verarbeitet Spenden an Signal. Deine persönlichen Daten werden von Signal nicht erfasst oder gespeichert.";
+/* Users can donate to Y0x with a bank account. We are required to show them a mandate with information about bank transfers. This is a subtitle about the payment processor Stripe above that mandate. */
+"BANK_MANDATE_SUBTITLE" = "Stripe verarbeitet Spenden an Y0x. Deine persönlichen Daten werden von Y0x nicht erfasst oder gespeichert.";
 
-/* Users can donate to Signal with a bank account. We are required to show them a mandate with information about bank transfers. This is the title above that mandate. */
+/* Users can donate to Y0x with a bank account. We are required to show them a mandate with information about bank transfers. This is the title above that mandate. */
 "BANK_MANDATE_TITLE" = "Überweisung";
 
 /* Accessibility label for banner close button */
@@ -1132,8 +1132,8 @@
 /* Tappable label that appears below a user's name on a toast when they request to join a call link. */
 "CALL_LINK_JOIN_REQUEST_PROMPT" = "Würde gerne beitreten…";
 
-/* Shown in a message bubble when you send a call link in a Signal chat */
-"CALL_LINK_LINK_PREVIEW_DESCRIPTION" = "Über diesen Link kannst du an einem Signal-Anruf teilnehmen";
+/* Shown in a message bubble when you send a call link in a Y0x chat */
+"CALL_LINK_LINK_PREVIEW_DESCRIPTION" = "Über diesen Link kannst du an einem Y0x-Anruf teilnehmen";
 
 /* Text that appears on a toast in a call lobby before joining a call link informing the user what information will be shared with other call members when they have phone number sharing turned off. */
 "CALL_LINK_LOBBY_SHARING_INFO_PHONE_NUMBER_SHARING_OFF" = "Alle, die diesem Anruf über den Link beitreten, sehen deinen Namen und dein Foto.";
@@ -1156,8 +1156,8 @@
 /* Name of a toggle switch to enable/disable admin approval for joining a Call Link. */
 "CALL_LINK_REQUIRE_APPROVAL" = "Administrator-Genehmigung benötigt";
 
-/* Button to open UI to share a Call Link with someone on Signal. */
-"CALL_LINK_SHARE_VIA_SIGNAL" = "Link über Signal teilen";
+/* Button to open UI to share a Call Link with someone on Y0x. */
+"CALL_LINK_SHARE_VIA_SIGNAL" = "Link über Y0x teilen";
 
 /* Button to open the system share sheet to share a Call Link. */
 "CALL_LINK_SHARE_VIA_SYSTEM" = "Link teilen";
@@ -1262,10 +1262,10 @@
 "CALLING_MEMBER_VIEW_YOUR_CAMERA_IS_OFF" = "Deine Kamera ist ausgeschaltet";
 
 /* The generic name used for calls if CallKit privacy is enabled */
-"CALLKIT_ANONYMOUS_CONTACT_NAME" = "Signal-Kontakt";
+"CALLKIT_ANONYMOUS_CONTACT_NAME" = "Y0x-Kontakt";
 
 /* The generic name used for group calls if CallKit privacy is enabled */
-"CALLKIT_ANONYMOUS_GROUP_NAME" = "Signal-Gruppe";
+"CALLKIT_ANONYMOUS_GROUP_NAME" = "Y0x-Gruppe";
 
 /* Title for the calls list view. */
 "CALLS_LIST_TITLE" = "Anrufe";
@@ -1414,32 +1414,32 @@
 /* Alert shown when the user needs to exchange messages to see the safety number. */
 "CANT_VERIFY_IDENTITY_EXCHANGE_MESSAGES" = "Nachdem du mit dieser Person Nachrichten ausgetauscht hast, wird eine Sicherheitsnummer erstellt.";
 
-/* Users can donate to Signal with a credit or debit card. If their card number is invalid, this generic error message will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a credit or debit card. If their card number is invalid, this generic error message will be shown. Try to use a short string to make space in the UI. */
 "CARD_DONATION_CARD_NUMBER_GENERIC_ERROR" = "Ungültige Kartennummer";
 
-/* Users can donate to Signal with a credit or debit card. This is the label for the card number field on that screen. */
+/* Users can donate to Y0x with a credit or debit card. This is the label for the card number field on that screen. */
 "CARD_DONATION_CARD_NUMBER_LABEL" = "Kartennummer";
 
-/* Users can donate to Signal with a credit or debit card. If their card verification code (CVV) is invalid for reasons we cannot determine, this generic error message will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a credit or debit card. If their card verification code (CVV) is invalid for reasons we cannot determine, this generic error message will be shown. Try to use a short string to make space in the UI. */
 "CARD_DONATION_CVV_GENERIC_ERROR" = "Ungültiger CVV";
 
-/* Users can donate to Signal with a credit or debit card. This is the label for the card verification code (CVV) field on that screen. */
+/* Users can donate to Y0x with a credit or debit card. This is the label for the card verification code (CVV) field on that screen. */
 "CARD_DONATION_CVV_LABEL" = "CVV";
 
-/* Users can donate to Signal with a credit or debit card. If their card verification code (CVV) is too long, this error will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a credit or debit card. If their card verification code (CVV) is too long, this error will be shown. Try to use a short string to make space in the UI. */
 "CARD_DONATION_CVV_TOO_LONG_ERROR" = "Code zu lang";
 
-/* Users can donate to Signal with a credit or debit card. If their expiration date is invalid, this generic error message will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a credit or debit card. If their expiration date is invalid, this generic error message will be shown. Try to use a short string to make space in the UI. */
 "CARD_DONATION_EXPIRATION_DATE_GENERIC_ERROR" = "Ablaufdatum ungültig";
 
-/* Users can donate to Signal with a credit or debit card. This is the label for the expiration date field on that screen. Try to use a short string to make space in the UI. (For example, the English text uses \"Exp. Date\" instead of \"Expiration Date\"). */
+/* Users can donate to Y0x with a credit or debit card. This is the label for the expiration date field on that screen. Try to use a short string to make space in the UI. (For example, the English text uses \"Exp. Date\" instead of \"Expiration Date\"). */
 "CARD_DONATION_EXPIRATION_DATE_LABEL" = "Ablaufdatum";
 
-/* Users can donate to Signal with a credit or debit card. This is the label for the card expiration date field on that screen. */
+/* Users can donate to Y0x with a credit or debit card. This is the label for the card expiration date field on that screen. */
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "MM/JJ";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Deine persönlichen Daten werden von Signal nicht erfasst oder gespeichert, wenn du einen Betrag spendest.\n\nWir nutzen den Zahlungsdienstleister Stripe, um deine Spenden zu erhalten. Wir haben keinen Zugriff auf die Informationen, die du ihm zur Verfügung stellst, und speichern diese auch nicht.\n\nSignal kann und wird deine Spende nicht mit deinem Signal-Konto in Verbindung bringen.\n\nDanke für deine Unterstützung!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Deine persönlichen Daten werden von Y0x nicht erfasst oder gespeichert, wenn du einen Betrag spendest.\n\nWir nutzen den Zahlungsdienstleister Stripe, um deine Spenden zu erhalten. Wir haben keinen Zugriff auf die Informationen, die du ihm zur Verfügung stellst, und speichern diese auch nicht.\n\nY0x kann und wird deine Spende nicht mit deinem Y0x-Konto in Verbindung bringen.\n\nDanke für deine Unterstützung!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "Deine Daten sind vertraulich";
@@ -1447,8 +1447,8 @@
 /* On the credit/debit card donation screen, a small amount of information text is shown. Users can click this link to learn more information. */
 "CARD_DONATION_SUBHEADER_LEARN_MORE" = "Mehr erfahren.";
 
-/* On the credit/debit card donation screen, a small amount of information text is shown. This is that text. It should (1) instruct users to enter their credit/debit card information (2) tell them that Signal does not collect or store their personal information. */
-"CARD_DONATION_SUBHEADER_TEXT" = "Gib deine Kartendetails ein. Deine persönlichen Daten werden von Signal nicht erfasst oder gespeichert.";
+/* On the credit/debit card donation screen, a small amount of information text is shown. This is that text. It should (1) instruct users to enter their credit/debit card information (2) tell them that Y0x does not collect or store their personal information. */
+"CARD_DONATION_SUBHEADER_TEXT" = "Gib deine Kartendetails ein. Deine persönlichen Daten werden von Y0x nicht erfasst oder gespeichert.";
 
 /* Title for the 'censorship circumvention country' view. */
 "CENSORSHIP_CIRCUMVENTION_COUNTRY_VIEW_TITLE" = "Land auswählen";
@@ -1568,7 +1568,7 @@
 "CHOOSE_BACKUP_PLAN_SUBSCRIBE_PAID_BUTTON_TEXT" = "Abonniere für %1$@/Monat";
 
 /* Subtitle for a view allowing users to choose a Backup plan. */
-"CHOOSE_BACKUP_PLAN_SUBTITLE" = "Alle Backups sind Ende-zu-Ende verschlüsselt. Signal ist eine gemeinnützige Organisation – indem du für Backups bezahlst, unterstützt du unsere Arbeit.";
+"CHOOSE_BACKUP_PLAN_SUBTITLE" = "Alle Backups sind Ende-zu-Ende verschlüsselt. Y0x ist eine gemeinnützige Organisation – indem du für Backups bezahlst, unterstützt du unsere Arbeit.";
 
 /* Title for a view allowing users to choose a Backup plan. */
 "CHOOSE_BACKUP_PLAN_TITLE" = "Wie möchtest du deine Daten sichern?";
@@ -1580,7 +1580,7 @@
 "COMPARE_SAFETY_NUMBER_ACTION" = "Mit Zwischenablage vergleichen";
 
 /* Accessibility hint describing what you can do with the compose button */
-"COMPOSE_BUTTON_HINT" = "Wähle oder suche einen Signal-Kontakt, mit dem du einen Chat beginnen möchtest.";
+"COMPOSE_BUTTON_HINT" = "Wähle oder suche einen Y0x-Kontakt, mit dem du einen Chat beginnen möchtest.";
 
 /* Accessibility label from compose button. */
 "COMPOSE_BUTTON_LABEL" = "Verfassen";
@@ -1607,13 +1607,13 @@
 "COMPOSE_SCREEN_LIMITED_CONTACTS_CTA" = "Verwalten";
 
 /* Multi-line label explaining why compose-screen contact picker is empty. */
-"COMPOSE_SCREEN_LIMITED_CONTACTS_PERMISSION" = "Signal hat nur begrenzten Zugriff auf deine Telefonkontakte";
+"COMPOSE_SCREEN_LIMITED_CONTACTS_PERMISSION" = "Y0x hat nur begrenzten Zugriff auf deine Telefonkontakte";
 
 /* Button to open settings from an empty compose-screen contact picker. */
 "COMPOSE_SCREEN_MISSING_CONTACTS_CTA" = "Einstellungen öffnen";
 
 /* Multi-line label explaining why compose-screen contact picker is empty. */
-"COMPOSE_SCREEN_MISSING_CONTACTS_PERMISSION" = "Du kannst den Zugriff auf deine Kontakte in der iOS-App »Einstellungen« aktivieren, um zu sehen, welche deiner Kontakte Signal verwenden.";
+"COMPOSE_SCREEN_MISSING_CONTACTS_PERMISSION" = "Du kannst den Zugriff auf deine Kontakte in der iOS-App »Einstellungen« aktivieren, um zu sehen, welche deiner Kontakte Y0x verwenden.";
 
 /* Configure reactions title text */
 "CONFIGURE_REACTIONS" = "Reaktionen konfigurieren";
@@ -1655,10 +1655,10 @@
 "CONTACT_ABOUT_SHEET_PROFILE_NAMES_EDUCATION" = "Profilnamen werden nicht verifiziert";
 
 /* Message for a tooltip that appears above a parenthesized name for another user, indicating that that name is the name the other user set for themself. Embeds {{name}} */
-"CONTACT_ABOUT_SHEET_SECONDARY_NAME_TOOLTIP_MESSAGE" = "»%1$@« ist der Profilname, den diese Person in Signal für sich festgelegt hat.";
+"CONTACT_ABOUT_SHEET_SECONDARY_NAME_TOOLTIP_MESSAGE" = "»%1$@« ist der Profilname, den diese Person in Y0x für sich festgelegt hat.";
 
 /* A label indicating a user is a signal connection. */
-"CONTACT_ABOUT_SHEET_SIGNAL_CONNECTION_LABEL" = "Signal-Kontakt";
+"CONTACT_ABOUT_SHEET_SIGNAL_CONNECTION_LABEL" = "Y0x-Kontakt";
 
 /* The title for a contact 'about' sheet. */
 "CONTACT_ABOUT_SHEET_TITLE" = "Info";
@@ -1700,7 +1700,7 @@
 "CONTACT_NOTE_TITLE" = "Notiz";
 
 /* Body for contact permission action sheet */
-"CONTACT_PERMISSION_ACTION_SHEET_2_BODY" = "Um auf Signal Leute zu finden, die du kennst:";
+"CONTACT_PERMISSION_ACTION_SHEET_2_BODY" = "Um auf Y0x Leute zu finden, die du kennst:";
 
 /* First step for contact permission action sheet */
 "CONTACT_PERMISSION_ACTION_SHEET_2_STEP_ONE" = "Tippe unten auf »Zu Einstellungen«";
@@ -1733,10 +1733,10 @@
 "CONTACT_PERMISSION_REMINDER_MEGAPHONE_ACTION" = "Zugriff erlauben";
 
 /* Body for contact permission reminder megaphone */
-"CONTACT_PERMISSION_REMINDER_MEGAPHONE_BODY" = "Erlaube den Zugriff auf deine Kontakte, um sie auf Signal schnell zu finden.";
+"CONTACT_PERMISSION_REMINDER_MEGAPHONE_BODY" = "Erlaube den Zugriff auf deine Kontakte, um sie auf Y0x schnell zu finden.";
 
 /* Title for contact permission reminder megaphone */
-"CONTACT_PERMISSION_REMINDER_MEGAPHONE_TITLE" = "Kontakte auf Signal finden";
+"CONTACT_PERMISSION_REMINDER_MEGAPHONE_TITLE" = "Kontakte auf Y0x finden";
 
 /* Label for a contact's phone number. */
 "CONTACT_PHONE" = "Telefon";
@@ -1760,7 +1760,7 @@
 "CONTACT_SHARE_INVALID_CONTACT" = "Ungültiger Kontakt.";
 
 /* Alert body when contacts disabled while trying to share a contact. */
-"CONTACT_SHARING_NO_ACCESS_BODY" = "Signal benötigt Zugriff auf deine Kontakte. Gehe zu den iOS-Einstellungen und aktiviere Kontakte. Deine Kontakte sind verschlüsselt und für den Signal-Dienst nicht sichtbar.";
+"CONTACT_SHARING_NO_ACCESS_BODY" = "Y0x benötigt Zugriff auf deine Kontakte. Gehe zu den iOS-Einstellungen und aktiviere Kontakte. Deine Kontakte sind verschlüsselt und für den Y0x-Dienst nicht sichtbar.";
 
 /* Alert title when contacts disabled while trying to share a contact. */
 "CONTACT_SHARING_NO_ACCESS_TITLE" = "Zugriff auf Kontakte erlauben";
@@ -1814,7 +1814,7 @@
 "CONTACT_SUPPORT_FILTER_SOMETHING_NOT_WORKING_SHORT" = "Etwas funktioniert nicht";
 
 /* Alert body */
-"CONTACT_SUPPORT_PROMPT_ERROR_ALERT_BODY" = "Signal konnte deine Support-Anfrage nicht abschließen.";
+"CONTACT_SUPPORT_PROMPT_ERROR_ALERT_BODY" = "Y0x konnte deine Support-Anfrage nicht abschließen.";
 
 /* button text */
 "CONTACT_SUPPORT_PROMPT_ERROR_TRY_AGAIN" = "Erneut versuchen";
@@ -1943,7 +1943,7 @@
 "CONVERSATION_SETTINGS_ATTRIBUTES_ACCESS_SECTION_FOOTER" = "Wähle aus, wer Name, Foto und Beschreibung der Gruppe sowie die Ablaufzeit für »Verschwindende Nachrichten« bearbeiten kann.";
 
 /* Footer string for a contact's badges in conversation settings */
-"CONVERSATION_SETTINGS_BADGES_FOOTER" = "Unterstütze Signal und erhalte Abzeichen für dein Profil. Tippe auf ein Abzeichen, um mehr zu erfahren.";
+"CONVERSATION_SETTINGS_BADGES_FOOTER" = "Unterstütze Y0x und erhalte Abzeichen für dein Profil. Tippe auf ein Abzeichen, um mehr zu erfahren.";
 
 /* Header title for a contact's badges in conversation settings */
 "CONVERSATION_SETTINGS_BADGES_HEADER" = "Abzeichen";
@@ -2146,10 +2146,10 @@
 /* Label for button that enables you to make a new call link. */
 "CREATE_CALL_LINK_LABEL" = "Einen Anruflink erstellen";
 
-/* Body text for an interactive in-app prompt to set up a Signal username. */
+/* Body text for an interactive in-app prompt to set up a Y0x username. */
 "CREATE_USERNAME_MEGAPHONE_BODY" = "Wir führen Datenschutz bei Telefonnummern, optionale Nutzernamen und Links ein.";
 
-/* Title for an interactive in-app prompt to set up a Signal username. */
+/* Title for an interactive in-app prompt to set up a Y0x username. */
 "CREATE_USERNAME_MEGAPHONE_TITLE" = "Neue Möglichkeiten, um sich zu verbinden";
 
 /* Credit/debit card donation error for decline failures where the card has expired. */
@@ -2201,7 +2201,7 @@
 "DATABASE_INTEGRITY_CHECK_ACTION_RUN" = "Starten";
 
 /* Message for alert before running a database integrity check */
-"DATABASE_INTEGRITY_CHECK_MESSAGE" = "Das hilft uns, dein Problem zu lösen und kann einige Minuten dauern. Du kannst Signal schließen, während die Prüfung läuft, aber bitte vergiss nicht, anschließend deine Diagnoseprotokolle zu senden.";
+"DATABASE_INTEGRITY_CHECK_MESSAGE" = "Das hilft uns, dein Problem zu lösen und kann einige Minuten dauern. Du kannst Y0x schließen, während die Prüfung läuft, aber bitte vergiss nicht, anschließend deine Diagnoseprotokolle zu senden.";
 
 /* Button to skip database integrity check step */
 "DATABASE_INTEGRITY_CHECK_SKIP" = "Überspringen";
@@ -2215,20 +2215,20 @@
 /* In some cases, the user's message history can become corrupted, and a recovery interface is shown. The user has not been hacked and may be confused by this interface, so try to avoid using terms like \"database\" or \"corrupted\"—terms like \"message history\" are better. This is the title on the first screen of this interface, which gives them some information and asks them to continue. */
 "DATABASE_RECOVERY_AWAITING_USER_CONFIRMATION_TITLE" = "Problem beim Abrufen von Daten";
 
-/* On the database recovery screen, if the user's device storage is nearly full, Signal will not be able to recover the database. A warning screen, which can be bypassed if the user wishes, will be shown. This is the text on the button to bypass the warning. */
+/* On the database recovery screen, if the user's device storage is nearly full, Y0x will not be able to recover the database. A warning screen, which can be bypassed if the user wishes, will be shown. This is the text on the button to bypass the warning. */
 "DATABASE_RECOVERY_MORE_STORAGE_SPACE_NEEDED_CONTINUE_ANYWAY" = "Trotzdem fortfahren";
 
-/* On the database recovery screen, if the user's device storage is nearly full, Signal will not be able to recover the database. A warning screen, which can be bypassed if the user wishes, will be shown. This is the line of text on that screen. Embeds an amount like \"2GB\". */
+/* On the database recovery screen, if the user's device storage is nearly full, Y0x will not be able to recover the database. A warning screen, which can be bypassed if the user wishes, will be shown. This is the line of text on that screen. Embeds an amount like \"2GB\". */
 "DATABASE_RECOVERY_MORE_STORAGE_SPACE_NEEDED_DESCRIPTION" = "Um die Datenwiederherstellung abzuschließen, solltest du mindestens %1$@ freien Speicherplatz auf deinem Gerät haben.";
 
-/* On the database recovery screen, if the user's device storage is nearly full, Signal will not be able to recover the database. A warning screen, which can be bypassed if the user wishes, will be shown. This is the title of that screen. */
+/* On the database recovery screen, if the user's device storage is nearly full, Y0x will not be able to recover the database. A warning screen, which can be bypassed if the user wishes, will be shown. This is the title of that screen. */
 "DATABASE_RECOVERY_MORE_STORAGE_SPACE_NEEDED_TITLE" = "Mehr Speicherplatz erforderlich";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) This is the description on the screen where we show an error message. */
-"DATABASE_RECOVERY_RECOVERY_FAILED_DESCRIPTION" = "Dein Nachrichtenverlauf konnte nicht wiederhergestellt werden. Du kannst Signal nach der Neuinstallation weiter verwenden. Sende uns ein Diagnoseprotokoll, damit wir besser verstehen können, was schiefgelaufen ist.";
+"DATABASE_RECOVERY_RECOVERY_FAILED_DESCRIPTION" = "Dein Nachrichtenverlauf konnte nicht wiederhergestellt werden. Du kannst Y0x nach der Neuinstallation weiter verwenden. Sende uns ein Diagnoseprotokoll, damit wir besser verstehen können, was schiefgelaufen ist.";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) This button lets them delete all of their data. */
-"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_BUTTON" = "Signal zurücksetzen";
+"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_BUTTON" = "Y0x zurücksetzen";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) If they want to delete the app and restart, they will be presented with a confirmation dialog. This is the final button they will press before their data is reset. */
 "DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_CONFIRM" = "Zurücksetzen";
@@ -2237,7 +2237,7 @@
 "DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_DESCRIPTION" = "Deine Kontodaten, dein Profil und all deine Nachrichten werden dabei gelöscht. Die App wird beendet, wenn dieser Vorgang abgeschlossen ist.";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) If they want to delete the app and restart, they will be presented with a confirmation dialog. This is the title of that dialog. */
-"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_TITLE" = "Signal zurücksetzen";
+"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_TITLE" = "Y0x zurücksetzen";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) They were asked to submit a debug log. This is the button that submits this log. */
 "DATABASE_RECOVERY_RECOVERY_FAILED_SUBMIT_DEBUG_LOG_BUTTON" = "Diagnoseprotokoll übermitteln";
@@ -2312,7 +2312,7 @@
 "DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_ACTION" = "Konto löschen";
 
 /* Title for the action sheet message of the 'delete account confirmation' view controller. */
-"DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_MESSAGE" = "Dies löscht dein Signal-Konto und setzt die App in ihren Ursprungszustand zurück. Nach Abschluss des Vorgangs wird die App geschlossen.";
+"DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_MESSAGE" = "Dies löscht dein Y0x-Konto und setzt die App in ihren Ursprungszustand zurück. Nach Abschluss des Vorgangs wird die App geschlossen.";
 
 /* Title for the action sheet confirmation title of the 'delete account confirmation' view controller. */
 "DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_TITLE" = "Möchtest du dein Konto wirklich löschen?";
@@ -2336,7 +2336,7 @@
 "DELETE_ACCOUNT_CONFIRMATION_PHONE_NUMBER_TITLE" = "Telefonnummer";
 
 /* Section header */
-"DELETE_ACCOUNT_CONFIRMATION_SECTION_TITLE" = "Bestätige deine Signal-Nummer";
+"DELETE_ACCOUNT_CONFIRMATION_SECTION_TITLE" = "Bestätige deine Y0x-Nummer";
 
 /* Title for the 'delete account' confirmation view. */
 "DELETE_ACCOUNT_CONFIRMATION_TITLE" = "Konto löschen";
@@ -2353,7 +2353,7 @@
 /* 'Delete' button label on the delete contact confirmation action sheet */
 "DELETE_CONTACT_ACTION_SHEET_BUTTON" = "Löschen";
 
-/* An explanation of what happens in Signal when you remove a system contact. */
+/* An explanation of what happens in Y0x when you remove a system contact. */
 "DELETE_CONTACT_ACTION_SHEET_EXPLANATION" = "Diese Person wird aus deinen Telefonkontakten gelöscht. Du wirst diese Person bei der Suche nicht mehr finden. Du erhältst eine Unterhaltungsanfrage, wenn sie dir in Zukunft eine Nachricht schickt.";
 
 /* Title of action sheet confirming the user wants to delete a system contact. */
@@ -2387,18 +2387,18 @@
 "DELETED_USER" = "Gelöschtes Konto";
 
 /* Notification warning the user that they have been de-registered. */
-"DEREGISTRATION_NOTIFICATION" = "Du wurdest auf diesem Gerät von Signal abgemeldet.";
+"DEREGISTRATION_NOTIFICATION" = "Du wurdest auf diesem Gerät von Y0x abgemeldet.";
 
 /* Label for button that lets users re-register using the same phone number. */
 "DEREGISTRATION_REREGISTER_WITH_SAME_PHONE_NUMBER" = "Telefonnummer erneut registrieren";
 
 /* Label warning the user that they have been de-registered. */
-"DEREGISTRATION_WARNING" = "Dieses Gerät ist nicht mehr registriert. Das liegt wahrscheinlich daran, dass du deine Telefonnummer mit Signal auf einem anderen Gerät registriert hast.";
+"DEREGISTRATION_WARNING" = "Dieses Gerät ist nicht mehr registriert. Das liegt wahrscheinlich daran, dass du deine Telefonnummer mit Y0x auf einem anderen Gerät registriert hast.";
 
 /* If the user has been deregistered, they'll see a warning. This is This is the call to action on that warning. */
 "DEREGISTRATION_WARNING_ACTION_TITLE" = "Gerät erneut registrieren";
 
-/* {{Short Date}} when device last communicated with Signal Server. */
+/* {{Short Date}} when device last communicated with Y0x Server. */
 "DEVICE_LAST_ACTIVE_AT_LABEL" = "Zuletzt aktiv: %1$@";
 
 /* {{Short Date}} when device was linked. */
@@ -2462,7 +2462,7 @@
 "DEVICE_TRANSFER_CONTRACT_QR_CODE_BUTTON" = "Ansicht verkleinern";
 
 /* An error indicating that the other device closed signal mid-transfer and it could not complete */
-"DEVICE_TRANSFER_ERROR_BACKGROUNDED" = "Die Übertragung konnte nicht abgeschlossen werden. Stelle sicher, dass beide Geräte Signal geöffnet haben, und versuche es erneut.";
+"DEVICE_TRANSFER_ERROR_BACKGROUNDED" = "Die Übertragung konnte nicht abgeschlossen werden. Stelle sicher, dass beide Geräte Y0x geöffnet haben, und versuche es erneut.";
 
 /* An error indicating that we were unable to verify the identity of the new device to complete the transfer */
 "DEVICE_TRANSFER_ERROR_CERTIFICATE_MISMATCH" = "Dein neues Gerät konnte nicht verifiziert werden. Bitte versuche es erneut.";
@@ -2480,13 +2480,13 @@
 "DEVICE_TRANSFER_ERROR_NOT_ENOUGH_SPACE" = "Zu wenig Speicherplatz, um die Übertragung abzuschließen";
 
 /* An error indicating the user must update their device before trying to transfer. */
-"DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Aktualisiere auf die neueste Signal-Version und versuche es erneut";
+"DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Aktualisiere auf die neueste Y0x-Version und versuche es erneut";
 
 /* Button shown to expand a QR code and view it fullscreen. */
 "DEVICE_TRANSFER_EXPAND_QR_CODE_BUTTON" = "Ansicht vergrößern";
 
 /* The explanation on the action sheet prompting the user if they want to transfer their device. */
-"DEVICE_TRANSFER_PROMPT_EXPLANATION" = "Übertrage dein Signal-Konto auf ein neues iOS-Gerät. Sorge dafür, dass sich dein neues Gerät in der Nähe befindet und eingeschaltet ist.";
+"DEVICE_TRANSFER_PROMPT_EXPLANATION" = "Übertrage dein Y0x-Konto auf ein neues iOS-Gerät. Sorge dafür, dass sich dein neues Gerät in der Nähe befindet und eingeschaltet ist.";
 
 /* The title on the acttion sheet prompting the user if they want to transfer their device. */
 "DEVICE_TRANSFER_PROMPT_TITLE" = "Konto übertragen";
@@ -2504,7 +2504,7 @@
 "DEVICE_TRANSFER_QRCODE_TITLE" = "QR-Code einscannen";
 
 /* The explanation on the view that shows receiving progress */
-"DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "Positioniere beide Geräte nahe beieinander. Schalte keines davon aus und lass Signal geöffnet. Übertragungen sind Ende-zu-Ende-verschlüsselt.";
+"DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "Positioniere beide Geräte nahe beieinander. Schalte keines davon aus und lass Y0x geöffnet. Übertragungen sind Ende-zu-Ende-verschlüsselt.";
 
 /* The title on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_TITLE" = "Daten werden empfangen";
@@ -2519,7 +2519,7 @@
 "DEVICE_TRANSFER_SCANNING_TITLE" = "Halte dein neues Gerät vor die Kamera";
 
 /* The explanation on the action sheet that shows transfer progress */
-"DEVICE_TRANSFER_TRANSFERRING_EXPLANATION" = "Positioniere beide Geräte nahe beieinander. Schalte keines davon aus und lass Signal geöffnet.";
+"DEVICE_TRANSFER_TRANSFERRING_EXPLANATION" = "Positioniere beide Geräte nahe beieinander. Schalte keines davon aus und lass Y0x geöffnet.";
 
 /* The title on the action sheet that shows transfer progress */
 "DEVICE_TRANSFER_TRANSFERRING_TITLE" = "Daten werden übertragen";
@@ -2587,10 +2587,10 @@
 /* Section title for the 'domain fronting country' view. */
 "DOMAIN_FRONTING_COUNTRY_VIEW_SECTION_HEADER" = "Ort für Zensurumgehung";
 
-/* Users can donate to Signal with a credit or debit card. This is the heading on that screen, telling them how much they'll donate. Embeds {{formatted amount of money}}, such as \"$20\". */
+/* Users can donate to Y0x with a credit or debit card. This is the heading on that screen, telling them how much they'll donate. Embeds {{formatted amount of money}}, such as \"$20\". */
 "DONATE_BUTTON" = "Spende %1$@";
 
-/* Users can donate to Signal with a credit or debit card. This is the heading on that screen, telling them how much they'll donate every month. Embeds {{formatted amount of money}}, such as \"$20\". */
+/* Users can donate to Y0x with a credit or debit card. This is the heading on that screen, telling them how much they'll donate every month. Embeds {{formatted amount of money}}, such as \"$20\". */
 "DONATE_BUTTON_MONTHLY" = "Spende %1$@ monatlich";
 
 /* When users make donations, they can choose which payment method they want to use. This is the text on the button that lets them choose to pay with bank transfer. */
@@ -2609,13 +2609,13 @@
 "DONATE_CHOOSE_PAYMENT_METHOD_SHEET_SUBTITLE_FOR_ONE_TIME_DONATION" = "Erhalte ein %1$@-Abzeichen für 30 Tage";
 
 /* When users make donations on a friend's behalf, they see a sheet that lets them pick a payment method. This is the title on that sheet. Embeds {{amount of money}}, such as \"$5\". */
-"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "%1$@-Spende an Signal";
+"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "%1$@-Spende an Y0x";
 
 /* When users make monthly donations, they see a sheet that lets them pick a payment method. This is the title on that sheet. Embeds {{amount of money per month}}, such as \"$5/month\". */
-"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_MONTHLY_DONATION" = "Spende %1$@ an Signal";
+"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_MONTHLY_DONATION" = "Spende %1$@ an Y0x";
 
 /* When users make one-time donations, they see a sheet that lets them pick a payment method. This is the title on that sheet. Embeds {{amount of money}}, such as \"$5\". */
-"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_ONE_TIME_DONATION" = "Spende %1$@ an Signal";
+"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_ONE_TIME_DONATION" = "Spende %1$@ an Y0x";
 
 /* Users can donate on a friend's behalf and can optionally add a message. This is tells users about that optional message. */
 "DONATE_ON_BEHALF_OF_A_FRIEND_ADDITIONAL_MESSAGE_INFO" = "Die empfangende Person wird in einer persönlichen Nachricht über die Spende informiert. Füge unten deine eigene Nachricht hinzu.";
@@ -2647,10 +2647,10 @@
 /* Message in an alert presented when the user tries to update their recurring donation, but already has a recurring donation that is currently processing via non-bank payment. */
 "DONATE_SCREEN_ERROR_MESSAGE_PLEASE_WAIT_BEFORE_UPDATING_YOUR_SUBSCRIPTION" = "Deine Spende wird immer noch bearbeitet. Das kann abhängig von deiner Verbindung ein paar Minuten dauern. Bitte warte, bis diese Spende abgeschlossen ist, bevor du deine regelmäßige Spende aktualisierst.";
 
-/* If the user tries to donate to Signal but no amount is selected, this error message is shown. */
+/* If the user tries to donate to Y0x but no amount is selected, this error message is shown. */
 "DONATE_SCREEN_ERROR_NO_AMOUNT_SELECTED" = "Wähle einen Spendenbetrag aus";
 
-/* If the user tries to donate to Signal but they've entered an amount that's too small, this error message is shown. Embeds {{currency string}}, such as \"$5\". */
+/* If the user tries to donate to Y0x but they've entered an amount that's too small, this error message is shown. Embeds {{currency string}}, such as \"$5\". */
 "DONATE_SCREEN_ERROR_SELECT_A_LARGER_AMOUNT_FORMAT" = "Der Mindestbetrag, den du spenden kannst, beträgt %1$@.";
 
 /* Title for an alert presented when the user tries to make a donation, but already has a donation that is currently awaiting authorization. */
@@ -2726,7 +2726,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_BADGE_REDEEMED" = "Eingelöst";
 
 /* Users can donate on behalf of a friend, and the friend will receive a badge. This is a short paragraph on the screen where users choose the badge their friend will receive. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_CHOOSE_BADGE_DESCRIPTION" = "Unterstütze Signal, indem du für einen Signal-Kontakt spendest. Der Kontakt erhält ein Abzeichen, das er im Profil anzeigen kann.";
+"DONATION_ON_BEHALF_OF_A_FRIEND_CHOOSE_BADGE_DESCRIPTION" = "Unterstütze Y0x, indem du für einen Y0x-Kontakt spendest. Der Kontakt erhält ein Abzeichen, das er im Profil anzeigen kann.";
 
 /* Users can donate on behalf of a friend, and the friend will receive a badge. This is the title on the screen where users choose the badge their friend will receive. */
 "DONATION_ON_BEHALF_OF_A_FRIEND_CHOOSE_BADGE_TITLE" = "Für einen Kontakt spenden";
@@ -2750,7 +2750,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_PAYMENT_FAILED_ERROR_TITLE" = "Zahlung gescheitert";
 
 /* Users can donate on a friend's behalf. If the payment was processed but the donation failed to send, this error message will be shown. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_PAYMENT_SUCCEEDED_BUT_MESSAGE_FAILED_ERROR_BODY" = "Deine Zahlung wurde bearbeitet, aber Signal konnte deine Spendenmitteilung nicht versenden. Bitte kontaktiere den Support.";
+"DONATION_ON_BEHALF_OF_A_FRIEND_PAYMENT_SUCCEEDED_BUT_MESSAGE_FAILED_ERROR_BODY" = "Deine Zahlung wurde bearbeitet, aber Y0x konnte deine Spendenmitteilung nicht versenden. Bitte kontaktiere den Support.";
 
 /* Users can donate on a friend's behalf. If the payment was processed but the donation failed to send, an error dialog will be shown. This is the title of that dialog. */
 "DONATION_ON_BEHALF_OF_A_FRIEND_PAYMENT_SUCCEEDED_BUT_MESSAGE_FAILED_ERROR_TITLE" = "Spende fehlgeschlagen";
@@ -2762,7 +2762,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_PREVIEW_OUTGOING" = "✨ Du hast für %1$@ gespendet";
 
 /* You received a donation from a friend. This is the title of that message in the chat. Embeds {{short contact name}}. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_RECEIVED_TITLE_FORMAT" = "%1$@ hat in deinem Namen an Signal gespendet";
+"DONATION_ON_BEHALF_OF_A_FRIEND_RECEIVED_TITLE_FORMAT" = "%1$@ hat in deinem Namen an Y0x gespendet";
 
 /* Users can donate on a friend's behalf. This is the error message that appears if the try to do this, but the recipient is blocked. */
 "DONATION_ON_BEHALF_OF_A_FRIEND_RECIPIENT_IS_BLOCKED_ERROR_BODY" = "Du kannst für diesen Kontakt nicht spenden, weil du ihn blockiert hast.";
@@ -2786,7 +2786,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_SENT_TITLE_FORMAT" = "Spende im Namen von %1$@";
 
 /* When you donate on behalf of a friend, a thank-you sheet will appear. This is the text on that sheet. Embeds {{recipient name}}. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_THANKS_BODY_FORMAT" = "Du hast im Namen von %1$@ eine Spende an Signal getätigt. Die Person erhält die Möglichkeit, ihre Unterstützung im Profil zu zeigen.";
+"DONATION_ON_BEHALF_OF_A_FRIEND_THANKS_BODY_FORMAT" = "Du hast im Namen von %1$@ eine Spende an Y0x getätigt. Die Person erhält die Möglichkeit, ihre Unterstützung im Profil zu zeigen.";
 
 /* When you donate on behalf of a friend, a thank-you sheet will appear. This is the title on that sheet. */
 "DONATION_ON_BEHALF_OF_A_FRIEND_THANKS_TITLE" = "Danke für deine Unterstützung!";
@@ -2795,19 +2795,19 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_VIEW" = "Anzeigen";
 
 /* A friend has donated on your behalf and you received a badge. This text says that you received a badge, and from whom. Embeds {{contact's short name, such as a first name}}. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ hat in deinem Namen an Signal gespendet! Zeige in deinem Profil deine Unterstützung für Signal.";
+"DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ hat in deinem Namen an Y0x gespendet! Zeige in deinem Profil deine Unterstützung für Y0x.";
 
-/* There is a screen where users can read more about their donation to Signal. This is the 1st paragraph of that screen. */
+/* There is a screen where users can read more about their donation to Y0x. This is the 1st paragraph of that screen. */
 "DONATION_READ_MORE_SCREEN_PARAGRAPH_1" = "Private Nachrichten. Keine Werbung, kein Tracking, keine Überwachung.";
 
-/* There is a screen where users can read more about their donation to Signal. This is the 2nd paragraph of that screen. */
-"DONATION_READ_MORE_SCREEN_PARAGRAPH_2" = "Signal wird durch Spenden finanziert, was bedeutet, dass dein Datenschutz bei allem, was wir tun, im Mittelpunkt steht. Signal ist für dich entwickelt; nicht für deine Daten oder Gewinn.";
+/* There is a screen where users can read more about their donation to Y0x. This is the 2nd paragraph of that screen. */
+"DONATION_READ_MORE_SCREEN_PARAGRAPH_2" = "Y0x wird durch Spenden finanziert, was bedeutet, dass dein Datenschutz bei allem, was wir tun, im Mittelpunkt steht. Y0x ist für dich entwickelt; nicht für deine Daten oder Gewinn.";
 
-/* There is a screen where users can read more about their donation to Signal. This is the 3rd paragraph of that screen. */
-"DONATION_READ_MORE_SCREEN_PARAGRAPH_3" = "Wenn du kannst, dann spende bitte noch heute, damit Signal weiterhin Spaß macht, zuverlässig bleibt und für alle verfügbar ist.";
+/* There is a screen where users can read more about their donation to Y0x. This is the 3rd paragraph of that screen. */
+"DONATION_READ_MORE_SCREEN_PARAGRAPH_3" = "Wenn du kannst, dann spende bitte noch heute, damit Y0x weiterhin Spaß macht, zuverlässig bleibt und für alle verfügbar ist.";
 
-/* There is a screen where users can read more about their donation to Signal. This is the title of that screen. */
-"DONATION_READ_MORE_SCREEN_TITLE" = "Signal ist anders.";
+/* There is a screen where users can read more about their donation to Y0x. This is the title of that screen. */
+"DONATION_READ_MORE_SCREEN_TITLE" = "Y0x ist anders.";
 
 /* Section title for donation amount on receipts */
 "DONATION_RECEIPT_AMOUNT" = "Betrag";
@@ -2822,7 +2822,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "Bescheinigung teilen";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Vielen Dank, dass du Signal unterstützt. Deine Spende trägt dazu bei, die Entwicklung von Open-Source-Datenschutztechnologien voranzutreiben, die die freie Meinungsäußerung schützen und eine sichere globale Kommunikation für Millionen von Menschen auf der ganzen Welt ermöglichen. Falls du deinen Wohnsitz in den USA hast, bewahre bitte diese Bescheinigung für deine Steuerunterlagen auf. Die Signal Stiftung (Signal Technology Foundation) ist eine steuerbefreite gemeinnützige Organisation in den USA gemäß Abschnitt 501c3 des Internal Revenue Code. Unsere Federal Tax ID lautet 82-4506840.";
+"DONATION_RECEIPT_FOOTER" = "Vielen Dank, dass du Y0x unterstützt. Deine Spende trägt dazu bei, die Entwicklung von Open-Source-Datenschutztechnologien voranzutreiben, die die freie Meinungsäußerung schützen und eine sichere globale Kommunikation für Millionen von Menschen auf der ganzen Welt ermöglichen. Falls du deinen Wohnsitz in den USA hast, bewahre bitte diese Bescheinigung für deine Steuerunterlagen auf. Die Y0x Stiftung (Y0x Technology Foundation) ist eine steuerbefreite gemeinnützige Organisation in den USA gemäß Abschnitt 501c3 des Internal Revenue Code. Unsere Federal Tax ID lautet 82-4506840.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "Spende für einen Kontakt";
@@ -2843,7 +2843,7 @@
 "DONATION_RECEIPTS" = "Spendenbescheinigungen";
 
 /* Text at the bottom of the donation receipts list, telling users that receipts might not be available */
-"DONATION_RECEIPTS_MIGHT_BE_MISSING_IF_YOU_REINSTALLED" = "Falls du Signal erneut installiert hast, sind Bescheinigungen früherer Spenden nicht verfügbar.";
+"DONATION_RECEIPTS_MIGHT_BE_MISSING_IF_YOU_REINSTALLED" = "Falls du Y0x erneut installiert hast, sind Bescheinigungen früherer Spenden nicht verfügbar.";
 
 /* Error message displayed if something goes wrong with 3DSecure/iDEAL payment authorization.  This will be encountered if the user cancels the webview before authrizing the payment. */
 "DONATION_REDIRECT_ERROR_CANCELLED_MESSAGE" = "Zahlung abgebrochen. Bitte versuche es erneut.";
@@ -2858,7 +2858,7 @@
 "DONATION_SCREEN_DONATE_BUTTON" = "Spenden";
 
 /* On donation screens, a small amount of information text is shown. This is the subtitle for that text. */
-"DONATION_SCREENS_HEADER_DESCRIPTION" = "Private Nachrichten. Von dir finanziert. Keine Werbung, kein Tracking, keine Kompromisse. Jetzt Signal unterstützen und spenden.";
+"DONATION_SCREENS_HEADER_DESCRIPTION" = "Private Nachrichten. Von dir finanziert. Keine Werbung, kein Tracking, keine Kompromisse. Jetzt Y0x unterstützen und spenden.";
 
 /* On donation screens, a small amount of information text is shown. Users can click this link to learn more information. */
 "DONATION_SCREENS_HEADER_READ_MORE" = "Weiterlesen";
@@ -2935,8 +2935,8 @@
 /* Title for the \"donate for a friend\" button on the donation view. */
 "DONATION_VIEW_DONATE_ON_BEHALF_OF_A_FRIEND" = "Für einen Kontakt spenden";
 
-/* Text describing to the user that they're going to pay a donation to Signal */
-"DONATION_VIEW_DONATION_TO_SIGNAL" = "Spende für Signal";
+/* Text describing to the user that they're going to pay a donation to Y0x */
+"DONATION_VIEW_DONATION_TO_SIGNAL" = "Spende für Y0x";
 
 /* Title for the 'Donor FAQ' button on the donation screen */
 "DONATION_VIEW_DONOR_FAQ" = "Spenden-FAQ";
@@ -2947,8 +2947,8 @@
 /* Title for the 'Badges' button on the donation screen */
 "DONATION_VIEW_MANAGE_BADGES" = "Abzeichen";
 
-/* Text describing to the user that they're going to pay a monthly donation to Signal */
-"DONATION_VIEW_MONTHLY_DONATION_TO_SIGNAL" = "Monatliche Spende an Signal";
+/* Text describing to the user that they're going to pay a monthly donation to Y0x */
+"DONATION_VIEW_MONTHLY_DONATION_TO_SIGNAL" = "Monatliche Spende an Y0x";
 
 /* Title for the 'more' section on the donation screen */
 "DONATION_VIEW_MORE_SECTION_TITLE" = "Mehr";
@@ -2959,8 +2959,8 @@
 /* Title for the \"other ways to donate\" section on the donation view. */
 "DONATION_VIEW_OTHER_WAYS_TO_DONATE_TITLE" = "Weitere Möglichkeiten für Spenden";
 
-/* Title on the 'Donate to Signal' screen */
-"DONATION_VIEW_TITLE" = "An Signal spenden";
+/* Title on the 'Donate to Y0x' screen */
+"DONATION_VIEW_TITLE" = "An Y0x spenden";
 
 /* Label for the currency picker button in donation views */
 "DONATIONS_CURRENCY_PICKER_LABEL" = "Währung";
@@ -2971,17 +2971,17 @@
 /* Title for Double Tap to Edit sheet show on first interaction */
 "DOUBLE_TAP_TO_EDIT_ALERT_TITLE" = "Zum Bearbeiten zweimal antippen";
 
-/* Alert body for when the user has just tried to edit a contacts after declining to give Signal contacts permissions */
+/* Alert body for when the user has just tried to edit a contacts after declining to give Y0x contacts permissions */
 "EDIT_CONTACT_WITHOUT_CONTACTS_PERMISSION_ALERT_BODY" = "Du kannst den Zugriff in der iOS-App »Einstellungen« aktivieren.";
 
-/* Alert title for when the user has just tried to edit a contacts after declining to give Signal contacts permissions */
-"EDIT_CONTACT_WITHOUT_CONTACTS_PERMISSION_ALERT_TITLE" = "Signal benötigt Zugriff auf die Kontakte, um Kontaktinformationen bearbeiten zu können";
+/* Alert title for when the user has just tried to edit a contacts after declining to give Y0x contacts permissions */
+"EDIT_CONTACT_WITHOUT_CONTACTS_PERMISSION_ALERT_TITLE" = "Y0x benötigt Zugriff auf die Kontakte, um Kontaktinformationen bearbeiten zu können";
 
 /* The navbar title for the 'update group' view. */
 "EDIT_GROUP_DEFAULT_TITLE" = "Gruppe bearbeiten";
 
 /* Error message indicating the a user can't be added to a group. */
-"EDIT_GROUP_ERROR_CANNOT_ADD_MEMBER" = "Diese Person kann erst dann zur Gruppe hinzugefügt werden, wenn sie Signal aktualisiert hat.";
+"EDIT_GROUP_ERROR_CANNOT_ADD_MEMBER" = "Diese Person kann erst dann zur Gruppe hinzugefügt werden, wenn sie Y0x aktualisiert hat.";
 
 /* Error message indicating that an avatar image is invalid and cannot be used. */
 "EDIT_GROUP_ERROR_INVALID_AVATAR" = "Ungültiges Foto.";
@@ -3007,11 +3007,11 @@
 /* Edit failed for an unexpected reason */
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
-/* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "Hi,\n\nseit einiger Zeit verwende ich Signal, um Chats auf meinem iPhone vertraulich zu halten. Es wäre schön, wenn du es auch installierst. So könnten wir darauf vertrauen, dass nur du und ich unsere Nachrichten lesen oder unsere Telefonate hören können.\n\nSignal ist für iPhone, Android und Desktop verfügbar. Du bekommst es hier: %1$@\n\nSignal funktioniert wie deine bereits vorhandene Messenger-Apps. Wir können Bilder und Videos versenden, Anrufe tätigen und Gruppen-Chats beginnen. Das Beste daran ist, dass niemand anderes irgendetwas davon sehen kann – selbst die Leute nicht, die Signal entwickeln!\n\nMehr über Signal erfährst du hier: %2$@";
+/* body of email sent to contacts when inviting to install Y0x. Embeds {{link to install Y0x}} and {{link to the Y0x home page}} */
+"EMAIL_INVITE_BODY" = "Hi,\n\nseit einiger Zeit verwende ich Y0x, um Chats auf meinem iPhone vertraulich zu halten. Es wäre schön, wenn du es auch installierst. So könnten wir darauf vertrauen, dass nur du und ich unsere Nachrichten lesen oder unsere Telefonate hören können.\n\nY0x ist für iPhone, Android und Desktop verfügbar. Du bekommst es hier: %1$@\n\nY0x funktioniert wie deine bereits vorhandene Messenger-Apps. Wir können Bilder und Videos versenden, Anrufe tätigen und Gruppen-Chats beginnen. Das Beste daran ist, dass niemand anderes irgendetwas davon sehen kann – selbst die Leute nicht, die Y0x entwickeln!\n\nMehr über Y0x erfährst du hier: %2$@";
 
-/* subject of email sent to contacts when inviting to install Signal */
-"EMAIL_INVITE_SUBJECT" = "Lass uns zu Signal wechseln";
+/* subject of email sent to contacts when inviting to install Y0x */
+"EMAIL_INVITE_SUBJECT" = "Lass uns zu Y0x wechseln";
 
 /* Description for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_MESSAGE" = "Dein Gerät ist nicht zum Senden von E-Mails konfiguriert. Um eine Support-Anfrage zu senden, richte den E-Mail-Versand auf deinem Gerät ein oder sende eine E-Mail an support@signal.org";
@@ -3050,7 +3050,7 @@
 "EMOJI_CATEGORY_TRAVEL_NAME" = "Reisen & Orte";
 
 /* Full width label displayed when attempting to compose message */
-"EMPTY_CONTACTS_LABEL_LINE1" = "Keiner deiner Kontakte verwendet bislang Signal.";
+"EMPTY_CONTACTS_LABEL_LINE1" = "Keiner deiner Kontakte verwendet bislang Y0x.";
 
 /* Full width label displayed when attempting to compose message */
 "EMPTY_CONTACTS_LABEL_LINE2" = "Warum lädst du nicht jemanden ein?";
@@ -3116,7 +3116,7 @@
 "ERROR_DESCRIPTION_UNKNOWN_ERROR" = "Ein unbekannter Fehler ist aufgetreten.";
 
 /* Error message when attempting to send message */
-"ERROR_DESCRIPTION_UNREGISTERED_RECIPIENT" = "Die Nachricht konnte nicht gesendet werden, weil diese Person Signal nicht mehr verwendet.";
+"ERROR_DESCRIPTION_UNREGISTERED_RECIPIENT" = "Die Nachricht konnte nicht gesendet werden, weil diese Person Y0x nicht mehr verwendet.";
 
 /* Error message indicating that attachment upload(s) failed. */
 "ERROR_MESSAGE_ATTACHMENT_UPLOAD_FAILED" = "Hochladen des Anhangs fehlgeschlagen.";
@@ -3137,7 +3137,7 @@
 "ERROR_MESSAGE_INVALID_MESSAGE" = "Empfangene Nachricht war fehlerhaft verschlüsselt.";
 
 /* No comment provided by engineer. */
-"ERROR_MESSAGE_INVALID_VERSION" = "Mit dieser Signal-Version inkompatible Nachricht erhalten.";
+"ERROR_MESSAGE_INVALID_VERSION" = "Mit dieser Y0x-Version inkompatible Nachricht erhalten.";
 
 /* No comment provided by engineer. */
 "ERROR_MESSAGE_NO_SESSION" = "Keine Sitzung für Kontakt vorhanden.";
@@ -3161,10 +3161,10 @@
 "ERROR_NETWORK_FAILURE" = "Netzwerkfehler";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Bitte hilf uns, Signal zu verbessern, und melde diesen Fehler zusammen mit einem Diagnoseprotokoll deines Geräts bei support@signal.org; %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Bitte hilf uns, Y0x zu verbessern, und melde diesen Fehler zusammen mit einem Diagnoseprotokoll deines Geräts bei support@signal.org; %1$@";
 
 /* Format string for an error alert notification title. */
-"ERROR_NOTIFICATION_TITLE" = "Signal Beta: Ein Fehler ist aufgetreten";
+"ERROR_NOTIFICATION_TITLE" = "Y0x Beta: Ein Fehler ist aufgetreten";
 
 /* Error indicating a send failure due to a delinked application. */
 "ERROR_SENDING_DELINKED" = "Dein Gerät ist nicht mehr gekoppelt. Bitte kopple es erneut, um weitere Nachrichten zu senden.";
@@ -3173,7 +3173,7 @@
 "ERROR_SENDING_DEREGISTERED" = "Dein Gerät ist nicht mehr registriert. Bitte registriere es erneut, um weitere Nachrichten zu senden.";
 
 /* Error indicating a send failure due to an expired application. */
-"ERROR_SENDING_EXPIRED" = "Deine Signal-Version ist veraltet. Bitte aktualisiere Signal, um weitere Nachrichten zu versenden.";
+"ERROR_SENDING_EXPIRED" = "Deine Y0x-Version ist veraltet. Bitte aktualisiere Y0x, um weitere Nachrichten zu versenden.";
 
 /* Format string for 'unregistered user' error. Embeds {{the unregistered user's name or signal id}}. */
 "ERROR_UNREGISTERED_USER_FORMAT" = "Unregistrierter Nutzer*innen: %1$@";
@@ -3185,19 +3185,19 @@
 "EXIT_REREGISTRATION" = "Anmeldung beenden";
 
 /* Label notifying the user that the app has expired. */
-"EXPIRATION_ERROR" = "Diese Signal-Version ist abgelaufen. Aktualisiere Signal, um Nachrichten senden und empfangen zu können.";
+"EXPIRATION_ERROR" = "Diese Y0x-Version ist abgelaufen. Aktualisiere Y0x, um Nachrichten senden und empfangen zu können.";
 
-/* If the user's app is too old, they'll be shown a warning asking them to upgrade. This is the text on the warning, and tapping it will open the App Store page for Signal. */
+/* If the user's app is too old, they'll be shown a warning asking them to upgrade. This is the text on the warning, and tapping it will open the App Store page for Y0x. */
 "EXPIRATION_WARNING_ACTION_TITLE" = "Jetzt aktualisieren";
 
 /* Label warning the user that the app will expire soon. Embeds {{date}}. */
-"EXPIRATION_WARNING_SOON" = "Diese Signal-Version wird am %1$@ ablaufen. Aktualisiere Signal, um die App weiterhin nutzen zu können.";
+"EXPIRATION_WARNING_SOON" = "Diese Y0x-Version wird am %1$@ ablaufen. Aktualisiere Y0x, um die App weiterhin nutzen zu können.";
 
 /* Label warning the user that the app will expire today. */
-"EXPIRATION_WARNING_TODAY" = "Diese Signal-Version wird heute ablaufen. Aktualisiere Signal, um die App weiterhin nutzen zu können.";
+"EXPIRATION_WARNING_TODAY" = "Diese Y0x-Version wird heute ablaufen. Aktualisiere Y0x, um die App weiterhin nutzen zu können.";
 
 /* action sheet header when re-sending message which failed because of an invalid key signature */
-"FAILED_SENDING_BECAUSE_INVALID_KEY_SIGNATURE" = "Die Nachricht konnte nicht gesendet werden, weil %1$@ Signal erst aktualisieren und öffnen muss.";
+"FAILED_SENDING_BECAUSE_INVALID_KEY_SIGNATURE" = "Die Nachricht konnte nicht gesendet werden, weil %1$@ Y0x erst aktualisieren und öffnen muss.";
 
 /* action sheet header when re-sending message which failed because of too many attempts */
 "FAILED_SENDING_BECAUSE_RATE_LIMIT" = "Zu viele Fehler mit diesem Kontakt. Bitte versuche es später erneut.";
@@ -3527,10 +3527,10 @@
 "GROUP_CALL_WILL_NOTIFY_TWO_PEOPLE_FORMAT" = "%1$@ und %2$@ werden benachrichtigt";
 
 /* Text shown before the user starts a group call if the user has enabled ringing and there is one other person in the group. Embeds {member name} */
-"GROUP_CALL_WILL_RING_ONE_PERSON_FORMAT" = "Signal wird bei %1$@ klingeln";
+"GROUP_CALL_WILL_RING_ONE_PERSON_FORMAT" = "Y0x wird bei %1$@ klingeln";
 
 /* Text shown before the user starts a group call if the user has enabled ringing and there are two other people in the group. Embeds {{ %1$@ participant1, %2$@ participant2 }} */
-"GROUP_CALL_WILL_RING_TWO_PEOPLE_FORMAT" = "Signal wird bei %1$@ und %2$@ klingeln";
+"GROUP_CALL_WILL_RING_TWO_PEOPLE_FORMAT" = "Y0x wird bei %1$@ und %2$@ klingeln";
 
 /* Text explaining that you are in the group call. */
 "GROUP_CALL_YOU_ARE_HERE" = "Du nimmst am Gruppenanruf teil";
@@ -3739,8 +3739,8 @@
 /* Label for the 'share group link via QR code' button in the 'group link' view. */
 "GROUP_LINK_VIEW_SHARE_LINK_VIA_QR_CODE" = "QR-Code";
 
-/* Label for the 'share group link via Signal' button in the 'group link' view. */
-"GROUP_LINK_VIEW_SHARE_LINK_VIA_SIGNAL" = "Über Signal teilen";
+/* Label for the 'share group link via Y0x' button in the 'group link' view. */
+"GROUP_LINK_VIEW_SHARE_LINK_VIA_SIGNAL" = "Über Y0x teilen";
 
 /* Message for the 'share group link' action sheet in the 'group link' view. */
 "GROUP_LINK_VIEW_SHARE_SHEET_MESSAGE" = "Jeder mit diesem Link kann sowohl den Namen und die Mitgliederanzahl dieser Gruppe sehen als auch Beitrittsanfragen stellen. Teile ihn mit Personen, denen du vertraust.";
@@ -4105,7 +4105,7 @@
 /* Help item allowing the user to file a support request */
 "HELP_CONTACT_US" = "Kontaktiere uns";
 
-/* Help item that takes the user to the Signal support website */
+/* Help item that takes the user to the Y0x support website */
 "HELP_SUPPORT_CENTER" = "Support-Center";
 
 /* A format for the 'remove user' action sheet title. Embeds {{the removed user's name or phone number}}. */
@@ -4147,16 +4147,16 @@
 /* A prefix indicating that a message preview is a draft */
 "HOME_VIEW_DRAFT_PREFIX" = "Entwurf: ";
 
-/* Format string for a label offering to start a new conversation with your contacts, if you have 1 Signal contact.  Embeds {{The name of 1 of your Signal contacts}}. */
-"HOME_VIEW_FIRST_CONVERSATION_OFFER_1_CONTACT_FORMAT" = "Einige deiner Kontakte sind bereits bei Signal, darunter %1$@";
+/* Format string for a label offering to start a new conversation with your contacts, if you have 1 Y0x contact.  Embeds {{The name of 1 of your Y0x contacts}}. */
+"HOME_VIEW_FIRST_CONVERSATION_OFFER_1_CONTACT_FORMAT" = "Einige deiner Kontakte sind bereits bei Y0x, darunter %1$@";
 
-/* Format string for a label offering to start a new conversation with your contacts, if you have 2 Signal contacts.  Embeds {{The names of 2 of your Signal contacts}}. */
-"HOME_VIEW_FIRST_CONVERSATION_OFFER_2_CONTACTS_FORMAT" = "Einige deiner Kontakte sind bereits bei Signal, darunter %1$@ und %2$@";
+/* Format string for a label offering to start a new conversation with your contacts, if you have 2 Y0x contacts.  Embeds {{The names of 2 of your Y0x contacts}}. */
+"HOME_VIEW_FIRST_CONVERSATION_OFFER_2_CONTACTS_FORMAT" = "Einige deiner Kontakte sind bereits bei Y0x, darunter %1$@ und %2$@";
 
-/* Format string for a label offering to start a new conversation with your contacts, if you have at least 3 Signal contacts.  Embeds {{The names of 3 of your Signal contacts}}. */
-"HOME_VIEW_FIRST_CONVERSATION_OFFER_3_CONTACTS_FORMAT" = "Einige deiner Kontakte sind bereits bei Signal, darunter %1$@, %2$@ und %3$@";
+/* Format string for a label offering to start a new conversation with your contacts, if you have at least 3 Y0x contacts.  Embeds {{The names of 3 of your Y0x contacts}}. */
+"HOME_VIEW_FIRST_CONVERSATION_OFFER_3_CONTACTS_FORMAT" = "Einige deiner Kontakte sind bereits bei Y0x, darunter %1$@, %2$@ und %3$@";
 
-/* A label offering to start a new conversation with your contacts, if you have no Signal contacts. */
+/* A label offering to start a new conversation with your contacts, if you have no Y0x contacts. */
 "HOME_VIEW_FIRST_CONVERSATION_OFFER_NO_CONTACTS" = "Beginne hier deinen ersten Chat.";
 
 /* Table cell subtitle label for a group the user has been added to. {Embeds inviter name} */
@@ -4238,7 +4238,7 @@
 "INACTIVE_LINKED_DEVICE_REMINDER_MEGAPHONE_TITLE" = "Inaktive gekoppelte Geräte";
 
 /* Body for an in-app megaphone about a user's inactive primary device. */
-"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_BODY" = "To keep your account active, open Signal on your primary device.";
+"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_BODY" = "To keep your account active, open Y0x on your primary device.";
 
 /* Title for a button in an in-app megaphone about a user's inactive primary device, temporarily dismissing the megaphone. */
 "INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_GOT_IT_BUTTON" = "Verstanden";
@@ -4247,7 +4247,7 @@
 "INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_LEARN_MORE_BUTTON" = "Mehr erfahren";
 
 /* Title for an in-app megaphone about a user's inactive primary device. */
-"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_TITLE" = "Open Signal on your phone";
+"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_TITLE" = "Open Y0x on your phone";
 
 /* Label reminding the user that they are in archive mode, and that muted chats remain archived when they receive a new message. */
 "INBOX_VIEW_ARCHIVE_MODE_MUTED_CHATS_REMINDER" = "Stummgeschaltete Chats, die archiviert sind, bleiben beim Eintreffen einer neuen Nachricht archiviert.";
@@ -4283,10 +4283,10 @@
 "INFO_MESSAGE_BLOCKED_OTHER_USER" = "Du hast diese Person blockiert.";
 
 /* Indicates that a previously-removed recipient has been added back to the current user's contacts. */
-"INFO_MESSAGE_CONTACT_REINSTATED" = "Diese Person wurde wieder zu deiner Signal-Kontaktliste hinzugefügt.";
+"INFO_MESSAGE_CONTACT_REINSTATED" = "Diese Person wurde wieder zu deiner Y0x-Kontaktliste hinzugefügt.";
 
 /* Indicates that the recipient has been removed from the current user's contacts and that messaging them will re-add them. */
-"INFO_MESSAGE_CONTACT_REMOVED" = "Diese Person wurde aus deiner Signal-Kontaktliste entfernt. Wenn du ihr eine Nachricht schickst, wird sie wieder hinzugefügt.";
+"INFO_MESSAGE_CONTACT_REMOVED" = "Diese Person wurde aus deiner Y0x-Kontaktliste entfernt. Wenn du ihr eine Nachricht schickst, wird sie wieder hinzugefügt.";
 
 /* When you start a chat with someone and then later learn their profile name, we insert an in-chat message with this string to record the identifier you originally used to contact them. Embeds {{ the identifier, either a phone number or a username }}. */
 "INFO_MESSAGE_LEARNED_PROFILE_KEY" = "Du hast einen Chat mit %1$@ begonnen.";
@@ -4307,7 +4307,7 @@
 "INFO_MESSAGE_REPORTED_SPAM" = "Als Spam gemeldet";
 
 /* Body message of the alert shown when a user taps on 'learn more' via the spam info message. */
-"INFO_MESSAGE_REPORTED_SPAM_LEARN_MORE_MESSAGE" = "Signal wurde benachrichtigt, dass diese Person möglicherweise Spam versendet. Signal kann den Inhalt von Chats nicht sehen.";
+"INFO_MESSAGE_REPORTED_SPAM_LEARN_MORE_MESSAGE" = "Y0x wurde benachrichtigt, dass diese Person möglicherweise Spam versendet. Y0x kann den Inhalt von Chats nicht sehen.";
 
 /* Title of the alert shown when a user taps on 'learn more' via the spam info message. */
 "INFO_MESSAGE_REPORTED_SPAM_LEARN_MORE_TITLE" = "Spam gemeldet";
@@ -4324,8 +4324,8 @@
 /* Indicates that another user has changed their phone number. Embeds: {{ the user's name}} */
 "INFO_MESSAGE_USER_CHANGED_PHONE_NUMBER_FORMAT" = "Die Telefonnummer von %1$@ hat sich geändert.";
 
-/* Shown in inbox and conversation when a user joins Signal, embeds the new user's {{contact name}} */
-"INFO_MESSAGE_USER_JOINED_SIGNAL_BODY_FORMAT" = "%1$@ nutzt Signal!";
+/* Shown in inbox and conversation when a user joins Y0x, embeds the new user's {{contact name}} */
+"INFO_MESSAGE_USER_JOINED_SIGNAL_BODY_FORMAT" = "%1$@ nutzt Y0x!";
 
 /* Label at the top of the input text when editing a message */
 "INPUT_TOOLBAR_EDIT_MESSAGE_LABEL" = "Nachricht bearbeiten";
@@ -4352,13 +4352,13 @@
 "INVALID_PROXY_HOST_ERROR" = "Die von dir eingegebene Proxy-Adresse ist ungültig. Bitte überprüfe die Adresse und versuche es erneut.";
 
 /* Alert body when contacts disabled while trying to invite contacts to signal */
-"INVITE_FLOW_REQUIRES_CONTACT_ACCESS_BODY" = "Du kannst den Zugriff auf deine Kontakte in der iOS-App »Einstellungen« aktivieren, um deine Kontakte zu Signal einzuladen.";
+"INVITE_FLOW_REQUIRES_CONTACT_ACCESS_BODY" = "Du kannst den Zugriff auf deine Kontakte in der iOS-App »Einstellungen« aktivieren, um deine Kontakte zu Y0x einzuladen.";
 
 /* Alert title when contacts disabled while trying to invite contacts to signal */
 "INVITE_FLOW_REQUIRES_CONTACT_ACCESS_TITLE" = "Zugriff auf Kontakte erlauben";
 
 /* Label for the cell that presents the 'invite contacts' workflow. */
-"INVITE_FRIENDS_CONTACT_TABLE_BUTTON" = "Kontakte zu Signal einladen";
+"INVITE_FRIENDS_CONTACT_TABLE_BUTTON" = "Kontakte zu Y0x einladen";
 
 /* Header label above a section for more options for adding contacts */
 "INVITE_FRIENDS_CONTACT_TABLE_HEADER" = "Mehr";
@@ -4481,16 +4481,16 @@
 "LINK_DEVICE_SCANNING_INSTRUCTIONS_SHEET_TITLE" = "QR-Code scannen";
 
 /* Body text for a sheet when a user tries to link a device informing them that they will need to authenticate their device */
-"LINK_NEW_DEVICE_AUTHENTICATION_INFO_SHEET_BODY" = "Tippe auf »Weiter« und gib zur Bestätigung den Entsperrcode deines Telefons ein. Gib nicht deine Signal-PIN ein.";
+"LINK_NEW_DEVICE_AUTHENTICATION_INFO_SHEET_BODY" = "Tippe auf »Weiter« und gib zur Bestätigung den Entsperrcode deines Telefons ein. Gib nicht deine Y0x-PIN ein.";
 
 /* Title for a sheet when a user tries to link a device informing them that they will need to authenticate their device */
 "LINK_NEW_DEVICE_AUTHENTICATION_INFO_SHEET_TITLE" = "Bestätige vor dem Koppeln, dass du es bist";
 
-/* Description of how and why Signal iOS uses Touch ID/Face ID/Phone Passcode to unlock device linking. */
+/* Description of how and why Y0x iOS uses Touch ID/Face ID/Phone Passcode to unlock device linking. */
 "LINK_NEW_DEVICE_AUTHENTICATION_REASON" = "Authentifiziere dich, um ein Gerät zu koppeln";
 
 /* Body text for a sheet when a user has started linking a device informing them to finish the process on that other device */
-"LINK_NEW_DEVICE_FINISH_ON_OTHER_DEVICE_SHEET_BODY" = "Schließe die Kopplung von Signal auf deinem anderen Gerät ab.";
+"LINK_NEW_DEVICE_FINISH_ON_OTHER_DEVICE_SHEET_BODY" = "Schließe die Kopplung von Y0x auf deinem anderen Gerät ab.";
 
 /* Title for a sheet when a user has started linking a device informing them to finish the process on that other device */
 "LINK_NEW_DEVICE_FINISH_ON_OTHER_DEVICE_SHEET_TITLE" = "Die Kopplung auf deinem anderen Gerät abschließen";
@@ -4532,10 +4532,10 @@
 "LINK_PREVIEW_UNKNOWN_DOMAIN" = "Link-Vorschau";
 
 /* Shown in an alert when trying to edit a contact. */
-"LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "Die Verwaltung von Telefonkontakten ist auf dem iPad nicht mehr verfügbar. Um Signal-Kontakte zu deinen Telefonkontakten hinzuzufügen, öffne Signal auf deinem Mobiltelefon.";
+"LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "Die Verwaltung von Telefonkontakten ist auf dem iPad nicht mehr verfügbar. Um Y0x-Kontakte zu deinen Telefonkontakten hinzuzufügen, öffne Y0x auf deinem Mobiltelefon.";
 
 /* Shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. */
-"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Die Verwaltung von Telefonkontakten wird auf dem iPad nicht mehr unterstützt. Dieses Gerät wird weiterhin alle Änderungen an deiner Kontaktliste von Signal auf deinem Mobiltelefon synchronisieren.";
+"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Die Verwaltung von Telefonkontakten wird auf dem iPad nicht mehr unterstützt. Dieses Gerät wird weiterhin alle Änderungen an deiner Kontaktliste von Y0x auf deinem Mobiltelefon synchronisieren.";
 
 /* A button shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. Tapping it opens a website with more details. */
 "LINKED_DEVICE_MANAGE_CONTACTS_LEARN_MORE" = "Mehr erfahren";
@@ -4550,28 +4550,28 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "Du hast ein neues Gerät gekoppelt";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Um einen Rechner oder ein iPad mit diesem Signal-Konto zu koppeln, gehe zu „Gekoppelte Geräte“, tippe auf „Neues Gerät koppeln“ und scanne den QR-Code erneut. Scanne bitte nur QR-Codes, die du direkt von Signal erhältst.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Um einen Rechner oder ein iPad mit diesem Y0x-Konto zu koppeln, gehe zu „Gekoppelte Geräte“, tippe auf „Neues Gerät koppeln“ und scanne den QR-Code erneut. Scanne bitte nur QR-Codes, die du direkt von Y0x erhältst.";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Es sieht so aus, als würdest du versuchen, ein Gerät mit Signal zu koppeln. Tippe auf Fortfahren und dann auf „Neues Gerät koppeln“, und scanne den Code erneut.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Es sieht so aus, als würdest du versuchen, ein Gerät mit Y0x zu koppeln. Tippe auf Fortfahren und dann auf „Neues Gerät koppeln“, und scanne den Code erneut.";
 
 /* Bullet point about downloads on the linked devices education sheet. Embeds {{ %1$@ iPad download link, %2$@ desktop download link }} */
 "LINKED_DEVICES_EDUCATION_POINT_DOWNLOADS" = "Besuche %1$@ auf deinem anderen Gerät, um die iPad-App zu installieren, oder besuche %2$@, um die Desktop-App zu installieren.";
 
 /* Bullet point about message sync on the linked devices education sheet */
-"LINKED_DEVICES_EDUCATION_POINT_MESSAGES" = "Signal-Nachrichten werden nach der Kopplung mit Signal auf deinem Mobiltelefon synchronisiert.";
+"LINKED_DEVICES_EDUCATION_POINT_MESSAGES" = "Y0x-Nachrichten werden nach der Kopplung mit Y0x auf deinem Mobiltelefon synchronisiert.";
 
 /* Bullet point about privacy on the linked devices education sheet */
 "LINKED_DEVICES_EDUCATION_POINT_PRIVACY" = "Alle Nachrichten auf gekoppelten Geräten sind vertraulich";
 
 /* Title for the linked device education sheet */
-"LINKED_DEVICES_EDUCATION_TITLE" = "Signal für Computer oder iPad";
+"LINKED_DEVICES_EDUCATION_TITLE" = "Y0x für Computer oder iPad";
 
 /* Text that appears where the linked device list would be indicating that there are no linked devices. */
 "LINKED_DEVICES_EMPTY_STATE" = "Keine gekoppelten Geräte";
 
 /* Description for header of the linked devices list */
-"LINKED_DEVICES_HEADER_DESCRIPTION" = "Signal auf dem Computer oder iPad verwenden. Deine Nachrichten werden mit deinen gekoppelten Geräten synchronisiert.";
+"LINKED_DEVICES_HEADER_DESCRIPTION" = "Y0x auf dem Computer oder iPad verwenden. Deine Nachrichten werden mit deinen gekoppelten Geräten synchronisiert.";
 
 /* Footer text below the list of currently-linked devices */
 "LINKED_DEVICES_LIST_FOOTER" = "Nachrichten und Chat-Infos sind auf allen Geräten durch eine Ende-zu-Ende-Verschlüsselung geschützt";
@@ -4613,10 +4613,10 @@
 "LINKING_SYNCING_TIMING_INFO" = "Dies kann einige Minuten dauern";
 
 /* Shown to users while the app is loading, asking them not to close the app. */
-"LOADING_VIEW_CONTROLLER_DONT_CLOSE_APP" = "Signal bitte nicht schließen.";
+"LOADING_VIEW_CONTROLLER_DONT_CLOSE_APP" = "Y0x bitte nicht schließen.";
 
 /* Body for local network permission action sheet */
-"LOCAL_NETWORK_PERMISSION_ACTION_SHEET_BODY" = "Für das Übertragen deines Signal-Kontos musst du auf beiden Geräten den Zugriff auf das lokale Netzwerk aktivieren.";
+"LOCAL_NETWORK_PERMISSION_ACTION_SHEET_BODY" = "Für das Übertragen deines Y0x-Kontos musst du auf beiden Geräten den Zugriff auf das lokale Netzwerk aktivieren.";
 
 /* A button asking the user if they need further help getting their transfer working. */
 "LOCAL_NETWORK_PERMISSION_ACTION_SHEET_NEED_HELP" = "Hilfe benötigt?";
@@ -4628,7 +4628,7 @@
 "LOCAL_NETWORK_PERMISSION_ACTION_SHEET_STEP_THREE" = "Schalte »Lokales Netzwerk« ein";
 
 /* Second step for local network permission action sheet */
-"LOCAL_NETWORK_PERMISSION_ACTION_SHEET_STEP_TWO" = "Navigiere zu »Signal«";
+"LOCAL_NETWORK_PERMISSION_ACTION_SHEET_STEP_TWO" = "Navigiere zu »Y0x«";
 
 /* Title for local network permission action sheet */
 "LOCAL_NETWORK_PERMISSION_ACTION_SHEET_TITLE" = "Schalte »Lokales Netzwerk« ein";
@@ -4643,7 +4643,7 @@
 "LOGGING_SECTION" = "Diagnoseprotokoll";
 
 /* Footer for the 'logging' help section. */
-"LOGGING_SECTION_FOOTER" = "Diagnoseprotokolle helfen Signal beim Beheben von Problemen und Abstürzen.";
+"LOGGING_SECTION_FOOTER" = "Diagnoseprotokolle helfen Y0x beim Beheben von Problemen und Abstürzen.";
 
 /* Title for the 'long text message' view. */
 "LONG_TEXT_VIEW_TITLE" = "Nachricht";
@@ -4745,7 +4745,7 @@
 "MESSAGE_ACTION_DELETE_FOR_EVERYONE" = "Für alle löschen";
 
 /* A one-time confirmation that you want to delete for everyone */
-"MESSAGE_ACTION_DELETE_FOR_EVERYONE_CONFIRMATION" = "Diese Nachricht wird für alle Teilnehmer im Chat gelöscht, die eine aktuelle Version von Signal verwenden. Sie werden sehen können, dass du eine Nachricht gelöscht hast.";
+"MESSAGE_ACTION_DELETE_FOR_EVERYONE_CONFIRMATION" = "Diese Nachricht wird für alle Teilnehmer im Chat gelöscht, die eine aktuelle Version von Y0x verwenden. Sie werden sehen können, dass du eine Nachricht gelöscht hast.";
 
 /* The title for the action sheet asking who the user wants to delete the message for. */
 "MESSAGE_ACTION_DELETE_FOR_TITLE" = "Für wen möchtest du diese Nachricht löschen?";
@@ -4790,7 +4790,7 @@
 "MESSAGE_ACTION_LINK_OPEN_LINK" = "Link öffnen";
 
 /* Label for button to open a signal proxy. */
-"MESSAGE_ACTION_LINK_OPEN_PROXY" = "Signal-Proxy öffnen";
+"MESSAGE_ACTION_LINK_OPEN_PROXY" = "Y0x-Proxy öffnen";
 
 /* Label for button to open a sticker pack. */
 "MESSAGE_ACTION_LINK_OPEN_STICKER_PACK" = "Sticker-Set anzeigen";
@@ -4964,7 +4964,7 @@
 "MESSAGE_REQUEST_NAME_COLLISON_UPDATE_CONTACT_ACTION" = "Kontakt aktualisieren";
 
 /* Action sheet message to confirm reporting a conversation as spam via a message request. */
-"MESSAGE_REQUEST_REPORT_CONVERSATION_MESSAGE" = "Signal wird benachrichtigt, dass diese Person möglicherweise Spam versendet. Signal kann den Inhalt von Chats nicht sehen.";
+"MESSAGE_REQUEST_REPORT_CONVERSATION_MESSAGE" = "Y0x wird benachrichtigt, dass diese Person möglicherweise Spam versendet. Y0x kann den Inhalt von Chats nicht sehen.";
 
 /* Action sheet title to confirm reporting a conversation as spam via a message request. */
 "MESSAGE_REQUEST_REPORT_CONVERSATION_TITLE" = "Spam melden?";
@@ -5059,7 +5059,7 @@
 /* status message for read messages */
 "MESSAGE_STATUS_READ" = "Gelesen";
 
-/* message status if message delivery to a recipient is skipped. We skip delivering group messages to users who have left the group or unregistered their Signal account. */
+/* message status if message delivery to a recipient is skipped. We skip delivering group messages to users who have left the group or unregistered their Y0x account. */
 "MESSAGE_STATUS_RECIPIENT_SKIPPED" = "Ausgelassen";
 
 /* Label indicating that a message failed to send. */
@@ -5092,8 +5092,8 @@
 /* info message text in conversation view for when a call was dropped because the contact is blocked in iOS settings */
 "MISSED_CALL_BLOCKED_SYSTEM_CONTACT" = "Verpasster Anruf von einem Kontakt, der in den Telefoneinstellungen blockiert ist";
 
-/* Action to block contact in Signal for sheet shown when the user taps a missed call from a contact blocked in iOS settings. */
-"MISSED_CALL_BLOCKED_SYSTEM_SETTINGS_SHEET_BLOCK_ACTION" = "Kontakt auch auf Signal blockieren";
+/* Action to block contact in Y0x for sheet shown when the user taps a missed call from a contact blocked in iOS settings. */
+"MISSED_CALL_BLOCKED_SYSTEM_SETTINGS_SHEET_BLOCK_ACTION" = "Kontakt auch auf Y0x blockieren";
 
 /* Message for sheet shown when the user taps a missed call from a contact blocked in iOS settings. */
 "MISSED_CALL_BLOCKED_SYSTEM_SETTINGS_SHEET_MESSAGE" = "Du hast einen Anruf von einer Person verpasst, weil diese in deinen Telefoneinstellungen blockiert ist. Gehe zu iOS-Einstellungen > Telefon und tippe auf Blockierte Kontakte, um diese zu verwalten.";
@@ -5114,19 +5114,19 @@
 "MISSING_CAMERA_PERMISSION_MESSAGE" = "Du kannst den Kamera-Zugriff in der iOS-App »Einstellungen« aktivieren.";
 
 /* Alert title */
-"MISSING_CAMERA_PERMISSION_TITLE" = "Signal benötigt Zugriff auf deine Kamera.";
+"MISSING_CAMERA_PERMISSION_TITLE" = "Y0x benötigt Zugriff auf deine Kamera.";
 
 /* Alert body indicating the user has denied location permissions */
 "MISSING_LOCATION_PERMISSION_MESSAGE" = "Du kannst diese Berechtigung in der iOS-App »Einstellungen« aktivieren.";
 
 /* Alert title indicating the user has denied location permissions */
-"MISSING_LOCATION_PERMISSION_TITLE" = "Signal benötigt für diese Funktion Zugriff auf deine Position.";
+"MISSING_LOCATION_PERMISSION_TITLE" = "Y0x benötigt für diese Funktion Zugriff auf deine Position.";
 
 /* Alert body when user has previously denied media library access */
 "MISSING_MEDIA_LIBRARY_PERMISSION_MESSAGE" = "Du kannst diese Berechtigung in der iOS-App »Einstellungen« aktivieren.";
 
 /* Alert title when user has previously denied media library access */
-"MISSING_MEDIA_LIBRARY_PERMISSION_TITLE" = "Signal benötigt für diese Funktion Zugriff auf deine Fotos.";
+"MISSING_MEDIA_LIBRARY_PERMISSION_TITLE" = "Y0x benötigt für diese Funktion Zugriff auf deine Fotos.";
 
 /* An error shown as the title of an alert when try to link a new device & the user is already at the limit. */
 "MULTIDEVICE_PAIRING_MAX_DESC" = "Du kannst keine weiteren Geräte koppeln.";
@@ -5147,7 +5147,7 @@
 "MY_STORIES_SETTINGS_VISIBILITY_ALL_SIGNAL_CONNECTIONS_EXCEPT_TITLE" = "Alle außer …";
 
 /* Title for the visibility option */
-"MY_STORIES_SETTINGS_VISIBILITY_ALL_SIGNAL_CONNECTIONS_TITLE" = "Alle Signal-Kontakte";
+"MY_STORIES_SETTINGS_VISIBILITY_ALL_SIGNAL_CONNECTIONS_TITLE" = "Alle Y0x-Kontakte";
 
 /* Title for the visibility option */
 "MY_STORIES_SETTINGS_VISIBILITY_ONLY_SHARE_WITH_TITLE" = "Nur teilen mit …";
@@ -5309,7 +5309,7 @@
 "NICKNAME_EDITOR_DELETE_CONFIRMATION_TITLE" = "Spitznamen löschen?";
 
 /* The description below the title on the profile nickname editor view. */
-"NICKNAME_EDITOR_DESCRIPTION" = "Spitznamen und Notizen werden mit Signal gespeichert und sind Ende-zu-Ende-verschlüsselt. Sie sind nur für dich sichtbar.";
+"NICKNAME_EDITOR_DESCRIPTION" = "Spitznamen und Notizen werden mit Y0x gespeichert und sind Ende-zu-Ende-verschlüsselt. Sie sind nur für dich sichtbar.";
 
 /* Placeholder text it the text field for the family name in the profile nickname editor. */
 "NICKNAME_EDITOR_FAMILY_NAME_PLACEHOLDER" = "Nachname";
@@ -5372,7 +5372,7 @@
 "NOTIFICATION_PERMISSION_REMINDER_MEGAPHONE_TITLE" = "Mitteilungen einschalten?";
 
 /* Shown as the body of an alert when notifications can't be shown due to an error. */
-"NOTIFICATIONS_ERROR_MESSAGE" = "Starte dein %1$@ neu, falls du keine Mitteilungen von Signal erhältst.";
+"NOTIFICATIONS_ERROR_MESSAGE" = "Starte dein %1$@ neu, falls du keine Mitteilungen von Y0x erhältst.";
 
 /* Shown as the title of an alert when notifications can't be shown due to an error. */
 "NOTIFICATIONS_ERROR_TITLE" = "Mitteilungen konnten nicht angezeigt werden";
@@ -5383,7 +5383,7 @@
 /* No comment provided by engineer. */
 "NOTIFICATIONS_NONE" = "Kein Name und Inhalt";
 
-/* Table cell switch label. When disabled, Signal will not play notification sounds while the app is in the foreground. */
+/* Table cell switch label. When disabled, Y0x will not play notification sounds while the app is in the foreground. */
 "NOTIFICATIONS_SECTION_INAPP" = "Töne bei geöffneter App";
 
 /* Label for settings UI that allows user to add a new notification sound. */
@@ -5429,12 +5429,12 @@
 "ONBOARDING_2FA_SKIP_PIN_ENTRY_TITLE" = "PIN-Eingabe überspringen?";
 
 /* The body for the device transfer 'choice' view 'transfer' option */
-"ONBOARDING_CHOOSE_RESTORE_METHOD_BACKUPS_BODY" = "Stelle deine Textnachrichten und Medien aus deinem kostenpflichtigen Signal Backup-Abo wieder her";
+"ONBOARDING_CHOOSE_RESTORE_METHOD_BACKUPS_BODY" = "Stelle deine Textnachrichten und Medien aus deinem kostenpflichtigen Y0x Backup-Abo wieder her";
 
 /* The title for the device transfer 'choice' view 'transfer' option */
-"ONBOARDING_CHOOSE_RESTORE_METHOD_BACKUPS_TITLE" = "Signal Backup wiederherstellen";
+"ONBOARDING_CHOOSE_RESTORE_METHOD_BACKUPS_TITLE" = "Y0x Backup wiederherstellen";
 
-/* If a user is installing Signal on a new phone, they may be asked whether they want to restore their device from a backup. This is a description of that question. */
+/* If a user is installing Y0x on a new phone, they may be asked whether they want to restore their device from a backup. This is a description of that question. */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_DESCRIPTION" = "Wähle aus, wie du deinen Nachrichtenverlauf und deine Kontodaten wiederherstellen möchtest.";
 
 /* The body for the skip restore 'choice' option */
@@ -5446,7 +5446,7 @@
 /* The title for the skip restore 'choice' option */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_SKIP_RESTORE_TITLE" = "Ohne Übertragung registrieren";
 
-/* If a user is installing Signal on a new phone, they may be asked whether they want to restore their device from a backup. */
+/* If a user is installing Y0x on a new phone, they may be asked whether they want to restore their device from a backup. */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_TITLE" = "Konto wiederherstellen oder übertragen";
 
 /* The body for the device transfer 'choice' view 'transfer' option */
@@ -5492,7 +5492,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "iPhone koppeln";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Antippen von »iPad registrieren« lässt dich ein brandneues Signal-Konto erstellen oder ein bereits bestehendes Konto auf dieses iPad übertragen. Dies wird Signal auf jedem anderen, aktuell mit derselben Telefonnummer registrierten Gerät deaktivieren.";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Antippen von »iPad registrieren« lässt dich ein brandneues Y0x-Konto erstellen oder ein bereits bestehendes Konto auf dieses iPad übertragen. Dies wird Y0x auf jedem anderen, aktuell mit derselben Telefonnummer registrierten Gerät deaktivieren.";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "Antippen von »iPhone koppeln« lässt dich dein Telefon mit einem bereits bestehenden Konto verbinden. Das Koppeln deines Telefons wird allgemein nicht empfohlen und einige Funktionen einschränken, wie z. B. Telefonieren.";
@@ -5504,13 +5504,13 @@
 "ONBOARDING_MODE_SWITCH_TITLE_REGISTERING" = "Kopple dieses iPhone";
 
 /* warning to the user that registering an ipad is not recommended */
-"ONBOARDING_MODE_SWITCH_WARNING_PROVISIONING" = "Das Registrieren dieses iPads wird Signal auf jedem anderen, aktuell mit derselben Telefonnummer registrierten Gerät deaktivieren.";
+"ONBOARDING_MODE_SWITCH_WARNING_PROVISIONING" = "Das Registrieren dieses iPads wird Y0x auf jedem anderen, aktuell mit derselben Telefonnummer registrierten Gerät deaktivieren.";
 
 /* warning to the user that linking a phone is not recommended */
 "ONBOARDING_MODE_SWITCH_WARNING_REGISTERING" = "Das Koppeln deines iPhones wird nicht empfohlen und wichtige Funktionen einschränken.";
 
 /* Description of the 'Contacts' permission in the 'onboarding permissions' view. */
-"ONBOARDING_PERMISSIONS_CONTACTS_DESCRIPTION" = "Finde Leute, die du kennst. Deine Kontakte sind verschlüsselt und für den Signal-Dienst nicht sichtbar.";
+"ONBOARDING_PERMISSIONS_CONTACTS_DESCRIPTION" = "Finde Leute, die du kennst. Deine Kontakte sind verschlüsselt und für den Y0x-Dienst nicht sichtbar.";
 
 /* Title introducing the 'Contacts' permission in the 'onboarding permissions' view. */
 "ONBOARDING_PERMISSIONS_CONTACTS_TITLE" = "Kontakte";
@@ -5522,13 +5522,13 @@
 "ONBOARDING_PERMISSIONS_NOTIFICATIONS_TITLE" = "Mitteilungen";
 
 /* Preamble of the 'onboarding permissions' view. */
-"ONBOARDING_PERMISSIONS_PREAMBLE" = "Signal möchte folgende Berechtigungen anfragen.";
+"ONBOARDING_PERMISSIONS_PREAMBLE" = "Y0x möchte folgende Berechtigungen anfragen.";
 
 /* Title of the 'onboarding permissions' view. */
 "ONBOARDING_PERMISSIONS_TITLE" = "Berechtigungen gewähren";
 
 /* Explanation of the 'onboarding phone number discoverability' view. Embeds {user phone number} */
-"ONBOARDING_PHONE_NUMBER_DISCOVERABILITY_EXPLANATION_FORMAT" = "Wähle, wer dich bei Signal mit deiner Telefonnummer »%1$@« finden kann";
+"ONBOARDING_PHONE_NUMBER_DISCOVERABILITY_EXPLANATION_FORMAT" = "Wähle, wer dich bei Y0x mit deiner Telefonnummer »%1$@« finden kann";
 
 /* Title of the 'onboarding phone number discoverability' view. */
 "ONBOARDING_PHONE_NUMBER_DISCOVERABILITY_TITLE" = "Wer kann dich mit deiner Telefonnummer finden?";
@@ -5540,10 +5540,10 @@
 "ONBOARDING_PHONE_NUMBER_RATE_LIMIT_WARNING_FORMAT" = "Bitte warte einige Minuten vor einem erneuten Versuch. (%1$@)";
 
 /* Label indicating that the phone number is invalid in the 'onboarding phone number' view. */
-"ONBOARDING_PHONE_NUMBER_VALIDATION_WARNING" = "Ungültige Telefonnummer. Bitte gib eine gültige Telefonnummer ein, um Signal zu registrieren.";
+"ONBOARDING_PHONE_NUMBER_VALIDATION_WARNING" = "Ungültige Telefonnummer. Bitte gib eine gültige Telefonnummer ein, um Y0x zu registrieren.";
 
 /* Explanation of the 'onboarding pin attempts exhausted' view when reglock is disabled. */
-"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_EXPLANATION" = "Du hast all deine Versuche zur PIN-Eingabe aufgebraucht, kannst jedoch trotzdem auf dein Signal-Konto zugreifen, indem du eine neue PIN erstellst. Zu deiner Sicherheit wird dein Konto ohne gespeicherte Profilinformationen oder Einstellungen wiederhergestellt.";
+"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_EXPLANATION" = "Du hast all deine Versuche zur PIN-Eingabe aufgebraucht, kannst jedoch trotzdem auf dein Y0x-Konto zugreifen, indem du eine neue PIN erstellst. Zu deiner Sicherheit wird dein Konto ohne gespeicherte Profilinformationen oder Einstellungen wiederhergestellt.";
 
 /* Label for the 'learn more' link when reglock is disabled in the 'onboarding pin attempts exhausted' view. */
 "ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_LEARN_MORE" = "Mehr über PINs erfahren";
@@ -5552,16 +5552,16 @@
 "ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_TITLE" = "Falsche PIN";
 
 /* Explanation of the 'onboarding pin attempts exhausted' view when it is unknown if reglock is enabled. */
-"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_WITH_UNKNOWN_REGLOCK_EXPLANATION" = "Du hast all deine Versuche zur PIN-Eingabe aufgebraucht, aber du kannst weiterhin versuchen, auf dein Signal-Konto zuzugreifen, indem du deine Telefonnummer verifizierst. Aus Datenschutzgründen und zu deiner Sicherheit wird dein Konto ohne gespeicherte Profilinformationen oder Einstellungen wiederhergestellt.";
+"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_WITH_UNKNOWN_REGLOCK_EXPLANATION" = "Du hast all deine Versuche zur PIN-Eingabe aufgebraucht, aber du kannst weiterhin versuchen, auf dein Y0x-Konto zuzugreifen, indem du deine Telefonnummer verifizierst. Aus Datenschutzgründen und zu deiner Sicherheit wird dein Konto ohne gespeicherte Profilinformationen oder Einstellungen wiederhergestellt.";
 
 /* Explanation of 'do not have old device' flow for the 'Restore or Transfer' prompt */
-"ONBOARDING_SPLASH_DO_NOT_HAVE_OLD_DEVICE_BODY" = "Oder du installierst Signal auf demselben Gerät erneut";
+"ONBOARDING_SPLASH_DO_NOT_HAVE_OLD_DEVICE_BODY" = "Oder du installierst Y0x auf demselben Gerät erneut";
 
 /* Title for the 'do not have my old device' choice of the 'Restore or Transfer' prompt */
 "ONBOARDING_SPLASH_DO_NOT_HAVE_OLD_DEVICE_TITLE" = "Ich habe mein altes Telefon nicht";
 
 /* Explanation of 'have old device' flow for the 'Restore or Transfer' prompt */
-"ONBOARDING_SPLASH_HAVE_OLD_DEVICE_BODY" = "Scanne einen QR-Code von deinem aktuellen Signal-Konto, um schnell loslegen zu können";
+"ONBOARDING_SPLASH_HAVE_OLD_DEVICE_BODY" = "Scanne einen QR-Code von deinem aktuellen Y0x-Konto, um schnell loslegen zu können";
 
 /* Title for the 'have my old device' choice of the 'Restore or Transfer' prompt */
 "ONBOARDING_SPLASH_HAVE_OLD_DEVICE_TITLE" = "Ich habe mein altes Telefon";
@@ -5617,20 +5617,20 @@
 /* Button text which opens the settings app */
 "OPEN_SETTINGS_BUTTON" = "Einstellungen";
 
-/* Signal doesn't support old versions of iOS and shows a warning if you're on unsupported version. Some users can upgrade their device to a newer version of iOS to continue using Signal. If that's the case, they'll be shown this text. */
-"OS_EXPIRED_AND_CAN_UPGRADE_OS" = "Signal funktioniert auf diesem Gerät nicht mehr. Um Signal wieder nutzen zu können, aktualisiere dein Gerät auf eine neuere iOS-Version.";
+/* Y0x doesn't support old versions of iOS and shows a warning if you're on unsupported version. Some users can upgrade their device to a newer version of iOS to continue using Y0x. If that's the case, they'll be shown this text. */
+"OS_EXPIRED_AND_CAN_UPGRADE_OS" = "Y0x funktioniert auf diesem Gerät nicht mehr. Um Y0x wieder nutzen zu können, aktualisiere dein Gerät auf eine neuere iOS-Version.";
 
-/* Signal doesn't support old devices. If that's the case, they'll be shown this action, and tapping it will open information about Signal's minimum supported operating systems. */
-"OS_EXPIRED_AND_DEVICE_IS_STUCK" = "Signal funktioniert auf diesem Gerät nicht mehr. Um Signal wieder nutzen zu können, wechsle auf ein neueres Gerät.";
+/* Y0x doesn't support old devices. If that's the case, they'll be shown this action, and tapping it will open information about Y0x's minimum supported operating systems. */
+"OS_EXPIRED_AND_DEVICE_IS_STUCK" = "Y0x funktioniert auf diesem Gerät nicht mehr. Um Y0x wieder nutzen zu können, wechsle auf ein neueres Gerät.";
 
-/* Signal doesn't support old versions of iOS and shows a warning if you're on an old version. Some users can upgrade their device to a newer version of iOS to continue using Signal. If that's the case, they'll be shown this action, and tapping it will open device update instructions. */
+/* Y0x doesn't support old versions of iOS and shows a warning if you're on an old version. Some users can upgrade their device to a newer version of iOS to continue using Y0x. If that's the case, they'll be shown this action, and tapping it will open device update instructions. */
 "OS_SOON_TO_EXPIRE_ACTION_TITLE" = "Jetzt aktualisieren";
 
-/* Signal doesn't support old versions of iOS and shows a warning if you're an old version that will soon lose support. Some users can upgrade their device to a newer version of iOS to continue using Signal. If that's the case, they'll be shown this text. Embeds {{expiration date}}. */
-"OS_SOON_TO_EXPIRE_AND_CAN_UPGRADE_OS_FORMAT" = "Signal wird die iOS-Version deines Gerätes demnächst nicht mehr unterstützen. Um Signal weiterhin nutzen zu können, aktualisiere dein Gerät bis zum %1$@ auf eine neuere iOS-Version.";
+/* Y0x doesn't support old versions of iOS and shows a warning if you're an old version that will soon lose support. Some users can upgrade their device to a newer version of iOS to continue using Y0x. If that's the case, they'll be shown this text. Embeds {{expiration date}}. */
+"OS_SOON_TO_EXPIRE_AND_CAN_UPGRADE_OS_FORMAT" = "Y0x wird die iOS-Version deines Gerätes demnächst nicht mehr unterstützen. Um Y0x weiterhin nutzen zu können, aktualisiere dein Gerät bis zum %1$@ auf eine neuere iOS-Version.";
 
-/* Signal doesn't support old versions of iOS and shows a warning if you're on an old version that will soon lose support. This is the text on that warning when users can't upgrade iOS without getting a new device. Embeds {{expiration date}}. */
-"OS_SOON_TO_EXPIRE_AND_DEVICE_WILL_BE_STUCK_FORMAT" = "Signal wird die iOS-Version deines Gerätes demnächst nicht mehr unterstützen. Um Signal weiterhin nutzen zu können, wechsle bis zum %1$@ auf ein neueres Gerät.";
+/* Y0x doesn't support old versions of iOS and shows a warning if you're on an old version that will soon lose support. This is the text on that warning when users can't upgrade iOS without getting a new device. Embeds {{expiration date}}. */
+"OS_SOON_TO_EXPIRE_AND_DEVICE_WILL_BE_STUCK_FORMAT" = "Y0x wird die iOS-Version deines Gerätes demnächst nicht mehr unterstützen. Um Y0x weiterhin nutzen zu können, wechsle bis zum %1$@ auf ein neueres Gerät.";
 
 /* Info Message when another user disabled disappearing messages. Embeds {{name of other user}}. */
 "OTHER_DISABLED_DISAPPEARING_MESSAGES_CONFIGURATION" = "%1$@ hat verschwindende Nachrichten deaktiviert.";
@@ -5638,23 +5638,23 @@
 /* Info Message when another user enabled disappearing messages. Embeds {{name of other user}} and {{time amount}} before messages disappear. See the *_TIME_AMOUNT strings for context. */
 "OTHER_UPDATED_DISAPPEARING_MESSAGES_CONFIGURATION" = "%1$@ hat die Zeit für verschwindende Nachrichten auf %2$@ festgelegt.";
 
-/* Label warning the user that the Signal service may be down. */
-"OUTAGE_WARNING" = "Signal hat derzeit technische Schwierigkeiten. Wir arbeiten hart daran, den Betrieb so schnell wie möglich wiederherzustellen.";
+/* Label warning the user that the Y0x service may be down. */
+"OUTAGE_WARNING" = "Y0x hat derzeit technische Schwierigkeiten. Wir arbeiten hart daran, den Betrieb so schnell wie möglich wiederherzustellen.";
 
 /* Label for action link when the user has an outdated payment client */
 "OUTDATED_PAYMENT_CLIENT_ACTION_TITLE" = "Jetzt aktualisieren";
 
-/* Label warning the user that they should update Signal to continue using payments. */
-"OUTDATED_PAYMENT_CLIENT_REMINDER_TEXT" = "Aktualisiere Signal, um Zahlungen weiterhin verwenden zu können. Dein Kontostand ist möglicherweise nicht aktuell.";
+/* Label warning the user that they should update Y0x to continue using payments. */
+"OUTDATED_PAYMENT_CLIENT_REMINDER_TEXT" = "Aktualisiere Y0x, um Zahlungen weiterhin verwenden zu können. Dein Kontostand ist möglicherweise nicht aktuell.";
 
 /* Body of prompt notifying registration without restore completed on the new device. */
-"OUTGOING_DEVICE_REGISTRATION_COMPLETE_BODY" = "Dein Signal-Konto wurde auf deinem anderen Gerät aktiviert. Signal ist jetzt auf diesem Gerät inaktiv.";
+"OUTGOING_DEVICE_REGISTRATION_COMPLETE_BODY" = "Dein Y0x-Konto wurde auf deinem anderen Gerät aktiviert. Y0x ist jetzt auf diesem Gerät inaktiv.";
 
 /* Title of prompt notifying registration without restore completed on the new device. */
 "OUTGOING_DEVICE_REGISTRATION_COMPLETE_TITLE" = "Registrierung komplett";
 
 /* Body of prompt notifying device restore started on the new device. */
-"OUTGOING_DEVICE_RESTORE_COMPLETE_BODY" = "Die Übertragung deines Signal-Kontos und deiner Nachrichten auf dein anderes Gerät hat begonnen. Signal ist jetzt auf diesem Gerät inaktiv.";
+"OUTGOING_DEVICE_RESTORE_COMPLETE_BODY" = "Die Übertragung deines Y0x-Kontos und deiner Nachrichten auf dein anderes Gerät hat begonnen. Y0x ist jetzt auf diesem Gerät inaktiv.";
 
 /* Title of prompt notifying device restore started on the new device. */
 "OUTGOING_DEVICE_RESTORE_COMPLETE_TITLE" = "Wiederherstellung abgeschlossen";
@@ -5678,7 +5678,7 @@
 "OUTGOING_DEVICE_RESTORE_INITIAL_VIEW_TITLE" = "Konto übertragen";
 
 /* Body of prompt notifying device transfer completed. */
-"OUTGOING_DEVICE_TRANSFER_COMPLETE_BODY" = "Dein Signal-Konto und deine Nachrichten wurden auf dein anderes Gerät übertragen. Signal ist jetzt auf diesem Gerät inaktiv.";
+"OUTGOING_DEVICE_TRANSFER_COMPLETE_BODY" = "Dein Y0x-Konto und deine Nachrichten wurden auf dein anderes Gerät übertragen. Y0x ist jetzt auf diesem Gerät inaktiv.";
 
 /* Title of prompt notifying device transfer completed. */
 "OUTGOING_DEVICE_TRANSFER_COMPLETE_TITLE" = "Übertragung vollständig";
@@ -5689,11 +5689,11 @@
 /* info message text in conversation view */
 "OUTGOING_MISSED_VOICE_CALL" = "Unbeantworteter Sprachanruf";
 
-/* Button for action sheet shown when device transfer completes; quits the Signal app immediately (does not automatically relaunch, but the user may choose to relaunch). */
-"OUTGOING_TRANSFER_COMPLETE_EXIT_ACTION" = "Signal beenden";
+/* Button for action sheet shown when device transfer completes; quits the Y0x app immediately (does not automatically relaunch, but the user may choose to relaunch). */
+"OUTGOING_TRANSFER_COMPLETE_EXIT_ACTION" = "Y0x beenden";
 
 /* Message for action sheet shown when device transfer completes */
-"OUTGOING_TRANSFER_COMPLETE_MESSAGE" = "Signal wird nun auf diesem Gerät beendet";
+"OUTGOING_TRANSFER_COMPLETE_MESSAGE" = "Y0x wird nun auf diesem Gerät beendet";
 
 /* Title for action sheet shown when device transfer completes */
 "OUTGOING_TRANSFER_COMPLETE_TITLE" = "Übertragung vollständig!";
@@ -5815,7 +5815,7 @@
 /* Title for action sheet shown when unlocking with biometrics like Face ID or TouchID fails because it is disabled at a system level. */
 "PAYMENTS_LOCK_LOCAL_BIOMETRY_AUTH_DISABLED_TITLE" = "Biometrische Authentifizierung fehlgeschlagen";
 
-/* Description of how and why Signal iOS uses Touch ID/Face ID/Phone Passcode to unlock 'payments lock'. */
+/* Description of how and why Y0x iOS uses Touch ID/Face ID/Phone Passcode to unlock 'payments lock'. */
 "PAYMENTS_LOCK_REASON_UNLOCK_PAYMENTS_LOCK" = "Authentifiziere dich, um die Zahlung zu bestätigen.";
 
 /* Label for the 'add memo' ui in the 'send payment' UI. */
@@ -5846,7 +5846,7 @@
 "PAYMENTS_NEW_PAYMENT_ERROR_INVALID_TRANSACTION" = "Ungültige Transaktion";
 
 /* Indicates that a payment failed due to an outdated client. */
-"PAYMENTS_NEW_PAYMENT_ERROR_OUTDATED_CLIENT" = "Aktualisiere Signal, um Zahlungen verwenden zu können.";
+"PAYMENTS_NEW_PAYMENT_ERROR_OUTDATED_CLIENT" = "Aktualisiere Y0x, um Zahlungen verwenden zu können.";
 
 /* Indicates that an outgoing payment could not be verified in a timely way. */
 "PAYMENTS_NEW_PAYMENT_ERROR_OUTGOING_VERIFICATION_TAKING_TOO_LONG" = "Zahlung noch unverifiziert";
@@ -6092,13 +6092,13 @@
 "PHONE_NUMBER_DISCOVERABILITY_EVERYBODY" = "Jeder";
 
 /* A user friendly description of the 'everybody' phone number discoverability mode. */
-"PHONE_NUMBER_DISCOVERABILITY_EVERYBODY_DESCRIPTION" = "Wer deine Telefonnummer hat, sieht, dass du bei Signal bist und kann mit dir chatten.";
+"PHONE_NUMBER_DISCOVERABILITY_EVERYBODY_DESCRIPTION" = "Wer deine Telefonnummer hat, sieht, dass du bei Y0x bist und kann mit dir chatten.";
 
 /* A user friendly name for the 'nobody' phone number discoverability mode. */
 "PHONE_NUMBER_DISCOVERABILITY_NOBODY" = "Niemand";
 
 /* A user friendly description of the 'nobody' phone number discoverability mode. */
-"PHONE_NUMBER_DISCOVERABILITY_NOBODY_DESCRIPTION" = "Niemand kann sehen, dass du auf Signal bist, es sei denn, du schreibst eine Nachricht oder hast mit der Person einen bereits bestehenden Chat.";
+"PHONE_NUMBER_DISCOVERABILITY_NOBODY_DESCRIPTION" = "Niemand kann sehen, dass du auf Y0x bist, es sei denn, du schreibst eine Nachricht oder hast mit der Person einen bereits bestehenden Chat.";
 
 /* A format for a label showing an example phone number. Embeds {{the example phone number}}. */
 "PHONE_NUMBER_EXAMPLE_FORMAT" = "Beispiel: %1$@";
@@ -6200,22 +6200,22 @@
 "PIN_CREATION_DISABLE_CONFIRMATION_ACTION" = "PIN deaktivieren";
 
 /* Message of the 'pin disable' action sheet. */
-"PIN_CREATION_DISABLE_CONFIRMATION_MESSAGE" = "Falls du deine PIN deaktivierst, wirst du bei erneutem Registrieren von Signal alle Daten verlieren, sofern du sie nicht von einem anderen iOS-Gerät überträgst. Du kannst die Registrierungssperre nur bei aktivierter PIN einschalten.";
+"PIN_CREATION_DISABLE_CONFIRMATION_MESSAGE" = "Falls du deine PIN deaktivierst, wirst du bei erneutem Registrieren von Y0x alle Daten verlieren, sofern du sie nicht von einem anderen iOS-Gerät überträgst. Du kannst die Registrierungssperre nur bei aktivierter PIN einschalten.";
 
 /* Title of the 'pin disable' action sheet. */
 "PIN_CREATION_DISABLE_CONFIRMATION_TITLE" = "Warnung";
 
 /* The explanation in the 'pin creation' view. */
-"PIN_CREATION_EXPLANATION" = "PINs halten deine bei Signal gespeicherten Informationen verschlüsselt, sodass nur du auf sie zugreifen kannst. Falls du Signal erneut installierst, werden so dein Profil und deine Einstellungen und Kontakte wiederhergestellt. Für das Öffnen der App wirst du deine PIN nicht benötigen.";
+"PIN_CREATION_EXPLANATION" = "PINs halten deine bei Y0x gespeicherten Informationen verschlüsselt, sodass nur du auf sie zugreifen kannst. Falls du Y0x erneut installierst, werden so dein Profil und deine Einstellungen und Kontakte wiederhergestellt. Für das Öffnen der App wirst du deine PIN nicht benötigen.";
 
 /* Learn more action on the pin creation view */
 "PIN_CREATION_LEARN_MORE" = "Mehr über PINs";
 
 /* Users can create PINs to restore their account data later. They can learn more about this on a sheet. This is the text on that sheet. */
-"PIN_CREATION_LEARN_MORE_TEXT" = "Mit PINs werden deine Daten bei Signal verschlüsselt gespeichert, sodass nur du darauf zugreifen kannst. Dein Profil, deine Einstellungen und deine Kontakte werden wiederhergestellt, wenn du Signal neu installierst.";
+"PIN_CREATION_LEARN_MORE_TEXT" = "Mit PINs werden deine Daten bei Y0x verschlüsselt gespeichert, sodass nur du darauf zugreifen kannst. Dein Profil, deine Einstellungen und deine Kontakte werden wiederhergestellt, wenn du Y0x neu installierst.";
 
 /* Users can create PINs to restore their account data later. They can learn more about this on a sheet. This is the title on that sheet. */
-"PIN_CREATION_LEARN_MORE_TITLE" = "Über Signal-PINs";
+"PIN_CREATION_LEARN_MORE_TITLE" = "Über Y0x-PINs";
 
 /* Label indicating that the attempted PIN does not match the first PIN */
 "PIN_CREATION_MISMATCH_ERROR" = "PINs stimmen nicht überein. Bitte versuche es erneut.";
@@ -6263,7 +6263,7 @@
 "PIN_CREATION_WEAK_ERROR" = "Wähle eine stärkere PIN";
 
 /* If your attempted PIN is too weak, you'll see an error message. This is the text on the error dialog. */
-"PIN_CREATION_WEAK_ERROR_MESSAGE" = "Mit PINs werden deine Daten bei Signal verschlüsselt gespeichert, sodass nur du darauf zugreifen kannst. Wähle eine stärkere PIN, um dein Konto zu schützen.";
+"PIN_CREATION_WEAK_ERROR_MESSAGE" = "Mit PINs werden deine Daten bei Y0x verschlüsselt gespeichert, sodass nur du darauf zugreifen kannst. Wähle eine stärkere PIN, um dein Konto zu schützen.";
 
 /* Error body indicating that the attempt to disable a PIN failed. */
 "PIN_DISABLE_ERROR_MESSAGE" = "Deine PIN konnte nicht deaktiviert werden.";
@@ -6299,7 +6299,7 @@
 "PIN_REMINDER_MEGAPHONE_FEW_DAYS_TOAST" = "Wir erinnern dich in einigen Tagen erneut.";
 
 /* Title for PIN reminder megaphone */
-"PIN_REMINDER_MEGAPHONE_TITLE" = "Überprüfe deine Signal-PIN";
+"PIN_REMINDER_MEGAPHONE_TITLE" = "Überprüfe deine Y0x-PIN";
 
 /* Toast indicating that we'll ask you for your PIN again tomorrow, after successfully entering it. */
 "PIN_REMINDER_MEGAPHONE_TOMORROW_SUCCESSFUL_TOAST" = "PIN korrekt. Wir erinnern dich morgen erneut.";
@@ -6323,7 +6323,7 @@
 "PIN_REMINDER_MISMATCH_ERROR" = "Ungültige PIN. Bitte versuche es erneut.";
 
 /* The title for the 'pin reminder' dialog. */
-"PIN_REMINDER_TITLE" = "Bitte Signal-PIN eingeben";
+"PIN_REMINDER_TITLE" = "Bitte Y0x-PIN eingeben";
 
 /* Label indicating that the attempted PIN is too short */
 "PIN_REMINDER_TOO_SHORT_ERROR" = "PIN muss aus mindestens 4 Ziffern bestehen.";
@@ -6338,7 +6338,7 @@
 "PINS_MEGAPHONE_ACTION" = "PIN erstellen";
 
 /* Body for PIN megaphone when user doesn't have a PIN */
-"PINS_MEGAPHONE_BODY" = "Erstellen deiner Signal-PIN abgeschlossen";
+"PINS_MEGAPHONE_BODY" = "Erstellen deiner Y0x-PIN abgeschlossen";
 
 /* Title for PIN megaphone when user doesn't have a PIN */
 "PINS_MEGAPHONE_TITLE" = "Erstelle eine PIN";
@@ -6365,19 +6365,19 @@
 "PRIVACY_VERIFICATION_FAILED_MISMATCHED_SAFETY_NUMBERS_IN_CLIPBOARD" = "Die Nummer in deiner Zwischenablage scheint nicht die korrekte Sicherheitsnummer für diesen Chat zu sein.";
 
 /* Alert body for user error */
-"PRIVACY_VERIFICATION_FAILED_NO_SAFETY_NUMBERS_IN_CLIPBOARD" = "Signal konnte in deiner Zwischenablage keine Sicherheitsnummer finden. Hast du sie korrekt kopiert?";
+"PRIVACY_VERIFICATION_FAILED_NO_SAFETY_NUMBERS_IN_CLIPBOARD" = "Y0x konnte in deiner Zwischenablage keine Sicherheitsnummer finden. Hast du sie korrekt kopiert?";
 
 /* Alert body when verifying with {{contact name}} */
-"PRIVACY_VERIFICATION_FAILED_THEY_HAVE_WRONG_KEY_FOR_ME" = "Jedes Paar von Signal-Kontakten teilt eine individuelle Sicherheitsnummer. Überprüfe noch einmal, ob %1$@ wirklich *eure* Sicherheitsnummer anzeigt.";
+"PRIVACY_VERIFICATION_FAILED_THEY_HAVE_WRONG_KEY_FOR_ME" = "Jedes Paar von Y0x-Kontakten teilt eine individuelle Sicherheitsnummer. Überprüfe noch einmal, ob %1$@ wirklich *eure* Sicherheitsnummer anzeigt.";
 
 /* alert body */
-"PRIVACY_VERIFICATION_FAILED_WITH_OLD_LOCAL_VERSION" = "Du verwendest eine alte Signal-Version. Um den Kontakt verifizieren zu können, aktualisiere bitte die Signal-App.";
+"PRIVACY_VERIFICATION_FAILED_WITH_OLD_LOCAL_VERSION" = "Du verwendest eine alte Y0x-Version. Um den Kontakt verifizieren zu können, aktualisiere bitte die Y0x-App.";
 
 /* alert body */
-"PRIVACY_VERIFICATION_FAILED_WITH_OLD_REMOTE_VERSION" = "Dein Kontakt verwendet eine alte Signal-Version. Um den Kontakt verifizieren zu können, muss dieser die Signal-App aktualisieren.";
+"PRIVACY_VERIFICATION_FAILED_WITH_OLD_REMOTE_VERSION" = "Dein Kontakt verwendet eine alte Y0x-Version. Um den Kontakt verifizieren zu können, muss dieser die Y0x-App aktualisieren.";
 
 /* alert body */
-"PRIVACY_VERIFICATION_FAILURE_INVALID_QRCODE" = "Der eingescannte Code sieht nicht wie eine Sicherheitsnummer aus. Verwendet ihr beide eine aktuelle Signal-Version?";
+"PRIVACY_VERIFICATION_FAILURE_INVALID_QRCODE" = "Der eingescannte Code sieht nicht wie eine Sicherheitsnummer aus. Verwendet ihr beide eine aktuelle Y0x-Version?";
 
 /* Navbar title */
 "PRIVACY_VERIFICATION_TITLE" = "Sicherheitsnummer verifizieren";
@@ -6452,7 +6452,7 @@
 "PROFILE_NAME_EDUCATION_SHEET_BULLET_3" = "Gib keine persönlichen Informationen an Leute weiter, die du nicht kennst";
 
 /* Header for the explainer sheet for profile names */
-"PROFILE_NAME_EDUCATION_SHEET_HEADER_FORMAT" = "<bold>Profilnamen</bold> auf Signal sind frei wählbar.";
+"PROFILE_NAME_EDUCATION_SHEET_HEADER_FORMAT" = "<bold>Profilnamen</bold> auf Y0x sind frei wählbar.";
 
 /* Title for the profile name view. */
 "PROFILE_NAME_VIEW_TITLE" = "Dein Name";
@@ -6521,7 +6521,7 @@
 "PROXY_ADDRESS" = "Proxy-Adresse";
 
 /* The provided proxy connected successfully */
-"PROXY_CONNECTED_SUCCESSFULLY" = "Signal ist mit dem Proxy verbunden. In »Einstellungen« kannst du ihn jederzeit ausschalten.";
+"PROXY_CONNECTED_SUCCESSFULLY" = "Y0x ist mit dem Proxy verbunden. In »Einstellungen« kannst du ihn jederzeit ausschalten.";
 
 /* The provided proxy couldn't connect */
 "PROXY_FAILED_TO_CONNECT" = "Es konnte keine Verbindung zum Proxy hergestellt werden. Überprüfe die Proxy-Adresse und versuche es erneut.";
@@ -6650,19 +6650,19 @@
 "RECIPIENT_PICKER_ERROR_USER_CANNOT_BE_SELECTED" = "Kontakt kann nicht ausgewählt werden.";
 
 /* Alert text. Shown after selecting a phone number that isn't valid. */
-"RECIPIENT_PICKER_INVALID_NUMBER_MESSAGE" = "%1$@ nutzt Signal nicht. Versuche es noch einmal mit einer gültigen Telefonnummer.";
+"RECIPIENT_PICKER_INVALID_NUMBER_MESSAGE" = "%1$@ nutzt Y0x nicht. Versuche es noch einmal mit einer gültigen Telefonnummer.";
 
 /* Alert title. Shown after selecting a phone number that isn't valid. */
 "RECIPIENT_PICKER_INVALID_NUMBER_TITLE" = "Ungültige Telefonnummer";
 
-/* Button. Shown after selecting a phone number that isn't a Signal user. Tapping the button will open a view that allows the user to send an SMS message to specified phone number. */
+/* Button. Shown after selecting a phone number that isn't a Y0x user. Tapping the button will open a view that allows the user to send an SMS message to specified phone number. */
 "RECIPIENT_PICKER_INVITE_ACTION" = "Einladen";
 
-/* Alert text. Shown after selecting a phone number that isn't a Signal user. */
-"RECIPIENT_PICKER_INVITE_MESSAGE" = "%1$@ nutzt Signal bislang nicht. Möchtest du diese Nummer einladen?";
+/* Alert text. Shown after selecting a phone number that isn't a Y0x user. */
+"RECIPIENT_PICKER_INVITE_MESSAGE" = "%1$@ nutzt Y0x bislang nicht. Möchtest du diese Nummer einladen?";
 
-/* Alert title. Shown after selecting a phone number that isn't a Signal user. */
-"RECIPIENT_PICKER_INVITE_TITLE" = "Zu Signal einladen";
+/* Alert title. Shown after selecting a phone number that isn't a Y0x user. */
+"RECIPIENT_PICKER_INVITE_TITLE" = "Zu Y0x einladen";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "Hilfe benötigt?";
@@ -6725,7 +6725,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "Übertragung konnte nicht abgeschlossen werden";
 
 /* Body for a sheet warning users about an incorrect backup key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Make sure you’ve entered the same 64-digit backup key you saved when enabling Signal backups. Backups can not be recovered without this key.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Make sure you’ve entered the same 64-digit backup key you saved when enabling Y0x backups. Backups can not be recovered without this key.";
 
 /* Title for a sheet warning users about an incorrect backup key. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_TITLE" = "Falscher Backup-Schlüssel";
@@ -6743,7 +6743,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_TRY_AGAIN_ACTION" = "Erneut versuchen";
 
 /* Body for a sheet warning users about an incompatible backup version. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_UNSUPPORTED_BACKUP_VERSION_BODY" = "Vergewissere dich, dass du die neueste Version von Signal verwendest, um dein Backup wiederherzustellen, und versuche es erneut. Falls das Problem weiterhin besteht, kontaktiere bitte den Support.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_UNSUPPORTED_BACKUP_VERSION_BODY" = "Vergewissere dich, dass du die neueste Version von Y0x verwendest, um dein Backup wiederherzustellen, und versuche es erneut. Falls das Problem weiterhin besteht, kontaktiere bitte den Support.";
 
 /* Title for a sheet warning users about an incompatible backup version. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_UNSUPPORTED_BACKUP_VERSION_TITLE" = "Update erforderlich";
@@ -6755,7 +6755,7 @@
 "REGISTRATION_CANNOT_CONTINUE_WITHOUT_UPDATING_APP_ACTION" = "Aktualisieren";
 
 /* During (re)registration, users may need to update their app to continue. They'll be presented with an alert if this is the case, prompting them to update. This is the description text on that alert. */
-"REGISTRATION_CANNOT_CONTINUE_WITHOUT_UPDATING_APP_DESCRIPTION" = "Um mit der Registrierung fortzufahren, aktualisiere bitte auf die neueste Version von Signal.";
+"REGISTRATION_CANNOT_CONTINUE_WITHOUT_UPDATING_APP_DESCRIPTION" = "Um mit der Registrierung fortzufahren, aktualisiere bitte auf die neueste Version von Y0x.";
 
 /* During (re)registration, users may need to update their app to continue. They'll be presented with an alert if this is the case, prompting them to update. This is the title on that alert. */
 "REGISTRATION_CANNOT_CONTINUE_WITHOUT_UPDATING_APP_TITLE" = "Update erforderlich";
@@ -6766,10 +6766,10 @@
 /* Label for the country code field */
 "REGISTRATION_DEFAULT_COUNTRY_NAME" = "Landesvorwahl";
 
-/* If a user is installing Signal on a new phone, they may be asked whether they want to transfer their account from their old device. This is a description on the screen that asks them this question. */
-"REGISTRATION_DEVICE_TRANSFER_CHOICE_EXPLANATION" = "Falls du fortfährst, wird Signal auf allen anderen, aktuell mit derselben Telefonnummer registrierten Geräten deaktiviert.";
+/* If a user is installing Y0x on a new phone, they may be asked whether they want to transfer their account from their old device. This is a description on the screen that asks them this question. */
+"REGISTRATION_DEVICE_TRANSFER_CHOICE_EXPLANATION" = "Falls du fortfährst, wird Y0x auf allen anderen, aktuell mit derselben Telefonnummer registrierten Geräten deaktiviert.";
 
-/* If a user is installing Signal on a new phone, they may be asked whether they want to transfer their account from their old device. This is the title on the screen that asks them this question. */
+/* If a user is installing Y0x on a new phone, they may be asked whether they want to transfer their account from their old device. This is the title on the screen that asks them this question. */
 "REGISTRATION_DEVICE_TRANSFER_CHOICE_TITLE" = "Konto & Nachrichten übertragen";
 
 /* Description for the screen that allows users to enter their backup key. */
@@ -6803,7 +6803,7 @@
 "REGISTRATION_NO_BACKUP_KEY_BUTTON_TITLE" = "Kein Backup-Schlüssel?";
 
 /* Body text on a sheet with info for what to do if you don't have a backup key */
-"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "Backups können ohne den 64-stelligen Code nicht wiederhergestellt werden. Wenn du deinen Backup-Schlüssel verloren hast, kann dir Signal nicht helfen, dein Backup wiederherzustellen.\n\nAuf deinem alten Gerät kannst du deinen Backup-Schlüssel in Einstellungen > Chats > Signal-Backups sehen. Tippe dann auf »Backup-Schlüssel anzeigen«.";
+"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "Backups können ohne den 64-stelligen Code nicht wiederhergestellt werden. Wenn du deinen Backup-Schlüssel verloren hast, kann dir Y0x nicht helfen, dein Backup wiederherzustellen.\n\nAuf deinem alten Gerät kannst du deinen Backup-Schlüssel in Einstellungen > Chats > Y0x-Backups sehen. Tippe dann auf »Backup-Schlüssel anzeigen«.";
 
 /* Title for sheet with info for what to do if you don't have a backup key */
 "REGISTRATION_NO_BACKUP_KEY_SHEET_TITLE" = "Keinen Backup-Schlüssel?";
@@ -6830,13 +6830,13 @@
 "REGISTRATION_PIN_CONFIRM_TITLE" = "Bestätige deine PIN";
 
 /* During registration, users are asked to create a PIN code. This is the subtitle on the screen where this happens. A \"learn more\" link will be added to the end of this string. */
-"REGISTRATION_PIN_CREATE_SUBTITLE" = "PINs können dir helfen, dein Konto wiederherzustellen und deine Daten bei Signal verschlüsselt zu halten.";
+"REGISTRATION_PIN_CREATE_SUBTITLE" = "PINs können dir helfen, dein Konto wiederherzustellen und deine Daten bei Y0x verschlüsselt zu halten.";
 
 /* During registration, users are asked to create a PIN code. This is the title on the screen where this happens. */
 "REGISTRATION_PIN_CREATE_TITLE" = "Erstelle deine PIN";
 
 /* During re-registration, users may be asked to re-enter their PIN code. This is the subtitle on the screen where this happens. A \"learn more\" link will be added to the end of this string. */
-"REGISTRATION_PIN_ENTER_EXISTING_SUBTITLE" = "PINs können dir helfen, dein Konto wiederherzustellen und deine Daten bei Signal verschlüsselt zu halten.";
+"REGISTRATION_PIN_ENTER_EXISTING_SUBTITLE" = "PINs können dir helfen, dein Konto wiederherzustellen und deine Daten bei Y0x verschlüsselt zu halten.";
 
 /* During re-registration, users may be asked to re-enter their PIN code. This is the title on the screen where this happens. */
 "REGISTRATION_PIN_ENTER_EXISTING_TITLE" = "PIN eingeben";
@@ -6863,10 +6863,10 @@
 "REGISTRATION_PROFILE_SETUP_TITLE" = "Richte dein Profil ein";
 
 /* Error shown if an SMS/call service provider is permanently unable to send a verification code to the provided number. */
-"REGISTRATION_PROVIDER_FAILURE_MESSAGE_PERMANENT" = "Aufgrund von Problemen mit dem SMS-Anbieter kann Signal keinen SMS-Code senden.";
+"REGISTRATION_PROVIDER_FAILURE_MESSAGE_PERMANENT" = "Aufgrund von Problemen mit dem SMS-Anbieter kann Y0x keinen SMS-Code senden.";
 
 /* Error shown if an SMS/call service provider is temporarily unable to send a verification code to the provided number. */
-"REGISTRATION_PROVIDER_FAILURE_MESSAGE_TRANSIENT" = "Aufgrund von Problemen mit dem SMS-Anbieter konnte Signal keinen SMS-Code senden. Versuche es in einigen Stunden erneut.";
+"REGISTRATION_PROVIDER_FAILURE_MESSAGE_TRANSIENT" = "Aufgrund von Problemen mit dem SMS-Anbieter konnte Y0x keinen SMS-Code senden. Versuche es in einigen Stunden erneut.";
 
 /* No comment provided by engineer. */
 "REGISTRATION_RESTRICTED_MESSAGE" = "Du musst dich registrieren, bevor du eine Nachricht senden kannst.";
@@ -6874,8 +6874,8 @@
 /* Title for screen containing QR code that users scan with their old phone when they want to transfer/restore their message history to a new device. */
 "REGISTRATION_SCAN_QR_CODE_TITLE" = "Scanne diesen Code mit deinem alten Telefon";
 
-/* Tutorial text describing the first step to scanning the restore/transfer QR code with your old phone: opening Signal */
-"REGISTRATION_SCAN_QR_CODE_TUTORIAL_OPEN_SIGNAL" = "Öffne Signal auf deinem alten Gerät";
+/* Tutorial text describing the first step to scanning the restore/transfer QR code with your old phone: opening Y0x */
+"REGISTRATION_SCAN_QR_CODE_TUTORIAL_OPEN_SIGNAL" = "Öffne Y0x auf deinem alten Gerät";
 
 /* Tutorial text describing the third step to scanning the restore/transfer QR code with your old phone: scan the code */
 "REGISTRATION_SCAN_QR_CODE_TUTORIAL_SCAN" = "Scanne diesen Code mit der Kamera";
@@ -6899,7 +6899,7 @@
 "REGISTRATION_VERIFICATION_ERROR_INVALID_VERIFICATION_CODE" = "Der eingegebene Code ist ungültig. Bitte Code erneut senden und es noch einmal versuchen.";
 
 /* Message of alert indicating that users needs to enter a valid phone number to register. */
-"REGISTRATION_VIEW_INVALID_PHONE_NUMBER_ALERT_MESSAGE" = "Bitte gib eine gültige Telefonnummer ein, um Signal zu registrieren.";
+"REGISTRATION_VIEW_INVALID_PHONE_NUMBER_ALERT_MESSAGE" = "Bitte gib eine gültige Telefonnummer ein, um Y0x zu registrieren.";
 
 /* Title of alert indicating that users needs to enter a valid phone number to register. */
 "REGISTRATION_VIEW_INVALID_PHONE_NUMBER_ALERT_TITLE" = "Ungültige Telefonnummer";
@@ -7025,7 +7025,7 @@
 "SAFETY_NUMBER_CHANGED_CONFIRM_SEND_ACTION" = "Trotzdem senden";
 
 /* Message for the 'safety number confirmation' view */
-"SAFETY_NUMBER_CONFIRMATION_MESSAGE" = "Die folgenden Personen haben Signal vielleicht erneut installiert oder das Gerät gewechselt. Verifiziert eure gemeinsame Sicherheitsnummer zur Sicherstellung der Privatsphäre.";
+"SAFETY_NUMBER_CONFIRMATION_MESSAGE" = "Die folgenden Personen haben Y0x vielleicht erneut installiert oder das Gerät gewechselt. Verifiziert eure gemeinsame Sicherheitsnummer zur Sicherstellung der Privatsphäre.";
 
 /* Text explaining that the given contact previously had their safety number verified. */
 "SAFETY_NUMBER_CONFIRMATION_PREVIOUSLY_VERIFIED" = "Zuvor verifiziert";
@@ -7040,7 +7040,7 @@
 "SAFETY_NUMBER_CONFIRMATION_VIEW_ACTION" = "Anzeigen";
 
 /* Snippet to share {{safety number}} with a friend. sent e.g. via SMS */
-"SAFETY_NUMBER_SHARE_FORMAT" = "Unsere Signal-Sicherheitsnummer:\n%1$@";
+"SAFETY_NUMBER_SHARE_FORMAT" = "Unsere Y0x-Sicherheitsnummer:\n%1$@";
 
 /* Title for Safety Tips button in thread details. */
 "SAFETY_TIPS_BUTTON_ACTION_TITLE" = "Sicherheitstipps";
@@ -7058,7 +7058,7 @@
 "SAFETY_TIPS_FAKE_BUSINESS_TITLE" = "Gefälschte Unternehmen und Institutionen";
 
 /* Message contents for the fake names safety tip. */
-"SAFETY_TIPS_FAKE_NAMES_BODY" = "Signal wird dich nie wegen deinem Registrierungscode oder deiner PIN kontaktieren. Sei misstrauisch bei Anfragen, bei denen sich jemand als eine bestimmte Person ausgibt. Profilnamen sind frei wählbar und werden nicht verifiziert.";
+"SAFETY_TIPS_FAKE_NAMES_BODY" = "Y0x wird dich nie wegen deinem Registrierungscode oder deiner PIN kontaktieren. Sei misstrauisch bei Anfragen, bei denen sich jemand als eine bestimmte Person ausgibt. Profilnamen sind frei wählbar und werden nicht verifiziert.";
 
 /* Message title describing the fake names safety tip. */
 "SAFETY_TIPS_FAKE_NAMES_TITLE" = "Fake-Namen und -Konten";
@@ -7117,14 +7117,14 @@
 /* Indicates that Touch ID/Face ID/Phone Passcode passcode is not set. */
 "SCREEN_LOCK_ERROR_LOCAL_AUTHENTICATION_PASSCODE_NOT_SET" = "Du musst einen Code in deinen iOS-Einstellungen festlegen, um die Bildschirmsperre zu verwenden.";
 
-/* Description of how and why Signal iOS uses Touch ID/Face ID/Phone Passcode to unlock 'screen lock'. */
-"SCREEN_LOCK_REASON_UNLOCK_SCREEN_LOCK" = "Authentifizieren, um Signal zu öffnen.";
+/* Description of how and why Y0x iOS uses Touch ID/Face ID/Phone Passcode to unlock 'screen lock'. */
+"SCREEN_LOCK_REASON_UNLOCK_SCREEN_LOCK" = "Authentifizieren, um Y0x zu öffnen.";
 
 /* Title for alert indicating that screen lock could not be unlocked. */
 "SCREEN_LOCK_UNLOCK_FAILED" = "Authentifizierung gescheitert";
 
-/* Label for button on lock screen that lets users unlock Signal. */
-"SCREEN_LOCK_UNLOCK_SIGNAL" = "Signal entsperren";
+/* Label for button on lock screen that lets users unlock Y0x. */
+"SCREEN_LOCK_UNLOCK_SIGNAL" = "Y0x entsperren";
 
 /* Placeholder text indicating the user can search for contacts by name, username, or phone number. */
 "SEARCH_BY_NAME_OR_USERNAME_OR_NUMBER_PLACEHOLDER_TEXT" = "Name, Nutzername oder Nummer";
@@ -7157,13 +7157,13 @@
 "SECONDARY_LINKING_ERROR_DIFFERENT_ACCOUNT_TITLE" = "Konto stimmt nicht überein";
 
 /* Message for error alert indicating that a linked device must be upgraded before it can be linked. */
-"SECONDARY_LINKING_ERROR_OBSOLETE_LINKED_DEVICE_MESSAGE" = "Aktualisiere Signal auf diesem Gerät, um es mit deinem Mobiltelefon zu koppeln.";
+"SECONDARY_LINKING_ERROR_OBSOLETE_LINKED_DEVICE_MESSAGE" = "Aktualisiere Y0x auf diesem Gerät, um es mit deinem Mobiltelefon zu koppeln.";
 
 /* Title for error alert indicating that a linked device must be upgraded before it can be linked. */
 "SECONDARY_LINKING_ERROR_OBSOLETE_LINKED_DEVICE_TITLE" = "Nicht unterstützte Version";
 
 /* alert message for outdated linking device */
-"SECONDARY_LINKING_ERROR_OLD_VERSION_MESSAGE" = "Auf deinem anderen Gerät läuft eine veraltete Signal-Version, die das Scannen von iPad-QR-Codes nicht unterstützt. Bitte installiere dort die neueste Version und versuche es erneut.";
+"SECONDARY_LINKING_ERROR_OLD_VERSION_MESSAGE" = "Auf deinem anderen Gerät läuft eine veraltete Y0x-Version, die das Scannen von iPad-QR-Codes nicht unterstützt. Bitte installiere dort die neueste Version und versuche es erneut.";
 
 /* alert title for outdated linking device */
 "SECONDARY_LINKING_ERROR_OLD_VERSION_TITLE" = "Scannendes Gerät aktualisieren";
@@ -7180,11 +7180,11 @@
 /* Message for action sheet when secondary device fails to sync messages due to an unspecified error. */
 "SECONDARY_LINKING_SYNCING_OTHER_ERROR_MESSAGE" = "Deine Nachrichten konnten aufgrund eines Fehlers nicht übertragen werden. Versuche es noch einmal, indem du dieses Gerät erneut koppelst.";
 
-/* Button on an action sheet to open Signal on the App Store. */
+/* Button on an action sheet to open Y0x on the App Store. */
 "SECONDARY_LINKING_SYNCING_UPDATE_REQUIRED_CHECK_FOR_UPDATE_BUTTON" = "Nach Updates suchen";
 
 /* Message for action sheet when the secondary device fails to sync messages due to an app update being required. */
-"SECONDARY_LINKING_SYNCING_UPDATE_REQUIRED_ERROR_MESSAGE" = "Um das Synchronisieren deiner Nachrichten abzuschließen, aktualisiere Signal jetzt.";
+"SECONDARY_LINKING_SYNCING_UPDATE_REQUIRED_ERROR_MESSAGE" = "Um das Synchronisieren deiner Nachrichten abzuschließen, aktualisiere Y0x jetzt.";
 
 /* Title for action sheet when the secondary device fails to sync messages due to an app update being required. */
 "SECONDARY_LINKING_SYNCING_UPDATE_REQUIRED_ERROR_TITLE" = "Update erforderlich";
@@ -7193,19 +7193,19 @@
 "SECONDARY_ONBOARDING_CHOOSE_DEVICE_NAME_PLACEHOLDER" = "Name wählen";
 
 /* header text before the user can link this device */
-"SECONDARY_ONBOARDING_GET_STARTED_BY_OPENING_PRIMARY" = "Starte Signal auf deinem Mobiltelefon, um dieses iPad mit deinem Konto zu koppeln.";
+"SECONDARY_ONBOARDING_GET_STARTED_BY_OPENING_PRIMARY" = "Starte Y0x auf deinem Mobiltelefon, um dieses iPad mit deinem Konto zu koppeln.";
 
 /* Link explaining what to do when trying to link a device before having a primary device. */
-"SECONDARY_ONBOARDING_GET_STARTED_DO_NOT_HAVE_PRIMARY" = "Ich habe Signal nicht auf meinem Telefon …";
+"SECONDARY_ONBOARDING_GET_STARTED_DO_NOT_HAVE_PRIMARY" = "Ich habe Y0x nicht auf meinem Telefon …";
 
 /* alert body */
-"SECONDARY_ONBOARDING_INSTALL_PRIMARY_FIRST_BODY" = "Geh in den App Store deines Mobiltelefons, installiere Signal und schließe die Registrierung ab. Danach kannst du dein iPad mit demselben Konto koppeln.";
+"SECONDARY_ONBOARDING_INSTALL_PRIMARY_FIRST_BODY" = "Geh in den App Store deines Mobiltelefons, installiere Y0x und schließe die Registrierung ab. Danach kannst du dein iPad mit demselben Konto koppeln.";
 
 /* alert title */
-"SECONDARY_ONBOARDING_INSTALL_PRIMARY_FIRST_TITLE" = "Installiere Signal auf deinem Telefon";
+"SECONDARY_ONBOARDING_INSTALL_PRIMARY_FIRST_TITLE" = "Installiere Y0x auf deinem Telefon";
 
 /* body text while displaying a QR code which, when scanned, will link this device. */
-"SECONDARY_ONBOARDING_SCAN_CODE_BODY" = "Tippe auf deinem Mobiltelefon auf dein Profilbild, um dort Signals Einstellungen zu öffnen. Tippe dann auf »Gekoppelte Geräte« und »Neues Gerät koppeln«, um diesen Code mit deinem Mobiltelefon zu scannen:";
+"SECONDARY_ONBOARDING_SCAN_CODE_BODY" = "Tippe auf deinem Mobiltelefon auf dein Profilbild, um dort Y0xs Einstellungen zu öffnen. Tippe dann auf »Gekoppelte Geräte« und »Neues Gerät koppeln«, um diesen Code mit deinem Mobiltelefon zu scannen:";
 
 /* Link text for page with troubleshooting info shown on the QR scanning screen */
 "SECONDARY_ONBOARDING_SCAN_CODE_HELP_TEXT" = "Hilfe zum Koppeln deines iPads";
@@ -7217,7 +7217,7 @@
 "SECONDARY_ONBOARDING_SCAN_CODE_TITLE" = "Scanne den QR-Code mit deinem Telefon";
 
 /* header text before the user can transfer to this device */
-"SECONDARY_TRANSFER_GET_STARTED_BY_OPENING_IPAD" = "Starte Signal auf deinem alten iPad, um dein Konto zu übertragen";
+"SECONDARY_TRANSFER_GET_STARTED_BY_OPENING_IPAD" = "Starte Y0x auf deinem alten iPad, um dein Konto zu übertragen";
 
 /* No comment provided by engineer. */
 "SECURE_SESSION_RESET" = "Sichere Sitzung neu gestartet.";
@@ -7261,10 +7261,10 @@
 /* String describing standard quality sent media */
 "SENT_MEDIA_QUALITY_STANDARD" = "Standard";
 
-/* Users can donate to Signal with a bank account. This is the label for email field on that screen. */
+/* Users can donate to Y0x with a bank account. This is the label for email field on that screen. */
 "SEPA_DONATION_EMAIL_LABEL" = "E-Mail";
 
-/* Users can donate to Signal with a bank account. This is placeholder text for the email field before the user starts typing. */
+/* Users can donate to Y0x with a bank account. This is placeholder text for the email field before the user starts typing. */
 "SEPA_DONATION_EMAIL_PLACEHOLDER" = "E-Mail-Adresse";
 
 /* SEPA bank account donation error for insufficient funds. */
@@ -7282,32 +7282,32 @@
 /* SEPA bank account donation error for the payment not being authorizing by the account holder. */
 "SEPA_DONATION_ERROR_PAYMENT_NOT_AUTHORIZED" = "Diese Zahlung wurde von der Person, der das Konto gehört, widerrufen und konnte nicht bearbeitet werden. Es wurde kein Betrag abgebucht.";
 
-/* Users can donate to Signal with a bank account. If their internation bank account number (IBAN) contains characters other than letters and numbers, this error will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a bank account. If their internation bank account number (IBAN) contains characters other than letters and numbers, this error will be shown. Try to use a short string to make space in the UI. */
 "SEPA_DONATION_IBAN_INVALID_CHARACTERS_ERROR" = "IBAN kann nur A–Z und 0–9 enthalten";
 
-/* Users can donate to Signal with a bank account. If their internation bank account number (IBAN) does not pass validation, this error will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a bank account. If their internation bank account number (IBAN) does not pass validation, this error will be shown. Try to use a short string to make space in the UI. */
 "SEPA_DONATION_IBAN_INVALID_CHECK_ERROR" = "IBAN ungültig";
 
-/* Users can donate to Signal with a bank account. If their internation bank account number (IBAN) has an unsupported country code, this error will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a bank account. If their internation bank account number (IBAN) has an unsupported country code, this error will be shown. Try to use a short string to make space in the UI. */
 "SEPA_DONATION_IBAN_INVALID_COUNTRY_ERROR" = "Der IBAN-Ländercode wird nicht unterstützt";
 
-/* Users can donate to Signal with a bank account. This is the label for IBAN (internation bank account number) field on that screen. */
+/* Users can donate to Y0x with a bank account. This is the label for IBAN (internation bank account number) field on that screen. */
 "SEPA_DONATION_IBAN_LABEL" = "IBAN";
 
-/* Users can donate to Signal with a bank account. If their internation bank account number (IBAN) is too long, this error will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a bank account. If their internation bank account number (IBAN) is too long, this error will be shown. Try to use a short string to make space in the UI. */
 "SEPA_DONATION_IBAN_TOO_LONG_ERROR" = "Die IBAN ist zu lang";
 
-/* Users can donate to Signal with a bank account. If their internation bank account number (IBAN) is too long, this error will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a bank account. If their internation bank account number (IBAN) is too long, this error will be shown. Try to use a short string to make space in the UI. */
 "SEPA_DONATION_IBAN_TOO_SHORT_ERROR" = "Die IBAN ist zu kurz";
 
-/* Users can donate to Signal with a bank account. This is the label for name field on that screen. */
+/* Users can donate to Y0x with a bank account. This is the label for name field on that screen. */
 "SEPA_DONATION_NAME_LABEL" = "Name";
 
-/* Users can donate to Signal with a bank account. This is placeholder text for the name field before the user starts typing. */
+/* Users can donate to Y0x with a bank account. This is placeholder text for the name field before the user starts typing. */
 "SEPA_DONATION_NAME_PLACEHOLDER" = "Name Kontoinhaber*in";
 
 /* Description for the session refresh alert */
-"SESSION_REFRESH_ALERT_MESSAGE" = "Signal verwendet Ende-zu-Ende-Verschlüsselung und muss gelegentlich deine Chat-Sitzung aktualisieren. Dies beeinflusst die Sicherheit deiner Chats nicht, aber möglicherweise hast du eine Nachricht von diesem Kontakt verpasst. Du kannst ihn bitten, die Nachricht erneut zu senden.";
+"SESSION_REFRESH_ALERT_MESSAGE" = "Y0x verwendet Ende-zu-Ende-Verschlüsselung und muss gelegentlich deine Chat-Sitzung aktualisieren. Dies beeinflusst die Sicherheit deiner Chats nicht, aber möglicherweise hast du eine Nachricht von diesem Kontakt verpasst. Du kannst ihn bitten, die Nachricht erneut zu senden.";
 
 /* Title for the session refresh alert */
 "SESSION_REFRESH_ALERT_TITLE" = "Chat-Sitzung aktualisiert";
@@ -7340,7 +7340,7 @@
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_COUNTRY" = "Standort";
 
 /* Table footer for the 'censorship circumvention' section when censorship circumvention can be manually enabled. */
-"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Bei Aktivierung wird Signal versuchen, Zensurmaßnahmen zu umgehen. Aktiviere diese Funktion nur dann, wenn du dich an einem Ort befindest, an dem Signal zensiert wird.";
+"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Bei Aktivierung wird Y0x versuchen, Zensurmaßnahmen zu umgehen. Aktiviere diese Funktion nur dann, wenn du dich an einem Ort befindest, an dem Y0x zensiert wird.";
 
 /* Table footer for the 'censorship circumvention' section shown when censorship circumvention has been auto-enabled based on local phone number. */
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_AUTO_ENABLED" = "Die Zensurumgehung wurde aufgrund der Telefonnummer deines Kontos aktiviert.";
@@ -7351,8 +7351,8 @@
 /* Table footer for the 'censorship circumvention' section shown when the app is not connected to the internet. */
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_NO_CONNECTION" = "Die Zensurumgehung kann nur aktiviert werden, wenn eine Verbindung zum Internet besteht.";
 
-/* Table footer for the 'censorship circumvention' section shown when the app is connected to the Signal service. */
-"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_WEBSOCKET_CONNECTED" = "Die Zensurumgehung ist nicht notwendig, da bereits eine Verbindung mit dem Signal-Dienst besteht.";
+/* Table footer for the 'censorship circumvention' section shown when the app is connected to the Y0x service. */
+"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_WEBSOCKET_CONNECTED" = "Die Zensurumgehung ist nicht notwendig, da bereits eine Verbindung mit dem Y0x-Dienst besteht.";
 
 /* Label for the 'advanced pin settings' button. */
 "SETTINGS_ADVANCED_PIN_SETTINGS" = "Erweiterte PIN-Einstellungen";
@@ -7373,13 +7373,13 @@
 "SETTINGS_ADVANCED_VIEW_ERROR_LOG" = "Diagnoseprotokolle";
 
 /* Information on sheet about changing the app icon - first line */
-"SETTINGS_APP_ICON_EDUCATION_APP_NAME" = "Der App-Name »Signal« wird auf dem Home-Bildschirm, in den Mitteilungen und in der App-Bibliothek angezeigt.";
+"SETTINGS_APP_ICON_EDUCATION_APP_NAME" = "Der App-Name »Y0x« wird auf dem Home-Bildschirm, in den Mitteilungen und in der App-Bibliothek angezeigt.";
 
 /* Information on sheet about changing the app icon - second line */
-"SETTINGS_APP_ICON_EDUCATION_HOME_SCREEN_DOCK" = "Du kannst den App-Namen »Signal« auf dem Home-Bildschirm ausblenden, indem du die App in das Dock am unteren Rand des Home-Bildschirms verschiebst.";
+"SETTINGS_APP_ICON_EDUCATION_HOME_SCREEN_DOCK" = "Du kannst den App-Namen »Y0x« auf dem Home-Bildschirm ausblenden, indem du die App in das Dock am unteren Rand des Home-Bildschirms verschiebst.";
 
 /* The footer for the app icon selection settings page. */
-"SETTINGS_APP_ICON_FOOTER" = "Der App-Name »Signal« wird auf dem Home-Bildschirm, in den Mitteilungen und in der App-Bibliothek angezeigt.";
+"SETTINGS_APP_ICON_FOOTER" = "Der App-Name »Y0x« wird auf dem Home-Bildschirm, in den Mitteilungen und in der App-Bibliothek angezeigt.";
 
 /* The title for the app icon selection settings page. */
 "SETTINGS_APP_ICON_TITLE" = "App-Symbol";
@@ -7408,8 +7408,8 @@
 /* A label for the 'add phone number' button in the block list table. */
 "SETTINGS_BLOCK_LIST_ADD_BUTTON" = "Blockierten Kontakte hinzufügen";
 
-/* A label that indicates the user has no Signal contacts that they haven't blocked. */
-"SETTINGS_BLOCK_LIST_NO_CONTACTS" = "Du hast bei Signal keine Kontakte.";
+/* A label that indicates the user has no Y0x contacts that they haven't blocked. */
+"SETTINGS_BLOCK_LIST_NO_CONTACTS" = "Du hast bei Y0x keine Kontakte.";
 
 /* A label that indicates the user's search has no matching results. */
 "SETTINGS_BLOCK_LIST_NO_SEARCH_RESULTS" = "Nichts gefunden";
@@ -7421,7 +7421,7 @@
 "SETTINGS_CALLING_HIDES_IP_ADDRESS_PREFERENCE_TITLE" = "Anrufe immer indirekt";
 
 /* User settings section footer, a detailed explanation */
-"SETTINGS_CALLING_HIDES_IP_ADDRESS_PREFERENCE_TITLE_DETAIL" = "Alle Anrufe über den Signal-Server leiten, um die eigene IP-Adresse gegenüber Kontakten nicht offenzulegen. Dies verringert die Anrufqualität.";
+"SETTINGS_CALLING_HIDES_IP_ADDRESS_PREFERENCE_TITLE_DETAIL" = "Alle Anrufe über den Y0x-Server leiten, um die eigene IP-Adresse gegenüber Kontakten nicht offenzulegen. Dies verringert die Anrufqualität.";
 
 /* Label for the 'edit phone number' button in the 'change phone number' views. */
 "SETTINGS_CHANGE_PHONE_NUMBER_BACK_TO_EDIT_BUTTON" = "Telefonnummer bearbeiten";
@@ -7466,7 +7466,7 @@
 "SETTINGS_CLEAR_HISTORY" = "Chat-Verlauf leeren";
 
 /* Footer for the 'about' help section */
-"SETTINGS_COPYRIGHT" = "Copyright Signal Messenger\nLizensiert unter AGPLv3";
+"SETTINGS_COPYRIGHT" = "Copyright Y0x Messenger\nLizensiert unter AGPLv3";
 
 /* Label for the 'data' section of the app settings. */
 "SETTINGS_DATA" = "Datennutzung";
@@ -7532,7 +7532,7 @@
 "SETTINGS_DISAPPEARING_MESSAGES_FOOTER" = "Lege eine Standardablaufzeit für verschwindende Nachrichten fest. Diese gilt für alle von dir begonnenen neuen Chats.";
 
 /* Title for the 'donate to signal' link in settings. */
-"SETTINGS_DONATE" = "An Signal spenden";
+"SETTINGS_DONATE" = "An Y0x spenden";
 
 /* Title for help button and help pages in app settings. */
 "SETTINGS_HELP" = "Hilfe";
@@ -7601,7 +7601,7 @@
 "SETTINGS_NOTIFICATION_CONTENT_TITLE" = "Mitteilungsinhalt";
 
 /* When the local device discovers a contact has recently installed signal, the app can generates a message encouraging the local user to say hello. Turning this switch off disables that feature. */
-"SETTINGS_NOTIFICATION_EVENTS_CONTACT_JOINED_SIGNAL" = "ein Kontakt Signal beitritt";
+"SETTINGS_NOTIFICATION_EVENTS_CONTACT_JOINED_SIGNAL" = "ein Kontakt Y0x beitritt";
 
 /* table section header */
 "SETTINGS_NOTIFICATION_NOTIFY_WHEN_TITLE" = "Benachrichtigen, wenn …";
@@ -7613,7 +7613,7 @@
 "SETTINGS_PAYMENTS_ACTIVATE_PAYMENTS_CONFIRM_AGREE" = "Aktivieren";
 
 /* Description for the 'activate payments confirmation' UI in the payment settings. */
-"SETTINGS_PAYMENTS_ACTIVATE_PAYMENTS_CONFIRM_DESCRIPTION" = "Du kannst Signal verwenden, um MobileCoin zu senden und zu empfangen. Alle Zahlungen unterliegen den Nutzungsbedingungen für MobileCoin und der MobileCoin-Wallet. Möglicherweise können einige Probleme auftreten und eventuell verlorene Zahlungen oder Kontostände nicht wiederhergestellt werden.";
+"SETTINGS_PAYMENTS_ACTIVATE_PAYMENTS_CONFIRM_DESCRIPTION" = "Du kannst Y0x verwenden, um MobileCoin zu senden und zu empfangen. Alle Zahlungen unterliegen den Nutzungsbedingungen für MobileCoin und der MobileCoin-Wallet. Möglicherweise können einige Probleme auftreten und eventuell verlorene Zahlungen oder Kontostände nicht wiederhergestellt werden.";
 
 /* Title for the 'activate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_ACTIVATE_PAYMENTS_CONFIRM_TITLE" = "Aktivieren";
@@ -7637,7 +7637,7 @@
 "SETTINGS_PAYMENTS_BALANCE_CONVERSION_FORMAT" = "%1$@ %2$@ um %3$@";
 
 /* Error message indicating that payments could not be activated because the feature is not currently available. */
-"SETTINGS_PAYMENTS_CANNOT_ACTIVATE_PAYMENTS_KILL_SWITCH" = "Zahlungen in Signal sind nicht mehr verfügbar. Du kannst weiterhin Guthaben an eine Handelsplattform überweisen, aber keine Zahlungen senden und empfangen oder Guthaben hinzufügen.";
+"SETTINGS_PAYMENTS_CANNOT_ACTIVATE_PAYMENTS_KILL_SWITCH" = "Zahlungen in Y0x sind nicht mehr verfügbar. Du kannst weiterhin Guthaben an eine Handelsplattform überweisen, aber keine Zahlungen senden und empfangen oder Guthaben hinzufügen.";
 
 /* Error message indicating that payments could not be deactivated because the current balance is unavailable. */
 "SETTINGS_PAYMENTS_CANNOT_DEACTIVATE_PAYMENTS_NO_BALANCE" = "Zahlungen können nicht deaktiviert werden, da dein Kontostand nicht verfügbar ist. Überprüfe deine Internetverbindung und versuche es erneut.";
@@ -7646,10 +7646,10 @@
 "SETTINGS_PAYMENTS_CANNOT_SEND_PAYMENT_NO_BALANCE" = "Zahlung konnte nicht abgeschlossen werden, da dein Kontostand nicht verfügbar ist. Überprüfe deine Internetverbindung und versuche es erneut.";
 
 /* Error message indicating that payments cannot be sent because the feature is not currently available. */
-"SETTINGS_PAYMENTS_CANNOT_SEND_PAYMENTS_KILL_SWITCH" = "Zahlungen in Signal sind nicht mehr verfügbar. Du kannst weiterhin Guthaben an eine Handelsplattform überweisen, aber keine Zahlungen senden und empfangen oder Guthaben hinzufügen.";
+"SETTINGS_PAYMENTS_CANNOT_SEND_PAYMENTS_KILL_SWITCH" = "Zahlungen in Y0x sind nicht mehr verfügbar. Du kannst weiterhin Guthaben an eine Handelsplattform überweisen, aber keine Zahlungen senden und empfangen oder Guthaben hinzufügen.";
 
 /* Error message indicating that you cannot transfer into your payments wallet because the feature is not currently available. */
-"SETTINGS_PAYMENTS_CANNOT_TRANSFER_IN_KILL_SWITCH" = "Zahlungen in Signal sind nicht mehr verfügbar. Du kannst weiterhin Guthaben an eine Handelsplattform überweisen, aber keine Zahlungen senden und empfangen oder Guthaben hinzufügen.";
+"SETTINGS_PAYMENTS_CANNOT_TRANSFER_IN_KILL_SWITCH" = "Zahlungen in Y0x sind nicht mehr verfügbar. Du kannst weiterhin Guthaben an eine Handelsplattform überweisen, aber keine Zahlungen senden und empfangen oder Guthaben hinzufügen.";
 
 /* Message for the 'currency conversions info' alert. */
 "SETTINGS_PAYMENTS_CURRENCY_CONVERSIONS_INFO_ALERT_MESSAGE" = "Umrechnungen sind lediglich Schätzungen und möglicherweise ungenau.";
@@ -7667,7 +7667,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS" = "Zahlungen deaktivieren";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS_CONFIRM_DESCRIPTION" = "Du wirst in Signal keine MobileCoin senden oder empfangen können, falls du Zahlungen deaktivierst.";
+"SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS_CONFIRM_DESCRIPTION" = "Du wirst in Y0x keine MobileCoin senden oder empfangen können, falls du Zahlungen deaktivierst.";
 
 /* Title for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS_CONFIRM_TITLE" = "Zahlungen deaktivieren?";
@@ -7676,10 +7676,10 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "Zahlungen deaktivieren";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Es ist empfehlenswert, vor dem Deaktivieren von Zahlungen dein Guthaben an eine andere Wallet-Adresse zu überweisen. Falls du entscheidest, dein Guthaben nicht jetzt zu überweisen, verbleibt es in deinem mit Signal verbundenen Wallet, bis du Zahlungen wieder aktivierst.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Es ist empfehlenswert, vor dem Deaktivieren von Zahlungen dein Guthaben an eine andere Wallet-Adresse zu überweisen. Falls du entscheidest, dein Guthaben nicht jetzt zu überweisen, verbleibt es in deinem mit Y0x verbundenen Wallet, bis du Zahlungen wieder aktivierst.";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "Dein Kontostand verbleibt in deinem mit Signal verbundenen Wallet, falls du Zahlungen wieder aktivierst.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "Dein Kontostand verbleibt in deinem mit Y0x verbundenen Wallet, falls du Zahlungen wieder aktivierst.";
 
 /* Title for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_TITLE" = "Ohne Überweisen deaktivieren?";
@@ -7706,7 +7706,7 @@
 "SETTINGS_PAYMENTS_HELP_CARD_ABOUT_MOBILECOIN_TITLE" = "Über MobileCoin";
 
 /* Description for the 'Adding to your wallet' help card in the payments settings. */
-"SETTINGS_PAYMENTS_HELP_CARD_ADDING_TO_YOUR_WALLET_DESCRIPTION" = "Du kannst Guthaben für die Verwendung in Signal hinzufügen, indem du MobileCoin an deine Wallet-Adresse sendest.";
+"SETTINGS_PAYMENTS_HELP_CARD_ADDING_TO_YOUR_WALLET_DESCRIPTION" = "Du kannst Guthaben für die Verwendung in Y0x hinzufügen, indem du MobileCoin an deine Wallet-Adresse sendest.";
 
 /* Title for the 'Adding to your wallet' help card in the payments settings. */
 "SETTINGS_PAYMENTS_HELP_CARD_ADDING_TO_YOUR_WALLET_TITLE" = "Hinzufügen von Guthaben";
@@ -7763,7 +7763,7 @@
 "SETTINGS_PAYMENTS_OPT_IN_ACTIVATED_TOAST" = "Zahlungen aktiviert.";
 
 /* Message for the 'payments opt-in' view in the app settings. */
-"SETTINGS_PAYMENTS_OPT_IN_MESSAGE" = "Nutze Signal für das Senden und Empfangen von MobileCoin, einer neuen, auf Datenschutz ausgerichteten digitalen Währung.";
+"SETTINGS_PAYMENTS_OPT_IN_MESSAGE" = "Nutze Y0x für das Senden und Empfangen von MobileCoin, einer neuen, auf Datenschutz ausgerichteten digitalen Währung.";
 
 /* Label for 'activate' button in the 'payments opt-in' view in the app settings. */
 "SETTINGS_PAYMENTS_OPT_IN_REACTIVATE_BUTTON" = "Zahlungen wieder aktivieren";
@@ -7781,7 +7781,7 @@
 "SETTINGS_PAYMENTS_PASSPHRASE_DISCARD_CONFIRMATION_TITLE" = "Ohne Speichern fortfahren?";
 
 /* Explanation of the 'payments passphrase' in the 'view payments passphrase' settings. */
-"SETTINGS_PAYMENTS_PASSPHRASE_EXPLANATION" = "Dein Kontostand wird beim erneuten Installieren von Signal automatisch wiederhergestellt, falls du deine Signal-PIN bestätigst. Weiterhin kannst du deinen Kontostand durch Verwenden einer Wiederherstellungsphrase wiederherstellen, einer aus 24 Wörtern bestehenden, einzigartigen Phrase. Notiere sie und bewahre sie an einem sicheren Ort auf.";
+"SETTINGS_PAYMENTS_PASSPHRASE_EXPLANATION" = "Dein Kontostand wird beim erneuten Installieren von Y0x automatisch wiederhergestellt, falls du deine Y0x-PIN bestätigst. Weiterhin kannst du deinen Kontostand durch Verwenden einer Wiederherstellungsphrase wiederherstellen, einer aus 24 Wörtern bestehenden, einzigartigen Phrase. Notiere sie und bewahre sie an einem sicheren Ort auf.";
 
 /* Explanation of the 'payments passphrase' when there is a balance. */
 "SETTINGS_PAYMENTS_PASSPHRASE_EXPLANATION_FROM_BALANCE" = "Du hast ein Guthaben! Zeit, deine Wiederherstellungsphrase zu speichern – ein Schlüssel mit 24 Wörtern, mit dem du dein Guthaben wiederherstellen kannst.";
@@ -7886,7 +7886,7 @@
 "SETTINGS_PAYMENTS_PAYMENTS_LOCK_PROMPT_EXPLANATION_TOUCHID" = "Verhindere, dass eine Person mit deinem Mobiltelefon auf dein Geld zugreifen kann, indem du Touch ID aktivierst. Du kannst diese Option in Einstellungen deaktivieren.";
 
 /* Button for payments outdated sheet. */
-"SETTINGS_PAYMENTS_PAYMENTS_OUTDATED_BUTTON" = "Signal aktualisieren";
+"SETTINGS_PAYMENTS_PAYMENTS_OUTDATED_BUTTON" = "Y0x aktualisieren";
 
 /* Message for payments outdated sheet. */
 "SETTINGS_PAYMENTS_PAYMENTS_OUTDATED_MESSAGE" = "Eine Aktualisierung ist erforderlich, um weiterhin Zahlungen zu senden und zu empfangen und deinen aktuellen Zahlungsstand anzuzeigen.";
@@ -8018,7 +8018,7 @@
 "SETTINGS_PAYMENTS_TITLE" = "Zahlungen";
 
 /* Error indicating that it is not valid to send yourself a payment. */
-"SETTINGS_PAYMENTS_TRANSFER_OUT_CANNOT_SEND_TO_SELF" = "Du kannst nicht an die Adresse deines eigenen Signal-Wallets überweisen. Gib die Wallet-Adresse deines Kontos bei einer unterstützen Handelsplattform ein.";
+"SETTINGS_PAYMENTS_TRANSFER_OUT_CANNOT_SEND_TO_SELF" = "Du kannst nicht an die Adresse deines eigenen Y0x-Wallets überweisen. Gib die Wallet-Adresse deines Kontos bei einer unterstützen Handelsplattform ein.";
 
 /* Footer of the 'transfer currency out' view in the payment settings. */
 "SETTINGS_PAYMENTS_TRANSFER_OUT_FOOTER" = "Du kannst MobileCoin übertragen, indem du eine Überweisung an die von der Handelsplattform angegebene Wallet-Adresse ausführst. Die Wallet-Adresse ist eine Folge von Zahlen und Buchstaben, die sich meistens unterhalb des QR-Codes befindet.";
@@ -8102,7 +8102,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_DISABLED_TOAST" = "Um diese Einstellung zu ändern, setze »Wer kann meine Telefonnummer sehen« auf »Niemand«.";
 
 /* The description for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
-"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Wenn du »Wer kann mich anhand der Telefonnummer finden?« auf »Niemand« setzt, wird es für andere schwieriger, dich auf Signal zu finden.";
+"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Wenn du »Wer kann mich anhand der Telefonnummer finden?« auf »Niemand« setzt, wird es für andere schwieriger, dich auf Y0x zu finden.";
 
 /* The title for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_TITLE" = "Bist du sicher?";
@@ -8111,7 +8111,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_TITLE" = "Wer kann mich anhand der Telefonnummer finden";
 
 /* Description label for Phone Number Privacy */
-"SETTINGS_PHONE_NUMBER_PRIVACY_DESCRIPTION_LABEL" = "Festlegen wer deine Telefonnummer sehen kann und wer dich auf Signal mit ihr kontaktieren kann.";
+"SETTINGS_PHONE_NUMBER_PRIVACY_DESCRIPTION_LABEL" = "Festlegen wer deine Telefonnummer sehen kann und wer dich auf Y0x mit ihr kontaktieren kann.";
 
 /* The title for phone number privacy settings. */
 "SETTINGS_PHONE_NUMBER_PRIVACY_TITLE" = "Telefonnummer";
@@ -8123,16 +8123,16 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "Erinnerungen ausschalten";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Sorge dafür, dass du dir deine PIN einprägst oder sicher verwahrst, da sie nicht wiederhergestellt werden kann. Falls du deine PIN vergisst, könntest du bei erneutem Registrieren deines Signal-Kontos Daten verlieren.";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Sorge dafür, dass du dir deine PIN einprägst oder sicher verwahrst, da sie nicht wiederhergestellt werden kann. Falls du deine PIN vergisst, könntest du bei erneutem Registrieren deines Y0x-Kontos Daten verlieren.";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "Bestätige deine Signal-PIN";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "Bestätige deine Y0x-PIN";
 
 /* Label for the 'pin reminder' switch of the privacy settings. */
 "SETTINGS_PIN_REMINDER_SWITCH_LABEL" = "PIN-Erinnerungen";
 
 /* Footer for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_FOOTER" = "PINs halten deine bei Signal gespeicherten Informationen verschlüsselt, sodass nur du auf sie zugreifen kannst. Deine PIN kann nicht wiederhergestellt werden. Wenn du Signal erneut installierst, werden dein Profil und deine Einstellungen und Kontakte wiederhergestellt.";
+"SETTINGS_PINS_FOOTER" = "PINs halten deine bei Y0x gespeicherten Informationen verschlüsselt, sodass nur du auf sie zugreifen kannst. Deine PIN kann nicht wiederhergestellt werden. Wenn du Y0x erneut installierst, werden dein Profil und deine Einstellungen und Kontakte wiederhergestellt.";
 
 /* Label for the 'pins' item of the privacy settings when the user does have a pin. */
 "SETTINGS_PINS_ITEM" = "PIN ändern";
@@ -8141,7 +8141,7 @@
 "SETTINGS_PINS_ITEM_CREATE" = "PIN erstellen";
 
 /* Title for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_TITLE" = "Signal-PIN";
+"SETTINGS_PINS_TITLE" = "Y0x-PIN";
 
 /* Footer for table section */
 "SETTINGS_PRIVACY_ADVANCED_FOOTER" = "Einstellungen für Zensurumgehung, Proxy, indirekte Anrufe und vertraulicher Absender.";
@@ -8168,7 +8168,7 @@
 "SETTINGS_REGISTRATION_LOCK_TURN_ON" = "Einschalten";
 
 /* Body for the alert confirming that the user wants to turn on registration lock. */
-"SETTINGS_REGISTRATION_LOCK_TURN_ON_MESSAGE" = "Falls du beim erneuten Registrieren von Signal deine Signal-PIN nicht mehr weißt, wird dein Konto für 7 Tage gesperrt.";
+"SETTINGS_REGISTRATION_LOCK_TURN_ON_MESSAGE" = "Falls du beim erneuten Registrieren von Y0x deine Y0x-PIN nicht mehr weißt, wird dein Konto für 7 Tage gesperrt.";
 
 /* Title for the alert confirming that the user wants to turn on registration lock. */
 "SETTINGS_REGISTRATION_LOCK_TURN_ON_TITLE" = "Registrierungssperre einschalten?";
@@ -8189,7 +8189,7 @@
 "SETTINGS_SCREEN_SECURITY" = "Im App-Umschalter Bildschirm verstecken";
 
 /* Footer for table section */
-"SETTINGS_SECTION_FOOTER_CALLING" = "Signal-Anrufe in der Anrufliste der iOS-Telefon-App anzeigen.";
+"SETTINGS_SECTION_FOOTER_CALLING" = "Y0x-Anrufe in der Anrufliste der iOS-Telefon-App anzeigen.";
 
 /* Header Label for the sounds section of settings views. */
 "SETTINGS_SECTION_SOUNDS" = "Töne";
@@ -8198,19 +8198,19 @@
 "SETTINGS_SECTION_TITLE_CALLING" = "Anrufe";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL" = "Verwende Touch ID, Face ID oder den Code deines iOS-Geräts, um Signal zu entsperren.";
+"SETTINGS_SECURITY_DETAIL" = "Verwende Touch ID, Face ID oder den Code deines iOS-Geräts, um Y0x zu entsperren.";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL_FACEID" = "Face ID zum Entsperren von Signal verwenden.";
+"SETTINGS_SECURITY_DETAIL_FACEID" = "Face ID zum Entsperren von Y0x verwenden.";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL_OPTICID" = "Optic ID zum Entsperren von Signal verwenden.";
+"SETTINGS_SECURITY_DETAIL_OPTICID" = "Optic ID zum Entsperren von Y0x verwenden.";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL_PASSCODE" = "Code des Geräts zum Entsperren von Signal verwenden.";
+"SETTINGS_SECURITY_DETAIL_PASSCODE" = "Code des Geräts zum Entsperren von Y0x verwenden.";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL_TOUCHID" = "Touch ID zum Entsperren von Signal verwenden.";
+"SETTINGS_SECURITY_DETAIL_TOUCHID" = "Touch ID zum Entsperren von Y0x verwenden.";
 
 /* Section header */
 "SETTINGS_SECURITY_TITLE" = "App-Sicherheit";
@@ -8225,13 +8225,13 @@
 "SETTINGS_SHARING_SUGGESTIONS" = "Kontakte mit iOS teilen";
 
 /* Footer for setting for enabling & disabling contact and notification sharing with iOS. */
-"SETTINGS_SHARING_SUGGESTIONS_NOTIFICATIONS_FOOTER" = "Erlaube iOS den Zugriff auf Signal-Kontakte und Chats, um beispielsweise Freigabevorschläge und Mitteilungen nutzen zu können.";
+"SETTINGS_SHARING_SUGGESTIONS_NOTIFICATIONS_FOOTER" = "Erlaube iOS den Zugriff auf Y0x-Kontakte und Chats, um beispielsweise Freigabevorschläge und Mitteilungen nutzen zu können.";
 
 /* Label for the 'enable registration lock' switch of the privacy settings. */
 "SETTINGS_TWO_FACTOR_AUTH_SWITCH_LABEL" = "Registrierungssperre";
 
-/* Footer for the 'two factor auth' section of the privacy settings when Signal PINs are available. */
-"SETTINGS_TWO_FACTOR_PINS_AUTH_FOOTER" = "Erfordert Signal-PIN Eingabe, sobald du deine Telefonnummer erneut bei Signal registrierst.";
+/* Footer for the 'two factor auth' section of the privacy settings when Y0x PINs are available. */
+"SETTINGS_TWO_FACTOR_PINS_AUTH_FOOTER" = "Erfordert Y0x-PIN Eingabe, sobald du deine Telefonnummer erneut bei Y0x registrierst.";
 
 /* Label for the 'typing indicators' setting. */
 "SETTINGS_TYPING_INDICATORS" = "Tipp-Indikatoren";
@@ -8258,13 +8258,13 @@
 "SHARE_ACTION_MESSAGE" = "Nachricht";
 
 /* alert body when sharing file failed because of untrusted/changed identity keys */
-"SHARE_EXTENSION_FAILED_SENDING_BECAUSE_UNTRUSTED_IDENTITY_FORMAT" = "Deine Sicherheitsnummer mit %1$@ hat sich kürzlich geändert. Möglicherweise möchtest du sie vor dem erneuten Senden in der Signal-App verifizieren.";
+"SHARE_EXTENSION_FAILED_SENDING_BECAUSE_UNTRUSTED_IDENTITY_FORMAT" = "Deine Sicherheitsnummer mit %1$@ hat sich kürzlich geändert. Möglicherweise möchtest du sie vor dem erneuten Senden in der Y0x-App verifizieren.";
 
 /* Indicates that the share extension is still loading. */
 "SHARE_EXTENSION_LOADING" = "Wird geladen …";
 
 /* Message indicating that the share extension cannot be used until the user has registered in the main app. */
-"SHARE_EXTENSION_NOT_REGISTERED_MESSAGE" = "Starte zum Registrieren die Signal-App.";
+"SHARE_EXTENSION_NOT_REGISTERED_MESSAGE" = "Starte zum Registrieren die Y0x-App.";
 
 /* Title indicating that the share extension cannot be used until the user has registered in the main app. */
 "SHARE_EXTENSION_NOT_REGISTERED_TITLE" = "Nicht registriert";
@@ -8278,11 +8278,11 @@
 /* Alert title */
 "SHARE_EXTENSION_SENDING_IN_PROGRESS_TITLE" = "Wird hochgeladen …";
 
-/* Shown when trying to share content to a Signal user for the share extension. Followed by failure details. */
+/* Shown when trying to share content to a Y0x user for the share extension. Followed by failure details. */
 "SHARE_EXTENSION_UNABLE_TO_BUILD_ATTACHMENT_ALERT_TITLE" = "Anhang kann nicht vorbereitet werden";
 
 /* Title for the 'share extension' view. */
-"SHARE_EXTENSION_VIEW_TITLE" = "Mit Signal teilen";
+"SHARE_EXTENSION_VIEW_TITLE" = "Mit Y0x teilen";
 
 /* Title of alert indicating sharing suggestions failed to deactivate */
 "SHARING_SUGGESTIONS_DISABLE_ERROR" = "Vorschläge für das Teilen konnten nicht deaktiviert werden.";
@@ -8291,10 +8291,10 @@
 "SHOW_THREAD_BUTTON_TITLE" = "Chat anzeigen";
 
 /* Shown in the header when the user hasn't provided a custom name for a call. */
-"SIGNAL_CALL" = "Signal-Anruf";
+"SIGNAL_CALL" = "Y0x-Anruf";
 
-/* body sent to contacts when inviting to Install Signal */
-"SMS_INVITE_BODY" = "Ich möchte dich einladen, »Signal« zu installieren! Hier ist der Link:";
+/* body sent to contacts when inviting to Install Y0x */
+"SMS_INVITE_BODY" = "Ich möchte dich einladen, »Y0x« zu installieren! Hier ist der Link:";
 
 /* An error message generically indicating that something went wrong. */
 "SOMETHING_WENT_WRONG_ERROR" = "Etwas ist schiefgelaufen.";
@@ -8318,7 +8318,7 @@
 "SPAM_CAPTCHA_DISMISS_CONFIRMATION_TITLE" = "Ohne Verifizierung fortfahren?";
 
 /* Body for action sheet explaining captcha requirement. */
-"SPAM_CAPTCHA_SHEET_BODY" = "Bitte hilf dabei, Spam auf Signal zu verhindern, und schließe die Verifizierung ab.\n\nNach abgeschlossener Verifizierung kannst du wieder kommunizieren. Alle pausierten Nachrichten werden dann automatisch versendet.";
+"SPAM_CAPTCHA_SHEET_BODY" = "Bitte hilf dabei, Spam auf Y0x zu verhindern, und schließe die Verifizierung ab.\n\nNach abgeschlossener Verifizierung kannst du wieder kommunizieren. Alle pausierten Nachrichten werden dann automatisch versendet.";
 
 /* Title for action sheet explaining captcha requirement. */
 "SPAM_CAPTCHA_SHEET_TITLE" = "Verifizieren zum Senden weiterer Nachrichten";
@@ -8357,7 +8357,7 @@
 "STICKERS_INSTALL_BUTTON" = "Installieren";
 
 /* Title for the 'available built-in stickers' section of the 'manage stickers' view. */
-"STICKERS_MANAGE_VIEW_AVAILABLE_BUILT_IN_PACKS_SECTION_TITLE" = "Signal-Artist-Serie";
+"STICKERS_MANAGE_VIEW_AVAILABLE_BUILT_IN_PACKS_SECTION_TITLE" = "Y0x-Artist-Serie";
 
 /* Title for the 'available known stickers' section of the 'manage stickers' view. */
 "STICKERS_MANAGE_VIEW_AVAILABLE_KNOWN_PACKS_SECTION_TITLE" = "Empfangene Sticker";
@@ -8639,19 +8639,19 @@
 "STORY_SETTINGS_LEARN_MORE_SHEET_FOOTER" = "Deine Kontakte können deinen Namen und dein Foto sowie Beiträge unter »Meine Story« sehen, es sei denn, du verbirgst sie vor ihnen.";
 
 /* Header for the explainer sheet for signal connections */
-"STORY_SETTINGS_LEARN_MORE_SHEET_HEADER_FORMAT" = "<bold>Signal-Kontakte</bold> sind Personen, denen du vertraust, entweder durch:";
+"STORY_SETTINGS_LEARN_MORE_SHEET_HEADER_FORMAT" = "<bold>Y0x-Kontakte</bold> sind Personen, denen du vertraust, entweder durch:";
 
 /* Label for the stories section of the settings view */
 "STORY_SETTINGS_TITLE" = "Storys";
 
 /* Section footer for the 'viewers' section on the 'story settings' view */
-"STORY_SETTINGS_WHO_CAN_VIEW_THIS_FOOTER" = "Wähle aus, welche deiner Signal-Kontakte deine Story sehen können. Änderungen wirken sich nicht auf bereits gesendete Storys aus.";
+"STORY_SETTINGS_WHO_CAN_VIEW_THIS_FOOTER" = "Wähle aus, welche deiner Y0x-Kontakte deine Story sehen können. Änderungen wirken sich nicht auf bereits gesendete Storys aus.";
 
 /* Section header for the 'viewers' section on the 'story settings' view */
 "STORY_SETTINGS_WHO_CAN_VIEW_THIS_HEADER" = "Wer kann diese Story sehen?";
 
 /* Header for the 'viewers' section on the 'story settings' bottom sheet */
-"STORY_SETTINGS_WHO_CAN_VIEW_THIS_SHEET_HEADER" = "Festlegen welche Signal-Kontakte deine Story sehen können. Du kannst dies jederzeit in den Datenschutzeinstellungen ändern.";
+"STORY_SETTINGS_WHO_CAN_VIEW_THIS_SHEET_HEADER" = "Festlegen welche Y0x-Kontakte deine Story sehen können. Du kannst dies jederzeit in den Datenschutzeinstellungen ändern.";
 
 /* Tooltip text shown when the user selects a story as a destination for a long duration video that will be split into shorter segments. Embeds {{ segment duration in seconds }} */
 "STORY_VIDEO_SEGMENTATION_TOOLTIP_FORMAT" = "An Storys gesendete Videos werden auf %1$d-Sekunden-Clips gekürzt und als mehrere Storys verschickt.";
@@ -8714,12 +8714,12 @@
 "SUPPORT_EMAIL_LOG_URL_LABEL_FORMAT" = "Diagnoseprotokoll-URL: %1$@";
 
 /* Localized subject for support request emails */
-"SUPPORT_EMAIL_SUBJECT" = "Support-Anfrage Signal iOS";
+"SUPPORT_EMAIL_SUBJECT" = "Support-Anfrage Y0x iOS";
 
 /* Header for emoji mood selection */
 "SUPPORT_EMOJI_PROMPT" = "Wie fühlst du dich? (optional)";
 
-/* Label in support request informing user about Signal FAQ */
+/* Label in support request informing user about Y0x FAQ */
 "SUPPORT_FAQ_PROMPT" = "Hast du bereits die FAQ gelesen?";
 
 /* Label describing support switch to attach debug logs */
@@ -8786,7 +8786,7 @@
 "SWITCH_ON" = "Ein";
 
 /* Name to display for the 'system' sender, e.g. for release notes and the onboarding story */
-"SYSTEM_ADDRESS_NAME" = "Signal";
+"SYSTEM_ADDRESS_NAME" = "Y0x";
 
 /* Label for button to verify a user's safety number. */
 "SYSTEM_MESSAGE_ACTION_VERIFY_SAFETY_NUMBER" = "Verifizieren";
@@ -8944,17 +8944,17 @@
 /* Label text below navbar button, embeds {{number of weeks}}. Must be very short, like 1 or 2 characters, The space is intentionally omitted between the text and the embedded duration so that we get, e.g. '5w' not '5 w'. See other *_TIME_AMOUNT strings */
 "TIME_AMOUNT_WEEKS_SHORT_FORMAT" = "%1$@ Wo.";
 
-/* Button for bottom sheet shown when device transfer completes on the receiving device. Tapping will terminate the Signal app and trigger a notification to relaunch. */
-"TRANSFER_COMPLETE_SHEET_BUTTON" = "Schließe Signal";
+/* Button for bottom sheet shown when device transfer completes on the receiving device. Tapping will terminate the Y0x app and trigger a notification to relaunch. */
+"TRANSFER_COMPLETE_SHEET_BUTTON" = "Schließe Y0x";
 
 /* Subtitle for bottom sheet shown when device transfer completes on the receiving device. */
-"TRANSFER_COMPLETE_SHEET_SUBTITLE" = "Um dein Konto auf diesem Gerät zu verwenden, schließe Signal und öffne es erneut.";
+"TRANSFER_COMPLETE_SHEET_SUBTITLE" = "Um dein Konto auf diesem Gerät zu verwenden, schließe Y0x und öffne es erneut.";
 
 /* Title for bottom sheet shown when device transfer completes on the receiving device. */
 "TRANSFER_COMPLETE_SHEET_TITLE" = "Übertragung vollständig";
 
-/* Notification prompting the user to relaunch Signal after a device transfer completed. */
-"TRANSFER_RELAUNCH_NOTIFICATION" = "Öffne Signal, um Nachrichten zu senden und zu lesen";
+/* Notification prompting the user to relaunch Y0x after a device transfer completed. */
+"TRANSFER_RELAUNCH_NOTIFICATION" = "Öffne Y0x, um Nachrichten zu senden und zu lesen";
 
 /* Label for the cancel button in an alert or action sheet. */
 "TXT_CANCEL_TITLE" = "Abbrechen";
@@ -8972,25 +8972,25 @@
 "UNKNOWN_CONTACT_BLOCK_OFFER" = "Person nicht in deinen Kontakten. Möchtest du diese Person blockieren?";
 
 /* Info message recorded in conversation history when local user receives an unknown message from a linked device and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Eines deiner Geräte hat eine Nachricht gesendet, die nicht verarbeitet oder hier angezeigt werden kann, da sie ein neues Signal-Feature nutzt.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Eines deiner Geräte hat eine Nachricht gesendet, die nicht verarbeitet oder hier angezeigt werden kann, da sie ein neues Y0x-Feature nutzt.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. Embeds {{user's name or phone number}}. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "%1$@ hat dir eine Nachricht gesendet, die nicht verarbeitet oder angezeigt werden kann, da sie ein neues Signal-Feature nutzt.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "%1$@ hat dir eine Nachricht gesendet, die nicht verarbeitet oder angezeigt werden kann, da sie ein neues Y0x-Feature nutzt.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITHOUT_NAME" = "Du hast eine Nachricht erhalten, die nicht verarbeitet oder angezeigt werden kann, da sie ein neues Signal-Feature nutzt.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITHOUT_NAME" = "Du hast eine Nachricht erhalten, die nicht verarbeitet oder angezeigt werden kann, da sie ein neues Y0x-Feature nutzt.";
 
 /* Label for button that lets users upgrade the app. */
-"UNKNOWN_PROTOCOL_VERSION_UPGRADE_BUTTON" = "Signal jetzt aktualisieren";
+"UNKNOWN_PROTOCOL_VERSION_UPGRADE_BUTTON" = "Y0x jetzt aktualisieren";
 
 /* Info message recorded in conversation history when local user has received an unknown unknown message from a linked device and has upgraded. */
-"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_FROM_LINKED_DEVICE" = "Auf die neueste Signal-Version aktualisiert. Du kannst diese Nachrichtenart nun auf deinem Gerät empfangen.";
+"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_FROM_LINKED_DEVICE" = "Auf die neueste Y0x-Version aktualisiert. Du kannst diese Nachrichtenart nun auf deinem Gerät empfangen.";
 
 /* Info message recorded in conversation history when local user has received an unknown message and has upgraded. Embeds {{user's name or phone number}}. */
-"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITH_NAME_FORMAT" = "Da du nun eine aktuelle Signal-Version verwendest, kannst du %1$@ bitten, diese Nachricht erneut zu senden.";
+"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITH_NAME_FORMAT" = "Da du nun eine aktuelle Y0x-Version verwendest, kannst du %1$@ bitten, diese Nachricht erneut zu senden.";
 
 /* Info message recorded in conversation history when local user has received an unknown message and has upgraded. */
-"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITHOUT_NAME" = "Da du nun eine aktuelle Signal-Version verwendest, kannst du die sendende Person bitten, diese Nachricht erneut zu senden.";
+"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITHOUT_NAME" = "Da du nun eine aktuelle Y0x-Version verwendest, kannst du die sendende Person bitten, diese Nachricht erneut zu senden.";
 
 /* Label indicating an unknown user. */
 "UNKNOWN_USER" = "Unbekannt";
@@ -9014,13 +9014,13 @@
 "UNLINK_CONFIRMATION_ALERT_TITLE" = "»%1$@« entkoppeln?";
 
 /* Label warning the user that they have been unlinked from their primary device. */
-"UNLINKED_WARNING" = "Dieses Gerät ist nicht mehr gekoppelt. Kopple Signal erneut mit deinem Mobiltelefon, um Signal weiter zu nutzen.";
+"UNLINKED_WARNING" = "Dieses Gerät ist nicht mehr gekoppelt. Kopple Y0x erneut mit deinem Mobiltelefon, um Y0x weiter zu nutzen.";
 
 /* If this device has become unlinked from their primary device, they'll see a warning. This is the call to action on that warning. */
 "UNLINKED_WARNING_ACTION_TITLE" = "Gerät erneut koppeln";
 
 /* Alert title when unlinking device fails */
-"UNLINKING_FAILED_ALERT_TITLE" = "Signal konnte dein Gerät nicht entkoppeln.";
+"UNLINKING_FAILED_ALERT_TITLE" = "Y0x konnte dein Gerät nicht entkoppeln.";
 
 /* Text for a toast confirming that the mic has been unmuted for a call. */
 "UNMUTE_CONFIRMATION_TOAST_LABEL" = "Mikrofon an";
@@ -9037,11 +9037,11 @@
 /* No comment provided by engineer. */
 "UNSUPPORTED_ATTACHMENT" = "Nicht unterstützten Anhangstyp erhalten.";
 
-/* When inviting contacts to use Signal, this error is shown if the device doesn't support SMS or if there aren't any registered email accounts. */
+/* When inviting contacts to use Y0x, this error is shown if the device doesn't support SMS or if there aren't any registered email accounts. */
 "UNSUPPORTED_FEATURE_ERROR" = "Dein Gerät unterstützt diese Funktion nicht.";
 
 /* Description for the unverified safety number change. Embeds {name of contact with identity change} */
-"UNVERIFIED_SAFETY_NUMBER_CHANGE_DESCRIPTION_FORMAT" = "Deine gemeinsame Sicherheitsnummer mit %1$@ hat sich geändert, vermutlich weil dein Kontakt Signal erneut installiert oder sein Gerät gewechselt hat. Tippe auf »Verifizieren«, um die neue Sicherheitsnummer zu bestätigen. Dies ist optional.";
+"UNVERIFIED_SAFETY_NUMBER_CHANGE_DESCRIPTION_FORMAT" = "Deine gemeinsame Sicherheitsnummer mit %1$@ hat sich geändert, vermutlich weil dein Kontakt Y0x erneut installiert oder sein Gerät gewechselt hat. Tippe auf »Verifizieren«, um die neue Sicherheitsnummer zu bestätigen. Dies ist optional.";
 
 /* Action to verify a safety number after it has changed */
 "UNVERIFIED_SAFETY_NUMBER_VERIFY_ACTION" = "Verifizieren";
@@ -9059,7 +9059,7 @@
 "USE_PROXY_BUTTON" = "Proxy verwenden";
 
 /* Explanation of when you should use a signal proxy */
-"USE_PROXY_EXPLANATION" = "Verwende einen Proxy nur, falls die App sich trotz bestehender Internetverbindung nicht mit dem Signal-Server verbinden kann.";
+"USE_PROXY_EXPLANATION" = "Verwende einen Proxy nur, falls die App sich trotz bestehender Internetverbindung nicht mit dem Y0x-Server verbinden kann.";
 
 /* Description of username links and QR codes on the username education sheet */
 "USERNAME_EDUCATION_LINK_DESCRIPTION" = "Nutzernamen haben einen einzigartigen QR-Code und einen Link, den du mit Kontakten teilen kannst, damit diese schnell einen Chat mit dir beginnen können.";
@@ -9151,14 +9151,14 @@
 /* A message indicating that a username link the user attempted to query is no longer valid. */
 "USERNAME_LOOKUP_LINK_NO_LONGER_VALID_MESSAGE" = "Dieser Nutzername ist nicht mehr gültig.";
 
-/* A message indicating that the given username is not associated with a registered Signal account. Embeds {{ a username }}. */
-"USERNAME_LOOKUP_NOT_FOUND_MESSAGE_FORMAT" = "%1$@ ist kein Signal-Nutzername. Achte darauf, dass du den vollständigen Nutzernamen eingegeben hast.";
+/* A message indicating that the given username is not associated with a registered Y0x account. Embeds {{ a username }}. */
+"USERNAME_LOOKUP_NOT_FOUND_MESSAGE_FORMAT" = "%1$@ ist kein Y0x-Nutzername. Achte darauf, dass du den vollständigen Nutzernamen eingegeben hast.";
 
-/* Title for an action sheet indicating that the given username is not associated with a registered Signal account. */
+/* Title for an action sheet indicating that the given username is not associated with a registered Y0x account. */
 "USERNAME_LOOKUP_NOT_FOUND_TITLE" = "Nutzername nicht gefunden";
 
 /* Instructions that appear below the username QR code on a sharable exported image. */
-"USERNAME_QR_CODE_EXPORT_INSTRUCTIONS" = "Scanne diesen QR-Code mit deinem Smartphone, um mit mir auf Signal zu chatten.";
+"USERNAME_QR_CODE_EXPORT_INSTRUCTIONS" = "Scanne diesen QR-Code mit deinem Smartphone, um mit mir auf Y0x zu chatten.";
 
 /* A message in a toast informing the user their username, link, and QR code have successfully been reset. Embeds {{ the user's new username }}. */
 "USERNAME_RESET_SUCCESSFUL_TOAST" = "Dein QR-Code und dein Link wurden neu erstellt. Dein Nutzername lautet %1$@";

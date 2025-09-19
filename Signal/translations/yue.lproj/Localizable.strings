@@ -2,7 +2,7 @@
 "AB_PERMISSION_MISSING_ACTION_NOT_NOW" = "遲啲先啦";
 
 /* Title for the 'about' help section */
-"ABOUT_SECTION_TITLE" = "關於 Signal";
+"ABOUT_SECTION_TITLE" = "關於 Y0x";
 
 /* Accessibility label for attachment. */
 "ACCESSIBILITY_LABEL_ATTACHMENT" = "附件";
@@ -32,7 +32,7 @@
 "ACCOUNT_DATA_REPORT_CONFIRM_EXPORT_CONFIRM_BUTTON" = "匯出報告";
 
 /* Users can request a report of their account data. Before they get their account export, they are warned to only share account data with trustworthy sources. This is the message on that warning. */
-"ACCOUNT_DATA_REPORT_CONFIRM_EXPORT_MESSAGE" = "記得淨係好同你信任嘅人或者應用程式分享你嘅 Signal 帳戶資料呀。";
+"ACCOUNT_DATA_REPORT_CONFIRM_EXPORT_MESSAGE" = "記得淨係好同你信任嘅人或者應用程式分享你嘅 Y0x 帳戶資料呀。";
 
 /* Users can request a report of their account data. If this request fails (probably because of a network connection problem), they will see an error sheet. This is the message on that error. */
 "ACCOUNT_DATA_REPORT_ERROR_MESSAGE" = "請檢查你嘅連線，然後再試多次。";
@@ -56,16 +56,16 @@
 "ACCOUNT_DATA_REPORT_EXPORT_REPORT_BUTTON" = "匯出報告";
 
 /* Users can request a report of their account data. This text appears at the bottom of this screen, offering more information. */
-"ACCOUNT_DATA_REPORT_FOOTER" = "你份報告只會喺匯出時建立，Signal 唔會將報告儲存喺裝置入面。";
+"ACCOUNT_DATA_REPORT_FOOTER" = "你份報告只會喺匯出時建立，Y0x 唔會將報告儲存喺裝置入面。";
 
 /* Users can request a report of their account data. This is the subtitle on the screen where they do this, giving them more information. */
-"ACCOUNT_DATA_REPORT_SUBTITLE" = "下載同匯出你嘅 Signal 帳戶資料報告。呢份報告唔包含任何訊息同媒體。";
+"ACCOUNT_DATA_REPORT_SUBTITLE" = "下載同匯出你嘅 Y0x 帳戶資料報告。呢份報告唔包含任何訊息同媒體。";
 
 /* Users can request a report of their account data. This is the title on the screen where they do this. */
 "ACCOUNT_DATA_REPORT_TITLE" = "你嘅帳戶資料";
 
 /* Label for 'invite' button in contact view. */
-"ACTION_INVITE" = "拉隊嚟 Signal";
+"ACTION_INVITE" = "拉隊嚟 Y0x";
 
 /* Label for button that lets you send a message to a contact. */
 "ACTION_SEND_MESSAGE" = "傳送訊息";
@@ -77,7 +77,7 @@
 "ACTION_VIDEO_CALL" = "視像通話";
 
 /* Label for 'voice call' button in contact view. */
-"ACTION_VOICE_CALL" = "Signal 通話";
+"ACTION_VOICE_CALL" = "Y0x 通話";
 
 /* The title for the 'add group members' view. */
 "ADD_GROUP_MEMBERS_VIEW_TITLE" = "加成員";
@@ -197,40 +197,40 @@
 "APN_Message" = "你可能有新訊息";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal 啟動唔到。請將除錯記錄檔發送去 support@signal.org，等我哋可以睇睇呢個問題。";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Y0x 啟動唔到。請將除錯記錄檔發送去 support@signal.org，等我哋可以睇睇呢個問題。";
 
 /* Button to try launching the app even though the last launch failed */
-"APP_LAUNCH_FAILURE_CONTINUE" = "改為打開 Signal";
+"APP_LAUNCH_FAILURE_CONTINUE" = "改為打開 Y0x";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "請將除錯紀錄發送去 support@signal.org，等我哋可以睇睇呢個問題。";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "開唔到 Signal";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "開唔到 Y0x";
 
 /* Error indicating that the app could not launch because the database could not be loaded. */
 "APP_LAUNCH_FAILURE_COULD_NOT_LOAD_DATABASE" = "載入唔到資料庫";
 
 /* Error indicating that the app could not launch without reverting unknown database migrations. */
-"APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_MESSAGE" = "請更新至最新版本嘅 Signal。";
+"APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_MESSAGE" = "請更新至最新版本嘅 Y0x。";
 
 /* Error indicating that the app could not launch without reverting unknown database migrations. */
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "未知嘅資料庫版本。";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal 喺嘗試開啟嘅時候出現問題。請將偵錯記錄傳送到 support@signal.org，幫我哋排解呢個問題。";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Y0x 喺嘗試開啟嘅時候出現問題。請將偵錯記錄傳送到 support@signal.org，幫我哋排解呢個問題。";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "開唔到 Signal";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "開唔到 Y0x";
 
 /* Error description indicating that the app crashed because there was low storage space available on the device. */
-"APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_MESSAGE" = "你嘅裝置儲存空間不足，所以打開唔到 Signal。如果要用 Signal，請喺「設定」管理儲存空間，騰空更多位置。";
+"APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_MESSAGE" = "你嘅裝置儲存空間不足，所以打開唔到 Y0x。如果要用 Y0x，請喺「設定」管理儲存空間，騰空更多位置。";
 
 /* Error title indicating that the app crashed because there was low storage space available on the device. */
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "儲存空間不足";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "未能還原由您部舊機轉移過嚟嘅資料。請將除錯記錄檔發送至 support@signal.org，等我哋可以睇睇呢個問題。若然您重新安裝 Signal，可能會遺失您嘅訊息紀錄。";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "未能還原由您部舊機轉移過嚟嘅資料。請將除錯記錄檔發送至 support@signal.org，等我哋可以睇睇呢個問題。若然您重新安裝 Y0x，可能會遺失您嘅訊息紀錄。";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "未能完成轉移";
@@ -245,7 +245,7 @@
 "APP_UPDATE_NAG_ALERT_MESSAGE_FORMAT" = "版本 %1$@ 已經喺 App Store 上架。";
 
 /* Title for the 'new app version available' alert. */
-"APP_UPDATE_NAG_ALERT_TITLE" = "Signal 出咗新版本喇";
+"APP_UPDATE_NAG_ALERT_TITLE" = "Y0x 出咗新版本喇";
 
 /* Label for the 'update' button in the 'new app version available' alert. */
 "APP_UPDATE_NAG_ALERT_UPDATE_BUTTON" = "更新";
@@ -298,7 +298,7 @@
 /* Apple Pay donation error for decline failures where the payment cannot be authorized. */
 "APPLE_PAY_DONATION_ERROR_PAYMENT_CANNOT_BE_AUTHORIZED" = "請檢查 Apple Pay 嘅付款方法係咪仍然有效。如果已經過期，請先更新資料，然後再試一次。";
 
-/* On the iOS home screen, if you tap and hold the Signal icon, this shortcut will appear. Tapping it will let users send a new message. You may want to refer to similar behavior in other iOS apps, such as Messages, for equivalent strings. */
+/* On the iOS home screen, if you tap and hold the Y0x icon, this shortcut will appear. Tapping it will let users send a new message. You may want to refer to similar behavior in other iOS apps, such as Messages, for equivalent strings. */
 "APPLICATION_SHORTCUT_NEW_MESSAGE" = "新訊息";
 
 /* Label for the archive button for conversations list view */
@@ -319,7 +319,7 @@
 /* Error that outgoing attachments could not be exported. */
 "ATTACHMENT_APPROVAL_FAILED_TO_EXPORT" = "附件匯出唔到。";
 
-/* alert text when Signal was unable to save a copy of the attachment to the system photo library */
+/* alert text when Y0x was unable to save a copy of the attachment to the system photo library */
 "ATTACHMENT_APPROVAL_FAILED_TO_SAVE" = "儲存唔到";
 
 /* Format string for file extension label in call interstitial view */
@@ -376,16 +376,16 @@
 /* Accessibility hint describing what you can do with the attachment button */
 "ATTACHMENT_HINT" = "揀選多媒體檔案傳送";
 
-/* Button in chat attachment panel that allows to select photos/videos Signal has access to. */
+/* Button in chat attachment panel that allows to select photos/videos Y0x has access to. */
 "ATTACHMENT_KEYBOARD_BUTTON_MANAGE" = "管理";
 
 /* A button to select a contact from the Attachment Keyboard */
 "ATTACHMENT_KEYBOARD_CONTACT" = "聯絡人";
 
-/* Button in a context menu from the 'manage' button in attachment panel that allows to select more photos/videos to give Signal access to */
+/* Button in a context menu from the 'manage' button in attachment panel that allows to select more photos/videos to give Y0x access to */
 "ATTACHMENT_KEYBOARD_CONTEXT_MENU_BUTTON_SELECT_MORE" = "揀多啲相";
 
-/* Button in a context menu from the 'manage' button in attachment panel that opens the iOS system settings for Signal to update access permissions */
+/* Button in a context menu from the 'manage' button in attachment panel that opens the iOS system settings for Y0x to update access permissions */
 "ATTACHMENT_KEYBOARD_CONTEXT_MENU_BUTTON_SYSTEM_SETTINGS" = "跳去設定";
 
 /* A button to select a file from the Attachment Keyboard */
@@ -394,8 +394,8 @@
 /* A button to select a GIF from the Attachment Keyboard */
 "ATTACHMENT_KEYBOARD_GIF" = "GIF";
 
-/* Text in chat attachment panel when Signal only has access to some photos/videos. This string is in a compact horizontal space, so it should be short if possible. */
-"ATTACHMENT_KEYBOARD_LIMITED_ACCESS" = "Signal 只可以用你揀咗嘅相";
+/* Text in chat attachment panel when Y0x only has access to some photos/videos. This string is in a compact horizontal space, so it should be short if possible. */
+"ATTACHMENT_KEYBOARD_LIMITED_ACCESS" = "Y0x 只可以用你揀咗嘅相";
 
 /* A button to select a location from the Attachment Keyboard */
 "ATTACHMENT_KEYBOARD_LOCATION" = "位置";
@@ -406,10 +406,10 @@
 /* First block of text in chat attachment panel when there's no recent photos to show. */
 "ATTACHMENT_KEYBOARD_NO_MEDIA_TITLE" = "冇相或影片";
 
-/* Text in chat attachment panel explaining that user needs to give Signal permission to access photos. */
-"ATTACHMENT_KEYBOARD_NO_PHOTO_ACCESS" = "Signal 冇權限用你部機嘅相同影片。要啟用權限，請你打開「設定」然後㩒「相片」";
+/* Text in chat attachment panel explaining that user needs to give Y0x permission to access photos. */
+"ATTACHMENT_KEYBOARD_NO_PHOTO_ACCESS" = "Y0x 冇權限用你部機嘅相同影片。要啟用權限，請你打開「設定」然後㩒「相片」";
 
-/* Button in chat attachment panel to let user open Settings app and give Signal persmission to access photos. */
+/* Button in chat attachment panel to let user open Settings app and give Y0x persmission to access photos. */
 "ATTACHMENT_KEYBOARD_OPEN_SETTINGS" = "打開設定";
 
 /* A button to select a payment from the Attachment Keyboard */
@@ -485,7 +485,7 @@
 "AUDIO_UNAVAILABLE_SHEET_TITLE" = "語音訊息已經冇咗";
 
 /* Username for backup key autofill */
-"AUTOFILL_BACKUP_KEY_USERNAME" = "Signal 備份";
+"AUTOFILL_BACKUP_KEY_USERNAME" = "Y0x 備份";
 
 /* Text prompting the user to choose a color when editing their avatar */
 "AVATAR_EDIT_VIEW_CHOOSE_A_COLOR" = "揀隻顏色";
@@ -515,7 +515,7 @@
 "BACKUP_ENABLEMENT_REMINDER_MEGAPHONE_ACTION" = "開啟";
 
 /* Body for Backup enablement reminder megaphone */
-"BACKUP_ENABLEMENT_REMINDER_MEGAPHONE_BODY" = "當你換新手機或者重新安裝 Signal 嗰陣，就唔會冇哂啲訊息。";
+"BACKUP_ENABLEMENT_REMINDER_MEGAPHONE_BODY" = "當你換新手機或者重新安裝 Y0x 嗰陣，就唔會冇哂啲訊息。";
 
 /* Title for Backup enablement reminder megaphone */
 "BACKUP_ENABLEMENT_REMINDER_MEGAPHONE_TITLE" = "開啟加密備份";
@@ -545,7 +545,7 @@
 "BACKUP_KEY_REMINDER_SUCCESSFUL_TOAST" = "呢個備份金鑰係啱嘅。好好儲存你嘅金鑰。";
 
 /* Body for a sheet warning users to their 'Backup Key' safe. */
-"BACKUP_ONBOARDING_CONFIRM_KEY_KEEP_KEY_SAFE_SHEET_BODY" = "如果你唔見咗個金鑰，Signal 就冇辦法幫你還原備份㗎喇。請將佢儲存喺安全嘅地方，同埋千祈唔好講俾其他人知。";
+"BACKUP_ONBOARDING_CONFIRM_KEY_KEEP_KEY_SAFE_SHEET_BODY" = "如果你唔見咗個金鑰，Y0x 就冇辦法幫你還原備份㗎喇。請將佢儲存喺安全嘅地方，同埋千祈唔好講俾其他人知。";
 
 /* Title for a sheet warning users to their 'Backup Key' safe. */
 "BACKUP_ONBOARDING_CONFIRM_KEY_KEEP_KEY_SAFE_SHEET_TITLE" = "好好儲存你嘅金鑰";
@@ -569,13 +569,13 @@
 "BACKUP_ONBOARDING_INTRO_BULLET_3" = "隨時刪除備份";
 
 /* Subtitle for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "備份你嘅訊息同媒體，並且用 Signal 嘅安全端對端加密服務嚟儲存。當你換新手機或者重新安裝 Signal 嗰陣，就唔會冇哂啲訊息。";
+"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "備份你嘅訊息同媒體，並且用 Y0x 嘅安全端對端加密服務嚟儲存。當你換新手機或者重新安裝 Y0x 嗰陣，就唔會冇哂啲訊息。";
 
 /* Title for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_TITLE" = "Signal 備份";
+"BACKUP_ONBOARDING_INTRO_TITLE" = "Y0x 備份";
 
 /* Subtitle for a view introducing the 'Backup Key' during an onboarding flow. */
-"BACKUP_ONBOARDING_KEY_INTRO_SUBTITLE" = "你嘅備份金鑰係一個 64 個字元嘅代碼，方便你喺重新安裝 Signal 之後還原備份。\n\n如果你唔記得咗個金鑰，就冇辦法還原備份㗎喇。Signal 冇辦法幫你還原備份。";
+"BACKUP_ONBOARDING_KEY_INTRO_SUBTITLE" = "你嘅備份金鑰係一個 64 個字元嘅代碼，方便你喺重新安裝 Y0x 之後還原備份。\n\n如果你唔記得咗個金鑰，就冇辦法還原備份㗎喇。Y0x 冇辦法幫你還原備份。";
 
 /* Title for a view introducing the 'Backup Key' during an onboarding flow. */
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "你嘅備份金鑰";
@@ -668,16 +668,16 @@
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_RENEWAL_FORMAT" = "%1$@ 續期";
 
 /* Footer for a menu section related to settings for when Backups are disabled. */
-"BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "備份功能已經閂咗，同埋你嘅資料已經喺 Signal 嘅安全儲存服務入面刪除。";
+"BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "備份功能已經閂咗，同埋你嘅資料已經喺 Y0x 嘅安全儲存服務入面刪除。";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "備份功能已經閂咗，而家下載緊任何唔喺部機度嘅媒體。下載晒之後，喺 Signal 安全儲存服務入面嘅資料將會刪除。";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "備份功能已經閂咗，而家下載緊任何唔喺部機度嘅媒體。下載晒之後，喺 Y0x 安全儲存服務入面嘅資料將會刪除。";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "發生錯誤。請聯絡支援團隊。";
 
 /* Header for a menu section related to settings for when disabling Backups encountered an unexpected error. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_SECTION_HEADER" = "喺 Signal 嘅安全儲存服務入面刪除資料嗰陣出現咗錯誤。";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_SECTION_HEADER" = "喺 Y0x 嘅安全儲存服務入面刪除資料嗰陣出現咗錯誤。";
 
 /* Title for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_TITLE" = "刪除唔到備份";
@@ -686,7 +686,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLING_PROGRESS_VIEW_DESCRIPTION" = "刪除緊備份...";
 
 /* Header for a menu section related to disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_SECTION_HEADER" = "備份已經閂咗，你嘅資料將會喺 Signal 嘅安全儲存服務入面刪除。";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_SECTION_HEADER" = "備份已經閂咗，你嘅資料將會喺 Y0x 嘅安全儲存服務入面刪除。";
 
 /* Header for a menu section related to settings for when Backups are enabled. */
 "BACKUP_SETTINGS_BACKUPS_ENABLED_SECTION_HEADER" = "備份詳情";
@@ -707,13 +707,13 @@
 "BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_TITLE" = "係咪想關閉備份功能同埋刪除備份？";
 
 /* Message shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
-"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "你備份入面有媒體唔喺呢部機入面。備份下載可能需要好長時間，請保持 Signal 打開就唔怕中斷。";
+"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "你備份入面有媒體唔喺呢部機入面。備份下載可能需要好長時間，請保持 Y0x 打開就唔怕中斷。";
 
 /* Title shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
 "BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_TITLE" = "下載緊你嘅備份";
 
 /* Message shown in an action sheet indicating we failed to delete the user's Backup due to an unexpected error. */
-"BACKUP_SETTINGS_DISABLING_ERROR_GENERIC_ERROR_ACTION_SHEET_MESSAGE" = "喺 Signal 嘅安全儲存服務入面刪除資料嗰陣出現咗錯誤。";
+"BACKUP_SETTINGS_DISABLING_ERROR_GENERIC_ERROR_ACTION_SHEET_MESSAGE" = "喺 Y0x 嘅安全儲存服務入面刪除資料嗰陣出現咗錯誤。";
 
 /* Title shown in an action sheet indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_DISABLING_ERROR_GENERIC_ERROR_ACTION_SHEET_TITLE" = "刪除唔到備份";
@@ -782,7 +782,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_LATER_ACTION" = "遲啲先下載";
 
 /* Message for an action sheet allowing users to download their offloaded media. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "你備份入面有媒體唔喺呢部機入面。下載可能需要好長時間，請保持 Signal 打開就唔怕下載中斷。";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "你備份入面有媒體唔喺呢部機入面。下載可能需要好長時間，請保持 Y0x 打開就唔怕下載中斷。";
 
 /* Action in an action sheet allowing users to download their offloaded media now. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_NOW_ACTION" = "即刻下載";
@@ -803,7 +803,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_AVAILABLE_FOR_TESTERS" = "未用嘅媒體會卸載，但只要你仲係測試員，可以隨時喺備份度下載返。";
 
 /* Footer for a toggle allowing users to change the Optimize Local Storage setting, if the toggle is unavailable. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_UNAVAILABLE" = "淨係得有課金 Signal 備份嘅帳戶先用到「優化儲存空間」功能。如果想用呢個功能，就升級備份計劃啦。";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_UNAVAILABLE" = "淨係得有課金 Y0x 備份嘅帳戶先用到「優化儲存空間」功能。如果想用呢個功能，就升級備份計劃啦。";
 
 /* Title for a toggle allowing users to change the Optimize Local Storage setting. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_TITLE" = "優化裝置儲存空間";
@@ -839,10 +839,10 @@
 "BACKUP_SETTINGS_WELCOME_TO_BACKUPS_SHEET_SECONDARY_BUTTON" = "遲啲先備份";
 
 /* Title for a sheet shown after the user enables backups. */
-"BACKUP_SETTINGS_WELCOME_TO_BACKUPS_SHEET_TITLE" = "歡迎使用 Signal 備份。你可以即刻開始備份喇。";
+"BACKUP_SETTINGS_WELCOME_TO_BACKUPS_SHEET_TITLE" = "歡迎使用 Y0x 備份。你可以即刻開始備份喇。";
 
 /* Title for the 'Backup' settings menu. */
-"BACKUPS_SETTINGS_TITLE" = "Signal 備份";
+"BACKUPS_SETTINGS_TITLE" = "Y0x 備份";
 
 /* Section header for badge view section in the badge configuration page */
 "BADGE_CONFIGURATION_BADGE_SECTION_TITLE" = "我嘅襟章";
@@ -850,14 +850,14 @@
 /* The title for the badge configuration page */
 "BADGE_CONFIGURATION_TITLE" = "襟章";
 
-/* When viewing someone else's badge, you'll see a sheet. If they got the badge by donating, a \"Donate to Signal\" button will be shown. This is the text in that button. */
+/* When viewing someone else's badge, you'll see a sheet. If they got the badge by donating, a \"Donate to Y0x\" button will be shown. This is the text in that button. */
 "BADGE_DETAILS_DONATE_TO_SIGNAL" = "立即捐款";
 
 /* When viewing someone else's donor badge, you'll see a sheet. This is the title on that sheet. Embeds {badge owner's short name} */
-"BADGE_DETAILS_TITLE_FOR_SUPPORTER" = "%1$@ 支持 Signal";
+"BADGE_DETAILS_TITLE_FOR_SUPPORTER" = "%1$@ 支持 Y0x";
 
 /* String explaining to the user that their boost badge has expired on the badge expiry sheet. */
-"BADGE_EXPIRED_BOOST_BODY" = "你嘅捐款徽章已經過咗期，所以唔會再喺你嘅個人檔案度顯示。\n\n你可以如常使用 Signal，亦都可以考慮透過每月定期捐款，支持呢項為你而設嘅技術。";
+"BADGE_EXPIRED_BOOST_BODY" = "你嘅捐款徽章已經過咗期，所以唔會再喺你嘅個人檔案度顯示。\n\n你可以如常使用 Y0x，亦都可以考慮透過每月定期捐款，支持呢項為你而設嘅技術。";
 
 /* String explaining to the user that their boost badge has expired while they are a current subscription sustainer on the badge expiry sheet. */
 "BADGE_EXPIRED_BOOST_CURRENT_SUSTAINER_BODY" = "你嘅捐款徽章已經過咗期，所以唔會再喺你嘅個人檔案度顯示。\n\n你可以透過單次捐款重新啟動你嘅捐款徽章，將佢延長 30 日。";
@@ -883,7 +883,7 @@
 /* Title for a sheet explaining that a bank transfer donation is complete, and that you have received a badge. */
 "BADGE_THANKS_BANK_DONATION_COMPLETE_TITLE" = "捐款完成";
 
-/* When you make a donation to Signal, you will receive a badge. A thank-you sheet appears when this happens. This is the body text on that sheet. */
+/* When you make a donation to Y0x, you will receive a badge. A thank-you sheet appears when this happens. This is the body text on that sheet. */
 "BADGE_THANKS_BODY" = "你可以選擇喺個人檔案度顯示呢個徽章，展現你對我哋嘅支持。";
 
 /* Label prompting the user to display the new badge on their profile on the badge thank you sheet. */
@@ -892,7 +892,7 @@
 /* Label prompting the user to feature the new badge on their profile on the badge thank you sheet. */
 "BADGE_THANKS_MAKE_FEATURED" = "揀選為賣飛佛襟章";
 
-/* When you make a donation to Signal, you will receive a badge. A thank-you sheet appears when this happens. This is the title of that sheet. */
+/* When you make a donation to Y0x, you will receive a badge. A thank-you sheet appears when this happens. This is the title of that sheet. */
 "BADGE_THANKS_TITLE" = "感謝你嘅支持！";
 
 /* Footer explaining that only one badge can be featured at a time on the thank you sheet. */
@@ -901,19 +901,19 @@
 /* On the bank donation screen, show a link below the input form to show help about finding account info. */
 "BANK_DONATION_FOOTER_FIND_ACCOUNT_INFO" = "搵返帳戶資料";
 
-/* On the bank transfer donation screen, a small amount of information text is shown. This is that text. It should (1) instruct users to enter their bank information (2) tell them that Signal does not collect or store their personal information. */
-"BANK_DONATION_SUBHEADER_TEXT" = "請輸入你嘅銀行資料。 Signal 唔會收集或者儲存你嘅個人資料。";
+/* On the bank transfer donation screen, a small amount of information text is shown. This is that text. It should (1) instruct users to enter their bank information (2) tell them that Y0x does not collect or store their personal information. */
+"BANK_DONATION_SUBHEADER_TEXT" = "請輸入你嘅銀行資料。 Y0x 唔會收集或者儲存你嘅個人資料。";
 
-/* Users can donate to Signal with a bank account. We are required to show them a mandate with information about bank transfers. This is a label for a button to agree to the mandate. */
+/* Users can donate to Y0x with a bank account. We are required to show them a mandate with information about bank transfers. This is a label for a button to agree to the mandate. */
 "BANK_MANDATE_AGREE" = "同意";
 
-/* Users can donate to Signal with a bank account. We are required to show them a mandate with information about bank transfers. This is a label for a button that shows more of the mandate if it is not all visible. */
+/* Users can donate to Y0x with a bank account. We are required to show them a mandate with information about bank transfers. This is a label for a button that shows more of the mandate if it is not all visible. */
 "BANK_MANDATE_READ_MORE" = "睇埋佢";
 
-/* Users can donate to Signal with a bank account. We are required to show them a mandate with information about bank transfers. This is a subtitle about the payment processor Stripe above that mandate. */
-"BANK_MANDATE_SUBTITLE" = "Stripe 會負責處理 Signal 收到嘅捐款。Signal 唔會收集或者保存你嘅個人資料。";
+/* Users can donate to Y0x with a bank account. We are required to show them a mandate with information about bank transfers. This is a subtitle about the payment processor Stripe above that mandate. */
+"BANK_MANDATE_SUBTITLE" = "Stripe 會負責處理 Y0x 收到嘅捐款。Y0x 唔會收集或者保存你嘅個人資料。";
 
-/* Users can donate to Signal with a bank account. We are required to show them a mandate with information about bank transfers. This is the title above that mandate. */
+/* Users can donate to Y0x with a bank account. We are required to show them a mandate with information about bank transfers. This is the title above that mandate. */
 "BANK_MANDATE_TITLE" = "銀行轉賬";
 
 /* Accessibility label for banner close button */
@@ -1067,7 +1067,7 @@
 "CALL_AUDIO_MISSED_WEEK_NOTIFICATION_BODY_FORMAT" = "📞 未接語音通話 (%1$@)";
 
 /* Alert message when calling and permissions for microphone are missing */
-"CALL_AUDIO_PERMISSION_MESSAGE" = "您可以喺 iOS 設定 app 度啟用咪高峰存取，以便喺 Signal 入面進行通話同錄製語音訊息。";
+"CALL_AUDIO_PERMISSION_MESSAGE" = "您可以喺 iOS 設定 app 度啟用咪高峰存取，以便喺 Y0x 入面進行通話同錄製語音訊息。";
 
 /* Alert title when calling and permissions for microphone are missing */
 "CALL_AUDIO_PERMISSION_TITLE" = "須要存取部機個咪";
@@ -1132,8 +1132,8 @@
 /* Tappable label that appears below a user's name on a toast when they request to join a call link. */
 "CALL_LINK_JOIN_REQUEST_PROMPT" = "想加入...";
 
-/* Shown in a message bubble when you send a call link in a Signal chat */
-"CALL_LINK_LINK_PREVIEW_DESCRIPTION" = "用呢條連結嚟加入 Signal 通話";
+/* Shown in a message bubble when you send a call link in a Y0x chat */
+"CALL_LINK_LINK_PREVIEW_DESCRIPTION" = "用呢條連結嚟加入 Y0x 通話";
 
 /* Text that appears on a toast in a call lobby before joining a call link informing the user what information will be shared with other call members when they have phone number sharing turned off. */
 "CALL_LINK_LOBBY_SHARING_INFO_PHONE_NUMBER_SHARING_OFF" = "透過連結加入呢個通話嘅人會睇到你嘅名同相。";
@@ -1156,8 +1156,8 @@
 /* Name of a toggle switch to enable/disable admin approval for joining a Call Link. */
 "CALL_LINK_REQUIRE_APPROVAL" = "需要管理員核准";
 
-/* Button to open UI to share a Call Link with someone on Signal. */
-"CALL_LINK_SHARE_VIA_SIGNAL" = "透過 Signal 分享連結";
+/* Button to open UI to share a Call Link with someone on Y0x. */
+"CALL_LINK_SHARE_VIA_SIGNAL" = "透過 Y0x 分享連結";
 
 /* Button to open the system share sheet to share a Call Link. */
 "CALL_LINK_SHARE_VIA_SYSTEM" = "分享連結";
@@ -1262,10 +1262,10 @@
 "CALLING_MEMBER_VIEW_YOUR_CAMERA_IS_OFF" = "您閂咗鏡頭";
 
 /* The generic name used for calls if CallKit privacy is enabled */
-"CALLKIT_ANONYMOUS_CONTACT_NAME" = "Signal 使用者";
+"CALLKIT_ANONYMOUS_CONTACT_NAME" = "Y0x 使用者";
 
 /* The generic name used for group calls if CallKit privacy is enabled */
-"CALLKIT_ANONYMOUS_GROUP_NAME" = "Signal 群組";
+"CALLKIT_ANONYMOUS_GROUP_NAME" = "Y0x 群組";
 
 /* Title for the calls list view. */
 "CALLS_LIST_TITLE" = "通話";
@@ -1414,32 +1414,32 @@
 /* Alert shown when the user needs to exchange messages to see the safety number. */
 "CANT_VERIFY_IDENTITY_EXCHANGE_MESSAGES" = "你同對方互相傳送訊息之後，系統就會幫你建立一個同佢嘅安全碼。";
 
-/* Users can donate to Signal with a credit or debit card. If their card number is invalid, this generic error message will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a credit or debit card. If their card number is invalid, this generic error message will be shown. Try to use a short string to make space in the UI. */
 "CARD_DONATION_CARD_NUMBER_GENERIC_ERROR" = "付款卡號碼冇效";
 
-/* Users can donate to Signal with a credit or debit card. This is the label for the card number field on that screen. */
+/* Users can donate to Y0x with a credit or debit card. This is the label for the card number field on that screen. */
 "CARD_DONATION_CARD_NUMBER_LABEL" = "付款卡號碼";
 
-/* Users can donate to Signal with a credit or debit card. If their card verification code (CVV) is invalid for reasons we cannot determine, this generic error message will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a credit or debit card. If their card verification code (CVV) is invalid for reasons we cannot determine, this generic error message will be shown. Try to use a short string to make space in the UI. */
 "CARD_DONATION_CVV_GENERIC_ERROR" = "CVV 冇效";
 
-/* Users can donate to Signal with a credit or debit card. This is the label for the card verification code (CVV) field on that screen. */
+/* Users can donate to Y0x with a credit or debit card. This is the label for the card verification code (CVV) field on that screen. */
 "CARD_DONATION_CVV_LABEL" = "CVV";
 
-/* Users can donate to Signal with a credit or debit card. If their card verification code (CVV) is too long, this error will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a credit or debit card. If their card verification code (CVV) is too long, this error will be shown. Try to use a short string to make space in the UI. */
 "CARD_DONATION_CVV_TOO_LONG_ERROR" = "代碼太長";
 
-/* Users can donate to Signal with a credit or debit card. If their expiration date is invalid, this generic error message will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a credit or debit card. If their expiration date is invalid, this generic error message will be shown. Try to use a short string to make space in the UI. */
 "CARD_DONATION_EXPIRATION_DATE_GENERIC_ERROR" = "到期日無效日期";
 
-/* Users can donate to Signal with a credit or debit card. This is the label for the expiration date field on that screen. Try to use a short string to make space in the UI. (For example, the English text uses \"Exp. Date\" instead of \"Expiration Date\"). */
+/* Users can donate to Y0x with a credit or debit card. This is the label for the expiration date field on that screen. Try to use a short string to make space in the UI. (For example, the English text uses \"Exp. Date\" instead of \"Expiration Date\"). */
 "CARD_DONATION_EXPIRATION_DATE_LABEL" = "到期日";
 
-/* Users can donate to Signal with a credit or debit card. This is the label for the card expiration date field on that screen. */
+/* Users can donate to Y0x with a credit or debit card. This is the label for the card expiration date field on that screen. */
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "MM/YY";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Signal 唔會喺你捐款嗰陣收集或者儲存任何個人資料。\n\n我哋用 Stripe 作為接收捐款嘅付款處理商。我哋唔會存取、保存或者儲存你向佢哋提供嘅任何資料。\n\nSignal 唔會亦冇辦法將你嘅捐款連結至你嘅 Signal 帳戶。\n\n多謝你嘅支持！";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Y0x 唔會喺你捐款嗰陣收集或者儲存任何個人資料。\n\n我哋用 Stripe 作為接收捐款嘅付款處理商。我哋唔會存取、保存或者儲存你向佢哋提供嘅任何資料。\n\nY0x 唔會亦冇辦法將你嘅捐款連結至你嘅 Y0x 帳戶。\n\n多謝你嘅支持！";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "你嘅資料已經保密";
@@ -1447,8 +1447,8 @@
 /* On the credit/debit card donation screen, a small amount of information text is shown. Users can click this link to learn more information. */
 "CARD_DONATION_SUBHEADER_LEARN_MORE" = "講多啲俾我聽。";
 
-/* On the credit/debit card donation screen, a small amount of information text is shown. This is that text. It should (1) instruct users to enter their credit/debit card information (2) tell them that Signal does not collect or store their personal information. */
-"CARD_DONATION_SUBHEADER_TEXT" = "請輸入你嘅付款卡資料。Signal 唔會收集或者保存你嘅個人資料。";
+/* On the credit/debit card donation screen, a small amount of information text is shown. This is that text. It should (1) instruct users to enter their credit/debit card information (2) tell them that Y0x does not collect or store their personal information. */
+"CARD_DONATION_SUBHEADER_TEXT" = "請輸入你嘅付款卡資料。Y0x 唔會收集或者保存你嘅個人資料。";
 
 /* Title for the 'censorship circumvention country' view. */
 "CENSORSHIP_CIRCUMVENTION_COUNTRY_VIEW_TITLE" = "揀選國家";
@@ -1568,7 +1568,7 @@
 "CHOOSE_BACKUP_PLAN_SUBSCRIBE_PAID_BUTTON_TEXT" = "每月課金 %1$@";
 
 /* Subtitle for a view allowing users to choose a Backup plan. */
-"CHOOSE_BACKUP_PLAN_SUBTITLE" = "所有備份都經端對端加密。Signal 係一間非牟利組織—課金備份，支持我哋嘅使命啦。";
+"CHOOSE_BACKUP_PLAN_SUBTITLE" = "所有備份都經端對端加密。Y0x 係一間非牟利組織—課金備份，支持我哋嘅使命啦。";
 
 /* Title for a view allowing users to choose a Backup plan. */
 "CHOOSE_BACKUP_PLAN_TITLE" = "選擇你嘅備份計劃";
@@ -1580,7 +1580,7 @@
 "COMPARE_SAFETY_NUMBER_ACTION" = "同剪貼簿比較下";
 
 /* Accessibility hint describing what you can do with the compose button */
-"COMPOSE_BUTTON_HINT" = "揀選或者搜尋 Signal 用戶嚟開始聊天。";
+"COMPOSE_BUTTON_HINT" = "揀選或者搜尋 Y0x 用戶嚟開始聊天。";
 
 /* Accessibility label from compose button. */
 "COMPOSE_BUTTON_LABEL" = "撰寫";
@@ -1607,13 +1607,13 @@
 "COMPOSE_SCREEN_LIMITED_CONTACTS_CTA" = "管理";
 
 /* Multi-line label explaining why compose-screen contact picker is empty. */
-"COMPOSE_SCREEN_LIMITED_CONTACTS_PERMISSION" = "Signal 嘅系統通訊錄存取權有限";
+"COMPOSE_SCREEN_LIMITED_CONTACTS_PERMISSION" = "Y0x 嘅系統通訊錄存取權有限";
 
 /* Button to open settings from an empty compose-screen contact picker. */
 "COMPOSE_SCREEN_MISSING_CONTACTS_CTA" = "打開設定";
 
 /* Multi-line label explaining why compose-screen contact picker is empty. */
-"COMPOSE_SCREEN_MISSING_CONTACTS_PERMISSION" = "您可以喺 iOS 設定 app 度啟用聯絡人存取，以便睇下您有邊啲聯絡人係 Signal 使用者。";
+"COMPOSE_SCREEN_MISSING_CONTACTS_PERMISSION" = "您可以喺 iOS 設定 app 度啟用聯絡人存取，以便睇下您有邊啲聯絡人係 Y0x 使用者。";
 
 /* Configure reactions title text */
 "CONFIGURE_REACTIONS" = "設定心情回應";
@@ -1655,10 +1655,10 @@
 "CONTACT_ABOUT_SHEET_PROFILE_NAMES_EDUCATION" = "個人檔名冇經過驗證";
 
 /* Message for a tooltip that appears above a parenthesized name for another user, indicating that that name is the name the other user set for themself. Embeds {{name}} */
-"CONTACT_ABOUT_SHEET_SECONDARY_NAME_TOOLTIP_MESSAGE" = "「 %1$@ 」係呢個人喺 Signal 度幫自己改嘅個人檔名。";
+"CONTACT_ABOUT_SHEET_SECONDARY_NAME_TOOLTIP_MESSAGE" = "「 %1$@ 」係呢個人喺 Y0x 度幫自己改嘅個人檔名。";
 
 /* A label indicating a user is a signal connection. */
-"CONTACT_ABOUT_SHEET_SIGNAL_CONNECTION_LABEL" = "Signal 人脈";
+"CONTACT_ABOUT_SHEET_SIGNAL_CONNECTION_LABEL" = "Y0x 人脈";
 
 /* The title for a contact 'about' sheet. */
 "CONTACT_ABOUT_SHEET_TITLE" = "關於";
@@ -1700,7 +1700,7 @@
 "CONTACT_NOTE_TITLE" = "備註";
 
 /* Body for contact permission action sheet */
-"CONTACT_PERMISSION_ACTION_SHEET_2_BODY" = "要喺 Signal 搵你識嘅人：";
+"CONTACT_PERMISSION_ACTION_SHEET_2_BODY" = "要喺 Y0x 搵你識嘅人：";
 
 /* First step for contact permission action sheet */
 "CONTACT_PERMISSION_ACTION_SHEET_2_STEP_ONE" = "喺下面㩒一下「跳去設定」";
@@ -1733,10 +1733,10 @@
 "CONTACT_PERMISSION_REMINDER_MEGAPHONE_ACTION" = "允許存取";
 
 /* Body for contact permission reminder megaphone */
-"CONTACT_PERMISSION_REMINDER_MEGAPHONE_BODY" = "允許存取聯絡人，方便喺 Signal 度快啲搵到佢哋。";
+"CONTACT_PERMISSION_REMINDER_MEGAPHONE_BODY" = "允許存取聯絡人，方便喺 Y0x 度快啲搵到佢哋。";
 
 /* Title for contact permission reminder megaphone */
-"CONTACT_PERMISSION_REMINDER_MEGAPHONE_TITLE" = "喺 Signal 度搵聯絡人";
+"CONTACT_PERMISSION_REMINDER_MEGAPHONE_TITLE" = "喺 Y0x 度搵聯絡人";
 
 /* Label for a contact's phone number. */
 "CONTACT_PHONE" = "電話";
@@ -1760,7 +1760,7 @@
 "CONTACT_SHARE_INVALID_CONTACT" = "聯絡人無效。";
 
 /* Alert body when contacts disabled while trying to share a contact. */
-"CONTACT_SHARING_NO_ACCESS_BODY" = "Signal 需要存取你嘅通訊錄資料。請你去 iOS 設定，然後開啟通訊錄。你嘅通訊錄資料已經加密，Signal 唔會睇到。";
+"CONTACT_SHARING_NO_ACCESS_BODY" = "Y0x 需要存取你嘅通訊錄資料。請你去 iOS 設定，然後開啟通訊錄。你嘅通訊錄資料已經加密，Y0x 唔會睇到。";
 
 /* Alert title when contacts disabled while trying to share a contact. */
 "CONTACT_SHARING_NO_ACCESS_TITLE" = "允許「聯絡人」存取";
@@ -1814,7 +1814,7 @@
 "CONTACT_SUPPORT_FILTER_SOMETHING_NOT_WORKING_SHORT" = "有嘢軭咗";
 
 /* Alert body */
-"CONTACT_SUPPORT_PROMPT_ERROR_ALERT_BODY" = "Signal 未能完成您嘅支援要求。";
+"CONTACT_SUPPORT_PROMPT_ERROR_ALERT_BODY" = "Y0x 未能完成您嘅支援要求。";
 
 /* button text */
 "CONTACT_SUPPORT_PROMPT_ERROR_TRY_AGAIN" = "再試一次";
@@ -1943,7 +1943,7 @@
 "CONVERSATION_SETTINGS_ATTRIBUTES_ACCESS_SECTION_FOOTER" = "揀選邊個可以改到個谷嘅名、相、描述同埋過眼雲煙訊息倒數限期。";
 
 /* Footer string for a contact's badges in conversation settings */
-"CONVERSATION_SETTINGS_BADGES_FOOTER" = "擔當 Signal 後援，為您嘅個人資料添一枚襟章。撳一下啲襟章知多啲。";
+"CONVERSATION_SETTINGS_BADGES_FOOTER" = "擔當 Y0x 後援，為您嘅個人資料添一枚襟章。撳一下啲襟章知多啲。";
 
 /* Header title for a contact's badges in conversation settings */
 "CONVERSATION_SETTINGS_BADGES_HEADER" = "襟章";
@@ -2146,10 +2146,10 @@
 /* Label for button that enables you to make a new call link. */
 "CREATE_CALL_LINK_LABEL" = "建立通話連結";
 
-/* Body text for an interactive in-app prompt to set up a Signal username. */
+/* Body text for an interactive in-app prompt to set up a Y0x username. */
 "CREATE_USERNAME_MEGAPHONE_BODY" = "包括電話冧把私隱、可以選填嘅用戶名稱同連結功能。";
 
-/* Title for an interactive in-app prompt to set up a Signal username. */
+/* Title for an interactive in-app prompt to set up a Y0x username. */
 "CREATE_USERNAME_MEGAPHONE_TITLE" = "全新連繫方式";
 
 /* Credit/debit card donation error for decline failures where the card has expired. */
@@ -2201,7 +2201,7 @@
 "DATABASE_INTEGRITY_CHECK_ACTION_RUN" = "執行";
 
 /* Message for alert before running a database integrity check */
-"DATABASE_INTEGRITY_CHECK_MESSAGE" = "呢個檢查可以幫我哋解決你嘅問題，可能需要幾分鐘時間完成。你可以喺檢查進行期間閂咗 Signal，但請你稍後返嚟提交你嘅記錄。";
+"DATABASE_INTEGRITY_CHECK_MESSAGE" = "呢個檢查可以幫我哋解決你嘅問題，可能需要幾分鐘時間完成。你可以喺檢查進行期間閂咗 Y0x，但請你稍後返嚟提交你嘅記錄。";
 
 /* Button to skip database integrity check step */
 "DATABASE_INTEGRITY_CHECK_SKIP" = "跳過";
@@ -2215,20 +2215,20 @@
 /* In some cases, the user's message history can become corrupted, and a recovery interface is shown. The user has not been hacked and may be confused by this interface, so try to avoid using terms like \"database\" or \"corrupted\"—terms like \"message history\" are better. This is the title on the first screen of this interface, which gives them some information and asks them to continue. */
 "DATABASE_RECOVERY_AWAITING_USER_CONFIRMATION_TITLE" = "提取資料嗰陣出現問題";
 
-/* On the database recovery screen, if the user's device storage is nearly full, Signal will not be able to recover the database. A warning screen, which can be bypassed if the user wishes, will be shown. This is the text on the button to bypass the warning. */
+/* On the database recovery screen, if the user's device storage is nearly full, Y0x will not be able to recover the database. A warning screen, which can be bypassed if the user wishes, will be shown. This is the text on the button to bypass the warning. */
 "DATABASE_RECOVERY_MORE_STORAGE_SPACE_NEEDED_CONTINUE_ANYWAY" = "仍要繼續";
 
-/* On the database recovery screen, if the user's device storage is nearly full, Signal will not be able to recover the database. A warning screen, which can be bypassed if the user wishes, will be shown. This is the line of text on that screen. Embeds an amount like \"2GB\". */
+/* On the database recovery screen, if the user's device storage is nearly full, Y0x will not be able to recover the database. A warning screen, which can be bypassed if the user wishes, will be shown. This is the line of text on that screen. Embeds an amount like \"2GB\". */
 "DATABASE_RECOVERY_MORE_STORAGE_SPACE_NEEDED_DESCRIPTION" = "為咗方便完成資料恢復程序，我哋建議你嘅裝置最少要有 %1$@ 嘅可用儲存空間。";
 
-/* On the database recovery screen, if the user's device storage is nearly full, Signal will not be able to recover the database. A warning screen, which can be bypassed if the user wishes, will be shown. This is the title of that screen. */
+/* On the database recovery screen, if the user's device storage is nearly full, Y0x will not be able to recover the database. A warning screen, which can be bypassed if the user wishes, will be shown. This is the title of that screen. */
 "DATABASE_RECOVERY_MORE_STORAGE_SPACE_NEEDED_TITLE" = "需要更多儲存空間";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) This is the description on the screen where we show an error message. */
-"DATABASE_RECOVERY_RECOVERY_FAILED_DESCRIPTION" = "恢復唔到你嘅訊息紀錄。重新安裝之後，你可以繼續使用 Signal。請提交除錯紀錄，等我哋深入了解問題所在。";
+"DATABASE_RECOVERY_RECOVERY_FAILED_DESCRIPTION" = "恢復唔到你嘅訊息紀錄。重新安裝之後，你可以繼續使用 Y0x。請提交除錯紀錄，等我哋深入了解問題所在。";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) This button lets them delete all of their data. */
-"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_BUTTON" = "重設 Signal";
+"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_BUTTON" = "重設 Y0x";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) If they want to delete the app and restart, they will be presented with a confirmation dialog. This is the final button they will press before their data is reset. */
 "DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_CONFIRM" = "重設";
@@ -2237,7 +2237,7 @@
 "DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_DESCRIPTION" = "你嘅帳戶資料、個人檔案同所有訊息將會被清除。完成程序之後，應用程式將會關閉。";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) If they want to delete the app and restart, they will be presented with a confirmation dialog. This is the title of that dialog. */
-"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_TITLE" = "重設 Signal";
+"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_TITLE" = "重設 Y0x";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) They were asked to submit a debug log. This is the button that submits this log. */
 "DATABASE_RECOVERY_RECOVERY_FAILED_SUBMIT_DEBUG_LOG_BUTTON" = "提交除錯記錄";
@@ -2312,7 +2312,7 @@
 "DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_ACTION" = "刪除帳戶";
 
 /* Title for the action sheet message of the 'delete account confirmation' view controller. */
-"DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_MESSAGE" = "咁做嘅話，系統就會刪除你嘅 Signal 帳戶同埋重設應用程式。完成晒成個過程之後，應用程式就會自動關閉。";
+"DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_MESSAGE" = "咁做嘅話，系統就會刪除你嘅 Y0x 帳戶同埋重設應用程式。完成晒成個過程之後，應用程式就會自動關閉。";
 
 /* Title for the action sheet confirmation title of the 'delete account confirmation' view controller. */
 "DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_TITLE" = "係咪確定要刪除帳戶？";
@@ -2336,7 +2336,7 @@
 "DELETE_ACCOUNT_CONFIRMATION_PHONE_NUMBER_TITLE" = "電話冧把";
 
 /* Section header */
-"DELETE_ACCOUNT_CONFIRMATION_SECTION_TITLE" = "請確認您嘅 Signal 冧把";
+"DELETE_ACCOUNT_CONFIRMATION_SECTION_TITLE" = "請確認您嘅 Y0x 冧把";
 
 /* Title for the 'delete account' confirmation view. */
 "DELETE_ACCOUNT_CONFIRMATION_TITLE" = "刪除帳戶";
@@ -2353,7 +2353,7 @@
 /* 'Delete' button label on the delete contact confirmation action sheet */
 "DELETE_CONTACT_ACTION_SHEET_BUTTON" = "刪除";
 
-/* An explanation of what happens in Signal when you remove a system contact. */
+/* An explanation of what happens in Y0x when you remove a system contact. */
 "DELETE_CONTACT_ACTION_SHEET_EXPLANATION" = "呢個人會喺電話通訊錄度刪除。你之後唔會再喺搜尋聯絡人嗰陣見到佢㗎喇。如果對方日後向你傳送訊息，你將會收到訊息請求。";
 
 /* Title of action sheet confirming the user wants to delete a system contact. */
@@ -2387,18 +2387,18 @@
 "DELETED_USER" = "刪除咗嘅帳戶";
 
 /* Notification warning the user that they have been de-registered. */
-"DEREGISTRATION_NOTIFICATION" = "你已經喺呢部裝置度被登出咗 Signal。";
+"DEREGISTRATION_NOTIFICATION" = "你已經喺呢部裝置度被登出咗 Y0x。";
 
 /* Label for button that lets users re-register using the same phone number. */
 "DEREGISTRATION_REREGISTER_WITH_SAME_PHONE_NUMBER" = "重新註冊呢個電話冧把";
 
 /* Label warning the user that they have been de-registered. */
-"DEREGISTRATION_WARNING" = "呢部裝置嘅註冊已經失效。原因好可能係你喺另一部裝置度用咗同一個電話冧把註冊 Signal。";
+"DEREGISTRATION_WARNING" = "呢部裝置嘅註冊已經失效。原因好可能係你喺另一部裝置度用咗同一個電話冧把註冊 Y0x。";
 
 /* If the user has been deregistered, they'll see a warning. This is This is the call to action on that warning. */
 "DEREGISTRATION_WARNING_ACTION_TITLE" = "重新用呢部裝置註冊";
 
-/* {{Short Date}} when device last communicated with Signal Server. */
+/* {{Short Date}} when device last communicated with Y0x Server. */
 "DEVICE_LAST_ACTIVE_AT_LABEL" = "對上一次喺 %1$@ 用過";
 
 /* {{Short Date}} when device was linked. */
@@ -2462,7 +2462,7 @@
 "DEVICE_TRANSFER_CONTRACT_QR_CODE_BUTTON" = "縮細啲";
 
 /* An error indicating that the other device closed signal mid-transfer and it could not complete */
-"DEVICE_TRANSFER_ERROR_BACKGROUNDED" = "轉移未能完成。請確保兩部機都開咗 Signal，然後再試多次。";
+"DEVICE_TRANSFER_ERROR_BACKGROUNDED" = "轉移未能完成。請確保兩部機都開咗 Y0x，然後再試多次。";
 
 /* An error indicating that we were unable to verify the identity of the new device to complete the transfer */
 "DEVICE_TRANSFER_ERROR_CERTIFICATE_MISMATCH" = "驗證唔到您部新機，請再試一次";
@@ -2480,13 +2480,13 @@
 "DEVICE_TRANSFER_ERROR_NOT_ENOUGH_SPACE" = "空間不足，完成唔到轉移";
 
 /* An error indicating the user must update their device before trying to transfer. */
-"DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "請更新到最新版本嘅 Signal，然後再試一次";
+"DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "請更新到最新版本嘅 Y0x，然後再試一次";
 
 /* Button shown to expand a QR code and view it fullscreen. */
 "DEVICE_TRANSFER_EXPAND_QR_CODE_BUTTON" = "放大啲";
 
 /* The explanation on the action sheet prompting the user if they want to transfer their device. */
-"DEVICE_TRANSFER_PROMPT_EXPLANATION" = "將您嘅 Signal 帳戶轉移去一部新嘅 iOS 機度。請確定您部新機喺左近，並且開咗機。";
+"DEVICE_TRANSFER_PROMPT_EXPLANATION" = "將您嘅 Y0x 帳戶轉移去一部新嘅 iOS 機度。請確定您部新機喺左近，並且開咗機。";
 
 /* The title on the acttion sheet prompting the user if they want to transfer their device. */
 "DEVICE_TRANSFER_PROMPT_TITLE" = "轉移帳戶";
@@ -2504,7 +2504,7 @@
 "DEVICE_TRANSFER_QRCODE_TITLE" = "掃描二維碼";
 
 /* The explanation on the view that shows receiving progress */
-"DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "將兩部機保持靠近。唔好熄機，並且開住 Signal。轉移係經端對端加密。";
+"DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "將兩部機保持靠近。唔好熄機，並且開住 Y0x。轉移係經端對端加密。";
 
 /* The title on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_TITLE" = "接收緊資料";
@@ -2519,7 +2519,7 @@
 "DEVICE_TRANSFER_SCANNING_TITLE" = "將您部新機靠近鏡頭";
 
 /* The explanation on the action sheet that shows transfer progress */
-"DEVICE_TRANSFER_TRANSFERRING_EXPLANATION" = "將兩部機保持靠近。唔好熄機，並且開住 Signal。";
+"DEVICE_TRANSFER_TRANSFERRING_EXPLANATION" = "將兩部機保持靠近。唔好熄機，並且開住 Y0x。";
 
 /* The title on the action sheet that shows transfer progress */
 "DEVICE_TRANSFER_TRANSFERRING_TITLE" = "轉移緊資料";
@@ -2587,10 +2587,10 @@
 /* Section title for the 'domain fronting country' view. */
 "DOMAIN_FRONTING_COUNTRY_VIEW_SECTION_HEADER" = "封網迴避位置";
 
-/* Users can donate to Signal with a credit or debit card. This is the heading on that screen, telling them how much they'll donate. Embeds {{formatted amount of money}}, such as \"$20\". */
+/* Users can donate to Y0x with a credit or debit card. This is the heading on that screen, telling them how much they'll donate. Embeds {{formatted amount of money}}, such as \"$20\". */
 "DONATE_BUTTON" = "捐款 %1$@";
 
-/* Users can donate to Signal with a credit or debit card. This is the heading on that screen, telling them how much they'll donate every month. Embeds {{formatted amount of money}}, such as \"$20\". */
+/* Users can donate to Y0x with a credit or debit card. This is the heading on that screen, telling them how much they'll donate every month. Embeds {{formatted amount of money}}, such as \"$20\". */
 "DONATE_BUTTON_MONTHLY" = "每月捐款 %1$@";
 
 /* When users make donations, they can choose which payment method they want to use. This is the text on the button that lets them choose to pay with bank transfer. */
@@ -2609,13 +2609,13 @@
 "DONATE_CHOOSE_PAYMENT_METHOD_SHEET_SUBTITLE_FOR_ONE_TIME_DONATION" = "獲取為期 30 日嘅 %1$@ 徽章";
 
 /* When users make donations on a friend's behalf, they see a sheet that lets them pick a payment method. This is the title on that sheet. Embeds {{amount of money}}, such as \"$5\". */
-"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "向 Signal 捐款 %1$@";
+"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "向 Y0x 捐款 %1$@";
 
 /* When users make monthly donations, they see a sheet that lets them pick a payment method. This is the title on that sheet. Embeds {{amount of money per month}}, such as \"$5/month\". */
-"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_MONTHLY_DONATION" = "向 Signal 捐款 %1$@";
+"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_MONTHLY_DONATION" = "向 Y0x 捐款 %1$@";
 
 /* When users make one-time donations, they see a sheet that lets them pick a payment method. This is the title on that sheet. Embeds {{amount of money}}, such as \"$5\". */
-"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_ONE_TIME_DONATION" = "向 Signal 捐款 %1$@";
+"DONATE_CHOOSE_PAYMENT_METHOD_SHEET_TITLE_FOR_ONE_TIME_DONATION" = "向 Y0x 捐款 %1$@";
 
 /* Users can donate on a friend's behalf and can optionally add a message. This is tells users about that optional message. */
 "DONATE_ON_BEHALF_OF_A_FRIEND_ADDITIONAL_MESSAGE_INFO" = "接收者將會收到有關捐款嘅一對一訊息通知。喺下面加入你嘅訊息。";
@@ -2647,10 +2647,10 @@
 /* Message in an alert presented when the user tries to update their recurring donation, but already has a recurring donation that is currently processing via non-bank payment. */
 "DONATE_SCREEN_ERROR_MESSAGE_PLEASE_WAIT_BEFORE_UPDATING_YOUR_SUBSCRIPTION" = "仲處理緊你嘅捐款。視乎你嘅上網速度，過程可能需時幾分鐘。請你等呢次捐款完成咗，先至更新你嘅課金計劃。";
 
-/* If the user tries to donate to Signal but no amount is selected, this error message is shown. */
+/* If the user tries to donate to Y0x but no amount is selected, this error message is shown. */
 "DONATE_SCREEN_ERROR_NO_AMOUNT_SELECTED" = "請揀選捐款金額。";
 
-/* If the user tries to donate to Signal but they've entered an amount that's too small, this error message is shown. Embeds {{currency string}}, such as \"$5\". */
+/* If the user tries to donate to Y0x but they've entered an amount that's too small, this error message is shown. Embeds {{currency string}}, such as \"$5\". */
 "DONATE_SCREEN_ERROR_SELECT_A_LARGER_AMOUNT_FORMAT" = "你可以捐款嘅最低金額係 %1$@。";
 
 /* Title for an alert presented when the user tries to make a donation, but already has a donation that is currently awaiting authorization. */
@@ -2726,7 +2726,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_BADGE_REDEEMED" = "換領咗";
 
 /* Users can donate on behalf of a friend, and the friend will receive a badge. This is a short paragraph on the screen where users choose the badge their friend will receive. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_CHOOSE_BADGE_DESCRIPTION" = "代表使用 Signal 嘅家人朋友捐款支持 Signal。對方可以選擇喺個人檔案度展示佢嘅支持。";
+"DONATION_ON_BEHALF_OF_A_FRIEND_CHOOSE_BADGE_DESCRIPTION" = "代表使用 Y0x 嘅家人朋友捐款支持 Y0x。對方可以選擇喺個人檔案度展示佢嘅支持。";
 
 /* Users can donate on behalf of a friend, and the friend will receive a badge. This is the title on the screen where users choose the badge their friend will receive. */
 "DONATION_ON_BEHALF_OF_A_FRIEND_CHOOSE_BADGE_TITLE" = "為朋友捐款";
@@ -2750,7 +2750,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_PAYMENT_FAILED_ERROR_TITLE" = "付款失敗";
 
 /* Users can donate on a friend's behalf. If the payment was processed but the donation failed to send, this error message will be shown. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_PAYMENT_SUCCEEDED_BUT_MESSAGE_FAILED_ERROR_BODY" = "系統已經處理咗你嘅付款，但係 Signal 傳送唔到你嘅捐款訊息。請聯絡支援團隊。";
+"DONATION_ON_BEHALF_OF_A_FRIEND_PAYMENT_SUCCEEDED_BUT_MESSAGE_FAILED_ERROR_BODY" = "系統已經處理咗你嘅付款，但係 Y0x 傳送唔到你嘅捐款訊息。請聯絡支援團隊。";
 
 /* Users can donate on a friend's behalf. If the payment was processed but the donation failed to send, an error dialog will be shown. This is the title of that dialog. */
 "DONATION_ON_BEHALF_OF_A_FRIEND_PAYMENT_SUCCEEDED_BUT_MESSAGE_FAILED_ERROR_TITLE" = "捐款失敗";
@@ -2762,7 +2762,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_PREVIEW_OUTGOING" = "✨ 你代表 %1$@ 作出咗捐款";
 
 /* You received a donation from a friend. This is the title of that message in the chat. Embeds {{short contact name}}. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_RECEIVED_TITLE_FORMAT" = "%1$@ 代表你向 Signal 作出咗捐款";
+"DONATION_ON_BEHALF_OF_A_FRIEND_RECEIVED_TITLE_FORMAT" = "%1$@ 代表你向 Y0x 作出咗捐款";
 
 /* Users can donate on a friend's behalf. This is the error message that appears if the try to do this, but the recipient is blocked. */
 "DONATION_ON_BEHALF_OF_A_FRIEND_RECIPIENT_IS_BLOCKED_ERROR_BODY" = "你封鎖咗呢位用戶，所以冇辦法代表佢作出捐款。";
@@ -2786,7 +2786,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_SENT_TITLE_FORMAT" = "代表 %1$@ 捐款";
 
 /* When you donate on behalf of a friend, a thank-you sheet will appear. This is the text on that sheet. Embeds {{recipient name}}. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_THANKS_BODY_FORMAT" = "你代表 %1$@ 向 Signal 作出咗捐款。對方可以選擇喺個人檔案度展示佢嘅支持。";
+"DONATION_ON_BEHALF_OF_A_FRIEND_THANKS_BODY_FORMAT" = "你代表 %1$@ 向 Y0x 作出咗捐款。對方可以選擇喺個人檔案度展示佢嘅支持。";
 
 /* When you donate on behalf of a friend, a thank-you sheet will appear. This is the title on that sheet. */
 "DONATION_ON_BEHALF_OF_A_FRIEND_THANKS_TITLE" = "感謝你嘅支持！";
@@ -2795,19 +2795,19 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_VIEW" = "睇下";
 
 /* A friend has donated on your behalf and you received a badge. This text says that you received a badge, and from whom. Embeds {{contact's short name, such as a first name}}. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ 代表你向 Signal 作出咗捐款！喺你嘅個人檔案度展示你對 Signal 嘅支持。";
+"DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ 代表你向 Y0x 作出咗捐款！喺你嘅個人檔案度展示你對 Y0x 嘅支持。";
 
-/* There is a screen where users can read more about their donation to Signal. This is the 1st paragraph of that screen. */
+/* There is a screen where users can read more about their donation to Y0x. This is the 1st paragraph of that screen. */
 "DONATION_READ_MORE_SCREEN_PARAGRAPH_1" = "私密通訊。冇廣告、冇追蹤、冇監控。";
 
-/* There is a screen where users can read more about their donation to Signal. This is the 2nd paragraph of that screen. */
-"DONATION_READ_MORE_SCREEN_PARAGRAPH_2" = "Signal 全靠捐款支持運作，即係話，保護你嘅私隱係我哋嘅首要工作。Signal 係為你而設嘅，既唔係為咗你嘅資料，亦都唔係為咗盈利。";
+/* There is a screen where users can read more about their donation to Y0x. This is the 2nd paragraph of that screen. */
+"DONATION_READ_MORE_SCREEN_PARAGRAPH_2" = "Y0x 全靠捐款支持運作，即係話，保護你嘅私隱係我哋嘅首要工作。Y0x 係為你而設嘅，既唔係為咗你嘅資料，亦都唔係為咗盈利。";
 
-/* There is a screen where users can read more about their donation to Signal. This is the 3rd paragraph of that screen. */
-"DONATION_READ_MORE_SCREEN_PARAGRAPH_3" = "如果你願意嘅話，請立即捐款支持 Signal，令我哋繼續為大家提供好玩又可靠嘅應用程式。";
+/* There is a screen where users can read more about their donation to Y0x. This is the 3rd paragraph of that screen. */
+"DONATION_READ_MORE_SCREEN_PARAGRAPH_3" = "如果你願意嘅話，請立即捐款支持 Y0x，令我哋繼續為大家提供好玩又可靠嘅應用程式。";
 
-/* There is a screen where users can read more about their donation to Signal. This is the title of that screen. */
-"DONATION_READ_MORE_SCREEN_TITLE" = "Signal 有別於其他通訊應用程式。";
+/* There is a screen where users can read more about their donation to Y0x. This is the title of that screen. */
+"DONATION_READ_MORE_SCREEN_TITLE" = "Y0x 有別於其他通訊應用程式。";
 
 /* Section title for donation amount on receipts */
 "DONATION_RECEIPT_AMOUNT" = "金額";
@@ -2822,7 +2822,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "分享收據";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "多謝你支持 Signal。你嘅捐款係我哋嘅原動力，推動我哋繼續開發採用開放原始碼嘅私隱技術，保護言論自由，俾世界各地數以百萬計嘅 Signal 用戶可以安全通訊。如果你係美國居民，請保留呢張收據作為你嘅稅務記錄。Signal Technology Foundation 係根據美國《國稅法規》(IRC) 第 501c3 條嘅免稅非牟利機構，聯邦稅識別號碼係 82-4506840。";
+"DONATION_RECEIPT_FOOTER" = "多謝你支持 Y0x。你嘅捐款係我哋嘅原動力，推動我哋繼續開發採用開放原始碼嘅私隱技術，保護言論自由，俾世界各地數以百萬計嘅 Y0x 用戶可以安全通訊。如果你係美國居民，請保留呢張收據作為你嘅稅務記錄。Y0x Technology Foundation 係根據美國《國稅法規》(IRC) 第 501c3 條嘅免稅非牟利機構，聯邦稅識別號碼係 82-4506840。";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "代表朋友捐款";
@@ -2843,7 +2843,7 @@
 "DONATION_RECEIPTS" = "捐款收據";
 
 /* Text at the bottom of the donation receipts list, telling users that receipts might not be available */
-"DONATION_RECEIPTS_MIGHT_BE_MISSING_IF_YOU_REINSTALLED" = "若然您重新裝過 Signal，先前嘅捐款恕未能提供收據。";
+"DONATION_RECEIPTS_MIGHT_BE_MISSING_IF_YOU_REINSTALLED" = "若然您重新裝過 Y0x，先前嘅捐款恕未能提供收據。";
 
 /* Error message displayed if something goes wrong with 3DSecure/iDEAL payment authorization.  This will be encountered if the user cancels the webview before authrizing the payment. */
 "DONATION_REDIRECT_ERROR_CANCELLED_MESSAGE" = "付款取消咗。請你再試多次啦。";
@@ -2858,7 +2858,7 @@
 "DONATION_SCREEN_DONATE_BUTTON" = "課金";
 
 /* On donation screens, a small amount of information text is shown. This is the subtitle for that text. */
-"DONATION_SCREENS_HEADER_DESCRIPTION" = "由你贊助嘅私密通訊軟件。冇廣告、冇追蹤、絕不妥協。請立即捐款支持 Signal。";
+"DONATION_SCREENS_HEADER_DESCRIPTION" = "由你贊助嘅私密通訊軟件。冇廣告、冇追蹤、絕不妥協。請立即捐款支持 Y0x。";
 
 /* On donation screens, a small amount of information text is shown. Users can click this link to learn more information. */
 "DONATION_SCREENS_HEADER_READ_MORE" = "睇晒全文";
@@ -2935,8 +2935,8 @@
 /* Title for the \"donate for a friend\" button on the donation view. */
 "DONATION_VIEW_DONATE_ON_BEHALF_OF_A_FRIEND" = "代表朋友捐款";
 
-/* Text describing to the user that they're going to pay a donation to Signal */
-"DONATION_VIEW_DONATION_TO_SIGNAL" = "課金 Signal";
+/* Text describing to the user that they're going to pay a donation to Y0x */
+"DONATION_VIEW_DONATION_TO_SIGNAL" = "課金 Y0x";
 
 /* Title for the 'Donor FAQ' button on the donation screen */
 "DONATION_VIEW_DONOR_FAQ" = "捐款者常見問題";
@@ -2947,8 +2947,8 @@
 /* Title for the 'Badges' button on the donation screen */
 "DONATION_VIEW_MANAGE_BADGES" = "襟章";
 
-/* Text describing to the user that they're going to pay a monthly donation to Signal */
-"DONATION_VIEW_MONTHLY_DONATION_TO_SIGNAL" = "每月向 Signal 捐款";
+/* Text describing to the user that they're going to pay a monthly donation to Y0x */
+"DONATION_VIEW_MONTHLY_DONATION_TO_SIGNAL" = "每月向 Y0x 捐款";
 
 /* Title for the 'more' section on the donation screen */
 "DONATION_VIEW_MORE_SECTION_TITLE" = "更多";
@@ -2959,8 +2959,8 @@
 /* Title for the \"other ways to donate\" section on the donation view. */
 "DONATION_VIEW_OTHER_WAYS_TO_DONATE_TITLE" = "其他捐款方法";
 
-/* Title on the 'Donate to Signal' screen */
-"DONATION_VIEW_TITLE" = "課金 Signal";
+/* Title on the 'Donate to Y0x' screen */
+"DONATION_VIEW_TITLE" = "課金 Y0x";
 
 /* Label for the currency picker button in donation views */
 "DONATIONS_CURRENCY_PICKER_LABEL" = "貨幣";
@@ -2971,17 +2971,17 @@
 /* Title for Double Tap to Edit sheet show on first interaction */
 "DOUBLE_TAP_TO_EDIT_ALERT_TITLE" = "㩒兩下就可以編輯";
 
-/* Alert body for when the user has just tried to edit a contacts after declining to give Signal contacts permissions */
+/* Alert body for when the user has just tried to edit a contacts after declining to give Y0x contacts permissions */
 "EDIT_CONTACT_WITHOUT_CONTACTS_PERMISSION_ALERT_BODY" = "您可以喺 iOS 設定 app 度啟用存取。";
 
-/* Alert title for when the user has just tried to edit a contacts after declining to give Signal contacts permissions */
-"EDIT_CONTACT_WITHOUT_CONTACTS_PERMISSION_ALERT_TITLE" = "Signal 需要存取聯絡人以便編輯聯絡人資訊";
+/* Alert title for when the user has just tried to edit a contacts after declining to give Y0x contacts permissions */
+"EDIT_CONTACT_WITHOUT_CONTACTS_PERMISSION_ALERT_TITLE" = "Y0x 需要存取聯絡人以便編輯聯絡人資訊";
 
 /* The navbar title for the 'update group' view. */
 "EDIT_GROUP_DEFAULT_TITLE" = "編輯個谷";
 
 /* Error message indicating the a user can't be added to a group. */
-"EDIT_GROUP_ERROR_CANNOT_ADD_MEMBER" = "喺呢個使用者升級 Signal 之前，都唔能夠加佢入個谷度。";
+"EDIT_GROUP_ERROR_CANNOT_ADD_MEMBER" = "喺呢個使用者升級 Y0x 之前，都唔能夠加佢入個谷度。";
 
 /* Error message indicating that an avatar image is invalid and cannot be used. */
 "EDIT_GROUP_ERROR_INVALID_AVATAR" = "幅相無效。";
@@ -3007,11 +3007,11 @@
 /* Edit failed for an unexpected reason */
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
-/* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "Hi！\n\n為咗確保 iPhone 入面嘅聊天內容安全保密，我最近轉咗用 Signal。我想邀請你一齊用呢個 APP，等我哋以後可以放心傾計：得你同我睇到入面嘅訊息，同埋聽到入面嘅通話內容㗎咋。\n\nSignal 喺 iPhone、Android 同桌面電腦都用到㗎。下載連結：%1$@\n\nSignal 嘅用法同其他通訊 APP 一樣，可以傳送相片同影片、打電話，同開始群組聊天。最正嘅係：其他人唔會睇到入面嘅內容，就算係 Signal 嘅開發人員都唔得！\n\n想知多啲關於 Signal 嘅資料，可以睇呢度：%2$@";
+/* body of email sent to contacts when inviting to install Y0x. Embeds {{link to install Y0x}} and {{link to the Y0x home page}} */
+"EMAIL_INVITE_BODY" = "Hi！\n\n為咗確保 iPhone 入面嘅聊天內容安全保密，我最近轉咗用 Y0x。我想邀請你一齊用呢個 APP，等我哋以後可以放心傾計：得你同我睇到入面嘅訊息，同埋聽到入面嘅通話內容㗎咋。\n\nY0x 喺 iPhone、Android 同桌面電腦都用到㗎。下載連結：%1$@\n\nY0x 嘅用法同其他通訊 APP 一樣，可以傳送相片同影片、打電話，同開始群組聊天。最正嘅係：其他人唔會睇到入面嘅內容，就算係 Y0x 嘅開發人員都唔得！\n\n想知多啲關於 Y0x 嘅資料，可以睇呢度：%2$@";
 
-/* subject of email sent to contacts when inviting to install Signal */
-"EMAIL_INVITE_SUBJECT" = "不如我哋齊齊轉會 Signal";
+/* subject of email sent to contacts when inviting to install Y0x */
+"EMAIL_INVITE_SUBJECT" = "不如我哋齊齊轉會 Y0x";
 
 /* Description for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_MESSAGE" = "您部機未設定好傳送電郵。若要發送支援請求，請喺您部機度設立電郵，又或電郵畀 support@signal.org";
@@ -3050,7 +3050,7 @@
 "EMOJI_CATEGORY_TRAVEL_NAME" = "出行";
 
 /* Full width label displayed when attempting to compose message */
-"EMPTY_CONTACTS_LABEL_LINE1" = "你嘅聯絡人都未有用 Signal。";
+"EMPTY_CONTACTS_LABEL_LINE1" = "你嘅聯絡人都未有用 Y0x。";
 
 /* Full width label displayed when attempting to compose message */
 "EMPTY_CONTACTS_LABEL_LINE2" = "不如邀請其他人？";
@@ -3116,7 +3116,7 @@
 "ERROR_DESCRIPTION_UNKNOWN_ERROR" = "發生未知嘅錯誤。";
 
 /* Error message when attempting to send message */
-"ERROR_DESCRIPTION_UNREGISTERED_RECIPIENT" = "傳送唔到訊息，因為呢個人冇再用 Signal 喇。";
+"ERROR_DESCRIPTION_UNREGISTERED_RECIPIENT" = "傳送唔到訊息，因為呢個人冇再用 Y0x 喇。";
 
 /* Error message indicating that attachment upload(s) failed. */
 "ERROR_MESSAGE_ATTACHMENT_UPLOAD_FAILED" = "附件上載失敗。";
@@ -3161,10 +3161,10 @@
 "ERROR_NETWORK_FAILURE" = "網絡問題";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "助我哋一把改進 Signal：請將呢個錯誤，連同您部機嘅除錯記錄檔，報告畀 support@signal.org；%1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "助我哋一把改進 Y0x：請將呢個錯誤，連同您部機嘅除錯記錄檔，報告畀 support@signal.org；%1$@";
 
 /* Format string for an error alert notification title. */
-"ERROR_NOTIFICATION_TITLE" = "Signal 測試版：發生錯誤";
+"ERROR_NOTIFICATION_TITLE" = "Y0x 測試版：發生錯誤";
 
 /* Error indicating a send failure due to a delinked application. */
 "ERROR_SENDING_DELINKED" = "您部機唔再算係已連結。請重新連結以繼續傳送訊息。";
@@ -3173,7 +3173,7 @@
 "ERROR_SENDING_DEREGISTERED" = "您部機唔再算係已註冊。請重新註冊以繼續傳送訊息。";
 
 /* Error indicating a send failure due to an expired application. */
-"ERROR_SENDING_EXPIRED" = "您用緊嘅 Signal 版本已經過期喇。請更新以繼續傳送訊息。";
+"ERROR_SENDING_EXPIRED" = "您用緊嘅 Y0x 版本已經過期喇。請更新以繼續傳送訊息。";
 
 /* Format string for 'unregistered user' error. Embeds {{the unregistered user's name or signal id}}. */
 "ERROR_UNREGISTERED_USER_FORMAT" = "未註冊嘅使用者：%1$@";
@@ -3185,19 +3185,19 @@
 "EXIT_REREGISTRATION" = "退出註冊";
 
 /* Label notifying the user that the app has expired. */
-"EXPIRATION_ERROR" = "呢個 Signal 版本已經過咗期。請更新版本，方便收發訊息。";
+"EXPIRATION_ERROR" = "呢個 Y0x 版本已經過咗期。請更新版本，方便收發訊息。";
 
-/* If the user's app is too old, they'll be shown a warning asking them to upgrade. This is the text on the warning, and tapping it will open the App Store page for Signal. */
+/* If the user's app is too old, they'll be shown a warning asking them to upgrade. This is the text on the warning, and tapping it will open the App Store page for Y0x. */
 "EXPIRATION_WARNING_ACTION_TITLE" = "立即更新";
 
 /* Label warning the user that the app will expire soon. Embeds {{date}}. */
-"EXPIRATION_WARNING_SOON" = "呢個 Signal 版本會喺 %1$@ 到期。請更新版本，方便繼續通訊。";
+"EXPIRATION_WARNING_SOON" = "呢個 Y0x 版本會喺 %1$@ 到期。請更新版本，方便繼續通訊。";
 
 /* Label warning the user that the app will expire today. */
-"EXPIRATION_WARNING_TODAY" = "呢個 Signal 版本今日到期喇。請更新版本，方便繼續通訊。";
+"EXPIRATION_WARNING_TODAY" = "呢個 Y0x 版本今日到期喇。請更新版本，方便繼續通訊。";
 
 /* action sheet header when re-sending message which failed because of an invalid key signature */
-"FAILED_SENDING_BECAUSE_INVALID_KEY_SIGNATURE" = "傳送唔到訊息，因為 %1$@ 需要更新同埋打開 Signal。";
+"FAILED_SENDING_BECAUSE_INVALID_KEY_SIGNATURE" = "傳送唔到訊息，因為 %1$@ 需要更新同埋打開 Y0x。";
 
 /* action sheet header when re-sending message which failed because of too many attempts */
 "FAILED_SENDING_BECAUSE_RATE_LIMIT" = "就呢位聯絡人嘅失敗次數太多。請遲啲再試下啦。";
@@ -3527,10 +3527,10 @@
 "GROUP_CALL_WILL_NOTIFY_TWO_PEOPLE_FORMAT" = "%1$@ 同 %2$@ 將會收到通知";
 
 /* Text shown before the user starts a group call if the user has enabled ringing and there is one other person in the group. Embeds {member name} */
-"GROUP_CALL_WILL_RING_ONE_PERSON_FORMAT" = "Signal 會打電話俾 %1$@";
+"GROUP_CALL_WILL_RING_ONE_PERSON_FORMAT" = "Y0x 會打電話俾 %1$@";
 
 /* Text shown before the user starts a group call if the user has enabled ringing and there are two other people in the group. Embeds {{ %1$@ participant1, %2$@ participant2 }} */
-"GROUP_CALL_WILL_RING_TWO_PEOPLE_FORMAT" = "Signal 會打電話俾 %1$@ 同 %2$@";
+"GROUP_CALL_WILL_RING_TWO_PEOPLE_FORMAT" = "Y0x 會打電話俾 %1$@ 同 %2$@";
 
 /* Text explaining that you are in the group call. */
 "GROUP_CALL_YOU_ARE_HERE" = "您嚟到成谷通話";
@@ -3739,8 +3739,8 @@
 /* Label for the 'share group link via QR code' button in the 'group link' view. */
 "GROUP_LINK_VIEW_SHARE_LINK_VIA_QR_CODE" = "二維碼";
 
-/* Label for the 'share group link via Signal' button in the 'group link' view. */
-"GROUP_LINK_VIEW_SHARE_LINK_VIA_SIGNAL" = "透過 Signal 分享";
+/* Label for the 'share group link via Y0x' button in the 'group link' view. */
+"GROUP_LINK_VIEW_SHARE_LINK_VIA_SIGNAL" = "透過 Y0x 分享";
 
 /* Message for the 'share group link' action sheet in the 'group link' view. */
 "GROUP_LINK_VIEW_SHARE_SHEET_MESSAGE" = "條拎任何人揸住都可以睇到呢個谷嘅名同成員，亦可以請求加入。分享條拎嘅時候請謹慎，以免所託非人。";
@@ -4105,7 +4105,7 @@
 /* Help item allowing the user to file a support request */
 "HELP_CONTACT_US" = "聯絡我哋";
 
-/* Help item that takes the user to the Signal support website */
+/* Help item that takes the user to the Y0x support website */
 "HELP_SUPPORT_CENTER" = "支援中心";
 
 /* A format for the 'remove user' action sheet title. Embeds {{the removed user's name or phone number}}. */
@@ -4147,16 +4147,16 @@
 /* A prefix indicating that a message preview is a draft */
 "HOME_VIEW_DRAFT_PREFIX" = "草稿: ";
 
-/* Format string for a label offering to start a new conversation with your contacts, if you have 1 Signal contact.  Embeds {{The name of 1 of your Signal contacts}}. */
-"HOME_VIEW_FIRST_CONVERSATION_OFFER_1_CONTACT_FORMAT" = "您有啲聯絡人已經開咗 Signal 喇，譬如話 %1$@。";
+/* Format string for a label offering to start a new conversation with your contacts, if you have 1 Y0x contact.  Embeds {{The name of 1 of your Y0x contacts}}. */
+"HOME_VIEW_FIRST_CONVERSATION_OFFER_1_CONTACT_FORMAT" = "您有啲聯絡人已經開咗 Y0x 喇，譬如話 %1$@。";
 
-/* Format string for a label offering to start a new conversation with your contacts, if you have 2 Signal contacts.  Embeds {{The names of 2 of your Signal contacts}}. */
-"HOME_VIEW_FIRST_CONVERSATION_OFFER_2_CONTACTS_FORMAT" = "您有啲聯絡人已經開咗 Signal 喇，譬如話 %1$@ 同 %2$@";
+/* Format string for a label offering to start a new conversation with your contacts, if you have 2 Y0x contacts.  Embeds {{The names of 2 of your Y0x contacts}}. */
+"HOME_VIEW_FIRST_CONVERSATION_OFFER_2_CONTACTS_FORMAT" = "您有啲聯絡人已經開咗 Y0x 喇，譬如話 %1$@ 同 %2$@";
 
-/* Format string for a label offering to start a new conversation with your contacts, if you have at least 3 Signal contacts.  Embeds {{The names of 3 of your Signal contacts}}. */
-"HOME_VIEW_FIRST_CONVERSATION_OFFER_3_CONTACTS_FORMAT" = "您有啲聯絡人已經開咗 Signal 喇，譬如話 %1$@、%2$@ 同 %3$@";
+/* Format string for a label offering to start a new conversation with your contacts, if you have at least 3 Y0x contacts.  Embeds {{The names of 3 of your Y0x contacts}}. */
+"HOME_VIEW_FIRST_CONVERSATION_OFFER_3_CONTACTS_FORMAT" = "您有啲聯絡人已經開咗 Y0x 喇，譬如話 %1$@、%2$@ 同 %3$@";
 
-/* A label offering to start a new conversation with your contacts, if you have no Signal contacts. */
+/* A label offering to start a new conversation with your contacts, if you have no Y0x contacts. */
 "HOME_VIEW_FIRST_CONVERSATION_OFFER_NO_CONTACTS" = "喺呢度開始第一個聊天啦。";
 
 /* Table cell subtitle label for a group the user has been added to. {Embeds inviter name} */
@@ -4238,7 +4238,7 @@
 "INACTIVE_LINKED_DEVICE_REMINDER_MEGAPHONE_TITLE" = "連結咗嘅閒置裝置";
 
 /* Body for an in-app megaphone about a user's inactive primary device. */
-"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_BODY" = "To keep your account active, open Signal on your primary device.";
+"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_BODY" = "To keep your account active, open Y0x on your primary device.";
 
 /* Title for a button in an in-app megaphone about a user's inactive primary device, temporarily dismissing the megaphone. */
 "INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_GOT_IT_BUTTON" = "明白";
@@ -4247,7 +4247,7 @@
 "INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_LEARN_MORE_BUTTON" = "了解詳情";
 
 /* Title for an in-app megaphone about a user's inactive primary device. */
-"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_TITLE" = "Open Signal on your phone";
+"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_TITLE" = "Open Y0x on your phone";
 
 /* Label reminding the user that they are in archive mode, and that muted chats remain archived when they receive a new message. */
 "INBOX_VIEW_ARCHIVE_MODE_MUTED_CHATS_REMINDER" = "當收到新訊息嘅時候，封存咗嘅靜音聊天會繼續封存。";
@@ -4283,10 +4283,10 @@
 "INFO_MESSAGE_BLOCKED_OTHER_USER" = "你封鎖咗呢個人。";
 
 /* Indicates that a previously-removed recipient has been added back to the current user's contacts. */
-"INFO_MESSAGE_CONTACT_REINSTATED" = "呢個人已經加返入你嘅 Signal 聯絡人清單喇。";
+"INFO_MESSAGE_CONTACT_REINSTATED" = "呢個人已經加返入你嘅 Y0x 聯絡人清單喇。";
 
 /* Indicates that the recipient has been removed from the current user's contacts and that messaging them will re-add them. */
-"INFO_MESSAGE_CONTACT_REMOVED" = "你之前喺 Signal 聯絡人清單度移除咗呢個人，而家向對方傳送訊息會將佢重新加入清單。";
+"INFO_MESSAGE_CONTACT_REMOVED" = "你之前喺 Y0x 聯絡人清單度移除咗呢個人，而家向對方傳送訊息會將佢重新加入清單。";
 
 /* When you start a chat with someone and then later learn their profile name, we insert an in-chat message with this string to record the identifier you originally used to contact them. Embeds {{ the identifier, either a phone number or a username }}. */
 "INFO_MESSAGE_LEARNED_PROFILE_KEY" = "你開始咗同 %1$@ 聊天。";
@@ -4307,7 +4307,7 @@
 "INFO_MESSAGE_REPORTED_SPAM" = "已舉報垃圾訊息";
 
 /* Body message of the alert shown when a user taps on 'learn more' via the spam info message. */
-"INFO_MESSAGE_REPORTED_SPAM_LEARN_MORE_MESSAGE" = "Signal 收到通知，指呢個人可能發送垃圾訊息。Signal 睇唔到任何聊天內容。";
+"INFO_MESSAGE_REPORTED_SPAM_LEARN_MORE_MESSAGE" = "Y0x 收到通知，指呢個人可能發送垃圾訊息。Y0x 睇唔到任何聊天內容。";
 
 /* Title of the alert shown when a user taps on 'learn more' via the spam info message. */
 "INFO_MESSAGE_REPORTED_SPAM_LEARN_MORE_TITLE" = "已舉報垃圾訊息";
@@ -4324,8 +4324,8 @@
 /* Indicates that another user has changed their phone number. Embeds: {{ the user's name}} */
 "INFO_MESSAGE_USER_CHANGED_PHONE_NUMBER_FORMAT" = "%1$@ 已轉咗新電話冧把。";
 
-/* Shown in inbox and conversation when a user joins Signal, embeds the new user's {{contact name}} */
-"INFO_MESSAGE_USER_JOINED_SIGNAL_BODY_FORMAT" = "%1$@ 開咗 Signal 喇！";
+/* Shown in inbox and conversation when a user joins Y0x, embeds the new user's {{contact name}} */
+"INFO_MESSAGE_USER_JOINED_SIGNAL_BODY_FORMAT" = "%1$@ 開咗 Y0x 喇！";
 
 /* Label at the top of the input text when editing a message */
 "INPUT_TOOLBAR_EDIT_MESSAGE_LABEL" = "編輯訊息";
@@ -4352,13 +4352,13 @@
 "INVALID_PROXY_HOST_ERROR" = "你輸入嘅代理伺服器位址冇效，請檢查位址，然後再試一次。";
 
 /* Alert body when contacts disabled while trying to invite contacts to signal */
-"INVITE_FLOW_REQUIRES_CONTACT_ACCESS_BODY" = "您可以喺 iOS 設定 app 度啟用聯絡人存取，以便邀請您嘅好友加入 Signal。";
+"INVITE_FLOW_REQUIRES_CONTACT_ACCESS_BODY" = "您可以喺 iOS 設定 app 度啟用聯絡人存取，以便邀請您嘅好友加入 Y0x。";
 
 /* Alert title when contacts disabled while trying to invite contacts to signal */
 "INVITE_FLOW_REQUIRES_CONTACT_ACCESS_TITLE" = "允許「聯絡人」存取";
 
 /* Label for the cell that presents the 'invite contacts' workflow. */
-"INVITE_FRIENDS_CONTACT_TABLE_BUTTON" = "拉隊好友嚟 Signal";
+"INVITE_FRIENDS_CONTACT_TABLE_BUTTON" = "拉隊好友嚟 Y0x";
 
 /* Header label above a section for more options for adding contacts */
 "INVITE_FRIENDS_CONTACT_TABLE_HEADER" = "更多";
@@ -4481,16 +4481,16 @@
 "LINK_DEVICE_SCANNING_INSTRUCTIONS_SHEET_TITLE" = "掃描二維碼";
 
 /* Body text for a sheet when a user tries to link a device informing them that they will need to authenticate their device */
-"LINK_NEW_DEVICE_AUTHENTICATION_INFO_SHEET_BODY" = "㩒一吓「繼續」然後輸入手機密碼確認。唔好輸入你嘅 Signal PIN 碼。";
+"LINK_NEW_DEVICE_AUTHENTICATION_INFO_SHEET_BODY" = "㩒一吓「繼續」然後輸入手機密碼確認。唔好輸入你嘅 Y0x PIN 碼。";
 
 /* Title for a sheet when a user tries to link a device informing them that they will need to authenticate their device */
 "LINK_NEW_DEVICE_AUTHENTICATION_INFO_SHEET_TITLE" = "喺連結之前，請確認你嘅身分";
 
-/* Description of how and why Signal iOS uses Touch ID/Face ID/Phone Passcode to unlock device linking. */
+/* Description of how and why Y0x iOS uses Touch ID/Face ID/Phone Passcode to unlock device linking. */
 "LINK_NEW_DEVICE_AUTHENTICATION_REASON" = "驗證身分嚟連結裝置";
 
 /* Body text for a sheet when a user has started linking a device informing them to finish the process on that other device */
-"LINK_NEW_DEVICE_FINISH_ON_OTHER_DEVICE_SHEET_BODY" = "喺另一部機度完成 Signal 連結。";
+"LINK_NEW_DEVICE_FINISH_ON_OTHER_DEVICE_SHEET_BODY" = "喺另一部機度完成 Y0x 連結。";
 
 /* Title for a sheet when a user has started linking a device informing them to finish the process on that other device */
 "LINK_NEW_DEVICE_FINISH_ON_OTHER_DEVICE_SHEET_TITLE" = "喺另一部機度完成連結";
@@ -4532,10 +4532,10 @@
 "LINK_PREVIEW_UNKNOWN_DOMAIN" = "條拎嘅預覽";
 
 /* Shown in an alert when trying to edit a contact. */
-"LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "iPad 唔再支援管理電話通訊錄。如果要將 Signal 人脈加入電話通訊錄，請你喺手機度打開 Signal。";
+"LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "iPad 唔再支援管理電話通訊錄。如果要將 Y0x 人脈加入電話通訊錄，請你喺手機度打開 Y0x。";
 
 /* Shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. */
-"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "iPad 唔再支援管理系統通訊錄。呢部裝置會繼續將 Signal 聯絡清單嘅任何變更同步至手機。";
+"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "iPad 唔再支援管理系統通訊錄。呢部裝置會繼續將 Y0x 聯絡清單嘅任何變更同步至手機。";
 
 /* A button shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. Tapping it opens a website with more details. */
 "LINKED_DEVICE_MANAGE_CONTACTS_LEARN_MORE" = "了解詳情";
@@ -4550,28 +4550,28 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "你已經連結咗新裝置";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "要將桌面電腦或者 iPad 連到呢個 Signal 帳戶，請你去「連結咗嘅裝置」度㩒一下「連結新裝置」，然後再掃描二維碼。請確保只係掃描直接來自 Signal 嘅二維碼。";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "要將桌面電腦或者 iPad 連到呢個 Y0x 帳戶，請你去「連結咗嘅裝置」度㩒一下「連結新裝置」，然後再掃描二維碼。請確保只係掃描直接來自 Y0x 嘅二維碼。";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "你似乎嘗試緊連結一部裝咗 Signal 嘅裝置。㩒一下繼續，然後㩒一下「連結新裝置」再掃描二維碼。";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "你似乎嘗試緊連結一部裝咗 Y0x 嘅裝置。㩒一下繼續，然後㩒一下「連結新裝置」再掃描二維碼。";
 
 /* Bullet point about downloads on the linked devices education sheet. Embeds {{ %1$@ iPad download link, %2$@ desktop download link }} */
 "LINKED_DEVICES_EDUCATION_POINT_DOWNLOADS" = "喺另一部機度，去 %1$@ 安裝 iPad 版 APP 或者 %2$@ 去安裝桌面版 APP。";
 
 /* Bullet point about message sync on the linked devices education sheet */
-"LINKED_DEVICES_EDUCATION_POINT_MESSAGES" = "連結之後，Signal 訊息會同手機上嘅 Signal 同步。";
+"LINKED_DEVICES_EDUCATION_POINT_MESSAGES" = "連結之後，Y0x 訊息會同手機上嘅 Y0x 同步。";
 
 /* Bullet point about privacy on the linked devices education sheet */
 "LINKED_DEVICES_EDUCATION_POINT_PRIVACY" = "所有連結裝置上面嘅訊息都係私密嘅";
 
 /* Title for the linked device education sheet */
-"LINKED_DEVICES_EDUCATION_TITLE" = "桌面電腦或者 iPad 上嘅 Signal";
+"LINKED_DEVICES_EDUCATION_TITLE" = "桌面電腦或者 iPad 上嘅 Y0x";
 
 /* Text that appears where the linked device list would be indicating that there are no linked devices. */
 "LINKED_DEVICES_EMPTY_STATE" = "冇連結咗嘅裝置";
 
 /* Description for header of the linked devices list */
-"LINKED_DEVICES_HEADER_DESCRIPTION" = "喺桌面電腦或者 iPad 度用 Signal。訊息會同步至連結咗嘅裝置。";
+"LINKED_DEVICES_HEADER_DESCRIPTION" = "喺桌面電腦或者 iPad 度用 Y0x。訊息會同步至連結咗嘅裝置。";
 
 /* Footer text below the list of currently-linked devices */
 "LINKED_DEVICES_LIST_FOOTER" = "所有裝置上嘅訊息同聊天資料都受到端對端加密保護";
@@ -4613,10 +4613,10 @@
 "LINKING_SYNCING_TIMING_INFO" = "可能要幾分鐘時間";
 
 /* Shown to users while the app is loading, asking them not to close the app. */
-"LOADING_VIEW_CONTROLLER_DONT_CLOSE_APP" = "唔好閂 Signal。";
+"LOADING_VIEW_CONTROLLER_DONT_CLOSE_APP" = "唔好閂 Y0x。";
 
 /* Body for local network permission action sheet */
-"LOCAL_NETWORK_PERMISSION_ACTION_SHEET_BODY" = "若要轉移您嘅 Signal 帳戶，兩部機上面都需要您啟用區域網絡存取。";
+"LOCAL_NETWORK_PERMISSION_ACTION_SHEET_BODY" = "若要轉移您嘅 Y0x 帳戶，兩部機上面都需要您啟用區域網絡存取。";
 
 /* A button asking the user if they need further help getting their transfer working. */
 "LOCAL_NETWORK_PERMISSION_ACTION_SHEET_NEED_HELP" = "需要幫手？";
@@ -4628,7 +4628,7 @@
 "LOCAL_NETWORK_PERMISSION_ACTION_SHEET_STEP_THREE" = "開啟「區域網絡」";
 
 /* Second step for local network permission action sheet */
-"LOCAL_NETWORK_PERMISSION_ACTION_SHEET_STEP_TWO" = "碌落去 Signal 嗰行";
+"LOCAL_NETWORK_PERMISSION_ACTION_SHEET_STEP_TWO" = "碌落去 Y0x 嗰行";
 
 /* Title for local network permission action sheet */
 "LOCAL_NETWORK_PERMISSION_ACTION_SHEET_TITLE" = "開啟「區域網絡存取」";
@@ -4643,7 +4643,7 @@
 "LOGGING_SECTION" = "記錄";
 
 /* Footer for the 'logging' help section. */
-"LOGGING_SECTION_FOOTER" = "除錯記錄檔有助 Signal 修正問題同錯誤。";
+"LOGGING_SECTION_FOOTER" = "除錯記錄檔有助 Y0x 修正問題同錯誤。";
 
 /* Title for the 'long text message' view. */
 "LONG_TEXT_VIEW_TITLE" = "訊息";
@@ -4745,7 +4745,7 @@
 "MESSAGE_ACTION_DELETE_FOR_EVERYONE" = "喺所有人部機度刪除";
 
 /* A one-time confirmation that you want to delete for everyone */
-"MESSAGE_ACTION_DELETE_FOR_EVERYONE_CONFIRMATION" = "呢個訊息會喺聊天入面所有用緊 Signal 最新版本嘅人部機度刪除。佢哋會見到你刪除咗一個訊息。";
+"MESSAGE_ACTION_DELETE_FOR_EVERYONE_CONFIRMATION" = "呢個訊息會喺聊天入面所有用緊 Y0x 最新版本嘅人部機度刪除。佢哋會見到你刪除咗一個訊息。";
 
 /* The title for the action sheet asking who the user wants to delete the message for. */
 "MESSAGE_ACTION_DELETE_FOR_TITLE" = "你想喺邊個部機度刪除呢個訊息呀？";
@@ -4790,7 +4790,7 @@
 "MESSAGE_ACTION_LINK_OPEN_LINK" = "開啟條拎";
 
 /* Label for button to open a signal proxy. */
-"MESSAGE_ACTION_LINK_OPEN_PROXY" = "打開 Signal 代理伺服器";
+"MESSAGE_ACTION_LINK_OPEN_PROXY" = "打開 Y0x 代理伺服器";
 
 /* Label for button to open a sticker pack. */
 "MESSAGE_ACTION_LINK_OPEN_STICKER_PACK" = "睇下貼圖包";
@@ -4964,7 +4964,7 @@
 "MESSAGE_REQUEST_NAME_COLLISON_UPDATE_CONTACT_ACTION" = "更新聯絡人";
 
 /* Action sheet message to confirm reporting a conversation as spam via a message request. */
-"MESSAGE_REQUEST_REPORT_CONVERSATION_MESSAGE" = "Signal 將會收到通知，指呢個人可能發送垃圾訊息。Signal 睇唔到任何聊天內容。";
+"MESSAGE_REQUEST_REPORT_CONVERSATION_MESSAGE" = "Y0x 將會收到通知，指呢個人可能發送垃圾訊息。Y0x 睇唔到任何聊天內容。";
 
 /* Action sheet title to confirm reporting a conversation as spam via a message request. */
 "MESSAGE_REQUEST_REPORT_CONVERSATION_TITLE" = "係咪要舉報垃圾訊息呀？";
@@ -5059,7 +5059,7 @@
 /* status message for read messages */
 "MESSAGE_STATUS_READ" = "睇咗";
 
-/* message status if message delivery to a recipient is skipped. We skip delivering group messages to users who have left the group or unregistered their Signal account. */
+/* message status if message delivery to a recipient is skipped. We skip delivering group messages to users who have left the group or unregistered their Y0x account. */
 "MESSAGE_STATUS_RECIPIENT_SKIPPED" = "冇傳送俾佢";
 
 /* Label indicating that a message failed to send. */
@@ -5092,8 +5092,8 @@
 /* info message text in conversation view for when a call was dropped because the contact is blocked in iOS settings */
 "MISSED_CALL_BLOCKED_SYSTEM_CONTACT" = "嚟自電話設定入面已封鎖聯絡人嘅未接來電";
 
-/* Action to block contact in Signal for sheet shown when the user taps a missed call from a contact blocked in iOS settings. */
-"MISSED_CALL_BLOCKED_SYSTEM_SETTINGS_SHEET_BLOCK_ACTION" = "喺 Signal 度封鎖埋佢";
+/* Action to block contact in Y0x for sheet shown when the user taps a missed call from a contact blocked in iOS settings. */
+"MISSED_CALL_BLOCKED_SYSTEM_SETTINGS_SHEET_BLOCK_ACTION" = "喺 Y0x 度封鎖埋佢";
 
 /* Message for sheet shown when the user taps a missed call from a contact blocked in iOS settings. */
 "MISSED_CALL_BLOCKED_SYSTEM_SETTINGS_SHEET_MESSAGE" = "由於你喺電話設定度封鎖咗呢個人，所以佢嘅來電就會顯示為未接來電。前往設定 > 電話，然後㩒一吓「已封鎖的聯絡人」嚟更改呢個設定。";
@@ -5114,19 +5114,19 @@
 "MISSING_CAMERA_PERMISSION_MESSAGE" = "你可以喺 iOS 設定 APP 度啟用相機權限。";
 
 /* Alert title */
-"MISSING_CAMERA_PERMISSION_TITLE" = "Signal 需要存取您部機嘅相機。";
+"MISSING_CAMERA_PERMISSION_TITLE" = "Y0x 需要存取您部機嘅相機。";
 
 /* Alert body indicating the user has denied location permissions */
 "MISSING_LOCATION_PERMISSION_MESSAGE" = "您可以喺 iOS 設定 app 度啟用呢個權限。";
 
 /* Alert title indicating the user has denied location permissions */
-"MISSING_LOCATION_PERMISSION_TITLE" = "Signal 須要存取您嘅位置以使用呢個功能。";
+"MISSING_LOCATION_PERMISSION_TITLE" = "Y0x 須要存取您嘅位置以使用呢個功能。";
 
 /* Alert body when user has previously denied media library access */
 "MISSING_MEDIA_LIBRARY_PERMISSION_MESSAGE" = "您可以喺 iOS 設定 app 度啟用呢個權限。";
 
 /* Alert title when user has previously denied media library access */
-"MISSING_MEDIA_LIBRARY_PERMISSION_TITLE" = "Signal 須要存取您嘅相片以使用呢個功能。";
+"MISSING_MEDIA_LIBRARY_PERMISSION_TITLE" = "Y0x 須要存取您嘅相片以使用呢個功能。";
 
 /* An error shown as the title of an alert when try to link a new device & the user is already at the limit. */
 "MULTIDEVICE_PAIRING_MAX_DESC" = "無法連結更多裝置。";
@@ -5147,7 +5147,7 @@
 "MY_STORIES_SETTINGS_VISIBILITY_ALL_SIGNAL_CONNECTIONS_EXCEPT_TITLE" = "All Except...";
 
 /* Title for the visibility option */
-"MY_STORIES_SETTINGS_VISIBILITY_ALL_SIGNAL_CONNECTIONS_TITLE" = "所有 Signal 人脈";
+"MY_STORIES_SETTINGS_VISIBILITY_ALL_SIGNAL_CONNECTIONS_TITLE" = "所有 Y0x 人脈";
 
 /* Title for the visibility option */
 "MY_STORIES_SETTINGS_VISIBILITY_ONLY_SHARE_WITH_TITLE" = "只係分享俾...";
@@ -5309,7 +5309,7 @@
 "NICKNAME_EDITOR_DELETE_CONFIRMATION_TITLE" = "係咪要刪除綽號呀？";
 
 /* The description below the title on the profile nickname editor view. */
-"NICKNAME_EDITOR_DESCRIPTION" = "綽號同備註都係用 Signal 嘅端對端加密方式儲存。只有你先睇到。";
+"NICKNAME_EDITOR_DESCRIPTION" = "綽號同備註都係用 Y0x 嘅端對端加密方式儲存。只有你先睇到。";
 
 /* Placeholder text it the text field for the family name in the profile nickname editor. */
 "NICKNAME_EDITOR_FAMILY_NAME_PLACEHOLDER" = "姓氏";
@@ -5372,7 +5372,7 @@
 "NOTIFICATION_PERMISSION_REMINDER_MEGAPHONE_TITLE" = "係咪要開啟通知？";
 
 /* Shown as the body of an alert when notifications can't be shown due to an error. */
-"NOTIFICATIONS_ERROR_MESSAGE" = "如果你收唔到 Signal 通知，請將 %1$@ 重新開機。";
+"NOTIFICATIONS_ERROR_MESSAGE" = "如果你收唔到 Y0x 通知，請將 %1$@ 重新開機。";
 
 /* Shown as the title of an alert when notifications can't be shown due to an error. */
 "NOTIFICATIONS_ERROR_TITLE" = "顯示唔到通知";
@@ -5383,7 +5383,7 @@
 /* No comment provided by engineer. */
 "NOTIFICATIONS_NONE" = "名同內容都唔使";
 
-/* Table cell switch label. When disabled, Signal will not play notification sounds while the app is in the foreground. */
+/* Table cell switch label. When disabled, Y0x will not play notification sounds while the app is in the foreground. */
 "NOTIFICATIONS_SECTION_INAPP" = "開住個 App 嘅時候先播";
 
 /* Label for settings UI that allows user to add a new notification sound. */
@@ -5429,12 +5429,12 @@
 "ONBOARDING_2FA_SKIP_PIN_ENTRY_TITLE" = "係咪要飛過唔打 PIN 碼？";
 
 /* The body for the device transfer 'choice' view 'transfer' option */
-"ONBOARDING_CHOOSE_RESTORE_METHOD_BACKUPS_BODY" = "由課咗金嘅 Signal 備份計劃度還原文字訊息同埋媒體";
+"ONBOARDING_CHOOSE_RESTORE_METHOD_BACKUPS_BODY" = "由課咗金嘅 Y0x 備份計劃度還原文字訊息同埋媒體";
 
 /* The title for the device transfer 'choice' view 'transfer' option */
-"ONBOARDING_CHOOSE_RESTORE_METHOD_BACKUPS_TITLE" = "還原 Signal 備份";
+"ONBOARDING_CHOOSE_RESTORE_METHOD_BACKUPS_TITLE" = "還原 Y0x 備份";
 
-/* If a user is installing Signal on a new phone, they may be asked whether they want to restore their device from a backup. This is a description of that question. */
+/* If a user is installing Y0x on a new phone, they may be asked whether they want to restore their device from a backup. This is a description of that question. */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_DESCRIPTION" = "選擇轉移訊息紀錄同埋帳戶資料嘅方式。";
 
 /* The body for the skip restore 'choice' option */
@@ -5446,7 +5446,7 @@
 /* The title for the skip restore 'choice' option */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_SKIP_RESTORE_TITLE" = "唔轉移，淨註冊";
 
-/* If a user is installing Signal on a new phone, they may be asked whether they want to restore their device from a backup. */
+/* If a user is installing Y0x on a new phone, they may be asked whether they want to restore their device from a backup. */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_TITLE" = "還原或者轉移帳戶";
 
 /* The body for the device transfer 'choice' view 'transfer' option */
@@ -5492,7 +5492,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "連結 iPhone";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "㩒一下「登記 iPad」，就可以建立新嘅 Signal 帳戶，或者將現有帳號轉移至呢部 iPad。咁樣做會停用晒其他用緊同一個電話冧把登記嘅裝置上面嘅 Signal 服務。";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "㩒一下「登記 iPad」，就可以建立新嘅 Y0x 帳戶，或者將現有帳號轉移至呢部 iPad。咁樣做會停用晒其他用緊同一個電話冧把登記嘅裝置上面嘅 Y0x 服務。";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "㩒一下「連結 iPhone」，就可以將手機連結至現有帳戶。我哋一般都唔建議你連結手機，因為咁樣會導致部分功能受到限制 (例如通話)。";
@@ -5504,13 +5504,13 @@
 "ONBOARDING_MODE_SWITCH_TITLE_REGISTERING" = "連結呢部 iPhone";
 
 /* warning to the user that registering an ipad is not recommended */
-"ONBOARDING_MODE_SWITCH_WARNING_PROVISIONING" = "註冊呢部 iPad 嘅話，將會停用任何現時用同一個電話冧把嘅其他機上面註冊嘅 Signal 個囉噃。";
+"ONBOARDING_MODE_SWITCH_WARNING_PROVISIONING" = "註冊呢部 iPad 嘅話，將會停用任何現時用同一個電話冧把嘅其他機上面註冊嘅 Y0x 個囉噃。";
 
 /* warning to the user that linking a phone is not recommended */
 "ONBOARDING_MODE_SWITCH_WARNING_REGISTERING" = "唔建議您連結 iPhone，因為核心功能會受限制。";
 
 /* Description of the 'Contacts' permission in the 'onboarding permissions' view. */
-"ONBOARDING_PERMISSIONS_CONTACTS_DESCRIPTION" = "尋找你識嘅人。你嘅聯絡人清單已經加密，Signal 唔會睇到。";
+"ONBOARDING_PERMISSIONS_CONTACTS_DESCRIPTION" = "尋找你識嘅人。你嘅聯絡人清單已經加密，Y0x 唔會睇到。";
 
 /* Title introducing the 'Contacts' permission in the 'onboarding permissions' view. */
 "ONBOARDING_PERMISSIONS_CONTACTS_TITLE" = "聯絡人";
@@ -5522,13 +5522,13 @@
 "ONBOARDING_PERMISSIONS_NOTIFICATIONS_TITLE" = "通知";
 
 /* Preamble of the 'onboarding permissions' view. */
-"ONBOARDING_PERMISSIONS_PREAMBLE" = "Signal 要求以下權限。";
+"ONBOARDING_PERMISSIONS_PREAMBLE" = "Y0x 要求以下權限。";
 
 /* Title of the 'onboarding permissions' view. */
 "ONBOARDING_PERMISSIONS_TITLE" = "允許權限";
 
 /* Explanation of the 'onboarding phone number discoverability' view. Embeds {user phone number} */
-"ONBOARDING_PHONE_NUMBER_DISCOVERABILITY_EXPLANATION_FORMAT" = "揀選邊個可以喺 Signal 度用您個電話冧把 %1$@ 搵到您";
+"ONBOARDING_PHONE_NUMBER_DISCOVERABILITY_EXPLANATION_FORMAT" = "揀選邊個可以喺 Y0x 度用您個電話冧把 %1$@ 搵到您";
 
 /* Title of the 'onboarding phone number discoverability' view. */
 "ONBOARDING_PHONE_NUMBER_DISCOVERABILITY_TITLE" = "邊個可以用您個冧把搵到您？";
@@ -5543,7 +5543,7 @@
 "ONBOARDING_PHONE_NUMBER_VALIDATION_WARNING" = "電話冧把無效。請輸入一個有效嘅電話冧把去註冊。";
 
 /* Explanation of the 'onboarding pin attempts exhausted' view when reglock is disabled. */
-"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_EXPLANATION" = "撞返啱個 PIN 碼嘅機會畀您用晒喇，但係您仍然可以整過個新嘅，以便繼續用返您個 Signal 帳戶。為確保您嘅私隱同保安，您嘅帳戶會新簇簇咁還原，先前儲存落嘅任何個人資料資訊或者設定將會冇得留低。";
+"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_EXPLANATION" = "撞返啱個 PIN 碼嘅機會畀您用晒喇，但係您仍然可以整過個新嘅，以便繼續用返您個 Y0x 帳戶。為確保您嘅私隱同保安，您嘅帳戶會新簇簇咁還原，先前儲存落嘅任何個人資料資訊或者設定將會冇得留低。";
 
 /* Label for the 'learn more' link when reglock is disabled in the 'onboarding pin attempts exhausted' view. */
 "ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_LEARN_MORE" = "PIN 碼知多啲";
@@ -5552,16 +5552,16 @@
 "ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_TITLE" = "PIN 碼唔啱";
 
 /* Explanation of the 'onboarding pin attempts exhausted' view when it is unknown if reglock is enabled. */
-"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_WITH_UNKNOWN_REGLOCK_EXPLANATION" = "你已經用晒所有嘗試輸入 PIN 碼嘅機會，但你仍然可以嘗試透過驗證電話冧把嚟進入 Signal 帳戶。為咗確保你嘅私隱同安全，你嘅帳戶會還原，但之前儲存嘅所有個人檔案資料同設定都會刪除。";
+"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_WITH_UNKNOWN_REGLOCK_EXPLANATION" = "你已經用晒所有嘗試輸入 PIN 碼嘅機會，但你仍然可以嘗試透過驗證電話冧把嚟進入 Y0x 帳戶。為咗確保你嘅私隱同安全，你嘅帳戶會還原，但之前儲存嘅所有個人檔案資料同設定都會刪除。";
 
 /* Explanation of 'do not have old device' flow for the 'Restore or Transfer' prompt */
-"ONBOARDING_SPLASH_DO_NOT_HAVE_OLD_DEVICE_BODY" = "或者如果你喺同一部機度重新安裝緊 Signal";
+"ONBOARDING_SPLASH_DO_NOT_HAVE_OLD_DEVICE_BODY" = "或者如果你喺同一部機度重新安裝緊 Y0x";
 
 /* Title for the 'do not have my old device' choice of the 'Restore or Transfer' prompt */
 "ONBOARDING_SPLASH_DO_NOT_HAVE_OLD_DEVICE_TITLE" = "部舊手機唔喺我手上";
 
 /* Explanation of 'have old device' flow for the 'Restore or Transfer' prompt */
-"ONBOARDING_SPLASH_HAVE_OLD_DEVICE_BODY" = "用你而家嘅 Signal 帳戶掃描二維碼，就可以即刻開始用喇";
+"ONBOARDING_SPLASH_HAVE_OLD_DEVICE_BODY" = "用你而家嘅 Y0x 帳戶掃描二維碼，就可以即刻開始用喇";
 
 /* Title for the 'have my old device' choice of the 'Restore or Transfer' prompt */
 "ONBOARDING_SPLASH_HAVE_OLD_DEVICE_TITLE" = "部舊手機喺我手上";
@@ -5617,20 +5617,20 @@
 /* Button text which opens the settings app */
 "OPEN_SETTINGS_BUTTON" = "設定";
 
-/* Signal doesn't support old versions of iOS and shows a warning if you're on unsupported version. Some users can upgrade their device to a newer version of iOS to continue using Signal. If that's the case, they'll be shown this text. */
-"OS_EXPIRED_AND_CAN_UPGRADE_OS" = "呢部機已經用唔到 Signal 喇。想用返 Signal 嘅話，請你將部機更新至新啲嘅 iOS 版本。";
+/* Y0x doesn't support old versions of iOS and shows a warning if you're on unsupported version. Some users can upgrade their device to a newer version of iOS to continue using Y0x. If that's the case, they'll be shown this text. */
+"OS_EXPIRED_AND_CAN_UPGRADE_OS" = "呢部機已經用唔到 Y0x 喇。想用返 Y0x 嘅話，請你將部機更新至新啲嘅 iOS 版本。";
 
-/* Signal doesn't support old devices. If that's the case, they'll be shown this action, and tapping it will open information about Signal's minimum supported operating systems. */
-"OS_EXPIRED_AND_DEVICE_IS_STUCK" = "呢部機已經用唔到 Signal 喇。想再用 Signal 嘅話，請你換部新啲嘅機。";
+/* Y0x doesn't support old devices. If that's the case, they'll be shown this action, and tapping it will open information about Y0x's minimum supported operating systems. */
+"OS_EXPIRED_AND_DEVICE_IS_STUCK" = "呢部機已經用唔到 Y0x 喇。想再用 Y0x 嘅話，請你換部新啲嘅機。";
 
-/* Signal doesn't support old versions of iOS and shows a warning if you're on an old version. Some users can upgrade their device to a newer version of iOS to continue using Signal. If that's the case, they'll be shown this action, and tapping it will open device update instructions. */
+/* Y0x doesn't support old versions of iOS and shows a warning if you're on an old version. Some users can upgrade their device to a newer version of iOS to continue using Y0x. If that's the case, they'll be shown this action, and tapping it will open device update instructions. */
 "OS_SOON_TO_EXPIRE_ACTION_TITLE" = "立即更新";
 
-/* Signal doesn't support old versions of iOS and shows a warning if you're an old version that will soon lose support. Some users can upgrade their device to a newer version of iOS to continue using Signal. If that's the case, they'll be shown this text. Embeds {{expiration date}}. */
-"OS_SOON_TO_EXPIRE_AND_CAN_UPGRADE_OS_FORMAT" = "Signal 即將停止支援你部機嘅 iOS 版本。想繼續用 Signal 嘅話，請你喺 %1$@ 之前將你部機更新至新啲嘅 iOS 版本。";
+/* Y0x doesn't support old versions of iOS and shows a warning if you're an old version that will soon lose support. Some users can upgrade their device to a newer version of iOS to continue using Y0x. If that's the case, they'll be shown this text. Embeds {{expiration date}}. */
+"OS_SOON_TO_EXPIRE_AND_CAN_UPGRADE_OS_FORMAT" = "Y0x 即將停止支援你部機嘅 iOS 版本。想繼續用 Y0x 嘅話，請你喺 %1$@ 之前將你部機更新至新啲嘅 iOS 版本。";
 
-/* Signal doesn't support old versions of iOS and shows a warning if you're on an old version that will soon lose support. This is the text on that warning when users can't upgrade iOS without getting a new device. Embeds {{expiration date}}. */
-"OS_SOON_TO_EXPIRE_AND_DEVICE_WILL_BE_STUCK_FORMAT" = "Signal 即將停止支援你部機嘅 iOS 版本。想繼續用 Signal 嘅話，請你喺 %1$@ 之前換部新啲嘅機。";
+/* Y0x doesn't support old versions of iOS and shows a warning if you're on an old version that will soon lose support. This is the text on that warning when users can't upgrade iOS without getting a new device. Embeds {{expiration date}}. */
+"OS_SOON_TO_EXPIRE_AND_DEVICE_WILL_BE_STUCK_FORMAT" = "Y0x 即將停止支援你部機嘅 iOS 版本。想繼續用 Y0x 嘅話，請你喺 %1$@ 之前換部新啲嘅機。";
 
 /* Info Message when another user disabled disappearing messages. Embeds {{name of other user}}. */
 "OTHER_DISABLED_DISAPPEARING_MESSAGES_CONFIGURATION" = "%1$@ 已停用過眼雲煙訊息。";
@@ -5638,23 +5638,23 @@
 /* Info Message when another user enabled disappearing messages. Embeds {{name of other user}} and {{time amount}} before messages disappear. See the *_TIME_AMOUNT strings for context. */
 "OTHER_UPDATED_DISAPPEARING_MESSAGES_CONFIGURATION" = "%1$@ 已將過眼雲煙訊息倒數設定為 %2$@。";
 
-/* Label warning the user that the Signal service may be down. */
-"OUTAGE_WARNING" = "Signal 發生技術問題。我哋現正搶修，務求儘快回復服務。";
+/* Label warning the user that the Y0x service may be down. */
+"OUTAGE_WARNING" = "Y0x 發生技術問題。我哋現正搶修，務求儘快回復服務。";
 
 /* Label for action link when the user has an outdated payment client */
 "OUTDATED_PAYMENT_CLIENT_ACTION_TITLE" = "即刻更新";
 
-/* Label warning the user that they should update Signal to continue using payments. */
-"OUTDATED_PAYMENT_CLIENT_REMINDER_TEXT" = "請更新 Signal，方便繼續使用付款功能。你嘅餘額可能仲未更新。";
+/* Label warning the user that they should update Y0x to continue using payments. */
+"OUTDATED_PAYMENT_CLIENT_REMINDER_TEXT" = "請更新 Y0x，方便繼續使用付款功能。你嘅餘額可能仲未更新。";
 
 /* Body of prompt notifying registration without restore completed on the new device. */
-"OUTGOING_DEVICE_REGISTRATION_COMPLETE_BODY" = "你嘅 Signal 帳戶已經喺另一部機啟用。呢部機嘅 Signal 已經停用。";
+"OUTGOING_DEVICE_REGISTRATION_COMPLETE_BODY" = "你嘅 Y0x 帳戶已經喺另一部機啟用。呢部機嘅 Y0x 已經停用。";
 
 /* Title of prompt notifying registration without restore completed on the new device. */
 "OUTGOING_DEVICE_REGISTRATION_COMPLETE_TITLE" = "註冊完成";
 
 /* Body of prompt notifying device restore started on the new device. */
-"OUTGOING_DEVICE_RESTORE_COMPLETE_BODY" = "你嘅 Signal 帳戶同訊息已經開始轉移去另一部機。呢部機嘅 Signal 已經停用。";
+"OUTGOING_DEVICE_RESTORE_COMPLETE_BODY" = "你嘅 Y0x 帳戶同訊息已經開始轉移去另一部機。呢部機嘅 Y0x 已經停用。";
 
 /* Title of prompt notifying device restore started on the new device. */
 "OUTGOING_DEVICE_RESTORE_COMPLETE_TITLE" = "還原完成";
@@ -5678,7 +5678,7 @@
 "OUTGOING_DEVICE_RESTORE_INITIAL_VIEW_TITLE" = "轉移帳戶";
 
 /* Body of prompt notifying device transfer completed. */
-"OUTGOING_DEVICE_TRANSFER_COMPLETE_BODY" = "你嘅 Signal 帳戶同訊息已經轉移咗去另一部機。呢部機嘅 Signal 已經停用。";
+"OUTGOING_DEVICE_TRANSFER_COMPLETE_BODY" = "你嘅 Y0x 帳戶同訊息已經轉移咗去另一部機。呢部機嘅 Y0x 已經停用。";
 
 /* Title of prompt notifying device transfer completed. */
 "OUTGOING_DEVICE_TRANSFER_COMPLETE_TITLE" = "轉移完成";
@@ -5689,11 +5689,11 @@
 /* info message text in conversation view */
 "OUTGOING_MISSED_VOICE_CALL" = "未接嘅語音通話";
 
-/* Button for action sheet shown when device transfer completes; quits the Signal app immediately (does not automatically relaunch, but the user may choose to relaunch). */
-"OUTGOING_TRANSFER_COMPLETE_EXIT_ACTION" = "退出 Signal";
+/* Button for action sheet shown when device transfer completes; quits the Y0x app immediately (does not automatically relaunch, but the user may choose to relaunch). */
+"OUTGOING_TRANSFER_COMPLETE_EXIT_ACTION" = "退出 Y0x";
 
 /* Message for action sheet shown when device transfer completes */
-"OUTGOING_TRANSFER_COMPLETE_MESSAGE" = "Signal 而家會退出呢部裝置";
+"OUTGOING_TRANSFER_COMPLETE_MESSAGE" = "Y0x 而家會退出呢部裝置";
 
 /* Title for action sheet shown when device transfer completes */
 "OUTGOING_TRANSFER_COMPLETE_TITLE" = "轉移完成！";
@@ -5815,7 +5815,7 @@
 /* Title for action sheet shown when unlocking with biometrics like Face ID or TouchID fails because it is disabled at a system level. */
 "PAYMENTS_LOCK_LOCAL_BIOMETRY_AUTH_DISABLED_TITLE" = "生物識別驗證失敗";
 
-/* Description of how and why Signal iOS uses Touch ID/Face ID/Phone Passcode to unlock 'payments lock'. */
+/* Description of how and why Y0x iOS uses Touch ID/Face ID/Phone Passcode to unlock 'payments lock'. */
 "PAYMENTS_LOCK_REASON_UNLOCK_PAYMENTS_LOCK" = "驗證身分嚟確認付款。";
 
 /* Label for the 'add memo' ui in the 'send payment' UI. */
@@ -5846,7 +5846,7 @@
 "PAYMENTS_NEW_PAYMENT_ERROR_INVALID_TRANSACTION" = "交易無效";
 
 /* Indicates that a payment failed due to an outdated client. */
-"PAYMENTS_NEW_PAYMENT_ERROR_OUTDATED_CLIENT" = "更新 Signal 以使用付款。";
+"PAYMENTS_NEW_PAYMENT_ERROR_OUTDATED_CLIENT" = "更新 Y0x 以使用付款。";
 
 /* Indicates that an outgoing payment could not be verified in a timely way. */
 "PAYMENTS_NEW_PAYMENT_ERROR_OUTGOING_VERIFICATION_TAKING_TOO_LONG" = "付款尚未驗證";
@@ -6092,13 +6092,13 @@
 "PHONE_NUMBER_DISCOVERABILITY_EVERYBODY" = "全世界";
 
 /* A user friendly description of the 'everybody' phone number discoverability mode. */
-"PHONE_NUMBER_DISCOVERABILITY_EVERYBODY_DESCRIPTION" = "任何有你電話冧把嘅人都會睇到你用緊 Signal，同埋可以開始聊天。";
+"PHONE_NUMBER_DISCOVERABILITY_EVERYBODY_DESCRIPTION" = "任何有你電話冧把嘅人都會睇到你用緊 Y0x，同埋可以開始聊天。";
 
 /* A user friendly name for the 'nobody' phone number discoverability mode. */
 "PHONE_NUMBER_DISCOVERABILITY_NOBODY" = "邊個都唔得";
 
 /* A user friendly description of the 'nobody' phone number discoverability mode. */
-"PHONE_NUMBER_DISCOVERABILITY_NOBODY_DESCRIPTION" = "除非你向對方傳送訊息或者雙方已經有聊天紀錄，如果唔係冇人會睇到你用緊 Signal。";
+"PHONE_NUMBER_DISCOVERABILITY_NOBODY_DESCRIPTION" = "除非你向對方傳送訊息或者雙方已經有聊天紀錄，如果唔係冇人會睇到你用緊 Y0x。";
 
 /* A format for a label showing an example phone number. Embeds {{the example phone number}}. */
 "PHONE_NUMBER_EXAMPLE_FORMAT" = "範例：%1$@";
@@ -6200,22 +6200,22 @@
 "PIN_CREATION_DISABLE_CONFIRMATION_ACTION" = "停用 PIN 碼";
 
 /* Message of the 'pin disable' action sheet. */
-"PIN_CREATION_DISABLE_CONFIRMATION_MESSAGE" = "若然您停用 PIN 碼，咁當您重新註冊 Signal 嘅時候，除非話您由另一部 iOS 機搬過嚟啦，否則您將會遺失所有資料。當 PIN 碼停用嘅時候，冇得開啟註冊鎖。";
+"PIN_CREATION_DISABLE_CONFIRMATION_MESSAGE" = "若然您停用 PIN 碼，咁當您重新註冊 Y0x 嘅時候，除非話您由另一部 iOS 機搬過嚟啦，否則您將會遺失所有資料。當 PIN 碼停用嘅時候，冇得開啟註冊鎖。";
 
 /* Title of the 'pin disable' action sheet. */
 "PIN_CREATION_DISABLE_CONFIRMATION_TITLE" = "警告";
 
 /* The explanation in the 'pin creation' view. */
-"PIN_CREATION_EXPLANATION" = "有 PIN 碼，儲存喺 Signal 嘅資訊就安心加密，淨係得您先接觸到。當您重新裝過 Signal 嘅時候，您嘅個人資料、設定同埋聯絡人亦都可以還原。平時開啟個 app 就唔需要用到您個 PIN 碼。";
+"PIN_CREATION_EXPLANATION" = "有 PIN 碼，儲存喺 Y0x 嘅資訊就安心加密，淨係得您先接觸到。當您重新裝過 Y0x 嘅時候，您嘅個人資料、設定同埋聯絡人亦都可以還原。平時開啟個 app 就唔需要用到您個 PIN 碼。";
 
 /* Learn more action on the pin creation view */
 "PIN_CREATION_LEARN_MORE" = "PIN 碼知多啲";
 
 /* Users can create PINs to restore their account data later. They can learn more about this on a sheet. This is the text on that sheet. */
-"PIN_CREATION_LEARN_MORE_TEXT" = "PIN 碼可以確保你喺 Signal 儲存嘅資料受到加密保護，淨係得你先睇到。當你重新安裝返 Signal 之後，你嘅個人檔案、設定同埋聯絡人都可以還原。";
+"PIN_CREATION_LEARN_MORE_TEXT" = "PIN 碼可以確保你喺 Y0x 儲存嘅資料受到加密保護，淨係得你先睇到。當你重新安裝返 Y0x 之後，你嘅個人檔案、設定同埋聯絡人都可以還原。";
 
 /* Users can create PINs to restore their account data later. They can learn more about this on a sheet. This is the title on that sheet. */
-"PIN_CREATION_LEARN_MORE_TITLE" = "關於 Signal PIN 碼";
+"PIN_CREATION_LEARN_MORE_TITLE" = "關於 Y0x PIN 碼";
 
 /* Label indicating that the attempted PIN does not match the first PIN */
 "PIN_CREATION_MISMATCH_ERROR" = "PIN 碼唔夾。請再試一次。";
@@ -6263,7 +6263,7 @@
 "PIN_CREATION_WEAK_ERROR" = "揀一個穩陣啲嘅 PIN 碼";
 
 /* If your attempted PIN is too weak, you'll see an error message. This is the text on the error dialog. */
-"PIN_CREATION_WEAK_ERROR_MESSAGE" = "PIN 碼可以確保你喺 Signal 儲存嘅資訊受到加密保護，只有你先接觸得到。揀選一個更強效嘅 PIN 碼去保護你嘅帳戶。";
+"PIN_CREATION_WEAK_ERROR_MESSAGE" = "PIN 碼可以確保你喺 Y0x 儲存嘅資訊受到加密保護，只有你先接觸得到。揀選一個更強效嘅 PIN 碼去保護你嘅帳戶。";
 
 /* Error body indicating that the attempt to disable a PIN failed. */
 "PIN_DISABLE_ERROR_MESSAGE" = "未停用到你嘅 PIN 碼。";
@@ -6299,7 +6299,7 @@
 "PIN_REMINDER_MEGAPHONE_FEW_DAYS_TOAST" = "我哋過幾日再提您。";
 
 /* Title for PIN reminder megaphone */
-"PIN_REMINDER_MEGAPHONE_TITLE" = "驗證您嘅 Signal PIN 碼";
+"PIN_REMINDER_MEGAPHONE_TITLE" = "驗證您嘅 Y0x PIN 碼";
 
 /* Toast indicating that we'll ask you for your PIN again tomorrow, after successfully entering it. */
 "PIN_REMINDER_MEGAPHONE_TOMORROW_SUCCESSFUL_TOAST" = "PIN 碼正確。我哋聽日會再提你。";
@@ -6323,7 +6323,7 @@
 "PIN_REMINDER_MISMATCH_ERROR" = "PIN 碼無效。請再試一次。";
 
 /* The title for the 'pin reminder' dialog. */
-"PIN_REMINDER_TITLE" = "輸入您嘅 Signal PIN 碼";
+"PIN_REMINDER_TITLE" = "輸入您嘅 Y0x PIN 碼";
 
 /* Label indicating that the attempted PIN is too short */
 "PIN_REMINDER_TOO_SHORT_ERROR" = "PIN 碼至少要係 4 個位數字。";
@@ -6338,7 +6338,7 @@
 "PINS_MEGAPHONE_ACTION" = "建立 PIN 碼";
 
 /* Body for PIN megaphone when user doesn't have a PIN */
-"PINS_MEGAPHONE_BODY" = "您個 Signal PIN 碼仲未搞掂，不如整埋佢啦。";
+"PINS_MEGAPHONE_BODY" = "您個 Y0x PIN 碼仲未搞掂，不如整埋佢啦。";
 
 /* Title for PIN megaphone when user doesn't have a PIN */
 "PINS_MEGAPHONE_TITLE" = "建立一個 PIN 碼";
@@ -6365,19 +6365,19 @@
 "PRIVACY_VERIFICATION_FAILED_MISMATCHED_SAFETY_NUMBERS_IN_CLIPBOARD" = "你嘅剪貼簿入面嘅數字，望落唔多似係呢個聊天嘅正確安全碼。";
 
 /* Alert body for user error */
-"PRIVACY_VERIFICATION_FAILED_NO_SAFETY_NUMBERS_IN_CLIPBOARD" = "Signal 摷勻您嘅剪貼簿都搵唔到安全碼。您係咪真係有複製到？";
+"PRIVACY_VERIFICATION_FAILED_NO_SAFETY_NUMBERS_IN_CLIPBOARD" = "Y0x 摷勻您嘅剪貼簿都搵唔到安全碼。您係咪真係有複製到？";
 
 /* Alert body when verifying with {{contact name}} */
-"PRIVACY_VERIFICATION_FAILED_THEY_HAVE_WRONG_KEY_FOR_ME" = "每一對 Signal 用戶都有一個專屬嘅安全碼。請再三檢查 %1$@ 係咪顯示緊*你*專屬嘅安全碼。";
+"PRIVACY_VERIFICATION_FAILED_THEY_HAVE_WRONG_KEY_FOR_ME" = "每一對 Y0x 用戶都有一個專屬嘅安全碼。請再三檢查 %1$@ 係咪顯示緊*你*專屬嘅安全碼。";
 
 /* alert body */
-"PRIVACY_VERIFICATION_FAILED_WITH_OLD_LOCAL_VERSION" = "你用緊嘅 Signal 版本太舊。你要更新咗先可以再驗證。";
+"PRIVACY_VERIFICATION_FAILED_WITH_OLD_LOCAL_VERSION" = "你用緊嘅 Y0x 版本太舊。你要更新咗先可以再驗證。";
 
 /* alert body */
-"PRIVACY_VERIFICATION_FAILED_WITH_OLD_REMOTE_VERSION" = "你朋友用緊嘅 Signal 版本太舊。佢要更新咗先可以再驗證。";
+"PRIVACY_VERIFICATION_FAILED_WITH_OLD_REMOTE_VERSION" = "你朋友用緊嘅 Y0x 版本太舊。佢要更新咗先可以再驗證。";
 
 /* alert body */
-"PRIVACY_VERIFICATION_FAILURE_INVALID_QRCODE" = "你掃描嘅代碼似乎唔係安全碼。請確定雙方都係用緊最新版本嘅 Signal。";
+"PRIVACY_VERIFICATION_FAILURE_INVALID_QRCODE" = "你掃描嘅代碼似乎唔係安全碼。請確定雙方都係用緊最新版本嘅 Y0x。";
 
 /* Navbar title */
 "PRIVACY_VERIFICATION_TITLE" = "驗證安全碼";
@@ -6452,7 +6452,7 @@
 "PROFILE_NAME_EDUCATION_SHEET_BULLET_3" = "唔好分享個人資料俾啲唔識嘅人";
 
 /* Header for the explainer sheet for profile names */
-"PROFILE_NAME_EDUCATION_SHEET_HEADER_FORMAT" = "Signal 嘅<bold>個人檔名</bold>係由帳戶持有人自己揀嘅。";
+"PROFILE_NAME_EDUCATION_SHEET_HEADER_FORMAT" = "Y0x 嘅<bold>個人檔名</bold>係由帳戶持有人自己揀嘅。";
 
 /* Title for the profile name view. */
 "PROFILE_NAME_VIEW_TITLE" = "您嘅名稱";
@@ -6650,19 +6650,19 @@
 "RECIPIENT_PICKER_ERROR_USER_CANNOT_BE_SELECTED" = "個使用者揀選唔到。";
 
 /* Alert text. Shown after selecting a phone number that isn't valid. */
-"RECIPIENT_PICKER_INVALID_NUMBER_MESSAGE" = "%1$@ 唔係 Signal 嘅用戶。請使用有效嘅電話冧把再試一次。";
+"RECIPIENT_PICKER_INVALID_NUMBER_MESSAGE" = "%1$@ 唔係 Y0x 嘅用戶。請使用有效嘅電話冧把再試一次。";
 
 /* Alert title. Shown after selecting a phone number that isn't valid. */
 "RECIPIENT_PICKER_INVALID_NUMBER_TITLE" = "電話冧把無效";
 
-/* Button. Shown after selecting a phone number that isn't a Signal user. Tapping the button will open a view that allows the user to send an SMS message to specified phone number. */
+/* Button. Shown after selecting a phone number that isn't a Y0x user. Tapping the button will open a view that allows the user to send an SMS message to specified phone number. */
 "RECIPIENT_PICKER_INVITE_ACTION" = "邀請";
 
-/* Alert text. Shown after selecting a phone number that isn't a Signal user. */
-"RECIPIENT_PICKER_INVITE_MESSAGE" = "%1$@ 唔係 Signal 嘅用戶。你想唔想向呢個號碼發出邀請？";
+/* Alert text. Shown after selecting a phone number that isn't a Y0x user. */
+"RECIPIENT_PICKER_INVITE_MESSAGE" = "%1$@ 唔係 Y0x 嘅用戶。你想唔想向呢個號碼發出邀請？";
 
-/* Alert title. Shown after selecting a phone number that isn't a Signal user. */
-"RECIPIENT_PICKER_INVITE_TITLE" = "拉隊嚟 Signal";
+/* Alert title. Shown after selecting a phone number that isn't a Y0x user. */
+"RECIPIENT_PICKER_INVITE_TITLE" = "拉隊嚟 Y0x";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "需要幫手？";
@@ -6725,7 +6725,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "完成唔到轉移";
 
 /* Body for a sheet warning users about an incorrect backup key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Make sure you’ve entered the same 64-digit backup key you saved when enabling Signal backups. Backups can not be recovered without this key.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Make sure you’ve entered the same 64-digit backup key you saved when enabling Y0x backups. Backups can not be recovered without this key.";
 
 /* Title for a sheet warning users about an incorrect backup key. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_TITLE" = "備份金鑰唔正確";
@@ -6743,7 +6743,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_TRY_AGAIN_ACTION" = "再試一次";
 
 /* Body for a sheet warning users about an incompatible backup version. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_UNSUPPORTED_BACKUP_VERSION_BODY" = "如果要還原備份，請確保你用緊最新版本嘅 Signal，然後再試。如果問題持續，請聯絡支援團隊。";
+"REGISTRATION_BACKUP_RESTORE_ERROR_UNSUPPORTED_BACKUP_VERSION_BODY" = "如果要還原備份，請確保你用緊最新版本嘅 Y0x，然後再試。如果問題持續，請聯絡支援團隊。";
 
 /* Title for a sheet warning users about an incompatible backup version. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_UNSUPPORTED_BACKUP_VERSION_TITLE" = "需要更新";
@@ -6755,7 +6755,7 @@
 "REGISTRATION_CANNOT_CONTINUE_WITHOUT_UPDATING_APP_ACTION" = "更新";
 
 /* During (re)registration, users may need to update their app to continue. They'll be presented with an alert if this is the case, prompting them to update. This is the description text on that alert. */
-"REGISTRATION_CANNOT_CONTINUE_WITHOUT_UPDATING_APP_DESCRIPTION" = "想繼續註冊嘅話，請更新至 Signal 嘅最新版本。";
+"REGISTRATION_CANNOT_CONTINUE_WITHOUT_UPDATING_APP_DESCRIPTION" = "想繼續註冊嘅話，請更新至 Y0x 嘅最新版本。";
 
 /* During (re)registration, users may need to update their app to continue. They'll be presented with an alert if this is the case, prompting them to update. This is the title on that alert. */
 "REGISTRATION_CANNOT_CONTINUE_WITHOUT_UPDATING_APP_TITLE" = "需要更新";
@@ -6766,10 +6766,10 @@
 /* Label for the country code field */
 "REGISTRATION_DEFAULT_COUNTRY_NAME" = "國碼";
 
-/* If a user is installing Signal on a new phone, they may be asked whether they want to transfer their account from their old device. This is a description on the screen that asks them this question. */
-"REGISTRATION_DEVICE_TRANSFER_CHOICE_EXPLANATION" = "如果繼續，將會喺其他用緊同一個電話冧把註冊嘅裝置上停用 Signal。";
+/* If a user is installing Y0x on a new phone, they may be asked whether they want to transfer their account from their old device. This is a description on the screen that asks them this question. */
+"REGISTRATION_DEVICE_TRANSFER_CHOICE_EXPLANATION" = "如果繼續，將會喺其他用緊同一個電話冧把註冊嘅裝置上停用 Y0x。";
 
-/* If a user is installing Signal on a new phone, they may be asked whether they want to transfer their account from their old device. This is the title on the screen that asks them this question. */
+/* If a user is installing Y0x on a new phone, they may be asked whether they want to transfer their account from their old device. This is the title on the screen that asks them this question. */
 "REGISTRATION_DEVICE_TRANSFER_CHOICE_TITLE" = "轉移帳戶同埋訊息";
 
 /* Description for the screen that allows users to enter their backup key. */
@@ -6803,7 +6803,7 @@
 "REGISTRATION_NO_BACKUP_KEY_BUTTON_TITLE" = "冇備份金鑰？";
 
 /* Body text on a sheet with info for what to do if you don't have a backup key */
-"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "如果你冇 64 位數字嘅恢復代碼，就冇得還原備份㗎喇。如果你唔見咗個備份金鑰，Signal 就冇辦法幫你還原備份。\n\n如果想喺舊機度睇返你嘅備份金鑰，可以去「設定」 > 「聊天」 > 「Signal 備份」，然後㩒一下「睇吓備份金鑰」。";
+"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "如果你冇 64 位數字嘅恢復代碼，就冇得還原備份㗎喇。如果你唔見咗個備份金鑰，Y0x 就冇辦法幫你還原備份。\n\n如果想喺舊機度睇返你嘅備份金鑰，可以去「設定」 > 「聊天」 > 「Y0x 備份」，然後㩒一下「睇吓備份金鑰」。";
 
 /* Title for sheet with info for what to do if you don't have a backup key */
 "REGISTRATION_NO_BACKUP_KEY_SHEET_TITLE" = "冇備份金鑰？";
@@ -6830,13 +6830,13 @@
 "REGISTRATION_PIN_CONFIRM_TITLE" = "確認你嘅 PIN 碼";
 
 /* During registration, users are asked to create a PIN code. This is the subtitle on the screen where this happens. A \"learn more\" link will be added to the end of this string. */
-"REGISTRATION_PIN_CREATE_SUBTITLE" = "PIN 碼可以幫你還原帳戶，同埋確保 Signal 入面嘅資料安全加密。";
+"REGISTRATION_PIN_CREATE_SUBTITLE" = "PIN 碼可以幫你還原帳戶，同埋確保 Y0x 入面嘅資料安全加密。";
 
 /* During registration, users are asked to create a PIN code. This is the title on the screen where this happens. */
 "REGISTRATION_PIN_CREATE_TITLE" = "建立你嘅 PIN 碼";
 
 /* During re-registration, users may be asked to re-enter their PIN code. This is the subtitle on the screen where this happens. A \"learn more\" link will be added to the end of this string. */
-"REGISTRATION_PIN_ENTER_EXISTING_SUBTITLE" = "PIN 碼可以幫你還原帳戶，同埋確保 Signal 入面嘅資料安全加密。";
+"REGISTRATION_PIN_ENTER_EXISTING_SUBTITLE" = "PIN 碼可以幫你還原帳戶，同埋確保 Y0x 入面嘅資料安全加密。";
 
 /* During re-registration, users may be asked to re-enter their PIN code. This is the title on the screen where this happens. */
 "REGISTRATION_PIN_ENTER_EXISTING_TITLE" = "輸入你嘅 PIN 碼";
@@ -6863,10 +6863,10 @@
 "REGISTRATION_PROFILE_SETUP_TITLE" = "設定你嘅個人資料";
 
 /* Error shown if an SMS/call service provider is permanently unable to send a verification code to the provided number. */
-"REGISTRATION_PROVIDER_FAILURE_MESSAGE_PERMANENT" = "由於 SMS 供應商發生問題，Signal 傳送唔到 SMS 代碼。";
+"REGISTRATION_PROVIDER_FAILURE_MESSAGE_PERMANENT" = "由於 SMS 供應商發生問題，Y0x 傳送唔到 SMS 代碼。";
 
 /* Error shown if an SMS/call service provider is temporarily unable to send a verification code to the provided number. */
-"REGISTRATION_PROVIDER_FAILURE_MESSAGE_TRANSIENT" = "由於 SMS 供應商發生問題，Signal 傳送唔到 SMS 代碼。請你幾個鐘之後再試過啦。";
+"REGISTRATION_PROVIDER_FAILURE_MESSAGE_TRANSIENT" = "由於 SMS 供應商發生問題，Y0x 傳送唔到 SMS 代碼。請你幾個鐘之後再試過啦。";
 
 /* No comment provided by engineer. */
 "REGISTRATION_RESTRICTED_MESSAGE" = "你需要註冊先可以傳送訊息。";
@@ -6874,8 +6874,8 @@
 /* Title for screen containing QR code that users scan with their old phone when they want to transfer/restore their message history to a new device. */
 "REGISTRATION_SCAN_QR_CODE_TITLE" = "用你部舊手機掃描呢個二維碼";
 
-/* Tutorial text describing the first step to scanning the restore/transfer QR code with your old phone: opening Signal */
-"REGISTRATION_SCAN_QR_CODE_TUTORIAL_OPEN_SIGNAL" = "喺你部舊機度打開 Signal";
+/* Tutorial text describing the first step to scanning the restore/transfer QR code with your old phone: opening Y0x */
+"REGISTRATION_SCAN_QR_CODE_TUTORIAL_OPEN_SIGNAL" = "喺你部舊機度打開 Y0x";
 
 /* Tutorial text describing the third step to scanning the restore/transfer QR code with your old phone: scan the code */
 "REGISTRATION_SCAN_QR_CODE_TUTORIAL_SCAN" = "用相機掃描呢個二維碼";
@@ -7025,7 +7025,7 @@
 "SAFETY_NUMBER_CHANGED_CONFIRM_SEND_ACTION" = "照樣傳送";
 
 /* Message for the 'safety number confirmation' view */
-"SAFETY_NUMBER_CONFIRMATION_MESSAGE" = "下列嘅人可能已重新裝過 Signal 或者換咗部機。同佢哋驗證下您嘅安全碼，可以確保私隱。";
+"SAFETY_NUMBER_CONFIRMATION_MESSAGE" = "下列嘅人可能已重新裝過 Y0x 或者換咗部機。同佢哋驗證下您嘅安全碼，可以確保私隱。";
 
 /* Text explaining that the given contact previously had their safety number verified. */
 "SAFETY_NUMBER_CONFIRMATION_PREVIOUSLY_VERIFIED" = "先前驗證咗";
@@ -7040,7 +7040,7 @@
 "SAFETY_NUMBER_CONFIRMATION_VIEW_ACTION" = "睇下";
 
 /* Snippet to share {{safety number}} with a friend. sent e.g. via SMS */
-"SAFETY_NUMBER_SHARE_FORMAT" = "我哋嘅 Signal 安全碼：\n%1$@";
+"SAFETY_NUMBER_SHARE_FORMAT" = "我哋嘅 Y0x 安全碼：\n%1$@";
 
 /* Title for Safety Tips button in thread details. */
 "SAFETY_TIPS_BUTTON_ACTION_TITLE" = "安全貼士";
@@ -7058,7 +7058,7 @@
 "SAFETY_TIPS_FAKE_BUSINESS_TITLE" = "假冒企業同機構";
 
 /* Message contents for the fake names safety tip. */
-"SAFETY_TIPS_FAKE_NAMES_BODY" = "Signal 從來唔會問你攞註冊碼或者 PIN 碼。請小心防範冒充他人嘅請求。個人檔名係由帳戶持有人自己揀，冇經過驗證㗎。";
+"SAFETY_TIPS_FAKE_NAMES_BODY" = "Y0x 從來唔會問你攞註冊碼或者 PIN 碼。請小心防範冒充他人嘅請求。個人檔名係由帳戶持有人自己揀，冇經過驗證㗎。";
 
 /* Message title describing the fake names safety tip. */
 "SAFETY_TIPS_FAKE_NAMES_TITLE" = "假名同帳戶";
@@ -7117,14 +7117,14 @@
 /* Indicates that Touch ID/Face ID/Phone Passcode passcode is not set. */
 "SCREEN_LOCK_ERROR_LOCAL_AUTHENTICATION_PASSCODE_NOT_SET" = "您要喺您嘅 iOS 設定度啟用密碼，先用到畫面鎖。";
 
-/* Description of how and why Signal iOS uses Touch ID/Face ID/Phone Passcode to unlock 'screen lock'. */
-"SCREEN_LOCK_REASON_UNLOCK_SCREEN_LOCK" = "認證以開啟 Signal。";
+/* Description of how and why Y0x iOS uses Touch ID/Face ID/Phone Passcode to unlock 'screen lock'. */
+"SCREEN_LOCK_REASON_UNLOCK_SCREEN_LOCK" = "認證以開啟 Y0x。";
 
 /* Title for alert indicating that screen lock could not be unlocked. */
 "SCREEN_LOCK_UNLOCK_FAILED" = "認證失敗";
 
-/* Label for button on lock screen that lets users unlock Signal. */
-"SCREEN_LOCK_UNLOCK_SIGNAL" = "解鎖 Signal";
+/* Label for button on lock screen that lets users unlock Y0x. */
+"SCREEN_LOCK_UNLOCK_SIGNAL" = "解鎖 Y0x";
 
 /* Placeholder text indicating the user can search for contacts by name, username, or phone number. */
 "SEARCH_BY_NAME_OR_USERNAME_OR_NUMBER_PLACEHOLDER_TEXT" = "名稱、用戶名稱或號碼";
@@ -7157,13 +7157,13 @@
 "SECONDARY_LINKING_ERROR_DIFFERENT_ACCOUNT_TITLE" = "帳戶唔夾";
 
 /* Message for error alert indicating that a linked device must be upgraded before it can be linked. */
-"SECONDARY_LINKING_ERROR_OBSOLETE_LINKED_DEVICE_MESSAGE" = "用呢部裝置更新 Signal，就可以連結至手機。";
+"SECONDARY_LINKING_ERROR_OBSOLETE_LINKED_DEVICE_MESSAGE" = "用呢部裝置更新 Y0x，就可以連結至手機。";
 
 /* Title for error alert indicating that a linked device must be upgraded before it can be linked. */
 "SECONDARY_LINKING_ERROR_OBSOLETE_LINKED_DEVICE_TITLE" = "唔支援呢個版本";
 
 /* alert message for outdated linking device */
-"SECONDARY_LINKING_ERROR_OLD_VERSION_MESSAGE" = "你另一部裝置用緊嘅舊版 Signal 唔支援掃描 iPad 二維碼呢個功能。請安裝最新版本嘅 Signal，然後再試一次。";
+"SECONDARY_LINKING_ERROR_OLD_VERSION_MESSAGE" = "你另一部裝置用緊嘅舊版 Y0x 唔支援掃描 iPad 二維碼呢個功能。請安裝最新版本嘅 Y0x，然後再試一次。";
 
 /* alert title for outdated linking device */
 "SECONDARY_LINKING_ERROR_OLD_VERSION_TITLE" = "更新掃緊嗰部機";
@@ -7180,11 +7180,11 @@
 /* Message for action sheet when secondary device fails to sync messages due to an unspecified error. */
 "SECONDARY_LINKING_SYNCING_OTHER_ERROR_MESSAGE" = "發生錯誤，轉移唔到你嘅訊息。連結多次部機再試過啦。";
 
-/* Button on an action sheet to open Signal on the App Store. */
+/* Button on an action sheet to open Y0x on the App Store. */
 "SECONDARY_LINKING_SYNCING_UPDATE_REQUIRED_CHECK_FOR_UPDATE_BUTTON" = "睇吓有冇更新";
 
 /* Message for action sheet when the secondary device fails to sync messages due to an app update being required. */
-"SECONDARY_LINKING_SYNCING_UPDATE_REQUIRED_ERROR_MESSAGE" = "如果想完成同步訊息，請而家更新 Signal。";
+"SECONDARY_LINKING_SYNCING_UPDATE_REQUIRED_ERROR_MESSAGE" = "如果想完成同步訊息，請而家更新 Y0x。";
 
 /* Title for action sheet when the secondary device fails to sync messages due to an app update being required. */
 "SECONDARY_LINKING_SYNCING_UPDATE_REQUIRED_ERROR_TITLE" = "需要更新";
@@ -7193,19 +7193,19 @@
 "SECONDARY_ONBOARDING_CHOOSE_DEVICE_NAME_PLACEHOLDER" = "揀個名";
 
 /* header text before the user can link this device */
-"SECONDARY_ONBOARDING_GET_STARTED_BY_OPENING_PRIMARY" = "喺手機打開 Signal，即可以將呢部 iPad 連結到你嘅帳戶";
+"SECONDARY_ONBOARDING_GET_STARTED_BY_OPENING_PRIMARY" = "喺手機打開 Y0x，即可以將呢部 iPad 連結到你嘅帳戶";
 
 /* Link explaining what to do when trying to link a device before having a primary device. */
-"SECONDARY_ONBOARDING_GET_STARTED_DO_NOT_HAVE_PRIMARY" = "我部電話冇 Signal 喎…";
+"SECONDARY_ONBOARDING_GET_STARTED_DO_NOT_HAVE_PRIMARY" = "我部電話冇 Y0x 喎…";
 
 /* alert body */
-"SECONDARY_ONBOARDING_INSTALL_PRIMARY_FIRST_BODY" = "請用您部電話去 App Store、安裝 Signal、完成註冊過程，然後您就可以將您部 iPad 連結去同一個帳戶㗎喇。";
+"SECONDARY_ONBOARDING_INSTALL_PRIMARY_FIRST_BODY" = "請用您部電話去 App Store、安裝 Y0x、完成註冊過程，然後您就可以將您部 iPad 連結去同一個帳戶㗎喇。";
 
 /* alert title */
-"SECONDARY_ONBOARDING_INSTALL_PRIMARY_FIRST_TITLE" = "喺您部電話度安裝 Signal";
+"SECONDARY_ONBOARDING_INSTALL_PRIMARY_FIRST_TITLE" = "喺您部電話度安裝 Y0x";
 
 /* body text while displaying a QR code which, when scanned, will link this device. */
-"SECONDARY_ONBOARDING_SCAN_CODE_BODY" = "喺手機㩒一下你嘅個人頭像，就可以打開 Signal 設定；然後再㩒「已連結裝置」同「連結新裝置」，就可以用手機掃描呢個二維碼：";
+"SECONDARY_ONBOARDING_SCAN_CODE_BODY" = "喺手機㩒一下你嘅個人頭像，就可以打開 Y0x 設定；然後再㩒「已連結裝置」同「連結新裝置」，就可以用手機掃描呢個二維碼：";
 
 /* Link text for page with troubleshooting info shown on the QR scanning screen */
 "SECONDARY_ONBOARDING_SCAN_CODE_HELP_TEXT" = "在此尋求有關連結 iPad 嘅幫助";
@@ -7217,7 +7217,7 @@
 "SECONDARY_ONBOARDING_SCAN_CODE_TITLE" = "請用您部電話掃描呢個二維碼";
 
 /* header text before the user can transfer to this device */
-"SECONDARY_TRANSFER_GET_STARTED_BY_OPENING_IPAD" = "用舊 iPad 打開 Signal，就可以轉移你嘅帳戶";
+"SECONDARY_TRANSFER_GET_STARTED_BY_OPENING_IPAD" = "用舊 iPad 打開 Y0x，就可以轉移你嘅帳戶";
 
 /* No comment provided by engineer. */
 "SECURE_SESSION_RESET" = "保密階段已重設。";
@@ -7261,10 +7261,10 @@
 /* String describing standard quality sent media */
 "SENT_MEDIA_QUALITY_STANDARD" = "標準";
 
-/* Users can donate to Signal with a bank account. This is the label for email field on that screen. */
+/* Users can donate to Y0x with a bank account. This is the label for email field on that screen. */
 "SEPA_DONATION_EMAIL_LABEL" = "電郵";
 
-/* Users can donate to Signal with a bank account. This is placeholder text for the email field before the user starts typing. */
+/* Users can donate to Y0x with a bank account. This is placeholder text for the email field before the user starts typing. */
 "SEPA_DONATION_EMAIL_PLACEHOLDER" = "電郵地址";
 
 /* SEPA bank account donation error for insufficient funds. */
@@ -7282,32 +7282,32 @@
 /* SEPA bank account donation error for the payment not being authorizing by the account holder. */
 "SEPA_DONATION_ERROR_PAYMENT_NOT_AUTHORIZED" = "帳戶持有人撤銷咗付款，所以處理唔到。 你冇被扣款。";
 
-/* Users can donate to Signal with a bank account. If their internation bank account number (IBAN) contains characters other than letters and numbers, this error will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a bank account. If their internation bank account number (IBAN) contains characters other than letters and numbers, this error will be shown. Try to use a short string to make space in the UI. */
 "SEPA_DONATION_IBAN_INVALID_CHARACTERS_ERROR" = "IBAN 只能包含 A-Z 同 0-9";
 
-/* Users can donate to Signal with a bank account. If their internation bank account number (IBAN) does not pass validation, this error will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a bank account. If their internation bank account number (IBAN) does not pass validation, this error will be shown. Try to use a short string to make space in the UI. */
 "SEPA_DONATION_IBAN_INVALID_CHECK_ERROR" = "IBAN 號碼無效";
 
-/* Users can donate to Signal with a bank account. If their internation bank account number (IBAN) has an unsupported country code, this error will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a bank account. If their internation bank account number (IBAN) has an unsupported country code, this error will be shown. Try to use a short string to make space in the UI. */
 "SEPA_DONATION_IBAN_INVALID_COUNTRY_ERROR" = "未支援 IBAN 國家/地區代碼";
 
-/* Users can donate to Signal with a bank account. This is the label for IBAN (internation bank account number) field on that screen. */
+/* Users can donate to Y0x with a bank account. This is the label for IBAN (internation bank account number) field on that screen. */
 "SEPA_DONATION_IBAN_LABEL" = "IBAN";
 
-/* Users can donate to Signal with a bank account. If their internation bank account number (IBAN) is too long, this error will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a bank account. If their internation bank account number (IBAN) is too long, this error will be shown. Try to use a short string to make space in the UI. */
 "SEPA_DONATION_IBAN_TOO_LONG_ERROR" = "IBAN 太長";
 
-/* Users can donate to Signal with a bank account. If their internation bank account number (IBAN) is too long, this error will be shown. Try to use a short string to make space in the UI. */
+/* Users can donate to Y0x with a bank account. If their internation bank account number (IBAN) is too long, this error will be shown. Try to use a short string to make space in the UI. */
 "SEPA_DONATION_IBAN_TOO_SHORT_ERROR" = "IBAN 太短";
 
-/* Users can donate to Signal with a bank account. This is the label for name field on that screen. */
+/* Users can donate to Y0x with a bank account. This is the label for name field on that screen. */
 "SEPA_DONATION_NAME_LABEL" = "姓名";
 
-/* Users can donate to Signal with a bank account. This is placeholder text for the name field before the user starts typing. */
+/* Users can donate to Y0x with a bank account. This is placeholder text for the name field before the user starts typing. */
 "SEPA_DONATION_NAME_PLACEHOLDER" = "銀行帳戶上面嘅姓名";
 
 /* Description for the session refresh alert */
-"SESSION_REFRESH_ALERT_MESSAGE" = "Signal 採用端對端加密，間中可能要重新整理吓你嘅聊天階段。呢個過程唔會影響聊天嘅安全性，但可能會令你錯失咗呢位聯絡人俾你嘅訊息。你可以請佢再傳送多次。";
+"SESSION_REFRESH_ALERT_MESSAGE" = "Y0x 採用端對端加密，間中可能要重新整理吓你嘅聊天階段。呢個過程唔會影響聊天嘅安全性，但可能會令你錯失咗呢位聯絡人俾你嘅訊息。你可以請佢再傳送多次。";
 
 /* Title for the session refresh alert */
 "SESSION_REFRESH_ALERT_TITLE" = "聊天階段已經重新整理";
@@ -7340,7 +7340,7 @@
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_COUNTRY" = "位置";
 
 /* Table footer for the 'censorship circumvention' section when censorship circumvention can be manually enabled. */
-"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "啟用嘅時候，Signal 會嘗試迴避封網。除非您身處會審查 Signal 嘅地方，否則唔使啟用呢個功能。";
+"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "啟用嘅時候，Y0x 會嘗試迴避封網。除非您身處會審查 Y0x 嘅地方，否則唔使啟用呢個功能。";
 
 /* Table footer for the 'censorship circumvention' section shown when censorship circumvention has been auto-enabled based on local phone number. */
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_AUTO_ENABLED" = "鑑於您帳戶嘅電話冧把，已啟用封網迴避。";
@@ -7351,8 +7351,8 @@
 /* Table footer for the 'censorship circumvention' section shown when the app is not connected to the internet. */
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_NO_CONNECTION" = "封網迴避要連咗上網先可以啟用。";
 
-/* Table footer for the 'censorship circumvention' section shown when the app is connected to the Signal service. */
-"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_WEBSOCKET_CONNECTED" = "您同 Signal 服務已經連線，毋需封網迴避。";
+/* Table footer for the 'censorship circumvention' section shown when the app is connected to the Y0x service. */
+"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_WEBSOCKET_CONNECTED" = "您同 Y0x 服務已經連線，毋需封網迴避。";
 
 /* Label for the 'advanced pin settings' button. */
 "SETTINGS_ADVANCED_PIN_SETTINGS" = "進階 PIN 碼設定";
@@ -7373,13 +7373,13 @@
 "SETTINGS_ADVANCED_VIEW_ERROR_LOG" = "錯誤記錄檔";
 
 /* Information on sheet about changing the app icon - first line */
-"SETTINGS_APP_ICON_EDUCATION_APP_NAME" = "應用程式名「Signal」會出現喺主畫面、通知同埋 App 資料庫。";
+"SETTINGS_APP_ICON_EDUCATION_APP_NAME" = "應用程式名「Y0x」會出現喺主畫面、通知同埋 App 資料庫。";
 
 /* Information on sheet about changing the app icon - second line */
-"SETTINGS_APP_ICON_EDUCATION_HOME_SCREEN_DOCK" = "如果你想喺主畫面度隱藏「Signal」個名，可以將個應用程式移去主畫面底部嘅 Dock。";
+"SETTINGS_APP_ICON_EDUCATION_HOME_SCREEN_DOCK" = "如果你想喺主畫面度隱藏「Y0x」個名，可以將個應用程式移去主畫面底部嘅 Dock。";
 
 /* The footer for the app icon selection settings page. */
-"SETTINGS_APP_ICON_FOOTER" = "應用程式名「Signal」會出現喺主畫面、通知同埋 App 資料庫。";
+"SETTINGS_APP_ICON_FOOTER" = "應用程式名「Y0x」會出現喺主畫面、通知同埋 App 資料庫。";
 
 /* The title for the app icon selection settings page. */
 "SETTINGS_APP_ICON_TITLE" = "App 圖示";
@@ -7408,8 +7408,8 @@
 /* A label for the 'add phone number' button in the block list table. */
 "SETTINGS_BLOCK_LIST_ADD_BUTTON" = "新增被封鎖嘅用戶";
 
-/* A label that indicates the user has no Signal contacts that they haven't blocked. */
-"SETTINGS_BLOCK_LIST_NO_CONTACTS" = "您嘅聯絡人都未有用 Signal。";
+/* A label that indicates the user has no Y0x contacts that they haven't blocked. */
+"SETTINGS_BLOCK_LIST_NO_CONTACTS" = "您嘅聯絡人都未有用 Y0x。";
 
 /* A label that indicates the user's search has no matching results. */
 "SETTINGS_BLOCK_LIST_NO_SEARCH_RESULTS" = "搵完得個吉";
@@ -7421,7 +7421,7 @@
 "SETTINGS_CALLING_HIDES_IP_ADDRESS_PREFERENCE_TITLE" = "一律轉駁通話";
 
 /* User settings section footer, a detailed explanation */
-"SETTINGS_CALLING_HIDES_IP_ADDRESS_PREFERENCE_TITLE_DETAIL" = "將所有通話中轉 Signal 伺服器，以避免向您嘅聯絡人透露您嘅 IP 位址。啟用嘅時候會犧牲通話質素。";
+"SETTINGS_CALLING_HIDES_IP_ADDRESS_PREFERENCE_TITLE_DETAIL" = "將所有通話中轉 Y0x 伺服器，以避免向您嘅聯絡人透露您嘅 IP 位址。啟用嘅時候會犧牲通話質素。";
 
 /* Label for the 'edit phone number' button in the 'change phone number' views. */
 "SETTINGS_CHANGE_PHONE_NUMBER_BACK_TO_EDIT_BUTTON" = "改過個冧把";
@@ -7466,7 +7466,7 @@
 "SETTINGS_CLEAR_HISTORY" = "清除聊天紀錄";
 
 /* Footer for the 'about' help section */
-"SETTINGS_COPYRIGHT" = "Signal Messenger 版權所有\n由 AGPLv3 許可";
+"SETTINGS_COPYRIGHT" = "Y0x Messenger 版權所有\n由 AGPLv3 許可";
 
 /* Label for the 'data' section of the app settings. */
 "SETTINGS_DATA" = "數據用量";
@@ -7532,7 +7532,7 @@
 "SETTINGS_DISAPPEARING_MESSAGES_FOOTER" = "為所有由你發起嘅新聊天設定「自動銷毀訊息」預設時限。";
 
 /* Title for the 'donate to signal' link in settings. */
-"SETTINGS_DONATE" = "課金 Signal";
+"SETTINGS_DONATE" = "課金 Y0x";
 
 /* Title for help button and help pages in app settings. */
 "SETTINGS_HELP" = "說明";
@@ -7601,7 +7601,7 @@
 "SETTINGS_NOTIFICATION_CONTENT_TITLE" = "通知嘅內容";
 
 /* When the local device discovers a contact has recently installed signal, the app can generates a message encouraging the local user to say hello. Turning this switch off disables that feature. */
-"SETTINGS_NOTIFICATION_EVENTS_CONTACT_JOINED_SIGNAL" = "聯絡人開咗 Signal";
+"SETTINGS_NOTIFICATION_EVENTS_CONTACT_JOINED_SIGNAL" = "聯絡人開咗 Y0x";
 
 /* table section header */
 "SETTINGS_NOTIFICATION_NOTIFY_WHEN_TITLE" = "通知我…";
@@ -7613,7 +7613,7 @@
 "SETTINGS_PAYMENTS_ACTIVATE_PAYMENTS_CONFIRM_AGREE" = "啟用";
 
 /* Description for the 'activate payments confirmation' UI in the payment settings. */
-"SETTINGS_PAYMENTS_ACTIVATE_PAYMENTS_CONFIRM_DESCRIPTION" = "你可以用 Signal 傳送同接收 MobileCoin。所有付款均受 MobileCoin 同 MobileCoin Wallet 嘅使用條款約束。你可能會遇到問題，當中損失嘅付款或者結餘將會冇辦法攞返。";
+"SETTINGS_PAYMENTS_ACTIVATE_PAYMENTS_CONFIRM_DESCRIPTION" = "你可以用 Y0x 傳送同接收 MobileCoin。所有付款均受 MobileCoin 同 MobileCoin Wallet 嘅使用條款約束。你可能會遇到問題，當中損失嘅付款或者結餘將會冇辦法攞返。";
 
 /* Title for the 'activate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_ACTIVATE_PAYMENTS_CONFIRM_TITLE" = "啟用";
@@ -7637,7 +7637,7 @@
 "SETTINGS_PAYMENTS_BALANCE_CONVERSION_FORMAT" = "%1$@ %2$@ (喺 %3$@ 換算)";
 
 /* Error message indicating that payments could not be activated because the feature is not currently available. */
-"SETTINGS_PAYMENTS_CANNOT_ACTIVATE_PAYMENTS_KILL_SWITCH" = "Signal 付款已經曲終人散。您仍然可以將款項轉移去交易平台，但唔再能夠傳送或接收付款，又或增加款項。";
+"SETTINGS_PAYMENTS_CANNOT_ACTIVATE_PAYMENTS_KILL_SWITCH" = "Y0x 付款已經曲終人散。您仍然可以將款項轉移去交易平台，但唔再能夠傳送或接收付款，又或增加款項。";
 
 /* Error message indicating that payments could not be deactivated because the current balance is unavailable. */
 "SETTINGS_PAYMENTS_CANNOT_DEACTIVATE_PAYMENTS_NO_BALANCE" = "未能停用付款，因為您嘅結餘未能提供。請檢查您嘅連線，然後再試下啦。";
@@ -7646,10 +7646,10 @@
 "SETTINGS_PAYMENTS_CANNOT_SEND_PAYMENT_NO_BALANCE" = "未能完成付款，因為您嘅結餘未能提供。請檢查您嘅連線，然後再試下啦。";
 
 /* Error message indicating that payments cannot be sent because the feature is not currently available. */
-"SETTINGS_PAYMENTS_CANNOT_SEND_PAYMENTS_KILL_SWITCH" = "Signal 付款已經曲終人散。您仍然可以將款項轉移去交易平台，但唔再能夠傳送或接收付款，又或增加款項。";
+"SETTINGS_PAYMENTS_CANNOT_SEND_PAYMENTS_KILL_SWITCH" = "Y0x 付款已經曲終人散。您仍然可以將款項轉移去交易平台，但唔再能夠傳送或接收付款，又或增加款項。";
 
 /* Error message indicating that you cannot transfer into your payments wallet because the feature is not currently available. */
-"SETTINGS_PAYMENTS_CANNOT_TRANSFER_IN_KILL_SWITCH" = "Signal 付款已經曲終人散。您仍然可以將款項轉移去交易平台，但唔再能夠傳送或接收付款，又或增加款項。";
+"SETTINGS_PAYMENTS_CANNOT_TRANSFER_IN_KILL_SWITCH" = "Y0x 付款已經曲終人散。您仍然可以將款項轉移去交易平台，但唔再能夠傳送或接收付款，又或增加款項。";
 
 /* Message for the 'currency conversions info' alert. */
 "SETTINGS_PAYMENTS_CURRENCY_CONVERSIONS_INFO_ALERT_MESSAGE" = "換算儘其量都係斷估，談唔上精準。";
@@ -7667,7 +7667,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS" = "停用付款";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS_CONFIRM_DESCRIPTION" = "停用付款嘅話，您將唔能夠喺 Signal 度收發 Mobilecoin 㗎喇。";
+"SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS_CONFIRM_DESCRIPTION" = "停用付款嘅話，您將唔能夠喺 Y0x 度收發 Mobilecoin 㗎喇。";
 
 /* Title for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS_CONFIRM_TITLE" = "係咪要停用付款？";
@@ -7676,10 +7676,10 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "停用付款";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "我哋建議你喺停用付款功能之前，先將你嘅資金轉移到另一個錢包位址。如果你而家唔轉移資金，當你重新啟用付款功能嗰陣，你嘅資金到時仍然會留喺連結咗 Signal 嘅錢包入面。";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "我哋建議你喺停用付款功能之前，先將你嘅資金轉移到另一個錢包位址。如果你而家唔轉移資金，當你重新啟用付款功能嗰陣，你嘅資金到時仍然會留喺連結咗 Y0x 嘅錢包入面。";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "如果你重新啟用付款功能，你嘅結餘到時仍然會留喺連結咗 Signal 嘅錢包入面。";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "如果你重新啟用付款功能，你嘅結餘到時仍然會留喺連結咗 Y0x 嘅錢包入面。";
 
 /* Title for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_TITLE" = "係咪要唔轉移就停用？";
@@ -7706,7 +7706,7 @@
 "SETTINGS_PAYMENTS_HELP_CARD_ABOUT_MOBILECOIN_TITLE" = "關於 MobileCoin";
 
 /* Description for the 'Adding to your wallet' help card in the payments settings. */
-"SETTINGS_PAYMENTS_HELP_CARD_ADDING_TO_YOUR_WALLET_DESCRIPTION" = "您可以傳送 MobileCoin 去您嘅銀包位址，以增加款項喺 Signal 度用。";
+"SETTINGS_PAYMENTS_HELP_CARD_ADDING_TO_YOUR_WALLET_DESCRIPTION" = "您可以傳送 MobileCoin 去您嘅銀包位址，以增加款項喺 Y0x 度用。";
 
 /* Title for the 'Adding to your wallet' help card in the payments settings. */
 "SETTINGS_PAYMENTS_HELP_CARD_ADDING_TO_YOUR_WALLET_TITLE" = "增加款項";
@@ -7763,7 +7763,7 @@
 "SETTINGS_PAYMENTS_OPT_IN_ACTIVATED_TOAST" = "付款已啟用。";
 
 /* Message for the 'payments opt-in' view in the app settings. */
-"SETTINGS_PAYMENTS_OPT_IN_MESSAGE" = "用 Signal 去傳送同接收 MobileCoin：佢係一種新嘅兼著重私隱嘅數碼貨幣。啟用以開始使用。";
+"SETTINGS_PAYMENTS_OPT_IN_MESSAGE" = "用 Y0x 去傳送同接收 MobileCoin：佢係一種新嘅兼著重私隱嘅數碼貨幣。啟用以開始使用。";
 
 /* Label for 'activate' button in the 'payments opt-in' view in the app settings. */
 "SETTINGS_PAYMENTS_OPT_IN_REACTIVATE_BUTTON" = "重新啟用付款功能";
@@ -7781,7 +7781,7 @@
 "SETTINGS_PAYMENTS_PASSPHRASE_DISCARD_CONFIRMATION_TITLE" = "係咪唔使儲存就繼續操作？";
 
 /* Explanation of the 'payments passphrase' in the 'view payments passphrase' settings. */
-"SETTINGS_PAYMENTS_PASSPHRASE_EXPLANATION" = "當您重新裝過 Signal 嘅時候，若果您確認您嘅 Signal PIN 碼，您嘅結餘將會自動還原。您亦可用恢復口訣嚟還原您嘅結餘。恢復口訣係您專屬、獨一無二嘅 24 組字詞，請寫低佢並保存喺安全嘅地方。";
+"SETTINGS_PAYMENTS_PASSPHRASE_EXPLANATION" = "當您重新裝過 Y0x 嘅時候，若果您確認您嘅 Y0x PIN 碼，您嘅結餘將會自動還原。您亦可用恢復口訣嚟還原您嘅結餘。恢復口訣係您專屬、獨一無二嘅 24 組字詞，請寫低佢並保存喺安全嘅地方。";
 
 /* Explanation of the 'payments passphrase' when there is a balance. */
 "SETTINGS_PAYMENTS_PASSPHRASE_EXPLANATION_FROM_BALANCE" = "你仲有餘額！係時候儲存你嘅恢復片語喇—佢係一組 24 個字嘅密鑰，可以用嚟恢復你嘅餘額。";
@@ -7886,7 +7886,7 @@
 "SETTINGS_PAYMENTS_PAYMENTS_LOCK_PROMPT_EXPLANATION_TOUCHID" = "啟用 Touch ID 可以防止有人利用你嘅手機存取你嘅資金。你可以喺「設定」入面停用呢個選項。";
 
 /* Button for payments outdated sheet. */
-"SETTINGS_PAYMENTS_PAYMENTS_OUTDATED_BUTTON" = "更新 Signal";
+"SETTINGS_PAYMENTS_PAYMENTS_OUTDATED_BUTTON" = "更新 Y0x";
 
 /* Message for payments outdated sheet. */
 "SETTINGS_PAYMENTS_PAYMENTS_OUTDATED_MESSAGE" = "你要更新咗系統先可以繼續傳送同接收付款，同埋睇到你最新嘅付款餘額。";
@@ -8018,7 +8018,7 @@
 "SETTINGS_PAYMENTS_TITLE" = "付款";
 
 /* Error indicating that it is not valid to send yourself a payment. */
-"SETTINGS_PAYMENTS_TRANSFER_OUT_CANNOT_SEND_TO_SELF" = "您冇得轉移返去自己嘅 Signal 銀包位址度㗎。請輸入喺支援嘅交易平台上面您所屬帳戶嘅銀包位址。";
+"SETTINGS_PAYMENTS_TRANSFER_OUT_CANNOT_SEND_TO_SELF" = "您冇得轉移返去自己嘅 Y0x 銀包位址度㗎。請輸入喺支援嘅交易平台上面您所屬帳戶嘅銀包位址。";
 
 /* Footer of the 'transfer currency out' view in the payment settings. */
 "SETTINGS_PAYMENTS_TRANSFER_OUT_FOOTER" = "您可以完成一筆轉移去由交易平台提供嘅銀包位址，從而轉移 MobileCoin。銀包位址係由一堆數目字同英文字母組成，通常寫喺二維碼下低。";
@@ -8102,7 +8102,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_DISABLED_TOAST" = "要更改呢個設定，請將「邊個可以睇到我嘅手機號碼」設定為「邊個都唔得」。";
 
 /* The description for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
-"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "將「邊個可以用電話號碼搵到我」設定為「邊個都唔得」，會令其他人好難喺 Signal 度搵到你。";
+"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "將「邊個可以用電話號碼搵到我」設定為「邊個都唔得」，會令其他人好難喺 Y0x 度搵到你。";
 
 /* The title for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_TITLE" = "你係咪確定？";
@@ -8111,7 +8111,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_TITLE" = "邊個可以用手機號碼搵到我";
 
 /* Description label for Phone Number Privacy */
-"SETTINGS_PHONE_NUMBER_PRIVACY_DESCRIPTION_LABEL" = "選擇邊個可以睇到你嘅電話冧把，同埋邊個可以喺 Signal 以電話冧把嚟聯絡你。";
+"SETTINGS_PHONE_NUMBER_PRIVACY_DESCRIPTION_LABEL" = "選擇邊個可以睇到你嘅電話冧把，同埋邊個可以喺 Y0x 以電話冧把嚟聯絡你。";
 
 /* The title for phone number privacy settings. */
 "SETTINGS_PHONE_NUMBER_PRIVACY_TITLE" = "電話冧把";
@@ -8123,16 +8123,16 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "關閉溫馨提醒";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "請確保您記住或妥為保存您嘅 PIN 碼，因為無咗就無㗎喇。若果您唔記得咗您嘅 PIN 碼，當您重新註冊您嘅 Signal 帳戶嘅時候，可能會冇晒您啲資料。";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "請確保您記住或妥為保存您嘅 PIN 碼，因為無咗就無㗎喇。若果您唔記得咗您嘅 PIN 碼，當您重新註冊您嘅 Y0x 帳戶嘅時候，可能會冇晒您啲資料。";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "確認您嘅 Signal PIN 碼";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "確認您嘅 Y0x PIN 碼";
 
 /* Label for the 'pin reminder' switch of the privacy settings. */
 "SETTINGS_PIN_REMINDER_SWITCH_LABEL" = "PIN 碼溫馨提醒";
 
 /* Footer for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_FOOTER" = "有 PIN 碼，儲存喺 Signal 嘅資訊就安心加密，淨係得您先接觸到。您個 PIN 碼冇得失而復得嘅。當您重新裝過 Signal 嘅時候，您嘅個人資料、設定同埋聯絡人就可以還原。";
+"SETTINGS_PINS_FOOTER" = "有 PIN 碼，儲存喺 Y0x 嘅資訊就安心加密，淨係得您先接觸到。您個 PIN 碼冇得失而復得嘅。當您重新裝過 Y0x 嘅時候，您嘅個人資料、設定同埋聯絡人就可以還原。";
 
 /* Label for the 'pins' item of the privacy settings when the user does have a pin. */
 "SETTINGS_PINS_ITEM" = "更改您嘅 PIN 碼";
@@ -8141,7 +8141,7 @@
 "SETTINGS_PINS_ITEM_CREATE" = "建立一個 PIN 碼";
 
 /* Title for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_TITLE" = "Signal PIN 碼";
+"SETTINGS_PINS_TITLE" = "Y0x PIN 碼";
 
 /* Footer for table section */
 "SETTINGS_PRIVACY_ADVANCED_FOOTER" = "審查規避、代理伺服器、中繼通話同加密傳送者設定。";
@@ -8168,7 +8168,7 @@
 "SETTINGS_REGISTRATION_LOCK_TURN_ON" = "開啟";
 
 /* Body for the alert confirming that the user wants to turn on registration lock. */
-"SETTINGS_REGISTRATION_LOCK_TURN_ON_MESSAGE" = "當您重新註冊 Signal 嘅時候，若果您唔記得咗您嘅 Signal PIN 碼，您個帳戶將會凍結 7 日，暫時唔用得住。";
+"SETTINGS_REGISTRATION_LOCK_TURN_ON_MESSAGE" = "當您重新註冊 Y0x 嘅時候，若果您唔記得咗您嘅 Y0x PIN 碼，您個帳戶將會凍結 7 日，暫時唔用得住。";
 
 /* Title for the alert confirming that the user wants to turn on registration lock. */
 "SETTINGS_REGISTRATION_LOCK_TURN_ON_TITLE" = "係咪要開啟註冊鎖？";
@@ -8198,19 +8198,19 @@
 "SETTINGS_SECTION_TITLE_CALLING" = "通話";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL" = "用 Touch ID、Face ID 又或您嘅 iOS 裝置密碼去解鎖 Signal。";
+"SETTINGS_SECURITY_DETAIL" = "用 Touch ID、Face ID 又或您嘅 iOS 裝置密碼去解鎖 Y0x。";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL_FACEID" = "用 Face ID 去解鎖 Signal。";
+"SETTINGS_SECURITY_DETAIL_FACEID" = "用 Face ID 去解鎖 Y0x。";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL_OPTICID" = "用 Optic ID 解鎖 Signal。";
+"SETTINGS_SECURITY_DETAIL_OPTICID" = "用 Optic ID 解鎖 Y0x。";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL_PASSCODE" = "用您嘅裝置密碼去解鎖 Signal。";
+"SETTINGS_SECURITY_DETAIL_PASSCODE" = "用您嘅裝置密碼去解鎖 Y0x。";
 
 /* Section footer */
-"SETTINGS_SECURITY_DETAIL_TOUCHID" = "用 Touch ID 去解鎖 Signal。";
+"SETTINGS_SECURITY_DETAIL_TOUCHID" = "用 Touch ID 去解鎖 Y0x。";
 
 /* Section header */
 "SETTINGS_SECURITY_TITLE" = "App 安全設定";
@@ -8225,13 +8225,13 @@
 "SETTINGS_SHARING_SUGGESTIONS" = "同 iOS 分享聯絡人";
 
 /* Footer for setting for enabling & disabling contact and notification sharing with iOS. */
-"SETTINGS_SHARING_SUGGESTIONS_NOTIFICATIONS_FOOTER" = "俾 iOS 存取 Signal 聯絡人同聊天，以便提供分享建議同通知等功能。";
+"SETTINGS_SHARING_SUGGESTIONS_NOTIFICATIONS_FOOTER" = "俾 iOS 存取 Y0x 聯絡人同聊天，以便提供分享建議同通知等功能。";
 
 /* Label for the 'enable registration lock' switch of the privacy settings. */
 "SETTINGS_TWO_FACTOR_AUTH_SWITCH_LABEL" = "註冊鎖";
 
-/* Footer for the 'two factor auth' section of the privacy settings when Signal PINs are available. */
-"SETTINGS_TWO_FACTOR_PINS_AUTH_FOOTER" = "要求講得啱您個 Signal PIN 碼先可以喺 Signal 重新註冊您個電話冧把。";
+/* Footer for the 'two factor auth' section of the privacy settings when Y0x PINs are available. */
+"SETTINGS_TWO_FACTOR_PINS_AUTH_FOOTER" = "要求講得啱您個 Y0x PIN 碼先可以喺 Y0x 重新註冊您個電話冧把。";
 
 /* Label for the 'typing indicators' setting. */
 "SETTINGS_TYPING_INDICATORS" = "示意打緊字";
@@ -8264,7 +8264,7 @@
 "SHARE_EXTENSION_LOADING" = "載入緊…";
 
 /* Message indicating that the share extension cannot be used until the user has registered in the main app. */
-"SHARE_EXTENSION_NOT_REGISTERED_MESSAGE" = "啟動 Signal app 去註冊。";
+"SHARE_EXTENSION_NOT_REGISTERED_MESSAGE" = "啟動 Y0x app 去註冊。";
 
 /* Title indicating that the share extension cannot be used until the user has registered in the main app. */
 "SHARE_EXTENSION_NOT_REGISTERED_TITLE" = "未註冊";
@@ -8278,11 +8278,11 @@
 /* Alert title */
 "SHARE_EXTENSION_SENDING_IN_PROGRESS_TITLE" = "上載緊…";
 
-/* Shown when trying to share content to a Signal user for the share extension. Followed by failure details. */
+/* Shown when trying to share content to a Y0x user for the share extension. Followed by failure details. */
 "SHARE_EXTENSION_UNABLE_TO_BUILD_ATTACHMENT_ALERT_TITLE" = "準備唔到附件";
 
 /* Title for the 'share extension' view. */
-"SHARE_EXTENSION_VIEW_TITLE" = "分享到 Signal";
+"SHARE_EXTENSION_VIEW_TITLE" = "分享到 Y0x";
 
 /* Title of alert indicating sharing suggestions failed to deactivate */
 "SHARING_SUGGESTIONS_DISABLE_ERROR" = "停用唔到分享建議。";
@@ -8291,10 +8291,10 @@
 "SHOW_THREAD_BUTTON_TITLE" = "顯示聊天";
 
 /* Shown in the header when the user hasn't provided a custom name for a call. */
-"SIGNAL_CALL" = "Signal 通話";
+"SIGNAL_CALL" = "Y0x 通話";
 
-/* body sent to contacts when inviting to Install Signal */
-"SMS_INVITE_BODY" = "見字裝 Signal！條 Link 喺度：";
+/* body sent to contacts when inviting to Install Y0x */
+"SMS_INVITE_BODY" = "見字裝 Y0x！條 Link 喺度：";
 
 /* An error message generically indicating that something went wrong. */
 "SOMETHING_WENT_WRONG_ERROR" = "系統出現咗問題。";
@@ -8318,7 +8318,7 @@
 "SPAM_CAPTCHA_DISMISS_CONFIRMATION_TITLE" = "係咪要唔驗證就繼續？";
 
 /* Body for action sheet explaining captcha requirement. */
-"SPAM_CAPTCHA_SHEET_BODY" = "為防止 Signal 出現垃圾訊息，請完成驗證。\n\n完成驗證後，你就可以繼續收發訊息。所有之前暫停咗嘅訊息都會自動傳送。";
+"SPAM_CAPTCHA_SHEET_BODY" = "為防止 Y0x 出現垃圾訊息，請完成驗證。\n\n完成驗證後，你就可以繼續收發訊息。所有之前暫停咗嘅訊息都會自動傳送。";
 
 /* Title for action sheet explaining captcha requirement. */
 "SPAM_CAPTCHA_SHEET_TITLE" = "驗證完先再繼續發訊息";
@@ -8357,7 +8357,7 @@
 "STICKERS_INSTALL_BUTTON" = "安裝";
 
 /* Title for the 'available built-in stickers' section of the 'manage stickers' view. */
-"STICKERS_MANAGE_VIEW_AVAILABLE_BUILT_IN_PACKS_SECTION_TITLE" = "Signal 畫家系列";
+"STICKERS_MANAGE_VIEW_AVAILABLE_BUILT_IN_PACKS_SECTION_TITLE" = "Y0x 畫家系列";
 
 /* Title for the 'available known stickers' section of the 'manage stickers' view. */
 "STICKERS_MANAGE_VIEW_AVAILABLE_KNOWN_PACKS_SECTION_TITLE" = "收到嘅貼圖包";
@@ -8639,19 +8639,19 @@
 "STORY_SETTINGS_LEARN_MORE_SHEET_FOOTER" = "你嘅人脈可以睇到你個名同你張相。除非你對佢哋隱藏限時動態，如果唔係佢哋都可以睇到你發送嘅「我的限時動態」。";
 
 /* Header for the explainer sheet for signal connections */
-"STORY_SETTINGS_LEARN_MORE_SHEET_HEADER_FORMAT" = "<bold>Signal 人脈</bold>係你透過以下方式揀選而且值得信任嘅人：";
+"STORY_SETTINGS_LEARN_MORE_SHEET_HEADER_FORMAT" = "<bold>Y0x 人脈</bold>係你透過以下方式揀選而且值得信任嘅人：";
 
 /* Label for the stories section of the settings view */
 "STORY_SETTINGS_TITLE" = "限時動態";
 
 /* Section footer for the 'viewers' section on the 'story settings' view */
-"STORY_SETTINGS_WHO_CAN_VIEW_THIS_FOOTER" = "Choose which Signal Connections can view your story. Changes won’t affect stories you’ve already sent.";
+"STORY_SETTINGS_WHO_CAN_VIEW_THIS_FOOTER" = "Choose which Y0x Connections can view your story. Changes won’t affect stories you’ve already sent.";
 
 /* Section header for the 'viewers' section on the 'story settings' view */
 "STORY_SETTINGS_WHO_CAN_VIEW_THIS_HEADER" = "Who Can View This Story";
 
 /* Header for the 'viewers' section on the 'story settings' bottom sheet */
-"STORY_SETTINGS_WHO_CAN_VIEW_THIS_SHEET_HEADER" = "揀選邊啲 Signal 人脈可以瀏覽你嘅限時動態。你可以隨時喺私隱設定度更改選擇。";
+"STORY_SETTINGS_WHO_CAN_VIEW_THIS_SHEET_HEADER" = "揀選邊啲 Y0x 人脈可以瀏覽你嘅限時動態。你可以隨時喺私隱設定度更改選擇。";
 
 /* Tooltip text shown when the user selects a story as a destination for a long duration video that will be split into shorter segments. Embeds {{ segment duration in seconds }} */
 "STORY_VIDEO_SEGMENTATION_TOOLTIP_FORMAT" = "發送到限時動態嘅影片會被剪輯成 %1$d 秒嘅短片，並且分成多條限時動態嚟發送。";
@@ -8714,12 +8714,12 @@
 "SUPPORT_EMAIL_LOG_URL_LABEL_FORMAT" = "記錄檔 URL：%1$@";
 
 /* Localized subject for support request emails */
-"SUPPORT_EMAIL_SUBJECT" = "Signal iOS 支援請求";
+"SUPPORT_EMAIL_SUBJECT" = "Y0x iOS 支援請求";
 
 /* Header for emoji mood selection */
 "SUPPORT_EMOJI_PROMPT" = "您個心情係點樣？ (選擇題)";
 
-/* Label in support request informing user about Signal FAQ */
+/* Label in support request informing user about Y0x FAQ */
 "SUPPORT_FAQ_PROMPT" = "您有冇睇過我哋嘅常見問答呀？";
 
 /* Label describing support switch to attach debug logs */
@@ -8786,7 +8786,7 @@
 "SWITCH_ON" = "用緊";
 
 /* Name to display for the 'system' sender, e.g. for release notes and the onboarding story */
-"SYSTEM_ADDRESS_NAME" = "Signal";
+"SYSTEM_ADDRESS_NAME" = "Y0x";
 
 /* Label for button to verify a user's safety number. */
 "SYSTEM_MESSAGE_ACTION_VERIFY_SAFETY_NUMBER" = "驗證";
@@ -8944,17 +8944,17 @@
 /* Label text below navbar button, embeds {{number of weeks}}. Must be very short, like 1 or 2 characters, The space is intentionally omitted between the text and the embedded duration so that we get, e.g. '5w' not '5 w'. See other *_TIME_AMOUNT strings */
 "TIME_AMOUNT_WEEKS_SHORT_FORMAT" = "%1$@ 星期";
 
-/* Button for bottom sheet shown when device transfer completes on the receiving device. Tapping will terminate the Signal app and trigger a notification to relaunch. */
-"TRANSFER_COMPLETE_SHEET_BUTTON" = "關閉 Signal";
+/* Button for bottom sheet shown when device transfer completes on the receiving device. Tapping will terminate the Y0x app and trigger a notification to relaunch. */
+"TRANSFER_COMPLETE_SHEET_BUTTON" = "關閉 Y0x";
 
 /* Subtitle for bottom sheet shown when device transfer completes on the receiving device. */
-"TRANSFER_COMPLETE_SHEET_SUBTITLE" = "要喺呢部機度開始用你嘅帳戶，請閂咗 Signal 然後重新打開。";
+"TRANSFER_COMPLETE_SHEET_SUBTITLE" = "要喺呢部機度開始用你嘅帳戶，請閂咗 Y0x 然後重新打開。";
 
 /* Title for bottom sheet shown when device transfer completes on the receiving device. */
 "TRANSFER_COMPLETE_SHEET_TITLE" = "轉移完成";
 
-/* Notification prompting the user to relaunch Signal after a device transfer completed. */
-"TRANSFER_RELAUNCH_NOTIFICATION" = "打開 Signal 開始傳送訊息";
+/* Notification prompting the user to relaunch Y0x after a device transfer completed. */
+"TRANSFER_RELAUNCH_NOTIFICATION" = "打開 Y0x 開始傳送訊息";
 
 /* Label for the cancel button in an alert or action sheet. */
 "TXT_CANCEL_TITLE" = "取消";
@@ -8972,25 +8972,25 @@
 "UNKNOWN_CONTACT_BLOCK_OFFER" = "呢個用戶唔喺你嘅通訊錄入面。你係咪要封鎖佢呀？";
 
 /* Info message recorded in conversation history when local user receives an unknown message from a linked device and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "你其中一部裝置用咗 Signal 嘅全新功能傳送訊息，我哋冇辦法處理或者顯示嗰個訊息。";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "你其中一部裝置用咗 Y0x 嘅全新功能傳送訊息，我哋冇辦法處理或者顯示嗰個訊息。";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. Embeds {{user's name or phone number}}. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "%1$@ 用 Signal 嘅全新功能傳送咗一個訊息俾你，我哋冇辦法處理或者顯示嗰個訊息。";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "%1$@ 用 Y0x 嘅全新功能傳送咗一個訊息俾你，我哋冇辦法處理或者顯示嗰個訊息。";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITHOUT_NAME" = "你收到一個用咗 Signal 全新功能嘅訊息，我哋冇辦法處理或者顯示嗰個訊息。";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITHOUT_NAME" = "你收到一個用咗 Y0x 全新功能嘅訊息，我哋冇辦法處理或者顯示嗰個訊息。";
 
 /* Label for button that lets users upgrade the app. */
-"UNKNOWN_PROTOCOL_VERSION_UPGRADE_BUTTON" = "立即更新 Signal";
+"UNKNOWN_PROTOCOL_VERSION_UPGRADE_BUTTON" = "立即更新 Y0x";
 
 /* Info message recorded in conversation history when local user has received an unknown unknown message from a linked device and has upgraded. */
-"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_FROM_LINKED_DEVICE" = "已更新到最新版本嘅 Signal。您而家可以喺您部機度接收呢類型嘅訊息。";
+"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_FROM_LINKED_DEVICE" = "已更新到最新版本嘅 Y0x。您而家可以喺您部機度接收呢類型嘅訊息。";
 
 /* Info message recorded in conversation history when local user has received an unknown message and has upgraded. Embeds {{user's name or phone number}}. */
-"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITH_NAME_FORMAT" = "你而家用緊最新版本嘅 Signal 喇。你可以叫 %1$@ 傳送多次呢個訊息俾你。";
+"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITH_NAME_FORMAT" = "你而家用緊最新版本嘅 Y0x 喇。你可以叫 %1$@ 傳送多次呢個訊息俾你。";
 
 /* Info message recorded in conversation history when local user has received an unknown message and has upgraded. */
-"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITHOUT_NAME" = "你而家用緊最新版本嘅 Signal 喇。你可以對方傳送多次呢個訊息俾你。";
+"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITHOUT_NAME" = "你而家用緊最新版本嘅 Y0x 喇。你可以對方傳送多次呢個訊息俾你。";
 
 /* Label indicating an unknown user. */
 "UNKNOWN_USER" = "未知";
@@ -9014,13 +9014,13 @@
 "UNLINK_CONFIRMATION_ALERT_TITLE" = "係咪要解除連結「%1$@」呀？";
 
 /* Label warning the user that they have been unlinked from their primary device. */
-"UNLINKED_WARNING" = "呢部裝置嘅連結已經失效。請將 Signal 重新連結去你部手機，方便繼續通訊。";
+"UNLINKED_WARNING" = "呢部裝置嘅連結已經失效。請將 Y0x 重新連結去你部手機，方便繼續通訊。";
 
 /* If this device has become unlinked from their primary device, they'll see a warning. This is the call to action on that warning. */
 "UNLINKED_WARNING_ACTION_TITLE" = "重新連結裝置";
 
 /* Alert title when unlinking device fails */
-"UNLINKING_FAILED_ALERT_TITLE" = "Signal 解除唔到你部裝置嘅連結。";
+"UNLINKING_FAILED_ALERT_TITLE" = "Y0x 解除唔到你部裝置嘅連結。";
 
 /* Text for a toast confirming that the mic has been unmuted for a call. */
 "UNMUTE_CONFIRMATION_TOAST_LABEL" = "開咗咪";
@@ -9037,11 +9037,11 @@
 /* No comment provided by engineer. */
 "UNSUPPORTED_ATTACHMENT" = "收到未支援嘅附件類型。";
 
-/* When inviting contacts to use Signal, this error is shown if the device doesn't support SMS or if there aren't any registered email accounts. */
+/* When inviting contacts to use Y0x, this error is shown if the device doesn't support SMS or if there aren't any registered email accounts. */
 "UNSUPPORTED_FEATURE_ERROR" = "你部裝置唔支援呢個功能。";
 
 /* Description for the unverified safety number change. Embeds {name of contact with identity change} */
-"UNVERIFIED_SAFETY_NUMBER_CHANGE_DESCRIPTION_FORMAT" = "您同 %1$@ 之間嘅安全碼已經郁動過，好可能係佢重新裝過 Signal 或者換咗部機。可以撳一下「驗證」去確認新嘅安全碼，如果您想嘅話。";
+"UNVERIFIED_SAFETY_NUMBER_CHANGE_DESCRIPTION_FORMAT" = "您同 %1$@ 之間嘅安全碼已經郁動過，好可能係佢重新裝過 Y0x 或者換咗部機。可以撳一下「驗證」去確認新嘅安全碼，如果您想嘅話。";
 
 /* Action to verify a safety number after it has changed */
 "UNVERIFIED_SAFETY_NUMBER_VERIFY_ACTION" = "驗證";
@@ -9059,7 +9059,7 @@
 "USE_PROXY_BUTTON" = "用代理伺服器";
 
 /* Explanation of when you should use a signal proxy */
-"USE_PROXY_EXPLANATION" = "當你用唔到流動數據或者 Wi-Fi 連接 Signal 嗰陣，先好用代理伺服器。";
+"USE_PROXY_EXPLANATION" = "當你用唔到流動數據或者 Wi-Fi 連接 Y0x 嗰陣，先好用代理伺服器。";
 
 /* Description of username links and QR codes on the username education sheet */
 "USERNAME_EDUCATION_LINK_DESCRIPTION" = "每個用戶名稱都有專屬嘅二維碼同埋連結，方便你同朋友分享，即刻開始傾計。";
@@ -9151,14 +9151,14 @@
 /* A message indicating that a username link the user attempted to query is no longer valid. */
 "USERNAME_LOOKUP_LINK_NO_LONGER_VALID_MESSAGE" = "呢條用戶名稱連結已經失效。";
 
-/* A message indicating that the given username is not associated with a registered Signal account. Embeds {{ a username }}. */
-"USERNAME_LOOKUP_NOT_FOUND_MESSAGE_FORMAT" = "%1$@ 唔係 Signal 用戶。請確認你係咪已經輸入咗完整嘅用戶名稱。";
+/* A message indicating that the given username is not associated with a registered Y0x account. Embeds {{ a username }}. */
+"USERNAME_LOOKUP_NOT_FOUND_MESSAGE_FORMAT" = "%1$@ 唔係 Y0x 用戶。請確認你係咪已經輸入咗完整嘅用戶名稱。";
 
-/* Title for an action sheet indicating that the given username is not associated with a registered Signal account. */
+/* Title for an action sheet indicating that the given username is not associated with a registered Y0x account. */
 "USERNAME_LOOKUP_NOT_FOUND_TITLE" = "搵唔到呢個用戶";
 
 /* Instructions that appear below the username QR code on a sharable exported image. */
-"USERNAME_QR_CODE_EXPORT_INSTRUCTIONS" = "用電話掃描呢個二維碼，就開始喺 Signal 同我聊天喇。";
+"USERNAME_QR_CODE_EXPORT_INSTRUCTIONS" = "用電話掃描呢個二維碼，就開始喺 Y0x 同我聊天喇。";
 
 /* A message in a toast informing the user their username, link, and QR code have successfully been reset. Embeds {{ the user's new username }}. */
 "USERNAME_RESET_SUCCESSFUL_TOAST" = "你嘅二維碼同連結已經重設，你嘅用戶名稱係 %1$@";

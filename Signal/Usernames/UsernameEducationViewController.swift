@@ -120,17 +120,17 @@ class UsernameEducationViewController: OWSTableViewController2 {
         let section = OWSTableSection()
         section.hasBackground = false
 
-        section.add(createTableItem(
-            iconName: "phone-48-color",
-            title: OWSLocalizedString(
-                "USERNAME_EDUCATION_PRIVACY_TITLE",
-                comment: "Title for phone number privacy section of the username education sheet"
-            ),
-            description: OWSLocalizedString(
-                "USERNAME_EDUCATION_PRIVACY_DESCRIPTION",
-                comment: "Description of phone number privacy on the username education sheet"
-            )
-        ))
+//        section.add(createTableItem(
+//            iconName: "phone-48-color",
+//            title: OWSLocalizedString(
+//                "USERNAME_EDUCATION_PRIVACY_TITLE",
+//                comment: "Title for phone number privacy section of the username education sheet"
+//            ),
+//            description: OWSLocalizedString(
+//                "USERNAME_EDUCATION_PRIVACY_DESCRIPTION",
+//                comment: "Description of phone number privacy on the username education sheet"
+//            )
+//        ))
 
         section.add(createTableItem(
             iconName: "usernames-48-color",
