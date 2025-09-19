@@ -212,27 +212,6 @@ class ProfileSettingsViewController: OWSTableViewController2 {
                 self.presentFormSheet(OWSNavigationController(rootViewController: vc), animated: true)
             }
         ))
-        if !allBadges.isEmpty {
-            mainSection.add(.disclosureItem(
-                icon: .profileBadges,
-                withText: OWSLocalizedString(
-                    "BADGE_CONFIGURATION_TITLE",
-                    comment: "The title for the badge configuration page"
-                ),
-                actionBlock: { [weak self] in
-                    guard let self = self else { return }
-
-                    let avatarImage = SSKEnvironment.shared.databaseStorageRef.read { self.avatarImage(transaction: $0) }
-
-                    let vc = BadgeConfigurationViewController(
-                        availableBadges: self.allBadges,
-                        shouldDisplayOnProfile: self.displayBadgesOnProfile,
-                        avatarImage: avatarImage,
-                        delegate: self)
-                    self.presentFormSheet(OWSNavigationController(rootViewController: vc), animated: true)
-                }
-            ))
-        }
         contents.add(mainSection)
 
         if let localUsernameState {
