@@ -276,7 +276,6 @@ public class RegistrationCoordinatorTest {
 
         setupDefaultAccountAttributes()
 
-        contactsStore.doesNeedContactsAuthorization = true
         pushRegistrationManagerMock.doesNeedNotificationAuthorization = true
 
         var nextStep: RegistrationStep
@@ -3259,7 +3258,6 @@ public class RegistrationCoordinatorTest {
         mode: RegistrationMode,
         expectedNextStep: RegistrationStep
     ) async {
-        contactsStore.doesNeedContactsAuthorization = true
         pushRegistrationManagerMock.doesNeedNotificationAuthorization = true
 
         switch mode {
